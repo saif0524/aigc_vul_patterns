@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="redundantInitialization" severity="style" msg="Redundant initialization for &apos;remaining_hours_triple&apos;. The initialized value is overwritten before it is read." verbose="Redundant initialization for &apos;remaining_hours_triple&apos;. The initialized value is overwritten before it is read." cwe="563" file0="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp">
+            <location file="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp" line="38" column="28" info="remaining_hours_triple is overwritten"/>
+            <location file="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp" line="18" column="32" info="remaining_hours_triple is initialized"/>
+            <symbol>remaining_hours_triple</symbol>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;remaining_hours_triple&apos; is assigned an expression that holds the same value." verbose="Variable &apos;remaining_hours_triple&apos; is assigned an expression that holds the same value." cwe="563" file0="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp">
+            <location file="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp" line="21" column="9"/>
+            <location file="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp" line="18" column="32" info="remaining_hours_triple is assigned &apos;remaining_seconds/3600*3&apos; here."/>
+            <symbol>remaining_hours_triple</symbol>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;remaining_hours_triple&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;remaining_hours_triple&apos; is reassigned a value before the old one has been used." cwe="563" file0="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp">
+            <location file="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp" line="23" column="32" info="remaining_hours_triple is overwritten"/>
+            <location file="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp" line="21" column="32" info="remaining_hours_triple is assigned"/>
+            <symbol>remaining_hours_triple</symbol>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;remaining_hours_triple&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;remaining_hours_triple&apos; is reassigned a value before the old one has been used." cwe="563" file0="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp">
+            <location file="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp" line="38" column="28" info="remaining_hours_triple is overwritten"/>
+            <location file="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp" line="23" column="32" info="remaining_hours_triple is assigned"/>
+            <symbol>remaining_hours_triple</symbol>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;remaining_hours_triple&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;remaining_hours_triple&apos; is reassigned a value before the old one has been used." cwe="563" file0="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp">
+            <location file="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp" line="38" column="28" info="remaining_hours_triple is overwritten"/>
+            <location file="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp" line="29" column="32" info="remaining_hours_triple is assigned"/>
+            <symbol>remaining_hours_triple</symbol>
+        </error>
+        <error id="redundantInitialization" severity="style" msg="Redundant initialization for &apos;remaining_minutes_triple&apos;. The initialized value is overwritten before it is read." verbose="Redundant initialization for &apos;remaining_minutes_triple&apos;. The initialized value is overwritten before it is read." cwe="563" file0="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp">
+            <location file="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp" line="35" column="30" info="remaining_minutes_triple is overwritten"/>
+            <location file="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp" line="33" column="34" info="remaining_minutes_triple is initialized"/>
+            <symbol>remaining_minutes_triple</symbol>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;remaining_minutes_triple&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;remaining_minutes_triple&apos; is reassigned a value before the old one has been used." cwe="563" file0="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp">
+            <location file="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp" line="40" column="29" info="remaining_minutes_triple is overwritten"/>
+            <location file="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp" line="35" column="30" info="remaining_minutes_triple is assigned"/>
+            <symbol>remaining_minutes_triple</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;remaining_hours_standard&apos; is assigned a value that is never used." verbose="Variable &apos;remaining_hours_standard&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp">
+            <location file="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp" line="13" column="34"/>
+            <symbol>remaining_hours_standard</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;remaining_minutes_standard&apos; is assigned a value that is never used." verbose="Variable &apos;remaining_minutes_standard&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp">
+            <location file="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp" line="15" column="36"/>
+            <symbol>remaining_minutes_standard</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;remaining_hours_triple&apos; is assigned a value that is never used." verbose="Variable &apos;remaining_hours_triple&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp">
+            <location file="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp" line="38" column="28"/>
+            <symbol>remaining_hours_triple</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;remaining_minutes_triple&apos; is assigned a value that is never used." verbose="Variable &apos;remaining_minutes_triple&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp">
+            <location file="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp" line="40" column="29"/>
+            <symbol>remaining_minutes_triple</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;remaining_hours_standard_final&apos; is assigned a value that is never used." verbose="Variable &apos;remaining_hours_standard_final&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp">
+            <location file="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp" line="43" column="40"/>
+            <symbol>remaining_hours_standard_final</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;remaining_minutes_standard_final&apos; is assigned a value that is never used." verbose="Variable &apos;remaining_minutes_standard_final&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp">
+            <location file="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp" line="45" column="42"/>
+            <symbol>remaining_minutes_standard_final</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;remaining_seconds&apos; is assigned a value that is never used." verbose="Variable &apos;remaining_seconds&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp">
+            <location file="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp" line="46" column="23"/>
+            <symbol>remaining_seconds</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;remaining_hours_triple_final&apos; is assigned a value that is never used." verbose="Variable &apos;remaining_hours_triple_final&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp">
+            <location file="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp" line="48" column="38"/>
+            <symbol>remaining_hours_triple_final</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;remaining_minutes_triple_final&apos; is assigned a value that is never used." verbose="Variable &apos;remaining_minutes_triple_final&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp">
+            <location file="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp" line="49" column="40"/>
+            <symbol>remaining_minutes_triple_final</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;remaining_seconds_triple_final&apos; is assigned a value that is never used." verbose="Variable &apos;remaining_seconds_triple_final&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp">
+            <location file="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp" line="50" column="40"/>
+            <symbol>remaining_seconds_triple_final</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;remaining_hours_standard&apos; is assigned a value that is never used." verbose="Variable &apos;remaining_hours_standard&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp">
+            <location file="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp" line="13" column="9"/>
+            <symbol>remaining_hours_standard</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;remaining_minutes_standard&apos; is assigned a value that is never used." verbose="Variable &apos;remaining_minutes_standard&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp">
+            <location file="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp" line="15" column="9"/>
+            <symbol>remaining_minutes_standard</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;remaining_hours_standard_final&apos; is assigned a value that is never used." verbose="Variable &apos;remaining_hours_standard_final&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp">
+            <location file="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp" line="43" column="9"/>
+            <symbol>remaining_hours_standard_final</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;remaining_minutes_standard_final&apos; is assigned a value that is never used." verbose="Variable &apos;remaining_minutes_standard_final&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp">
+            <location file="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp" line="45" column="9"/>
+            <symbol>remaining_minutes_standard_final</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;remaining_hours_triple_final&apos; is assigned a value that is never used." verbose="Variable &apos;remaining_hours_triple_final&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp">
+            <location file="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp" line="48" column="9"/>
+            <symbol>remaining_hours_triple_final</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;remaining_minutes_triple_final&apos; is assigned a value that is never used." verbose="Variable &apos;remaining_minutes_triple_final&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp">
+            <location file="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp" line="49" column="9"/>
+            <symbol>remaining_minutes_triple_final</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;remaining_seconds_triple_final&apos; is assigned a value that is never used." verbose="Variable &apos;remaining_seconds_triple_final&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp">
+            <location file="derived/cpp/gemma/gen_2/00000_2/0121_p00074_Videotape.cpp" line="50" column="9"/>
+            <symbol>remaining_seconds_triple_final</symbol>
+        </error>
+    </errors>
+</results>

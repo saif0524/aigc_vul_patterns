@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;current_w&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;current_w&apos; is reassigned a value before the old one has been used." cwe="563" file0="derived/cpp/gemma/gen_1/00001/0186_799_D._Field_expansion.cpp">
+            <location file="derived/cpp/gemma/gen_1/00001/0186_799_D._Field_expansion.cpp" line="59" column="19" info="current_w is overwritten"/>
+            <location file="derived/cpp/gemma/gen_1/00001/0186_799_D._Field_expansion.cpp" line="43" column="19" info="current_w is assigned"/>
+            <symbol>current_w</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;current_h&apos; is assigned a value that is never used." verbose="Variable &apos;current_h&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_1/00001/0186_799_D._Field_expansion.cpp">
+            <location file="derived/cpp/gemma/gen_1/00001/0186_799_D._Field_expansion.cpp" line="58" column="19"/>
+            <symbol>current_h</symbol>
+        </error>
+    </errors>
+</results>

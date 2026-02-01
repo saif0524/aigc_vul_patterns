@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="duplicateCondition" severity="style" msg="The if condition is the same as the previous if condition" verbose="The if condition is the same as the previous if condition" cwe="398" file0="derived/cpp/gemma/gen_3/00000_3/0237_1369_D._TediousLee.cpp">
+            <location file="derived/cpp/gemma/gen_3/00000_3/0237_1369_D._TediousLee.cpp" line="68" column="12" info="Second condition"/>
+            <location file="derived/cpp/gemma/gen_3/00000_3/0237_1369_D._TediousLee.cpp" line="57" column="13" info="First condition"/>
+        </error>
+        <error id="duplicateBranch" severity="style" msg="Found duplicate branches for &apos;if&apos; and &apos;else&apos;." verbose="Finding the same code in an &apos;if&apos; and related &apos;else&apos; branch is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" inconclusive="true" file0="derived/cpp/gemma/gen_3/00000_3/0237_1369_D._TediousLee.cpp">
+            <location file="derived/cpp/gemma/gen_3/00000_3/0237_1369_D._TediousLee.cpp" line="32" column="11"/>
+            <location file="derived/cpp/gemma/gen_3/00000_3/0237_1369_D._TediousLee.cpp" line="34" column="13"/>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;ans&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;ans&apos; is reassigned a value before the old one has been used." cwe="563" file0="derived/cpp/gemma/gen_3/00000_3/0237_1369_D._TediousLee.cpp">
+            <location file="derived/cpp/gemma/gen_3/00000_3/0237_1369_D._TediousLee.cpp" line="33" column="19" info="ans is overwritten"/>
+            <location file="derived/cpp/gemma/gen_3/00000_3/0237_1369_D._TediousLee.cpp" line="30" column="15" info="ans is assigned"/>
+            <symbol>ans</symbol>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;ans&apos; is assigned an expression that holds the same value." verbose="Variable &apos;ans&apos; is assigned an expression that holds the same value." cwe="563" file0="derived/cpp/gemma/gen_3/00000_3/0237_1369_D._TediousLee.cpp">
+            <location file="derived/cpp/gemma/gen_3/00000_3/0237_1369_D._TediousLee.cpp" line="35" column="15"/>
+            <location file="derived/cpp/gemma/gen_3/00000_3/0237_1369_D._TediousLee.cpp" line="30" column="15" info="ans is assigned &apos;(long long)n*(n-1)*(n-2)/6&apos; here."/>
+            <symbol>ans</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;num_leaves&apos; is assigned a value that is never used." verbose="Variable &apos;num_leaves&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_3/00000_3/0237_1369_D._TediousLee.cpp">
+            <location file="derived/cpp/gemma/gen_3/00000_3/0237_1369_D._TediousLee.cpp" line="69" column="21"/>
+            <symbol>num_leaves</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;num_one_child&apos; is assigned a value that is never used." verbose="Variable &apos;num_one_child&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_3/00000_3/0237_1369_D._TediousLee.cpp">
+            <location file="derived/cpp/gemma/gen_3/00000_3/0237_1369_D._TediousLee.cpp" line="70" column="21"/>
+            <symbol>num_one_child</symbol>
+        </error>
+    </errors>
+</results>

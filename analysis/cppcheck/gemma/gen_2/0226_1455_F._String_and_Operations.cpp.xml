@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 32-bit value by 40 bits is undefined behaviour. See condition at line 69." verbose="Shifting 32-bit value by 40 bits is undefined behaviour. See condition at line 69." cwe="758" file0="derived/cpp/gemma/gen_2/00000_2/0226_1455_F._String_and_Operations.cpp">
+            <location file="derived/cpp/gemma/gen_2/00000_2/0226_1455_F._String_and_Operations.cpp" line="20" column="28" info="Shift"/>
+            <location file="derived/cpp/gemma/gen_2/00000_2/0226_1455_F._String_and_Operations.cpp" line="69" column="11" info="Assuming that condition &apos;n==8&apos; is not redundant"/>
+        </error>
+        <error id="integerOverflowCond" severity="warning" msg="Either the condition &apos;n==8&apos; is redundant or there is signed integer overflow for expression &apos;1&lt;&lt;(n*5)&apos;." verbose="Either the condition &apos;n==8&apos; is redundant or there is signed integer overflow for expression &apos;1&lt;&lt;(n*5)&apos;." cwe="190" file0="derived/cpp/gemma/gen_2/00000_2/0226_1455_F._String_and_Operations.cpp">
+            <location file="derived/cpp/gemma/gen_2/00000_2/0226_1455_F._String_and_Operations.cpp" line="20" column="28" info="Integer overflow"/>
+            <location file="derived/cpp/gemma/gen_2/00000_2/0226_1455_F._String_and_Operations.cpp" line="69" column="11" info="Assuming that condition &apos;n==8&apos; is not redundant"/>
+        </error>
+    </errors>
+</results>

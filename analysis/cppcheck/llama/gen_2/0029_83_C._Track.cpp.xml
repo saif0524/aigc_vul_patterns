@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;Compare::operator()&apos; can be const." verbose="The member function &apos;Compare::operator()&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true" file0="derived/cpp/llama/gen_2/00001_2/0029_83_C._Track.cpp">
+            <location file="derived/cpp/llama/gen_2/00001_2/0029_83_C._Track.cpp" line="22" column="10"/>
+            <symbol>Compare::operator()</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;path&apos; should be passed by const reference." verbose="Parameter &apos;path&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/llama/gen_2/00001_2/0029_83_C._Track.cpp">
+            <location file="derived/cpp/llama/gen_2/00001_2/0029_83_C._Track.cpp" line="14" column="31" info="Function parameter &apos;path&apos; should be passed by const reference."/>
+            <symbol>path</symbol>
+        </error>
+        <error id="constParameter" severity="style" msg="Parameter &apos;type&apos; can be declared as const array" verbose="Parameter &apos;type&apos; can be declared as const array" cwe="398" file0="derived/cpp/llama/gen_2/00001_2/0029_83_C._Track.cpp">
+            <location file="derived/cpp/llama/gen_2/00001_2/0029_83_C._Track.cpp" line="14" column="41" info="Parameter &apos;type&apos; can be declared as const array"/>
+            <symbol>type</symbol>
+        </error>
+        <error id="constVariable" severity="style" msg="Variable &apos;dx&apos; can be declared as const array" verbose="Variable &apos;dx&apos; can be declared as const array" cwe="398" file0="derived/cpp/llama/gen_2/00001_2/0029_83_C._Track.cpp">
+            <location file="derived/cpp/llama/gen_2/00001_2/0029_83_C._Track.cpp" line="50" column="9" info="Variable &apos;dx&apos; can be declared as const array"/>
+            <symbol>dx</symbol>
+        </error>
+        <error id="constVariable" severity="style" msg="Variable &apos;dy&apos; can be declared as const array" verbose="Variable &apos;dy&apos; can be declared as const array" cwe="398" file0="derived/cpp/llama/gen_2/00001_2/0029_83_C._Track.cpp">
+            <location file="derived/cpp/llama/gen_2/00001_2/0029_83_C._Track.cpp" line="51" column="9" info="Variable &apos;dy&apos; can be declared as const array"/>
+            <symbol>dy</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: sx" verbose="Uninitialized variable: sx" cwe="457" file0="derived/cpp/llama/gen_2/00001_2/0029_83_C._Track.cpp">
+            <location file="derived/cpp/llama/gen_2/00001_2/0029_83_C._Track.cpp" line="55" column="18"/>
+            <location file="derived/cpp/llama/gen_2/00001_2/0029_83_C._Track.cpp" line="37" column="23" info="Assuming condition is false"/>
+            <symbol>sx</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: sy" verbose="Uninitialized variable: sy" cwe="457" file0="derived/cpp/llama/gen_2/00001_2/0029_83_C._Track.cpp">
+            <location file="derived/cpp/llama/gen_2/00001_2/0029_83_C._Track.cpp" line="55" column="22"/>
+            <location file="derived/cpp/llama/gen_2/00001_2/0029_83_C._Track.cpp" line="37" column="23" info="Assuming condition is false"/>
+            <symbol>sy</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: tx" verbose="Uninitialized variable: tx" cwe="457" file0="derived/cpp/llama/gen_2/00001_2/0029_83_C._Track.cpp">
+            <location file="derived/cpp/llama/gen_2/00001_2/0029_83_C._Track.cpp" line="65" column="18"/>
+            <location file="derived/cpp/llama/gen_2/00001_2/0029_83_C._Track.cpp" line="37" column="23" info="Assuming condition is false"/>
+            <symbol>tx</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: ty" verbose="Uninitialized variable: ty" cwe="457" file0="derived/cpp/llama/gen_2/00001_2/0029_83_C._Track.cpp">
+            <location file="derived/cpp/llama/gen_2/00001_2/0029_83_C._Track.cpp" line="65" column="29"/>
+            <location file="derived/cpp/llama/gen_2/00001_2/0029_83_C._Track.cpp" line="37" column="23" info="Assuming condition is false"/>
+            <symbol>ty</symbol>
+        </error>
+    </errors>
+</results>

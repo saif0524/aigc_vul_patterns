@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;cp&apos; can be reduced." verbose="The scope of the variable &apos;cp&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="derived/cpp/qwen/gen_1/00000/0097_133_D._Piet.cpp">
+            <location file="derived/cpp/qwen/gen_1/00000/0097_133_D._Piet.cpp" line="90" column="9"/>
+            <symbol>cp</symbol>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;grid&apos; can be declared as reference to const" verbose="Parameter &apos;grid&apos; can be declared as reference to const" cwe="398" file0="derived/cpp/qwen/gen_1/00000/0097_133_D._Piet.cpp">
+            <location file="derived/cpp/qwen/gen_1/00000/0097_133_D._Piet.cpp" line="15" column="50" info="Parameter &apos;grid&apos; can be declared as reference to const"/>
+            <symbol>grid</symbol>
+        </error>
+        <error id="constVariableReference" severity="style" msg="Variable &apos;block&apos; can be declared as reference to const" verbose="Variable &apos;block&apos; can be declared as reference to const" cwe="398" file0="derived/cpp/qwen/gen_1/00000/0097_133_D._Piet.cpp">
+            <location file="derived/cpp/qwen/gen_1/00000/0097_133_D._Piet.cpp" line="102" column="24" info="Variable &apos;block&apos; can be declared as reference to const"/>
+            <symbol>block</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::find_if algorithm instead of a raw loop." verbose="Consider using std::find_if algorithm instead of a raw loop." cwe="398" file0="derived/cpp/qwen/gen_1/00000/0097_133_D._Piet.cpp">
+            <location file="derived/cpp/qwen/gen_1/00000/0097_133_D._Piet.cpp" line="68" column="45"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::find_if algorithm instead of a raw loop." verbose="Consider using std::find_if algorithm instead of a raw loop." cwe="398" file0="derived/cpp/qwen/gen_1/00000/0097_133_D._Piet.cpp">
+            <location file="derived/cpp/qwen/gen_1/00000/0097_133_D._Piet.cpp" line="103" column="49"/>
+        </error>
+        <error id="unusedStructMember" severity="style" msg="struct member &apos;Block::x2&apos; is never used." verbose="struct member &apos;Block::x2&apos; is never used." cwe="563" file0="derived/cpp/qwen/gen_1/00000/0097_133_D._Piet.cpp">
+            <location file="derived/cpp/qwen/gen_1/00000/0097_133_D._Piet.cpp" line="8" column="17"/>
+            <symbol>Block::x2</symbol>
+        </error>
+        <error id="unusedStructMember" severity="style" msg="struct member &apos;Block::y2&apos; is never used." verbose="struct member &apos;Block::y2&apos; is never used." cwe="563" file0="derived/cpp/qwen/gen_1/00000/0097_133_D._Piet.cpp">
+            <location file="derived/cpp/qwen/gen_1/00000/0097_133_D._Piet.cpp" line="8" column="21"/>
+            <symbol>Block::y2</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;cp&apos; is assigned a value that is never used." verbose="Variable &apos;cp&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/qwen/gen_1/00000/0097_133_D._Piet.cpp">
+            <location file="derived/cpp/qwen/gen_1/00000/0097_133_D._Piet.cpp" line="90" column="12"/>
+            <symbol>cp</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;cp&apos; is assigned a value that is never used." verbose="Variable &apos;cp&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/qwen/gen_1/00000/0097_133_D._Piet.cpp">
+            <location file="derived/cpp/qwen/gen_1/00000/0097_133_D._Piet.cpp" line="109" column="16"/>
+            <symbol>cp</symbol>
+        </error>
+    </errors>
+</results>

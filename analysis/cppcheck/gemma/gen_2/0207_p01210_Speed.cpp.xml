@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="duplicateBranch" severity="style" msg="Found duplicate branches for &apos;if&apos; and &apos;else&apos;." verbose="Finding the same code in an &apos;if&apos; and related &apos;else&apos; branch is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" inconclusive="true" file0="derived/cpp/gemma/gen_2/00001_2/0207_p01210_Speed.cpp">
+            <location file="derived/cpp/gemma/gen_2/00001_2/0207_p01210_Speed.cpp" line="103" column="16"/>
+            <location file="derived/cpp/gemma/gen_2/00001_2/0207_p01210_Speed.cpp" line="105" column="11"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;table_a&apos; can be reduced." verbose="The scope of the variable &apos;table_a&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="derived/cpp/gemma/gen_2/00001_2/0207_p01210_Speed.cpp">
+            <location file="derived/cpp/gemma/gen_2/00001_2/0207_p01210_Speed.cpp" line="64" column="16"/>
+            <symbol>table_a</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;table_b&apos; can be reduced." verbose="The scope of the variable &apos;table_b&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="derived/cpp/gemma/gen_2/00001_2/0207_p01210_Speed.cpp">
+            <location file="derived/cpp/gemma/gen_2/00001_2/0207_p01210_Speed.cpp" line="65" column="16"/>
+            <symbol>table_b</symbol>
+        </error>
+    </errors>
+</results>

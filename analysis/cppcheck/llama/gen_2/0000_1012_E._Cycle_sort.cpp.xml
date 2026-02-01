@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="iterateByValue" severity="performance" msg="Range variable &apos;cycle&apos; should be declared as const reference." verbose="Variable &apos;cycle&apos; is used to iterate by value. It could be declared as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/llama/gen_2/00000_2/0000_1012_E._Cycle_sort.cpp">
+            <location file="derived/cpp/llama/gen_2/00000_2/0000_1012_E._Cycle_sort.cpp" line="59" column="15" info="Range variable &apos;cycle&apos; should be declared as const reference."/>
+            <symbol>cycle</symbol>
+        </error>
+        <error id="mismatchingContainers" severity="error" msg="Iterators of different containers &apos;sorted_a&apos; and &apos;a&apos; are used together." verbose="Iterators of different containers &apos;sorted_a&apos; and &apos;a&apos; are used together." cwe="664" file0="derived/cpp/llama/gen_2/00000_2/0000_1012_E._Cycle_sort.cpp">
+            <location file="derived/cpp/llama/gen_2/00000_2/0000_1012_E._Cycle_sort.cpp" line="40" column="26"/>
+        </error>
+        <error id="mismatchingContainers" severity="error" msg="Iterators of different containers &apos;sorted_a&apos; and &apos;a&apos; are used together." verbose="Iterators of different containers &apos;sorted_a&apos; and &apos;a&apos; are used together." cwe="664" file0="derived/cpp/llama/gen_2/00000_2/0000_1012_E._Cycle_sort.cpp">
+            <location file="derived/cpp/llama/gen_2/00000_2/0000_1012_E._Cycle_sort.cpp" line="47" column="30"/>
+        </error>
+    </errors>
+</results>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;vec&apos; should be passed by const reference." verbose="Parameter &apos;vec&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/qwen/gen_2/00000_2/0084_101_C._Vectors.cpp">
+            <location file="derived/cpp/qwen/gen_2/00000_2/0084_101_C._Vectors.cpp" line="6" column="54" info="Function parameter &apos;vec&apos; should be passed by const reference."/>
+            <symbol>vec</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;vec&apos; should be passed by const reference." verbose="Parameter &apos;vec&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/qwen/gen_2/00000_2/0084_101_C._Vectors.cpp">
+            <location file="derived/cpp/qwen/gen_2/00000_2/0084_101_C._Vectors.cpp" line="14" column="53" info="Function parameter &apos;vec&apos; should be passed by const reference."/>
+            <symbol>vec</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::transform algorithm instead of a raw loop." verbose="Consider using std::transform algorithm instead of a raw loop." cwe="398" file0="derived/cpp/qwen/gen_2/00000_2/0084_101_C._Vectors.cpp">
+            <location file="derived/cpp/qwen/gen_2/00000_2/0084_101_C._Vectors.cpp" line="9" column="13"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::transform algorithm instead of a raw loop." verbose="Consider using std::transform algorithm instead of a raw loop." cwe="398" file0="derived/cpp/qwen/gen_2/00000_2/0084_101_C._Vectors.cpp">
+            <location file="derived/cpp/qwen/gen_2/00000_2/0084_101_C._Vectors.cpp" line="17" column="13"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::any_of algorithm instead of a raw loop." verbose="Consider using std::any_of algorithm instead of a raw loop." cwe="398" file0="derived/cpp/qwen/gen_2/00000_2/0084_101_C._Vectors.cpp">
+            <location file="derived/cpp/qwen/gen_2/00000_2/0084_101_C._Vectors.cpp" line="23" column="5"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;seen&apos; is assigned a value that is never used." verbose="Variable &apos;seen&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/qwen/gen_2/00000_2/0084_101_C._Vectors.cpp">
+            <location file="derived/cpp/qwen/gen_2/00000_2/0084_101_C._Vectors.cpp" line="35" column="28"/>
+            <symbol>seen</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;seen&apos; is assigned a value that is never used." verbose="Variable &apos;seen&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/qwen/gen_2/00000_2/0084_101_C._Vectors.cpp">
+            <location file="derived/cpp/qwen/gen_2/00000_2/0084_101_C._Vectors.cpp" line="35" column="23"/>
+            <symbol>seen</symbol>
+        </error>
+    </errors>
+</results>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="initializerList" severity="style" msg="Member variable &apos;Tree::edges&apos; is in the wrong place in the initializer list." verbose="Member variable &apos;Tree::edges&apos; is in the wrong place in the initializer list. Members are initialized in the order they are declared, not in the order they are in the initializer list. Keeping the initializer list in the same order that the members were declared prevents order dependent initialization errors." cwe="398" inconclusive="true" file0="derived/cpp/llama/gen_2/00002_2/0261_763_D._Timofey_and_a_flat_tree.cpp">
+            <location file="derived/cpp/llama/gen_2/00002_2/0261_763_D._Timofey_and_a_flat_tree.cpp" line="15" column="25"/>
+            <location file="derived/cpp/llama/gen_2/00002_2/0261_763_D._Timofey_and_a_flat_tree.cpp" line="21" column="25"/>
+            <symbol>Tree::edges</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;Tree&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;Tree&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="derived/cpp/llama/gen_2/00002_2/0261_763_D._Timofey_and_a_flat_tree.cpp">
+            <location file="derived/cpp/llama/gen_2/00002_2/0261_763_D._Timofey_and_a_flat_tree.cpp" line="21" column="5"/>
+            <symbol>Tree</symbol>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &apos;dfs&apos; shadows outer function" verbose="Local variable &apos;dfs&apos; shadows outer function" cwe="398" file0="derived/cpp/llama/gen_2/00002_2/0261_763_D._Timofey_and_a_flat_tree.cpp">
+            <location file="derived/cpp/llama/gen_2/00002_2/0261_763_D._Timofey_and_a_flat_tree.cpp" line="60" column="29" info="Shadow variable"/>
+            <location file="derived/cpp/llama/gen_2/00002_2/0261_763_D._Timofey_and_a_flat_tree.cpp" line="28" column="10" info="Shadowed declaration"/>
+            <symbol>dfs</symbol>
+        </error>
+        <error id="unusedStructMember" severity="style" msg="struct member &apos;Edge::to&apos; is never used." verbose="struct member &apos;Edge::to&apos; is never used." cwe="563" file0="derived/cpp/llama/gen_2/00002_2/0261_763_D._Timofey_and_a_flat_tree.cpp">
+            <location file="derived/cpp/llama/gen_2/00002_2/0261_763_D._Timofey_and_a_flat_tree.cpp" line="10" column="9"/>
+            <symbol>Edge::to</symbol>
+        </error>
+        <error id="unusedStructMember" severity="style" msg="struct member &apos;Edge::from&apos; is never used." verbose="struct member &apos;Edge::from&apos; is never used." cwe="563" file0="derived/cpp/llama/gen_2/00002_2/0261_763_D._Timofey_and_a_flat_tree.cpp">
+            <location file="derived/cpp/llama/gen_2/00002_2/0261_763_D._Timofey_and_a_flat_tree.cpp" line="11" column="9"/>
+            <symbol>Edge::from</symbol>
+        </error>
+    </errors>
+</results>

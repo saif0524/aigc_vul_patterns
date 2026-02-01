@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="arrayIndexThenCheck" severity="style" msg="Array index &apos;color&apos; is used before limits check." verbose="Defensive programming: The variable &apos;color&apos; is used as an array index before it is checked that is within limits. This can mean that the array might be accessed out of bounds. Reorder conditions such as &apos;(a[i] &amp;&amp; i &lt; 10)&apos; to &apos;(i &lt; 10 &amp;&amp; a[i])&apos;. That way the array will not be accessed if the index is out of limits." cwe="398" file0="derived/cpp/gemma/gen_1/00002/0145_673_C._Bear_and_Colors.cpp">
+            <location file="derived/cpp/gemma/gen_1/00002/0145_673_C._Bear_and_Colors.cpp" line="36" column="38"/>
+            <symbol>color</symbol>
+        </error>
+        <error id="negativeContainerIndex" severity="warning" msg="Array index -1 is out of bounds." verbose="Array index -1 is out of bounds." cwe="786" file0="derived/cpp/gemma/gen_1/00002/0145_673_C._Bear_and_Colors.cpp">
+            <location file="derived/cpp/gemma/gen_1/00002/0145_673_C._Bear_and_Colors.cpp" line="41" column="13" info="Negative array index"/>
+            <location file="derived/cpp/gemma/gen_1/00002/0145_673_C._Bear_and_Colors.cpp" line="32" column="39" info="Assuming condition is false"/>
+            <location file="derived/cpp/gemma/gen_1/00002/0145_673_C._Bear_and_Colors.cpp" line="30" column="35" info="Assignment &apos;dominant_color=-1&apos;, assigned value is -1"/>
+        </error>
+    </errors>
+</results>

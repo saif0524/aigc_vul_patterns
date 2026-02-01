@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="containerOutOfBounds" severity="warning" msg="Either the condition &apos;pos&lt;expression.length()&apos; is redundant or &apos;pos&apos; can have the value expression.size(). Expression &apos;expression[pos]&apos; causes access out of bounds." verbose="Either the condition &apos;pos&lt;expression.length()&apos; is redundant or &apos;pos&apos; can have the value expression.size(). Expression &apos;expression[pos]&apos; causes access out of bounds." cwe="398" file0="derived/cpp/gemma/gen_3/00002_3/0098_p00786_BUT_We_Need_a_Diagram.cpp">
+            <location file="derived/cpp/gemma/gen_3/00002_3/0098_p00786_BUT_We_Need_a_Diagram.cpp" line="18" column="23" info="Access out of bounds"/>
+            <location file="derived/cpp/gemma/gen_3/00002_3/0098_p00786_BUT_We_Need_a_Diagram.cpp" line="17" column="9" info="pos is incremented&apos;, new value is symbolic=expression.length()"/>
+            <location file="derived/cpp/gemma/gen_3/00002_3/0098_p00786_BUT_We_Need_a_Diagram.cpp" line="16" column="13" info="Assuming that condition &apos;pos&lt;expression.length()&apos; is not redundant"/>
+            <symbol>expression</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::accumulate algorithm instead of a raw loop." verbose="Consider using std::accumulate algorithm instead of a raw loop." cwe="398" file0="derived/cpp/gemma/gen_3/00002_3/0098_p00786_BUT_We_Need_a_Diagram.cpp">
+            <location file="derived/cpp/gemma/gen_3/00002_3/0098_p00786_BUT_We_Need_a_Diagram.cpp" line="60" column="22"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::accumulate algorithm instead of a raw loop." verbose="Consider using std::accumulate algorithm instead of a raw loop." cwe="398" file0="derived/cpp/gemma/gen_3/00002_3/0098_p00786_BUT_We_Need_a_Diagram.cpp">
+            <location file="derived/cpp/gemma/gen_3/00002_3/0098_p00786_BUT_We_Need_a_Diagram.cpp" line="65" column="23"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::accumulate algorithm instead of a raw loop." verbose="Consider using std::accumulate algorithm instead of a raw loop." cwe="398" file0="derived/cpp/gemma/gen_3/00002_3/0098_p00786_BUT_We_Need_a_Diagram.cpp">
+            <location file="derived/cpp/gemma/gen_3/00002_3/0098_p00786_BUT_We_Need_a_Diagram.cpp" line="126" column="22"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;line1&apos; is assigned a value that is never used." verbose="Variable &apos;line1&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_3/00002_3/0098_p00786_BUT_We_Need_a_Diagram.cpp">
+            <location file="derived/cpp/gemma/gen_3/00002_3/0098_p00786_BUT_We_Need_a_Diagram.cpp" line="83" column="22"/>
+            <symbol>line1</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;line1&apos; is assigned a value that is never used." verbose="Variable &apos;line1&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_3/00002_3/0098_p00786_BUT_We_Need_a_Diagram.cpp">
+            <location file="derived/cpp/gemma/gen_3/00002_3/0098_p00786_BUT_We_Need_a_Diagram.cpp" line="87" column="19"/>
+            <symbol>line1</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;line1&apos; is assigned a value that is never used." verbose="Variable &apos;line1&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_3/00002_3/0098_p00786_BUT_We_Need_a_Diagram.cpp">
+            <location file="derived/cpp/gemma/gen_3/00002_3/0098_p00786_BUT_We_Need_a_Diagram.cpp" line="109" column="19"/>
+            <symbol>line1</symbol>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: lines" verbose="Unused variable: lines" cwe="563" file0="derived/cpp/gemma/gen_3/00002_3/0098_p00786_BUT_We_Need_a_Diagram.cpp">
+            <location file="derived/cpp/gemma/gen_3/00002_3/0098_p00786_BUT_We_Need_a_Diagram.cpp" line="45" column="20"/>
+            <symbol>lines</symbol>
+        </error>
+    </errors>
+</results>

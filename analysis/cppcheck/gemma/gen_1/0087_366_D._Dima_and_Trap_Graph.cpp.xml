@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;path&apos; should be passed by const reference." verbose="Parameter &apos;path&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/gemma/gen_1/00001/0087_366_D._Dima_and_Trap_Graph.cpp">
+            <location file="derived/cpp/gemma/gen_1/00001/0087_366_D._Dima_and_Trap_Graph.cpp" line="22" column="44" info="Function parameter &apos;path&apos; should be passed by const reference."/>
+            <symbol>path</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::any_of algorithm instead of a raw loop." verbose="Consider using std::any_of algorithm instead of a raw loop." cwe="398" file0="derived/cpp/gemma/gen_1/00001/0087_366_D._Dima_and_Trap_Graph.cpp">
+            <location file="derived/cpp/gemma/gen_1/00001/0087_366_D._Dima_and_Trap_Graph.cpp" line="49" column="33"/>
+        </error>
+    </errors>
+</results>

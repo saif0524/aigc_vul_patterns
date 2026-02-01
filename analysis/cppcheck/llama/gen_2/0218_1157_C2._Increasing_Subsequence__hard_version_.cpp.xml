@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;l&lt;=r&apos; is always true" verbose="Condition &apos;l&lt;=r&apos; is always true" cwe="571" file0="derived/cpp/llama/gen_2/00002_2/0218_1157_C2._Increasing_Subsequence__hard_version_.cpp">
+            <location file="derived/cpp/llama/gen_2/00002_2/0218_1157_C2._Increasing_Subsequence__hard_version_.cpp" line="25" column="27" info="Condition &apos;l&lt;=r&apos; is always true"/>
+            <location file="derived/cpp/llama/gen_2/00002_2/0218_1157_C2._Increasing_Subsequence__hard_version_.cpp" line="24" column="18" info="Assuming that condition &apos;l&lt;=r&apos; is not redundant"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;l&lt;=r&apos; is always true" verbose="Condition &apos;l&lt;=r&apos; is always true" cwe="571" file0="derived/cpp/llama/gen_2/00002_2/0218_1157_C2._Increasing_Subsequence__hard_version_.cpp">
+            <location file="derived/cpp/llama/gen_2/00002_2/0218_1157_C2._Increasing_Subsequence__hard_version_.cpp" line="26" column="27" info="Condition &apos;l&lt;=r&apos; is always true"/>
+            <location file="derived/cpp/llama/gen_2/00002_2/0218_1157_C2._Increasing_Subsequence__hard_version_.cpp" line="24" column="18" info="Assuming that condition &apos;l&lt;=r&apos; is not redundant"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;res&apos; can be reduced." verbose="The scope of the variable &apos;res&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="derived/cpp/llama/gen_2/00002_2/0218_1157_C2._Increasing_Subsequence__hard_version_.cpp">
+            <location file="derived/cpp/llama/gen_2/00002_2/0218_1157_C2._Increasing_Subsequence__hard_version_.cpp" line="17" column="17"/>
+            <symbol>res</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;res&apos; is assigned a value that is never used." verbose="Variable &apos;res&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/llama/gen_2/00002_2/0218_1157_C2._Increasing_Subsequence__hard_version_.cpp">
+            <location file="derived/cpp/llama/gen_2/00002_2/0218_1157_C2._Increasing_Subsequence__hard_version_.cpp" line="52" column="17"/>
+            <symbol>res</symbol>
+        </error>
+    </errors>
+</results>

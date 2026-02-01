@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;i&gt;=0&apos; is always true" verbose="Condition &apos;i&gt;=0&apos; is always true" cwe="571" file0="derived/cpp/gemma/gen_1/00000/0230_1244_C._The_Football_Season.cpp">
+            <location file="derived/cpp/gemma/gen_1/00000/0230_1244_C._The_Football_Season.cpp" line="34" column="41" info="Condition &apos;i&gt;=0&apos; is always true"/>
+            <location file="derived/cpp/gemma/gen_1/00000/0230_1244_C._The_Football_Season.cpp" line="31" column="24" info="Assignment &apos;i=0&apos;, assigned value is 0"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;j&gt;=0&apos; is always true" verbose="Condition &apos;j&gt;=0&apos; is always true" cwe="571" file0="derived/cpp/gemma/gen_1/00000/0230_1244_C._The_Football_Season.cpp">
+            <location file="derived/cpp/gemma/gen_1/00000/0230_1244_C._The_Football_Season.cpp" line="34" column="51" info="Condition &apos;j&gt;=0&apos; is always true"/>
+            <location file="derived/cpp/gemma/gen_1/00000/0230_1244_C._The_Football_Season.cpp" line="32" column="28" info="Assignment &apos;j=0&apos;, assigned value is 0"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;k&gt;=0&apos; is always true" verbose="Condition &apos;k&gt;=0&apos; is always true" cwe="571" file0="derived/cpp/gemma/gen_1/00000/0230_1244_C._The_Football_Season.cpp">
+            <location file="derived/cpp/gemma/gen_1/00000/0230_1244_C._The_Football_Season.cpp" line="34" column="61" info="Condition &apos;k&gt;=0&apos; is always true"/>
+            <location file="derived/cpp/gemma/gen_1/00000/0230_1244_C._The_Football_Season.cpp" line="33" column="33" info="Assignment &apos;k=n-i-j&apos;, assigned value is greater than -1"/>
+            <location file="derived/cpp/gemma/gen_1/00000/0230_1244_C._The_Football_Season.cpp" line="32" column="33" info="Assuming that condition &apos;j&lt;=n-i&apos; is not redundant"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;x&apos; can be reduced." verbose="The scope of the variable &apos;x&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="derived/cpp/gemma/gen_1/00000/0230_1244_C._The_Football_Season.cpp">
+            <location file="derived/cpp/gemma/gen_1/00000/0230_1244_C._The_Football_Season.cpp" line="14" column="15"/>
+            <symbol>x</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;y&apos; can be reduced." verbose="The scope of the variable &apos;y&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="derived/cpp/gemma/gen_1/00000/0230_1244_C._The_Football_Season.cpp">
+            <location file="derived/cpp/gemma/gen_1/00000/0230_1244_C._The_Football_Season.cpp" line="15" column="15"/>
+            <symbol>y</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;z&apos; can be reduced." verbose="The scope of the variable &apos;z&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="derived/cpp/gemma/gen_1/00000/0230_1244_C._The_Football_Season.cpp">
+            <location file="derived/cpp/gemma/gen_1/00000/0230_1244_C._The_Football_Season.cpp" line="16" column="15"/>
+            <symbol>z</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;x&apos; is assigned a value that is never used." verbose="Variable &apos;x&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_1/00000/0230_1244_C._The_Football_Season.cpp">
+            <location file="derived/cpp/gemma/gen_1/00000/0230_1244_C._The_Football_Season.cpp" line="14" column="17"/>
+            <symbol>x</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;y&apos; is assigned a value that is never used." verbose="Variable &apos;y&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_1/00000/0230_1244_C._The_Football_Season.cpp">
+            <location file="derived/cpp/gemma/gen_1/00000/0230_1244_C._The_Football_Season.cpp" line="15" column="17"/>
+            <symbol>y</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;z&apos; is assigned a value that is never used." verbose="Variable &apos;z&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_1/00000/0230_1244_C._The_Football_Season.cpp">
+            <location file="derived/cpp/gemma/gen_1/00000/0230_1244_C._The_Football_Season.cpp" line="16" column="17"/>
+            <symbol>z</symbol>
+        </error>
+    </errors>
+</results>

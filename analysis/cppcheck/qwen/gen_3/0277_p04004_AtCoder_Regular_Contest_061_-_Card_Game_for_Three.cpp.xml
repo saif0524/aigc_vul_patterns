@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="duplicateExpression" severity="style" msg="Same expression on both sides of &apos;-&apos; because &apos;total&apos; and &apos;na+nb+nc&apos; represent the same value." verbose="Finding the same expression on both sides of an operator is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" file0="derived/cpp/qwen/gen_3/00002_3/0277_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp">
+            <location file="derived/cpp/qwen/gen_3/00002_3/0277_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp" line="33" column="52"/>
+            <location file="derived/cpp/qwen/gen_3/00002_3/0277_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp" line="14" column="36" info="&apos;total&apos; is assigned value &apos;na+nb+nc&apos; here."/>
+        </error>
+        <error id="knownArgument" severity="style" msg="Argument &apos;total-(na+nb+nc)&apos; to function pow is always 0. It does not matter what value &apos;total&apos; has." verbose="Argument &apos;total-(na+nb+nc)&apos; to function pow is always 0. It does not matter what value &apos;total&apos; has." cwe="570" file0="derived/cpp/qwen/gen_3/00002_3/0277_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp">
+            <location file="derived/cpp/qwen/gen_3/00002_3/0277_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp" line="33" column="52" info="Argument &apos;total-(na+nb+nc)&apos; to function pow is always 0. It does not matter what value &apos;total&apos; has."/>
+            <location file="derived/cpp/qwen/gen_3/00002_3/0277_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp" line="14" column="36" info="&apos;total&apos; is assigned value &apos;na+nb+nc&apos; here."/>
+        </error>
+    </errors>
+</results>

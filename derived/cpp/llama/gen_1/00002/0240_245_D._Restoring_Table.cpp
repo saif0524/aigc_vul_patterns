@@ -1,0 +1,36 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+
+    vector<vector<int>> b(n, vector<int>(n));
+
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < n; ++j) {
+            cin >> b[i][j];
+        }
+    }
+
+    vector<int> a(n);
+
+    for (int i = 0; i < n; ++i) {
+        a[i] = 0;
+        for (int j = 0; j < n; ++j) {
+            if (j != i) {
+                a[i] |= b[i][j];
+            }
+        }
+    }
+
+    for (int i = 0; i < n; ++i) {
+        cout << a[i] << " ";
+    }
+
+    return 0;
+}

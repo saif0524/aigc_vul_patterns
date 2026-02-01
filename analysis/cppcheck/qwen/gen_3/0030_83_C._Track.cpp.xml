@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;x&apos; is assigned an expression that holds the same value." verbose="Variable &apos;x&apos; is assigned an expression that holds the same value." cwe="563" file0="derived/cpp/qwen/gen_3/00001_3/0030_83_C._Track.cpp">
+            <location file="derived/cpp/qwen/gen_3/00001_3/0030_83_C._Track.cpp" line="109" column="9"/>
+            <location file="derived/cpp/qwen/gen_3/00001_3/0030_83_C._Track.cpp" line="95" column="26" info="Assuming container is not empty"/>
+            <location file="derived/cpp/qwen/gen_3/00001_3/0030_83_C._Track.cpp" line="91" column="15" info="x is assigned &apos;end.first&apos; here."/>
+            <symbol>x</symbol>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;y&apos; is assigned an expression that holds the same value." verbose="Variable &apos;y&apos; is assigned an expression that holds the same value." cwe="563" file0="derived/cpp/qwen/gen_3/00001_3/0030_83_C._Track.cpp">
+            <location file="derived/cpp/qwen/gen_3/00001_3/0030_83_C._Track.cpp" line="110" column="9"/>
+            <location file="derived/cpp/qwen/gen_3/00001_3/0030_83_C._Track.cpp" line="95" column="26" info="Assuming container is not empty"/>
+            <location file="derived/cpp/qwen/gen_3/00001_3/0030_83_C._Track.cpp" line="92" column="15" info="y is assigned &apos;end.second&apos; here."/>
+            <symbol>y</symbol>
+        </error>
+        <error id="constVariable" severity="style" msg="Variable &apos;dx&apos; can be declared as const array" verbose="Variable &apos;dx&apos; can be declared as const array" cwe="398" file0="derived/cpp/qwen/gen_3/00001_3/0030_83_C._Track.cpp">
+            <location file="derived/cpp/qwen/gen_3/00001_3/0030_83_C._Track.cpp" line="36" column="9" info="Variable &apos;dx&apos; can be declared as const array"/>
+            <symbol>dx</symbol>
+        </error>
+        <error id="constVariable" severity="style" msg="Variable &apos;dy&apos; can be declared as const array" verbose="Variable &apos;dy&apos; can be declared as const array" cwe="398" file0="derived/cpp/qwen/gen_3/00001_3/0030_83_C._Track.cpp">
+            <location file="derived/cpp/qwen/gen_3/00001_3/0030_83_C._Track.cpp" line="37" column="9" info="Variable &apos;dy&apos; can be declared as const array"/>
+            <symbol>dy</symbol>
+        </error>
+        <error id="constVariable" severity="style" msg="Variable &apos;moves&apos; can be declared as const array" verbose="Variable &apos;moves&apos; can be declared as const array" cwe="398" file0="derived/cpp/qwen/gen_3/00001_3/0030_83_C._Track.cpp">
+            <location file="derived/cpp/qwen/gen_3/00001_3/0030_83_C._Track.cpp" line="38" column="10" info="Variable &apos;moves&apos; can be declared as const array"/>
+            <symbol>moves</symbol>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: steps" verbose="Unused variable: steps" cwe="563" file0="derived/cpp/qwen/gen_3/00001_3/0030_83_C._Track.cpp">
+            <location file="derived/cpp/qwen/gen_3/00001_3/0030_83_C._Track.cpp" line="108" column="32"/>
+            <symbol>steps</symbol>
+        </error>
+    </errors>
+</results>

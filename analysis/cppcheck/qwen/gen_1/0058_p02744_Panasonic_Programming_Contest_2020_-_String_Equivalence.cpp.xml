@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="stlFindInsert" severity="performance" msg="Searching before insertion is not necessary. Instead of &apos;mapping[c]=nextChar++&apos; consider using &apos;mapping.try_emplace(c, nextChar++);&apos;." verbose="Searching before insertion is not necessary. Instead of &apos;mapping[c]=nextChar++&apos; consider using &apos;mapping.try_emplace(c, nextChar++);&apos;." cwe="398" file0="derived/cpp/qwen/gen_1/00000/0058_p02744_Panasonic_Programming_Contest_2020_-_String_Equivalence.cpp">
+            <location file="derived/cpp/qwen/gen_1/00000/0058_p02744_Panasonic_Programming_Contest_2020_-_String_Equivalence.cpp" line="21" column="34"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::any_of algorithm instead of a raw loop." verbose="Consider using std::any_of algorithm instead of a raw loop." cwe="398" file0="derived/cpp/qwen/gen_1/00000/0058_p02744_Panasonic_Programming_Contest_2020_-_String_Equivalence.cpp">
+            <location file="derived/cpp/qwen/gen_1/00000/0058_p02744_Panasonic_Programming_Contest_2020_-_String_Equivalence.cpp" line="10" column="0"/>
+        </error>
+    </errors>
+</results>

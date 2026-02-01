@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;remainingX&apos; can be reduced." verbose="The scope of the variable &apos;remainingX&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="derived/cpp/llama/gen_2/00001_2/0102_p03371_AtCoder_Beginner_Contest_095_-_Half_and_Half.cpp">
+            <location file="derived/cpp/llama/gen_2/00001_2/0102_p03371_AtCoder_Beginner_Contest_095_-_Half_and_Half.cpp" line="10" column="9"/>
+            <symbol>remainingX</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;remainingY&apos; can be reduced." verbose="The scope of the variable &apos;remainingY&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="derived/cpp/llama/gen_2/00001_2/0102_p03371_AtCoder_Beginner_Contest_095_-_Half_and_Half.cpp">
+            <location file="derived/cpp/llama/gen_2/00001_2/0102_p03371_AtCoder_Beginner_Contest_095_-_Half_and_Half.cpp" line="11" column="9"/>
+            <symbol>remainingY</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;k&apos; is assigned a value that is never used." verbose="Variable &apos;k&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/llama/gen_2/00001_2/0102_p03371_AtCoder_Beginner_Contest_095_-_Half_and_Half.cpp">
+            <location file="derived/cpp/llama/gen_2/00001_2/0102_p03371_AtCoder_Beginner_Contest_095_-_Half_and_Half.cpp" line="24" column="11"/>
+            <symbol>k</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;k&apos; is assigned a value that is never used." verbose="Variable &apos;k&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/llama/gen_2/00001_2/0102_p03371_AtCoder_Beginner_Contest_095_-_Half_and_Half.cpp">
+            <location file="derived/cpp/llama/gen_2/00001_2/0102_p03371_AtCoder_Beginner_Contest_095_-_Half_and_Half.cpp" line="24" column="9"/>
+            <symbol>k</symbol>
+        </error>
+    </errors>
+</results>

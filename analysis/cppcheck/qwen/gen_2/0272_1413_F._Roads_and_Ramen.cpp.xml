@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="incompleteArrayFill" severity="portability" msg="Array &apos;vis&apos; might be filled incompletely. Did you forget to multiply the size given to &apos;memset()&apos; with &apos;sizeof(*vis)&apos;?" verbose="The array &apos;vis&apos; is filled incompletely. The function &apos;memset()&apos; needs the size given in bytes, but the type &apos;bool&apos; is larger than 1 on some platforms. Did you forget to multiply the size with &apos;sizeof(*vis)&apos;?" cwe="131" inconclusive="true" file0="derived/cpp/qwen/gen_2/00000_2/0272_1413_F._Roads_and_Ramen.cpp">
+            <location file="derived/cpp/qwen/gen_2/00000_2/0272_1413_F._Roads_and_Ramen.cpp" line="26" column="5"/>
+            <symbol>vis</symbol>
+            <symbol>memset</symbol>
+        </error>
+        <error id="incompleteArrayFill" severity="portability" msg="Array &apos;vis&apos; might be filled incompletely. Did you forget to multiply the size given to &apos;memset()&apos; with &apos;sizeof(*vis)&apos;?" verbose="The array &apos;vis&apos; is filled incompletely. The function &apos;memset()&apos; needs the size given in bytes, but the type &apos;bool&apos; is larger than 1 on some platforms. Did you forget to multiply the size with &apos;sizeof(*vis)&apos;?" cwe="131" inconclusive="true" file0="derived/cpp/qwen/gen_2/00000_2/0272_1413_F._Roads_and_Ramen.cpp">
+            <location file="derived/cpp/qwen/gen_2/00000_2/0272_1413_F._Roads_and_Ramen.cpp" line="29" column="5"/>
+            <symbol>vis</symbol>
+            <symbol>memset</symbol>
+        </error>
+        <error id="constVariableReference" severity="style" msg="Variable &apos;e&apos; can be declared as reference to const" verbose="Variable &apos;e&apos; can be declared as reference to const" cwe="398" file0="derived/cpp/qwen/gen_2/00000_2/0272_1413_F._Roads_and_Ramen.cpp">
+            <location file="derived/cpp/qwen/gen_2/00000_2/0272_1413_F._Roads_and_Ramen.cpp" line="19" column="16" info="Variable &apos;e&apos; can be declared as reference to const"/>
+            <symbol>e</symbol>
+        </error>
+        <error id="constVariableReference" severity="style" msg="Variable &apos;e&apos; can be declared as reference to const" verbose="Variable &apos;e&apos; can be declared as reference to const" cwe="398" file0="derived/cpp/qwen/gen_2/00000_2/0272_1413_F._Roads_and_Ramen.cpp">
+            <location file="derived/cpp/qwen/gen_2/00000_2/0272_1413_F._Roads_and_Ramen.cpp" line="36" column="16" info="Variable &apos;e&apos; can be declared as reference to const"/>
+            <symbol>e</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::find_if algorithm instead of a raw loop." verbose="Consider using std::find_if algorithm instead of a raw loop." cwe="398" file0="derived/cpp/qwen/gen_2/00000_2/0272_1413_F._Roads_and_Ramen.cpp">
+            <location file="derived/cpp/qwen/gen_2/00000_2/0272_1413_F._Roads_and_Ramen.cpp" line="60" column="30"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::find_if algorithm instead of a raw loop." verbose="Consider using std::find_if algorithm instead of a raw loop." cwe="398" file0="derived/cpp/qwen/gen_2/00000_2/0272_1413_F._Roads_and_Ramen.cpp">
+            <location file="derived/cpp/qwen/gen_2/00000_2/0272_1413_F._Roads_and_Ramen.cpp" line="66" column="30"/>
+        </error>
+    </errors>
+</results>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="oppositeInnerCondition" severity="warning" msg="Opposite inner &apos;if&apos; condition leads to a dead code block." verbose="Opposite inner &apos;if&apos; condition leads to a dead code block (outer condition is &apos;u&lt;=n&apos; and inner condition is &apos;v_min&gt;v_max&apos;)." cwe="398" file0="derived/cpp/gemma/gen_1/00001/0119_p03849_AtCoder_Regular_Contest_066_-_Xor_Sum.cpp">
+            <location file="derived/cpp/gemma/gen_1/00001/0119_p03849_AtCoder_Regular_Contest_066_-_Xor_Sum.cpp" line="48" column="15" info="opposite inner condition: v_min&gt;v_max"/>
+            <location file="derived/cpp/gemma/gen_1/00001/0119_p03849_AtCoder_Regular_Contest_066_-_Xor_Sum.cpp" line="45" column="27" info="outer condition: u&lt;=n"/>
+            <location file="derived/cpp/gemma/gen_1/00001/0119_p03849_AtCoder_Regular_Contest_066_-_Xor_Sum.cpp" line="46" column="23" info="&apos;v_max&apos; is assigned value &apos;n&apos; here."/>
+            <location file="derived/cpp/gemma/gen_1/00001/0119_p03849_AtCoder_Regular_Contest_066_-_Xor_Sum.cpp" line="47" column="23" info="&apos;v_min&apos; is assigned value &apos;u&apos; here."/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;ans&apos; is assigned a value that is never used." verbose="Variable &apos;ans&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_1/00001/0119_p03849_AtCoder_Regular_Contest_066_-_Xor_Sum.cpp">
+            <location file="derived/cpp/gemma/gen_1/00001/0119_p03849_AtCoder_Regular_Contest_066_-_Xor_Sum.cpp" line="73" column="17"/>
+            <symbol>ans</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;ans&apos; is assigned a value that is never used." verbose="Variable &apos;ans&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_1/00001/0119_p03849_AtCoder_Regular_Contest_066_-_Xor_Sum.cpp">
+            <location file="derived/cpp/gemma/gen_1/00001/0119_p03849_AtCoder_Regular_Contest_066_-_Xor_Sum.cpp" line="73" column="13"/>
+            <symbol>ans</symbol>
+        </error>
+    </errors>
+</results>

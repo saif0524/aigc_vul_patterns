@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;map&apos; can be declared as reference to const" verbose="Parameter &apos;map&apos; can be declared as reference to const" cwe="398" file0="derived/cpp/llama/gen_2/00001_2/0189_p00156_Moats_around_the_Castle.cpp">
+            <location file="derived/cpp/llama/gen_2/00001_2/0189_p00156_Moats_around_the_Castle.cpp" line="7" column="40" info="Parameter &apos;map&apos; can be declared as reference to const"/>
+            <symbol>map</symbol>
+        </error>
+        <error id="constVariable" severity="style" msg="Variable &apos;dx&apos; can be declared as const array" verbose="Variable &apos;dx&apos; can be declared as const array" cwe="398" file0="derived/cpp/llama/gen_2/00001_2/0189_p00156_Moats_around_the_Castle.cpp">
+            <location file="derived/cpp/llama/gen_2/00001_2/0189_p00156_Moats_around_the_Castle.cpp" line="25" column="13" info="Variable &apos;dx&apos; can be declared as const array"/>
+            <symbol>dx</symbol>
+        </error>
+        <error id="constVariable" severity="style" msg="Variable &apos;dy&apos; can be declared as const array" verbose="Variable &apos;dy&apos; can be declared as const array" cwe="398" file0="derived/cpp/llama/gen_2/00001_2/0189_p00156_Moats_around_the_Castle.cpp">
+            <location file="derived/cpp/llama/gen_2/00001_2/0189_p00156_Moats_around_the_Castle.cpp" line="26" column="13" info="Variable &apos;dy&apos; can be declared as const array"/>
+            <symbol>dy</symbol>
+        </error>
+        <error id="negativeContainerIndex" severity="warning" msg="Array index -1 is out of bounds." verbose="Array index -1 is out of bounds." cwe="786" inconclusive="true" file0="derived/cpp/llama/gen_2/00001_2/0189_p00156_Moats_around_the_Castle.cpp">
+            <location file="derived/cpp/llama/gen_2/00001_2/0189_p00156_Moats_around_the_Castle.cpp" line="13" column="5" info="Negative array index"/>
+            <location file="derived/cpp/llama/gen_2/00001_2/0189_p00156_Moats_around_the_Castle.cpp" line="74" column="28" info="Calling function &apos;bfs&apos;, 5th argument &apos;sy&apos; value is -1"/>
+            <location file="derived/cpp/llama/gen_2/00001_2/0189_p00156_Moats_around_the_Castle.cpp" line="62" column="27" info="Assuming condition is false"/>
+            <location file="derived/cpp/llama/gen_2/00001_2/0189_p00156_Moats_around_the_Castle.cpp" line="61" column="28" info="Assignment &apos;sy=-1&apos;, assigned value is -1"/>
+        </error>
+    </errors>
+</results>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;overlap&apos; can be reduced." verbose="The scope of the variable &apos;overlap&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="derived/cpp/llama/gen_2/00000_2/0215_p02876_AtCoder_Grand_Contest_040_-_Balance_Beam.cpp">
+            <location file="derived/cpp/llama/gen_2/00000_2/0215_p02876_AtCoder_Grand_Contest_040_-_Balance_Beam.cpp" line="41" column="24"/>
+            <symbol>overlap</symbol>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;a&apos; can be declared as reference to const" verbose="Parameter &apos;a&apos; can be declared as reference to const" cwe="398" file0="derived/cpp/llama/gen_2/00000_2/0215_p02876_AtCoder_Grand_Contest_040_-_Balance_Beam.cpp">
+            <location file="derived/cpp/llama/gen_2/00000_2/0215_p02876_AtCoder_Grand_Contest_040_-_Balance_Beam.cpp" line="18" column="47" info="Parameter &apos;a&apos; can be declared as reference to const"/>
+            <symbol>a</symbol>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;b&apos; can be declared as reference to const" verbose="Parameter &apos;b&apos; can be declared as reference to const" cwe="398" file0="derived/cpp/llama/gen_2/00000_2/0215_p02876_AtCoder_Grand_Contest_040_-_Balance_Beam.cpp">
+            <location file="derived/cpp/llama/gen_2/00000_2/0215_p02876_AtCoder_Grand_Contest_040_-_Balance_Beam.cpp" line="18" column="56" info="Parameter &apos;b&apos; can be declared as reference to const"/>
+            <symbol>b</symbol>
+        </error>
+        <error id="constVariableReference" severity="style" msg="Variable &apos;beam&apos; can be declared as reference to const" verbose="Variable &apos;beam&apos; can be declared as reference to const" cwe="398" file0="derived/cpp/llama/gen_2/00000_2/0215_p02876_AtCoder_Grand_Contest_040_-_Balance_Beam.cpp">
+            <location file="derived/cpp/llama/gen_2/00000_2/0215_p02876_AtCoder_Grand_Contest_040_-_Balance_Beam.cpp" line="22" column="16" info="Variable &apos;beam&apos; can be declared as reference to const"/>
+            <symbol>beam</symbol>
+        </error>
+        <error id="constVariableReference" severity="style" msg="Variable &apos;beam&apos; can be declared as reference to const" verbose="Variable &apos;beam&apos; can be declared as reference to const" cwe="398" file0="derived/cpp/llama/gen_2/00000_2/0215_p02876_AtCoder_Grand_Contest_040_-_Balance_Beam.cpp">
+            <location file="derived/cpp/llama/gen_2/00000_2/0215_p02876_AtCoder_Grand_Contest_040_-_Balance_Beam.cpp" line="26" column="16" info="Variable &apos;beam&apos; can be declared as reference to const"/>
+            <symbol>beam</symbol>
+        </error>
+        <error id="constVariableReference" severity="style" msg="Variable &apos;beam&apos; can be declared as reference to const" verbose="Variable &apos;beam&apos; can be declared as reference to const" cwe="398" file0="derived/cpp/llama/gen_2/00000_2/0215_p02876_AtCoder_Grand_Contest_040_-_Balance_Beam.cpp">
+            <location file="derived/cpp/llama/gen_2/00000_2/0215_p02876_AtCoder_Grand_Contest_040_-_Balance_Beam.cpp" line="55" column="16" info="Variable &apos;beam&apos; can be declared as reference to const"/>
+            <symbol>beam</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::accumulate algorithm instead of a raw loop." verbose="Consider using std::accumulate algorithm instead of a raw loop." cwe="398" file0="derived/cpp/llama/gen_2/00000_2/0215_p02876_AtCoder_Grand_Contest_040_-_Balance_Beam.cpp">
+            <location file="derived/cpp/llama/gen_2/00000_2/0215_p02876_AtCoder_Grand_Contest_040_-_Balance_Beam.cpp" line="23" column="16"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::accumulate algorithm instead of a raw loop." verbose="Consider using std::accumulate algorithm instead of a raw loop." cwe="398" file0="derived/cpp/llama/gen_2/00000_2/0215_p02876_AtCoder_Grand_Contest_040_-_Balance_Beam.cpp">
+            <location file="derived/cpp/llama/gen_2/00000_2/0215_p02876_AtCoder_Grand_Contest_040_-_Balance_Beam.cpp" line="27" column="16"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::accumulate algorithm instead of a raw loop." verbose="Consider using std::accumulate algorithm instead of a raw loop." cwe="398" file0="derived/cpp/llama/gen_2/00000_2/0215_p02876_AtCoder_Grand_Contest_040_-_Balance_Beam.cpp">
+            <location file="derived/cpp/llama/gen_2/00000_2/0215_p02876_AtCoder_Grand_Contest_040_-_Balance_Beam.cpp" line="56" column="20"/>
+        </error>
+    </errors>
+</results>

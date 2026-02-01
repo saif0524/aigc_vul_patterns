@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;found&apos; can be reduced." verbose="The scope of the variable &apos;found&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="derived/cpp/gemma/gen_2/00001_2/0060_p02365_Minimum-Cost_Arborescence.cpp">
+            <location file="derived/cpp/gemma/gen_2/00001_2/0060_p02365_Minimum-Cost_Arborescence.cpp" line="115" column="14"/>
+            <symbol>found</symbol>
+        </error>
+        <error id="constVariableReference" severity="style" msg="Variable &apos;edge&apos; can be declared as reference to const" verbose="Variable &apos;edge&apos; can be declared as reference to const" cwe="398" file0="derived/cpp/gemma/gen_2/00001_2/0060_p02365_Minimum-Cost_Arborescence.cpp">
+            <location file="derived/cpp/gemma/gen_2/00001_2/0060_p02365_Minimum-Cost_Arborescence.cpp" line="71" column="20" info="Variable &apos;edge&apos; can be declared as reference to const"/>
+            <symbol>edge</symbol>
+        </error>
+        <error id="constVariableReference" severity="style" msg="Variable &apos;edge&apos; can be declared as reference to const" verbose="Variable &apos;edge&apos; can be declared as reference to const" cwe="398" file0="derived/cpp/gemma/gen_2/00001_2/0060_p02365_Minimum-Cost_Arborescence.cpp">
+            <location file="derived/cpp/gemma/gen_2/00001_2/0060_p02365_Minimum-Cost_Arborescence.cpp" line="120" column="24" info="Variable &apos;edge&apos; can be declared as reference to const"/>
+            <symbol>edge</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::copy_if algorithm instead of a raw loop." verbose="Consider using std::copy_if algorithm instead of a raw loop." cwe="398" file0="derived/cpp/gemma/gen_2/00001_2/0060_p02365_Minimum-Cost_Arborescence.cpp">
+            <location file="derived/cpp/gemma/gen_2/00001_2/0060_p02365_Minimum-Cost_Arborescence.cpp" line="32" column="14"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::any_of algorithm instead of a raw loop." verbose="Consider using std::any_of algorithm instead of a raw loop." cwe="398" file0="derived/cpp/gemma/gen_2/00001_2/0060_p02365_Minimum-Cost_Arborescence.cpp">
+            <location file="derived/cpp/gemma/gen_2/00001_2/0060_p02365_Minimum-Cost_Arborescence.cpp" line="84" column="27"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;parent&apos; is assigned a value that is never used." verbose="Variable &apos;parent&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_2/00001_2/0060_p02365_Minimum-Cost_Arborescence.cpp">
+            <location file="derived/cpp/gemma/gen_2/00001_2/0060_p02365_Minimum-Cost_Arborescence.cpp" line="19" column="23"/>
+            <symbol>parent</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;visited&apos; is assigned a value that is never used." verbose="Variable &apos;visited&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_2/00001_2/0060_p02365_Minimum-Cost_Arborescence.cpp">
+            <location file="derived/cpp/gemma/gen_2/00001_2/0060_p02365_Minimum-Cost_Arborescence.cpp" line="21" column="25"/>
+            <symbol>visited</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;used&apos; is assigned a value that is never used." verbose="Variable &apos;used&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_2/00001_2/0060_p02365_Minimum-Cost_Arborescence.cpp">
+            <location file="derived/cpp/gemma/gen_2/00001_2/0060_p02365_Minimum-Cost_Arborescence.cpp" line="44" column="22"/>
+            <symbol>used</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;in_degree_copy&apos; is assigned a value that is never used." verbose="Variable &apos;in_degree_copy&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_2/00001_2/0060_p02365_Minimum-Cost_Arborescence.cpp">
+            <location file="derived/cpp/gemma/gen_2/00001_2/0060_p02365_Minimum-Cost_Arborescence.cpp" line="48" column="32"/>
+            <symbol>in_degree_copy</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;found&apos; is assigned a value that is never used." verbose="Variable &apos;found&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_2/00001_2/0060_p02365_Minimum-Cost_Arborescence.cpp">
+            <location file="derived/cpp/gemma/gen_2/00001_2/0060_p02365_Minimum-Cost_Arborescence.cpp" line="115" column="20"/>
+            <symbol>found</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;found&apos; is assigned a value that is never used." verbose="Variable &apos;found&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_2/00001_2/0060_p02365_Minimum-Cost_Arborescence.cpp">
+            <location file="derived/cpp/gemma/gen_2/00001_2/0060_p02365_Minimum-Cost_Arborescence.cpp" line="135" column="19"/>
+            <symbol>found</symbol>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: order" verbose="Unused variable: order" cwe="563" file0="derived/cpp/gemma/gen_2/00001_2/0060_p02365_Minimum-Cost_Arborescence.cpp">
+            <location file="derived/cpp/gemma/gen_2/00001_2/0060_p02365_Minimum-Cost_Arborescence.cpp" line="43" column="17"/>
+            <symbol>order</symbol>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: top_order" verbose="Unused variable: top_order" cwe="563" file0="derived/cpp/gemma/gen_2/00001_2/0060_p02365_Minimum-Cost_Arborescence.cpp">
+            <location file="derived/cpp/gemma/gen_2/00001_2/0060_p02365_Minimum-Cost_Arborescence.cpp" line="46" column="17"/>
+            <symbol>top_order</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;in_degree_copy&apos; is assigned a value that is never used." verbose="Variable &apos;in_degree_copy&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_2/00001_2/0060_p02365_Minimum-Cost_Arborescence.cpp">
+            <location file="derived/cpp/gemma/gen_2/00001_2/0060_p02365_Minimum-Cost_Arborescence.cpp" line="48" column="17"/>
+            <symbol>in_degree_copy</symbol>
+        </error>
+    </errors>
+</results>

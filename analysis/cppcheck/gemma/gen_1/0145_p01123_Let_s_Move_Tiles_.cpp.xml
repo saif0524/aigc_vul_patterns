@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="oppositeInnerCondition" severity="warning" msg="Opposite inner &apos;if&apos; condition leads to a dead code block." verbose="Opposite inner &apos;if&apos; condition leads to a dead code block (outer condition is &apos;seq[j]!=&apos;)&apos;&apos; and inner condition is &apos;seq[j]==&apos;)&apos;&apos;)." cwe="398" file0="derived/cpp/gemma/gen_1/00000/0145_p01123_Let_s_Move_Tiles_.cpp">
+            <location file="derived/cpp/gemma/gen_1/00000/0145_p01123_Let_s_Move_Tiles_.cpp" line="28" column="39" info="opposite inner condition: seq[j]==&apos;)&apos;"/>
+            <location file="derived/cpp/gemma/gen_1/00000/0145_p01123_Let_s_Move_Tiles_.cpp" line="25" column="51" info="outer condition: seq[j]!=&apos;)&apos;"/>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;i&apos; shadows outer variable" verbose="Local variable &apos;i&apos; shadows outer variable" cwe="398" file0="derived/cpp/gemma/gen_1/00000/0145_p01123_Let_s_Move_Tiles_.cpp">
+            <location file="derived/cpp/gemma/gen_1/00000/0145_p01123_Let_s_Move_Tiles_.cpp" line="78" column="18" info="Shadow variable"/>
+            <location file="derived/cpp/gemma/gen_1/00000/0145_p01123_Let_s_Move_Tiles_.cpp" line="20" column="13" info="Shadowed declaration"/>
+            <symbol>i</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;i&apos; shadows outer variable" verbose="Local variable &apos;i&apos; shadows outer variable" cwe="398" file0="derived/cpp/gemma/gen_1/00000/0145_p01123_Let_s_Move_Tiles_.cpp">
+            <location file="derived/cpp/gemma/gen_1/00000/0145_p01123_Let_s_Move_Tiles_.cpp" line="90" column="18" info="Shadow variable"/>
+            <location file="derived/cpp/gemma/gen_1/00000/0145_p01123_Let_s_Move_Tiles_.cpp" line="20" column="13" info="Shadowed declaration"/>
+            <symbol>i</symbol>
+        </error>
+        <error id="constVariableReference" severity="style" msg="Variable &apos;pos&apos; can be declared as reference to const" verbose="Variable &apos;pos&apos; can be declared as reference to const" cwe="398" file0="derived/cpp/gemma/gen_1/00000/0145_p01123_Let_s_Move_Tiles_.cpp">
+            <location file="derived/cpp/gemma/gen_1/00000/0145_p01123_Let_s_Move_Tiles_.cpp" line="59" column="24" info="Variable &apos;pos&apos; can be declared as reference to const"/>
+            <symbol>pos</symbol>
+        </error>
+        <error id="constVariableReference" severity="style" msg="Variable &apos;pos&apos; can be declared as reference to const" verbose="Variable &apos;pos&apos; can be declared as reference to const" cwe="398" file0="derived/cpp/gemma/gen_1/00000/0145_p01123_Let_s_Move_Tiles_.cpp">
+            <location file="derived/cpp/gemma/gen_1/00000/0145_p01123_Let_s_Move_Tiles_.cpp" line="82" column="20" info="Variable &apos;pos&apos; can be declared as reference to const"/>
+            <symbol>pos</symbol>
+        </error>
+    </errors>
+</results>

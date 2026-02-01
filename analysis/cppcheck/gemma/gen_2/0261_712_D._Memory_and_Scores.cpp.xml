@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;t==1&apos; is always false" verbose="Condition &apos;t==1&apos; is always false" cwe="570" file0="derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp">
+            <location file="derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp" line="25" column="16" info="Condition &apos;t==1&apos; is always false"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;t==1&apos; is always false" verbose="Condition &apos;t==1&apos; is always false" cwe="570" file0="derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp">
+            <location file="derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp" line="28" column="16" info="Condition &apos;t==1&apos; is always false"/>
+        </error>
+        <error id="duplicateAssignExpression" severity="style" msg="Same expression used in consecutive assignments of &apos;mem_val&apos; and &apos;lex_val&apos;." verbose="Finding variables &apos;mem_val&apos; and &apos;lex_val&apos; that are assigned the same expression is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" file0="derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp">
+            <location file="derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp" line="116" column="17"/>
+            <location file="derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp" line="117" column="17"/>
+        </error>
+        <error id="redundantInitialization" severity="style" msg="Redundant initialization for &apos;mem_val&apos;. The initialized value is overwritten before it is read." verbose="Redundant initialization for &apos;mem_val&apos;. The initialized value is overwritten before it is read." cwe="563" file0="derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp">
+            <location file="derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp" line="120" column="25" info="mem_val is overwritten"/>
+            <location file="derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp" line="116" column="25" info="mem_val is initialized"/>
+            <symbol>mem_val</symbol>
+        </error>
+        <error id="redundantInitialization" severity="style" msg="Redundant initialization for &apos;lex_val&apos;. The initialized value is overwritten before it is read." verbose="Redundant initialization for &apos;lex_val&apos;. The initialized value is overwritten before it is read." cwe="563" file0="derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp">
+            <location file="derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp" line="127" column="25" info="lex_val is overwritten"/>
+            <location file="derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp" line="117" column="25" info="lex_val is initialized"/>
+            <symbol>lex_val</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;mem_score&apos; is assigned a value that is never used." verbose="Variable &apos;mem_score&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp">
+            <location file="derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp" line="52" column="27"/>
+            <symbol>mem_score</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;favorable_games&apos; is assigned a value that is never used." verbose="Variable &apos;favorable_games&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp">
+            <location file="derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp" line="64" column="31"/>
+            <symbol>favorable_games</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;mem_score&apos; is assigned a value that is never used." verbose="Variable &apos;mem_score&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp">
+            <location file="derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp" line="52" column="17"/>
+            <symbol>mem_score</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;favorable_games&apos; is assigned a value that is never used." verbose="Variable &apos;favorable_games&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp">
+            <location file="derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp" line="64" column="15"/>
+            <symbol>favorable_games</symbol>
+        </error>
+    </errors>
+</results>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="duplicateCondition" severity="style" msg="The if condition is the same as the previous if condition" verbose="The if condition is the same as the previous if condition" cwe="398" file0="derived/cpp/gemma/gen_3/00002_3/0144_602_C._The_Two_Routes.cpp">
+            <location file="derived/cpp/gemma/gen_3/00002_3/0144_602_C._The_Two_Routes.cpp" line="128" column="20" info="Second condition"/>
+            <location file="derived/cpp/gemma/gen_3/00002_3/0144_602_C._The_Two_Routes.cpp" line="114" column="19" info="First condition"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;train_dist[n]!=-1&apos; is always true" verbose="Condition &apos;train_dist[n]!=-1&apos; is always true" cwe="571" file0="derived/cpp/gemma/gen_3/00002_3/0144_602_C._The_Two_Routes.cpp">
+            <location file="derived/cpp/gemma/gen_3/00002_3/0144_602_C._The_Two_Routes.cpp" line="71" column="25" info="Condition &apos;train_dist[n]!=-1&apos; is always true"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;bus_dist[n]!=-1&apos; is always true" verbose="Condition &apos;bus_dist[n]!=-1&apos; is always true" cwe="571" file0="derived/cpp/gemma/gen_3/00002_3/0144_602_C._The_Two_Routes.cpp">
+            <location file="derived/cpp/gemma/gen_3/00002_3/0144_602_C._The_Two_Routes.cpp" line="71" column="46" info="Condition &apos;bus_dist[n]!=-1&apos; is always true"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;i!=n&apos; is always true" verbose="Condition &apos;i!=n&apos; is always true" cwe="571" file0="derived/cpp/gemma/gen_3/00002_3/0144_602_C._The_Two_Routes.cpp">
+            <location file="derived/cpp/gemma/gen_3/00002_3/0144_602_C._The_Two_Routes.cpp" line="77" column="42" info="Condition &apos;i!=n&apos; is always true"/>
+            <location file="derived/cpp/gemma/gen_3/00002_3/0144_602_C._The_Two_Routes.cpp" line="75" column="27" info="Assuming that condition &apos;i&lt;n&apos; is not redundant"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::any_of algorithm instead of a raw loop." verbose="Consider using std::any_of algorithm instead of a raw loop." cwe="398" file0="derived/cpp/gemma/gen_3/00002_3/0144_602_C._The_Two_Routes.cpp">
+            <location file="derived/cpp/gemma/gen_3/00002_3/0144_602_C._The_Two_Routes.cpp" line="25" column="36"/>
+        </error>
+    </errors>
+</results>

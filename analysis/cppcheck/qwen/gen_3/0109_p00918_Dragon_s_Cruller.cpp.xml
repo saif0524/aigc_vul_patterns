@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::find_if algorithm instead of a raw loop." verbose="Consider using std::find_if algorithm instead of a raw loop." cwe="398" file0="derived/cpp/qwen/gen_3/00002_3/0109_p00918_Dragon_s_Cruller.cpp">
+            <location file="derived/cpp/qwen/gen_3/00002_3/0109_p00918_Dragon_s_Cruller.cpp" line="43" column="0"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::accumulate algorithm instead of a raw loop." verbose="Consider using std::accumulate algorithm instead of a raw loop." cwe="398" file0="derived/cpp/qwen/gen_3/00002_3/0109_p00918_Dragon_s_Cruller.cpp">
+            <location file="derived/cpp/qwen/gen_3/00002_3/0109_p00918_Dragon_s_Cruller.cpp" line="51" column="14"/>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: start.empty" verbose="Uninitialized variable: start.empty" cwe="457" file0="derived/cpp/qwen/gen_3/00002_3/0109_p00918_Dragon_s_Cruller.cpp">
+            <location file="derived/cpp/qwen/gen_3/00002_3/0109_p00918_Dragon_s_Cruller.cpp" line="58" column="13"/>
+            <location file="derived/cpp/qwen/gen_3/00002_3/0109_p00918_Dragon_s_Cruller.cpp" line="114" column="23" info="Calling function &apos;solve&apos;, 1st argument &apos;start&apos; value is &lt;Uninit&gt;"/>
+            <location file="derived/cpp/qwen/gen_3/00002_3/0109_p00918_Dragon_s_Cruller.cpp" line="104" column="19" info="Assuming condition is false"/>
+            <symbol>start</symbol>
+        </error>
+    </errors>
+</results>

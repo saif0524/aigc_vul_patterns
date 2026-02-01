@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="duplicateConditionalAssign" severity="style" msg="The statement &apos;if (a[root-1]!=root) a[root-1]=root&apos; is logically equivalent to &apos;a[root-1]=root&apos;." verbose="The statement &apos;if (a[root-1]!=root) a[root-1]=root&apos; is logically equivalent to &apos;a[root-1]=root&apos;." cwe="398" file0="derived/cpp/llama/gen_2/00002_2/0258_698_B._Fix_a_Tree.cpp">
+            <location file="derived/cpp/llama/gen_2/00002_2/0258_698_B._Fix_a_Tree.cpp" line="48" column="28" info="Condition &apos;a[root-1]!=root&apos; is redundant"/>
+            <location file="derived/cpp/llama/gen_2/00002_2/0258_698_B._Fix_a_Tree.cpp" line="49" column="29" info="Assignment &apos;a[root-1]=root&apos;"/>
+        </error>
+        <error id="duplicateExpression" severity="style" msg="Same expression on both sides of &apos;-&apos;." verbose="Finding the same expression on both sides of an operator is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" file0="derived/cpp/llama/gen_2/00002_2/0258_698_B._Fix_a_Tree.cpp">
+            <location file="derived/cpp/llama/gen_2/00002_2/0258_698_B._Fix_a_Tree.cpp" line="48" column="24"/>
+            <location file="derived/cpp/llama/gen_2/00002_2/0258_698_B._Fix_a_Tree.cpp" line="41" column="24" info="&apos;root&apos; is assigned value &apos;1&apos; here."/>
+        </error>
+        <error id="duplicateExpression" severity="style" msg="Same expression on both sides of &apos;-&apos;." verbose="Finding the same expression on both sides of an operator is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" file0="derived/cpp/llama/gen_2/00002_2/0258_698_B._Fix_a_Tree.cpp">
+            <location file="derived/cpp/llama/gen_2/00002_2/0258_698_B._Fix_a_Tree.cpp" line="49" column="24"/>
+            <location file="derived/cpp/llama/gen_2/00002_2/0258_698_B._Fix_a_Tree.cpp" line="41" column="24" info="&apos;root&apos; is assigned value &apos;1&apos; here."/>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;a[i]&apos; is assigned an expression that holds the same value." verbose="Variable &apos;a[i]&apos; is assigned an expression that holds the same value." cwe="563" file0="derived/cpp/llama/gen_2/00002_2/0258_698_B._Fix_a_Tree.cpp">
+            <location file="derived/cpp/llama/gen_2/00002_2/0258_698_B._Fix_a_Tree.cpp" line="44" column="22"/>
+            <location file="derived/cpp/llama/gen_2/00002_2/0258_698_B._Fix_a_Tree.cpp" line="43" column="26" info="Assuming that condition &apos;a[i]==root&apos; is not redundant"/>
+            <symbol>a[i]</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::find_if algorithm instead of a raw loop." verbose="Consider using std::find_if algorithm instead of a raw loop." cwe="398" file0="derived/cpp/llama/gen_2/00002_2/0258_698_B._Fix_a_Tree.cpp">
+            <location file="derived/cpp/llama/gen_2/00002_2/0258_698_B._Fix_a_Tree.cpp" line="43" column="35"/>
+        </error>
+    </errors>
+</results>

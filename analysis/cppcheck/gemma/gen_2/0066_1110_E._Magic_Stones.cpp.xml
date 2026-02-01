@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="stlFindInsert" severity="performance" msg="Searching before insertion is not necessary. Instead of &apos;visited[next_c]=true&apos; consider using &apos;visited.try_emplace(next_c, true);&apos;." verbose="Searching before insertion is not necessary. Instead of &apos;visited[next_c]=true&apos; consider using &apos;visited.try_emplace(next_c, true);&apos;." cwe="398" file0="derived/cpp/gemma/gen_2/00001_2/0066_1110_E._Magic_Stones.cpp">
+            <location file="derived/cpp/gemma/gen_2/00001_2/0066_1110_E._Magic_Stones.cpp" line="51" column="35"/>
+        </error>
+    </errors>
+</results>

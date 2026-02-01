@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="constVariableReference" severity="style" msg="Variable &apos;it&apos; can be declared as reference to const" verbose="Variable &apos;it&apos; can be declared as reference to const" cwe="398" file0="derived/cpp/llama/gen_1/00001/0290_802_I._Fake_News__hard_.cpp">
+            <location file="derived/cpp/llama/gen_1/00001/0290_802_I._Fake_News__hard_.cpp" line="25" column="20" info="Variable &apos;it&apos; can be declared as reference to const"/>
+            <symbol>it</symbol>
+        </error>
+        <error id="stlFindInsert" severity="performance" msg="Searching before insertion is not necessary. Instead of &apos;cnt[sub]=0&apos; consider using &apos;cnt.try_emplace(sub, 0);&apos;." verbose="Searching before insertion is not necessary. Instead of &apos;cnt[sub]=0&apos; consider using &apos;cnt.try_emplace(sub, 0);&apos;." cwe="398" file0="derived/cpp/llama/gen_1/00001/0290_802_I._Fake_News__hard_.cpp">
+            <location file="derived/cpp/llama/gen_1/00001/0290_802_I._Fake_News__hard_.cpp" line="19" column="32"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::accumulate algorithm instead of a raw loop." verbose="Consider using std::accumulate algorithm instead of a raw loop." cwe="398" file0="derived/cpp/llama/gen_1/00001/0290_802_I._Fake_News__hard_.cpp">
+            <location file="derived/cpp/llama/gen_1/00001/0290_802_I._Fake_News__hard_.cpp" line="26" column="17"/>
+        </error>
+    </errors>
+</results>

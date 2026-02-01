@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="duplicateExpression" severity="style" msg="Same expression &apos;pos[j].first&lt;=r&apos; found multiple times in chain of &apos;&amp;&amp;&apos; operators." verbose="Finding the same expression more than once in a condition is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" file0="derived/cpp/qwen/gen_3/00002_3/0001_848_C._Goodbye_Souvenir.cpp">
+            <location file="derived/cpp/qwen/gen_3/00002_3/0001_848_C._Goodbye_Souvenir.cpp" line="98" column="64"/>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;pos[x].first&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;pos[x].first&apos; is reassigned a value before the old one has been used." cwe="563" file0="derived/cpp/qwen/gen_3/00002_3/0001_848_C._Goodbye_Souvenir.cpp">
+            <location file="derived/cpp/qwen/gen_3/00002_3/0001_848_C._Goodbye_Souvenir.cpp" line="82" column="26" info="pos[x].first is overwritten"/>
+            <location file="derived/cpp/qwen/gen_3/00002_3/0001_848_C._Goodbye_Souvenir.cpp" line="73" column="30" info="pos[x].first is assigned"/>
+            <symbol>pos[x].first</symbol>
+        </error>
+    </errors>
+</results>

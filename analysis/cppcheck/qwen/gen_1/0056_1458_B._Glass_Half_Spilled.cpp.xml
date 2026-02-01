@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="constVariableReference" severity="style" msg="Variable &apos;x&apos; can be declared as reference to const" verbose="Variable &apos;x&apos; can be declared as reference to const" cwe="398" file0="derived/cpp/qwen/gen_1/00002/0056_1458_B._Glass_Half_Spilled.cpp">
+            <location file="derived/cpp/qwen/gen_1/00002/0056_1458_B._Glass_Half_Spilled.cpp" line="49" column="15" info="Variable &apos;x&apos; can be declared as reference to const"/>
+            <symbol>x</symbol>
+        </error>
+        <error id="containerOutOfBounds" severity="warning" msg="Either the condition &apos;heap.size()&gt;0&apos; is redundant or expression &apos;heap.front()&apos; causes access out of bounds." verbose="Either the condition &apos;heap.size()&gt;0&apos; is redundant or expression &apos;heap.front()&apos; causes access out of bounds." cwe="398" file0="derived/cpp/qwen/gen_1/00002/0056_1458_B._Glass_Half_Spilled.cpp">
+            <location file="derived/cpp/qwen/gen_1/00002/0056_1458_B._Glass_Half_Spilled.cpp" line="38" column="45" info="Access out of bounds"/>
+            <location file="derived/cpp/qwen/gen_1/00002/0056_1458_B._Glass_Half_Spilled.cpp" line="32" column="51" info="Assuming that condition &apos;heap.size()&gt;0&apos; is not redundant"/>
+            <symbol>heap</symbol>
+        </error>
+    </errors>
+</results>

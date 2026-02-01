@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="duplicateBranch" severity="style" msg="Found duplicate branches for &apos;if&apos; and &apos;else&apos;." verbose="Finding the same code in an &apos;if&apos; and related &apos;else&apos; branch is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" inconclusive="true" file0="derived/cpp/gemma/gen_1/00002/0208_317_B._Ants.cpp">
+            <location file="derived/cpp/gemma/gen_1/00002/0208_317_B._Ants.cpp" line="51" column="14"/>
+            <location file="derived/cpp/gemma/gen_1/00002/0208_317_B._Ants.cpp" line="53" column="9"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;ant_counts[{0,0}]&apos; is assigned a value that is never used." verbose="Variable &apos;ant_counts[{0,0}]&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_1/00002/0208_317_B._Ants.cpp">
+            <location file="derived/cpp/gemma/gen_1/00002/0208_317_B._Ants.cpp" line="11" column="22"/>
+            <symbol>ant_counts[{0,0}]</symbol>
+        </error>
+    </errors>
+</results>

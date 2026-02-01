@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="shadowFunction" severity="style" msg="Local variable &apos;tetrahedral&apos; shadows outer function" verbose="Local variable &apos;tetrahedral&apos; shadows outer function" cwe="398" file0="derived/cpp/llama/gen_3/00001_3/0140_p00748_Pollock_s_conjecture.cpp">
+            <location file="derived/cpp/llama/gen_3/00001_3/0140_p00748_Pollock_s_conjecture.cpp" line="16" column="18" info="Shadow variable"/>
+            <location file="derived/cpp/llama/gen_3/00001_3/0140_p00748_Pollock_s_conjecture.cpp" line="8" column="5" info="Shadowed declaration"/>
+            <symbol>tetrahedral</symbol>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;tetrahedrals&apos; can be declared as reference to const" verbose="Parameter &apos;tetrahedrals&apos; can be declared as reference to const" cwe="398" file0="derived/cpp/llama/gen_3/00001_3/0140_p00748_Pollock_s_conjecture.cpp">
+            <location file="derived/cpp/llama/gen_3/00001_3/0140_p00748_Pollock_s_conjecture.cpp" line="12" column="40" info="Parameter &apos;tetrahedrals&apos; can be declared as reference to const"/>
+            <symbol>tetrahedrals</symbol>
+        </error>
+    </errors>
+</results>
