@@ -1,0 +1,49 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/demo/demo_derived/demo_cpp/human/soln2/00001/0001_161_B._Discounts.cpp'
+Diagnostics:
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''long long'' of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/demo/demo_derived/demo_cpp/human/soln2/00001/0001_161_B._Discounts.cpp'
+      FileOffset:      1122
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/demo/demo_derived/demo_cpp/human/soln2/00001/0001_161_B._Discounts.cpp'
+        FileOffset:      1122
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/demo/demo_derived/demo_cpp/human/soln2/00001/0001_161_B._Discounts.cpp'
+            Offset:          25
+            Length:          0
+            ReplacementText: "\n#include <cstddef>\n"
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/demo/demo_derived/demo_cpp/human/soln2/00001/0001_161_B._Discounts.cpp'
+            Offset:          1122
+            Length:          0
+            ReplacementText: 'static_cast<long long>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/demo/demo_derived/demo_cpp/human/soln2/00001/0001_161_B._Discounts.cpp'
+            Offset:          1139
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/demo/demo_derived/demo_cpp/human/soln2/00001/0001_161_B._Discounts.cpp'
+            FileOffset:      1122
+            Length:          17
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/demo/demo_derived/demo_cpp/human/soln2/00001/0001_161_B._Discounts.cpp'
+        FileOffset:      1122
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/demo/demo_derived/demo_cpp/human/soln2/00001/0001_161_B._Discounts.cpp'
+            Offset:          1122
+            Length:          0
+            ReplacementText: 'static_cast<long long>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/demo/demo_derived/demo_cpp/human/soln2/00001/0001_161_B._Discounts.cpp'
+            Offset:          1135
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/demo/demo_derived/demo_cpp/human/soln2/00001/0001_161_B._Discounts.cpp'
+            FileOffset:      1122
+            Length:          13
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

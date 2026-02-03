@@ -1,0 +1,61 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/demo/demo_derived/demo_cpp/llama/gen_1/00000/0001_1037_E._Trips.cpp'
+Diagnostics:
+  - DiagnosticName:  clang-diagnostic-unused-result
+    DiagnosticMessage:
+      Message:         'ignoring return value of function declared with ''nodiscard'' attribute'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/demo/demo_derived/demo_cpp/llama/gen_1/00000/0001_1037_E._Trips.cpp'
+      FileOffset:      1413
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/demo/demo_derived/demo_cpp/llama/gen_1/00000/0001_1037_E._Trips.cpp'
+          FileOffset:      1413
+          Length:          11
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'reference to non-static member function must be called; did you mean to call it with no arguments?'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/demo/demo_derived/demo_cpp/llama/gen_1/00000/0001_1037_E._Trips.cpp'
+      FileOffset:      1420
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/demo/demo_derived/demo_cpp/llama/gen_1/00000/0001_1037_E._Trips.cpp'
+          Offset:          1424
+          Length:          0
+          ReplacementText: '()'
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/demo/demo_derived/demo_cpp/llama/gen_1/00000/0001_1037_E._Trips.cpp'
+          FileOffset:      1413
+          Length:          11
+    Notes:
+      - Message:         possible target for call
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h'
+        FileOffset:      40382
+        Replacements:    []
+      - Message:         possible target for call
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h'
+        FileOffset:      40681
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'expected '';'' after expression'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/demo/demo_derived/demo_cpp/llama/gen_1/00000/0001_1037_E._Trips.cpp'
+      FileOffset:      1424
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/demo/demo_derived/demo_cpp/llama/gen_1/00000/0001_1037_E._Trips.cpp'
+          Offset:          1424
+          Length:          0
+          ReplacementText: ';'
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         expected expression
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/demo/demo_derived/demo_cpp/llama/gen_1/00000/0001_1037_E._Trips.cpp'
+      FileOffset:      1424
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...
