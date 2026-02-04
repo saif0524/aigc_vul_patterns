@@ -1,0 +1,154 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0115_p01488_TransferTrain.cpp'
+Diagnostics:
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '3 adjacent parameters of ''Edge'' of similar type (''int'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0115_p01488_TransferTrain.cpp'
+      FileOffset:      126
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0115_p01488_TransferTrain.cpp'
+          FileOffset:      126
+          Length:          19
+    Notes:
+      - Message:         'the first parameter in the range is ''w'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0115_p01488_TransferTrain.cpp'
+        FileOffset:      130
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0115_p01488_TransferTrain.cpp'
+            FileOffset:      130
+            Length:          1
+      - Message:         'the last parameter in the range is ''i'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0115_p01488_TransferTrain.cpp'
+        FileOffset:      144
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0115_p01488_TransferTrain.cpp'
+            FileOffset:      144
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0115_p01488_TransferTrain.cpp'
+      FileOffset:      186
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0115_p01488_TransferTrain.cpp'
+          Offset:          181
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0115_p01488_TransferTrain.cpp'
+          Offset:          220
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0115_p01488_TransferTrain.cpp'
+      FileOffset:      341
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0115_p01488_TransferTrain.cpp'
+          Offset:          337
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0115_p01488_TransferTrain.cpp'
+          Offset:          358
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'cannot assign to variable ''edge'' with const-qualified type ''const Edge &'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0115_p01488_TransferTrain.cpp'
+      FileOffset:      564
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0115_p01488_TransferTrain.cpp'
+          FileOffset:      553
+          Length:          11
+    Notes:
+      - Message:         'variable ''edge'' declared const here'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0115_p01488_TransferTrain.cpp'
+        FileOffset:      431
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0115_p01488_TransferTrain.cpp'
+            FileOffset:      419
+            Length:          18
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0115_p01488_TransferTrain.cpp'
+      FileOffset:      794
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0115_p01488_TransferTrain.cpp'
+          Offset:          790
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0115_p01488_TransferTrain.cpp'
+          Offset:          800
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''std::endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0115_p01488_TransferTrain.cpp'
+      FileOffset:      1638
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0115_p01488_TransferTrain.cpp'
+          Offset:          1638
+          Length:          9
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'invalid operands to binary expression (''Edge'' and ''const Edge'')'
+      FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/predefined_ops.h'
+      FileOffset:      6876
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/predefined_ops.h'
+          FileOffset:      6870
+          Length:          5
+        - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/predefined_ops.h'
+          FileOffset:      6879
+          Length:          8
+    Notes:
+      - Message:         'in instantiation of function template specialization ''__gnu_cxx::__ops::_Iter_equals_val<const Edge>::operator()<__gnu_cxx::__normal_iterator<Edge *, std::vector<Edge>>>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algobase.h'
+        FileOffset:      72031
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__find_if<__gnu_cxx::__normal_iterator<Edge *, std::vector<Edge>>, __gnu_cxx::__ops::_Iter_equals_val<const Edge>>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algobase.h'
+        FileOffset:      72785
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__find_if<__gnu_cxx::__normal_iterator<Edge *, std::vector<Edge>>, __gnu_cxx::__ops::_Iter_equals_val<const Edge>>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      134769
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::find<__gnu_cxx::__normal_iterator<Edge *, std::vector<Edge>>, Edge>'' requested here'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0115_p01488_TransferTrain.cpp'
+        FileOffset:      599
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''__normal_iterator<_IteratorL, _Container>'' against ''Edge'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h'
+        FileOffset:      40160
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''__normal_iterator<_Iterator, _Container>'' against ''Edge'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h'
+        FileOffset:      40475
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

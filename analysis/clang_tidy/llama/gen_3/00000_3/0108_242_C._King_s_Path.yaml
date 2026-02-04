@@ -1,0 +1,146 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0108_242_C._King_s_Path.cpp'
+Diagnostics:
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''Segment'' of similar type (''int'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0108_242_C._King_s_Path.cpp'
+      FileOffset:      248
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0108_242_C._King_s_Path.cpp'
+          FileOffset:      248
+          Length:          18
+    Notes:
+      - Message:         'the first parameter in the range is ''row'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0108_242_C._King_s_Path.cpp'
+        FileOffset:      252
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0108_242_C._King_s_Path.cpp'
+            FileOffset:      252
+            Length:          3
+      - Message:         'the last parameter in the range is ''start'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0108_242_C._King_s_Path.cpp'
+        FileOffset:      261
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0108_242_C._King_s_Path.cpp'
+            FileOffset:      261
+            Length:          5
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0108_242_C._King_s_Path.cpp'
+      FileOffset:      323
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0108_242_C._King_s_Path.cpp'
+          Offset:          319
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0108_242_C._King_s_Path.cpp'
+          Offset:          329
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0108_242_C._King_s_Path.cpp'
+      FileOffset:      933
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0108_242_C._King_s_Path.cpp'
+      FileOffset:      977
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0108_242_C._King_s_Path.cpp'
+      FileOffset:      1171
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0108_242_C._King_s_Path.cpp'
+          Offset:          1171
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0108_242_C._King_s_Path.cpp'
+      FileOffset:      1572
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0108_242_C._King_s_Path.cpp'
+          Offset:          1572
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no matching constructor for initialization of ''Segment'''
+      FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_construct.h'
+      FileOffset:      4387
+      Replacements:    []
+    Notes:
+      - Message:         'in instantiation of function template specialization ''std::_Construct<Segment>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_uninitialized.h'
+        FileOffset:      20375
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__uninitialized_default_n_1<false>::__uninit_default_n<Segment *, unsigned long>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_uninitialized.h'
+        FileOffset:      22439
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__uninitialized_default_n<Segment *, unsigned long>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_uninitialized.h'
+        FileOffset:      24533
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__uninitialized_default_n_a<Segment *, unsigned long, Segment>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h'
+        FileOffset:      57202
+        Replacements:    []
+      - Message:         'in instantiation of member function ''std::vector<Segment>::_M_default_initialize'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h'
+        FileOffset:      17407
+        Replacements:    []
+      - Message:         'in instantiation of member function ''std::vector<Segment>::vector'' requested here'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0108_242_C._King_s_Path.cpp'
+        FileOffset:      436
+        Replacements:    []
+      - Message:         'candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 0 were provided'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0108_242_C._King_s_Path.cpp'
+        FileOffset:      184
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0108_242_C._King_s_Path.cpp'
+            FileOffset:      184
+            Length:          7
+      - Message:         'candidate constructor (the implicit move constructor) not viable: requires 1 argument, but 0 were provided'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0108_242_C._King_s_Path.cpp'
+        FileOffset:      184
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0108_242_C._King_s_Path.cpp'
+            FileOffset:      184
+            Length:          7
+      - Message:         'candidate constructor not viable: requires 3 arguments, but 0 were provided'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0108_242_C._King_s_Path.cpp'
+        FileOffset:      240
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0108_242_C._King_s_Path.cpp'
+            FileOffset:      248
+            Length:          27
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

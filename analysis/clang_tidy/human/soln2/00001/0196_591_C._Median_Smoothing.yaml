@@ -1,0 +1,118 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0196_591_C._Median_Smoothing.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0196_591_C._Median_Smoothing.cpp'
+      FileOffset:      139
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0196_591_C._Median_Smoothing.cpp'
+          Offset:          129
+          Length:          9
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0196_591_C._Median_Smoothing.cpp'
+          Offset:          199
+          Length:          0
+          ReplacementText: ' -> long long'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''fastexp'' of similar type (''long long'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0196_591_C._Median_Smoothing.cpp'
+      FileOffset:      147
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0196_591_C._Median_Smoothing.cpp'
+          FileOffset:      147
+          Length:          24
+    Notes:
+      - Message:         'the first parameter in the range is ''a'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0196_591_C._Median_Smoothing.cpp'
+        FileOffset:      157
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0196_591_C._Median_Smoothing.cpp'
+            FileOffset:      157
+            Length:          1
+      - Message:         'the last parameter in the range is ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0196_591_C._Median_Smoothing.cpp'
+        FileOffset:      170
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0196_591_C._Median_Smoothing.cpp'
+            FileOffset:      170
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C VLA arrays, use ''std::vector'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0196_591_C._Median_Smoothing.cpp'
+      FileOffset:      367
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-vla-cxx-extension
+    DiagnosticMessage:
+      Message:         'variable length arrays in C++ are a Clang extension'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0196_591_C._Median_Smoothing.cpp'
+      FileOffset:      373
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0196_591_C._Median_Smoothing.cpp'
+          FileOffset:      373
+          Length:          1
+    Notes:
+      - Message:         'read of non-const variable ''n'' is not allowed in a constant expression'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0196_591_C._Median_Smoothing.cpp'
+        FileOffset:      373
+        Replacements:    []
+      - Message:         declared here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0196_591_C._Median_Smoothing.cpp'
+        FileOffset:      350
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0196_591_C._Median_Smoothing.cpp'
+      FileOffset:      932
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0196_591_C._Median_Smoothing.cpp'
+          Offset:          928
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0196_591_C._Median_Smoothing.cpp'
+          Offset:          938
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0196_591_C._Median_Smoothing.cpp'
+      FileOffset:      987
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0196_591_C._Median_Smoothing.cpp'
+          Offset:          987
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0196_591_C._Median_Smoothing.cpp'
+      FileOffset:      1005
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0196_591_C._Median_Smoothing.cpp'
+          Offset:          1005
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

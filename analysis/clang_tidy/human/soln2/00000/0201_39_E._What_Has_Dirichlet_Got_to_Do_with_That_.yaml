@@ -1,0 +1,181 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0201_39_E._What_Has_Dirichlet_Got_to_Do_with_That_.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0201_39_E._What_Has_Dirichlet_Got_to_Do_with_That_.cpp'
+      FileOffset:      65
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0201_39_E._What_Has_Dirichlet_Got_to_Do_with_That_.cpp'
+      FileOffset:      93
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0201_39_E._What_Has_Dirichlet_Got_to_Do_with_That_.cpp'
+          Offset:          83
+          Length:          9
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0201_39_E._What_Has_Dirichlet_Got_to_Do_with_That_.cpp'
+          Offset:          122
+          Length:          0
+          ReplacementText: ' -> long long'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0201_39_E._What_Has_Dirichlet_Got_to_Do_with_That_.cpp'
+      FileOffset:      284
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0201_39_E._What_Has_Dirichlet_Got_to_Do_with_That_.cpp'
+          Offset:          274
+          Length:          9
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0201_39_E._What_Has_Dirichlet_Got_to_Do_with_That_.cpp'
+          Offset:          313
+          Length:          0
+          ReplacementText: ' -> long long'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0201_39_E._What_Has_Dirichlet_Got_to_Do_with_That_.cpp'
+      FileOffset:      344
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0201_39_E._What_Has_Dirichlet_Got_to_Do_with_That_.cpp'
+          Offset:          340
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0201_39_E._What_Has_Dirichlet_Got_to_Do_with_That_.cpp'
+          Offset:          373
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''f'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0201_39_E._What_Has_Dirichlet_Got_to_Do_with_That_.cpp'
+      FileOffset:      382
+      Replacements:    []
+    Notes:
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0201_39_E._What_Has_Dirichlet_Got_to_Do_with_That_.cpp'
+        FileOffset:      645
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0201_39_E._What_Has_Dirichlet_Got_to_Do_with_That_.cpp'
+            FileOffset:      645
+            Length:          36
+      - Message:         Taint propagated to the 2nd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0201_39_E._What_Has_Dirichlet_Got_to_Do_with_That_.cpp'
+        FileOffset:      645
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0201_39_E._What_Has_Dirichlet_Got_to_Do_with_That_.cpp'
+            FileOffset:      645
+            Length:          36
+      - Message:         'Calling ''dfs'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0201_39_E._What_Has_Dirichlet_Got_to_Do_with_That_.cpp'
+        FileOffset:      721
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0201_39_E._What_Has_Dirichlet_Got_to_Do_with_That_.cpp'
+            FileOffset:      721
+            Length:          9
+      - Message:         'Access of ''f'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0201_39_E._What_Has_Dirichlet_Got_to_Do_with_That_.cpp'
+        FileOffset:      382
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0201_39_E._What_Has_Dirichlet_Got_to_Do_with_That_.cpp'
+            FileOffset:      382
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0201_39_E._What_Has_Dirichlet_Got_to_Do_with_That_.cpp'
+      FileOffset:      490
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0201_39_E._What_Has_Dirichlet_Got_to_Do_with_That_.cpp'
+      FileOffset:      619
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0201_39_E._What_Has_Dirichlet_Got_to_Do_with_That_.cpp'
+          Offset:          615
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0201_39_E._What_Has_Dirichlet_Got_to_Do_with_That_.cpp'
+          Offset:          625
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-format
+    DiagnosticMessage:
+      Message:         'length modifier ''I64'' results in undefined behavior or no effect with ''d'' conversion specifier'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0201_39_E._What_Has_Dirichlet_Got_to_Do_with_That_.cpp'
+      FileOffset:      653
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0201_39_E._What_Has_Dirichlet_Got_to_Do_with_That_.cpp'
+          Offset:          653
+          Length:          3
+          ReplacementText: ''
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0201_39_E._What_Has_Dirichlet_Got_to_Do_with_That_.cpp'
+          FileOffset:      652
+          Length:          5
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-format
+    DiagnosticMessage:
+      Message:         'length modifier ''I64'' results in undefined behavior or no effect with ''d'' conversion specifier'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0201_39_E._What_Has_Dirichlet_Got_to_Do_with_That_.cpp'
+      FileOffset:      658
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0201_39_E._What_Has_Dirichlet_Got_to_Do_with_That_.cpp'
+          Offset:          658
+          Length:          3
+          ReplacementText: ''
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0201_39_E._What_Has_Dirichlet_Got_to_Do_with_That_.cpp'
+          FileOffset:      657
+          Length:          5
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-format
+    DiagnosticMessage:
+      Message:         'length modifier ''I64'' results in undefined behavior or no effect with ''d'' conversion specifier'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0201_39_E._What_Has_Dirichlet_Got_to_Do_with_That_.cpp'
+      FileOffset:      663
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0201_39_E._What_Has_Dirichlet_Got_to_Do_with_That_.cpp'
+          Offset:          663
+          Length:          3
+          ReplacementText: ''
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0201_39_E._What_Has_Dirichlet_Got_to_Do_with_That_.cpp'
+          FileOffset:      662
+          Length:          5
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-switch-missing-default-case
+    DiagnosticMessage:
+      Message:         switching on non-enum value without default case may not cover all cases
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0201_39_E._What_Has_Dirichlet_Got_to_Do_with_That_.cpp'
+      FileOffset:      713
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

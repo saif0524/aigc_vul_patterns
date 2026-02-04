@@ -1,0 +1,121 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0170_1100_D._Dasha_and_Chess.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0170_1100_D._Dasha_and_Chess.cpp'
+      FileOffset:      104
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0170_1100_D._Dasha_and_Chess.cpp'
+      FileOffset:      134
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0170_1100_D._Dasha_and_Chess.cpp'
+          Offset:          129
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0170_1100_D._Dasha_and_Chess.cpp'
+          Offset:          143
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-loop-convert
+    DiagnosticMessage:
+      Message:         use range-based for loop instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0170_1100_D._Dasha_and_Chess.cpp'
+      FileOffset:      150
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0170_1100_D._Dasha_and_Chess.cpp'
+          Offset:          154
+          Length:          25
+          ReplacementText: '(auto & rook : rooks)'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0170_1100_D._Dasha_and_Chess.cpp'
+          Offset:          204
+          Length:          8
+          ReplacementText: rook
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0170_1100_D._Dasha_and_Chess.cpp'
+          Offset:          228
+          Length:          8
+          ReplacementText: rook
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0170_1100_D._Dasha_and_Chess.cpp'
+      FileOffset:      500
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0170_1100_D._Dasha_and_Chess.cpp'
+          Offset:          500
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''rooks'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0170_1100_D._Dasha_and_Chess.cpp'
+      FileOffset:      642
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0170_1100_D._Dasha_and_Chess.cpp'
+          FileOffset:      642
+          Length:          12
+    Notes:
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0170_1100_D._Dasha_and_Chess.cpp'
+        FileOffset:      582
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0170_1100_D._Dasha_and_Chess.cpp'
+            FileOffset:      582
+            Length:          7
+      - Message:         'Left side of ''&&'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0170_1100_D._Dasha_and_Chess.cpp'
+        FileOffset:      582
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0170_1100_D._Dasha_and_Chess.cpp'
+        FileOffset:      593
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0170_1100_D._Dasha_and_Chess.cpp'
+            FileOffset:      593
+            Length:          7
+      - Message:         'Left side of ''&&'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0170_1100_D._Dasha_and_Chess.cpp'
+        FileOffset:      601
+        Replacements:    []
+      - Message:         'Access of ''rooks'' at negative byte offset -16'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0170_1100_D._Dasha_and_Chess.cpp'
+        FileOffset:      642
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0170_1100_D._Dasha_and_Chess.cpp'
+            FileOffset:      642
+            Length:          12
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0170_1100_D._Dasha_and_Chess.cpp'
+      FileOffset:      693
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0170_1100_D._Dasha_and_Chess.cpp'
+          Offset:          689
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0170_1100_D._Dasha_and_Chess.cpp'
+          Offset:          699
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

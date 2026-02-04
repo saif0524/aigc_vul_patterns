@@ -1,0 +1,161 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0270_312_D._Cats_Transport.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-using
+    DiagnosticMessage:
+      Message:         'use ''using'' instead of ''typedef'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0270_312_D._Cats_Transport.cpp'
+      FileOffset:      101
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0270_312_D._Cats_Transport.cpp'
+          Offset:          101
+          Length:          20
+          ReplacementText: 'using ll = long long'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0270_312_D._Cats_Transport.cpp'
+      FileOffset:      190
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0270_312_D._Cats_Transport.cpp'
+      FileOffset:      223
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0270_312_D._Cats_Transport.cpp'
+      FileOffset:      251
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0270_312_D._Cats_Transport.cpp'
+      FileOffset:      275
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0270_312_D._Cats_Transport.cpp'
+          Offset:          271
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0270_312_D._Cats_Transport.cpp'
+          Offset:          281
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''dp'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0270_312_D._Cats_Transport.cpp'
+      FileOffset:      1252
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0270_312_D._Cats_Transport.cpp'
+          FileOffset:      1252
+          Length:          5
+    Notes:
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0270_312_D._Cats_Transport.cpp'
+        FileOffset:      328
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0270_312_D._Cats_Transport.cpp'
+            FileOffset:      328
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 25
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0270_312_D._Cats_Transport.cpp'
+        FileOffset:      312
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0270_312_D._Cats_Transport.cpp'
+        FileOffset:      416
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0270_312_D._Cats_Transport.cpp'
+            FileOffset:      416
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 30
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0270_312_D._Cats_Transport.cpp'
+        FileOffset:      400
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0270_312_D._Cats_Transport.cpp'
+        FileOffset:      534
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0270_312_D._Cats_Transport.cpp'
+            FileOffset:      534
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 34
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0270_312_D._Cats_Transport.cpp'
+        FileOffset:      518
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0270_312_D._Cats_Transport.cpp'
+        FileOffset:      635
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0270_312_D._Cats_Transport.cpp'
+            FileOffset:      635
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 39
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0270_312_D._Cats_Transport.cpp'
+        FileOffset:      619
+        Replacements:    []
+      - Message:         '''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0270_312_D._Cats_Transport.cpp'
+        FileOffset:      771
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0270_312_D._Cats_Transport.cpp'
+            FileOffset:      771
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 54
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0270_312_D._Cats_Transport.cpp'
+        FileOffset:      755
+        Replacements:    []
+      - Message:         'Assuming ''i'' is <= ''p'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0270_312_D._Cats_Transport.cpp'
+        FileOffset:      1225
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0270_312_D._Cats_Transport.cpp'
+            FileOffset:      1225
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0270_312_D._Cats_Transport.cpp'
+        FileOffset:      1209
+        Replacements:    []
+      - Message:         'Access of ''dp'' at negative byte offset'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0270_312_D._Cats_Transport.cpp'
+        FileOffset:      1252
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0270_312_D._Cats_Transport.cpp'
+            FileOffset:      1252
+            Length:          5
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0270_312_D._Cats_Transport.cpp'
+      FileOffset:      1333
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0270_312_D._Cats_Transport.cpp'
+          Offset:          1333
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

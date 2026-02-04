@@ -1,0 +1,162 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0075_1239_E._Turtle.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0075_1239_E._Turtle.cpp'
+      FileOffset:      77
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0075_1239_E._Turtle.cpp'
+      FileOffset:      100
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0075_1239_E._Turtle.cpp'
+      FileOffset:      119
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0075_1239_E._Turtle.cpp'
+      FileOffset:      139
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0075_1239_E._Turtle.cpp'
+      FileOffset:      157
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0075_1239_E._Turtle.cpp'
+          Offset:          153
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0075_1239_E._Turtle.cpp'
+          Offset:          163
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-bool-literals
+    DiagnosticMessage:
+      Message:         converting integer literal to bool, use bool literal instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0075_1239_E._Turtle.cpp'
+      FileOffset:      194
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0075_1239_E._Turtle.cpp'
+          Offset:          194
+          Length:          1
+          ReplacementText: 'false'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0075_1239_E._Turtle.cpp'
+      FileOffset:      208
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0075_1239_E._Turtle.cpp'
+          Offset:          208
+          Length:          1
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0075_1239_E._Turtle.cpp'
+      FileOffset:      223
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0075_1239_E._Turtle.cpp'
+          Offset:          223
+          Length:          1
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory around ''a'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0075_1239_E._Turtle.cpp'
+      FileOffset:      367
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0075_1239_E._Turtle.cpp'
+          FileOffset:      367
+          Length:          8
+    Notes:
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0075_1239_E._Turtle.cpp'
+        FileOffset:      267
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0075_1239_E._Turtle.cpp'
+            FileOffset:      267
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 18
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0075_1239_E._Turtle.cpp'
+        FileOffset:      251
+        Replacements:    []
+      - Message:         'Access of ''a'' at a negative or overflowing index, while it holds only 50 ''int'' elements'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0075_1239_E._Turtle.cpp'
+        FileOffset:      367
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0075_1239_E._Turtle.cpp'
+            FileOffset:      367
+            Length:          8
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''a'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0075_1239_E._Turtle.cpp'
+      FileOffset:      367
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0075_1239_E._Turtle.cpp'
+          FileOffset:      367
+          Length:          8
+    Notes:
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0075_1239_E._Turtle.cpp'
+        FileOffset:      267
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0075_1239_E._Turtle.cpp'
+            FileOffset:      267
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 18
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0075_1239_E._Turtle.cpp'
+        FileOffset:      251
+        Replacements:    []
+      - Message:         'Access of ''a'' at negative byte offset -8'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0075_1239_E._Turtle.cpp'
+        FileOffset:      367
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0075_1239_E._Turtle.cpp'
+            FileOffset:      367
+            Length:          8
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''int'' to signed type ''char'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0075_1239_E._Turtle.cpp'
+      FileOffset:      647
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

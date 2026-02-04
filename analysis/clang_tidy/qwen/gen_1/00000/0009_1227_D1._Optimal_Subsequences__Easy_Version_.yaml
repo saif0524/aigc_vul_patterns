@@ -1,0 +1,44 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+      FileOffset:      86
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+          Offset:          82
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+          Offset:          92
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-inefficient-vector-operation
+    DiagnosticMessage:
+      Message:         '''emplace_back'' is called inside a loop; consider pre-allocating the container capacity before the loop'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+      FileOffset:      435
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+          Offset:          394
+          Length:          0
+          ReplacementText: "values.reserve(n);\n"
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this lambda
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+      FileOffset:      518
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+          Offset:          585
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

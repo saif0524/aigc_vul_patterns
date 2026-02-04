@@ -1,0 +1,421 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+Diagnostics:
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''size_type'' (aka ''unsigned long'') of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+      FileOffset:      424
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+        FileOffset:      424
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            Offset:          25
+            Length:          0
+            ReplacementText: "\n#include <cstddef>\n"
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            Offset:          424
+            Length:          0
+            ReplacementText: 'static_cast<size_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            Offset:          432
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            FileOffset:      424
+            Length:          8
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+        FileOffset:      424
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            Offset:          424
+            Length:          0
+            ReplacementText: 'static_cast<long>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            Offset:          425
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            FileOffset:      424
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''size_type'' (aka ''unsigned long'') of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+      FileOffset:      722
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+        FileOffset:      722
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            Offset:          722
+            Length:          0
+            ReplacementText: 'static_cast<size_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            Offset:          730
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            FileOffset:      722
+            Length:          8
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+        FileOffset:      722
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            Offset:          722
+            Length:          0
+            ReplacementText: 'static_cast<long>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            Offset:          723
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            FileOffset:      722
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''size_type'' (aka ''unsigned long'') of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+      FileOffset:      748
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+        FileOffset:      748
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            Offset:          748
+            Length:          0
+            ReplacementText: 'static_cast<size_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            Offset:          756
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            FileOffset:      748
+            Length:          8
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+        FileOffset:      748
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            Offset:          748
+            Length:          0
+            ReplacementText: 'static_cast<long>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            Offset:          749
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            FileOffset:      748
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''size_type'' (aka ''unsigned long'') of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+      FileOffset:      1113
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+        FileOffset:      1113
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            Offset:          1113
+            Length:          0
+            ReplacementText: 'static_cast<size_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            Offset:          1121
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            FileOffset:      1113
+            Length:          8
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+        FileOffset:      1113
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            Offset:          1113
+            Length:          0
+            ReplacementText: 'static_cast<long>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            Offset:          1114
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            FileOffset:      1113
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''size_type'' (aka ''unsigned long'') of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+      FileOffset:      1139
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+        FileOffset:      1139
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            Offset:          1139
+            Length:          0
+            ReplacementText: 'static_cast<size_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            Offset:          1147
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            FileOffset:      1139
+            Length:          8
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+        FileOffset:      1139
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            Offset:          1139
+            Length:          0
+            ReplacementText: 'static_cast<long>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            Offset:          1140
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            FileOffset:      1139
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''size_type'' (aka ''unsigned long'') of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+      FileOffset:      1453
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+        FileOffset:      1453
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            Offset:          1453
+            Length:          0
+            ReplacementText: 'static_cast<size_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            Offset:          1461
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            FileOffset:      1453
+            Length:          8
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+        FileOffset:      1453
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            Offset:          1453
+            Length:          0
+            ReplacementText: 'static_cast<long>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            Offset:          1454
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            FileOffset:      1453
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+      FileOffset:      1508
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+          Offset:          1504
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+          Offset:          1572
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''size_type'' (aka ''unsigned long'') of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+      FileOffset:      1756
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+        FileOffset:      1756
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            Offset:          1756
+            Length:          0
+            ReplacementText: 'static_cast<size_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            Offset:          1764
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            FileOffset:      1756
+            Length:          8
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+        FileOffset:      1756
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            Offset:          1756
+            Length:          0
+            ReplacementText: 'static_cast<long>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            Offset:          1757
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            FileOffset:      1756
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''size_type'' (aka ''unsigned long'') of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+      FileOffset:      1782
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+        FileOffset:      1782
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            Offset:          1782
+            Length:          0
+            ReplacementText: 'static_cast<size_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            Offset:          1790
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            FileOffset:      1782
+            Length:          8
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+        FileOffset:      1782
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            Offset:          1782
+            Length:          0
+            ReplacementText: 'static_cast<long>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            Offset:          1783
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            FileOffset:      1782
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+      FileOffset:      2146
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+          Offset:          2142
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+          Offset:          2152
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+      FileOffset:      2199
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+          Offset:          2199
+          Length:          1
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''size_type'' (aka ''unsigned long'') of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+      FileOffset:      2310
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+        FileOffset:      2310
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            Offset:          2310
+            Length:          0
+            ReplacementText: 'static_cast<size_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            Offset:          2313
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            FileOffset:      2310
+            Length:          3
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+        FileOffset:      2310
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            Offset:          2310
+            Length:          0
+            ReplacementText: 'static_cast<long>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            Offset:          2311
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00000/0188_1439_C._Greedy_Shopping.cpp'
+            FileOffset:      2310
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

@@ -1,0 +1,113 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0208_592_E._BCPC.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-using
+    DiagnosticMessage:
+      Message:         'use ''using'' instead of ''typedef'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0208_592_E._BCPC.cpp'
+      FileOffset:      47
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0208_592_E._BCPC.cpp'
+          Offset:          47
+          Length:          20
+          ReplacementText: 'using ll = long long'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''Point'' of similar type (''ll'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0208_592_E._BCPC.cpp'
+      FileOffset:      136
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0208_592_E._BCPC.cpp'
+          FileOffset:      136
+          Length:          10
+    Notes:
+      - Message:         'the first parameter in the range is ''x'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0208_592_E._BCPC.cpp'
+        FileOffset:      139
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0208_592_E._BCPC.cpp'
+            FileOffset:      139
+            Length:          1
+      - Message:         'the last parameter in the range is ''y'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0208_592_E._BCPC.cpp'
+        FileOffset:      145
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0208_592_E._BCPC.cpp'
+            FileOffset:      145
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0208_592_E._BCPC.cpp'
+      FileOffset:      173
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0208_592_E._BCPC.cpp'
+          Offset:          168
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0208_592_E._BCPC.cpp'
+          Offset:          208
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0208_592_E._BCPC.cpp'
+      FileOffset:      298
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0208_592_E._BCPC.cpp'
+          Offset:          295
+          Length:          2
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0208_592_E._BCPC.cpp'
+          Offset:          351
+          Length:          0
+          ReplacementText: ' -> ll'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0208_592_E._BCPC.cpp'
+      FileOffset:      427
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0208_592_E._BCPC.cpp'
+          Offset:          423
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0208_592_E._BCPC.cpp'
+          Offset:          433
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0208_592_E._BCPC.cpp'
+      FileOffset:      480
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0208_592_E._BCPC.cpp'
+          Offset:          480
+          Length:          1
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0208_592_E._BCPC.cpp'
+      FileOffset:      960
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

@@ -1,0 +1,458 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+      FileOffset:      50
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+          Offset:          46
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+          Offset:          56
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''int'' to signed type ''char'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+      FileOffset:      71
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''int'' to signed type ''char'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+      FileOffset:      131
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''int'' to signed type ''char'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+      FileOffset:      203
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+      FileOffset:      322
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+      FileOffset:      341
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''E.head'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+      FileOffset:      421
+      Replacements:    []
+    Notes:
+      - Message:         'Calling ''init'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      3124
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+            FileOffset:      3124
+            Length:          6
+      - Message:         'Assuming ''i'' is > ''K'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      2299
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+            FileOffset:      2299
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 83
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      2283
+        Replacements:    []
+      - Message:         'Assuming ''i'' is < ''N'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      2360
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+            FileOffset:      2360
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      2335
+        Replacements:    []
+      - Message:         'Calling ''read'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      2380
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+            FileOffset:      2380
+            Length:          6
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      71
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+            FileOffset:      71
+            Length:          9
+      - Message:         Taint propagated to the return value
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      71
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+            FileOffset:      71
+            Length:          9
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      104
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+            FileOffset:      104
+            Length:          8
+      - Message:         'Left side of ''||'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      104
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      116
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+            FileOffset:      116
+            Length:          8
+      - Message:         Loop condition is false. Execution continues on line 7
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      97
+        Replacements:    []
+      - Message:         'Left side of ''&&'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      151
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      144
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      203
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+            FileOffset:      203
+            Length:          9
+      - Message:         Taint propagated to the return value
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      203
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+            FileOffset:      203
+            Length:          9
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      151
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+            FileOffset:      151
+            Length:          9
+      - Message:         'Left side of ''&&'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      151
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      164
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+            FileOffset:      164
+            Length:          9
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      144
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      151
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+            FileOffset:      151
+            Length:          9
+      - Message:         'Left side of ''&&'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      161
+        Replacements:    []
+      - Message:         'Returning from ''read'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      2380
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+            FileOffset:      2380
+            Length:          6
+      - Message:         'Calling ''LinkTable::add'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      2412
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+            FileOffset:      2412
+            Length:          14
+      - Message:         'Access of ''E.head'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      421
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+            FileOffset:      421
+            Length:          7
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+      FileOffset:      468
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+      FileOffset:      520
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+      FileOffset:      574
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+      FileOffset:      595
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+          Offset:          591
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+          Offset:          616
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''mark'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+      FileOffset:      2312
+      Replacements:    []
+    Notes:
+      - Message:         'Calling ''init'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      3124
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+            FileOffset:      3124
+            Length:          6
+      - Message:         'Assuming ''i'' is <= ''K'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      2299
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+            FileOffset:      2299
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      2283
+        Replacements:    []
+      - Message:         'Calling ''read'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      2317
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+            FileOffset:      2317
+            Length:          6
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      71
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+            FileOffset:      71
+            Length:          9
+      - Message:         Taint propagated to the return value
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      71
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+            FileOffset:      71
+            Length:          9
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      104
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+            FileOffset:      104
+            Length:          8
+      - Message:         'Left side of ''||'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      104
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      116
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+            FileOffset:      116
+            Length:          8
+      - Message:         Loop condition is false. Execution continues on line 7
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      97
+        Replacements:    []
+      - Message:         'Left side of ''&&'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      151
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      144
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      203
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+            FileOffset:      203
+            Length:          9
+      - Message:         Taint propagated to the return value
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      203
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+            FileOffset:      203
+            Length:          9
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      151
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+            FileOffset:      151
+            Length:          9
+      - Message:         'Left side of ''&&'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      151
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      164
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+            FileOffset:      164
+            Length:          9
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      144
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      151
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+            FileOffset:      151
+            Length:          9
+      - Message:         'Left side of ''&&'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      161
+        Replacements:    []
+      - Message:         'Returning from ''read'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      2317
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+            FileOffset:      2317
+            Length:          6
+      - Message:         'Access of ''mark'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+        FileOffset:      2312
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+            FileOffset:      2312
+            Length:          12
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-dangling-else
+    DiagnosticMessage:
+      Message:         add explicit braces to avoid dangling else
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+      FileOffset:      2809
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-dangling-else
+    DiagnosticMessage:
+      Message:         add explicit braces to avoid dangling else
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+      FileOffset:      3035
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+      FileOffset:      3113
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+          Offset:          3109
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0067_348_E._Pilgrims.cpp'
+          Offset:          3119
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

@@ -1,0 +1,100 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0012_1311_F._Moving_Points.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0012_1311_F._Moving_Points.cpp'
+      FileOffset:      100
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0012_1311_F._Moving_Points.cpp'
+          Offset:          96
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0012_1311_F._Moving_Points.cpp'
+          Offset:          106
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-inefficient-vector-operation
+    DiagnosticMessage:
+      Message:         '''push_back'' is called inside a loop; consider pre-allocating the container capacity before the loop'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0012_1311_F._Moving_Points.cpp'
+      FileOffset:      410
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0012_1311_F._Moving_Points.cpp'
+          Offset:          372
+          Length:          0
+          ReplacementText: "pairs.reserve(n);\n"
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-emplace
+    DiagnosticMessage:
+      Message:         use emplace_back instead of push_back
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0012_1311_F._Moving_Points.cpp'
+      FileOffset:      416
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0012_1311_F._Moving_Points.cpp'
+          Offset:          416
+          Length:          11
+          ReplacementText: 'emplace_back('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0012_1311_F._Moving_Points.cpp'
+          Offset:          437
+          Length:          1
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''double'' to ''long long'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0012_1311_F._Moving_Points.cpp'
+      FileOffset:      811
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to ''double'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0012_1311_F._Moving_Points.cpp'
+      FileOffset:      820
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to ''double'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0012_1311_F._Moving_Points.cpp'
+      FileOffset:      825
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to ''double'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0012_1311_F._Moving_Points.cpp'
+      FileOffset:      840
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to ''double'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0012_1311_F._Moving_Points.cpp'
+      FileOffset:      846
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''std::endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0012_1311_F._Moving_Points.cpp'
+      FileOffset:      914
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0012_1311_F._Moving_Points.cpp'
+          Offset:          914
+          Length:          9
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

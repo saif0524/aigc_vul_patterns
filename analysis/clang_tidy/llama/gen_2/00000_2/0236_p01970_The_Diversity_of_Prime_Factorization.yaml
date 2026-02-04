@@ -1,0 +1,189 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0236_p01970_The_Diversity_of_Prime_Factorization.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-using
+    DiagnosticMessage:
+      Message:         'use ''using'' instead of ''typedef'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0236_p01970_The_Diversity_of_Prime_Factorization.cpp'
+      FileOffset:      46
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0236_p01970_The_Diversity_of_Prime_Factorization.cpp'
+          Offset:          46
+          Length:          20
+          ReplacementText: 'using ll = long long'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0236_p01970_The_Diversity_of_Prime_Factorization.cpp'
+      FileOffset:      97
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0236_p01970_The_Diversity_of_Prime_Factorization.cpp'
+          Offset:          94
+          Length:          2
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0236_p01970_The_Diversity_of_Prime_Factorization.cpp'
+          Offset:          115
+          Length:          0
+          ReplacementText: ' -> ll'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''powmod'' of similar type (''ll'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0236_p01970_The_Diversity_of_Prime_Factorization.cpp'
+      FileOffset:      104
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0236_p01970_The_Diversity_of_Prime_Factorization.cpp'
+          FileOffset:      104
+          Length:          10
+    Notes:
+      - Message:         'the first parameter in the range is ''a'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0236_p01970_The_Diversity_of_Prime_Factorization.cpp'
+        FileOffset:      107
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0236_p01970_The_Diversity_of_Prime_Factorization.cpp'
+            FileOffset:      107
+            Length:          1
+      - Message:         'the last parameter in the range is ''b'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0236_p01970_The_Diversity_of_Prime_Factorization.cpp'
+        FileOffset:      113
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0236_p01970_The_Diversity_of_Prime_Factorization.cpp'
+            FileOffset:      113
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0236_p01970_The_Diversity_of_Prime_Factorization.cpp'
+      FileOffset:      240
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0236_p01970_The_Diversity_of_Prime_Factorization.cpp'
+          Offset:          235
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0236_p01970_The_Diversity_of_Prime_Factorization.cpp'
+          Offset:          253
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0236_p01970_The_Diversity_of_Prime_Factorization.cpp'
+      FileOffset:      485
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0236_p01970_The_Diversity_of_Prime_Factorization.cpp'
+          Offset:          464
+          Length:          20
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0236_p01970_The_Diversity_of_Prime_Factorization.cpp'
+          Offset:          511
+          Length:          0
+          ReplacementText: ' -> vector<pair<ll, ll>>'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-unnecessary-value-param
+    DiagnosticMessage:
+      Message:         'the parameter ''arr'' is copied for each invocation but only used as a const reference; consider making it a const reference'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0236_p01970_The_Diversity_of_Prime_Factorization.cpp'
+      FileOffset:      507
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0236_p01970_The_Diversity_of_Prime_Factorization.cpp'
+          Offset:          496
+          Length:          0
+          ReplacementText: 'const '
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0236_p01970_The_Diversity_of_Prime_Factorization.cpp'
+          Offset:          506
+          Length:          0
+          ReplacementText: '&'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-emplace
+    DiagnosticMessage:
+      Message:         use emplace_back instead of push_back
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0236_p01970_The_Diversity_of_Prime_Factorization.cpp'
+      FileOffset:      641
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0236_p01970_The_Diversity_of_Prime_Factorization.cpp'
+          Offset:          641
+          Length:          11
+          ReplacementText: 'emplace_back('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0236_p01970_The_Diversity_of_Prime_Factorization.cpp'
+          Offset:          660
+          Length:          1
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0236_p01970_The_Diversity_of_Prime_Factorization.cpp'
+      FileOffset:      687
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0236_p01970_The_Diversity_of_Prime_Factorization.cpp'
+          Offset:          683
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0236_p01970_The_Diversity_of_Prime_Factorization.cpp'
+          Offset:          693
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0236_p01970_The_Diversity_of_Prime_Factorization.cpp'
+      FileOffset:      739
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0236_p01970_The_Diversity_of_Prime_Factorization.cpp'
+          Offset:          739
+          Length:          1
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0236_p01970_The_Diversity_of_Prime_Factorization.cpp'
+      FileOffset:      997
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0236_p01970_The_Diversity_of_Prime_Factorization.cpp'
+          Offset:          997
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0236_p01970_The_Diversity_of_Prime_Factorization.cpp'
+      FileOffset:      1195
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0236_p01970_The_Diversity_of_Prime_Factorization.cpp'
+          Offset:          1195
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0236_p01970_The_Diversity_of_Prime_Factorization.cpp'
+      FileOffset:      1309
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0236_p01970_The_Diversity_of_Prime_Factorization.cpp'
+          Offset:          1309
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

@@ -1,0 +1,196 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0069_p00323_Metal_Recycling.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-deprecated-headers
+    DiagnosticMessage:
+      Message:         'inclusion of deprecated C++ header ''math.h''; consider using ''cmath'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0069_p00323_Metal_Recycling.cpp'
+      FileOffset:      67
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0069_p00323_Metal_Recycling.cpp'
+          Offset:          67
+          Length:          8
+          ReplacementText: '<cmath>'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-deprecated-headers
+    DiagnosticMessage:
+      Message:         'inclusion of deprecated C++ header ''stdlib.h''; consider using ''cstdlib'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0069_p00323_Metal_Recycling.cpp'
+      FileOffset:      100
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0069_p00323_Metal_Recycling.cpp'
+          Offset:          100
+          Length:          10
+          ReplacementText: '<cstdlib>'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-macro-to-enum
+    DiagnosticMessage:
+      Message:         replace macro with enum
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0069_p00323_Metal_Recycling.cpp'
+      FileOffset:      148
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0069_p00323_Metal_Recycling.cpp'
+          Offset:          148
+          Length:          8
+          ReplacementText: "enum {\n"
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0069_p00323_Metal_Recycling.cpp'
+          Offset:          163
+          Length:          0
+          ReplacementText: ' ='
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0069_p00323_Metal_Recycling.cpp'
+          Offset:          174
+          Length:          0
+          ReplacementText: ','
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0069_p00323_Metal_Recycling.cpp'
+          Offset:          175
+          Length:          8
+          ReplacementText: ''
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0069_p00323_Metal_Recycling.cpp'
+          Offset:          186
+          Length:          0
+          ReplacementText: ' ='
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0069_p00323_Metal_Recycling.cpp'
+          Offset:          197
+          Length:          0
+          ReplacementText: ','
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0069_p00323_Metal_Recycling.cpp'
+          Offset:          198
+          Length:          8
+          ReplacementText: ''
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0069_p00323_Metal_Recycling.cpp'
+          Offset:          209
+          Length:          0
+          ReplacementText: ' ='
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0069_p00323_Metal_Recycling.cpp'
+          Offset:          221
+          Length:          0
+          ReplacementText: "};\n"
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-macro-to-enum
+    DiagnosticMessage:
+      Message:         'macro ''INT_MAX'' defines an integral constant; prefer an enum instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0069_p00323_Metal_Recycling.cpp'
+      FileOffset:      156
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-macro-to-enum
+    DiagnosticMessage:
+      Message:         'macro ''INF'' defines an integral constant; prefer an enum instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0069_p00323_Metal_Recycling.cpp'
+      FileOffset:      183
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-macro-to-enum
+    DiagnosticMessage:
+      Message:         'macro ''MOD'' defines an integral constant; prefer an enum instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0069_p00323_Metal_Recycling.cpp'
+      FileOffset:      206
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-macro-parentheses
+    DiagnosticMessage:
+      Message:         macro argument should be enclosed in parentheses
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0069_p00323_Metal_Recycling.cpp'
+      FileOffset:      265
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0069_p00323_Metal_Recycling.cpp'
+          Offset:          265
+          Length:          0
+          ReplacementText: '('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0069_p00323_Metal_Recycling.cpp'
+          Offset:          266
+          Length:          0
+          ReplacementText: ')'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-macro-parentheses
+    DiagnosticMessage:
+      Message:         macro argument should be enclosed in parentheses
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0069_p00323_Metal_Recycling.cpp'
+      FileOffset:      274
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0069_p00323_Metal_Recycling.cpp'
+          Offset:          274
+          Length:          0
+          ReplacementText: '('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0069_p00323_Metal_Recycling.cpp'
+          Offset:          275
+          Length:          0
+          ReplacementText: ')'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-macro-parentheses
+    DiagnosticMessage:
+      Message:         macro argument should be enclosed in parentheses
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0069_p00323_Metal_Recycling.cpp'
+      FileOffset:      283
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0069_p00323_Metal_Recycling.cpp'
+          Offset:          283
+          Length:          0
+          ReplacementText: '('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0069_p00323_Metal_Recycling.cpp'
+          Offset:          284
+          Length:          0
+          ReplacementText: ')'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0069_p00323_Metal_Recycling.cpp'
+      FileOffset:      368
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0069_p00323_Metal_Recycling.cpp'
+          Offset:          364
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0069_p00323_Metal_Recycling.cpp'
+          Offset:          374
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0069_p00323_Metal_Recycling.cpp'
+      FileOffset:      386
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0069_p00323_Metal_Recycling.cpp'
+      FileOffset:      461
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0069_p00323_Metal_Recycling.cpp'
+      FileOffset:      482
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0069_p00323_Metal_Recycling.cpp'
+      FileOffset:      796
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0069_p00323_Metal_Recycling.cpp'
+          Offset:          796
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

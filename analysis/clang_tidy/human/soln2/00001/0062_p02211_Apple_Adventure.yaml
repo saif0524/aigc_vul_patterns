@@ -1,0 +1,706 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-macro-to-enum
+    DiagnosticMessage:
+      Message:         replace macro with enum
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      102
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          102
+          Length:          9
+          ReplacementText: "enum {\n"
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          114
+          Length:          0
+          ReplacementText: ' ='
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          127
+          Length:          0
+          ReplacementText: "};\n"
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-macro-to-enum
+    DiagnosticMessage:
+      Message:         'macro ''inf'' defines an integral constant; prefer an enum instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      111
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      416
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      452
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '3 adjacent parameters of ''pa3'' of similar type (''int'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      800
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          FileOffset:      800
+          Length:          23
+    Notes:
+      - Message:         'the first parameter in the range is ''x'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+        FileOffset:      804
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+            FileOffset:      804
+            Length:          1
+      - Message:         'the last parameter in the range is ''z'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+        FileOffset:      820
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+            FileOffset:      820
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      893
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          888
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          924
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      1300
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          1295
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          1331
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      1713
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          1708
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          1745
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      1926
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          1921
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          1958
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '4 adjacent parameters of ''pa4'' of similar type (''int'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      2495
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          FileOffset:      2495
+          Length:          31
+    Notes:
+      - Message:         'the first parameter in the range is ''x'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+        FileOffset:      2499
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+            FileOffset:      2499
+            Length:          1
+      - Message:         'the last parameter in the range is ''w'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+        FileOffset:      2523
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+            FileOffset:      2523
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      2601
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          2596
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          2632
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      3083
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          3078
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          3114
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      3565
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          3560
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          3597
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''pa2'' of similar type (''int'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      4086
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          FileOffset:      4086
+          Length:          15
+    Notes:
+      - Message:         'the first parameter in the range is ''x'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+        FileOffset:      4090
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+            FileOffset:      4090
+            Length:          1
+      - Message:         'the last parameter in the range is ''y'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+        FileOffset:      4098
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+            FileOffset:      4098
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      4165
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          4161
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          4183
+          Length:          0
+          ReplacementText: ' -> pa2'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-return-braced-init-list
+    DiagnosticMessage:
+      Message:         'avoid repeating the return type from the declaration; use a braced initializer list instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      4192
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          4192
+          Length:          4
+          ReplacementText: '{'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          4207
+          Length:          1
+          ReplacementText: '}'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      4260
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          4256
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          4278
+          Length:          0
+          ReplacementText: ' -> pa2'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-return-braced-init-list
+    DiagnosticMessage:
+      Message:         'avoid repeating the return type from the declaration; use a braced initializer list instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      4287
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          4287
+          Length:          4
+          ReplacementText: '{'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          4302
+          Length:          1
+          ReplacementText: '}'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      4356
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          4351
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          4387
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      4564
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          4559
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          4595
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      4772
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          4767
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          4804
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      4988
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          4983
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          5020
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      5405
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          5398
+          Length:          6
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          5418
+          Length:          0
+          ReplacementText: ' -> string'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      5665
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          5661
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          5681
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      6129
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          6125
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          6165
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      6311
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          6308
+          Length:          2
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          6347
+          Length:          0
+          ReplacementText: ' -> pa'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      6446
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          6443
+          Length:          2
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          6482
+          Length:          0
+          ReplacementText: ' -> pa'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      6625
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      6659
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      6715
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          6711
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          6747
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      6909
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      7026
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      7092
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          7088
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          7111
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      7412
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      7573
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      7962
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      7995
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      8015
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      8037
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      8062
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      8088
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          8081
+          Length:          6
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          8094
+          Length:          0
+          ReplacementText: ' -> signed'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      8108
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          8108
+          Length:          1
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-emplace
+    DiagnosticMessage:
+      Message:         use emplace_back instead of push_back
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      8322
+      Replacements:    []
+    Notes:
+      - Message:         'expanded from macro ''pb'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+        FileOffset:      338
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-emplace
+    DiagnosticMessage:
+      Message:         use emplace_back instead of push_back
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      8421
+      Replacements:    []
+    Notes:
+      - Message:         'expanded from macro ''pb'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+        FileOffset:      338
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-emplace
+    DiagnosticMessage:
+      Message:         use emplace_back instead of push_back
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      8440
+      Replacements:    []
+    Notes:
+      - Message:         'expanded from macro ''pb'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+        FileOffset:      338
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-emplace
+    DiagnosticMessage:
+      Message:         use emplace instead of push
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      8598
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          8598
+          Length:          9
+          ReplacementText: 'emplace('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          8633
+          Length:          1
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-bool-literals
+    DiagnosticMessage:
+      Message:         converting integer literal to bool, use bool literal instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      8689
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          8689
+          Length:          1
+          ReplacementText: 'false'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-bool-literals
+    DiagnosticMessage:
+      Message:         converting integer literal to bool, use bool literal instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      8793
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          8793
+          Length:          1
+          ReplacementText: 'true'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      9523
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          9523
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      9545
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          9545
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

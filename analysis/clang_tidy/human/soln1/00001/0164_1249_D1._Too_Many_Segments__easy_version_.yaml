@@ -1,0 +1,247 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+      FileOffset:      46
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+      FileOffset:      154
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+          Offset:          149
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+          Offset:          174
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'result of multiplication in type ''int'' is used as a pointer offset after an implicit widening conversion to type ''ptrdiff_t'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+      FileOffset:      377
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+        FileOffset:      382
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+            Offset:          25
+            Length:          0
+            ReplacementText: "\n#include <cstddef>\n"
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+            Offset:          382
+            Length:          0
+            ReplacementText: 'static_cast<ptrdiff_t>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+            Offset:          390
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+            FileOffset:      382
+            Length:          8
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+        FileOffset:      382
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+            Offset:          382
+            Length:          0
+            ReplacementText: 'static_cast<ptrdiff_t>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+            Offset:          390
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+            FileOffset:      382
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'result of multiplication in type ''int'' is used as a pointer offset after an implicit widening conversion to type ''ptrdiff_t'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+      FileOffset:      591
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+        FileOffset:      596
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+            Offset:          596
+            Length:          0
+            ReplacementText: 'static_cast<ptrdiff_t>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+            Offset:          604
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+            FileOffset:      596
+            Length:          8
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+        FileOffset:      596
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+            Offset:          596
+            Length:          0
+            ReplacementText: 'static_cast<ptrdiff_t>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+            Offset:          604
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+            FileOffset:      596
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'result of multiplication in type ''int'' is used as a pointer offset after an implicit widening conversion to type ''ptrdiff_t'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+      FileOffset:      807
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+        FileOffset:      812
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+            Offset:          812
+            Length:          0
+            ReplacementText: 'static_cast<ptrdiff_t>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+            Offset:          820
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+            FileOffset:      812
+            Length:          8
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+        FileOffset:      812
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+            Offset:          812
+            Length:          0
+            ReplacementText: 'static_cast<ptrdiff_t>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+            Offset:          820
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+            FileOffset:      812
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+      FileOffset:      850
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+          Offset:          846
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+          Offset:          893
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'result of multiplication in type ''int'' is used as a pointer offset after an implicit widening conversion to type ''ptrdiff_t'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+      FileOffset:      1016
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+        FileOffset:      1021
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+            Offset:          1021
+            Length:          0
+            ReplacementText: 'static_cast<ptrdiff_t>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+            Offset:          1029
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+            FileOffset:      1021
+            Length:          8
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+        FileOffset:      1021
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+            Offset:          1021
+            Length:          0
+            ReplacementText: 'static_cast<ptrdiff_t>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+            Offset:          1029
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+            FileOffset:      1021
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+      FileOffset:      1321
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+          Offset:          1317
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+          Offset:          1327
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-format
+    DiagnosticMessage:
+      Message:         'format specifies type ''int'' but the argument has type ''size_type'' (aka ''unsigned long'')'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+      FileOffset:      1788
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+          Offset:          1781
+          Length:          2
+          ReplacementText: '%zu'
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+          FileOffset:      1788
+          Length:          8
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0164_1249_D1._Too_Many_Segments__easy_version_.cpp'
+          FileOffset:      1781
+          Length:          2
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

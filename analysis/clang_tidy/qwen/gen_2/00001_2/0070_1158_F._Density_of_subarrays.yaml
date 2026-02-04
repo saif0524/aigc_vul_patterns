@@ -1,0 +1,329 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0070_1158_F._Density_of_subarrays.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0070_1158_F._Density_of_subarrays.cpp'
+      FileOffset:      79
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0070_1158_F._Density_of_subarrays.cpp'
+          Offset:          75
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0070_1158_F._Density_of_subarrays.cpp'
+          Offset:          85
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0070_1158_F._Density_of_subarrays.cpp'
+      FileOffset:      132
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0070_1158_F._Density_of_subarrays.cpp'
+          Offset:          132
+          Length:          1
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to signed type ''value_type'' (aka ''int'') is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0070_1158_F._Density_of_subarrays.cpp'
+      FileOffset:      590
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no matching function for call to ''pow'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0070_1158_F._Density_of_subarrays.cpp'
+      FileOffset:      655
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0070_1158_F._Density_of_subarrays.cpp'
+          FileOffset:      655
+          Length:          3
+    Notes:
+      - Message:         'candidate function not viable: requires 2 arguments, but 3 were provided'
+        FilePath:        '/usr/include/x86_64-linux-gnu/bits/mathcalls.h'
+        FileOffset:      4541
+        Replacements:    []
+        Ranges:
+          - FilePath:        ''
+            FileOffset:      0
+            Length:          0
+      - Message:         'expanded from macro ''__MATHCALL_VEC'''
+        FilePath:        '/usr/include/math.h'
+        FileOffset:      8649
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/include/math.h'
+            FileOffset:      8637
+            Length:          35
+      - Message:         'expanded from macro ''__MATHCALL'''
+        FilePath:        '/usr/include/math.h'
+        FileOffset:      8892
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/include/math.h'
+            FileOffset:      8870
+            Length:          44
+      - Message:         'expanded from macro ''__MATHDECL'''
+        FilePath:        '/usr/include/math.h'
+        FileOffset:      8986
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/include/math.h'
+            FileOffset:      8967
+            Length:          41
+      - Message:         '(skipping 1 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)'
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+      - Message:         'expanded from macro ''__MATHDECL_1_IMPL'''
+        FilePath:        '/usr/include/math.h'
+        FileOffset:      9475
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/include/math.h'
+            FileOffset:      9492
+            Length:          4
+      - Message:         'expanded from macro ''__MATH_PRECNAME'''
+        FilePath:        '/usr/include/math.h'
+        FileOffset:      10002
+        Replacements:    []
+      - Message:         'expanded from macro ''__CONCAT'''
+        FilePath:        '/usr/include/x86_64-linux-gnu/sys/cdefs.h'
+        FileOffset:      4307
+        Replacements:    []
+      - Message:         'candidate function not viable: requires 2 arguments, but 3 were provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/cmath'
+        FileOffset:      9537
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/cmath'
+            FileOffset:      9541
+            Length:          20
+      - Message:         'candidate function not viable: requires 2 arguments, but 3 were provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/cmath'
+        FileOffset:      9645
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/cmath'
+            FileOffset:      9649
+            Length:          32
+      - Message:         'candidate function template not viable: requires 2 arguments, but 3 were provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      23140
+        Replacements:    []
+        Ranges:
+          - FilePath:        ''
+            FileOffset:      0
+            Length:          0
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_FUNCTION'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      22133
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+            FileOffset:      22138
+            Length:          85
+      - Message:         'candidate function template not viable: requires 2 arguments, but 3 were provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      23140
+        Replacements:    []
+        Ranges:
+          - FilePath:        ''
+            FileOffset:      0
+            Length:          0
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_FUNCTION'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      22701
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+            FileOffset:      22706
+            Length:          83
+      - Message:         'candidate function template not viable: requires 2 arguments, but 3 were provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/cmath'
+        FileOffset:      26596
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/cmath'
+            FileOffset:      26600
+            Length:          16
+      - Message:         'candidate function template not viable: requires 2 arguments, but 3 were provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/complex'
+        FileOffset:      39027
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/complex'
+            FileOffset:      39031
+            Length:          32
+      - Message:         'candidate function template not viable: requires 2 arguments, but 3 were provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/complex'
+        FileOffset:      39264
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/complex'
+            FileOffset:      39268
+            Length:          39
+      - Message:         'candidate function template not viable: requires 2 arguments, but 3 were provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/complex'
+        FileOffset:      40296
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/complex'
+            FileOffset:      40300
+            Length:          48
+      - Message:         'candidate function template not viable: requires 2 arguments, but 3 were provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/complex'
+        FileOffset:      40620
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/complex'
+            FileOffset:      40624
+            Length:          39
+      - Message:         'candidate function template not viable: requires 2 arguments, but 3 were provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/complex'
+        FileOffset:      70647
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/complex'
+            FileOffset:      70651
+            Length:          44
+      - Message:         'candidate function template not viable: requires 2 arguments, but 3 were provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/complex'
+        FileOffset:      70963
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/complex'
+            FileOffset:      70967
+            Length:          44
+      - Message:         'candidate function template not viable: requires 2 arguments, but 3 were provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/complex'
+        FileOffset:      71279
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/complex'
+            FileOffset:      71283
+            Length:          58
+      - Message:         'candidate function template not viable: requires 2 arguments, but 3 were provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      23140
+        Replacements:    []
+        Ranges:
+          - FilePath:        ''
+            FileOffset:      0
+            Length:          0
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_FUNCTION'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      17491
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+            FileOffset:      17496
+            Length:          118
+      - Message:         'candidate function template not viable: requires 2 arguments, but 3 were provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      23140
+        Replacements:    []
+        Ranges:
+          - FilePath:        ''
+            FileOffset:      0
+            Length:          0
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_FUNCTION'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      18324
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+            FileOffset:      18329
+            Length:          112
+      - Message:         'candidate function template not viable: requires 2 arguments, but 3 were provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      23140
+        Replacements:    []
+        Ranges:
+          - FilePath:        ''
+            FileOffset:      0
+            Length:          0
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_FUNCTION'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      19158
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+            FileOffset:      19163
+            Length:          115
+      - Message:         'candidate function template not viable: requires 2 arguments, but 3 were provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      23140
+        Replacements:    []
+        Ranges:
+          - FilePath:        ''
+            FileOffset:      0
+            Length:          0
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_FUNCTION'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      19992
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+            FileOffset:      19997
+            Length:          102
+      - Message:         'candidate function template not viable: requires 2 arguments, but 3 were provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      23140
+        Replacements:    []
+        Ranges:
+          - FilePath:        ''
+            FileOffset:      0
+            Length:          0
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_FUNCTION'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      20826
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+            FileOffset:      20831
+            Length:          115
+      - Message:         'candidate function template not viable: requires 2 arguments, but 3 were provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      23140
+        Replacements:    []
+        Ranges:
+          - FilePath:        ''
+            FileOffset:      0
+            Length:          0
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_FUNCTION'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      21549
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+            FileOffset:      21554
+            Length:          50
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to signed type ''value_type'' (aka ''int'') is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0070_1158_F._Density_of_subarrays.cpp'
+      FileOffset:      826
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to signed type ''value_type'' (aka ''int'') is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0070_1158_F._Density_of_subarrays.cpp'
+      FileOffset:      930
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

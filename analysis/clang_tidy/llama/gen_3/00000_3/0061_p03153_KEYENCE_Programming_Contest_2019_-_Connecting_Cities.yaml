@@ -1,0 +1,282 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+      FileOffset:      86
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+          Offset:          82
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+          Offset:          92
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''value_type'' (aka ''long long'') of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+      FileOffset:      313
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+        FileOffset:      313
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            Offset:          0
+            Length:          0
+            ReplacementText: "#include <cstddef>\n"
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            Offset:          313
+            Length:          0
+            ReplacementText: 'static_cast<value_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            Offset:          324
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            FileOffset:      313
+            Length:          11
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+        FileOffset:      313
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            Offset:          314
+            Length:          0
+            ReplacementText: 'static_cast<value_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            Offset:          319
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            FileOffset:      314
+            Length:          5
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''value_type'' (aka ''long long'') of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+      FileOffset:      428
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+        FileOffset:      428
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            Offset:          428
+            Length:          0
+            ReplacementText: 'static_cast<value_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            Offset:          433
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            FileOffset:      428
+            Length:          5
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+        FileOffset:      428
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            Offset:          428
+            Length:          0
+            ReplacementText: 'static_cast<value_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            Offset:          429
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            FileOffset:      428
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''value_type'' (aka ''long long'') of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+      FileOffset:      468
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+        FileOffset:      468
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            Offset:          468
+            Length:          0
+            ReplacementText: 'static_cast<value_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            Offset:          483
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            FileOffset:      468
+            Length:          15
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+        FileOffset:      468
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            Offset:          469
+            Length:          0
+            ReplacementText: 'static_cast<value_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            Offset:          478
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            FileOffset:      469
+            Length:          9
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''value_type'' (aka ''long long'') of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+      FileOffset:      518
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+        FileOffset:      518
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            Offset:          518
+            Length:          0
+            ReplacementText: 'static_cast<value_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            Offset:          529
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            FileOffset:      518
+            Length:          11
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+        FileOffset:      518
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            Offset:          519
+            Length:          0
+            ReplacementText: 'static_cast<value_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            Offset:          524
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            FileOffset:      519
+            Length:          5
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''value_type'' (aka ''long long'') of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+      FileOffset:      560
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+        FileOffset:      560
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            Offset:          560
+            Length:          0
+            ReplacementText: 'static_cast<value_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            Offset:          565
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            FileOffset:      560
+            Length:          5
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+        FileOffset:      560
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            Offset:          560
+            Length:          0
+            ReplacementText: 'static_cast<value_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            Offset:          561
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            FileOffset:      560
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''value_type'' (aka ''long long'') of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+      FileOffset:      600
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+        FileOffset:      600
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            Offset:          600
+            Length:          0
+            ReplacementText: 'static_cast<value_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            Offset:          615
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            FileOffset:      600
+            Length:          15
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+        FileOffset:      600
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            Offset:          601
+            Length:          0
+            ReplacementText: 'static_cast<value_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            Offset:          610
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            FileOffset:      601
+            Length:          9
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+      FileOffset:      669
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+          Offset:          669
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

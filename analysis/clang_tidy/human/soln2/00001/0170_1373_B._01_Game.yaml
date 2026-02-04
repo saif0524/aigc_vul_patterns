@@ -1,0 +1,299 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+      FileOffset:      175
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+          Offset:          163
+          Length:          11
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+          Offset:          213
+          Length:          0
+          ReplacementText: ' -> vector<int>'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+      FileOffset:      514
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+          Offset:          502
+          Length:          11
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+          Offset:          559
+          Length:          0
+          ReplacementText: ' -> vector<int>'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+      FileOffset:      963
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+          Offset:          953
+          Length:          9
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+          Offset:          1019
+          Length:          0
+          ReplacementText: ' -> list<int>'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''shortestPath'' of similar type (''int'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+      FileOffset:      1002
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+          FileOffset:      1002
+          Length:          16
+    Notes:
+      - Message:         'the first parameter in the range is ''src'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+        FileOffset:      1006
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+            FileOffset:      1006
+            Length:          3
+      - Message:         'the last parameter in the range is ''dst'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+        FileOffset:      1015
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+            FileOffset:      1015
+            Length:          3
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-unnecessary-value-param
+    DiagnosticMessage:
+      Message:         'parameter ''adj'' is passed by value and only copied once; consider moving it to avoid unnecessary copies'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+      FileOffset:      1060
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+          Offset:          25
+          Length:          0
+          ReplacementText: "\n#include <utility>\n"
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+          Offset:          1060
+          Length:          0
+          ReplacementText: 'std::move('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+          Offset:          1063
+          Length:          0
+          ReplacementText: ')'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+      FileOffset:      1206
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+          Offset:          1196
+          Length:          9
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+          Offset:          1258
+          Length:          0
+          ReplacementText: ' -> long long'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''powMod'' of similar type (''long long'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+      FileOffset:      1213
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+          FileOffset:      1213
+          Length:          29
+    Notes:
+      - Message:         'the first parameter in the range is ''base'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+        FileOffset:      1223
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+            FileOffset:      1223
+            Length:          4
+      - Message:         'the last parameter in the range is ''exp'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+        FileOffset:      1239
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+            FileOffset:      1239
+            Length:          3
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+      FileOffset:      1390
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+          Offset:          1378
+          Length:          11
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+          Offset:          1407
+          Length:          0
+          ReplacementText: ' -> vector<int>'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+      FileOffset:      1586
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+          Offset:          1576
+          Length:          9
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+          Offset:          1615
+          Length:          0
+          ReplacementText: ' -> long long'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+      FileOffset:      1675
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+          Offset:          1663
+          Length:          11
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+          Offset:          1708
+          Length:          0
+          ReplacementText: ' -> long double'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+      FileOffset:      1747
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+          Offset:          1737
+          Length:          9
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+          Offset:          1776
+          Length:          0
+          ReplacementText: ' -> long long'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+      FileOffset:      1819
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+          Offset:          1809
+          Length:          9
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+          Offset:          1855
+          Length:          0
+          ReplacementText: ' -> long long'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''power'' of similar type (''long long'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+      FileOffset:      1825
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+          FileOffset:      1825
+          Length:          29
+    Notes:
+      - Message:         'the first parameter in the range is ''base'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+        FileOffset:      1835
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+            FileOffset:      1835
+            Length:          4
+      - Message:         'the last parameter in the range is ''exp'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+        FileOffset:      1851
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+            FileOffset:      1851
+            Length:          3
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+      FileOffset:      1961
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+          Offset:          1957
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+          Offset:          1967
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+      FileOffset:      2016
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+          Offset:          2016
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-loop-convert
+    DiagnosticMessage:
+      Message:         use range-based for loop instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+      FileOffset:      2146
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+          Offset:          2150
+          Length:          30
+          ReplacementText: '(char i : s)'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0170_1373_B._01_Game.cpp'
+          Offset:          2191
+          Length:          4
+          ReplacementText: i
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

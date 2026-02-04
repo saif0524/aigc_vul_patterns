@@ -1,0 +1,238 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-using
+    DiagnosticMessage:
+      Message:         'use ''using'' instead of ''typedef'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+      FileOffset:      130
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+          Offset:          130
+          Length:          20
+          ReplacementText: 'using ll = long long'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-using
+    DiagnosticMessage:
+      Message:         'use ''using'' instead of ''typedef'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+      FileOffset:      152
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+          Offset:          152
+          Length:          26
+          ReplacementText: 'using pii = pair<int, int>'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+      FileOffset:      181
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+      FileOffset:      239
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''binary'' of similar type (''int'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+      FileOffset:      301
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+          FileOffset:      301
+          Length:          20
+    Notes:
+      - Message:         'the first parameter in the range is ''l'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+        FileOffset:      305
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+            FileOffset:      305
+            Length:          1
+      - Message:         'the last parameter in the range is ''r'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+        FileOffset:      316
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+            FileOffset:      316
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+      FileOffset:      350
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+          Offset:          343
+          Length:          6
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+          Offset:          379
+          Length:          0
+          ReplacementText: ' -> binary'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-return-braced-init-list
+    DiagnosticMessage:
+      Message:         'avoid repeating the return type from the declaration; use a braced initializer list instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+      FileOffset:      393
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+          Offset:          393
+          Length:          7
+          ReplacementText: '{'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+          Offset:          420
+          Length:          1
+          ReplacementText: '}'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+      FileOffset:      433
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+          Offset:          426
+          Length:          6
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+          Offset:          462
+          Length:          0
+          ReplacementText: ' -> binary'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-return-braced-init-list
+    DiagnosticMessage:
+      Message:         'avoid repeating the return type from the declaration; use a braced initializer list instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+      FileOffset:      476
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+          Offset:          476
+          Length:          7
+          ReplacementText: '{'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+          Offset:          503
+          Length:          1
+          ReplacementText: '}'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+      FileOffset:      516
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+          Offset:          509
+          Length:          6
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+          Offset:          545
+          Length:          0
+          ReplacementText: ' -> binary'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-return-braced-init-list
+    DiagnosticMessage:
+      Message:         'avoid repeating the return type from the declaration; use a braced initializer list instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+      FileOffset:      559
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+          Offset:          559
+          Length:          7
+          ReplacementText: '{'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+          Offset:          610
+          Length:          1
+          ReplacementText: '}'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+      FileOffset:      626
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+      FileOffset:      648
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+          Offset:          641
+          Length:          6
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+          Offset:          659
+          Length:          0
+          ReplacementText: ' -> binary'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''dfs3'' of similar type (''int'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+      FileOffset:      1313
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+          FileOffset:      1313
+          Length:          13
+    Notes:
+      - Message:         'the first parameter in the range is ''u'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+        FileOffset:      1317
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+            FileOffset:      1317
+            Length:          1
+      - Message:         'the last parameter in the range is ''pa'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+        FileOffset:      1324
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+            FileOffset:      1324
+            Length:          2
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+      FileOffset:      1667
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+          Offset:          1663
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0207_891_D._Sloth.cpp'
+          Offset:          1673
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

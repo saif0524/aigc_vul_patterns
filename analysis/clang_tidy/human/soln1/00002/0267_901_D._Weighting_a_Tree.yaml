@@ -1,0 +1,347 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+      FileOffset:      101
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+      FileOffset:      146
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''add'' of similar type (''int'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+      FileOffset:      205
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+          FileOffset:      205
+          Length:          12
+    Notes:
+      - Message:         'the first parameter in the range is ''x'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+        FileOffset:      209
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+            FileOffset:      209
+            Length:          1
+      - Message:         'the last parameter in the range is ''y'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+        FileOffset:      216
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+            FileOffset:      216
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''fir'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+      FileOffset:      235
+      Replacements:    []
+    Notes:
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+        FileOffset:      1054
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+            FileOffset:      1054
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 58
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+        FileOffset:      1038
+        Replacements:    []
+      - Message:         'Assuming ''i'' is <= ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+        FileOffset:      1109
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+            FileOffset:      1109
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+        FileOffset:      1093
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+        FileOffset:      1122
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+            FileOffset:      1122
+            Length:          21
+      - Message:         Taint propagated to the 2nd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+        FileOffset:      1122
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+            FileOffset:      1122
+            Length:          21
+      - Message:         'Calling ''link'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+        FileOffset:      1145
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+            FileOffset:      1145
+            Length:          10
+      - Message:         'Calling ''add'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+        FileOffset:      304
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+            FileOffset:      304
+            Length:          9
+      - Message:         'Access of ''fir'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+        FileOffset:      235
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+            FileOffset:      235
+            Length:          6
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+      FileOffset:      330
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+      FileOffset:      347
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+          Offset:          343
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+          Offset:          364
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-bool-literals
+    DiagnosticMessage:
+      Message:         converting integer literal to bool, use bool literal instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+      FileOffset:      429
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+          Offset:          429
+          Length:          1
+          ReplacementText: 'true'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-assignment-in-if-condition
+    DiagnosticMessage:
+      Message:         'an assignment within an ''if'' condition is bug-prone'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+      FileOffset:      666
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+          FileOffset:      662
+          Length:          15
+    Notes:
+      - Message:         'if it should be an assignment, move it out of the ''if'' condition'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+        FileOffset:      666
+        Replacements:    []
+      - Message:         'if it is meant to be an equality check, change ''='' to ''=='''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+        FileOffset:      666
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-parentheses
+    DiagnosticMessage:
+      Message:         using the result of an assignment as a condition without parentheses
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+      FileOffset:      666
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+          FileOffset:      662
+          Length:          15
+    Notes:
+      - Message:         place parentheses around the assignment to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+        FileOffset:      666
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+            Offset:          662
+            Length:          0
+            ReplacementText: '('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+            Offset:          677
+            Length:          0
+            ReplacementText: ')'
+      - Message:         'use ''=='' to turn this assignment into an equality comparison'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+        FileOffset:      666
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+            Offset:          666
+            Length:          1
+            ReplacementText: '=='
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+      FileOffset:      998
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+          Offset:          994
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+          Offset:          1008
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-redundant-void-arg
+    DiagnosticMessage:
+      Message:         redundant void argument list in function definition
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+      FileOffset:      1003
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+          Offset:          1003
+          Length:          4
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-format
+    DiagnosticMessage:
+      Message:         'format specifies type ''int *'' but the argument has type ''long long *'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+      FileOffset:      1136
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+          Offset:          1129
+          Length:          2
+          ReplacementText: '%lld'
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+          FileOffset:      1136
+          Length:          2
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+          FileOffset:      1129
+          Length:          2
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-format
+    DiagnosticMessage:
+      Message:         'format specifies type ''int *'' but the argument has type ''long long *'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+      FileOffset:      1140
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+          Offset:          1131
+          Length:          2
+          ReplacementText: '%lld'
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+          FileOffset:      1140
+          Length:          2
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+          FileOffset:      1131
+          Length:          2
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+      FileOffset:      1150
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+      FileOffset:      1153
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+      FileOffset:      1316
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'result of multiplication in type ''int'' is used as a pointer offset after an implicit widening conversion to type ''ptrdiff_t'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+      FileOffset:      1583
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+        FileOffset:      1585
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+            Offset:          25
+            Length:          0
+            ReplacementText: "\n#include <cstddef>\n"
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+            Offset:          1585
+            Length:          0
+            ReplacementText: 'static_cast<ptrdiff_t>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+            Offset:          1590
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+            FileOffset:      1585
+            Length:          5
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+        FileOffset:      1585
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+            Offset:          1585
+            Length:          0
+            ReplacementText: 'static_cast<ptrdiff_t>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+            Offset:          1590
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0267_901_D._Weighting_a_Tree.cpp'
+            FileOffset:      1585
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

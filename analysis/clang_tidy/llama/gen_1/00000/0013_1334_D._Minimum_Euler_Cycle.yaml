@@ -1,0 +1,121 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0013_1334_D._Minimum_Euler_Cycle.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0013_1334_D._Minimum_Euler_Cycle.cpp'
+      FileOffset:      86
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0013_1334_D._Minimum_Euler_Cycle.cpp'
+          Offset:          82
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0013_1334_D._Minimum_Euler_Cycle.cpp'
+          Offset:          92
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-core.DivideZero
+    DiagnosticMessage:
+      Message:         Division by zero
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0013_1334_D._Minimum_Euler_Cycle.cpp'
+      FileOffset:      536
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0013_1334_D._Minimum_Euler_Cycle.cpp'
+          FileOffset:      528
+          Length:          17
+    Notes:
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0013_1334_D._Minimum_Euler_Cycle.cpp'
+        FileOffset:      124
+        Replacements:    []
+      - Message:         'Assuming ''i'' is < ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0013_1334_D._Minimum_Euler_Cycle.cpp'
+        FileOffset:      259
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0013_1334_D._Minimum_Euler_Cycle.cpp'
+            FileOffset:      259
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0013_1334_D._Minimum_Euler_Cycle.cpp'
+        FileOffset:      243
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0013_1334_D._Minimum_Euler_Cycle.cpp'
+        FileOffset:      259
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0013_1334_D._Minimum_Euler_Cycle.cpp'
+            FileOffset:      259
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 20
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0013_1334_D._Minimum_Euler_Cycle.cpp'
+        FileOffset:      243
+        Replacements:    []
+      - Message:         'Assuming ''i'' is <= ''r'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0013_1334_D._Minimum_Euler_Cycle.cpp'
+        FileOffset:      385
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0013_1334_D._Minimum_Euler_Cycle.cpp'
+            FileOffset:      385
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0013_1334_D._Minimum_Euler_Cycle.cpp'
+        FileOffset:      369
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0013_1334_D._Minimum_Euler_Cycle.cpp'
+        FileOffset:      416
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0013_1334_D._Minimum_Euler_Cycle.cpp'
+            FileOffset:      416
+            Length:          10
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0013_1334_D._Minimum_Euler_Cycle.cpp'
+        FileOffset:      412
+        Replacements:    []
+      - Message:         Division by zero
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0013_1334_D._Minimum_Euler_Cycle.cpp'
+        FileOffset:      536
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0013_1334_D._Minimum_Euler_Cycle.cpp'
+            FileOffset:      528
+            Length:          17
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-loop-convert
+    DiagnosticMessage:
+      Message:         use range-based for loop instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0013_1334_D._Minimum_Euler_Cycle.cpp'
+      FileOffset:      585
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0013_1334_D._Minimum_Euler_Cycle.cpp'
+          Offset:          589
+          Length:          32
+          ReplacementText: '(int an : ans)'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0013_1334_D._Minimum_Euler_Cycle.cpp'
+          Offset:          644
+          Length:          6
+          ReplacementText: an
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0013_1334_D._Minimum_Euler_Cycle.cpp'
+      FileOffset:      685
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0013_1334_D._Minimum_Euler_Cycle.cpp'
+          Offset:          685
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

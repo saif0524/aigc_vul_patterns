@@ -1,0 +1,413 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+      FileOffset:      57
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+          Offset:          53
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+          Offset:          63
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''int'' to signed type ''char'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+      FileOffset:      77
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''int'' to signed type ''char'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+      FileOffset:      173
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''int'' to signed type ''char'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+      FileOffset:      255
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+      FileOffset:      347
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+      FileOffset:      364
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+          Offset:          360
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+          Offset:          370
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory after the end of ''a'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+      FileOffset:      646
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+          FileOffset:      646
+          Length:          4
+    Notes:
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      403
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      457
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+            FileOffset:      457
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 25
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      441
+        Replacements:    []
+      - Message:         '''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      519
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+            FileOffset:      519
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 32
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      503
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      610
+        Replacements:    []
+      - Message:         'Access of ''a'' at an overflowing index, while it holds only 300010 ''int'' elements'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      646
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+            FileOffset:      646
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory around ''a'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+      FileOffset:      646
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+          FileOffset:      646
+          Length:          4
+    Notes:
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      403
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      457
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+            FileOffset:      457
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 25
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      441
+        Replacements:    []
+      - Message:         '''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      519
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+            FileOffset:      519
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 32
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      503
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      610
+        Replacements:    []
+      - Message:         'Access of ''a'' at a negative or overflowing index, while it holds only 300010 ''int'' elements'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      646
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+            FileOffset:      646
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''a'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+      FileOffset:      646
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+          FileOffset:      646
+          Length:          4
+    Notes:
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      403
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      457
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+            FileOffset:      457
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 25
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      441
+        Replacements:    []
+      - Message:         '''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      519
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+            FileOffset:      519
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 32
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      503
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      610
+        Replacements:    []
+      - Message:         'Access of ''a'' at negative byte offset'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      646
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+            FileOffset:      646
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-core.UndefinedBinaryOperatorResult
+    DiagnosticMessage:
+      Message:         'The left operand of ''>='' is a garbage value'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+      FileOffset:      718
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+          FileOffset:      716
+          Length:          1
+    Notes:
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      403
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      457
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+            FileOffset:      457
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 25
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      441
+        Replacements:    []
+      - Message:         '''l'' declared without an initial value'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      493
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+            FileOffset:      493
+            Length:          1
+      - Message:         '''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      519
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+            FileOffset:      519
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 32
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      503
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 38
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      610
+        Replacements:    []
+      - Message:         'The left operand of ''>='' is a garbage value'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      718
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+            FileOffset:      716
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-core.UndefinedBinaryOperatorResult
+    DiagnosticMessage:
+      Message:         'The right operand of ''>='' is a garbage value'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+      FileOffset:      718
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+          FileOffset:      721
+          Length:          1
+    Notes:
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      403
+        Replacements:    []
+      - Message:         'Assuming ''i'' is <= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      457
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+            FileOffset:      457
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      441
+        Replacements:    []
+      - Message:         'Assuming ''i'' is <= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      457
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+            FileOffset:      457
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      441
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      457
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+            FileOffset:      457
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 25
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      441
+        Replacements:    []
+      - Message:         '''r'' declared without an initial value'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      496
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+            FileOffset:      496
+            Length:          1
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      503
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      544
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+            FileOffset:      544
+            Length:          13
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      540
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      503
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      544
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+            FileOffset:      544
+            Length:          13
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      540
+        Replacements:    []
+      - Message:         ' Execution continues on line 32'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      593
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      610
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      646
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+            FileOffset:      646
+            Length:          13
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      642
+        Replacements:    []
+      - Message:         ' Execution continues on line 38'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      695
+        Replacements:    []
+      - Message:         'The right operand of ''>='' is a garbage value'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+        FileOffset:      718
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0181_1291_B._Array_Sharpening.cpp'
+            FileOffset:      721
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

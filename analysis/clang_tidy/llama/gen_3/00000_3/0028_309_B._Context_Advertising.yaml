@@ -1,0 +1,194 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+      FileOffset:      80
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+          Offset:          76
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+          Offset:          86
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+      FileOffset:      512
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-core.DivideZero
+    DiagnosticMessage:
+      Message:         Division by zero
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+      FileOffset:      774
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+          FileOffset:      760
+          Length:          34
+    Notes:
+      - Message:         'Assuming ''i'' is < ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+        FileOffset:      195
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+            FileOffset:      195
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+        FileOffset:      179
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+        FileOffset:      195
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+            FileOffset:      195
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 15
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+        FileOffset:      179
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+        FileOffset:      295
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+        FileOffset:      449
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+        FileOffset:      545
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+            FileOffset:      545
+            Length:          57
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+        FileOffset:      541
+        Replacements:    []
+      - Message:         'The value 0 is assigned to ''wordsInCurrentLine'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+        FileOffset:      675
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+            FileOffset:      675
+            Length:          22
+      - Message:         Division by zero
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+        FileOffset:      774
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+            FileOffset:      760
+            Length:          34
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-core.DivideZero
+    DiagnosticMessage:
+      Message:         Division by zero
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+      FileOffset:      891
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+          FileOffset:      877
+          Length:          34
+    Notes:
+      - Message:         'Assuming ''i'' is < ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+        FileOffset:      195
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+            FileOffset:      195
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+        FileOffset:      179
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+        FileOffset:      195
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+            FileOffset:      195
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 15
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+        FileOffset:      179
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+        FileOffset:      295
+        Replacements:    []
+      - Message:         '''wordsInCurrentLine'' initialized to 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+        FileOffset:      376
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+            FileOffset:      376
+            Length:          22
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+        FileOffset:      449
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+        FileOffset:      545
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+            FileOffset:      545
+            Length:          57
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+        FileOffset:      541
+        Replacements:    []
+      - Message:         Division by zero
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+        FileOffset:      891
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+            FileOffset:      877
+            Length:          34
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+      FileOffset:      1440
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''std::endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+      FileOffset:      1785
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0028_309_B._Context_Advertising.cpp'
+          Offset:          1785
+          Length:          9
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

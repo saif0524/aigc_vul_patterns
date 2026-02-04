@@ -1,0 +1,415 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+      FileOffset:      108
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+          Offset:          104
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+          Offset:          113
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''int'' to signed type ''char'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+      FileOffset:      162
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''int'' to signed type ''char'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+      FileOffset:      252
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+      FileOffset:      342
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+      FileOffset:      382
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+      FileOffset:      430
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+      FileOffset:      488
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+          Offset:          483
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+          Offset:          529
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''first'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+      FileOffset:      625
+      Replacements:    []
+    Notes:
+      - Message:         'Assuming ''i'' is <= ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+        FileOffset:      2561
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+            FileOffset:      2561
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+        FileOffset:      2545
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+        FileOffset:      2580
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+            FileOffset:      2580
+            Length:          33
+      - Message:         Taint propagated to the 2nd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+        FileOffset:      2580
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+            FileOffset:      2580
+            Length:          33
+      - Message:         'Calling ''Add'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+        FileOffset:      2619
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+            FileOffset:      2619
+            Length:          14
+      - Message:         'Access of ''first'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+        FileOffset:      625
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+            FileOffset:      625
+            Length:          8
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+      FileOffset:      744
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+      FileOffset:      765
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-bool-literals
+    DiagnosticMessage:
+      Message:         converting integer literal to bool, use bool literal instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+      FileOffset:      1039
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+          Offset:          1039
+          Length:          1
+          ReplacementText: 'true'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+      FileOffset:      1213
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+      FileOffset:      1733
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+          Offset:          1729
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+          Offset:          1750
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''top'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+      FileOffset:      1762
+      Replacements:    []
+    Notes:
+      - Message:         'Assuming ''i'' is > ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+        FileOffset:      2561
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+            FileOffset:      2561
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 105
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+        FileOffset:      2545
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+        FileOffset:      2718
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+        FileOffset:      2736
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+            FileOffset:      2736
+            Length:          22
+      - Message:         Taint propagated to the 2nd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+        FileOffset:      2736
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+            FileOffset:      2736
+            Length:          22
+      - Message:         'Calling ''LCA'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+        FileOffset:      2787
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+            FileOffset:      2787
+            Length:          9
+      - Message:         'Access of ''top'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+        FileOffset:      1762
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+            FileOffset:      1762
+            Length:          6
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+      FileOffset:      1891
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+      FileOffset:      1907
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+          Offset:          1903
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+          Offset:          1918
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+      FileOffset:      1987
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+      FileOffset:      2507
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+          Offset:          2503
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+          Offset:          2513
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''top'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+      FileOffset:      2668
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+          FileOffset:      2668
+          Length:          8
+    Notes:
+      - Message:         'Assuming ''i'' is > ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+        FileOffset:      2561
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+            FileOffset:      2561
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 105
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+        FileOffset:      2545
+        Replacements:    []
+      - Message:         'Calling ''Dijkstra'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+        FileOffset:      2641
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+            FileOffset:      2641
+            Length:          10
+      - Message:         'Assuming ''i'' is > ''k'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+        FileOffset:      856
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+            FileOffset:      856
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 35
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+        FileOffset:      840
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+        FileOffset:      908
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+            FileOffset:      908
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 36
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+        FileOffset:      888
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+        FileOffset:      945
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+            FileOffset:      945
+            Length:          10
+      - Message:         Loop condition is false. Execution continues on line 105
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+        FileOffset:      938
+        Replacements:    []
+      - Message:         'Returning from ''Dijkstra'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+        FileOffset:      2641
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+            FileOffset:      2641
+            Length:          10
+      - Message:         'Calling ''Kruskal'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+        FileOffset:      2655
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+            FileOffset:      2655
+            Length:          9
+      - Message:         'Assuming ''u'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+        FileOffset:      2055
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+            FileOffset:      2055
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 86
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+        FileOffset:      2039
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+        FileOffset:      2233
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+            FileOffset:      2233
+            Length:          17
+      - Message:         Loop condition is false. Execution continues on line 89
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+        FileOffset:      2217
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 106
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+        FileOffset:      2294
+        Replacements:    []
+      - Message:         'Returning from ''Kruskal'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+        FileOffset:      2655
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+            FileOffset:      2655
+            Length:          9
+      - Message:         'Access of ''top'' at negative byte offset'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+        FileOffset:      2668
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0094_1253_F._Cheap_Robot.cpp'
+            FileOffset:      2668
+            Length:          8
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

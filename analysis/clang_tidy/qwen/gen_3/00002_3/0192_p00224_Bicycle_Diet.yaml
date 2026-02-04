@@ -1,0 +1,161 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0192_p00224_Bicycle_Diet.cpp'
+Diagnostics:
+  - DiagnosticName:  performance-enum-size
+    DiagnosticMessage:
+      Message:         'enum ''(unnamed enum at /home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0192_p00224_Bicycle_Diet.cpp:7:1)'' uses a larger base type (''unsigned int'', size: 4 bytes) than necessary for its value set, consider using ''std::uint8_t'' (1 byte) as the base type to reduce its size'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0192_p00224_Bicycle_Diet.cpp'
+      FileOffset:      91
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0192_p00224_Bicycle_Diet.cpp'
+      FileOffset:      161
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0192_p00224_Bicycle_Diet.cpp'
+      FileOffset:      185
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0192_p00224_Bicycle_Diet.cpp'
+      FileOffset:      207
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0192_p00224_Bicycle_Diet.cpp'
+      FileOffset:      234
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0192_p00224_Bicycle_Diet.cpp'
+          Offset:          230
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0192_p00224_Bicycle_Diet.cpp'
+          Offset:          260
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''get_id'' of convertible types are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0192_p00224_Bicycle_Diet.cpp'
+      FileOffset:      241
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0192_p00224_Bicycle_Diet.cpp'
+          FileOffset:      241
+          Length:          18
+    Notes:
+      - Message:         'the first parameter in the range is ''type'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0192_p00224_Bicycle_Diet.cpp'
+        FileOffset:      246
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0192_p00224_Bicycle_Diet.cpp'
+            FileOffset:      246
+            Length:          4
+      - Message:         'the last parameter in the range is ''num'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0192_p00224_Bicycle_Diet.cpp'
+        FileOffset:      256
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0192_p00224_Bicycle_Diet.cpp'
+            FileOffset:      256
+            Length:          3
+      - Message:         '''char'' and ''int'' may be implicitly converted'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0192_p00224_Bicycle_Diet.cpp'
+        FileOffset:      252
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0192_p00224_Bicycle_Diet.cpp'
+      FileOffset:      401
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0192_p00224_Bicycle_Diet.cpp'
+          Offset:          397
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0192_p00224_Bicycle_Diet.cpp'
+          Offset:          407
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0192_p00224_Bicycle_Diet.cpp'
+      FileOffset:      454
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0192_p00224_Bicycle_Diet.cpp'
+          Offset:          454
+          Length:          1
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-loop-convert
+    DiagnosticMessage:
+      Message:         use range-based for loop instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0192_p00224_Bicycle_Diet.cpp'
+      FileOffset:      771
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0192_p00224_Bicycle_Diet.cpp'
+          Offset:          774
+          Length:          20
+          ReplacementText: '(auto & i : adj)'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0192_p00224_Bicycle_Diet.cpp'
+          Offset:          808
+          Length:          6
+          ReplacementText: i
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-emplace
+    DiagnosticMessage:
+      Message:         use emplace instead of push
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0192_p00224_Bicycle_Diet.cpp'
+      FileOffset:      1174
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0192_p00224_Bicycle_Diet.cpp'
+          Offset:          1174
+          Length:          6
+          ReplacementText: 'emplace('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0192_p00224_Bicycle_Diet.cpp'
+          Offset:          1187
+          Length:          1
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-emplace
+    DiagnosticMessage:
+      Message:         use emplace instead of push
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0192_p00224_Bicycle_Diet.cpp'
+      FileOffset:      1822
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0192_p00224_Bicycle_Diet.cpp'
+          Offset:          1822
+          Length:          6
+          ReplacementText: 'emplace('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0192_p00224_Bicycle_Diet.cpp'
+          Offset:          1848
+          Length:          1
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

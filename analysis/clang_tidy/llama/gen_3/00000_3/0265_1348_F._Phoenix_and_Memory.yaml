@@ -1,0 +1,177 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0265_1348_F._Phoenix_and_Memory.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0265_1348_F._Phoenix_and_Memory.cpp'
+      FileOffset:      71
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0265_1348_F._Phoenix_and_Memory.cpp'
+      FileOffset:      86
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0265_1348_F._Phoenix_and_Memory.cpp'
+      FileOffset:      126
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0265_1348_F._Phoenix_and_Memory.cpp'
+          Offset:          121
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0265_1348_F._Phoenix_and_Memory.cpp'
+          Offset:          133
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0265_1348_F._Phoenix_and_Memory.cpp'
+      FileOffset:      764
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0265_1348_F._Phoenix_and_Memory.cpp'
+          Offset:          760
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0265_1348_F._Phoenix_and_Memory.cpp'
+          Offset:          770
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''mem'''
+      FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/predefined_ops.h'
+      FileOffset:      2712
+      Replacements:    []
+    Notes:
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0265_1348_F._Phoenix_and_Memory.cpp'
+        FileOffset:      807
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0265_1348_F._Phoenix_and_Memory.cpp'
+            FileOffset:      807
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 43
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0265_1348_F._Phoenix_and_Memory.cpp'
+        FileOffset:      791
+        Replacements:    []
+      - Message:         'Calling ''sort<std::pair<std::pair<int, int>, int> *>'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0265_1348_F._Phoenix_and_Memory.cpp'
+        FileOffset:      916
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0265_1348_F._Phoenix_and_Memory.cpp'
+            FileOffset:      916
+            Length:          18
+      - Message:         'Calling ''__sort<std::pair<std::pair<int, int>, int> *, __gnu_cxx::__ops::_Iter_less_iter>'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      173642
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+            FileOffset:      173642
+            Length:          66
+      - Message:         'Assuming ''__first'' is not equal to ''__last'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      65748
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+            FileOffset:      65748
+            Length:          17
+      - Message:         Taking true branch
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      65744
+        Replacements:    []
+      - Message:         'Calling ''__final_insertion_sort<std::pair<std::pair<int, int>, int> *, __gnu_cxx::__ops::_Iter_less_iter>'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      65865
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+            FileOffset:      65865
+            Length:          52
+      - Message:         Taking false branch
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      63125
+        Replacements:    []
+      - Message:         'Calling ''__insertion_sort<std::pair<std::pair<int, int>, int> *, __gnu_cxx::__ops::_Iter_less_iter>'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      63345
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+            FileOffset:      63345
+            Length:          46
+      - Message:         '''__first'' is not equal to ''__last'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      61849
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+            FileOffset:      61849
+            Length:          7
+      - Message:         Taking false branch
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      61845
+        Replacements:    []
+      - Message:         '''__i'' is not equal to ''__last'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      61929
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+            FileOffset:      61929
+            Length:          3
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      61883
+        Replacements:    []
+      - Message:         Taking false branch
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      61957
+        Replacements:    []
+      - Message:         'Calling ''__unguarded_linear_insert<std::pair<std::pair<int, int>, int> *, __gnu_cxx::__ops::_Val_less_iter>'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      62203
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+            FileOffset:      62203
+            Length:          82
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      61426
+        Replacements:    []
+      - Message:         'Calling ''_Val_less_iter::operator()'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      61433
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+            FileOffset:      61433
+            Length:          21
+      - Message:         'Access of ''mem'' at negative byte offset -12'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/predefined_ops.h'
+        FileOffset:      2712
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/predefined_ops.h'
+            FileOffset:      2712
+            Length:          5
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

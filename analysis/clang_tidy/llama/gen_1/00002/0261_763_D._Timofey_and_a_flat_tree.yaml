@@ -1,0 +1,154 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0261_763_D._Timofey_and_a_flat_tree.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0261_763_D._Timofey_and_a_flat_tree.cpp'
+      FileOffset:      74
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0261_763_D._Timofey_and_a_flat_tree.cpp'
+      FileOffset:      119
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0261_763_D._Timofey_and_a_flat_tree.cpp'
+      FileOffset:      143
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0261_763_D._Timofey_and_a_flat_tree.cpp'
+          Offset:          136
+          Length:          6
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0261_763_D._Timofey_and_a_flat_tree.cpp'
+          Offset:          160
+          Length:          0
+          ReplacementText: ' -> string'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''dfs'' of similar type (''int'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0261_763_D._Timofey_and_a_flat_tree.cpp'
+      FileOffset:      147
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0261_763_D._Timofey_and_a_flat_tree.cpp'
+          FileOffset:      147
+          Length:          12
+    Notes:
+      - Message:         'the first parameter in the range is ''u'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0261_763_D._Timofey_and_a_flat_tree.cpp'
+        FileOffset:      151
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0261_763_D._Timofey_and_a_flat_tree.cpp'
+            FileOffset:      151
+            Length:          1
+      - Message:         'the last parameter in the range is ''p'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0261_763_D._Timofey_and_a_flat_tree.cpp'
+        FileOffset:      158
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0261_763_D._Timofey_and_a_flat_tree.cpp'
+            FileOffset:      158
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-for-range-copy
+    DiagnosticMessage:
+      Message:         'loop variable is copied but only used as const reference; consider making it a const reference'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0261_763_D._Timofey_and_a_flat_tree.cpp'
+      FileOffset:      363
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0261_763_D._Timofey_and_a_flat_tree.cpp'
+          Offset:          356
+          Length:          0
+          ReplacementText: 'const '
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0261_763_D._Timofey_and_a_flat_tree.cpp'
+          Offset:          362
+          Length:          0
+          ReplacementText: '&'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0261_763_D._Timofey_and_a_flat_tree.cpp'
+      FileOffset:      534
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0261_763_D._Timofey_and_a_flat_tree.cpp'
+      FileOffset:      552
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0261_763_D._Timofey_and_a_flat_tree.cpp'
+          Offset:          548
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0261_763_D._Timofey_and_a_flat_tree.cpp'
+          Offset:          558
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''adj'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0261_763_D._Timofey_and_a_flat_tree.cpp'
+      FileOffset:      689
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0261_763_D._Timofey_and_a_flat_tree.cpp'
+          FileOffset:      689
+          Length:          6
+    Notes:
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0261_763_D._Timofey_and_a_flat_tree.cpp'
+        FileOffset:      613
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0261_763_D._Timofey_and_a_flat_tree.cpp'
+            FileOffset:      613
+            Length:          9
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0261_763_D._Timofey_and_a_flat_tree.cpp'
+        FileOffset:      597
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0261_763_D._Timofey_and_a_flat_tree.cpp'
+        FileOffset:      657
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0261_763_D._Timofey_and_a_flat_tree.cpp'
+            FileOffset:      657
+            Length:          22
+      - Message:         Taint propagated to the 2nd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0261_763_D._Timofey_and_a_flat_tree.cpp'
+        FileOffset:      657
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0261_763_D._Timofey_and_a_flat_tree.cpp'
+            FileOffset:      657
+            Length:          22
+      - Message:         'Access of ''adj'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0261_763_D._Timofey_and_a_flat_tree.cpp'
+        FileOffset:      689
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0261_763_D._Timofey_and_a_flat_tree.cpp'
+            FileOffset:      689
+            Length:          6
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

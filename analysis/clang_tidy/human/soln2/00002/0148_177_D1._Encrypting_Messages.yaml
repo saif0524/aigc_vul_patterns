@@ -1,0 +1,319 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+      FileOffset:      25
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+      FileOffset:      70
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+          Offset:          66
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+          Offset:          76
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''b'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+      FileOffset:      355
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+          FileOffset:      355
+          Length:          4
+    Notes:
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+        FileOffset:      103
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+            FileOffset:      103
+            Length:          32
+      - Message:         Taint propagated to the 3rd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+        FileOffset:      103
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+            FileOffset:      103
+            Length:          32
+      - Message:         'Assuming ''i'' is <= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+        FileOffset:      151
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+            FileOffset:      151
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+        FileOffset:      139
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+        FileOffset:      151
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+            FileOffset:      151
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 8
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+        FileOffset:      139
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+        FileOffset:      211
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+            FileOffset:      211
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 10
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+        FileOffset:      199
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+        FileOffset:      256
+        Replacements:    []
+      - Message:         '''i'' is > ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+        FileOffset:      291
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+            FileOffset:      291
+            Length:          1
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+        FileOffset:      287
+        Replacements:    []
+      - Message:         'Assuming ''x'' is > 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+        FileOffset:      343
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+            FileOffset:      343
+            Length:          5
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+        FileOffset:      339
+        Replacements:    []
+      - Message:         'Access of ''b'' with a tainted index that may be too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+        FileOffset:      355
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+            FileOffset:      355
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-optin.taint.TaintedDiv
+    DiagnosticMessage:
+      Message:         Division by a tainted value, possibly zero
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+      FileOffset:      404
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+          FileOffset:      399
+          Length:          8
+    Notes:
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+        FileOffset:      103
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+            FileOffset:      103
+            Length:          32
+      - Message:         'Value assigned to ''c'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+        FileOffset:      103
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+            FileOffset:      103
+            Length:          32
+      - Message:         Taint propagated to the 4th argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+        FileOffset:      103
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+            FileOffset:      103
+            Length:          32
+      - Message:         'Assuming ''i'' is <= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+        FileOffset:      151
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+            FileOffset:      151
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+        FileOffset:      139
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+        FileOffset:      151
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+            FileOffset:      151
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 8
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+        FileOffset:      139
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+        FileOffset:      211
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+            FileOffset:      211
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 10
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+        FileOffset:      199
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+        FileOffset:      256
+        Replacements:    []
+      - Message:         '''i'' is > ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+        FileOffset:      291
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+            FileOffset:      291
+            Length:          1
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+        FileOffset:      287
+        Replacements:    []
+      - Message:         'Assuming ''x'' is <= 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+        FileOffset:      343
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+            FileOffset:      343
+            Length:          5
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+        FileOffset:      339
+        Replacements:    []
+      - Message:         Division by a tainted value, possibly zero
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+        FileOffset:      404
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+            FileOffset:      399
+            Length:          8
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-optin.taint.TaintedDiv
+    DiagnosticMessage:
+      Message:         Division by a tainted value, possibly zero
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+      FileOffset:      434
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+          FileOffset:      429
+          Length:          8
+    Notes:
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+        FileOffset:      103
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+            FileOffset:      103
+            Length:          32
+      - Message:         'Value assigned to ''c'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+        FileOffset:      103
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+            FileOffset:      103
+            Length:          32
+      - Message:         Taint propagated to the 4th argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+        FileOffset:      103
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+            FileOffset:      103
+            Length:          32
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+        FileOffset:      151
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+            FileOffset:      151
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 8
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+        FileOffset:      139
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+        FileOffset:      211
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+            FileOffset:      211
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 10
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+        FileOffset:      199
+        Replacements:    []
+      - Message:         '''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+        FileOffset:      268
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+            FileOffset:      268
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 19
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+        FileOffset:      256
+        Replacements:    []
+      - Message:         Division by a tainted value, possibly zero
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+        FileOffset:      434
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0148_177_D1._Encrypting_Messages.cpp'
+            FileOffset:      429
+            Length:          8
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

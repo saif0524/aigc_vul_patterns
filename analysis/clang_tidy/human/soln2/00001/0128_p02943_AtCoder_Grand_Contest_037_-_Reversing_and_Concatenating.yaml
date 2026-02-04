@@ -1,0 +1,158 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0128_p02943_AtCoder_Grand_Contest_037_-_Reversing_and_Concatenating.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-using
+    DiagnosticMessage:
+      Message:         'use ''using'' instead of ''typedef'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0128_p02943_AtCoder_Grand_Contest_037_-_Reversing_and_Concatenating.cpp'
+      FileOffset:      117
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0128_p02943_AtCoder_Grand_Contest_037_-_Reversing_and_Concatenating.cpp'
+          Offset:          117
+          Length:          20
+          ReplacementText: 'using LL = long long'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0128_p02943_AtCoder_Grand_Contest_037_-_Reversing_and_Concatenating.cpp'
+      FileOffset:      140
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0128_p02943_AtCoder_Grand_Contest_037_-_Reversing_and_Concatenating.cpp'
+      FileOffset:      194
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0128_p02943_AtCoder_Grand_Contest_037_-_Reversing_and_Concatenating.cpp'
+          Offset:          190
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0128_p02943_AtCoder_Grand_Contest_037_-_Reversing_and_Concatenating.cpp'
+          Offset:          200
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''p'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0128_p02943_AtCoder_Grand_Contest_037_-_Reversing_and_Concatenating.cpp'
+      FileOffset:      324
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0128_p02943_AtCoder_Grand_Contest_037_-_Reversing_and_Concatenating.cpp'
+          FileOffset:      324
+          Length:          8
+    Notes:
+      - Message:         'Assuming ''i'' is < ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0128_p02943_AtCoder_Grand_Contest_037_-_Reversing_and_Concatenating.cpp'
+        FileOffset:      243
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0128_p02943_AtCoder_Grand_Contest_037_-_Reversing_and_Concatenating.cpp'
+            FileOffset:      243
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0128_p02943_AtCoder_Grand_Contest_037_-_Reversing_and_Concatenating.cpp'
+        FileOffset:      230
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0128_p02943_AtCoder_Grand_Contest_037_-_Reversing_and_Concatenating.cpp'
+        FileOffset:      243
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0128_p02943_AtCoder_Grand_Contest_037_-_Reversing_and_Concatenating.cpp'
+            FileOffset:      243
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 17
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0128_p02943_AtCoder_Grand_Contest_037_-_Reversing_and_Concatenating.cpp'
+        FileOffset:      230
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0128_p02943_AtCoder_Grand_Contest_037_-_Reversing_and_Concatenating.cpp'
+        FileOffset:      275
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0128_p02943_AtCoder_Grand_Contest_037_-_Reversing_and_Concatenating.cpp'
+        FileOffset:      311
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0128_p02943_AtCoder_Grand_Contest_037_-_Reversing_and_Concatenating.cpp'
+            FileOffset:      311
+            Length:          10
+      - Message:         '''?'' condition is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0128_p02943_AtCoder_Grand_Contest_037_-_Reversing_and_Concatenating.cpp'
+        FileOffset:      311
+        Replacements:    []
+      - Message:         'Access of ''p'' at negative byte offset -8'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0128_p02943_AtCoder_Grand_Contest_037_-_Reversing_and_Concatenating.cpp'
+        FileOffset:      324
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0128_p02943_AtCoder_Grand_Contest_037_-_Reversing_and_Concatenating.cpp'
+            FileOffset:      324
+            Length:          8
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory around ''p'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0128_p02943_AtCoder_Grand_Contest_037_-_Reversing_and_Concatenating.cpp'
+      FileOffset:      376
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0128_p02943_AtCoder_Grand_Contest_037_-_Reversing_and_Concatenating.cpp'
+          FileOffset:      376
+          Length:          8
+    Notes:
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0128_p02943_AtCoder_Grand_Contest_037_-_Reversing_and_Concatenating.cpp'
+        FileOffset:      243
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0128_p02943_AtCoder_Grand_Contest_037_-_Reversing_and_Concatenating.cpp'
+            FileOffset:      243
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 17
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0128_p02943_AtCoder_Grand_Contest_037_-_Reversing_and_Concatenating.cpp'
+        FileOffset:      230
+        Replacements:    []
+      - Message:         '''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0128_p02943_AtCoder_Grand_Contest_037_-_Reversing_and_Concatenating.cpp'
+        FileOffset:      288
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0128_p02943_AtCoder_Grand_Contest_037_-_Reversing_and_Concatenating.cpp'
+            FileOffset:      288
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 21
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0128_p02943_AtCoder_Grand_Contest_037_-_Reversing_and_Concatenating.cpp'
+        FileOffset:      275
+        Replacements:    []
+      - Message:         'Access of ''p'' at a negative or overflowing index, while it holds only 5005 ''long long'' elements'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0128_p02943_AtCoder_Grand_Contest_037_-_Reversing_and_Concatenating.cpp'
+        FileOffset:      376
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0128_p02943_AtCoder_Grand_Contest_037_-_Reversing_and_Concatenating.cpp'
+            FileOffset:      376
+            Length:          8
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0128_p02943_AtCoder_Grand_Contest_037_-_Reversing_and_Concatenating.cpp'
+      FileOffset:      737
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0128_p02943_AtCoder_Grand_Contest_037_-_Reversing_and_Concatenating.cpp'
+          Offset:          737
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

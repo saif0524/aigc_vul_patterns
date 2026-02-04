@@ -1,0 +1,74 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0212_1090_C._New_Year_Presents.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0212_1090_C._New_Year_Presents.cpp'
+      FileOffset:      51
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0212_1090_C._New_Year_Presents.cpp'
+          Offset:          47
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0212_1090_C._New_Year_Presents.cpp'
+          Offset:          57
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0212_1090_C._New_Year_Presents.cpp'
+      FileOffset:      104
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0212_1090_C._New_Year_Presents.cpp'
+          Offset:          104
+          Length:          1
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no matching member function for call to ''push_back'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0212_1090_C._New_Year_Presents.cpp'
+      FileOffset:      1246
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0212_1090_C._New_Year_Presents.cpp'
+          FileOffset:      1240
+          Length:          15
+    Notes:
+      - Message:         'candidate function not viable: cannot convert initializer list argument to ''const value_type'' (aka ''const std::pair<int, int>'')'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h'
+        FileOffset:      41878
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h'
+            FileOffset:      41888
+            Length:          21
+      - Message:         'candidate function not viable: cannot convert initializer list argument to ''value_type'' (aka ''std::pair<int, int>'')'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h'
+        FileOffset:      42305
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h'
+            FileOffset:      42315
+            Length:          16
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'type ''std::pair<int, int>'' decomposes into 2 elements, but 3 names were provided'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0212_1090_C._New_Year_Presents.cpp'
+      FileOffset:      1854
+      Replacements:    []
+    Notes:
+      - Message:         'selected ''begin'' function with iterator type ''iterator'' (aka ''__normal_iterator<std::pair<int, int> *, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int>>>>'')'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h'
+        FileOffset:      28140
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

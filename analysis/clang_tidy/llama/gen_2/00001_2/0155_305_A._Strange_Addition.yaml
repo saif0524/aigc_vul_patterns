@@ -1,0 +1,85 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0155_305_A._Strange_Addition.cpp'
+Diagnostics:
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'use of undeclared identifier ''can_sum'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0155_305_A._Strange_Addition.cpp'
+      FileOffset:      472
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0155_305_A._Strange_Addition.cpp'
+          FileOffset:      472
+          Length:          7
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0155_305_A._Strange_Addition.cpp'
+      FileOffset:      796
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0155_305_A._Strange_Addition.cpp'
+      FileOffset:      989
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0155_305_A._Strange_Addition.cpp'
+          Offset:          984
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0155_305_A._Strange_Addition.cpp'
+          Offset:          1010
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''can_sum'' of similar type (''int'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0155_305_A._Strange_Addition.cpp'
+      FileOffset:      997
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0155_305_A._Strange_Addition.cpp'
+          FileOffset:      997
+          Length:          12
+    Notes:
+      - Message:         'the first parameter in the range is ''a'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0155_305_A._Strange_Addition.cpp'
+        FileOffset:      1001
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0155_305_A._Strange_Addition.cpp'
+            FileOffset:      1001
+            Length:          1
+      - Message:         'the last parameter in the range is ''b'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0155_305_A._Strange_Addition.cpp'
+        FileOffset:      1008
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0155_305_A._Strange_Addition.cpp'
+            FileOffset:      1008
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0155_305_A._Strange_Addition.cpp'
+      FileOffset:      1322
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0155_305_A._Strange_Addition.cpp'
+          Offset:          1318
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0155_305_A._Strange_Addition.cpp'
+          Offset:          1328
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

@@ -1,0 +1,293 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-default-member-init
+    DiagnosticMessage:
+      Message:         'use default member initializer for ''visible'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+      FileOffset:      134
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+          Offset:          141
+          Length:          0
+          ReplacementText: '{true}'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+          Offset:          214
+          Length:          14
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''Node'' of similar type (''string'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+      FileOffset:      152
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+          FileOffset:      152
+          Length:          28
+    Notes:
+      - Message:         'the first parameter in the range is ''_tag'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+        FileOffset:      159
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+            FileOffset:      159
+            Length:          4
+      - Message:         'the last parameter in the range is ''_content'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+        FileOffset:      172
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+            FileOffset:      172
+            Length:          8
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-pass-by-value
+    DiagnosticMessage:
+      Message:         'pass by value and use std::move'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+      FileOffset:      152
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+          Offset:          25
+          Length:          0
+          ReplacementText: "\n#include <utility>\n"
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+          Offset:          188
+          Length:          0
+          ReplacementText: 'std::move('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+          Offset:          192
+          Length:          0
+          ReplacementText: ')'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-pass-by-value
+    DiagnosticMessage:
+      Message:         'pass by value and use std::move'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+      FileOffset:      165
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+          Offset:          203
+          Length:          0
+          ReplacementText: 'std::move('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+          Offset:          211
+          Length:          0
+          ReplacementText: ')'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-unnecessary-value-param
+    DiagnosticMessage:
+      Message:         'parameter ''_tag'' is passed by value and only copied once; consider moving it to avoid unnecessary copies'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+      FileOffset:      188
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+          Offset:          25
+          Length:          0
+          ReplacementText: "\n#include <utility>\n"
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+          Offset:          188
+          Length:          0
+          ReplacementText: 'std::move('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+          Offset:          192
+          Length:          0
+          ReplacementText: ')'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-unnecessary-value-param
+    DiagnosticMessage:
+      Message:         'parameter ''_content'' is passed by value and only copied once; consider moving it to avoid unnecessary copies'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+      FileOffset:      203
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+          Offset:          203
+          Length:          0
+          ReplacementText: 'std::move('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+          Offset:          211
+          Length:          0
+          ReplacementText: ')'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+      FileOffset:      447
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+      FileOffset:      1803
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+      FileOffset:      2765
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+      FileOffset:      2811
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from constant value 8509 (0x0000213D) of type ''int'' to signed type ''char'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+      FileOffset:      2824
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-constant-conversion
+    DiagnosticMessage:
+      Message:         'implicit conversion from ''int'' to ''char'' changes value from 8509 to 61'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+      FileOffset:      2824
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+          FileOffset:      2824
+          Length:          4
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+          FileOffset:      2819
+          Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-multichar
+    DiagnosticMessage:
+      Message:         multi-character character constant
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+      FileOffset:      2824
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+      FileOffset:      3454
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+          Offset:          3439
+          Length:          14
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+          Offset:          3486
+          Length:          0
+          ReplacementText: ' -> vector<string>'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+      FileOffset:      4438
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+      FileOffset:      4673
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+          Offset:          4669
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+          Offset:          4679
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+      FileOffset:      4727
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+          Offset:          4727
+          Length:          1
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no matching constructor for initialization of ''Point'''
+      FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_construct.h'
+      FileOffset:      4387
+      Replacements:    []
+    Notes:
+      - Message:         'in instantiation of function template specialization ''std::_Construct<Point>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_uninitialized.h'
+        FileOffset:      20375
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__uninitialized_default_n_1<false>::__uninit_default_n<Point *, unsigned long>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_uninitialized.h'
+        FileOffset:      22439
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__uninitialized_default_n<Point *, unsigned long>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_uninitialized.h'
+        FileOffset:      24533
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__uninitialized_default_n_a<Point *, unsigned long, Point>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h'
+        FileOffset:      57202
+        Replacements:    []
+      - Message:         'in instantiation of member function ''std::vector<Point>::_M_default_initialize'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h'
+        FileOffset:      17407
+        Replacements:    []
+      - Message:         'in instantiation of member function ''std::vector<Point>::vector'' requested here'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+        FileOffset:      5471
+        Replacements:    []
+      - Message:         'candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 0 were provided'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+        FileOffset:      242
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+            FileOffset:      242
+            Length:          5
+      - Message:         'candidate constructor (the implicit move constructor) not viable: requires 1 argument, but 0 were provided'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+        FileOffset:      242
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+            FileOffset:      242
+            Length:          5
+      - Message:         'candidate constructor not viable: requires 2 arguments, but 0 were provided'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+        FileOffset:      268
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0246_p01535_Markup_language_has_Declined.cpp'
+            FileOffset:      274
+            Length:          14
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

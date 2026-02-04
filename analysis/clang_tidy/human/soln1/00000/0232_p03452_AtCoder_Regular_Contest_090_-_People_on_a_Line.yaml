@@ -1,0 +1,145 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0232_p03452_AtCoder_Regular_Contest_090_-_People_on_a_Line.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-using
+    DiagnosticMessage:
+      Message:         'use ''using'' instead of ''typedef'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0232_p03452_AtCoder_Regular_Contest_090_-_People_on_a_Line.cpp'
+      FileOffset:      69
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0232_p03452_AtCoder_Regular_Contest_090_-_People_on_a_Line.cpp'
+          Offset:          69
+          Length:          25
+          ReplacementText: 'using pii = pair<int,int>'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0232_p03452_AtCoder_Regular_Contest_090_-_People_on_a_Line.cpp'
+      FileOffset:      96
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0232_p03452_AtCoder_Regular_Contest_090_-_People_on_a_Line.cpp'
+      FileOffset:      129
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0232_p03452_AtCoder_Regular_Contest_090_-_People_on_a_Line.cpp'
+      FileOffset:      155
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0232_p03452_AtCoder_Regular_Contest_090_-_People_on_a_Line.cpp'
+          Offset:          150
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0232_p03452_AtCoder_Regular_Contest_090_-_People_on_a_Line.cpp'
+          Offset:          173
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0232_p03452_AtCoder_Regular_Contest_090_-_People_on_a_Line.cpp'
+      FileOffset:      420
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0232_p03452_AtCoder_Regular_Contest_090_-_People_on_a_Line.cpp'
+          Offset:          416
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0232_p03452_AtCoder_Regular_Contest_090_-_People_on_a_Line.cpp'
+          Offset:          426
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''G'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0232_p03452_AtCoder_Regular_Contest_090_-_People_on_a_Line.cpp'
+      FileOffset:      524
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0232_p03452_AtCoder_Regular_Contest_090_-_People_on_a_Line.cpp'
+          FileOffset:      524
+          Length:          4
+    Notes:
+      - Message:         'Assuming ''i'' is < ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0232_p03452_AtCoder_Regular_Contest_090_-_People_on_a_Line.cpp'
+        FileOffset:      471
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0232_p03452_AtCoder_Regular_Contest_090_-_People_on_a_Line.cpp'
+            FileOffset:      471
+            Length:          3
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0232_p03452_AtCoder_Regular_Contest_090_-_People_on_a_Line.cpp'
+        FileOffset:      458
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0232_p03452_AtCoder_Regular_Contest_090_-_People_on_a_Line.cpp'
+        FileOffset:      490
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0232_p03452_AtCoder_Regular_Contest_090_-_People_on_a_Line.cpp'
+            FileOffset:      490
+            Length:          24
+      - Message:         Taint propagated to the 2nd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0232_p03452_AtCoder_Regular_Contest_090_-_People_on_a_Line.cpp'
+        FileOffset:      490
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0232_p03452_AtCoder_Regular_Contest_090_-_People_on_a_Line.cpp'
+            FileOffset:      490
+            Length:          24
+      - Message:         'Access of ''G'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0232_p03452_AtCoder_Regular_Contest_090_-_People_on_a_Line.cpp'
+        FileOffset:      524
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0232_p03452_AtCoder_Regular_Contest_090_-_People_on_a_Line.cpp'
+            FileOffset:      524
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-emplace
+    DiagnosticMessage:
+      Message:         use emplace_back instead of push_back
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0232_p03452_AtCoder_Regular_Contest_090_-_People_on_a_Line.cpp'
+      FileOffset:      529
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0232_p03452_AtCoder_Regular_Contest_090_-_People_on_a_Line.cpp'
+          Offset:          529
+          Length:          14
+          ReplacementText: 'emplace_back('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0232_p03452_AtCoder_Regular_Contest_090_-_People_on_a_Line.cpp'
+          Offset:          546
+          Length:          1
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-emplace
+    DiagnosticMessage:
+      Message:         use emplace_back instead of push_back
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0232_p03452_AtCoder_Regular_Contest_090_-_People_on_a_Line.cpp'
+      FileOffset:      563
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0232_p03452_AtCoder_Regular_Contest_090_-_People_on_a_Line.cpp'
+          Offset:          563
+          Length:          14
+          ReplacementText: 'emplace_back('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0232_p03452_AtCoder_Regular_Contest_090_-_People_on_a_Line.cpp'
+          Offset:          581
+          Length:          1
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

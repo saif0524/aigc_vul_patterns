@@ -1,0 +1,141 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-using
+    DiagnosticMessage:
+      Message:         'use ''using'' instead of ''typedef'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+      FileOffset:      47
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+          Offset:          47
+          Length:          20
+          ReplacementText: 'using ll = long long'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+      FileOffset:      104
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+      FileOffset:      125
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+          Offset:          121
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+          Offset:          131
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+      FileOffset:      184
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+          Offset:          184
+          Length:          1
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''a'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+      FileOffset:      758
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+          FileOffset:      758
+          Length:          10
+    Notes:
+      - Message:         'Assuming ''i'' is < ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+        FileOffset:      228
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+            FileOffset:      228
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+        FileOffset:      212
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+        FileOffset:      228
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+            FileOffset:      228
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 19
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+        FileOffset:      212
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+        FileOffset:      289
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+            FileOffset:      289
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 23
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+        FileOffset:      273
+        Replacements:    []
+      - Message:         '''i'' is >= ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+        FileOffset:      385
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+            FileOffset:      385
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 28
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+        FileOffset:      369
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+        FileOffset:      450
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+        FileOffset:      530
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+        FileOffset:      576
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+            FileOffset:      576
+            Length:          17
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+        FileOffset:      572
+        Replacements:    []
+      - Message:         'Access of ''a'' at negative byte offset -4'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+        FileOffset:      758
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+            FileOffset:      758
+            Length:          10
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

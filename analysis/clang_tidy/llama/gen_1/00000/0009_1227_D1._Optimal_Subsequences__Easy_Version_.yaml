@@ -1,0 +1,551 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+      FileOffset:      85
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''a'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+      FileOffset:      976
+      Replacements:    []
+    Notes:
+      - Message:         'Calling ''solve'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      1483
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+            FileOffset:      1483
+            Length:          7
+      - Message:         'Assuming ''i'' is < ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      149
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+            FileOffset:      149
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      133
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      149
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+            FileOffset:      149
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 14
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      133
+        Replacements:    []
+      - Message:         'Assuming ''i'' is < ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      224
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+            FileOffset:      224
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      208
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      451
+        Replacements:    []
+      - Message:         'Assuming ''l'' is <= ''k'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      510
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+            FileOffset:      510
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      494
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      545
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+            FileOffset:      545
+            Length:          23
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      541
+        Replacements:    []
+      - Message:         'Assuming ''l'' is < ''k'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      704
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+            FileOffset:      704
+            Length:          5
+      - Message:         'Left side of ''&&'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      704
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      713
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+            FileOffset:      713
+            Length:          38
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      700
+        Replacements:    []
+      - Message:         '''l'' is < ''k'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      885
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+            FileOffset:      885
+            Length:          1
+      - Message:         'Left side of ''&&'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      885
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      894
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+            FileOffset:      894
+            Length:          39
+      - Message:         'Left side of ''&&'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      934
+        Replacements:    []
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      881
+        Replacements:    []
+      - Message:         '''l'' is <= ''k'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      510
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+            FileOffset:      510
+            Length:          1
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      494
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      545
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+            FileOffset:      545
+            Length:          23
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      541
+        Replacements:    []
+      - Message:         'Assuming ''l'' is < ''k'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      704
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+            FileOffset:      704
+            Length:          5
+      - Message:         'Left side of ''&&'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      704
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      713
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+            FileOffset:      713
+            Length:          38
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      700
+        Replacements:    []
+      - Message:         '''l'' is < ''k'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      885
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+            FileOffset:      885
+            Length:          1
+      - Message:         'Left side of ''&&'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      885
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      894
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+            FileOffset:      894
+            Length:          39
+      - Message:         'Left side of ''&&'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      885
+        Replacements:    []
+      - Message:         'Left side of ''||'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      938
+        Replacements:    []
+      - Message:         'Access of ''a'' at negative byte offset -4'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      976
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+            FileOffset:      976
+            Length:          12
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory around ''a'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+      FileOffset:      1223
+      Replacements:    []
+    Notes:
+      - Message:         'Calling ''solve'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      1483
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+            FileOffset:      1483
+            Length:          7
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      149
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+            FileOffset:      149
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 14
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      133
+        Replacements:    []
+      - Message:         'Assuming ''i'' is < ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      224
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+            FileOffset:      224
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      208
+        Replacements:    []
+      - Message:         '''j'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      467
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+            FileOffset:      467
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 35
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      451
+        Replacements:    []
+      - Message:         'Assuming ''cnt'' is > 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      1148
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+            FileOffset:      1148
+            Length:          7
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      1141
+        Replacements:    []
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      1171
+        Replacements:    []
+      - Message:         'Access of ''a'' at a negative or overflowing index, while it holds only 105 ''int'' elements'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      1223
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+            FileOffset:      1223
+            Length:          10
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''a'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+      FileOffset:      1223
+      Replacements:    []
+    Notes:
+      - Message:         'Calling ''solve'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      1483
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+            FileOffset:      1483
+            Length:          7
+      - Message:         'Assuming ''i'' is < ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      149
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+            FileOffset:      149
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      133
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      149
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+            FileOffset:      149
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 14
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      133
+        Replacements:    []
+      - Message:         'Assuming ''i'' is < ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      224
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+            FileOffset:      224
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      208
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      451
+        Replacements:    []
+      - Message:         'Assuming ''l'' is <= ''k'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      510
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+            FileOffset:      510
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      494
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      545
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+            FileOffset:      545
+            Length:          23
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      541
+        Replacements:    []
+      - Message:         'Assuming ''l'' is < ''k'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      704
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+            FileOffset:      704
+            Length:          5
+      - Message:         'Left side of ''&&'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      704
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      713
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+            FileOffset:      713
+            Length:          38
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      700
+        Replacements:    []
+      - Message:         '''l'' is < ''k'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      885
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+            FileOffset:      885
+            Length:          1
+      - Message:         'Left side of ''&&'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      885
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      894
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+            FileOffset:      894
+            Length:          39
+      - Message:         'Left side of ''&&'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      934
+        Replacements:    []
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      881
+        Replacements:    []
+      - Message:         '''l'' is <= ''k'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      510
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+            FileOffset:      510
+            Length:          1
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      494
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      545
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+            FileOffset:      545
+            Length:          23
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      541
+        Replacements:    []
+      - Message:         'Assuming ''l'' is >= ''k'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      704
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+            FileOffset:      704
+            Length:          5
+      - Message:         'Left side of ''&&'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      710
+        Replacements:    []
+      - Message:         '''l'' is >= ''k'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      885
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+            FileOffset:      885
+            Length:          1
+      - Message:         'Left side of ''&&'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      891
+        Replacements:    []
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      881
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 21
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      494
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 35
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      451
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      1141
+        Replacements:    []
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      1171
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      1141
+        Replacements:    []
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      1171
+        Replacements:    []
+      - Message:         'Access of ''a'' at negative byte offset -4'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+        FileOffset:      1223
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+            FileOffset:      1223
+            Length:          10
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+      FileOffset:      1391
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+          Offset:          1391
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+      FileOffset:      1410
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+          Offset:          1406
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0009_1227_D1._Optimal_Subsequences__Easy_Version_.cpp'
+          Offset:          1416
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

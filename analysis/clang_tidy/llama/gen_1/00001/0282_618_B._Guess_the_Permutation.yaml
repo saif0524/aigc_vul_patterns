@@ -1,0 +1,177 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0282_618_B._Guess_the_Permutation.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0282_618_B._Guess_the_Permutation.cpp'
+      FileOffset:      130
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0282_618_B._Guess_the_Permutation.cpp'
+      FileOffset:      149
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0282_618_B._Guess_the_Permutation.cpp'
+      FileOffset:      178
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0282_618_B._Guess_the_Permutation.cpp'
+          Offset:          174
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0282_618_B._Guess_the_Permutation.cpp'
+          Offset:          184
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''b'''
+      FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/predefined_ops.h'
+      FileOffset:      2712
+      Replacements:    []
+    Notes:
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0282_618_B._Guess_the_Permutation.cpp'
+        FileOffset:      222
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0282_618_B._Guess_the_Permutation.cpp'
+            FileOffset:      222
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 23
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0282_618_B._Guess_the_Permutation.cpp'
+        FileOffset:      206
+        Replacements:    []
+      - Message:         '''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0282_618_B._Guess_the_Permutation.cpp'
+        FileOffset:      341
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0282_618_B._Guess_the_Permutation.cpp'
+            FileOffset:      341
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 31
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0282_618_B._Guess_the_Permutation.cpp'
+        FileOffset:      325
+        Replacements:    []
+      - Message:         'Calling ''sort<std::pair<int, int> *>'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0282_618_B._Guess_the_Permutation.cpp'
+        FileOffset:      516
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0282_618_B._Guess_the_Permutation.cpp'
+            FileOffset:      516
+            Length:          22
+      - Message:         'Calling ''__sort<std::pair<int, int> *, __gnu_cxx::__ops::_Iter_less_iter>'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      173642
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+            FileOffset:      173642
+            Length:          66
+      - Message:         'Assuming ''__first'' is not equal to ''__last'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      65748
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+            FileOffset:      65748
+            Length:          17
+      - Message:         Taking true branch
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      65744
+        Replacements:    []
+      - Message:         'Calling ''__final_insertion_sort<std::pair<int, int> *, __gnu_cxx::__ops::_Iter_less_iter>'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      65865
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+            FileOffset:      65865
+            Length:          52
+      - Message:         Taking false branch
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      63125
+        Replacements:    []
+      - Message:         'Calling ''__insertion_sort<std::pair<int, int> *, __gnu_cxx::__ops::_Iter_less_iter>'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      63345
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+            FileOffset:      63345
+            Length:          46
+      - Message:         '''__first'' is not equal to ''__last'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      61849
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+            FileOffset:      61849
+            Length:          7
+      - Message:         Taking false branch
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      61845
+        Replacements:    []
+      - Message:         '''__i'' is not equal to ''__last'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      61929
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+            FileOffset:      61929
+            Length:          3
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      61883
+        Replacements:    []
+      - Message:         Taking false branch
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      61957
+        Replacements:    []
+      - Message:         'Calling ''__unguarded_linear_insert<std::pair<int, int> *, __gnu_cxx::__ops::_Val_less_iter>'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      62203
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+            FileOffset:      62203
+            Length:          82
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      61426
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      61426
+        Replacements:    []
+      - Message:         'Calling ''_Val_less_iter::operator()'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      61433
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+            FileOffset:      61433
+            Length:          21
+      - Message:         'Access of ''b'' at negative byte offset -8'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/predefined_ops.h'
+        FileOffset:      2712
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/predefined_ops.h'
+            FileOffset:      2712
+            Length:          5
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

@@ -1,0 +1,138 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0160_459_E._Pashmak_and_Graph.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0160_459_E._Pashmak_and_Graph.cpp'
+      FileOffset:      115
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0160_459_E._Pashmak_and_Graph.cpp'
+      FileOffset:      177
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0160_459_E._Pashmak_and_Graph.cpp'
+          Offset:          172
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0160_459_E._Pashmak_and_Graph.cpp'
+          Offset:          210
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''dfs'' of similar type (''int'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0160_459_E._Pashmak_and_Graph.cpp'
+      FileOffset:      247
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0160_459_E._Pashmak_and_Graph.cpp'
+          FileOffset:      247
+          Length:          17
+    Notes:
+      - Message:         'the first parameter in the range is ''u'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0160_459_E._Pashmak_and_Graph.cpp'
+        FileOffset:      251
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0160_459_E._Pashmak_and_Graph.cpp'
+            FileOffset:      251
+            Length:          1
+      - Message:         'the last parameter in the range is ''last_w'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0160_459_E._Pashmak_and_Graph.cpp'
+        FileOffset:      258
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0160_459_E._Pashmak_and_Graph.cpp'
+            FileOffset:      258
+            Length:          6
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0160_459_E._Pashmak_and_Graph.cpp'
+      FileOffset:      425
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0160_459_E._Pashmak_and_Graph.cpp'
+      FileOffset:      450
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0160_459_E._Pashmak_and_Graph.cpp'
+          Offset:          446
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0160_459_E._Pashmak_and_Graph.cpp'
+          Offset:          456
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''g'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0160_459_E._Pashmak_and_Graph.cpp'
+      FileOffset:      591
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0160_459_E._Pashmak_and_Graph.cpp'
+          FileOffset:      591
+          Length:          4
+    Notes:
+      - Message:         'Assuming ''i'' is < ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0160_459_E._Pashmak_and_Graph.cpp'
+        FileOffset:      507
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0160_459_E._Pashmak_and_Graph.cpp'
+            FileOffset:      507
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0160_459_E._Pashmak_and_Graph.cpp'
+        FileOffset:      491
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0160_459_E._Pashmak_and_Graph.cpp'
+        FileOffset:      551
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0160_459_E._Pashmak_and_Graph.cpp'
+            FileOffset:      551
+            Length:          30
+      - Message:         Taint propagated to the 2nd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0160_459_E._Pashmak_and_Graph.cpp'
+        FileOffset:      551
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0160_459_E._Pashmak_and_Graph.cpp'
+            FileOffset:      551
+            Length:          30
+      - Message:         'Access of ''g'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0160_459_E._Pashmak_and_Graph.cpp'
+        FileOffset:      591
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0160_459_E._Pashmak_and_Graph.cpp'
+            FileOffset:      591
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0160_459_E._Pashmak_and_Graph.cpp'
+      FileOffset:      957
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

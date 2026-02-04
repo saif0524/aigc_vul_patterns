@@ -1,0 +1,347 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+      FileOffset:      63
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+          Offset:          53
+          Length:          9
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+          Offset:          69
+          Length:          0
+          ReplacementText: ' -> long long'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-register
+    DiagnosticMessage:
+      Message:         'ISO C++17 does not allow ''register'' storage class specifier'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+      FileOffset:      74
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+          Offset:          74
+          Length:          9
+          ReplacementText: ''
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-register
+    DiagnosticMessage:
+      Message:         'ISO C++17 does not allow ''register'' storage class specifier'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+      FileOffset:      109
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+          Offset:          109
+          Length:          9
+          ReplacementText: ''
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''int'' to signed type ''char'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+      FileOffset:      127
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''int'' to signed type ''char'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+      FileOffset:      164
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''int'' to signed type ''char'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+      FileOffset:      226
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+      FileOffset:      291
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-equals-default
+    DiagnosticMessage:
+      Message:         'use ''= default'' to define a trivial default constructor'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+      FileOffset:      334
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+          Offset:          341
+          Length:          2
+          ReplacementText: '= default;'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '3 adjacent parameters of ''Edge'' of similar type (''long long'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+      FileOffset:      351
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+          FileOffset:      351
+          Length:          43
+    Notes:
+      - Message:         'the first parameter in the range is ''to'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+        FileOffset:      361
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+            FileOffset:      361
+            Length:          2
+      - Message:         'the last parameter in the range is ''type'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+        FileOffset:      390
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+            FileOffset:      390
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+      FileOffset:      456
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+      FileOffset:      601
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+      FileOffset:      696
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+      FileOffset:      720
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''dfs1'' of similar type (''long long'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+      FileOffset:      754
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+          FileOffset:      754
+          Length:          24
+    Notes:
+      - Message:         'the first parameter in the range is ''u'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+        FileOffset:      764
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+            FileOffset:      764
+            Length:          1
+      - Message:         'the last parameter in the range is ''f'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+        FileOffset:      777
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+            FileOffset:      777
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'reference to ''size'' is ambiguous'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+      FileOffset:      784
+      Replacements:    []
+    Notes:
+      - Message:         'candidate found by name lookup is ''size'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+        FileOffset:      636
+        Replacements:    []
+      - Message:         'candidate found by name lookup is ''std::size'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/range_access.h'
+        FileOffset:      9093
+        Replacements:    []
+      - Message:         'candidate found by name lookup is ''std::size'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/range_access.h'
+        FileOffset:      8802
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'reference to ''size'' is ambiguous'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+      FileOffset:      966
+      Replacements:    []
+    Notes:
+      - Message:         'candidate found by name lookup is ''size'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+        FileOffset:      636
+        Replacements:    []
+      - Message:         'candidate found by name lookup is ''std::size'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/range_access.h'
+        FileOffset:      9093
+        Replacements:    []
+      - Message:         'candidate found by name lookup is ''std::size'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/range_access.h'
+        FileOffset:      8802
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'reference to ''size'' is ambiguous'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+      FileOffset:      1013
+      Replacements:    []
+    Notes:
+      - Message:         'candidate found by name lookup is ''size'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+        FileOffset:      636
+        Replacements:    []
+      - Message:         'candidate found by name lookup is ''std::size'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/range_access.h'
+        FileOffset:      9093
+        Replacements:    []
+      - Message:         'candidate found by name lookup is ''std::size'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/range_access.h'
+        FileOffset:      8802
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         type name requires a specifier or qualifier
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+      FileOffset:      1013
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         variable declaration in condition must have an initializer
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+      FileOffset:      1013
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-vla-cxx-extension
+    DiagnosticMessage:
+      Message:         'variable length arrays in C++ are a Clang extension'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+      FileOffset:      1018
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+          FileOffset:      1018
+          Length:          6
+    Notes:
+      - Message:         'function parameter ''u'' with unknown value cannot be used in a constant expression'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+        FileOffset:      1022
+        Replacements:    []
+      - Message:         declared here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+        FileOffset:      764
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+      FileOffset:      1303
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+          Offset:          1293
+          Length:          9
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+          Offset:          1332
+          Length:          0
+          ReplacementText: ' -> long long'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+      FileOffset:      1892
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+          Offset:          1885
+          Length:          6
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+          Offset:          1898
+          Length:          0
+          ReplacementText: ' -> signed'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'reference to ''size'' is ambiguous'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+      FileOffset:      2291
+      Replacements:    []
+    Notes:
+      - Message:         'candidate found by name lookup is ''size'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+        FileOffset:      636
+        Replacements:    []
+      - Message:         'candidate found by name lookup is ''std::size'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/range_access.h'
+        FileOffset:      9093
+        Replacements:    []
+      - Message:         'candidate found by name lookup is ''std::size'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/range_access.h'
+        FileOffset:      8802
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-format
+    DiagnosticMessage:
+      Message:         'length modifier ''I64'' results in undefined behavior or no effect with ''d'' conversion specifier'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+      FileOffset:      2675
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+          Offset:          2675
+          Length:          3
+          ReplacementText: ''
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0281_575_B._Bribes.cpp'
+          FileOffset:      2674
+          Length:          5
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

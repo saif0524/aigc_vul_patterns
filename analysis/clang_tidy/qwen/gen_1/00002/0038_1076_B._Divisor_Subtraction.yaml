@@ -1,0 +1,28 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0038_1076_B._Divisor_Subtraction.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0038_1076_B._Divisor_Subtraction.cpp'
+      FileOffset:      42
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0038_1076_B._Divisor_Subtraction.cpp'
+          Offset:          38
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0038_1076_B._Divisor_Subtraction.cpp'
+          Offset:          48
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to ''typename __gnu_cxx::__enable_if<__is_integer<long long>::__value, double>::__type'' (aka ''double'')'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0038_1076_B._Divisor_Subtraction.cpp'
+      FileOffset:      230
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

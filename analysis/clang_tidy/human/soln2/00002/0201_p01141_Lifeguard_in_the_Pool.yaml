@@ -1,0 +1,604 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-using
+    DiagnosticMessage:
+      Message:         'use ''using'' instead of ''typedef'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+      FileOffset:      153
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          153
+          Length:          24
+          ReplacementText: 'using real = long double'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-equals-default
+    DiagnosticMessage:
+      Message:         'use ''= default'' to define a trivial default constructor'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+      FileOffset:      238
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          246
+          Length:          2
+          ReplacementText: '= default;'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''Point'' of similar type (''real'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+      FileOffset:      259
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          FileOffset:      259
+          Length:          14
+    Notes:
+      - Message:         'the first parameter in the range is ''x'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+        FileOffset:      264
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+            FileOffset:      264
+            Length:          1
+      - Message:         'the last parameter in the range is ''y'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+        FileOffset:      272
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+            FileOffset:      272
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+      FileOffset:      301
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          295
+          Length:          5
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          332
+          Length:          0
+          ReplacementText: ' -> Point'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-return-braced-init-list
+    DiagnosticMessage:
+      Message:         'avoid repeating the return type from the declaration; use a braced initializer list instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+      FileOffset:      342
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          342
+          Length:          6
+          ReplacementText: '{'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          364
+          Length:          1
+          ReplacementText: '}'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+      FileOffset:      379
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          373
+          Length:          5
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          410
+          Length:          0
+          ReplacementText: ' -> Point'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-return-braced-init-list
+    DiagnosticMessage:
+      Message:         'avoid repeating the return type from the declaration; use a braced initializer list instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+      FileOffset:      420
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          420
+          Length:          6
+          ReplacementText: '{'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          442
+          Length:          1
+          ReplacementText: '}'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+      FileOffset:      457
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          451
+          Length:          5
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          480
+          Length:          0
+          ReplacementText: ' -> Point'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-return-braced-init-list
+    DiagnosticMessage:
+      Message:         'avoid repeating the return type from the declaration; use a braced initializer list instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+      FileOffset:      490
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          490
+          Length:          6
+          ReplacementText: '{'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          508
+          Length:          1
+          ReplacementText: '}'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+      FileOffset:      523
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          517
+          Length:          5
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          546
+          Length:          0
+          ReplacementText: ' -> Point'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-return-braced-init-list
+    DiagnosticMessage:
+      Message:         'avoid repeating the return type from the declaration; use a braced initializer list instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+      FileOffset:      556
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          556
+          Length:          6
+          ReplacementText: '{'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          574
+          Length:          1
+          ReplacementText: '}'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+      FileOffset:      587
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          582
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          622
+          Length:          0
+          ReplacementText: ' -> real'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+      FileOffset:      662
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          657
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          699
+          Length:          0
+          ReplacementText: ' -> real'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+      FileOffset:      739
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          734
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          759
+          Length:          0
+          ReplacementText: ' -> real'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+      FileOffset:      794
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          788
+          Length:          5
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          815
+          Length:          0
+          ReplacementText: ' -> Point'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-return-braced-init-list
+    DiagnosticMessage:
+      Message:         'avoid repeating the return type from the declaration; use a braced initializer list instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+      FileOffset:      825
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          825
+          Length:          6
+          ReplacementText: '{'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          840
+          Length:          1
+          ReplacementText: '}'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+      FileOffset:      888
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          879
+          Length:          8
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          927
+          Length:          0
+          ReplacementText: ' -> ostream&'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+      FileOffset:      987
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          978
+          Length:          8
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          1020
+          Length:          0
+          ReplacementText: ' -> istream&'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+      FileOffset:      1055
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          1051
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          1085
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-equals-default
+    DiagnosticMessage:
+      Message:         'use ''= default'' to define a trivial default constructor'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+      FileOffset:      1482
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          1489
+          Length:          2
+          ReplacementText: '= default;'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''Line'' of similar type (''const Point &'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+      FileOffset:      1501
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          FileOffset:      1501
+          Length:          30
+    Notes:
+      - Message:         'the first parameter in the range is ''a'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+        FileOffset:      1514
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+            FileOffset:      1514
+            Length:          1
+      - Message:         'the last parameter in the range is ''b'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+        FileOffset:      1530
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+            FileOffset:      1530
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+      FileOffset:      1557
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          1552
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          1596
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+      FileOffset:      1642
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          1636
+          Length:          5
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          1683
+          Length:          0
+          ReplacementText: ' -> Point'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+      FileOffset:      1842
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          1837
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          1849
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+      FileOffset:      2054
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          2048
+          Length:          5
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          2094
+          Length:          0
+          ReplacementText: ' -> Point'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''turning_point'' of similar type (''Point'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+      FileOffset:      2077
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          FileOffset:      2077
+          Length:          16
+    Notes:
+      - Message:         'the first parameter in the range is ''b'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+        FileOffset:      2083
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+            FileOffset:      2083
+            Length:          1
+      - Message:         'the last parameter in the range is ''t'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+        FileOffset:      2092
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+            FileOffset:      2092
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''State'' of convertible types are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+      FileOffset:      2586
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          FileOffset:      2586
+          Length:          16
+    Notes:
+      - Message:         'the first parameter in the range is ''v'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+        FileOffset:      2590
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+            FileOffset:      2590
+            Length:          1
+      - Message:         'the last parameter in the range is ''cost'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+        FileOffset:      2598
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+            FileOffset:      2598
+            Length:          4
+      - Message:         ''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+        FileOffset:      2586
+        Replacements:    []
+      - Message:         '''int'' and ''real'' may be implicitly converted: ''int'' -> ''real'' (as ''long double''), ''real'' (as ''long double'') -> ''int'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+        FileOffset:      2593
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+      FileOffset:      2635
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          2630
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          2666
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+      FileOffset:      2714
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          2709
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          2748
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+      FileOffset:      2928
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          2923
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          2934
+          Length:          0
+          ReplacementText: ' -> real'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+      FileOffset:      2949
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+      FileOffset:      2991
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+      FileOffset:      3034
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-emplace
+    DiagnosticMessage:
+      Message:         use emplace instead of push
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+      FileOffset:      3122
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          3122
+          Length:          11
+          ReplacementText: 'emplace('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          3137
+          Length:          1
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-emplace
+    DiagnosticMessage:
+      Message:         use emplace instead of push
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+      FileOffset:      3616
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          3616
+          Length:          11
+          ReplacementText: 'emplace('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          3638
+          Length:          1
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+      FileOffset:      4116
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          4112
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0201_p01141_Lifeguard_in_the_Pool.cpp'
+          Offset:          4122
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

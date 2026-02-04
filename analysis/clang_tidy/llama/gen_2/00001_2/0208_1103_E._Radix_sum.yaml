@@ -1,0 +1,32 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0208_1103_E._Radix_sum.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0208_1103_E._Radix_sum.cpp'
+      FileOffset:      118
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0208_1103_E._Radix_sum.cpp'
+          Offset:          114
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0208_1103_E._Radix_sum.cpp'
+          Offset:          124
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-unqualified-std-cast-call
+    DiagnosticMessage:
+      Message:         'unqualified call to ''std::move'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0208_1103_E._Radix_sum.cpp'
+      FileOffset:      595
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0208_1103_E._Radix_sum.cpp'
+          Offset:          595
+          Length:          0
+          ReplacementText: 'std::'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

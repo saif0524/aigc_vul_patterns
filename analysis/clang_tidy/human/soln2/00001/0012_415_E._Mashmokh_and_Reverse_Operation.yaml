@@ -1,0 +1,105 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+      FileOffset:      46
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+      FileOffset:      67
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+      FileOffset:      95
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+      FileOffset:      111
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''unsigned long'' of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+      FileOffset:      794
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      794
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            Offset:          25
+            Length:          0
+            ReplacementText: "\n#include <cstddef>\n"
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            Offset:          794
+            Length:          0
+            ReplacementText: 'static_cast<unsigned long>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            Offset:          801
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            FileOffset:      794
+            Length:          7
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      794
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            Offset:          794
+            Length:          0
+            ReplacementText: 'static_cast<long>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            Offset:          795
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            FileOffset:      794
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+      FileOffset:      817
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+      FileOffset:      858
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+          Offset:          854
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+          Offset:          864
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

@@ -1,0 +1,239 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+      FileOffset:      81
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+      FileOffset:      116
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+      FileOffset:      148
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+      FileOffset:      168
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+      FileOffset:      193
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+          Offset:          189
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+          Offset:          221
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''solve'' of similar type (''int'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+      FileOffset:      206
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+          FileOffset:      206
+          Length:          14
+    Notes:
+      - Message:         'the first parameter in the range is ''b'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+        FileOffset:      210
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+            FileOffset:      210
+            Length:          1
+      - Message:         'the last parameter in the range is ''c'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+        FileOffset:      217
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+            FileOffset:      217
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''dp'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+      FileOffset:      346
+      Replacements:    []
+    Notes:
+      - Message:         'Calling ''solve'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+        FileOffset:      1245
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+            FileOffset:      1245
+            Length:          11
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+        FileOffset:      302
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+            FileOffset:      302
+            Length:          11
+      - Message:         'Left side of ''&&'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+        FileOffset:      314
+        Replacements:    []
+      - Message:         'Access of ''dp'' at negative byte offset'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+        FileOffset:      346
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+            FileOffset:      346
+            Length:          5
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+      FileOffset:      604
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+      FileOffset:      933
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+          Offset:          929
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+          Offset:          943
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-redundant-void-arg
+    DiagnosticMessage:
+      Message:         redundant void argument list in function definition
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+      FileOffset:      938
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+          Offset:          938
+          Length:          4
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.insecureAPI.strcpy
+    DiagnosticMessage:
+      Message:         'Call to function ''strcat'' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as ''strlcat''. CWE-119'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+      FileOffset:      971
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+          FileOffset:      971
+          Length:          6
+    Notes:
+      - Message:         'Call to function ''strcat'' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as ''strlcat''. CWE-119'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+        FileOffset:      971
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+            FileOffset:      971
+            Length:          6
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.insecureAPI.strcpy
+    DiagnosticMessage:
+      Message:         'Call to function ''strcat'' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as ''strlcat''. CWE-119'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+      FileOffset:      990
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+          FileOffset:      990
+          Length:          6
+    Notes:
+      - Message:         'Call to function ''strcat'' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as ''strlcat''. CWE-119'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+        FileOffset:      990
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+            FileOffset:      990
+            Length:          6
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_t'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+      FileOffset:      1014
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_t'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+      FileOffset:      1032
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-deadcode.DeadStores
+    DiagnosticMessage:
+      Message:         'Value stored to ''res'' during its initialization is never read'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+      FileOffset:      1239
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+          FileOffset:      1239
+          Length:          3
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+          FileOffset:      1245
+          Length:          11
+    Notes:
+      - Message:         'Value stored to ''res'' during its initialization is never read'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+        FileOffset:      1239
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+            FileOffset:      1239
+            Length:          3
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp'
+            FileOffset:      1245
+            Length:          11
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

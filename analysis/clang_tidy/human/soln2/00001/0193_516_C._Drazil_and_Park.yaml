@@ -1,0 +1,735 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+      FileOffset:      106
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+      FileOffset:      128
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+      FileOffset:      161
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+      FileOffset:      225
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''pref'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+      FileOffset:      366
+      Replacements:    []
+    Notes:
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1239
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      1239
+            Length:          22
+      - Message:         Taint propagated to the 2nd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1239
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      1239
+            Length:          22
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1281
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      1281
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 39
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1265
+        Replacements:    []
+      - Message:         '''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1332
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      1332
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 40
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1316
+        Replacements:    []
+      - Message:         '''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1411
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      1411
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 45
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1395
+        Replacements:    []
+      - Message:         '''i'' is < 1'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1554
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      1554
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 49
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1538
+        Replacements:    []
+      - Message:         'Calling ''SegmentTree::build'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1672
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      1672
+            Length:          18
+      - Message:         '''l'' is not equal to ''r'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      335
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      335
+            Length:          1
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      331
+        Replacements:    []
+      - Message:         'Calling ''SegmentTree::build'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      466
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      466
+            Length:          23
+      - Message:         'Assuming ''l'' is not equal to ''r'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      335
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      335
+            Length:          6
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      331
+        Replacements:    []
+      - Message:         'Calling ''SegmentTree::build'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      466
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      466
+            Length:          23
+      - Message:         'Assuming ''l'' is not equal to ''r'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      335
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      335
+            Length:          6
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      331
+        Replacements:    []
+      - Message:         'Calling ''SegmentTree::build'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      466
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      466
+            Length:          23
+      - Message:         'Assuming ''l'' is not equal to ''r'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      335
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      335
+            Length:          6
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      331
+        Replacements:    []
+      - Message:         'Returning from ''SegmentTree::build'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      466
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      466
+            Length:          23
+      - Message:         'Calling ''SegmentTree::build'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      495
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      495
+            Length:          31
+      - Message:         'Assuming ''l'' is equal to ''r'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      335
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      335
+            Length:          6
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      331
+        Replacements:    []
+      - Message:         'Access of ''pref'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      366
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      366
+            Length:          7
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'result of multiplication in type ''int'' is used as a pointer offset after an implicit widening conversion to type ''ptrdiff_t'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+      FileOffset:      553
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      558
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            Offset:          25
+            Length:          0
+            ReplacementText: "\n#include <cstddef>\n"
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            Offset:          558
+            Length:          0
+            ReplacementText: 'static_cast<ptrdiff_t>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            Offset:          566
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      558
+            Length:          8
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      558
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            Offset:          558
+            Length:          0
+            ReplacementText: 'static_cast<ptrdiff_t>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            Offset:          566
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      558
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'result of multiplication in type ''int'' is used as a pointer offset after an implicit widening conversion to type ''ptrdiff_t'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+      FileOffset:      623
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      628
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            Offset:          628
+            Length:          0
+            ReplacementText: 'static_cast<ptrdiff_t>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            Offset:          636
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      628
+            Length:          8
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      628
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            Offset:          628
+            Length:          0
+            ReplacementText: 'static_cast<ptrdiff_t>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            Offset:          636
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      628
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'result of multiplication in type ''int'' is used as a pointer offset after an implicit widening conversion to type ''ptrdiff_t'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+      FileOffset:      694
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      699
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            Offset:          699
+            Length:          0
+            ReplacementText: 'static_cast<ptrdiff_t>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            Offset:          707
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      699
+            Length:          8
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      699
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            Offset:          699
+            Length:          0
+            ReplacementText: 'static_cast<ptrdiff_t>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            Offset:          707
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      699
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'result of multiplication in type ''int'' is used as a pointer offset after an implicit widening conversion to type ''ptrdiff_t'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+      FileOffset:      789
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      794
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            Offset:          794
+            Length:          0
+            ReplacementText: 'static_cast<ptrdiff_t>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            Offset:          802
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      794
+            Length:          8
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      794
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            Offset:          794
+            Length:          0
+            ReplacementText: 'static_cast<ptrdiff_t>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            Offset:          802
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      794
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+      FileOffset:      822
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+          Offset:          817
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+          Offset:          865
+          Length:          0
+          ReplacementText: ' -> Node'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+      FileOffset:      1212
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+          Offset:          1208
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+          Offset:          1222
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-redundant-void-arg
+    DiagnosticMessage:
+      Message:         redundant void argument list in function definition
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+      FileOffset:      1217
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+          Offset:          1217
+          Length:          4
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''max_pref'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+      FileOffset:      1975
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+          FileOffset:      1975
+          Length:          15
+    Notes:
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1281
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      1281
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 39
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1265
+        Replacements:    []
+      - Message:         '''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1332
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      1332
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 40
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1316
+        Replacements:    []
+      - Message:         '''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1411
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      1411
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 45
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1395
+        Replacements:    []
+      - Message:         '''i'' is < 1'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1554
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      1554
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 49
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1538
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1694
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1726
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      1726
+            Length:          22
+      - Message:         Taint propagated to the 2nd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1726
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      1726
+            Length:          22
+      - Message:         'Assuming ''l'' is <= ''r'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1758
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      1758
+            Length:          6
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1754
+        Replacements:    []
+      - Message:         'Assuming ''l'' is > 2'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1806
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      1806
+            Length:          5
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1802
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1873
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      1873
+            Length:          9
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1869
+        Replacements:    []
+      - Message:         '''l'' is > 1'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1944
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      1944
+            Length:          1
+      - Message:         'Left side of ''&&'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1944
+        Replacements:    []
+      - Message:         'Assuming ''r'' is < ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1953
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      1953
+            Length:          5
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1940
+        Replacements:    []
+      - Message:         'Access of ''max_pref'' with a tainted index that may be too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1975
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      1975
+            Length:          15
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''max_suf'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+      FileOffset:      1993
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+          FileOffset:      1993
+          Length:          14
+    Notes:
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1281
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      1281
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 39
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1265
+        Replacements:    []
+      - Message:         '''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1332
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      1332
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 40
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1316
+        Replacements:    []
+      - Message:         '''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1411
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      1411
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 45
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1395
+        Replacements:    []
+      - Message:         '''i'' is < 1'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1554
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      1554
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 49
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1538
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1694
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1726
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      1726
+            Length:          22
+      - Message:         Taint propagated to the 3rd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1726
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      1726
+            Length:          22
+      - Message:         'Assuming ''l'' is <= ''r'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1758
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      1758
+            Length:          6
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1754
+        Replacements:    []
+      - Message:         'Assuming ''l'' is <= 2'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1806
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      1806
+            Length:          5
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1802
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1873
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      1873
+            Length:          9
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1869
+        Replacements:    []
+      - Message:         'Assuming ''l'' is > 1'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1944
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      1944
+            Length:          5
+      - Message:         'Left side of ''&&'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1944
+        Replacements:    []
+      - Message:         'Assuming ''r'' is < ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1953
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      1953
+            Length:          5
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1940
+        Replacements:    []
+      - Message:         'Access of ''max_suf'' with a tainted index that may be too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+        FileOffset:      1993
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0193_516_C._Drazil_and_Park.cpp'
+            FileOffset:      1993
+            Length:          14
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

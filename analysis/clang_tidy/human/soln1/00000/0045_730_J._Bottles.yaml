@@ -1,0 +1,492 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+      FileOffset:      46
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+      FileOffset:      72
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+      FileOffset:      96
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+          Offset:          92
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+          Offset:          102
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''dp'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+      FileOffset:      511
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+          FileOffset:      511
+          Length:          7
+    Notes:
+      - Message:         'Assuming ''i'' is < ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      174
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+            FileOffset:      174
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      158
+        Replacements:    []
+      - Message:         'Assuming ''i'' is < ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      174
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+            FileOffset:      174
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      158
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      174
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+            FileOffset:      174
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 13
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      158
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      235
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      269
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+            FileOffset:      269
+            Length:          18
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      235
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      269
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+            FileOffset:      269
+            Length:          18
+      - Message:         Taint propagated to the 2nd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      269
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+            FileOffset:      269
+            Length:          18
+      - Message:         Loop condition is false. Execution continues on line 17
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      235
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''mx'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      327
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+            FileOffset:      327
+            Length:          7
+      - Message:         Loop condition is false. Execution continues on line 18
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      311
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      370
+        Replacements:    []
+      - Message:         'Assuming ''j'' is >= 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      421
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+            FileOffset:      421
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      404
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      446
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+            FileOffset:      446
+            Length:          17
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      442
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      511
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+            FileOffset:      511
+            Length:          19
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      507
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      614
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+            FileOffset:      614
+            Length:          31
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      610
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      729
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+            FileOffset:      729
+            Length:          32
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      725
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 18
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      404
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      370
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      404
+        Replacements:    []
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      442
+        Replacements:    []
+      - Message:         'Access of ''dp'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      511
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+            FileOffset:      511
+            Length:          7
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-branch-clone
+    DiagnosticMessage:
+      Message:         repeated branch body in conditional chain
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+      FileOffset:      540
+      Replacements:    []
+    Notes:
+      - Message:         end of the original
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      597
+        Replacements:    []
+      - Message:         clone 1 starts here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      655
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''dp'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+      FileOffset:      930
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+          FileOffset:      930
+          Length:          5
+    Notes:
+      - Message:         'Assuming ''i'' is < ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      174
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+            FileOffset:      174
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      158
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      174
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+            FileOffset:      174
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 13
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      158
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      235
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 17
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      235
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''mx'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      327
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+            FileOffset:      327
+            Length:          7
+      - Message:         Loop condition is false. Execution continues on line 18
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      311
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      370
+        Replacements:    []
+      - Message:         'Assuming ''j'' is >= 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      421
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+            FileOffset:      421
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      404
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      446
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+            FileOffset:      446
+            Length:          17
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      442
+        Replacements:    []
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      507
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      614
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+            FileOffset:      614
+            Length:          31
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      610
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      729
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+            FileOffset:      729
+            Length:          32
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      725
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 18
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      404
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 30
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      370
+        Replacements:    []
+      - Message:         'Assuming ''i'' is <= ''mx'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      906
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+            FileOffset:      906
+            Length:          7
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      888
+        Replacements:    []
+      - Message:         'Access of ''dp'' at negative byte offset'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      930
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+            FileOffset:      930
+            Length:          5
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''dp'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+      FileOffset:      930
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+          FileOffset:      930
+          Length:          5
+    Notes:
+      - Message:         'Assuming ''i'' is < ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      174
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+            FileOffset:      174
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      158
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      192
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+            FileOffset:      192
+            Length:          18
+      - Message:         Taint propagated to the 2nd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      192
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+            FileOffset:      192
+            Length:          18
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      174
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+            FileOffset:      174
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 13
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      158
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      235
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 17
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      235
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''mx'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      327
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+            FileOffset:      327
+            Length:          7
+      - Message:         Loop condition is false. Execution continues on line 18
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      311
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      370
+        Replacements:    []
+      - Message:         'Assuming ''j'' is < 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      421
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+            FileOffset:      421
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 18
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      404
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 30
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      370
+        Replacements:    []
+      - Message:         'Assuming ''i'' is <= ''mx'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      906
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+            FileOffset:      906
+            Length:          7
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      888
+        Replacements:    []
+      - Message:         'Access of ''dp'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+        FileOffset:      930
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0045_730_J._Bottles.cpp'
+            FileOffset:      930
+            Length:          5
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

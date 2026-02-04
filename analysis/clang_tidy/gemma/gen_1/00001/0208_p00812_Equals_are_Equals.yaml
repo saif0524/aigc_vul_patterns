@@ -1,0 +1,205 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0208_p00812_Equals_are_Equals.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-equals-default
+    DiagnosticMessage:
+      Message:         'use ''= default'' to define a trivial default constructor'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0208_p00812_Equals_are_Equals.cpp'
+      FileOffset:      211
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0208_p00812_Equals_are_Equals.cpp'
+          Offset:          224
+          Length:          2
+          ReplacementText: '= default;'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no matching member function for call to ''erase'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0208_p00812_Equals_are_Equals.cpp'
+      FileOffset:      444
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0208_p00812_Equals_are_Equals.cpp'
+          FileOffset:      438
+          Length:          11
+    Notes:
+      - Message:         'candidate function not viable: no known conversion from ''std::pair<const std::vector<std::pair<char, int>>, int>'' to ''const_iterator'' (aka ''_Rb_tree_const_iterator<std::pair<const std::vector<std::pair<char, int>, std::allocator<std::pair<char, int>>>, int>>'') for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_map.h'
+        FileOffset:      37370
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_map.h'
+            FileOffset:      37376
+            Length:          25
+      - Message:         'candidate function not viable: no known conversion from ''std::pair<const std::vector<std::pair<char, int>>, int>'' to ''iterator'' (aka ''_Rb_tree_iterator<std::pair<const std::vector<std::pair<char, int>, std::allocator<std::pair<char, int>>>, int>>'') for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_map.h'
+        FileOffset:      37513
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_map.h'
+            FileOffset:      37519
+            Length:          19
+      - Message:         'candidate function not viable: no known conversion from ''std::pair<const std::vector<std::pair<char, int>>, int>'' to ''const key_type'' (aka ''const std::vector<std::pair<char, int>>'') for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_map.h'
+        FileOffset:      38707
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_map.h'
+            FileOffset:      38713
+            Length:          19
+      - Message:         'candidate function not viable: requires 2 arguments, but 1 was provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_map.h'
+        FileOffset:      39566
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_map.h'
+            FileOffset:      39572
+            Length:          45
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nodiscard
+    DiagnosticMessage:
+      Message:         'function ''equivalent'' should be marked [[nodiscard]]'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0208_p00812_Equals_are_Equals.cpp'
+      FileOffset:      490
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0208_p00812_Equals_are_Equals.cpp'
+          Offset:          490
+          Length:          0
+          ReplacementText: '[[nodiscard]] '
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0208_p00812_Equals_are_Equals.cpp'
+      FileOffset:      495
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0208_p00812_Equals_are_Equals.cpp'
+          Offset:          490
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0208_p00812_Equals_are_Equals.cpp'
+          Offset:          536
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0208_p00812_Equals_are_Equals.cpp'
+      FileOffset:      868
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0208_p00812_Equals_are_Equals.cpp'
+          Offset:          857
+          Length:          10
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0208_p00812_Equals_are_Equals.cpp'
+          Offset:          910
+          Length:          0
+          ReplacementText: ' -> Polynomial'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-emplace
+    DiagnosticMessage:
+      Message:         use emplace_back instead of push_back
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0208_p00812_Equals_are_Equals.cpp'
+      FileOffset:      2395
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0208_p00812_Equals_are_Equals.cpp'
+          Offset:          2395
+          Length:          11
+          ReplacementText: 'emplace_back('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0208_p00812_Equals_are_Equals.cpp'
+          Offset:          2416
+          Length:          1
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_t'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0208_p00812_Equals_are_Equals.cpp'
+      FileOffset:      2540
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-emplace
+    DiagnosticMessage:
+      Message:         use emplace_back instead of push_back
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0208_p00812_Equals_are_Equals.cpp'
+      FileOffset:      4817
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0208_p00812_Equals_are_Equals.cpp'
+          Offset:          4817
+          Length:          11
+          ReplacementText: 'emplace_back('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0208_p00812_Equals_are_Equals.cpp'
+          Offset:          4838
+          Length:          1
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_t'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0208_p00812_Equals_are_Equals.cpp'
+      FileOffset:      4937
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0208_p00812_Equals_are_Equals.cpp'
+      FileOffset:      5915
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0208_p00812_Equals_are_Equals.cpp'
+          Offset:          5911
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0208_p00812_Equals_are_Equals.cpp'
+          Offset:          5921
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0208_p00812_Equals_are_Equals.cpp'
+      FileOffset:      6441
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0208_p00812_Equals_are_Equals.cpp'
+          Offset:          6441
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0208_p00812_Equals_are_Equals.cpp'
+      FileOffset:      6508
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0208_p00812_Equals_are_Equals.cpp'
+          Offset:          6508
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0208_p00812_Equals_are_Equals.cpp'
+      FileOffset:      6573
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0208_p00812_Equals_are_Equals.cpp'
+          Offset:          6573
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

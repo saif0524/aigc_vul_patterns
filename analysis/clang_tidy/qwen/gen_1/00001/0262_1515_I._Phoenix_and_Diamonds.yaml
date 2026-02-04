@@ -1,0 +1,65 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0262_1515_I._Phoenix_and_Diamonds.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0262_1515_I._Phoenix_and_Diamonds.cpp'
+      FileOffset:      51
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0262_1515_I._Phoenix_and_Diamonds.cpp'
+          Offset:          47
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0262_1515_I._Phoenix_and_Diamonds.cpp'
+          Offset:          57
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0262_1515_I._Phoenix_and_Diamonds.cpp'
+      FileOffset:      104
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0262_1515_I._Phoenix_and_Diamonds.cpp'
+          Offset:          104
+          Length:          1
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this lambda
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0262_1515_I._Phoenix_and_Diamonds.cpp'
+      FileOffset:      453
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0262_1515_I._Phoenix_and_Diamonds.cpp'
+          Offset:          462
+          Length:          0
+          ReplacementText: ' -> void'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no matching function for call to ''tie'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0262_1515_I._Phoenix_and_Diamonds.cpp'
+      FileOffset:      2871
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0262_1515_I._Phoenix_and_Diamonds.cpp'
+          FileOffset:      2871
+          Length:          3
+    Notes:
+      - Message:         'candidate function [with _Elements = <int, std::tuple<int &, int &>>] not viable: expects an lvalue for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      71235
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+            FileOffset:      71239
+            Length:          20
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

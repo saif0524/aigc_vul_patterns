@@ -1,0 +1,661 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-using
+    DiagnosticMessage:
+      Message:         'use ''using'' instead of ''typedef'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+      FileOffset:      46
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+          Offset:          46
+          Length:          303
+          ReplacementText: "using P = struct POINT {\n  int x, y, v;\n  POINT(int x = 0, int y = 0, int v = 0) : x(x), y(y), v(v) {}\n  bool operator<(POINT& other) {\n    if (this->x != other.x) return this->x < other.x;\n    if (this->y != other.y) return this->y < other.y;\n    if (this->v != other.v) return this->v < other.v;\n  }\n}"
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '3 adjacent parameters of ''POINT'' of similar type (''int'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+      FileOffset:      92
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+          FileOffset:      92
+          Length:          31
+    Notes:
+      - Message:         'the first parameter in the range is ''x'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      96
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+            FileOffset:      96
+            Length:          1
+      - Message:         'the last parameter in the range is ''v'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      118
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+            FileOffset:      118
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+      FileOffset:      154
+      Replacements:    []
+    Notes:
+      - Message:         this fix will not be applied because it overlaps with another fix
+        FilePath:        ''
+        FileOffset:      0
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-return-type
+    DiagnosticMessage:
+      Message:         non-void function does not return a value in all control paths
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+      FileOffset:      344
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+      FileOffset:      361
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+      FileOffset:      379
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+      FileOffset:      402
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+      FileOffset:      426
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+      FileOffset:      447
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+      FileOffset:      469
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+      FileOffset:      495
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+          Offset:          490
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+          Offset:          523
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+      FileOffset:      551
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+          Offset:          546
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+          Offset:          579
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''solve'' of similar type (''int'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+      FileOffset:      613
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+          FileOffset:      613
+          Length:          12
+    Notes:
+      - Message:         'the first parameter in the range is ''k'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      617
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+            FileOffset:      617
+            Length:          1
+      - Message:         'the last parameter in the range is ''x'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      624
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+            FileOffset:      624
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''mapy'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+      FileOffset:      831
+      Replacements:    []
+    Notes:
+      - Message:         'Assuming ''i'' is >= ''N'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      1074
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+            FileOffset:      1074
+            Length:          10
+      - Message:         Loop condition is false. Execution continues on line 51
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      1053
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 63
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      1356
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      1575
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+            FileOffset:      1575
+            Length:          14
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      1554
+        Replacements:    []
+      - Message:         'Assuming field ''v'' is not equal to 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      1609
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+            FileOffset:      1609
+            Length:          12
+      - Message:         Loop condition is false. Execution continues on line 65
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      1602
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      1575
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+            FileOffset:      1575
+            Length:          14
+      - Message:         Loop condition is false. Execution continues on line 70
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      1554
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      1733
+        Replacements:    []
+      - Message:         '''last'' is >= field ''x'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      1795
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+            FileOffset:      1795
+            Length:          4
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      1781
+        Replacements:    []
+      - Message:         'Calling ''solve'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      1952
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+            FileOffset:      1952
+            Length:          17
+      - Message:         'Assuming ''y'' is < 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      670
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+            FileOffset:      670
+            Length:          6
+      - Message:         'Left side of ''&&'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      677
+        Replacements:    []
+      - Message:         'Assuming ''down'' is <= field ''y'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      786
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+            FileOffset:      786
+            Length:          15
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      779
+        Replacements:    []
+      - Message:         'Access of ''mapy'' at negative byte offset'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      831
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+            FileOffset:      831
+            Length:          12
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+      FileOffset:      999
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+          Offset:          995
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+          Offset:          1005
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+      FileOffset:      1046
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+          Offset:          1046
+          Length:          1
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''pt'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+      FileOffset:      1136
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+          FileOffset:      1136
+          Length:          9
+    Notes:
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      1010
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+            FileOffset:      1010
+            Length:          21
+      - Message:         Taint propagated to the 2nd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      1010
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+            FileOffset:      1010
+            Length:          21
+      - Message:         'Assuming ''i'' is < ''N'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      1074
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+            FileOffset:      1074
+            Length:          10
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      1053
+        Replacements:    []
+      - Message:         'Access of ''pt'' with a tainted index that may be too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      1136
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+            FileOffset:      1136
+            Length:          9
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'result of multiplication in type ''int'' is used as a pointer offset after an implicit widening conversion to type ''ptrdiff_t'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+      FileOffset:      1279
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      1284
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+            Offset:          25
+            Length:          0
+            ReplacementText: "\n#include <cstddef>\n"
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+            Offset:          1284
+            Length:          0
+            ReplacementText: 'static_cast<ptrdiff_t>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+            Offset:          1289
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+            FileOffset:      1284
+            Length:          5
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      1284
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+            Offset:          1284
+            Length:          0
+            ReplacementText: 'static_cast<ptrdiff_t>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+            Offset:          1289
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+            FileOffset:      1284
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''pt'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+      FileOffset:      1639
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+          FileOffset:      1639
+          Length:          7
+    Notes:
+      - Message:         'Assuming ''i'' is >= ''N'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      1074
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+            FileOffset:      1074
+            Length:          10
+      - Message:         Loop condition is false. Execution continues on line 51
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      1053
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 63
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      1356
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      1575
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+            FileOffset:      1575
+            Length:          14
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      1554
+        Replacements:    []
+      - Message:         'Assuming field ''v'' is equal to 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      1609
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+            FileOffset:      1609
+            Length:          12
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      1602
+        Replacements:    []
+      - Message:         'Access of ''pt'' at negative byte offset -12'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      1639
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+            FileOffset:      1639
+            Length:          7
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'result of multiplication in type ''int'' is used as a pointer offset after an implicit widening conversion to type ''ptrdiff_t'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+      FileOffset:      1669
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      1674
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+            Offset:          1674
+            Length:          0
+            ReplacementText: 'static_cast<ptrdiff_t>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+            Offset:          1679
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+            FileOffset:      1674
+            Length:          5
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      1674
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+            Offset:          1674
+            Length:          0
+            ReplacementText: 'static_cast<ptrdiff_t>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+            Offset:          1679
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+            FileOffset:      1674
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-format
+    DiagnosticMessage:
+      Message:         'length modifier ''I64'' results in undefined behavior or no effect with ''d'' conversion specifier'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+      FileOffset:      2034
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+          Offset:          2034
+          Length:          3
+          ReplacementText: ''
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+          FileOffset:      2033
+          Length:          5
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''pt'' with tainted offset'
+      FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/predefined_ops.h'
+      FileOffset:      4130
+      Replacements:    []
+    Notes:
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      1010
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+            FileOffset:      1010
+            Length:          21
+      - Message:         Taint propagated to the 2nd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      1010
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+            FileOffset:      1010
+            Length:          21
+      - Message:         'Assuming ''i'' is >= ''N'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      1074
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+            FileOffset:      1074
+            Length:          10
+      - Message:         Loop condition is false. Execution continues on line 51
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      1053
+        Replacements:    []
+      - Message:         'Calling ''sort<POINT *, bool (*)(const POINT &, const POINT &)>'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+        FileOffset:      1270
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp'
+            FileOffset:      1270
+            Length:          26
+      - Message:         'Calling ''__sort<POINT *, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(const POINT &, const POINT &)>>'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      174965
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+            FileOffset:      174965
+            Length:          72
+      - Message:         'Assuming ''__first'' is not equal to ''__last'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      65748
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+            FileOffset:      65748
+            Length:          17
+      - Message:         Taking true branch
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      65744
+        Replacements:    []
+      - Message:         'Calling ''__introsort_loop<POINT *, long, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(const POINT &, const POINT &)>>'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      65773
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+            FileOffset:      65773
+            Length:          87
+      - Message:         Assuming the condition is true
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      65157
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+            FileOffset:      65157
+            Length:          36
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      65150
+        Replacements:    []
+      - Message:         'Assuming ''__depth_limit'' is not equal to 0'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      65205
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+            FileOffset:      65205
+            Length:          18
+      - Message:         Taking false branch
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      65201
+        Replacements:    []
+      - Message:         'Calling ''__unguarded_partition_pivot<POINT *, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(const POINT &, const POINT &)>>'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      65373
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+            FileOffset:      65373
+            Length:          57
+      - Message:         'Calling ''__move_median_to_first<POINT *, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(const POINT &, const POINT &)>>'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      64296
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+            FileOffset:      64296
+            Length:          82
+      - Message:         'Calling ''_Iter_comp_iter::operator()'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      3202
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+            FileOffset:      3202
+            Length:          16
+      - Message:         'Access of ''pt'' with a tainted offset that may be negative or too large'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/predefined_ops.h'
+        FileOffset:      4130
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/predefined_ops.h'
+            FileOffset:      4130
+            Length:          6
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

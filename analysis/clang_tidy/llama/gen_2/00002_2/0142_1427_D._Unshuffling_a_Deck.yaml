@@ -1,0 +1,100 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0142_1427_D._Unshuffling_a_Deck.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0142_1427_D._Unshuffling_a_Deck.cpp'
+      FileOffset:      86
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0142_1427_D._Unshuffling_a_Deck.cpp'
+          Offset:          82
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0142_1427_D._Unshuffling_a_Deck.cpp'
+          Offset:          92
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-inefficient-vector-operation
+    DiagnosticMessage:
+      Message:         '''push_back'' is called inside a loop; consider pre-allocating the container capacity before the loop'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0142_1427_D._Unshuffling_a_Deck.cpp'
+      FileOffset:      558
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0142_1427_D._Unshuffling_a_Deck.cpp'
+          Offset:          516
+          Length:          0
+          ReplacementText: "b.reserve(p);\n"
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-loop-convert
+    DiagnosticMessage:
+      Message:         use range-based for loop instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0142_1427_D._Unshuffling_a_Deck.cpp'
+      FileOffset:      880
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0142_1427_D._Unshuffling_a_Deck.cpp'
+          Offset:          884
+          Length:          30
+          ReplacementText: '(int j : b)'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0142_1427_D._Unshuffling_a_Deck.cpp'
+          Offset:          972
+          Length:          4
+          ReplacementText: j
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0142_1427_D._Unshuffling_a_Deck.cpp'
+          Offset:          998
+          Length:          4
+          ReplacementText: j
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0142_1427_D._Unshuffling_a_Deck.cpp'
+      FileOffset:      1047
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0142_1427_D._Unshuffling_a_Deck.cpp'
+          Offset:          1047
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-loop-convert
+    DiagnosticMessage:
+      Message:         use range-based for loop instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0142_1427_D._Unshuffling_a_Deck.cpp'
+      FileOffset:      1057
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0142_1427_D._Unshuffling_a_Deck.cpp'
+          Offset:          1061
+          Length:          32
+          ReplacementText: '(auto & an : ans)'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0142_1427_D._Unshuffling_a_Deck.cpp'
+          Offset:          1112
+          Length:          6
+          ReplacementText: an
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0142_1427_D._Unshuffling_a_Deck.cpp'
+          Offset:          1155
+          Length:          6
+          ReplacementText: an
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0142_1427_D._Unshuffling_a_Deck.cpp'
+          Offset:          1204
+          Length:          6
+          ReplacementText: an
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0142_1427_D._Unshuffling_a_Deck.cpp'
+      FileOffset:      1241
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0142_1427_D._Unshuffling_a_Deck.cpp'
+          Offset:          1241
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

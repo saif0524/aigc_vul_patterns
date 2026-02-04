@@ -1,0 +1,383 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+Diagnostics:
+  - DiagnosticName:  bugprone-reserved-identifier
+    DiagnosticMessage:
+      Message:         'declaration uses identifier ''_USE_MATH_DEFINES'', which is a reserved identifier'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+      FileOffset:      8
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+          Offset:          8
+          Length:          17
+          ReplacementText: USE_MATH_DEFINES
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-using
+    DiagnosticMessage:
+      Message:         'use ''using'' instead of ''typedef'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+      FileOffset:      302
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+          Offset:          302
+          Length:          44
+          ReplacementText: 'using P = pair<long long int, long long int>'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-using
+    DiagnosticMessage:
+      Message:         'use ''using'' instead of ''typedef'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+      FileOffset:      348
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+          Offset:          348
+          Length:          30
+          ReplacementText: 'using T = tuple<int, int, int>'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+      FileOffset:      728
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+          Offset:          723
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+          Offset:          756
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+      FileOffset:      822
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+          Offset:          810
+          Length:          11
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+          Offset:          891
+          Length:          0
+          ReplacementText: ' -> vector<int>'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''inducedSort'' of similar type (''vector<int> &'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+      FileOffset:      857
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+          FileOffset:      857
+          Length:          33
+    Notes:
+      - Message:         'the first parameter in the range is ''t'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+        FileOffset:      870
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+            FileOffset:      870
+            Length:          1
+      - Message:         'the last parameter in the range is ''seed'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+        FileOffset:      886
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+            FileOffset:      886
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+      FileOffset:      1869
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+      FileOffset:      2086
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+          Offset:          2074
+          Length:          11
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+          Offset:          2113
+          Length:          0
+          ReplacementText: ' -> vector<int>'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+      FileOffset:      2218
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+      FileOffset:      3911
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+          Offset:          3899
+          Length:          11
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+          Offset:          3947
+          Length:          0
+          ReplacementText: ' -> vector<int>'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-unnecessary-value-param
+    DiagnosticMessage:
+      Message:         'parameter ''monoidFunc_'' is passed by value and only copied once; consider moving it to avoid unnecessary copies'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+      FileOffset:      4722
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+          Offset:          141
+          Length:          0
+          ReplacementText: "#include <utility>\n"
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+          Offset:          4722
+          Length:          0
+          ReplacementText: 'std::move('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+          Offset:          4733
+          Length:          0
+          ReplacementText: ')'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-loop-convert
+    DiagnosticMessage:
+      Message:         use range-based for loop instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+      FileOffset:      4829
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+          Offset:          4832
+          Length:          31
+          ReplacementText: '(long long & i : segTree)'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+          Offset:          4868
+          Length:          10
+          ReplacementText: i
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+      FileOffset:      5084
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+          Offset:          5070
+          Length:          13
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+          Offset:          5103
+          Length:          0
+          ReplacementText: ' -> long long int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+      FileOffset:      5267
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'result of multiplication in type ''int'' is used as a pointer offset after an implicit widening conversion to type ''ptrdiff_t'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+      FileOffset:      5498
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+        FileOffset:      5506
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+            Offset:          27
+            Length:          0
+            ReplacementText: "#include <cstddef>\n"
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+            Offset:          5506
+            Length:          0
+            ReplacementText: 'static_cast<ptrdiff_t>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+            Offset:          5511
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+            FileOffset:      5506
+            Length:          5
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+        FileOffset:      5506
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+            Offset:          5506
+            Length:          0
+            ReplacementText: 'static_cast<ptrdiff_t>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+            Offset:          5511
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+            FileOffset:      5506
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+      FileOffset:      5659
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+          Offset:          5645
+          Length:          13
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+          Offset:          5704
+          Length:          0
+          ReplacementText: ' -> long long int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+      FileOffset:      5940
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+          Offset:          5926
+          Length:          13
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+          Offset:          5978
+          Length:          0
+          ReplacementText: ' -> long long int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+      FileOffset:      6147
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+          Offset:          6143
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+          Offset:          6216
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''findPos'' of similar type (''vector<int> &'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+      FileOffset:      6177
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+          FileOffset:      6177
+          Length:          38
+    Notes:
+      - Message:         'the first parameter in the range is ''sa'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+        FileOffset:      6190
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+            FileOffset:      6190
+            Length:          2
+      - Message:         'the last parameter in the range is ''lcpArray'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+        FileOffset:      6207
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+            FileOffset:      6207
+            Length:          8
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+      FileOffset:      6287
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+      FileOffset:      6404
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+      FileOffset:      6807
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+          Offset:          6803
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+          Offset:          6813
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-signed-char-misuse
+    DiagnosticMessage:
+      Message:         '''signed char'' to ''int'' conversion; consider casting to ''unsigned char'' first.'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+      FileOffset:      6865
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+      FileOffset:      7452
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp'
+          Offset:          7452
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

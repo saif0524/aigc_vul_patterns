@@ -1,0 +1,569 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+      FileOffset:      60
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+      FileOffset:      105
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+          Offset:          101
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+          Offset:          111
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''long long'' of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+      FileOffset:      431
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      431
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+            Offset:          25
+            Length:          0
+            ReplacementText: "\n#include <cstddef>\n"
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+            Offset:          431
+            Length:          0
+            ReplacementText: 'static_cast<long long>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+            Offset:          436
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+            FileOffset:      431
+            Length:          5
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      431
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+            Offset:          431
+            Length:          0
+            ReplacementText: 'static_cast<long long>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+            Offset:          432
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+            FileOffset:      431
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''f'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+      FileOffset:      765
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+          FileOffset:      765
+          Length:          4
+    Notes:
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      118
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+            FileOffset:      118
+            Length:          27
+      - Message:         Taint propagated to the 4th argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      118
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+            FileOffset:      118
+            Length:          27
+      - Message:         'Assuming ''i'' is <= ''k'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      167
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+            FileOffset:      167
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      151
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''k'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      167
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+            FileOffset:      167
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 10
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      151
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      235
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      299
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 15
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      299
+        Replacements:    []
+      - Message:         'Assuming ''j'' is <= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      363
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+            FileOffset:      363
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      347
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      394
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+            FileOffset:      394
+            Length:          9
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      390
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      454
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+            FileOffset:      454
+            Length:          10
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      450
+        Replacements:    []
+      - Message:         'Assuming ''j'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      363
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+            FileOffset:      363
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 12
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      347
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 22
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      235
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      498
+        Replacements:    []
+      - Message:         'Assuming ''j'' is >= 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      553
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+            FileOffset:      553
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      537
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      580
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      660
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 27
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      660
+        Replacements:    []
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      716
+        Replacements:    []
+      - Message:         'Access of ''f'' with a tainted index that may be too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      765
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+            FileOffset:      765
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''f'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+      FileOffset:      771
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+          FileOffset:      771
+          Length:          12
+    Notes:
+      - Message:         'Assuming ''i'' is <= ''k'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      167
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+            FileOffset:      167
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      151
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      180
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+            FileOffset:      180
+            Length:          20
+      - Message:         Taint propagated to the 2nd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      180
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+            FileOffset:      180
+            Length:          20
+      - Message:         'Assuming ''i'' is > ''k'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      167
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+            FileOffset:      167
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 10
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      151
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      235
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      299
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 15
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      299
+        Replacements:    []
+      - Message:         'Assuming ''j'' is <= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      363
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+            FileOffset:      363
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      347
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      394
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+            FileOffset:      394
+            Length:          9
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      390
+        Replacements:    []
+      - Message:         ' Execution continues on line 12'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      405
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 22
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      235
+        Replacements:    []
+      - Message:         '''i'' is <= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      514
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+            FileOffset:      514
+            Length:          1
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      498
+        Replacements:    []
+      - Message:         'Assuming ''j'' is >= 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      553
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+            FileOffset:      553
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      537
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      580
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      660
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 27
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      660
+        Replacements:    []
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      716
+        Replacements:    []
+      - Message:         ' Execution continues on line 23'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      731
+        Replacements:    []
+      - Message:         'Assuming ''j'' is < 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      553
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+            FileOffset:      553
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 22
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      537
+        Replacements:    []
+      - Message:         'Assuming ''i'' is <= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      514
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+            FileOffset:      514
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      498
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      537
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      580
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      660
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 27
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      660
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      720
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+            FileOffset:      720
+            Length:          9
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      716
+        Replacements:    []
+      - Message:         'Access of ''f'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      771
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+            FileOffset:      771
+            Length:          12
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''f'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+      FileOffset:      845
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+          FileOffset:      845
+          Length:          4
+    Notes:
+      - Message:         'Assuming ''i'' is > ''k'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      167
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+            FileOffset:      167
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 10
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      151
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 22
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      235
+        Replacements:    []
+      - Message:         'Assuming ''i'' is <= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      514
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+            FileOffset:      514
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      498
+        Replacements:    []
+      - Message:         'Assuming ''j'' is < 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      553
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+            FileOffset:      553
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 22
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      537
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      514
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+            FileOffset:      514
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 33
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      498
+        Replacements:    []
+      - Message:         'Access of ''f'' at negative byte offset'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      845
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+            FileOffset:      845
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''f'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+      FileOffset:      845
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+          FileOffset:      845
+          Length:          4
+    Notes:
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      118
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+            FileOffset:      118
+            Length:          27
+      - Message:         Taint propagated to the 4th argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      118
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+            FileOffset:      118
+            Length:          27
+      - Message:         'Assuming ''i'' is > ''k'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      167
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+            FileOffset:      167
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 10
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      151
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 22
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      235
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      514
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+            FileOffset:      514
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 33
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      498
+        Replacements:    []
+      - Message:         'Access of ''f'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+        FileOffset:      845
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp'
+            FileOffset:      845
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

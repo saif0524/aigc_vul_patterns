@@ -1,0 +1,134 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0017_536_C._Tavas_and_Pashmaks.cpp'
+Diagnostics:
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '3 adjacent parameters of ''Competitor'' of similar type (''int'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0017_536_C._Tavas_and_Pashmaks.cpp'
+      FileOffset:      167
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0017_536_C._Tavas_and_Pashmaks.cpp'
+          FileOffset:      167
+          Length:          20
+    Notes:
+      - Message:         'the first parameter in the range is ''s'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0017_536_C._Tavas_and_Pashmaks.cpp'
+        FileOffset:      171
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0017_536_C._Tavas_and_Pashmaks.cpp'
+            FileOffset:      171
+            Length:          1
+      - Message:         'the last parameter in the range is ''id'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0017_536_C._Tavas_and_Pashmaks.cpp'
+        FileOffset:      185
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0017_536_C._Tavas_and_Pashmaks.cpp'
+            FileOffset:      185
+            Length:          2
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0017_536_C._Tavas_and_Pashmaks.cpp'
+      FileOffset:      222
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0017_536_C._Tavas_and_Pashmaks.cpp'
+          Offset:          217
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0017_536_C._Tavas_and_Pashmaks.cpp'
+          Offset:          267
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0017_536_C._Tavas_and_Pashmaks.cpp'
+      FileOffset:      311
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0017_536_C._Tavas_and_Pashmaks.cpp'
+          Offset:          307
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0017_536_C._Tavas_and_Pashmaks.cpp'
+          Offset:          317
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0017_536_C._Tavas_and_Pashmaks.cpp'
+      FileOffset:      1020
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0017_536_C._Tavas_and_Pashmaks.cpp'
+          Offset:          1020
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no matching constructor for initialization of ''Competitor'''
+      FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_construct.h'
+      FileOffset:      4387
+      Replacements:    []
+    Notes:
+      - Message:         'in instantiation of function template specialization ''std::_Construct<Competitor>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_uninitialized.h'
+        FileOffset:      20375
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__uninitialized_default_n_1<false>::__uninit_default_n<Competitor *, unsigned long>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_uninitialized.h'
+        FileOffset:      22439
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__uninitialized_default_n<Competitor *, unsigned long>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_uninitialized.h'
+        FileOffset:      24533
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__uninitialized_default_n_a<Competitor *, unsigned long, Competitor>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h'
+        FileOffset:      57202
+        Replacements:    []
+      - Message:         'in instantiation of member function ''std::vector<Competitor>::_M_default_initialize'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h'
+        FileOffset:      17407
+        Replacements:    []
+      - Message:         'in instantiation of member function ''std::vector<Competitor>::vector'' requested here'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0017_536_C._Tavas_and_Pashmaks.cpp'
+        FileOffset:      368
+        Replacements:    []
+      - Message:         'candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 0 were provided'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0017_536_C._Tavas_and_Pashmaks.cpp'
+        FileOffset:      121
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0017_536_C._Tavas_and_Pashmaks.cpp'
+            FileOffset:      121
+            Length:          10
+      - Message:         'candidate constructor (the implicit move constructor) not viable: requires 1 argument, but 0 were provided'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0017_536_C._Tavas_and_Pashmaks.cpp'
+        FileOffset:      121
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0017_536_C._Tavas_and_Pashmaks.cpp'
+            FileOffset:      121
+            Length:          10
+      - Message:         'candidate constructor not viable: requires 3 arguments, but 0 were provided'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0017_536_C._Tavas_and_Pashmaks.cpp'
+        FileOffset:      156
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0017_536_C._Tavas_and_Pashmaks.cpp'
+            FileOffset:      167
+            Length:          20
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

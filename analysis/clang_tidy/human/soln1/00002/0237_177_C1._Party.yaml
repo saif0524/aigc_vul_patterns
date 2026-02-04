@@ -1,0 +1,241 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+Diagnostics:
+  - DiagnosticName:  clang-analyzer-optin.cplusplus.UninitializedObject
+    DiagnosticMessage:
+      Message:         2 uninitialized fields at the end of the constructor call
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+      FileOffset:      246
+      Replacements:    []
+    Notes:
+      - Message:         'uninitialized field ''this->k'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+        FileOffset:      124
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+            FileOffset:      124
+            Length:          1
+      - Message:         'uninitialized field ''this->m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+        FileOffset:      127
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+            FileOffset:      127
+            Length:          1
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+        FileOffset:      1925
+        Replacements:    []
+      - Message:         'Calling ''run_case'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+        FileOffset:      1937
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+            FileOffset:      1937
+            Length:          10
+      - Message:         'Calling constructor for ''graph'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+        FileOffset:      1712
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+            FileOffset:      1712
+            Length:          4
+      - Message:         2 uninitialized fields at the end of the constructor call
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+        FileOffset:      246
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-emplace
+    DiagnosticMessage:
+      Message:         use emplace_back instead of push_back
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+      FileOffset:      299
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+          Offset:          299
+          Length:          11
+          ReplacementText: 'emplace_back('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+          Offset:          314
+          Length:          1
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+      FileOffset:      332
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+          Offset:          322
+          Length:          9
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+          Offset:          373
+          Length:          0
+          ReplacementText: ' -> long long'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' or ''std::vector'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+      FileOffset:      354
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''union_set'' of similar type (''long long *'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+      FileOffset:      543
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+          FileOffset:      543
+          Length:          53
+    Notes:
+      - Message:         'the first parameter in the range is ''parent'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+        FileOffset:      553
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+            FileOffset:      553
+            Length:          6
+      - Message:         'the last parameter in the range is ''rank'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+        FileOffset:      590
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+            FileOffset:      590
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' or ''std::vector'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+      FileOffset:      543
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' or ''std::vector'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+      FileOffset:      580
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C VLA arrays, use ''std::vector'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+      FileOffset:      946
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-vla-cxx-extension
+    DiagnosticMessage:
+      Message:         'variable length arrays in C++ are a Clang extension'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+      FileOffset:      963
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+          FileOffset:      963
+          Length:          1
+    Notes:
+      - Message:         'implicit use of ''this'' pointer is only allowed within the evaluation of a call to a ''constexpr'' member function'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+        FileOffset:      963
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C VLA arrays, use ''std::vector'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+      FileOffset:      971
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-vla-cxx-extension
+    DiagnosticMessage:
+      Message:         'variable length arrays in C++ are a Clang extension'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+      FileOffset:      986
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+          FileOffset:      986
+          Length:          1
+    Notes:
+      - Message:         'implicit use of ''this'' pointer is only allowed within the evaluation of a call to a ''constexpr'' member function'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+        FileOffset:      986
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C VLA arrays, use ''std::vector'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+      FileOffset:      994
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-vla-cxx-extension
+    DiagnosticMessage:
+      Message:         'variable length arrays in C++ are a Clang extension'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+      FileOffset:      1007
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+          FileOffset:      1007
+          Length:          1
+    Notes:
+      - Message:         'implicit use of ''this'' pointer is only allowed within the evaluation of a call to a ''constexpr'' member function'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+        FileOffset:      1007
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+      FileOffset:      1842
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+          Offset:          1838
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+          Offset:          1848
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+      FileOffset:      1897
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0237_177_C1._Party.cpp'
+          Offset:          1897
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

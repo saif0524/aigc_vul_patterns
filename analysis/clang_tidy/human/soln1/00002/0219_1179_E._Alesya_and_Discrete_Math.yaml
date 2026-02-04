@@ -1,0 +1,694 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+      FileOffset:      56
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+          Offset:          46
+          Length:          9
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+          Offset:          81
+          Length:          0
+          ReplacementText: ' -> long long'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+      FileOffset:      123
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+          Offset:          123
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+      FileOffset:      170
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+      FileOffset:      282
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+      FileOffset:      311
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+          Offset:          304
+          Length:          6
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+          Offset:          332
+          Length:          0
+          ReplacementText: ' -> double'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory after the end of ''log_fac'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+      FileOffset:      388
+      Replacements:    []
+    Notes:
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      1948
+        Replacements:    []
+        Ranges:
+          - FilePath:        ''
+            FileOffset:      0
+            Length:          0
+      - Message:         'expanded from macro ''assert'''
+        FilePath:        '/usr/include/assert.h'
+        FileOffset:      3051
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/include/assert.h'
+            FileOffset:      3051
+            Length:          4
+      - Message:         '''?'' condition is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      1941
+        Replacements:    []
+      - Message:         'expanded from macro ''assert'''
+        FilePath:        '/usr/include/assert.h'
+        FileOffset:      3031
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      1981
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+            FileOffset:      1981
+            Length:          13
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      1977
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      2111
+        Replacements:    []
+      - Message:         'Calling ''recSplit'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      2142
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+            FileOffset:      2142
+            Length:          27
+      - Message:         'Assuming ''xr'' is > ''xl'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      854
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+            FileOffset:      854
+            Length:          8
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      850
+        Replacements:    []
+      - Message:         'Assuming ''sl'' is >= 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      884
+        Replacements:    []
+        Ranges:
+          - FilePath:        ''
+            FileOffset:      0
+            Length:          0
+      - Message:         'expanded from macro ''assert'''
+        FilePath:        '/usr/include/assert.h'
+        FileOffset:      3051
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/include/assert.h'
+            FileOffset:      3051
+            Length:          4
+      - Message:         'Left side of ''&&'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      884
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      895
+        Replacements:    []
+        Ranges:
+          - FilePath:        ''
+            FileOffset:      0
+            Length:          0
+      - Message:         'expanded from macro ''assert'''
+        FilePath:        '/usr/include/assert.h'
+        FileOffset:      3051
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/include/assert.h'
+            FileOffset:      3051
+            Length:          4
+      - Message:         '''?'' condition is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      877
+        Replacements:    []
+      - Message:         'expanded from macro ''assert'''
+        FilePath:        '/usr/include/assert.h'
+        FileOffset:      3031
+        Replacements:    []
+      - Message:         'Assuming ''sl'' is not equal to 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      918
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+            FileOffset:      918
+            Length:          7
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      914
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      944
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+            FileOffset:      944
+            Length:          14
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      940
+        Replacements:    []
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      1132
+        Replacements:    []
+      - Message:         'Assuming ''y'' is <= ''ym'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      1209
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+            FileOffset:      1209
+            Length:          6
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      1205
+        Replacements:    []
+      - Message:         'Assuming ''y'' is >= ''ym'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      1253
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+            FileOffset:      1253
+            Length:          6
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      1249
+        Replacements:    []
+      - Message:         'Left side of ''&&'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      1324
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      1348
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+            FileOffset:      1348
+            Length:          63
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      1320
+        Replacements:    []
+      - Message:         'Left side of ''&&'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      1452
+        Replacements:    []
+      - Message:         'Calling ''prob'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      1468
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+            FileOffset:      1468
+            Length:          97
+      - Message:         'Assuming ''a'' is >= 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      483
+        Replacements:    []
+        Ranges:
+          - FilePath:        ''
+            FileOffset:      0
+            Length:          0
+      - Message:         'expanded from macro ''assert'''
+        FilePath:        '/usr/include/assert.h'
+        FileOffset:      3051
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/include/assert.h'
+            FileOffset:      3051
+            Length:          4
+      - Message:         'Left side of ''&&'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      483
+        Replacements:    []
+      - Message:         'Assuming ''b'' is >= 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      493
+        Replacements:    []
+        Ranges:
+          - FilePath:        ''
+            FileOffset:      0
+            Length:          0
+      - Message:         'expanded from macro ''assert'''
+        FilePath:        '/usr/include/assert.h'
+        FileOffset:      3051
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/include/assert.h'
+            FileOffset:      3051
+            Length:          4
+      - Message:         'Left side of ''&&'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      483
+        Replacements:    []
+      - Message:         'Assuming ''m'' is >= 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      503
+        Replacements:    []
+        Ranges:
+          - FilePath:        ''
+            FileOffset:      0
+            Length:          0
+      - Message:         'expanded from macro ''assert'''
+        FilePath:        '/usr/include/assert.h'
+        FileOffset:      3051
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/include/assert.h'
+            FileOffset:      3051
+            Length:          4
+      - Message:         'Left side of ''&&'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      483
+        Replacements:    []
+      - Message:         'Assuming ''m'' is <= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      513
+        Replacements:    []
+        Ranges:
+          - FilePath:        ''
+            FileOffset:      0
+            Length:          0
+      - Message:         'expanded from macro ''assert'''
+        FilePath:        '/usr/include/assert.h'
+        FileOffset:      3051
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/include/assert.h'
+            FileOffset:      3051
+            Length:          4
+      - Message:         'Left side of ''&&'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      483
+        Replacements:    []
+      - Message:         'Assuming ''n'' is >= 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      523
+        Replacements:    []
+        Ranges:
+          - FilePath:        ''
+            FileOffset:      0
+            Length:          0
+      - Message:         'expanded from macro ''assert'''
+        FilePath:        '/usr/include/assert.h'
+        FileOffset:      3051
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/include/assert.h'
+            FileOffset:      3051
+            Length:          4
+      - Message:         '''?'' condition is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      476
+        Replacements:    []
+      - Message:         'expanded from macro ''assert'''
+        FilePath:        '/usr/include/assert.h'
+        FileOffset:      3031
+        Replacements:    []
+      - Message:         'Assuming ''a'' is <= ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      538
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+            FileOffset:      538
+            Length:          5
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      534
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      561
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+            FileOffset:      561
+            Length:          10
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      557
+        Replacements:    []
+      - Message:         'Assuming ''i'' is < ''a'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      641
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+            FileOffset:      641
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      625
+        Replacements:    []
+      - Message:         'Assuming ''i'' is < ''a'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      641
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+            FileOffset:      641
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      625
+        Replacements:    []
+      - Message:         'Calling ''log_ncr'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      684
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+            FileOffset:      684
+            Length:          21
+      - Message:         '''n'' is >= 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      341
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+            FileOffset:      341
+            Length:          1
+      - Message:         'Left side of ''||'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      341
+        Replacements:    []
+      - Message:         'Assuming ''k'' is >= 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      350
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+            FileOffset:      350
+            Length:          5
+      - Message:         'Left side of ''||'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      341
+        Replacements:    []
+      - Message:         'Assuming ''k'' is <= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      359
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+            FileOffset:      359
+            Length:          5
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      337
+        Replacements:    []
+      - Message:         'Access of ''log_fac'' at index 2147483647, while it holds only 2000 ''double'' elements'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      388
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+            FileOffset:      388
+            Length:          10
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+      FileOffset:      439
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+          Offset:          432
+          Length:          6
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+          Offset:          471
+          Length:          0
+          ReplacementText: ' -> double'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+      FileOffset:      752
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+          Offset:          742
+          Length:          9
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+          Offset:          845
+          Length:          0
+          ReplacementText: ' -> long long'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-shift-op-parentheses
+    DiagnosticMessage:
+      Message:         'operator ''>>'' has lower precedence than ''+''; ''+'' will be evaluated first'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+      FileOffset:      1055
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+          FileOffset:      1052
+          Length:          7
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+          FileOffset:      1060
+          Length:          2
+    Notes:
+      - Message:         'place parentheses around the ''+'' expression to silence this warning'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      1055
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+            Offset:          1052
+            Length:          0
+            ReplacementText: '('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+            Offset:          1059
+            Length:          0
+            ReplacementText: ')'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+      FileOffset:      1353
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+      FileOffset:      1364
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+      FileOffset:      1391
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+      FileOffset:      1473
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+      FileOffset:      1484
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+      FileOffset:      1556
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''solve'' of similar type (''long long'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+      FileOffset:      1868
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+          FileOffset:      1868
+          Length:          26
+    Notes:
+      - Message:         'the first parameter in the range is ''xr'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      1878
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+            FileOffset:      1878
+            Length:          2
+      - Message:         'the last parameter in the range is ''yl'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+        FileOffset:      1892
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+            FileOffset:      1892
+            Length:          2
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+      FileOffset:      2064
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-bool-literals
+    DiagnosticMessage:
+      Message:         converting integer literal to bool, use bool literal instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+      FileOffset:      2118
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+          Offset:          2118
+          Length:          1
+          ReplacementText: 'true'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+      FileOffset:      2678
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+          Offset:          2674
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+          Offset:          2684
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-bool-literals
+    DiagnosticMessage:
+      Message:         converting integer literal to bool, use bool literal instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+      FileOffset:      2781
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+          Offset:          2781
+          Length:          1
+          ReplacementText: 'false'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+      FileOffset:      2795
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+          Offset:          2795
+          Length:          1
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-inefficient-vector-operation
+    DiagnosticMessage:
+      Message:         '''push_back'' is called inside a loop; consider pre-allocating the container capacity before the loop'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+      FileOffset:      2901
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+          Offset:          2873
+          Length:          0
+          ReplacementText: "v.reserve(n);\n"
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+      FileOffset:      2962
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+          Offset:          2962
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+      FileOffset:      3050
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0219_1179_E._Alesya_and_Discrete_Math.cpp'
+          Offset:          3050
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

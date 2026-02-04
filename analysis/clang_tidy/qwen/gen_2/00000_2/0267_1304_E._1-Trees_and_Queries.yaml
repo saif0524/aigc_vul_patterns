@@ -1,0 +1,162 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0267_1304_E._1-Trees_and_Queries.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0267_1304_E._1-Trees_and_Queries.cpp'
+      FileOffset:      94
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0267_1304_E._1-Trees_and_Queries.cpp'
+      FileOffset:      117
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''dep'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0267_1304_E._1-Trees_and_Queries.cpp'
+      FileOffset:      255
+      Replacements:    []
+    Notes:
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0267_1304_E._1-Trees_and_Queries.cpp'
+        FileOffset:      1420
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0267_1304_E._1-Trees_and_Queries.cpp'
+            FileOffset:      1420
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 75
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0267_1304_E._1-Trees_and_Queries.cpp'
+        FileOffset:      1408
+        Replacements:    []
+      - Message:         'Calling ''dfs'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0267_1304_E._1-Trees_and_Queries.cpp'
+        FileOffset:      1575
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0267_1304_E._1-Trees_and_Queries.cpp'
+            FileOffset:      1575
+            Length:          10
+      - Message:         'Access of ''dep'' at negative byte offset -4'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0267_1304_E._1-Trees_and_Queries.cpp'
+        FileOffset:      255
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0267_1304_E._1-Trees_and_Queries.cpp'
+            FileOffset:      255
+            Length:          6
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0267_1304_E._1-Trees_and_Queries.cpp'
+      FileOffset:      675
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0267_1304_E._1-Trees_and_Queries.cpp'
+          Offset:          671
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0267_1304_E._1-Trees_and_Queries.cpp'
+          Offset:          692
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0267_1304_E._1-Trees_and_Queries.cpp'
+      FileOffset:      1077
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0267_1304_E._1-Trees_and_Queries.cpp'
+          Offset:          1072
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0267_1304_E._1-Trees_and_Queries.cpp'
+          Offset:          1102
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0267_1304_E._1-Trees_and_Queries.cpp'
+      FileOffset:      1163
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0267_1304_E._1-Trees_and_Queries.cpp'
+          Offset:          1159
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0267_1304_E._1-Trees_and_Queries.cpp'
+          Offset:          1189
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''kth_ancestor'' of similar type (''int'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0267_1304_E._1-Trees_and_Queries.cpp'
+      FileOffset:      1176
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0267_1304_E._1-Trees_and_Queries.cpp'
+          FileOffset:      1176
+          Length:          12
+    Notes:
+      - Message:         'the first parameter in the range is ''u'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0267_1304_E._1-Trees_and_Queries.cpp'
+        FileOffset:      1180
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0267_1304_E._1-Trees_and_Queries.cpp'
+            FileOffset:      1180
+            Length:          1
+      - Message:         'the last parameter in the range is ''k'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0267_1304_E._1-Trees_and_Queries.cpp'
+        FileOffset:      1187
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0267_1304_E._1-Trees_and_Queries.cpp'
+            FileOffset:      1187
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0267_1304_E._1-Trees_and_Queries.cpp'
+      FileOffset:      1322
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0267_1304_E._1-Trees_and_Queries.cpp'
+          Offset:          1318
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0267_1304_E._1-Trees_and_Queries.cpp'
+          Offset:          1328
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0267_1304_E._1-Trees_and_Queries.cpp'
+      FileOffset:      1375
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0267_1304_E._1-Trees_and_Queries.cpp'
+          Offset:          1375
+          Length:          1
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

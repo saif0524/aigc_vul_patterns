@@ -1,0 +1,61 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0031_85_D._Sum_of_Medians.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0031_85_D._Sum_of_Medians.cpp'
+      FileOffset:      101
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0031_85_D._Sum_of_Medians.cpp'
+          Offset:          97
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0031_85_D._Sum_of_Medians.cpp'
+          Offset:          107
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-inc-dec-in-conditions
+    DiagnosticMessage:
+      Message:         'decrementing and referencing a variable in a complex condition can cause unintended side-effects due to C++''s order of evaluation, consider moving the modification outside of the condition to avoid misunderstandings'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0031_85_D._Sum_of_Medians.cpp'
+      FileOffset:      490
+      Replacements:    []
+    Notes:
+      - Message:         variable is referenced here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0031_85_D._Sum_of_Medians.cpp'
+        FileOffset:      469
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''typename iterator_traits<std::_Rb_tree_const_iterator<int>>::difference_type'' (aka ''long'') is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0031_85_D._Sum_of_Medians.cpp'
+      FileOffset:      967
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''typename iterator_traits<std::_Rb_tree_const_iterator<int>>::difference_type'' (aka ''long'') is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0031_85_D._Sum_of_Medians.cpp'
+      FileOffset:      1620
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0031_85_D._Sum_of_Medians.cpp'
+      FileOffset:      2045
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0031_85_D._Sum_of_Medians.cpp'
+          Offset:          2045
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

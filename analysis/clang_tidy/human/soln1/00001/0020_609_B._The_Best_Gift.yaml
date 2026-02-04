@@ -1,0 +1,77 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0020_609_B._The_Best_Gift.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0020_609_B._The_Best_Gift.cpp'
+      FileOffset:      46
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0020_609_B._The_Best_Gift.cpp'
+      FileOffset:      61
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0020_609_B._The_Best_Gift.cpp'
+          Offset:          57
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0020_609_B._The_Best_Gift.cpp'
+          Offset:          67
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''a'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0020_609_B._The_Best_Gift.cpp'
+      FileOffset:      202
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0020_609_B._The_Best_Gift.cpp'
+          FileOffset:      202
+          Length:          4
+    Notes:
+      - Message:         'Assuming ''i'' is <= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0020_609_B._The_Best_Gift.cpp'
+        FileOffset:      151
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0020_609_B._The_Best_Gift.cpp'
+            FileOffset:      151
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0020_609_B._The_Best_Gift.cpp'
+        FileOffset:      135
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0020_609_B._The_Best_Gift.cpp'
+        FileOffset:      181
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0020_609_B._The_Best_Gift.cpp'
+            FileOffset:      181
+            Length:          15
+      - Message:         Taint propagated to the 2nd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0020_609_B._The_Best_Gift.cpp'
+        FileOffset:      181
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0020_609_B._The_Best_Gift.cpp'
+            FileOffset:      181
+            Length:          15
+      - Message:         'Access of ''a'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0020_609_B._The_Best_Gift.cpp'
+        FileOffset:      202
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0020_609_B._The_Best_Gift.cpp'
+            FileOffset:      202
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

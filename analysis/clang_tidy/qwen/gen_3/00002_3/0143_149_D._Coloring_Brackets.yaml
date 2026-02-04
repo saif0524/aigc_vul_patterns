@@ -1,0 +1,77 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0143_149_D._Coloring_Brackets.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0143_149_D._Coloring_Brackets.cpp'
+      FileOffset:      98
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0143_149_D._Coloring_Brackets.cpp'
+      FileOffset:      123
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0143_149_D._Coloring_Brackets.cpp'
+          Offset:          119
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0143_149_D._Coloring_Brackets.cpp'
+          Offset:          129
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0143_149_D._Coloring_Brackets.cpp'
+      FileOffset:      171
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''dp'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0143_149_D._Coloring_Brackets.cpp'
+      FileOffset:      1192
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0143_149_D._Coloring_Brackets.cpp'
+          FileOffset:      1192
+          Length:          7
+    Notes:
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0143_149_D._Coloring_Brackets.cpp'
+        FileOffset:      217
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0143_149_D._Coloring_Brackets.cpp'
+            FileOffset:      217
+            Length:          3
+      - Message:         Loop condition is false. Execution continues on line 17
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0143_149_D._Coloring_Brackets.cpp'
+        FileOffset:      204
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 24
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0143_149_D._Coloring_Brackets.cpp'
+        FileOffset:      300
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 43
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0143_149_D._Coloring_Brackets.cpp'
+        FileOffset:      490
+        Replacements:    []
+      - Message:         'Access of ''dp'' at negative byte offset -16'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0143_149_D._Coloring_Brackets.cpp'
+        FileOffset:      1192
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0143_149_D._Coloring_Brackets.cpp'
+            FileOffset:      1192
+            Length:          7
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

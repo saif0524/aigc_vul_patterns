@@ -1,0 +1,117 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0224_1342_C._Yet_Another_Counting_Problem.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-using
+    DiagnosticMessage:
+      Message:         'use ''using'' instead of ''typedef'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0224_1342_C._Yet_Another_Counting_Problem.cpp'
+      FileOffset:      47
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0224_1342_C._Yet_Another_Counting_Problem.cpp'
+          Offset:          47
+          Length:          20
+          ReplacementText: 'using ll = long long'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0224_1342_C._Yet_Another_Counting_Problem.cpp'
+      FileOffset:      96
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0224_1342_C._Yet_Another_Counting_Problem.cpp'
+          Offset:          92
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0224_1342_C._Yet_Another_Counting_Problem.cpp'
+          Offset:          113
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0224_1342_C._Yet_Another_Counting_Problem.cpp'
+      FileOffset:      175
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0224_1342_C._Yet_Another_Counting_Problem.cpp'
+          Offset:          171
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0224_1342_C._Yet_Another_Counting_Problem.cpp'
+          Offset:          181
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0224_1342_C._Yet_Another_Counting_Problem.cpp'
+      FileOffset:      228
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0224_1342_C._Yet_Another_Counting_Problem.cpp'
+          Offset:          228
+          Length:          1
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0224_1342_C._Yet_Another_Counting_Problem.cpp'
+      FileOffset:      369
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-core.DivideZero
+    DiagnosticMessage:
+      Message:         Division by zero
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0224_1342_C._Yet_Another_Counting_Problem.cpp'
+      FileOffset:      795
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0224_1342_C._Yet_Another_Counting_Problem.cpp'
+          FileOffset:      787
+          Length:          13
+    Notes:
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0224_1342_C._Yet_Another_Counting_Problem.cpp'
+        FileOffset:      261
+        Replacements:    []
+      - Message:         '''lcm'' initialized to 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0224_1342_C._Yet_Another_Counting_Problem.cpp'
+        FileOffset:      330
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0224_1342_C._Yet_Another_Counting_Problem.cpp'
+            FileOffset:      330
+            Length:          7
+      - Message:         Loop condition is false. Execution continues on line 32
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0224_1342_C._Yet_Another_Counting_Problem.cpp'
+        FileOffset:      439
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0224_1342_C._Yet_Another_Counting_Problem.cpp'
+        FileOffset:      698
+        Replacements:    []
+      - Message:         Division by zero
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0224_1342_C._Yet_Another_Counting_Problem.cpp'
+        FileOffset:      795
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0224_1342_C._Yet_Another_Counting_Problem.cpp'
+            FileOffset:      787
+            Length:          13
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''ll'' (aka ''long long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0224_1342_C._Yet_Another_Counting_Problem.cpp'
+      FileOffset:      1153
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

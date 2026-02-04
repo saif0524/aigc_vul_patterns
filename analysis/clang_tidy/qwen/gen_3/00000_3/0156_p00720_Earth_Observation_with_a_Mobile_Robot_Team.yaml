@@ -1,0 +1,106 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0156_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0156_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp'
+      FileOffset:      268
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0156_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp'
+          Offset:          261
+          Length:          6
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0156_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp'
+          Offset:          310
+          Length:          0
+          ReplacementText: ' -> double'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0156_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp'
+      FileOffset:      400
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0156_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp'
+          Offset:          396
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0156_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp'
+          Offset:          406
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  'clang-diagnostic-c++11-narrowing'
+    DiagnosticMessage:
+      Message:         'non-constant-expression cannot be narrowed from type ''int'' to ''double'' in initializer list'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0156_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp'
+      FileOffset:      933
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0156_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp'
+          FileOffset:      933
+          Length:          2
+    Notes:
+      - Message:         insert an explicit cast to silence this issue
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0156_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp'
+        FileOffset:      933
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0156_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp'
+            Offset:          933
+            Length:          0
+            ReplacementText: 'static_cast<double>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0156_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp'
+            Offset:          935
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0156_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp'
+            FileOffset:      933
+            Length:          2
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  'clang-diagnostic-c++11-narrowing'
+    DiagnosticMessage:
+      Message:         'non-constant-expression cannot be narrowed from type ''int'' to ''double'' in initializer list'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0156_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp'
+      FileOffset:      937
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0156_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp'
+          FileOffset:      937
+          Length:          2
+    Notes:
+      - Message:         insert an explicit cast to silence this issue
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0156_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp'
+        FileOffset:      937
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0156_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp'
+            Offset:          937
+            Length:          0
+            ReplacementText: 'static_cast<double>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0156_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp'
+            Offset:          939
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0156_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp'
+            FileOffset:      937
+            Length:          2
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0156_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp'
+      FileOffset:      5074
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0156_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp'
+          Offset:          5074
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

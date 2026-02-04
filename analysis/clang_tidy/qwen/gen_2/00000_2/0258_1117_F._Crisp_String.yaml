@@ -1,0 +1,106 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0258_1117_F._Crisp_String.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0258_1117_F._Crisp_String.cpp'
+      FileOffset:      51
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0258_1117_F._Crisp_String.cpp'
+          Offset:          47
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0258_1117_F._Crisp_String.cpp'
+          Offset:          57
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-core.VLASize
+    DiagnosticMessage:
+      Message:         'Declared variable-length array (VLA) has zero size'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0258_1117_F._Crisp_String.cpp'
+      FileOffset:      1126
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0258_1117_F._Crisp_String.cpp'
+          FileOffset:      1140
+          Length:          8
+    Notes:
+      - Message:         'Assuming ''i'' is >= ''p'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0258_1117_F._Crisp_String.cpp'
+        FileOffset:      185
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0258_1117_F._Crisp_String.cpp'
+            FileOffset:      185
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 15
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0258_1117_F._Crisp_String.cpp'
+        FileOffset:      170
+        Replacements:    []
+      - Message:         '''comp_cnt'' initialized to 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0258_1117_F._Crisp_String.cpp'
+        FileOffset:      363
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0258_1117_F._Crisp_String.cpp'
+            FileOffset:      363
+            Length:          12
+      - Message:         '''i'' is >= ''p'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0258_1117_F._Crisp_String.cpp'
+        FileOffset:      400
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0258_1117_F._Crisp_String.cpp'
+            FileOffset:      400
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 36
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0258_1117_F._Crisp_String.cpp'
+        FileOffset:      385
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 44
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0258_1117_F._Crisp_String.cpp'
+        FileOffset:      1041
+        Replacements:    []
+      - Message:         'Declared variable-length array (VLA) has zero size'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0258_1117_F._Crisp_String.cpp'
+        FileOffset:      1126
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0258_1117_F._Crisp_String.cpp'
+            FileOffset:      1140
+            Length:          8
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C VLA arrays, use ''std::vector'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0258_1117_F._Crisp_String.cpp'
+      FileOffset:      1126
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-vla-cxx-extension
+    DiagnosticMessage:
+      Message:         'variable length arrays in C++ are a Clang extension'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0258_1117_F._Crisp_String.cpp'
+      FileOffset:      1140
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0258_1117_F._Crisp_String.cpp'
+          FileOffset:      1140
+          Length:          8
+    Notes:
+      - Message:         'read of non-const variable ''comp_cnt'' is not allowed in a constant expression'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0258_1117_F._Crisp_String.cpp'
+        FileOffset:      1140
+        Replacements:    []
+      - Message:         declared here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0258_1117_F._Crisp_String.cpp'
+        FileOffset:      367
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

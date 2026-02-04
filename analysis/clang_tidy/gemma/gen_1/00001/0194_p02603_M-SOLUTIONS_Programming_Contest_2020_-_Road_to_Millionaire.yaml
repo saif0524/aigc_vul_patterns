@@ -1,0 +1,154 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0194_p02603_M-SOLUTIONS_Programming_Contest_2020_-_Road_to_Millionaire.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0194_p02603_M-SOLUTIONS_Programming_Contest_2020_-_Road_to_Millionaire.cpp'
+      FileOffset:      86
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0194_p02603_M-SOLUTIONS_Programming_Contest_2020_-_Road_to_Millionaire.cpp'
+          Offset:          82
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0194_p02603_M-SOLUTIONS_Programming_Contest_2020_-_Road_to_Millionaire.cpp'
+          Offset:          92
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''long long'' of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0194_p02603_M-SOLUTIONS_Programming_Contest_2020_-_Road_to_Millionaire.cpp'
+      FileOffset:      616
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0194_p02603_M-SOLUTIONS_Programming_Contest_2020_-_Road_to_Millionaire.cpp'
+        FileOffset:      616
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0194_p02603_M-SOLUTIONS_Programming_Contest_2020_-_Road_to_Millionaire.cpp'
+            Offset:          0
+            Length:          0
+            ReplacementText: "#include <cstddef>\n"
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0194_p02603_M-SOLUTIONS_Programming_Contest_2020_-_Road_to_Millionaire.cpp'
+            Offset:          616
+            Length:          0
+            ReplacementText: 'static_cast<long long>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0194_p02603_M-SOLUTIONS_Programming_Contest_2020_-_Road_to_Millionaire.cpp'
+            Offset:          629
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0194_p02603_M-SOLUTIONS_Programming_Contest_2020_-_Road_to_Millionaire.cpp'
+            FileOffset:      616
+            Length:          13
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0194_p02603_M-SOLUTIONS_Programming_Contest_2020_-_Road_to_Millionaire.cpp'
+        FileOffset:      616
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0194_p02603_M-SOLUTIONS_Programming_Contest_2020_-_Road_to_Millionaire.cpp'
+            Offset:          616
+            Length:          0
+            ReplacementText: 'static_cast<long long>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0194_p02603_M-SOLUTIONS_Programming_Contest_2020_-_Road_to_Millionaire.cpp'
+            Offset:          622
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0194_p02603_M-SOLUTIONS_Programming_Contest_2020_-_Road_to_Millionaire.cpp'
+            FileOffset:      616
+            Length:          6
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''long long'' of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0194_p02603_M-SOLUTIONS_Programming_Contest_2020_-_Road_to_Millionaire.cpp'
+      FileOffset:      717
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0194_p02603_M-SOLUTIONS_Programming_Contest_2020_-_Road_to_Millionaire.cpp'
+        FileOffset:      717
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0194_p02603_M-SOLUTIONS_Programming_Contest_2020_-_Road_to_Millionaire.cpp'
+            Offset:          717
+            Length:          0
+            ReplacementText: 'static_cast<long long>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0194_p02603_M-SOLUTIONS_Programming_Contest_2020_-_Road_to_Millionaire.cpp'
+            Offset:          734
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0194_p02603_M-SOLUTIONS_Programming_Contest_2020_-_Road_to_Millionaire.cpp'
+            FileOffset:      717
+            Length:          17
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0194_p02603_M-SOLUTIONS_Programming_Contest_2020_-_Road_to_Millionaire.cpp'
+        FileOffset:      717
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0194_p02603_M-SOLUTIONS_Programming_Contest_2020_-_Road_to_Millionaire.cpp'
+            Offset:          717
+            Length:          0
+            ReplacementText: 'static_cast<long long>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0194_p02603_M-SOLUTIONS_Programming_Contest_2020_-_Road_to_Millionaire.cpp'
+            Offset:          723
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0194_p02603_M-SOLUTIONS_Programming_Contest_2020_-_Road_to_Millionaire.cpp'
+            FileOffset:      717
+            Length:          6
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0194_p02603_M-SOLUTIONS_Programming_Contest_2020_-_Road_to_Millionaire.cpp'
+      FileOffset:      959
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0194_p02603_M-SOLUTIONS_Programming_Contest_2020_-_Road_to_Millionaire.cpp'
+          Offset:          959
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0194_p02603_M-SOLUTIONS_Programming_Contest_2020_-_Road_to_Millionaire.cpp'
+      FileOffset:      1126
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0194_p02603_M-SOLUTIONS_Programming_Contest_2020_-_Road_to_Millionaire.cpp'
+          Offset:          1126
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0194_p02603_M-SOLUTIONS_Programming_Contest_2020_-_Road_to_Millionaire.cpp'
+      FileOffset:      1229
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0194_p02603_M-SOLUTIONS_Programming_Contest_2020_-_Road_to_Millionaire.cpp'
+          Offset:          1229
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0194_p02603_M-SOLUTIONS_Programming_Contest_2020_-_Road_to_Millionaire.cpp'
+      FileOffset:      1290
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0194_p02603_M-SOLUTIONS_Programming_Contest_2020_-_Road_to_Millionaire.cpp'
+          Offset:          1290
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

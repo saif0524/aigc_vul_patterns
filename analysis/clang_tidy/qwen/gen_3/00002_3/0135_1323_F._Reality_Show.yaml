@@ -1,0 +1,141 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0135_1323_F._Reality_Show.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0135_1323_F._Reality_Show.cpp'
+      FileOffset:      57
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0135_1323_F._Reality_Show.cpp'
+      FileOffset:      96
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0135_1323_F._Reality_Show.cpp'
+      FileOffset:      121
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0135_1323_F._Reality_Show.cpp'
+          Offset:          117
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0135_1323_F._Reality_Show.cpp'
+          Offset:          127
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0135_1323_F._Reality_Show.cpp'
+      FileOffset:      174
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0135_1323_F._Reality_Show.cpp'
+          Offset:          174
+          Length:          1
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''dp'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0135_1323_F._Reality_Show.cpp'
+      FileOffset:      1312
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0135_1323_F._Reality_Show.cpp'
+          FileOffset:      1312
+          Length:          5
+    Notes:
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0135_1323_F._Reality_Show.cpp'
+        FileOffset:      213
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0135_1323_F._Reality_Show.cpp'
+            FileOffset:      213
+            Length:          3
+      - Message:         Loop condition is false. Execution continues on line 14
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0135_1323_F._Reality_Show.cpp'
+        FileOffset:      201
+        Replacements:    []
+      - Message:         '''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0135_1323_F._Reality_Show.cpp'
+        FileOffset:      251
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0135_1323_F._Reality_Show.cpp'
+            FileOffset:      251
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 15
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0135_1323_F._Reality_Show.cpp'
+        FileOffset:      239
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0135_1323_F._Reality_Show.cpp'
+        FileOffset:      289
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0135_1323_F._Reality_Show.cpp'
+            FileOffset:      289
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 17
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0135_1323_F._Reality_Show.cpp'
+        FileOffset:      277
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0135_1323_F._Reality_Show.cpp'
+        FileOffset:      334
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0135_1323_F._Reality_Show.cpp'
+            FileOffset:      334
+            Length:          4
+      - Message:         Loop condition is false. Execution continues on line 22
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0135_1323_F._Reality_Show.cpp'
+        FileOffset:      322
+        Replacements:    []
+      - Message:         '''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0135_1323_F._Reality_Show.cpp'
+        FileOffset:      460
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0135_1323_F._Reality_Show.cpp'
+            FileOffset:      460
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 51
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0135_1323_F._Reality_Show.cpp'
+        FileOffset:      448
+        Replacements:    []
+      - Message:         'Assuming ''i'' is <= ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0135_1323_F._Reality_Show.cpp'
+        FileOffset:      1278
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0135_1323_F._Reality_Show.cpp'
+            FileOffset:      1278
+            Length:          4
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0135_1323_F._Reality_Show.cpp'
+        FileOffset:      1266
+        Replacements:    []
+      - Message:         'Access of ''dp'' at negative byte offset'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0135_1323_F._Reality_Show.cpp'
+        FileOffset:      1312
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0135_1323_F._Reality_Show.cpp'
+            FileOffset:      1312
+            Length:          5
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

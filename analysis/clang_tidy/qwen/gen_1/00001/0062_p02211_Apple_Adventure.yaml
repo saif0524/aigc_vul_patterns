@@ -1,0 +1,134 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0062_p02211_Apple_Adventure.cpp'
+Diagnostics:
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '3 adjacent parameters of ''State'' of similar type (''int'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      94
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0062_p02211_Apple_Adventure.cpp'
+          FileOffset:      94
+          Length:          24
+    Notes:
+      - Message:         'the first parameter in the range is ''x'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0062_p02211_Apple_Adventure.cpp'
+        FileOffset:      98
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0062_p02211_Apple_Adventure.cpp'
+            FileOffset:      98
+            Length:          1
+      - Message:         'the last parameter in the range is ''apples'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0062_p02211_Apple_Adventure.cpp'
+        FileOffset:      112
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0062_p02211_Apple_Adventure.cpp'
+            FileOffset:      112
+            Length:          6
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      161
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          156
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          202
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      284
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      310
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      341
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          337
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          347
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-transparent-functors
+    DiagnosticMessage:
+      Message:         'prefer transparent functors ''greater<>'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      721
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0062_p02211_Apple_Adventure.cpp'
+          Offset:          729
+          Length:          16
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-core.CallAndMessage
+    DiagnosticMessage:
+      Message:         1st function call argument is an uninitialized value
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0062_p02211_Apple_Adventure.cpp'
+      FileOffset:      805
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0062_p02211_Apple_Adventure.cpp'
+          FileOffset:      811
+          Length:          2
+    Notes:
+      - Message:         '''sx'' declared without an initial value'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0062_p02211_Apple_Adventure.cpp'
+        FileOffset:      427
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0062_p02211_Apple_Adventure.cpp'
+            FileOffset:      427
+            Length:          2
+      - Message:         'Assuming ''i'' is >= ''H'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0062_p02211_Apple_Adventure.cpp'
+        FileOffset:      463
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0062_p02211_Apple_Adventure.cpp'
+            FileOffset:      463
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 29
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0062_p02211_Apple_Adventure.cpp'
+        FileOffset:      447
+        Replacements:    []
+      - Message:         1st function call argument is an uninitialized value
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0062_p02211_Apple_Adventure.cpp'
+        FileOffset:      805
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0062_p02211_Apple_Adventure.cpp'
+            FileOffset:      811
+            Length:          2
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

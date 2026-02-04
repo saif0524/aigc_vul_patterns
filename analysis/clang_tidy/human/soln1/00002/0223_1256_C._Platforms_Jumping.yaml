@@ -1,0 +1,468 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+      FileOffset:      25
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+      FileOffset:      77
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+          Offset:          73
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+          Offset:          83
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''a'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+      FileOffset:      600
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+          FileOffset:      600
+          Length:          4
+    Notes:
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      93
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+            FileOffset:      93
+            Length:          27
+      - Message:         Taint propagated to the 4th argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      93
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+            FileOffset:      93
+            Length:          27
+      - Message:         'Assuming ''i'' is >= ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      129
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+            FileOffset:      129
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 6
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      88
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      184
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+            FileOffset:      184
+            Length:          27
+      - Message:         'Left side of ''||'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      184
+        Replacements:    []
+      - Message:         'Assuming ''sum'' is <= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      215
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+            FileOffset:      215
+            Length:          7
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      180
+        Replacements:    []
+      - Message:         'Assuming ''i'' is < ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      308
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+            FileOffset:      308
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      292
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      350
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+            FileOffset:      350
+            Length:          12
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      346
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      445
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+            FileOffset:      445
+            Length:          12
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      433
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      476
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+            FileOffset:      476
+            Length:          12
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      472
+        Replacements:    []
+      - Message:         'Access of ''a'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      600
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+            FileOffset:      600
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory after the end of ''c'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+      FileOffset:      726
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+          FileOffset:      726
+          Length:          4
+    Notes:
+      - Message:         'Assuming ''i'' is >= ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      129
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+            FileOffset:      129
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 6
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      88
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      184
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+            FileOffset:      184
+            Length:          27
+      - Message:         'Left side of ''||'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      184
+        Replacements:    []
+      - Message:         'Assuming ''sum'' is <= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      215
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+            FileOffset:      215
+            Length:          7
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      180
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      308
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+            FileOffset:      308
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 31
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      292
+        Replacements:    []
+      - Message:         'Assuming ''l'' is > ''i'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      688
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+            FileOffset:      688
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      672
+        Replacements:    []
+      - Message:         'Access of ''c'' at index 2147483647, while it holds only 1005 ''int'' elements'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      726
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+            FileOffset:      726
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory around ''a'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+      FileOffset:      737
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+          FileOffset:      737
+          Length:          4
+    Notes:
+      - Message:         'Assuming ''i'' is < ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      129
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+            FileOffset:      129
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      88
+        Replacements:    []
+      - Message:         'Assuming ''i'' is < ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      129
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+            FileOffset:      129
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      88
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      129
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+            FileOffset:      129
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 6
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      88
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      184
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+            FileOffset:      184
+            Length:          27
+      - Message:         'Left side of ''||'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      184
+        Replacements:    []
+      - Message:         'Assuming ''sum'' is <= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      215
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+            FileOffset:      215
+            Length:          7
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      180
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      308
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+            FileOffset:      308
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 31
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      292
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      672
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      718
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+            FileOffset:      718
+            Length:          12
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      706
+        Replacements:    []
+      - Message:         'Access of ''a'' at a negative or overflowing index, while it holds only 1005 ''int'' elements'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      737
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+            FileOffset:      737
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''a'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+      FileOffset:      737
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+          FileOffset:      737
+          Length:          4
+    Notes:
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      93
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+            FileOffset:      93
+            Length:          27
+      - Message:         Taint propagated to the 2nd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      93
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+            FileOffset:      93
+            Length:          27
+      - Message:         'Assuming ''i'' is < ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      129
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+            FileOffset:      129
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      88
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      129
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+            FileOffset:      129
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 6
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      88
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      184
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+            FileOffset:      184
+            Length:          27
+      - Message:         'Left side of ''||'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      184
+        Replacements:    []
+      - Message:         'Assuming ''sum'' is <= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      215
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+            FileOffset:      215
+            Length:          7
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      180
+        Replacements:    []
+      - Message:         'Assuming ''i'' is < ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      308
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+            FileOffset:      308
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      292
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      350
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+            FileOffset:      350
+            Length:          12
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      346
+        Replacements:    []
+      - Message:         ' Execution continues on line 31'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      383
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      672
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      718
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+            FileOffset:      718
+            Length:          12
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      706
+        Replacements:    []
+      - Message:         'Access of ''a'' with a tainted index that may be too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+        FileOffset:      737
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0223_1256_C._Platforms_Jumping.cpp'
+            FileOffset:      737
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

@@ -1,0 +1,195 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0098_366_D._Dima_and_Trap_Graph.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0098_366_D._Dima_and_Trap_Graph.cpp'
+      FileOffset:      102
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '4 adjacent parameters of ''Edge'' of similar type (''int'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0098_366_D._Dima_and_Trap_Graph.cpp'
+      FileOffset:      144
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0098_366_D._Dima_and_Trap_Graph.cpp'
+          FileOffset:      144
+          Length:          45
+    Notes:
+      - Message:         'the first parameter in the range is ''v'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0098_366_D._Dima_and_Trap_Graph.cpp'
+        FileOffset:      148
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0098_366_D._Dima_and_Trap_Graph.cpp'
+            FileOffset:      148
+            Length:          1
+      - Message:         'the last parameter in the range is ''next'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0098_366_D._Dima_and_Trap_Graph.cpp'
+        FileOffset:      181
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0098_366_D._Dima_and_Trap_Graph.cpp'
+            FileOffset:      181
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0098_366_D._Dima_and_Trap_Graph.cpp'
+      FileOffset:      251
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0098_366_D._Dima_and_Trap_Graph.cpp'
+      FileOffset:      280
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0098_366_D._Dima_and_Trap_Graph.cpp'
+      FileOffset:      302
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''head'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0098_366_D._Dima_and_Trap_Graph.cpp'
+      FileOffset:      399
+      Replacements:    []
+    Notes:
+      - Message:         'Assuming ''i'' is < ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0098_366_D._Dima_and_Trap_Graph.cpp'
+        FileOffset:      1311
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0098_366_D._Dima_and_Trap_Graph.cpp'
+            FileOffset:      1311
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0098_366_D._Dima_and_Trap_Graph.cpp'
+        FileOffset:      1295
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0098_366_D._Dima_and_Trap_Graph.cpp'
+        FileOffset:      1329
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0098_366_D._Dima_and_Trap_Graph.cpp'
+            FileOffset:      1329
+            Length:          33
+      - Message:         Taint propagated to the 2nd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0098_366_D._Dima_and_Trap_Graph.cpp'
+        FileOffset:      1329
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0098_366_D._Dima_and_Trap_Graph.cpp'
+            FileOffset:      1329
+            Length:          33
+      - Message:         'Calling ''AddEdges'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0098_366_D._Dima_and_Trap_Graph.cpp'
+        FileOffset:      1368
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0098_366_D._Dima_and_Trap_Graph.cpp'
+            FileOffset:      1368
+            Length:          20
+      - Message:         'Access of ''head'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0098_366_D._Dima_and_Trap_Graph.cpp'
+        FileOffset:      399
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0098_366_D._Dima_and_Trap_Graph.cpp'
+            FileOffset:      399
+            Length:          7
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0098_366_D._Dima_and_Trap_Graph.cpp'
+      FileOffset:      497
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0098_366_D._Dima_and_Trap_Graph.cpp'
+          Offset:          492
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0098_366_D._Dima_and_Trap_Graph.cpp'
+          Offset:          521
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''dfs'' of similar type (''int'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0098_366_D._Dima_and_Trap_Graph.cpp'
+      FileOffset:      501
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0098_366_D._Dima_and_Trap_Graph.cpp'
+          FileOffset:      501
+          Length:          12
+    Notes:
+      - Message:         'the first parameter in the range is ''u'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0098_366_D._Dima_and_Trap_Graph.cpp'
+        FileOffset:      505
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0098_366_D._Dima_and_Trap_Graph.cpp'
+            FileOffset:      505
+            Length:          1
+      - Message:         'the last parameter in the range is ''L'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0098_366_D._Dima_and_Trap_Graph.cpp'
+        FileOffset:      512
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0098_366_D._Dima_and_Trap_Graph.cpp'
+            FileOffset:      512
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0098_366_D._Dima_and_Trap_Graph.cpp'
+      FileOffset:      791
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0098_366_D._Dima_and_Trap_Graph.cpp'
+          Offset:          787
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0098_366_D._Dima_and_Trap_Graph.cpp'
+          Offset:          798
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0098_366_D._Dima_and_Trap_Graph.cpp'
+      FileOffset:      1191
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0098_366_D._Dima_and_Trap_Graph.cpp'
+          Offset:          1187
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0098_366_D._Dima_and_Trap_Graph.cpp'
+          Offset:          1197
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

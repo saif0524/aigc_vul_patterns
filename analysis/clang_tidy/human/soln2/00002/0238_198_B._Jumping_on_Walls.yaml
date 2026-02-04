@@ -1,0 +1,186 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0238_198_B._Jumping_on_Walls.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0238_198_B._Jumping_on_Walls.cpp'
+      FileOffset:      46
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0238_198_B._Jumping_on_Walls.cpp'
+      FileOffset:      61
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0238_198_B._Jumping_on_Walls.cpp'
+      FileOffset:      84
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-loop-convert
+    DiagnosticMessage:
+      Message:         use range-based for loop instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0238_198_B._Jumping_on_Walls.cpp'
+      FileOffset:      263
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0238_198_B._Jumping_on_Walls.cpp'
+          Offset:          267
+          Length:          38
+          ReplacementText: '(int a : v[y])'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0238_198_B._Jumping_on_Walls.cpp'
+          Offset:          314
+          Length:          23
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0238_198_B._Jumping_on_Walls.cpp'
+      FileOffset:      449
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0238_198_B._Jumping_on_Walls.cpp'
+          Offset:          445
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0238_198_B._Jumping_on_Walls.cpp'
+          Offset:          455
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory around ''d'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0238_198_B._Jumping_on_Walls.cpp'
+      FileOffset:      1223
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0238_198_B._Jumping_on_Walls.cpp'
+          FileOffset:      1223
+          Length:          12
+    Notes:
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0238_198_B._Jumping_on_Walls.cpp'
+        FileOffset:      521
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0238_198_B._Jumping_on_Walls.cpp'
+            FileOffset:      521
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 49
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0238_198_B._Jumping_on_Walls.cpp'
+        FileOffset:      505
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0238_198_B._Jumping_on_Walls.cpp'
+        FileOffset:      1065
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0238_198_B._Jumping_on_Walls.cpp'
+            FileOffset:      1065
+            Length:          9
+      - Message:         Loop condition is false. Execution continues on line 53
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0238_198_B._Jumping_on_Walls.cpp'
+        FileOffset:      1049
+        Replacements:    []
+      - Message:         'Assuming ''i'' is < ''k'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0238_198_B._Jumping_on_Walls.cpp'
+        FileOffset:      1194
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0238_198_B._Jumping_on_Walls.cpp'
+            FileOffset:      1194
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0238_198_B._Jumping_on_Walls.cpp'
+        FileOffset:      1178
+        Replacements:    []
+      - Message:         'Access of ''d'' at a negative or overflowing index, while it holds only 500000 ''int'' elements'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0238_198_B._Jumping_on_Walls.cpp'
+        FileOffset:      1223
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0238_198_B._Jumping_on_Walls.cpp'
+            FileOffset:      1223
+            Length:          12
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''d'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0238_198_B._Jumping_on_Walls.cpp'
+      FileOffset:      1223
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0238_198_B._Jumping_on_Walls.cpp'
+          FileOffset:      1223
+          Length:          12
+    Notes:
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0238_198_B._Jumping_on_Walls.cpp'
+        FileOffset:      521
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0238_198_B._Jumping_on_Walls.cpp'
+            FileOffset:      521
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 49
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0238_198_B._Jumping_on_Walls.cpp'
+        FileOffset:      505
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0238_198_B._Jumping_on_Walls.cpp'
+        FileOffset:      1065
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0238_198_B._Jumping_on_Walls.cpp'
+            FileOffset:      1065
+            Length:          9
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0238_198_B._Jumping_on_Walls.cpp'
+        FileOffset:      1049
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0238_198_B._Jumping_on_Walls.cpp'
+        FileOffset:      1065
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0238_198_B._Jumping_on_Walls.cpp'
+            FileOffset:      1065
+            Length:          9
+      - Message:         Loop condition is false. Execution continues on line 53
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0238_198_B._Jumping_on_Walls.cpp'
+        FileOffset:      1049
+        Replacements:    []
+      - Message:         'Assuming ''i'' is < ''k'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0238_198_B._Jumping_on_Walls.cpp'
+        FileOffset:      1194
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0238_198_B._Jumping_on_Walls.cpp'
+            FileOffset:      1194
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0238_198_B._Jumping_on_Walls.cpp'
+        FileOffset:      1178
+        Replacements:    []
+      - Message:         'Access of ''d'' at negative byte offset'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0238_198_B._Jumping_on_Walls.cpp'
+        FileOffset:      1223
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0238_198_B._Jumping_on_Walls.cpp'
+            FileOffset:      1223
+            Length:          12
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

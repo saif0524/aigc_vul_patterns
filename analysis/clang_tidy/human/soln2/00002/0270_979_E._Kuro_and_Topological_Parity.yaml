@@ -1,0 +1,133 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0270_979_E._Kuro_and_Topological_Parity.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0270_979_E._Kuro_and_Topological_Parity.cpp'
+      FileOffset:      80
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0270_979_E._Kuro_and_Topological_Parity.cpp'
+      FileOffset:      228
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0270_979_E._Kuro_and_Topological_Parity.cpp'
+          Offset:          224
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0270_979_E._Kuro_and_Topological_Parity.cpp'
+          Offset:          234
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''f'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0270_979_E._Kuro_and_Topological_Parity.cpp'
+      FileOffset:      1787
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0270_979_E._Kuro_and_Topological_Parity.cpp'
+          FileOffset:      1787
+          Length:          19
+    Notes:
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0270_979_E._Kuro_and_Topological_Parity.cpp'
+        FileOffset:      239
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0270_979_E._Kuro_and_Topological_Parity.cpp'
+            FileOffset:      239
+            Length:          25
+      - Message:         Taint propagated to the 3rd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0270_979_E._Kuro_and_Topological_Parity.cpp'
+        FileOffset:      239
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0270_979_E._Kuro_and_Topological_Parity.cpp'
+            FileOffset:      239
+            Length:          25
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0270_979_E._Kuro_and_Topological_Parity.cpp'
+        FileOffset:      297
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0270_979_E._Kuro_and_Topological_Parity.cpp'
+            FileOffset:      297
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 13
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0270_979_E._Kuro_and_Topological_Parity.cpp'
+        FileOffset:      281
+        Replacements:    []
+      - Message:         '''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0270_979_E._Kuro_and_Topological_Parity.cpp'
+        FileOffset:      381
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0270_979_E._Kuro_and_Topological_Parity.cpp'
+            FileOffset:      381
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 15
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0270_979_E._Kuro_and_Topological_Parity.cpp'
+        FileOffset:      359
+        Replacements:    []
+      - Message:         '''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0270_979_E._Kuro_and_Topological_Parity.cpp'
+        FileOffset:      457
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0270_979_E._Kuro_and_Topological_Parity.cpp'
+            FileOffset:      457
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 22
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0270_979_E._Kuro_and_Topological_Parity.cpp'
+        FileOffset:      435
+        Replacements:    []
+      - Message:         '''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0270_979_E._Kuro_and_Topological_Parity.cpp'
+        FileOffset:      732
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0270_979_E._Kuro_and_Topological_Parity.cpp'
+            FileOffset:      732
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 45
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0270_979_E._Kuro_and_Topological_Parity.cpp'
+        FileOffset:      710
+        Replacements:    []
+      - Message:         'Assuming ''j1'' is <= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0270_979_E._Kuro_and_Topological_Parity.cpp'
+        FileOffset:      1654
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0270_979_E._Kuro_and_Topological_Parity.cpp'
+            FileOffset:      1654
+            Length:          7
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0270_979_E._Kuro_and_Topological_Parity.cpp'
+        FileOffset:      1631
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0270_979_E._Kuro_and_Topological_Parity.cpp'
+        FileOffset:      1673
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0270_979_E._Kuro_and_Topological_Parity.cpp'
+        FileOffset:      1722
+        Replacements:    []
+      - Message:         'Access of ''f'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0270_979_E._Kuro_and_Topological_Parity.cpp'
+        FileOffset:      1787
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0270_979_E._Kuro_and_Topological_Parity.cpp'
+            FileOffset:      1787
+            Length:          19
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

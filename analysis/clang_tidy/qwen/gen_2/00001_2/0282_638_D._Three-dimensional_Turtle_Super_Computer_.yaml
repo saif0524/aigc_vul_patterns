@@ -1,0 +1,105 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0282_638_D._Three-dimensional_Turtle_Super_Computer_.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0282_638_D._Three-dimensional_Turtle_Super_Computer_.cpp'
+      FileOffset:      47
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0282_638_D._Three-dimensional_Turtle_Super_Computer_.cpp'
+      FileOffset:      69
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0282_638_D._Three-dimensional_Turtle_Super_Computer_.cpp'
+      FileOffset:      91
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0282_638_D._Three-dimensional_Turtle_Super_Computer_.cpp'
+      FileOffset:      119
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0282_638_D._Three-dimensional_Turtle_Super_Computer_.cpp'
+          Offset:          114
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0282_638_D._Three-dimensional_Turtle_Super_Computer_.cpp'
+          Offset:          169
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0282_638_D._Three-dimensional_Turtle_Super_Computer_.cpp'
+      FileOffset:      245
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0282_638_D._Three-dimensional_Turtle_Super_Computer_.cpp'
+          Offset:          241
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0282_638_D._Three-dimensional_Turtle_Super_Computer_.cpp'
+          Offset:          251
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''size_type'' (aka ''unsigned long'') of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0282_638_D._Three-dimensional_Turtle_Super_Computer_.cpp'
+      FileOffset:      2163
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0282_638_D._Three-dimensional_Turtle_Super_Computer_.cpp'
+        FileOffset:      2163
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0282_638_D._Three-dimensional_Turtle_Super_Computer_.cpp'
+            Offset:          25
+            Length:          0
+            ReplacementText: "\n#include <cstddef>\n"
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0282_638_D._Three-dimensional_Turtle_Super_Computer_.cpp'
+            Offset:          2163
+            Length:          0
+            ReplacementText: 'static_cast<size_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0282_638_D._Three-dimensional_Turtle_Super_Computer_.cpp'
+            Offset:          2172
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0282_638_D._Three-dimensional_Turtle_Super_Computer_.cpp'
+            FileOffset:      2163
+            Length:          9
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0282_638_D._Three-dimensional_Turtle_Super_Computer_.cpp'
+        FileOffset:      2163
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0282_638_D._Three-dimensional_Turtle_Super_Computer_.cpp'
+            Offset:          2163
+            Length:          0
+            ReplacementText: 'static_cast<long>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0282_638_D._Three-dimensional_Turtle_Super_Computer_.cpp'
+            Offset:          2168
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0282_638_D._Three-dimensional_Turtle_Super_Computer_.cpp'
+            FileOffset:      2163
+            Length:          5
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

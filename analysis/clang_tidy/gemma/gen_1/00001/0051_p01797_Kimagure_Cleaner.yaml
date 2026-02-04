@@ -1,0 +1,328 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0051_p01797_Kimagure_Cleaner.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0051_p01797_Kimagure_Cleaner.cpp'
+      FileOffset:      104
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0051_p01797_Kimagure_Cleaner.cpp'
+          Offset:          100
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0051_p01797_Kimagure_Cleaner.cpp'
+          Offset:          110
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0051_p01797_Kimagure_Cleaner.cpp'
+      FileOffset:      571
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0051_p01797_Kimagure_Cleaner.cpp'
+          Offset:          571
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0051_p01797_Kimagure_Cleaner.cpp'
+      FileOffset:      598
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0051_p01797_Kimagure_Cleaner.cpp'
+          Offset:          598
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0051_p01797_Kimagure_Cleaner.cpp'
+      FileOffset:      625
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0051_p01797_Kimagure_Cleaner.cpp'
+          Offset:          625
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0051_p01797_Kimagure_Cleaner.cpp'
+      FileOffset:      831
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0051_p01797_Kimagure_Cleaner.cpp'
+          Offset:          831
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'invalid operands to binary expression (''ostream'' (aka ''basic_ostream<char>'') and ''std::pair<std::basic_string<char>, std::pair<int, int>> const'')'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0051_p01797_Kimagure_Cleaner.cpp'
+      FileOffset:      869
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0051_p01797_Kimagure_Cleaner.cpp'
+          FileOffset:      864
+          Length:          4
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00001/0051_p01797_Kimagure_Cleaner.cpp'
+          FileOffset:      872
+          Length:          5
+    Notes:
+      - Message:         'candidate function template not viable: no known conversion from ''std::pair<std::basic_string<char>, std::pair<int, int>> const'' to ''const error_code'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/system_error'
+        FileOffset:      9797
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/system_error'
+            FileOffset:      9846
+            Length:          21
+      - Message:         'candidate function template not viable: no known conversion from ''std::pair<std::basic_string<char>, std::pair<int, int>> const'' to ''char'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+        FileOffset:      17289
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+            FileOffset:      17339
+            Length:          8
+      - Message:         'candidate function template not viable: no known conversion from ''std::pair<std::basic_string<char>, std::pair<int, int>> const'' to ''char'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+        FileOffset:      17488
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+            FileOffset:      17536
+            Length:          8
+      - Message:         'candidate function template not viable: no known conversion from ''std::pair<std::basic_string<char>, std::pair<int, int>> const'' to ''signed char'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+        FileOffset:      17772
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+            FileOffset:      17820
+            Length:          15
+      - Message:         'candidate function template not viable: no known conversion from ''std::pair<std::basic_string<char>, std::pair<int, int>> const'' to ''unsigned char'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+        FileOffset:      17962
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+            FileOffset:      18010
+            Length:          17
+      - Message:         'candidate function template not viable: no known conversion from ''std::pair<std::basic_string<char>, std::pair<int, int>> const'' to ''const char *'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+        FileOffset:      20473
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+            FileOffset:      20521
+            Length:          15
+      - Message:         'candidate function template not viable: no known conversion from ''std::pair<std::basic_string<char>, std::pair<int, int>> const'' to ''const signed char *'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+        FileOffset:      20814
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+            FileOffset:      20862
+            Length:          22
+      - Message:         'candidate function template not viable: no known conversion from ''std::pair<std::basic_string<char>, std::pair<int, int>> const'' to ''const unsigned char *'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+        FileOffset:      21024
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+            FileOffset:      21072
+            Length:          24
+      - Message:         'candidate function template not viable: no known conversion from ''std::pair<std::basic_string<char>, std::pair<int, int>> const'' to ''const char *'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/ostream.tcc'
+        FileOffset:      8941
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/ostream.tcc'
+            FileOffset:      8991
+            Length:          15
+      - Message:         'candidate function template not viable: no known conversion from ''ostream'' (aka ''basic_ostream<char>'') to ''byte'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/cstddef'
+        FileOffset:      4605
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/cstddef'
+            FileOffset:      4616
+            Length:          8
+      - Message:         'candidate template ignored: deduced conflicting types for parameter ''_CharT'' (''char'' vs. ''std::pair<std::basic_string<char>, std::pair<int, int>>'')'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+        FileOffset:      17007
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_string_view'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/string_view'
+        FileOffset:      23744
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_string'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+        FileOffset:      144137
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''const _CharT *'' against ''std::pair<std::basic_string<char>, std::pair<int, int>>'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+        FileOffset:      19968
+        Replacements:    []
+      - Message:         'candidate template ignored: requirement ''__and_<std::is_class<std::basic_ostream<char, std::char_traits<char>> &>, std::__not_<std::is_same<std::basic_ostream<char, std::char_traits<char>> &, std::ios_base>>, std::is_convertible<std::basic_ostream<char, std::char_traits<char>> *, std::ios_base *>>::value'' was not satisfied [with _Ostream = ostream &, _Tp = std::pair<std::basic_string<char>, std::pair<int, int>>]'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+        FileOffset:      25209
+        Replacements:    []
+      - Message:         'candidate function not viable: no known conversion from ''std::pair<std::basic_string<char>, std::pair<int, int>> const'' to ''__ostream_type &(*)(__ostream_type &)'' (aka ''basic_ostream<char, std::char_traits<char>> &(*)(basic_ostream<char, std::char_traits<char>> &)'') for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+        FileOffset:      3573
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+            FileOffset:      3584
+            Length:          40
+      - Message:         'candidate function not viable: no known conversion from ''std::pair<std::basic_string<char>, std::pair<int, int>> const'' to ''__ios_type &(*)(__ios_type &)'' (aka ''basic_ios<char, std::char_traits<char>> &(*)(basic_ios<char, std::char_traits<char>> &)'') for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+        FileOffset:      3845
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+            FileOffset:      3856
+            Length:          32
+      - Message:         'candidate function not viable: no known conversion from ''std::pair<std::basic_string<char>, std::pair<int, int>> const'' to ''ios_base &(*)(ios_base &)'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+        FileOffset:      4117
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+            FileOffset:      4128
+            Length:          29
+      - Message:         'candidate function not viable: no known conversion from ''std::pair<std::basic_string<char>, std::pair<int, int>> const'' to ''long'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+        FileOffset:      5542
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+            FileOffset:      5553
+            Length:          8
+      - Message:         'candidate function not viable: no known conversion from ''std::pair<std::basic_string<char>, std::pair<int, int>> const'' to ''unsigned long'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+        FileOffset:      5625
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+            FileOffset:      5636
+            Length:          17
+      - Message:         'candidate function not viable: no known conversion from ''std::pair<std::basic_string<char>, std::pair<int, int>> const'' to ''bool'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+        FileOffset:      5717
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+            FileOffset:      5728
+            Length:          8
+      - Message:         'candidate function not viable: no known conversion from ''std::pair<std::basic_string<char>, std::pair<int, int>> const'' to ''short'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+        FileOffset:      5800
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+            FileOffset:      5811
+            Length:          9
+      - Message:         'candidate function not viable: no known conversion from ''std::pair<std::basic_string<char>, std::pair<int, int>> const'' to ''unsigned short'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+        FileOffset:      5852
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+            FileOffset:      5863
+            Length:          18
+      - Message:         'candidate function not viable: no known conversion from ''std::pair<std::basic_string<char>, std::pair<int, int>> const'' to ''int'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+        FileOffset:      6079
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+            FileOffset:      6090
+            Length:          7
+      - Message:         'candidate function not viable: no known conversion from ''std::pair<std::basic_string<char>, std::pair<int, int>> const'' to ''unsigned int'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+        FileOffset:      6129
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+            FileOffset:      6140
+            Length:          16
+      - Message:         'candidate function not viable: no known conversion from ''std::pair<std::basic_string<char>, std::pair<int, int>> const'' to ''long long'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+        FileOffset:      6384
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+            FileOffset:      6395
+            Length:          13
+      - Message:         'candidate function not viable: no known conversion from ''std::pair<std::basic_string<char>, std::pair<int, int>> const'' to ''unsigned long long'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+        FileOffset:      6472
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+            FileOffset:      6483
+            Length:          22
+      - Message:         'candidate function not viable: no known conversion from ''std::pair<std::basic_string<char>, std::pair<int, int>> const'' to ''double'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+        FileOffset:      6925
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+            FileOffset:      6936
+            Length:          10
+      - Message:         'candidate function not viable: no known conversion from ''std::pair<std::basic_string<char>, std::pair<int, int>> const'' to ''float'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+        FileOffset:      7010
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+            FileOffset:      7021
+            Length:          9
+      - Message:         'candidate function not viable: no known conversion from ''std::pair<std::basic_string<char>, std::pair<int, int>> const'' to ''long double'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+        FileOffset:      7221
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+            FileOffset:      7232
+            Length:          15
+      - Message:         'candidate function not viable: no known conversion from ''std::pair<std::basic_string<char>, std::pair<int, int>> const'' to ''const void *'' for 1st argument; take the address of the argument with &'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+        FileOffset:      8861
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+            FileOffset:      8872
+            Length:          15
+      - Message:         'candidate function not viable: no known conversion from ''std::pair<std::basic_string<char>, std::pair<int, int>> const'' to ''nullptr_t'' (aka ''std::nullptr_t'') for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+        FileOffset:      8978
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+            FileOffset:      8989
+            Length:          9
+      - Message:         'candidate function not viable: no known conversion from ''std::pair<std::basic_string<char>, std::pair<int, int>> const'' to ''__streambuf_type *'' (aka ''basic_streambuf<char, std::char_traits<char>> *'') for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+        FileOffset:      10200
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/ostream'
+            FileOffset:      10211
+            Length:          22
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

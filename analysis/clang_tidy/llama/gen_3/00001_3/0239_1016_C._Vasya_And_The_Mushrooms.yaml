@@ -1,0 +1,388 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+      FileOffset:      86
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+          Offset:          82
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+          Offset:          92
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''value_type'' (aka ''long long'') of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+      FileOffset:      448
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+        FileOffset:      448
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            Offset:          0
+            Length:          0
+            ReplacementText: "#include <cstddef>\n"
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            Offset:          448
+            Length:          0
+            ReplacementText: 'static_cast<value_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            Offset:          460
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            FileOffset:      448
+            Length:          12
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+        FileOffset:      448
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            Offset:          448
+            Length:          0
+            ReplacementText: 'static_cast<value_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            Offset:          456
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            FileOffset:      448
+            Length:          8
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''value_type'' (aka ''long long'') of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+      FileOffset:      477
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+        FileOffset:      477
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            Offset:          477
+            Length:          0
+            ReplacementText: 'static_cast<value_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            Offset:          489
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            FileOffset:      477
+            Length:          12
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+        FileOffset:      477
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            Offset:          477
+            Length:          0
+            ReplacementText: 'static_cast<value_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            Offset:          485
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            FileOffset:      477
+            Length:          8
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''value_type'' (aka ''long long'') of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+      FileOffset:      530
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+        FileOffset:      530
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            Offset:          530
+            Length:          0
+            ReplacementText: 'static_cast<value_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            Offset:          542
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            FileOffset:      530
+            Length:          12
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+        FileOffset:      530
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            Offset:          530
+            Length:          0
+            ReplacementText: 'static_cast<value_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            Offset:          538
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            FileOffset:      530
+            Length:          8
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''value_type'' (aka ''long long'') of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+      FileOffset:      559
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+        FileOffset:      559
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            Offset:          559
+            Length:          0
+            ReplacementText: 'static_cast<value_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            Offset:          571
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            FileOffset:      559
+            Length:          12
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+        FileOffset:      559
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            Offset:          559
+            Length:          0
+            ReplacementText: 'static_cast<value_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            Offset:          567
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            FileOffset:      559
+            Length:          8
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''value_type'' (aka ''long long'') of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+      FileOffset:      808
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+        FileOffset:      808
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            Offset:          808
+            Length:          0
+            ReplacementText: 'static_cast<value_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            Offset:          820
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            FileOffset:      808
+            Length:          12
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+        FileOffset:      808
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            Offset:          808
+            Length:          0
+            ReplacementText: 'static_cast<value_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            Offset:          816
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            FileOffset:      808
+            Length:          8
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''value_type'' (aka ''long long'') of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+      FileOffset:      838
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+        FileOffset:      838
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            Offset:          838
+            Length:          0
+            ReplacementText: 'static_cast<value_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            Offset:          850
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            FileOffset:      838
+            Length:          12
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+        FileOffset:      838
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            Offset:          838
+            Length:          0
+            ReplacementText: 'static_cast<value_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            Offset:          846
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            FileOffset:      838
+            Length:          8
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''value_type'' (aka ''long long'') of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+      FileOffset:      893
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+        FileOffset:      893
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            Offset:          893
+            Length:          0
+            ReplacementText: 'static_cast<value_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            Offset:          905
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            FileOffset:      893
+            Length:          12
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+        FileOffset:      893
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            Offset:          893
+            Length:          0
+            ReplacementText: 'static_cast<value_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            Offset:          901
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            FileOffset:      893
+            Length:          8
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''value_type'' (aka ''long long'') of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+      FileOffset:      923
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+        FileOffset:      923
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            Offset:          923
+            Length:          0
+            ReplacementText: 'static_cast<value_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            Offset:          935
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            FileOffset:      923
+            Length:          12
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+        FileOffset:      923
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            Offset:          923
+            Length:          0
+            ReplacementText: 'static_cast<value_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            Offset:          931
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+            FileOffset:      923
+            Length:          8
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-min-max-use-initializer-list
+    DiagnosticMessage:
+      Message:         'do not use nested ''std::max'' calls, use an initializer list instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+      FileOffset:      955
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+          Offset:          0
+          Length:          0
+          ReplacementText: "#include <algorithm>\n"
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+          Offset:          959
+          Length:          0
+          ReplacementText: '{'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+          Offset:          964
+          Length:          4
+          ReplacementText: ''
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+          Offset:          988
+          Length:          1
+          ReplacementText: '}'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+      FileOffset:      1012
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0239_1016_C._Vasya_And_The_Mushrooms.cpp'
+          Offset:          1012
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

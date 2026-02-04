@@ -1,0 +1,376 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+      FileOffset:      114
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+          Offset:          110
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+          Offset:          120
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''size_type'' (aka ''unsigned long'') of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+      FileOffset:      161
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+        FileOffset:      161
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+            Offset:          0
+            Length:          0
+            ReplacementText: "#include <cstddef>\n"
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+            Offset:          161
+            Length:          0
+            ReplacementText: 'static_cast<size_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+            Offset:          166
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+            FileOffset:      161
+            Length:          5
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+        FileOffset:      161
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+            Offset:          161
+            Length:          0
+            ReplacementText: 'static_cast<long>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+            Offset:          162
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+            FileOffset:      161
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''size_type'' (aka ''unsigned long'') of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+      FileOffset:      270
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+        FileOffset:      270
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+            Offset:          270
+            Length:          0
+            ReplacementText: 'static_cast<size_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+            Offset:          275
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+            FileOffset:      270
+            Length:          5
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+        FileOffset:      270
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+            Offset:          270
+            Length:          0
+            ReplacementText: 'static_cast<long>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+            Offset:          271
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+            FileOffset:      270
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no template named ''function'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+      FileOffset:      290
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this lambda
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+      FileOffset:      329
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+          Offset:          364
+          Length:          0
+          ReplacementText: ' -> void'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+      FileOffset:      873
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+          Offset:          873
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+      FileOffset:      911
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+          Offset:          911
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+      FileOffset:      1030
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+          Offset:          1030
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+      FileOffset:      1232
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+          Offset:          1232
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''size_type'' (aka ''unsigned long'') of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+      FileOffset:      1508
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+        FileOffset:      1508
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+            Offset:          1508
+            Length:          0
+            ReplacementText: 'static_cast<size_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+            Offset:          1513
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+            FileOffset:      1508
+            Length:          5
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+        FileOffset:      1508
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+            Offset:          1508
+            Length:          0
+            ReplacementText: 'static_cast<long>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+            Offset:          1509
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+            FileOffset:      1508
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+      FileOffset:      1800
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+          Offset:          1800
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+      FileOffset:      1952
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+          Offset:          1952
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C VLA arrays, use ''std::vector'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+      FileOffset:      2061
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-vla-cxx-extension
+    DiagnosticMessage:
+      Message:         'variable length arrays in C++ are a Clang extension'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+      FileOffset:      2076
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+          FileOffset:      2076
+          Length:          5
+    Notes:
+      - Message:         'read of non-const variable ''n'' is not allowed in a constant expression'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+        FileOffset:      2078
+        Replacements:    []
+      - Message:         declared here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+        FileOffset:      129
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+      FileOffset:      2366
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+          Offset:          2366
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+      FileOffset:      2410
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+          Offset:          2410
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+      FileOffset:      2532
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+          Offset:          2532
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+      FileOffset:      2655
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+          Offset:          2655
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+      FileOffset:      3109
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+          Offset:          3109
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+      FileOffset:      3239
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+          Offset:          3239
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+      FileOffset:      3383
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+          Offset:          3383
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+      FileOffset:      3561
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+          Offset:          3561
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+      FileOffset:      3676
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0159_p02539_ACL_Beginner_Contest_-_Heights_and_Pairs.cpp'
+          Offset:          3676
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

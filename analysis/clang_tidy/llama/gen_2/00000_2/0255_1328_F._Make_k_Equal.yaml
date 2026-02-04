@@ -1,0 +1,117 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0255_1328_F._Make_k_Equal.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0255_1328_F._Make_k_Equal.cpp'
+      FileOffset:      71
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0255_1328_F._Make_k_Equal.cpp'
+      FileOffset:      92
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0255_1328_F._Make_k_Equal.cpp'
+          Offset:          88
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0255_1328_F._Make_k_Equal.cpp'
+          Offset:          98
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''a'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0255_1328_F._Make_k_Equal.cpp'
+      FileOffset:      345
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0255_1328_F._Make_k_Equal.cpp'
+          FileOffset:      345
+          Length:          4
+    Notes:
+      - Message:         'Assuming ''i'' is <= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0255_1328_F._Make_k_Equal.cpp'
+        FileOffset:      148
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0255_1328_F._Make_k_Equal.cpp'
+            FileOffset:      148
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0255_1328_F._Make_k_Equal.cpp'
+        FileOffset:      132
+        Replacements:    []
+      - Message:         'Assuming ''i'' is <= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0255_1328_F._Make_k_Equal.cpp'
+        FileOffset:      148
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0255_1328_F._Make_k_Equal.cpp'
+            FileOffset:      148
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0255_1328_F._Make_k_Equal.cpp'
+        FileOffset:      132
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0255_1328_F._Make_k_Equal.cpp'
+        FileOffset:      148
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0255_1328_F._Make_k_Equal.cpp'
+            FileOffset:      148
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 11
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0255_1328_F._Make_k_Equal.cpp'
+        FileOffset:      132
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0255_1328_F._Make_k_Equal.cpp'
+        FileOffset:      237
+        Replacements:    []
+      - Message:         'Assuming ''r'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0255_1328_F._Make_k_Equal.cpp'
+        FileOffset:      314
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0255_1328_F._Make_k_Equal.cpp'
+            FileOffset:      314
+            Length:          6
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0255_1328_F._Make_k_Equal.cpp'
+        FileOffset:      310
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0255_1328_F._Make_k_Equal.cpp'
+        FileOffset:      237
+        Replacements:    []
+      - Message:         'Assuming ''r'' is <= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0255_1328_F._Make_k_Equal.cpp'
+        FileOffset:      314
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0255_1328_F._Make_k_Equal.cpp'
+            FileOffset:      314
+            Length:          6
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0255_1328_F._Make_k_Equal.cpp'
+        FileOffset:      310
+        Replacements:    []
+      - Message:         'Access of ''a'' at negative byte offset -8589934592'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0255_1328_F._Make_k_Equal.cpp'
+        FileOffset:      345
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0255_1328_F._Make_k_Equal.cpp'
+            FileOffset:      345
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

@@ -1,0 +1,212 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+Diagnostics:
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''size_type'' (aka ''unsigned long'') of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+      FileOffset:      123
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+        FileOffset:      123
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+            Offset:          25
+            Length:          0
+            ReplacementText: "\n#include <cstddef>\n"
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+            Offset:          123
+            Length:          0
+            ReplacementText: 'static_cast<size_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+            Offset:          128
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+            FileOffset:      123
+            Length:          5
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+        FileOffset:      123
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+            Offset:          123
+            Length:          0
+            ReplacementText: 'static_cast<long>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+            Offset:          124
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+            FileOffset:      123
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''size_type'' (aka ''unsigned long'') of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+      FileOffset:      378
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+        FileOffset:      378
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+            Offset:          378
+            Length:          0
+            ReplacementText: 'static_cast<size_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+            Offset:          383
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+            FileOffset:      378
+            Length:          5
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+        FileOffset:      378
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+            Offset:          378
+            Length:          0
+            ReplacementText: 'static_cast<long>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+            Offset:          379
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+            FileOffset:      378
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''size_type'' (aka ''unsigned long'') of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+      FileOffset:      414
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+        FileOffset:      414
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+            Offset:          414
+            Length:          0
+            ReplacementText: 'static_cast<size_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+            Offset:          419
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+            FileOffset:      414
+            Length:          5
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+        FileOffset:      414
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+            Offset:          414
+            Length:          0
+            ReplacementText: 'static_cast<long>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+            Offset:          415
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+            FileOffset:      414
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''size_type'' (aka ''unsigned long'') of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+      FileOffset:      1420
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+        FileOffset:      1420
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+            Offset:          1420
+            Length:          0
+            ReplacementText: 'static_cast<size_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+            Offset:          1425
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+            FileOffset:      1420
+            Length:          5
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+        FileOffset:      1420
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+            Offset:          1420
+            Length:          0
+            ReplacementText: 'static_cast<long>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+            Offset:          1421
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+            FileOffset:      1420
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this lambda
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+      FileOffset:      1493
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+          Offset:          1510
+          Length:          0
+          ReplacementText: ' -> void'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+      FileOffset:      2292
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+          Offset:          2288
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+          Offset:          2298
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+      FileOffset:      2345
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp'
+          Offset:          2345
+          Length:          1
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

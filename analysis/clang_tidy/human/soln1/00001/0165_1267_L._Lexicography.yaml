@@ -1,0 +1,180 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0165_1267_L._Lexicography.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0165_1267_L._Lexicography.cpp'
+      FileOffset:      25
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0165_1267_L._Lexicography.cpp'
+      FileOffset:      42
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0165_1267_L._Lexicography.cpp'
+      FileOffset:      59
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' or ''std::vector'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0165_1267_L._Lexicography.cpp'
+      FileOffset:      87
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' or ''std::vector'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0165_1267_L._Lexicography.cpp'
+      FileOffset:      97
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-shift-op-parentheses
+    DiagnosticMessage:
+      Message:         'operator ''>>'' has lower precedence than ''+''; ''+'' will be evaluated first'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0165_1267_L._Lexicography.cpp'
+      FileOffset:      150
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0165_1267_L._Lexicography.cpp'
+          FileOffset:      148
+          Length:          5
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0165_1267_L._Lexicography.cpp'
+          FileOffset:      154
+          Length:          2
+    Notes:
+      - Message:         'place parentheses around the ''+'' expression to silence this warning'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0165_1267_L._Lexicography.cpp'
+        FileOffset:      150
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0165_1267_L._Lexicography.cpp'
+            Offset:          148
+            Length:          0
+            ReplacementText: '('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0165_1267_L._Lexicography.cpp'
+            Offset:          153
+            Length:          0
+            ReplacementText: ')'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0165_1267_L._Lexicography.cpp'
+      FileOffset:      543
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0165_1267_L._Lexicography.cpp'
+          Offset:          539
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0165_1267_L._Lexicography.cpp'
+          Offset:          549
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-format
+    DiagnosticMessage:
+      Message:         'format specifies type ''char *'' but the argument has type ''char (*)[1000002]'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0165_1267_L._Lexicography.cpp'
+      FileOffset:      665
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0165_1267_L._Lexicography.cpp'
+          FileOffset:      665
+          Length:          2
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0165_1267_L._Lexicography.cpp'
+          FileOffset:      660
+          Length:          2
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''D'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0165_1267_L._Lexicography.cpp'
+      FileOffset:      930
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0165_1267_L._Lexicography.cpp'
+          FileOffset:      930
+          Length:          8
+    Notes:
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0165_1267_L._Lexicography.cpp'
+        FileOffset:      620
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0165_1267_L._Lexicography.cpp'
+            FileOffset:      620
+            Length:          29
+      - Message:         Taint propagated to the 4th argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0165_1267_L._Lexicography.cpp'
+        FileOffset:      620
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0165_1267_L._Lexicography.cpp'
+            FileOffset:      620
+            Length:          29
+      - Message:         Loop condition is false. Execution continues on line 50
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0165_1267_L._Lexicography.cpp'
+        FileOffset:      672
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0165_1267_L._Lexicography.cpp'
+        FileOffset:      754
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0165_1267_L._Lexicography.cpp'
+            FileOffset:      754
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 56
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0165_1267_L._Lexicography.cpp'
+        FileOffset:      742
+        Replacements:    []
+      - Message:         'Assuming ''i'' is < ''l'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0165_1267_L._Lexicography.cpp'
+        FileOffset:      866
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0165_1267_L._Lexicography.cpp'
+            FileOffset:      866
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0165_1267_L._Lexicography.cpp'
+        FileOffset:      854
+        Replacements:    []
+      - Message:         'Assuming ''a'' is < ''C'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0165_1267_L._Lexicography.cpp'
+        FileOffset:      896
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0165_1267_L._Lexicography.cpp'
+            FileOffset:      896
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0165_1267_L._Lexicography.cpp'
+        FileOffset:      884
+        Replacements:    []
+      - Message:         'Access of ''D'' with a tainted index that may be too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0165_1267_L._Lexicography.cpp'
+        FileOffset:      930
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0165_1267_L._Lexicography.cpp'
+            FileOffset:      930
+            Length:          8
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

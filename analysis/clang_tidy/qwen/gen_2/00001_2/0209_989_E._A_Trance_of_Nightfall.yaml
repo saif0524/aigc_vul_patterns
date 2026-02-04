@@ -1,0 +1,184 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0209_989_E._A_Trance_of_Nightfall.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-using
+    DiagnosticMessage:
+      Message:         'use ''using'' instead of ''typedef'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0209_989_E._A_Trance_of_Nightfall.cpp'
+      FileOffset:      47
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0209_989_E._A_Trance_of_Nightfall.cpp'
+          Offset:          47
+          Length:          20
+          ReplacementText: 'using ll = long long'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-using
+    DiagnosticMessage:
+      Message:         'use ''using'' instead of ''typedef'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0209_989_E._A_Trance_of_Nightfall.cpp'
+      FileOffset:      69
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0209_989_E._A_Trance_of_Nightfall.cpp'
+          Offset:          69
+          Length:          26
+          ReplacementText: 'using pii = pair<int, int>'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-using
+    DiagnosticMessage:
+      Message:         'use ''using'' instead of ''typedef'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0209_989_E._A_Trance_of_Nightfall.cpp'
+      FileOffset:      97
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0209_989_E._A_Trance_of_Nightfall.cpp'
+          Offset:          97
+          Length:          29
+          ReplacementText: 'using pdi = pair<double, pii>'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0209_989_E._A_Trance_of_Nightfall.cpp'
+      FileOffset:      186
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0209_989_E._A_Trance_of_Nightfall.cpp'
+      FileOffset:      266
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0209_989_E._A_Trance_of_Nightfall.cpp'
+      FileOffset:      295
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0209_989_E._A_Trance_of_Nightfall.cpp'
+          Offset:          291
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0209_989_E._A_Trance_of_Nightfall.cpp'
+          Offset:          301
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0209_989_E._A_Trance_of_Nightfall.cpp'
+      FileOffset:      348
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0209_989_E._A_Trance_of_Nightfall.cpp'
+          Offset:          348
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'invalid operands to binary expression (''std::tuple_element<1, std::pair<const long long, std::unordered_map<long long, std::unordered_set<int>>>>::type'' (aka ''std::unordered_map<long long, std::unordered_set<int>>'') and ''ll'' (aka ''long long''))'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0209_989_E._A_Trance_of_Nightfall.cpp'
+      FileOffset:      1366
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0209_989_E._A_Trance_of_Nightfall.cpp'
+          FileOffset:      1364
+          Length:          1
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0209_989_E._A_Trance_of_Nightfall.cpp'
+          FileOffset:      1368
+          Length:          1
+    Notes:
+      - Message:         'candidate template ignored: could not match ''complex'' against ''std::unordered_map'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/complex'
+        FileOffset:      11851
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''complex'' against ''std::unordered_map'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/complex'
+        FileOffset:      12064
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''complex<_Tp>'' against ''ll'' (aka ''long long'')'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/complex'
+        FileOffset:      12268
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr'' against ''std::unordered_map'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14089
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      9594
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr'' against ''std::unordered_map'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14089
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      10553
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr<_Dom, typename _Dom::value_type>'' against ''ll'' (aka ''long long'')'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14089
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      11519
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr'' against ''std::unordered_map'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14089
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      12485
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr<_Dom, typename _Dom::value_type>'' against ''ll'' (aka ''long long'')'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14089
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      13451
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''valarray'' against ''std::unordered_map'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      38955
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      37574
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''valarray'' against ''std::unordered_map'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      38955
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      38083
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''valarray<_Tp>'' against ''ll'' (aka ''long long'')'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      38955
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      38569
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0209_989_E._A_Trance_of_Nightfall.cpp'
+      FileOffset:      1454
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

@@ -1,0 +1,138 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0228_p00943_Routing_a_Marathon_Race.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0228_p00943_Routing_a_Marathon_Race.cpp'
+      FileOffset:      122
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0228_p00943_Routing_a_Marathon_Race.cpp'
+          Offset:          117
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0228_p00943_Routing_a_Marathon_Race.cpp'
+          Offset:          149
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0228_p00943_Routing_a_Marathon_Race.cpp'
+      FileOffset:      223
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0228_p00943_Routing_a_Marathon_Race.cpp'
+      FileOffset:      242
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0228_p00943_Routing_a_Marathon_Race.cpp'
+      FileOffset:      261
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0228_p00943_Routing_a_Marathon_Race.cpp'
+      FileOffset:      280
+      Replacements:    []
+    Notes:
+      - Message:         'expanded from macro ''ll'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0228_p00943_Routing_a_Marathon_Race.cpp'
+        FileOffset:      36
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''G'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0228_p00943_Routing_a_Marathon_Race.cpp'
+      FileOffset:      330
+      Replacements:    []
+    Notes:
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0228_p00943_Routing_a_Marathon_Race.cpp'
+        FileOffset:      419
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0228_p00943_Routing_a_Marathon_Race.cpp'
+            FileOffset:      419
+            Length:          4
+      - Message:         Loop condition is false. Execution continues on line 29
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0228_p00943_Routing_a_Marathon_Race.cpp'
+        FileOffset:      407
+        Replacements:    []
+      - Message:         'Assuming ''i'' is <= ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0228_p00943_Routing_a_Marathon_Race.cpp'
+        FileOffset:      466
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0228_p00943_Routing_a_Marathon_Race.cpp'
+            FileOffset:      466
+            Length:          4
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0228_p00943_Routing_a_Marathon_Race.cpp'
+        FileOffset:      450
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0228_p00943_Routing_a_Marathon_Race.cpp'
+        FileOffset:      481
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0228_p00943_Routing_a_Marathon_Race.cpp'
+            FileOffset:      481
+            Length:          19
+      - Message:         Taint propagated to the 2nd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0228_p00943_Routing_a_Marathon_Race.cpp'
+        FileOffset:      481
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0228_p00943_Routing_a_Marathon_Race.cpp'
+            FileOffset:      481
+            Length:          19
+      - Message:         'Calling ''add_edge'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0228_p00943_Routing_a_Marathon_Race.cpp'
+        FileOffset:      504
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0228_p00943_Routing_a_Marathon_Race.cpp'
+            FileOffset:      504
+            Length:          13
+      - Message:         'Access of ''G'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0228_p00943_Routing_a_Marathon_Race.cpp'
+        FileOffset:      330
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0228_p00943_Routing_a_Marathon_Race.cpp'
+            FileOffset:      330
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0228_p00943_Routing_a_Marathon_Race.cpp'
+      FileOffset:      375
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0228_p00943_Routing_a_Marathon_Race.cpp'
+          Offset:          371
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0228_p00943_Routing_a_Marathon_Race.cpp'
+          Offset:          381
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

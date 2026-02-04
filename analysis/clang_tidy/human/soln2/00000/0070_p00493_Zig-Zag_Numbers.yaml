@@ -1,0 +1,486 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+      FileOffset:      47
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+      FileOffset:      200
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+      FileOffset:      246
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+          Offset:          242
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+          Offset:          294
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''memo'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+      FileOffset:      359
+      Replacements:    []
+    Notes:
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      963
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+            FileOffset:      963
+            Length:          27
+      - Message:         Taint propagated to the 4th argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      963
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+            FileOffset:      963
+            Length:          27
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      1019
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      1039
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+            FileOffset:      1039
+            Length:          10
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      1035
+        Replacements:    []
+      - Message:         ' Execution continues on line 57'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      1066
+        Replacements:    []
+      - Message:         'Calling ''dp'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      1139
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+            FileOffset:      1139
+            Length:          17
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      302
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+            FileOffset:      302
+            Length:          14
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      298
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      359
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+            FileOffset:      359
+            Length:          30
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      355
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      453
+        Replacements:    []
+      - Message:         '''limit'' is not equal to 1'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      491
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+            FileOffset:      491
+            Length:          5
+      - Message:         'Left side of ''||'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      491
+        Replacements:    []
+      - Message:         '''limit'' is equal to 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      506
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+            FileOffset:      506
+            Length:          5
+      - Message:         'Left side of ''&&'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      506
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      520
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+            FileOffset:      520
+            Length:          17
+      - Message:         'Left side of ''&&'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      540
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      453
+        Replacements:    []
+      - Message:         '''limit'' is not equal to 1'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      491
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+            FileOffset:      491
+            Length:          5
+      - Message:         'Left side of ''||'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      491
+        Replacements:    []
+      - Message:         '''limit'' is equal to 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      506
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+            FileOffset:      506
+            Length:          5
+      - Message:         'Left side of ''&&'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      506
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      520
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+            FileOffset:      520
+            Length:          17
+      - Message:         'Left side of ''&&'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      490
+        Replacements:    []
+      - Message:         '''updn'' is equal to 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      545
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+            FileOffset:      545
+            Length:          4
+      - Message:         'Left side of ''&&'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      545
+        Replacements:    []
+      - Message:         '''use'' is 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      560
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+            FileOffset:      560
+            Length:          3
+      - Message:         'Left side of ''||'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      564
+        Replacements:    []
+      - Message:         '''updn'' is equal to 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      662
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+            FileOffset:      662
+            Length:          4
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      658
+        Replacements:    []
+      - Message:         '''use'' is equal to 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      682
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+            FileOffset:      682
+            Length:          3
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      678
+        Replacements:    []
+      - Message:         '''limit'' is 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      837
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+            FileOffset:      837
+            Length:          5
+      - Message:         'Left side of ''||'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      837
+        Replacements:    []
+      - Message:         'Calling ''dp'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      798
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+            FileOffset:      798
+            Length:          65
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      302
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+            FileOffset:      302
+            Length:          14
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      298
+        Replacements:    []
+      - Message:         'Access of ''memo'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      359
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+            FileOffset:      359
+            Length:          12
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-optin.taint.TaintedDiv
+    DiagnosticMessage:
+      Message:         Division by a tainted value, possibly zero
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+      FileOffset:      823
+      Replacements:    []
+    Notes:
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      963
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+            FileOffset:      963
+            Length:          27
+      - Message:         'Value assigned to ''M'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      963
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+            FileOffset:      963
+            Length:          27
+      - Message:         Taint propagated to the 4th argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      963
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+            FileOffset:      963
+            Length:          27
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      1019
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      1039
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+            FileOffset:      1039
+            Length:          10
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      1035
+        Replacements:    []
+      - Message:         ' Execution continues on line 57'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      1066
+        Replacements:    []
+      - Message:         'Calling ''dp'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      1139
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+            FileOffset:      1139
+            Length:          17
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      302
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+            FileOffset:      302
+            Length:          14
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      298
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      359
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+            FileOffset:      359
+            Length:          30
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      355
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      453
+        Replacements:    []
+      - Message:         '''limit'' is not equal to 1'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      491
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+            FileOffset:      491
+            Length:          5
+      - Message:         'Left side of ''||'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      491
+        Replacements:    []
+      - Message:         '''limit'' is equal to 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      506
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+            FileOffset:      506
+            Length:          5
+      - Message:         'Left side of ''&&'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      506
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      520
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+            FileOffset:      520
+            Length:          17
+      - Message:         'Left side of ''&&'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      490
+        Replacements:    []
+      - Message:         '''updn'' is equal to 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      545
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+            FileOffset:      545
+            Length:          4
+      - Message:         'Left side of ''&&'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      545
+        Replacements:    []
+      - Message:         '''use'' is 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      560
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+            FileOffset:      560
+            Length:          3
+      - Message:         'Left side of ''||'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      564
+        Replacements:    []
+      - Message:         '''updn'' is equal to 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      662
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+            FileOffset:      662
+            Length:          4
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      658
+        Replacements:    []
+      - Message:         '''use'' is equal to 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      682
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+            FileOffset:      682
+            Length:          3
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      678
+        Replacements:    []
+      - Message:         Division by a tainted value, possibly zero
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+        FileOffset:      823
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+            FileOffset:      808
+            Length:          18
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+      FileOffset:      953
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+          Offset:          949
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+          Offset:          959
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_t'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0070_p00493_Zig-Zag_Numbers.cpp'
+      FileOffset:      1003
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

@@ -1,0 +1,197 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0147_155_C._Hometask.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0147_155_C._Hometask.cpp'
+      FileOffset:      61
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0147_155_C._Hometask.cpp'
+          Offset:          46
+          Length:          14
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0147_155_C._Hometask.cpp'
+          Offset:          85
+          Length:          0
+          ReplacementText: ' -> vector<string>'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-deprecated-declarations
+    DiagnosticMessage:
+      Message:         '''auto_ptr<std::basic_stringstream<char>>'' is deprecated: use ''std::unique_ptr'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0147_155_C._Hometask.cpp'
+      FileOffset:      90
+      Replacements:    []
+    Notes:
+      - Message:         '''auto_ptr<std::basic_stringstream<char>>'' has been explicitly marked deprecated here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/backward/auto_ptr.h'
+        FileOffset:      9520
+        Replacements:    []
+      - Message:         'expanded from macro ''_GLIBCXX11_DEPRECATED_SUGGEST'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13/bits/c++config.h'
+        FileOffset:      3559
+        Replacements:    []
+      - Message:         'expanded from macro ''_GLIBCXX_DEPRECATED_SUGGEST'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13/bits/c++config.h'
+        FileOffset:      3282
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-replace-auto-ptr
+    DiagnosticMessage:
+      Message:         auto_ptr is deprecated, use unique_ptr instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0147_155_C._Hometask.cpp'
+      FileOffset:      90
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0147_155_C._Hometask.cpp'
+          Offset:          90
+          Length:          8
+          ReplacementText: unique_ptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-loop-convert
+    DiagnosticMessage:
+      Message:         use range-based for loop instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0147_155_C._Hometask.cpp'
+      FileOffset:      142
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0147_155_C._Hometask.cpp'
+          Offset:          146
+          Length:          30
+          ReplacementText: '(char i : s)'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0147_155_C._Hometask.cpp'
+          Offset:          218
+          Length:          4
+          ReplacementText: i
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0147_155_C._Hometask.cpp'
+          Offset:          234
+          Length:          4
+          ReplacementText: i
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0147_155_C._Hometask.cpp'
+          Offset:          311
+          Length:          4
+          ReplacementText: i
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0147_155_C._Hometask.cpp'
+          Offset:          348
+          Length:          4
+          ReplacementText: i
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0147_155_C._Hometask.cpp'
+          Offset:          364
+          Length:          4
+          ReplacementText: i
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0147_155_C._Hometask.cpp'
+          Offset:          402
+          Length:          4
+          ReplacementText: i
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0147_155_C._Hometask.cpp'
+      FileOffset:      200
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0147_155_C._Hometask.cpp'
+          Offset:          200
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0147_155_C._Hometask.cpp'
+      FileOffset:      518
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0147_155_C._Hometask.cpp'
+          Offset:          518
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0147_155_C._Hometask.cpp'
+      FileOffset:      581
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0147_155_C._Hometask.cpp'
+          Offset:          577
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0147_155_C._Hometask.cpp'
+          Offset:          606
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0147_155_C._Hometask.cpp'
+      FileOffset:      611
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-loop-convert
+    DiagnosticMessage:
+      Message:         use range-based for loop instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0147_155_C._Hometask.cpp'
+      FileOffset:      634
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0147_155_C._Hometask.cpp'
+          Offset:          638
+          Length:          30
+          ReplacementText: '(char i : s)'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0147_155_C._Hometask.cpp'
+          Offset:          679
+          Length:          4
+          ReplacementText: i
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0147_155_C._Hometask.cpp'
+      FileOffset:      774
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0147_155_C._Hometask.cpp'
+          Offset:          770
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0147_155_C._Hometask.cpp'
+          Offset:          802
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-loop-convert
+    DiagnosticMessage:
+      Message:         use range-based for loop instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0147_155_C._Hometask.cpp'
+      FileOffset:      1017
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0147_155_C._Hometask.cpp'
+          Offset:          1021
+          Length:          30
+          ReplacementText: '(const auto & j : w)'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0147_155_C._Hometask.cpp'
+          Offset:          1073
+          Length:          4
+          ReplacementText: j
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0147_155_C._Hometask.cpp'
+      FileOffset:      1113
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0147_155_C._Hometask.cpp'
+          Offset:          1113
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

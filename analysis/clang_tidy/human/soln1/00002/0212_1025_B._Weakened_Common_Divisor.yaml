@@ -1,0 +1,86 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0212_1025_B._Weakened_Common_Divisor.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0212_1025_B._Weakened_Common_Divisor.cpp'
+      FileOffset:      106
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0212_1025_B._Weakened_Common_Divisor.cpp'
+      FileOffset:      171
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0212_1025_B._Weakened_Common_Divisor.cpp'
+          Offset:          167
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0212_1025_B._Weakened_Common_Divisor.cpp'
+          Offset:          177
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory around ''arr'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0212_1025_B._Weakened_Common_Divisor.cpp'
+      FileOffset:      303
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0212_1025_B._Weakened_Common_Divisor.cpp'
+          FileOffset:      303
+          Length:          10
+    Notes:
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0212_1025_B._Weakened_Common_Divisor.cpp'
+        FileOffset:      217
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0212_1025_B._Weakened_Common_Divisor.cpp'
+            FileOffset:      217
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 11
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0212_1025_B._Weakened_Common_Divisor.cpp'
+        FileOffset:      201
+        Replacements:    []
+      - Message:         'Access of ''arr'' at a negative or overflowing index, while it holds only 150005 ''struct std::pair<int, int>'' elements'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0212_1025_B._Weakened_Common_Divisor.cpp'
+        FileOffset:      303
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0212_1025_B._Weakened_Common_Divisor.cpp'
+            FileOffset:      303
+            Length:          10
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''long long'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0212_1025_B._Weakened_Common_Divisor.cpp'
+      FileOffset:      494
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-branch-clone
+    DiagnosticMessage:
+      Message:         repeated branch body in conditional chain
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0212_1025_B._Weakened_Common_Divisor.cpp'
+      FileOffset:      842
+      Replacements:    []
+    Notes:
+      - Message:         end of the original
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0212_1025_B._Weakened_Common_Divisor.cpp'
+        FileOffset:      871
+        Replacements:    []
+      - Message:         clone 1 starts here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0212_1025_B._Weakened_Common_Divisor.cpp'
+        FileOffset:      911
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

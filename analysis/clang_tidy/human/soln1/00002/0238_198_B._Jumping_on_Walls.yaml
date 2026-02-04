@@ -1,0 +1,133 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0238_198_B._Jumping_on_Walls.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0238_198_B._Jumping_on_Walls.cpp'
+      FileOffset:      46
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0238_198_B._Jumping_on_Walls.cpp'
+      FileOffset:      70
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''dfs'' of similar type (''int'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0238_198_B._Jumping_on_Walls.cpp'
+      FileOffset:      124
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0238_198_B._Jumping_on_Walls.cpp'
+          FileOffset:      124
+          Length:          12
+    Notes:
+      - Message:         'the first parameter in the range is ''x'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0238_198_B._Jumping_on_Walls.cpp'
+        FileOffset:      128
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0238_198_B._Jumping_on_Walls.cpp'
+            FileOffset:      128
+            Length:          1
+      - Message:         'the last parameter in the range is ''y'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0238_198_B._Jumping_on_Walls.cpp'
+        FileOffset:      135
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0238_198_B._Jumping_on_Walls.cpp'
+            FileOffset:      135
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-bool-literals
+    DiagnosticMessage:
+      Message:         converting integer literal to bool, use bool literal instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0238_198_B._Jumping_on_Walls.cpp'
+      FileOffset:      203
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0238_198_B._Jumping_on_Walls.cpp'
+          Offset:          203
+          Length:          1
+          ReplacementText: 'true'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0238_198_B._Jumping_on_Walls.cpp'
+      FileOffset:      1033
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0238_198_B._Jumping_on_Walls.cpp'
+          Offset:          1029
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0238_198_B._Jumping_on_Walls.cpp'
+          Offset:          1039
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-shift-op-parentheses
+    DiagnosticMessage:
+      Message:         'operator ''>>'' has lower precedence than ''+''; ''+'' will be evaluated first'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0238_198_B._Jumping_on_Walls.cpp'
+      FileOffset:      1103
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0238_198_B._Jumping_on_Walls.cpp'
+          FileOffset:      1100
+          Length:          6
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0238_198_B._Jumping_on_Walls.cpp'
+          FileOffset:      1097
+          Length:          2
+    Notes:
+      - Message:         'place parentheses around the ''+'' expression to silence this warning'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0238_198_B._Jumping_on_Walls.cpp'
+        FileOffset:      1103
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0238_198_B._Jumping_on_Walls.cpp'
+            Offset:          1100
+            Length:          0
+            ReplacementText: '('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0238_198_B._Jumping_on_Walls.cpp'
+            Offset:          1106
+            Length:          0
+            ReplacementText: ')'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-shift-op-parentheses
+    DiagnosticMessage:
+      Message:         'operator ''>>'' has lower precedence than ''+''; ''+'' will be evaluated first'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0238_198_B._Jumping_on_Walls.cpp'
+      FileOffset:      1120
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0238_198_B._Jumping_on_Walls.cpp'
+          FileOffset:      1117
+          Length:          6
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0238_198_B._Jumping_on_Walls.cpp'
+          FileOffset:      1114
+          Length:          2
+    Notes:
+      - Message:         'place parentheses around the ''+'' expression to silence this warning'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0238_198_B._Jumping_on_Walls.cpp'
+        FileOffset:      1120
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0238_198_B._Jumping_on_Walls.cpp'
+            Offset:          1117
+            Length:          0
+            ReplacementText: '('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0238_198_B._Jumping_on_Walls.cpp'
+            Offset:          1123
+            Length:          0
+            ReplacementText: ')'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

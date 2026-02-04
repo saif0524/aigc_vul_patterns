@@ -1,0 +1,206 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0173_1100_D._Dasha_and_Chess.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0173_1100_D._Dasha_and_Chess.cpp'
+      FileOffset:      46
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0173_1100_D._Dasha_and_Chess.cpp'
+      FileOffset:      83
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0173_1100_D._Dasha_and_Chess.cpp'
+      FileOffset:      95
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''a'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0173_1100_D._Dasha_and_Chess.cpp'
+      FileOffset:      337
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0173_1100_D._Dasha_and_Chess.cpp'
+          FileOffset:      337
+          Length:          4
+    Notes:
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0173_1100_D._Dasha_and_Chess.cpp'
+        FileOffset:      178
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0173_1100_D._Dasha_and_Chess.cpp'
+            FileOffset:      178
+            Length:          14
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0173_1100_D._Dasha_and_Chess.cpp'
+        FileOffset:      174
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0173_1100_D._Dasha_and_Chess.cpp'
+        FileOffset:      271
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0173_1100_D._Dasha_and_Chess.cpp'
+            FileOffset:      271
+            Length:          27
+      - Message:         Taint propagated to the 2nd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0173_1100_D._Dasha_and_Chess.cpp'
+        FileOffset:      271
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0173_1100_D._Dasha_and_Chess.cpp'
+            FileOffset:      271
+            Length:          27
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0173_1100_D._Dasha_and_Chess.cpp'
+        FileOffset:      306
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0173_1100_D._Dasha_and_Chess.cpp'
+            FileOffset:      306
+            Length:          7
+      - Message:         'Left side of ''||'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0173_1100_D._Dasha_and_Chess.cpp'
+        FileOffset:      306
+        Replacements:    []
+      - Message:         'Assuming ''k'' is not equal to 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0173_1100_D._Dasha_and_Chess.cpp'
+        FileOffset:      317
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0173_1100_D._Dasha_and_Chess.cpp'
+            FileOffset:      317
+            Length:          2
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0173_1100_D._Dasha_and_Chess.cpp'
+        FileOffset:      302
+        Replacements:    []
+      - Message:         'Access of ''a'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0173_1100_D._Dasha_and_Chess.cpp'
+        FileOffset:      337
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0173_1100_D._Dasha_and_Chess.cpp'
+            FileOffset:      337
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-bool-literals
+    DiagnosticMessage:
+      Message:         converting integer literal to bool, use bool literal instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0173_1100_D._Dasha_and_Chess.cpp'
+      FileOffset:      355
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0173_1100_D._Dasha_and_Chess.cpp'
+          Offset:          355
+          Length:          1
+          ReplacementText: 'false'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-bool-literals
+    DiagnosticMessage:
+      Message:         converting integer literal to bool, use bool literal instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0173_1100_D._Dasha_and_Chess.cpp'
+      FileOffset:      373
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0173_1100_D._Dasha_and_Chess.cpp'
+          Offset:          373
+          Length:          1
+          ReplacementText: 'true'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0173_1100_D._Dasha_and_Chess.cpp'
+      FileOffset:      410
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0173_1100_D._Dasha_and_Chess.cpp'
+          Offset:          406
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0173_1100_D._Dasha_and_Chess.cpp'
+          Offset:          416
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''used'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0173_1100_D._Dasha_and_Chess.cpp'
+      FileOffset:      524
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0173_1100_D._Dasha_and_Chess.cpp'
+          FileOffset:      524
+          Length:          12
+    Notes:
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0173_1100_D._Dasha_and_Chess.cpp'
+        FileOffset:      450
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0173_1100_D._Dasha_and_Chess.cpp'
+        FileOffset:      487
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0173_1100_D._Dasha_and_Chess.cpp'
+            FileOffset:      487
+            Length:          31
+      - Message:         Taint propagated to the 2nd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0173_1100_D._Dasha_and_Chess.cpp'
+        FileOffset:      487
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0173_1100_D._Dasha_and_Chess.cpp'
+            FileOffset:      487
+            Length:          31
+      - Message:         'Access of ''used'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0173_1100_D._Dasha_and_Chess.cpp'
+        FileOffset:      524
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0173_1100_D._Dasha_and_Chess.cpp'
+            FileOffset:      524
+            Length:          12
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-bool-literals
+    DiagnosticMessage:
+      Message:         converting integer literal to bool, use bool literal instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0173_1100_D._Dasha_and_Chess.cpp'
+      FileOffset:      547
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0173_1100_D._Dasha_and_Chess.cpp'
+          Offset:          547
+          Length:          1
+          ReplacementText: 'true'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-bool-literals
+    DiagnosticMessage:
+      Message:         converting integer literal to bool, use bool literal instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0173_1100_D._Dasha_and_Chess.cpp'
+      FileOffset:      1135
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0173_1100_D._Dasha_and_Chess.cpp'
+          Offset:          1135
+          Length:          1
+          ReplacementText: 'true'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

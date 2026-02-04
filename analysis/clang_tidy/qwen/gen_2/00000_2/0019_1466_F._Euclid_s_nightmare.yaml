@@ -1,0 +1,73 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0019_1466_F._Euclid_s_nightmare.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0019_1466_F._Euclid_s_nightmare.cpp'
+      FileOffset:      77
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0019_1466_F._Euclid_s_nightmare.cpp'
+          Offset:          73
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0019_1466_F._Euclid_s_nightmare.cpp'
+          Offset:          83
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0019_1466_F._Euclid_s_nightmare.cpp'
+      FileOffset:      130
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0019_1466_F._Euclid_s_nightmare.cpp'
+          Offset:          130
+          Length:          1
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C VLA arrays, use ''std::vector'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0019_1466_F._Euclid_s_nightmare.cpp'
+      FileOffset:      353
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-vla-cxx-extension
+    DiagnosticMessage:
+      Message:         'variable length arrays in C++ are a Clang extension'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0019_1466_F._Euclid_s_nightmare.cpp'
+      FileOffset:      374
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0019_1466_F._Euclid_s_nightmare.cpp'
+          FileOffset:      374
+          Length:          1
+    Notes:
+      - Message:         'read of non-const variable ''m'' is not allowed in a constant expression'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0019_1466_F._Euclid_s_nightmare.cpp'
+        FileOffset:      374
+        Replacements:    []
+      - Message:         declared here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0019_1466_F._Euclid_s_nightmare.cpp'
+        FileOffset:      145
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-bool-literals
+    DiagnosticMessage:
+      Message:         converting integer literal to bool, use bool literal instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0019_1466_F._Euclid_s_nightmare.cpp'
+      FileOffset:      503
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0019_1466_F._Euclid_s_nightmare.cpp'
+          Offset:          503
+          Length:          1
+          ReplacementText: 'true'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

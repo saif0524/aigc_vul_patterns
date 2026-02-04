@@ -1,0 +1,435 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+      FileOffset:      129
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''Node'' of similar type (''int'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+      FileOffset:      241
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+          FileOffset:      241
+          Length:          12
+    Notes:
+      - Message:         'the first parameter in the range is ''x'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+        FileOffset:      245
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+            FileOffset:      245
+            Length:          1
+      - Message:         'the last parameter in the range is ''y'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+        FileOffset:      252
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+            FileOffset:      252
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''update'' of similar type (''int'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+      FileOffset:      489
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+          FileOffset:      489
+          Length:          12
+    Notes:
+      - Message:         'the first parameter in the range is ''x'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+        FileOffset:      493
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+            FileOffset:      493
+            Length:          1
+      - Message:         'the last parameter in the range is ''y'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+        FileOffset:      500
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+            FileOffset:      500
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-loop-convert
+    DiagnosticMessage:
+      Message:         use range-based for loop instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+      FileOffset:      509
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+          Offset:          513
+          Length:          23
+          ReplacementText: '(auto i : dir)'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+          Offset:          560
+          Length:          6
+          ReplacementText: i
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+          Offset:          592
+          Length:          6
+          ReplacementText: i
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+      FileOffset:      935
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+          Offset:          930
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+          Offset:          964
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-emplace
+    DiagnosticMessage:
+      Message:         use emplace instead of push
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+      FileOffset:      1652
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+          Offset:          1652
+          Length:          6
+          ReplacementText: 'emplace('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+          Offset:          1673
+          Length:          1
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'call to implicitly-deleted default constructor of ''unordered_set<vector<int>>'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+      FileOffset:      1708
+      Replacements:    []
+    Notes:
+      - Message:         explicitly defaulted function was implicitly deleted here
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/unordered_set.h'
+        FileOffset:      5257
+        Replacements:    []
+      - Message:         'default constructor of ''unordered_set<std::vector<int>>'' is implicitly deleted because field ''_M_h'' has a deleted default constructor'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/unordered_set.h'
+        FileOffset:      3954
+        Replacements:    []
+      - Message:         explicitly defaulted function was implicitly deleted here
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/hashtable.h'
+        FileOffset:      20156
+        Replacements:    []
+      - Message:         'default constructor of ''_Hashtable<std::vector<int>, std::vector<int>, std::allocator<std::vector<int>>, std::__detail::_Identity, std::equal_to<std::vector<int>>, std::hash<std::vector<int>>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, true, true>>'' is implicitly deleted because base class ''__detail::_Hashtable_base<std::vector<int, std::allocator<int>>, std::vector<int, std::allocator<int>>, std::__detail::_Identity, std::equal_to<std::vector<int, std::allocator<int>>>, std::hash<std::vector<int, std::allocator<int>>>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Hashtable_traits<true, true, true>>'' has a deleted default constructor'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/hashtable.h'
+        FileOffset:      7794
+        Replacements:    []
+      - Message:         explicitly defaulted function was implicitly deleted here
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/hashtable_policy.h'
+        FileOffset:      53985
+        Replacements:    []
+      - Message:         'default constructor of ''_Hashtable_base<std::vector<int>, std::vector<int>, std::__detail::_Identity, std::equal_to<std::vector<int>>, std::hash<std::vector<int>>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Hashtable_traits<true, true, true>>'' is implicitly deleted because base class ''_Hash_code_base<std::vector<int, std::allocator<int>>, std::vector<int, std::allocator<int>>, std::__detail::_Identity, std::hash<std::vector<int, std::allocator<int>>>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, _Hashtable_traits<true, true, true>::__hash_cached::value>'' has a deleted default constructor'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/hashtable_policy.h'
+        FileOffset:      52615
+        Replacements:    []
+      - Message:         explicitly defaulted function was implicitly deleted here
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/hashtable_policy.h'
+        FileOffset:      41845
+        Replacements:    []
+      - Message:         'default constructor of ''_Hash_code_base<std::vector<int>, std::vector<int>, std::__detail::_Identity, std::hash<std::vector<int>>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, true>'' is implicitly deleted because base class ''_Hashtable_ebo_helper<1, std::hash<std::vector<int, std::allocator<int>>>>'' has a deleted destructor'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/hashtable_policy.h'
+        FileOffset:      41248
+        Replacements:    []
+      - Message:         'destructor of ''_Hashtable_ebo_helper<1, std::hash<std::vector<int>>>'' is implicitly deleted because base class ''std::hash<std::vector<int>>'' has a deleted destructor'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/hashtable_policy.h'
+        FileOffset:      39002
+        Replacements:    []
+      - Message:         'destructor of ''hash<std::vector<int>>'' is implicitly deleted because base class ''__hash_enum<std::vector<int, std::allocator<int>>>'' has an inaccessible destructor'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/functional_hash.h'
+        FileOffset:      3135
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-loop-convert
+    DiagnosticMessage:
+      Message:         use range-based for loop instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+      FileOffset:      2048
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+          Offset:          2052
+          Length:          23
+          ReplacementText: '(auto j : dir)'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+          Offset:          2107
+          Length:          6
+          ReplacementText: j
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+          Offset:          2147
+          Length:          6
+          ReplacementText: j
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-emplace
+    DiagnosticMessage:
+      Message:         use emplace instead of push
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+      FileOffset:      2657
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+          Offset:          2657
+          Length:          6
+          ReplacementText: 'emplace('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+          Offset:          2673
+          Length:          1
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'use of undeclared identifier ''x'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+      FileOffset:      2749
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+          FileOffset:      2749
+          Length:          1
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'use of undeclared identifier ''y'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+      FileOffset:      2764
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+          FileOffset:      2764
+          Length:          1
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'invalid use of non-static data member ''x'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+      FileOffset:      2830
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+          FileOffset:      2830
+          Length:          1
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'use of undeclared identifier ''x''; did you mean ''Node::x''?'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+      FileOffset:      2830
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+          Offset:          2830
+          Length:          1
+          ReplacementText: 'Node::x'
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+          FileOffset:      2830
+          Length:          1
+    Notes:
+      - Message:         '''Node::x'' declared here'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+        FileOffset:      204
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'invalid use of non-static data member ''y'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+      FileOffset:      2866
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+          FileOffset:      2866
+          Length:          1
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'use of undeclared identifier ''y''; did you mean ''Node::y''?'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+      FileOffset:      2866
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+          Offset:          2866
+          Length:          1
+          ReplacementText: 'Node::y'
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+          FileOffset:      2866
+          Length:          1
+    Notes:
+      - Message:         '''Node::y'' declared here'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+        FileOffset:      207
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-emplace
+    DiagnosticMessage:
+      Message:         use emplace instead of push
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+      FileOffset:      3332
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+          Offset:          3332
+          Length:          6
+          ReplacementText: 'emplace('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+          Offset:          3348
+          Length:          1
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+      FileOffset:      3430
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+          Offset:          3426
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+          Offset:          3436
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'static assertion failed due to requirement ''std::__is_invocable<const std::hash<std::vector<int, std::allocator<int>>> &, const std::vector<int, std::allocator<int>> &>{}'': hash function must be invocable with an argument of key type'
+      FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/hashtable_policy.h'
+      FileOffset:      42276
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/hashtable_policy.h'
+          FileOffset:      42276
+          Length:          42
+    Notes:
+      - Message:         'in instantiation of function template specialization ''std::__detail::_Hash_code_base<std::vector<int>, std::vector<int>, std::__detail::_Identity, std::hash<std::vector<int>>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, true>::_M_hash_code_tr<std::vector<int>>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/hashtable.h'
+        FileOffset:      76446
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::_Hashtable<std::vector<int>, std::vector<int>, std::allocator<std::vector<int>>, std::__detail::_Identity, std::equal_to<std::vector<int>>, std::hash<std::vector<int>>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, true, true>>::_M_insert_unique<const std::vector<int> &, const std::vector<int> &, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::vector<int>, true>>>>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/hashtable.h'
+        FileOffset:      31232
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::_Hashtable<std::vector<int>, std::vector<int>, std::allocator<std::vector<int>>, std::__detail::_Identity, std::equal_to<std::vector<int>>, std::hash<std::vector<int>>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, true, true>>::_M_insert_unique_aux<const std::vector<int> &, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::vector<int>, true>>>>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/hashtable.h'
+        FileOffset:      31626
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::_Hashtable<std::vector<int>, std::vector<int>, std::allocator<std::vector<int>>, std::__detail::_Identity, std::equal_to<std::vector<int>>, std::hash<std::vector<int>>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, true, true>>::_M_insert<const std::vector<int> &, std::__detail::_AllocNode<std::allocator<std::__detail::_Hash_node<std::vector<int>, true>>>>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/hashtable_policy.h'
+        FileOffset:      29151
+        Replacements:    []
+      - Message:         'in instantiation of member function ''std::__detail::_Insert_base<std::vector<int>, std::vector<int>, std::allocator<std::vector<int>>, std::__detail::_Identity, std::equal_to<std::vector<int>>, std::hash<std::vector<int>>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, true, true>>::insert'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/unordered_set.h'
+        FileOffset:      14958
+        Replacements:    []
+      - Message:         'in instantiation of member function ''std::unordered_set<std::vector<int>>::insert'' requested here'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+        FileOffset:      1890
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'type ''const std::hash<std::vector<int>>'' does not provide a call operator'
+      FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/hashtable_policy.h'
+      FileOffset:      42400
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/hashtable_policy.h'
+          FileOffset:      42400
+          Length:          9
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no matching constructor for initialization of ''Node'''
+      FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_construct.h'
+      FileOffset:      4387
+      Replacements:    []
+    Notes:
+      - Message:         'in instantiation of function template specialization ''std::_Construct<Node>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_uninitialized.h'
+        FileOffset:      20375
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__uninitialized_default_n_1<false>::__uninit_default_n<Node *, unsigned long>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_uninitialized.h'
+        FileOffset:      22439
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__uninitialized_default_n<Node *, unsigned long>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_uninitialized.h'
+        FileOffset:      24533
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__uninitialized_default_n_a<Node *, unsigned long, Node>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/vector.tcc'
+        FileOffset:      20429
+        Replacements:    []
+      - Message:         'in instantiation of member function ''std::vector<Node>::_M_default_append'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h'
+        FileOffset:      33108
+        Replacements:    []
+      - Message:         'in instantiation of member function ''std::vector<Node>::resize'' requested here'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+        FileOffset:      1283
+        Replacements:    []
+      - Message:         'candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 0 were provided'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+        FileOffset:      189
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+            FileOffset:      189
+            Length:          4
+      - Message:         'candidate constructor (the implicit move constructor) not viable: requires 1 argument, but 0 were provided'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+        FileOffset:      189
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+            FileOffset:      189
+            Length:          4
+      - Message:         'candidate constructor not viable: requires 2 arguments, but 0 were provided'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+        FileOffset:      236
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0072_p00822_Weather_Forecast.cpp'
+            FileOffset:      241
+            Length:          12
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

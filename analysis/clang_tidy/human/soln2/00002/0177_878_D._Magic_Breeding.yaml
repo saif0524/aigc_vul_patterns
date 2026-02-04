@@ -1,0 +1,295 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+      FileOffset:      65
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+      FileOffset:      99
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+      FileOffset:      152
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+          Offset:          148
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+          Offset:          171
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''node'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+      FileOffset:      195
+      Replacements:    []
+    Notes:
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+        FileOffset:      377
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+            FileOffset:      377
+            Length:          34
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+        FileOffset:      370
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''k'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+        FileOffset:      469
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+            FileOffset:      469
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 24
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+        FileOffset:      453
+        Replacements:    []
+      - Message:         'Assuming ''i'' is <= ''q'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+        FileOffset:      595
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+            FileOffset:      595
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+        FileOffset:      579
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+        FileOffset:      616
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+            FileOffset:      616
+            Length:          29
+      - Message:         Taint propagated to the 3rd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+        FileOffset:      616
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+            FileOffset:      616
+            Length:          29
+      - Message:         'Assuming ''com'' is not equal to 1'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+        FileOffset:      657
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+            FileOffset:      657
+            Length:          8
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+        FileOffset:      653
+        Replacements:    []
+      - Message:         'Assuming ''com'' is not equal to 2'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+        FileOffset:      748
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+            FileOffset:      748
+            Length:          8
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+        FileOffset:      744
+        Replacements:    []
+      - Message:         'Calling ''findd'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+        FileOffset:      858
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+            FileOffset:      858
+            Length:          11
+      - Message:         'Assuming ''x'' is <= ''k'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+        FileOffset:      180
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+            FileOffset:      180
+            Length:          6
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+        FileOffset:      176
+        Replacements:    []
+      - Message:         'Access of ''node'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+        FileOffset:      195
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+            FileOffset:      195
+            Length:          7
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''ele'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+      FileOffset:      234
+      Replacements:    []
+    Notes:
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+        FileOffset:      377
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+            FileOffset:      377
+            Length:          34
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+        FileOffset:      370
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''k'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+        FileOffset:      469
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+            FileOffset:      469
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 24
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+        FileOffset:      453
+        Replacements:    []
+      - Message:         'Assuming ''i'' is <= ''q'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+        FileOffset:      595
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+            FileOffset:      595
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+        FileOffset:      579
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+        FileOffset:      616
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+            FileOffset:      616
+            Length:          29
+      - Message:         Taint propagated to the 3rd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+        FileOffset:      616
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+            FileOffset:      616
+            Length:          29
+      - Message:         'Assuming ''com'' is not equal to 1'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+        FileOffset:      657
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+            FileOffset:      657
+            Length:          8
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+        FileOffset:      653
+        Replacements:    []
+      - Message:         'Assuming ''com'' is not equal to 2'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+        FileOffset:      748
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+            FileOffset:      748
+            Length:          8
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+        FileOffset:      744
+        Replacements:    []
+      - Message:         'Calling ''findd'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+        FileOffset:      858
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+            FileOffset:      858
+            Length:          11
+      - Message:         'Assuming ''x'' is > ''k'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+        FileOffset:      180
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+            FileOffset:      180
+            Length:          6
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+        FileOffset:      176
+        Replacements:    []
+      - Message:         'Access of ''ele'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+        FileOffset:      234
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+            FileOffset:      234
+            Length:          6
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+      FileOffset:      359
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+          Offset:          355
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+          Offset:          365
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-branch-clone
+    DiagnosticMessage:
+      Message:         repeated branch body in conditional chain
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+      FileOffset:      667
+      Replacements:    []
+    Notes:
+      - Message:         end of the original
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+        FileOffset:      738
+        Replacements:    []
+      - Message:         clone 1 starts here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0177_878_D._Magic_Breeding.cpp'
+        FileOffset:      758
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

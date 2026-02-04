@@ -1,0 +1,566 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-bool-literals
+    DiagnosticMessage:
+      Message:         converting integer literal to bool, use bool literal instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+      FileOffset:      174
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+          Offset:          174
+          Length:          1
+          ReplacementText: 'false'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''double'' to ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+      FileOffset:      215
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         Out of bound access to memory around the heap area
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+      FileOffset:      560
+      Replacements:    []
+    Notes:
+      - Message:         'Calling ''read'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+        FileOffset:      2700
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+            FileOffset:      2700
+            Length:          6
+      - Message:         'Assuming ''nn'' is >= 5'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+        FileOffset:      244
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+            FileOffset:      244
+            Length:          6
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+        FileOffset:      240
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+        FileOffset:      425
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+            FileOffset:      425
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 25
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+        FileOffset:      409
+        Replacements:    []
+      - Message:         '''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+        FileOffset:      496
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+            FileOffset:      496
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 29
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+        FileOffset:      480
+        Replacements:    []
+      - Message:         'Access of ''int'' element in the heap area at a negative or overflowing index'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+        FileOffset:      560
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+            FileOffset:      560
+            Length:          11
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+      FileOffset:      589
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+          Offset:          575
+          Length:          13
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+          Offset:          608
+          Length:          0
+          ReplacementText: ' -> long long int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+      FileOffset:      723
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+          Offset:          709
+          Length:          13
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+          Offset:          738
+          Length:          0
+          ReplacementText: ' -> long long int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+      FileOffset:      775
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+          Offset:          761
+          Length:          13
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+          Offset:          795
+          Length:          0
+          ReplacementText: ' -> long long int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+      FileOffset:      966
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+          Offset:          952
+          Length:          13
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+          Offset:          1084
+          Length:          0
+          ReplacementText: ' -> long long int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+      FileOffset:      1379
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+          Offset:          1365
+          Length:          13
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+          Offset:          1482
+          Length:          0
+          ReplacementText: ' -> long long int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+      FileOffset:      2121
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+          Offset:          2117
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+          Offset:          2189
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+      FileOffset:      2384
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+          Offset:          2380
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+          Offset:          2407
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+      FileOffset:      2636
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+          Offset:          2632
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+          Offset:          2642
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+      FileOffset:      2691
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+          Offset:          2691
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+      FileOffset:      2866
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+          Offset:          2866
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+      FileOffset:      2894
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+          Offset:          2894
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+      FileOffset:      2968
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+          Offset:          2968
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+      FileOffset:      3044
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+          Offset:          3044
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+      FileOffset:      3124
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+          Offset:          3124
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+      FileOffset:      3205
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+          Offset:          3205
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+      FileOffset:      3243
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+          Offset:          3243
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+      FileOffset:      3375
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+      FileOffset:      3405
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+      FileOffset:      3436
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+      FileOffset:      3481
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+      FileOffset:      3511
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+      FileOffset:      3560
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+      FileOffset:      3604
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+      FileOffset:      4070
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+          Offset:          4070
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+      FileOffset:      4113
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+          Offset:          4113
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         Out of bound access to memory preceding the heap area
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+      FileOffset:      4421
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+          FileOffset:      4421
+          Length:          8
+    Notes:
+      - Message:         'Assuming ''TEST'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+        FileOffset:      2846
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+            FileOffset:      2846
+            Length:          4
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+        FileOffset:      2842
+        Replacements:    []
+      - Message:         'Assuming ''i'' is < ''q'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+        FileOffset:      3271
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+            FileOffset:      3271
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+        FileOffset:      3255
+        Replacements:    []
+      - Message:         'Assuming ''x'' is >= 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+        FileOffset:      3326
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+            FileOffset:      3326
+            Length:          5
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+        FileOffset:      3322
+        Replacements:    []
+      - Message:         '''TEST'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+        FileOffset:      4027
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+            FileOffset:      4027
+            Length:          4
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+        FileOffset:      4023
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+        FileOffset:      4137
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+            FileOffset:      4137
+            Length:          7
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+        FileOffset:      4133
+        Replacements:    []
+      - Message:         'Assuming ''med'' is <= ''x'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+        FileOffset:      4275
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+            FileOffset:      4275
+            Length:          7
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+        FileOffset:      4271
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+        FileOffset:      4346
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+            FileOffset:      4346
+            Length:          13
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+        FileOffset:      4342
+        Replacements:    []
+      - Message:         Access of the heap area at negative byte offset -4
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+        FileOffset:      4421
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+            FileOffset:      4421
+            Length:          8
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+      FileOffset:      4634
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+          Offset:          4634
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+      FileOffset:      4675
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+          Offset:          4675
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+      FileOffset:      4922
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+          Offset:          4922
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+      FileOffset:      5388
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+          Offset:          5388
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+      FileOffset:      5625
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+          Offset:          5625
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+      FileOffset:      5653
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0255_1053_C._Putting_Boxes_Together.cpp'
+          Offset:          5653
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

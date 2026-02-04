@@ -1,0 +1,207 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0159_p01123_Let_s_Move_Tiles_.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0159_p01123_Let_s_Move_Tiles_.cpp'
+      FileOffset:      143
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-loop-convert
+    DiagnosticMessage:
+      Message:         use range-based for loop instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0159_p01123_Let_s_Move_Tiles_.cpp'
+      FileOffset:      322
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0159_p01123_Let_s_Move_Tiles_.cpp'
+          Offset:          326
+          Length:          26
+          ReplacementText: '(auto & j : board)'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0159_p01123_Let_s_Move_Tiles_.cpp'
+          Offset:          371
+          Length:          8
+          ReplacementText: j
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0159_p01123_Let_s_Move_Tiles_.cpp'
+          Offset:          426
+          Length:          8
+          ReplacementText: j
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''value_type'' (aka ''long long'') to signed type ''char'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0159_p01123_Let_s_Move_Tiles_.cpp'
+      FileOffset:      2723
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-string-integer-assignment
+    DiagnosticMessage:
+      Message:         'an integer is interpreted as a character code when assigning it to a string; if this is intended, cast the integer to the appropriate character type; if you want a string representation, use the appropriate conversion facility'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0159_p01123_Let_s_Move_Tiles_.cpp'
+      FileOffset:      2723
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0159_p01123_Let_s_Move_Tiles_.cpp'
+          Offset:          2723
+          Length:          0
+          ReplacementText: 'std::to_string('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0159_p01123_Let_s_Move_Tiles_.cpp'
+          Offset:          2732
+          Length:          0
+          ReplacementText: ')'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no matching member function for call to ''push'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0159_p01123_Let_s_Move_Tiles_.cpp'
+      FileOffset:      2839
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0159_p01123_Let_s_Move_Tiles_.cpp'
+          FileOffset:      2835
+          Length:          8
+    Notes:
+      - Message:         'candidate function not viable: no known conversion from ''string'' (aka ''basic_string<char>'') to ''const value_type'' (aka ''const long long'') for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_stack.h'
+        FileOffset:      8549
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_stack.h'
+            FileOffset:      8554
+            Length:          21
+      - Message:         'candidate function not viable: no known conversion from ''string'' (aka ''basic_string<char>'') to ''value_type'' (aka ''long long'') for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_stack.h'
+        FileOffset:      8650
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_stack.h'
+            FileOffset:      8655
+            Length:          16
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no viable conversion from ''value_type'' (aka ''long long'') to ''string'' (aka ''basic_string<char>'')'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0159_p01123_Let_s_Move_Tiles_.cpp'
+      FileOffset:      3164
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0159_p01123_Let_s_Move_Tiles_.cpp'
+          FileOffset:      3170
+          Length:          9
+    Notes:
+      - Message:         'candidate constructor not viable: no known conversion from ''value_type'' (aka ''long long'') to ''const basic_string<char> &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+        FileOffset:      16227
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+            FileOffset:      16240
+            Length:          25
+      - Message:         'candidate constructor template not viable: no known conversion from ''value_type'' (aka ''long long'') to ''const char *'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+        FileOffset:      19690
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+            FileOffset:      19703
+            Length:          17
+      - Message:         'candidate constructor not viable: no known conversion from ''value_type'' (aka ''long long'') to ''basic_string<char> &&'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+        FileOffset:      21024
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+            FileOffset:      21037
+            Length:          20
+      - Message:         'candidate constructor not viable: no known conversion from ''value_type'' (aka ''long long'') to ''initializer_list<char>'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+        FileOffset:      21931
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+            FileOffset:      21944
+            Length:          28
+      - Message:         explicit constructor is not a candidate
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+        FileOffset:      15917
+        Replacements:    []
+      - Message:         explicit constructor is not a candidate
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+        FileOffset:      25036
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no viable conversion from ''value_type'' (aka ''long long'') to ''string'' (aka ''basic_string<char>'')'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0159_p01123_Let_s_Move_Tiles_.cpp'
+      FileOffset:      3560
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0159_p01123_Let_s_Move_Tiles_.cpp'
+          FileOffset:      3566
+          Length:          9
+    Notes:
+      - Message:         'candidate constructor not viable: no known conversion from ''value_type'' (aka ''long long'') to ''const basic_string<char> &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+        FileOffset:      16227
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+            FileOffset:      16240
+            Length:          25
+      - Message:         'candidate constructor template not viable: no known conversion from ''value_type'' (aka ''long long'') to ''const char *'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+        FileOffset:      19690
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+            FileOffset:      19703
+            Length:          17
+      - Message:         'candidate constructor not viable: no known conversion from ''value_type'' (aka ''long long'') to ''basic_string<char> &&'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+        FileOffset:      21024
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+            FileOffset:      21037
+            Length:          20
+      - Message:         'candidate constructor not viable: no known conversion from ''value_type'' (aka ''long long'') to ''initializer_list<char>'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+        FileOffset:      21931
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+            FileOffset:      21944
+            Length:          28
+      - Message:         explicit constructor is not a candidate
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+        FileOffset:      15917
+        Replacements:    []
+      - Message:         explicit constructor is not a candidate
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+        FileOffset:      25036
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0159_p01123_Let_s_Move_Tiles_.cpp'
+      FileOffset:      3982
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0159_p01123_Let_s_Move_Tiles_.cpp'
+          Offset:          3978
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0159_p01123_Let_s_Move_Tiles_.cpp'
+          Offset:          3988
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

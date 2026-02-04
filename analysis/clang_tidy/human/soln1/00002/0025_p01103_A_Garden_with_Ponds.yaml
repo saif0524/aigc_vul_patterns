@@ -1,0 +1,112 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0025_p01103_A_Garden_with_Ponds.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-using
+    DiagnosticMessage:
+      Message:         'use ''using'' instead of ''typedef'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0025_p01103_A_Garden_with_Ponds.cpp'
+      FileOffset:      45
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0025_p01103_A_Garden_with_Ponds.cpp'
+          Offset:          45
+          Length:          24
+          ReplacementText: 'using ll = long long int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-using
+    DiagnosticMessage:
+      Message:         'use ''using'' instead of ''typedef'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0025_p01103_A_Garden_with_Ponds.cpp'
+      FileOffset:      71
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0025_p01103_A_Garden_with_Ponds.cpp'
+          Offset:          71
+          Length:          22
+          ReplacementText: 'using mp = pair<ll,ll>'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0025_p01103_A_Garden_with_Ponds.cpp'
+      FileOffset:      116
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0025_p01103_A_Garden_with_Ponds.cpp'
+          Offset:          112
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0025_p01103_A_Garden_with_Ponds.cpp'
+          Offset:          122
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-bool-literals
+    DiagnosticMessage:
+      Message:         converting integer literal to bool, use bool literal instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0025_p01103_A_Garden_with_Ponds.cpp'
+      FileOffset:      131
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0025_p01103_A_Garden_with_Ponds.cpp'
+          Offset:          131
+          Length:          1
+          ReplacementText: 'true'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-min-max-use-initializer-list
+    DiagnosticMessage:
+      Message:         'do not use nested ''std::min'' calls, use an initializer list instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0025_p01103_A_Garden_with_Ponds.cpp'
+      FileOffset:      559
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0025_p01103_A_Garden_with_Ponds.cpp'
+          Offset:          24
+          Length:          0
+          ReplacementText: "\n#include <algorithm>\n"
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0025_p01103_A_Garden_with_Ponds.cpp'
+          Offset:          564
+          Length:          0
+          ReplacementText: '{'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0025_p01103_A_Garden_with_Ponds.cpp'
+          Offset:          571
+          Length:          5
+          ReplacementText: ''
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0025_p01103_A_Garden_with_Ponds.cpp'
+          Offset:          595
+          Length:          1
+          ReplacementText: '}'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-min-max-use-initializer-list
+    DiagnosticMessage:
+      Message:         'do not use nested ''std::min'' calls, use an initializer list instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0025_p01103_A_Garden_with_Ponds.cpp'
+      FileOffset:      634
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0025_p01103_A_Garden_with_Ponds.cpp'
+          Offset:          639
+          Length:          0
+          ReplacementText: '{'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0025_p01103_A_Garden_with_Ponds.cpp'
+          Offset:          646
+          Length:          5
+          ReplacementText: ''
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0025_p01103_A_Garden_with_Ponds.cpp'
+          Offset:          669
+          Length:          1
+          ReplacementText: '}'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0025_p01103_A_Garden_with_Ponds.cpp'
+      FileOffset:      859
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0025_p01103_A_Garden_with_Ponds.cpp'
+          Offset:          859
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

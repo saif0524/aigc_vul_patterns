@@ -1,0 +1,348 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0198_331_D2._Escaping_on_Beaveractor.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0198_331_D2._Escaping_on_Beaveractor.cpp'
+      FileOffset:      51
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0198_331_D2._Escaping_on_Beaveractor.cpp'
+          Offset:          47
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0198_331_D2._Escaping_on_Beaveractor.cpp'
+          Offset:          57
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0198_331_D2._Escaping_on_Beaveractor.cpp'
+      FileOffset:      104
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0198_331_D2._Escaping_on_Beaveractor.cpp'
+          Offset:          104
+          Length:          1
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'invalid operands to binary expression (''const std::pair<long long, long long>'' and ''std::pair<int, int>'')'
+      FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/predefined_ops.h'
+      FileOffset:      2710
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/predefined_ops.h'
+          FileOffset:      2704
+          Length:          5
+        - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/predefined_ops.h'
+          FileOffset:      2712
+          Length:          5
+    Notes:
+      - Message:         'in instantiation of function template specialization ''__gnu_cxx::__ops::_Val_less_iter::operator()<const std::pair<long long, long long>, __gnu_cxx::__normal_iterator<std::pair<int, int> *, std::vector<std::pair<int, int>>>>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      68708
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__upper_bound<__gnu_cxx::__normal_iterator<std::pair<int, int> *, std::vector<std::pair<int, int>>>, std::pair<long long, long long>, __gnu_cxx::__ops::_Val_less_iter>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      69871
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::upper_bound<__gnu_cxx::__normal_iterator<std::pair<int, int> *, std::vector<std::pair<int, int>>>, std::pair<long long, long long>>'' requested here'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      860
+        Replacements:    []
+      - Message:         'candidate function not viable: no known conversion from ''const std::pair<long long, long long>'' to ''const error_code'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/system_error'
+        FileOffset:      9395
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/system_error'
+            FileOffset:      9405
+            Length:          23
+      - Message:         'candidate function not viable: no known conversion from ''const std::pair<long long, long long>'' to ''const error_condition'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/system_error'
+        FileOffset:      14632
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/system_error'
+            FileOffset:      14642
+            Length:          28
+      - Message:         'candidate function not viable: no known conversion from ''const std::pair<long long, long long>'' to ''monostate'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/variant'
+        FileOffset:      44270
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/variant'
+            FileOffset:      44280
+            Length:          9
+      - Message:         'candidate function not viable: no known conversion from ''const std::pair<long long, long long>'' to ''thread::id'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/thread'
+        FileOffset:      2208
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/thread'
+            FileOffset:      2218
+            Length:          14
+      - Message:         'candidate template ignored: deduced conflicting types for parameter ''_T1'' (''long long'' vs. ''int'')'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      27847
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''reverse_iterator'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h'
+        FileOffset:      13952
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''reverse_iterator'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h'
+        FileOffset:      15465
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''__normal_iterator'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h'
+        FileOffset:      41480
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''__normal_iterator'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h'
+        FileOffset:      41792
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''move_iterator'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h'
+        FileOffset:      55773
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''move_iterator'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h'
+        FileOffset:      58140
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_string_view'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/string_view'
+        FileOffset:      20585
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_string_view'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/string_view'
+        FileOffset:      20825
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_string_view'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/string_view'
+        FileOffset:      21088
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_string'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+        FileOffset:      137230
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_string'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+        FileOffset:      137708
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''const _CharT *'' against ''std::pair<long long, long long>'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+        FileOffset:      138133
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''tuple'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      64590
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''vector'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h'
+        FileOffset:      68664
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''array'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/array'
+        FileOffset:      9943
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''unique_ptr'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/unique_ptr.h'
+        FileOffset:      26746
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''unique_ptr'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/unique_ptr.h'
+        FileOffset:      27189
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''unique_ptr'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/unique_ptr.h'
+        FileOffset:      27495
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''__shared_ptr'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr_base.h'
+        FileOffset:      53712
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''__shared_ptr'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr_base.h'
+        FileOffset:      54136
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''__shared_ptr'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr_base.h'
+        FileOffset:      54397
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''shared_ptr'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr.h'
+        FileOffset:      20876
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''shared_ptr'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr.h'
+        FileOffset:      21307
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''shared_ptr'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr.h'
+        FileOffset:      21596
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''optional'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/optional'
+        FileOffset:      36598
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''optional'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/optional'
+        FileOffset:      38657
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''optional'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/optional'
+        FileOffset:      38792
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''optional'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/optional'
+        FileOffset:      40612
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''optional'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/optional'
+        FileOffset:      40805
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''variant'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/variant'
+        FileOffset:      42843
+        Replacements:    []
+      - Message:         'expanded from macro ''_VARIANT_RELATION_FUNCTION_TEMPLATE'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/variant'
+        FileOffset:      42132
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''deque'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_deque.h'
+        FileOffset:      76520
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''list'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_list.h'
+        FileOffset:      69880
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''map'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_map.h'
+        FileOffset:      53933
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''multimap'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_multimap.h'
+        FileOffset:      41410
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''queue'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_queue.h'
+        FileOffset:      12992
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''set'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_set.h'
+        FileOffset:      35965
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''multiset'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_multiset.h'
+        FileOffset:      35614
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''stack'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_stack.h'
+        FileOffset:      12185
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14837
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      9594
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14837
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      10553
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14837
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      11519
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14837
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      12485
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14837
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      13451
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''valarray'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      39451
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      37574
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''valarray'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      39451
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      38083
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''valarray'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      39451
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      38569
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''forward_list'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/forward_list.h'
+        FileOffset:      49586
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''sub_match'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/regex.h'
+        FileOffset:      37591
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_string'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/regex.h'
+        FileOffset:      40747
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''sub_match'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/regex.h'
+        FileOffset:      44492
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''sub_match'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/regex.h'
+        FileOffset:      47385
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''sub_match'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/regex.h'
+        FileOffset:      50944
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''sub_match'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/regex.h'
+        FileOffset:      53723
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''sub_match'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/regex.h'
+        FileOffset:      57325
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

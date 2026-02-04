@@ -1,0 +1,605 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+      FileOffset:      375
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''fft_core'' of similar type (''int'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+      FileOffset:      670
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+          FileOffset:      670
+          Length:          18
+    Notes:
+      - Message:         'the first parameter in the range is ''logn'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      674
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+            FileOffset:      674
+            Length:          4
+      - Message:         'the last parameter in the range is ''sign'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      684
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+            FileOffset:      684
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-assignment-in-if-condition
+    DiagnosticMessage:
+      Message:         'an assignment within an ''if'' condition is bug-prone'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+      FileOffset:      1502
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+          FileOffset:      1499
+          Length:          10
+    Notes:
+      - Message:         'if it should be an assignment, move it out of the ''if'' condition'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      1502
+        Replacements:    []
+      - Message:         'if it is meant to be an equality check, change ''='' to ''=='''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      1502
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' or ''std::vector'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+      FileOffset:      1593
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' or ''std::vector'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+      FileOffset:      1668
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''FFT2D'' of similar type (''int'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+      FileOffset:      1871
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+          FileOffset:      1871
+          Length:          15
+    Notes:
+      - Message:         'the first parameter in the range is ''logh'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      1875
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+            FileOffset:      1875
+            Length:          4
+      - Message:         'the last parameter in the range is ''H'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      1885
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+            FileOffset:      1885
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''FFT2D'' of similar type (''int'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+      FileOffset:      1888
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+          FileOffset:      1888
+          Length:          15
+    Notes:
+      - Message:         'the first parameter in the range is ''logw'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      1892
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+            FileOffset:      1892
+            Length:          4
+      - Message:         'the last parameter in the range is ''W'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      1902
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+            FileOffset:      1902
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''FFT2Dinv'' of similar type (''int'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+      FileOffset:      2349
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+          FileOffset:      2349
+          Length:          15
+    Notes:
+      - Message:         'the first parameter in the range is ''logh'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      2353
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+            FileOffset:      2353
+            Length:          4
+      - Message:         'the last parameter in the range is ''H'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      2363
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+            FileOffset:      2363
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''FFT2Dinv'' of similar type (''int'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+      FileOffset:      2366
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+          FileOffset:      2366
+          Length:          15
+    Notes:
+      - Message:         'the first parameter in the range is ''logw'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      2370
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+            FileOffset:      2370
+            Length:          4
+      - Message:         'the last parameter in the range is ''W'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      2380
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+            FileOffset:      2380
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+      FileOffset:      2752
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+          Offset:          2748
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+          Offset:          2758
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+      FileOffset:      2901
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+      FileOffset:      3106
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-core.DivideZero
+    DiagnosticMessage:
+      Message:         Division by zero
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+      FileOffset:      3608
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+          FileOffset:      3606
+          Length:          6
+    Notes:
+      - Message:         'Value assigned to ''tH'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      2791
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+            FileOffset:      2791
+            Length:          23
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      2783
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''tH'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      2869
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+            FileOffset:      2869
+            Length:          15
+      - Message:         Loop condition is false. Execution continues on line 88
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      2852
+        Replacements:    []
+      - Message:         'Assuming ''i'' is < ''pH'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      3074
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+            FileOffset:      3074
+            Length:          15
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      3057
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''pH'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      3074
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+            FileOffset:      3074
+            Length:          15
+      - Message:         Loop condition is false. Execution continues on line 97
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      3057
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 100
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      3241
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      3282
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+            FileOffset:      3282
+            Length:          13
+      - Message:         Loop condition is false. Execution continues on line 101
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      3275
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      3366
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      3496
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+            FileOffset:      3496
+            Length:          20
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      3479
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      3550
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+            FileOffset:      3550
+            Length:          20
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      3533
+        Replacements:    []
+      - Message:         Division by zero
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      3608
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+            FileOffset:      3606
+            Length:          6
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-optin.taint.TaintedDiv
+    DiagnosticMessage:
+      Message:         Division by a tainted value, possibly zero
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+      FileOffset:      3608
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+          FileOffset:      3606
+          Length:          6
+    Notes:
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      2791
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+            FileOffset:      2791
+            Length:          23
+      - Message:         'Value assigned to ''tH'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      2791
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+            FileOffset:      2791
+            Length:          23
+      - Message:         Taint propagated to the 2nd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      2791
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+            FileOffset:      2791
+            Length:          23
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      2783
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''tH'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      2869
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+            FileOffset:      2869
+            Length:          15
+      - Message:         Loop condition is false. Execution continues on line 88
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      2852
+        Replacements:    []
+      - Message:         'Assuming ''i'' is < ''pH'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      3074
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+            FileOffset:      3074
+            Length:          15
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      3057
+        Replacements:    []
+      - Message:         'Assuming ''i'' is < ''pH'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      3074
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+            FileOffset:      3074
+            Length:          15
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      3057
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''pH'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      3074
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+            FileOffset:      3074
+            Length:          15
+      - Message:         Loop condition is false. Execution continues on line 97
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      3057
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 100
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      3241
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      3282
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+            FileOffset:      3282
+            Length:          13
+      - Message:         Loop condition is false. Execution continues on line 101
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      3275
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      3366
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      3496
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+            FileOffset:      3496
+            Length:          20
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      3479
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      3550
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+            FileOffset:      3550
+            Length:          20
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      3533
+        Replacements:    []
+      - Message:         Division by a tainted value, possibly zero
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      3608
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+            FileOffset:      3606
+            Length:          6
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-optin.taint.TaintedDiv
+    DiagnosticMessage:
+      Message:         Division by a tainted value, possibly zero
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+      FileOffset:      3616
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+          FileOffset:      3614
+          Length:          6
+    Notes:
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      2791
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+            FileOffset:      2791
+            Length:          23
+      - Message:         'Value assigned to ''tW'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      2791
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+            FileOffset:      2791
+            Length:          23
+      - Message:         Taint propagated to the 3rd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      2791
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+            FileOffset:      2791
+            Length:          23
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      2783
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''tH'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      2869
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+            FileOffset:      2869
+            Length:          15
+      - Message:         Loop condition is false. Execution continues on line 88
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      2852
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''pH'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      3074
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+            FileOffset:      3074
+            Length:          15
+      - Message:         Loop condition is false. Execution continues on line 97
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      3057
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      3248
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+            FileOffset:      3248
+            Length:          13
+      - Message:         Loop condition is false. Execution continues on line 100
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      3241
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      3282
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+            FileOffset:      3282
+            Length:          13
+      - Message:         Loop condition is false. Execution continues on line 101
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      3275
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      3366
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      3496
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+            FileOffset:      3496
+            Length:          20
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      3479
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      3550
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+            FileOffset:      3550
+            Length:          20
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      3533
+        Replacements:    []
+      - Message:         Division by a tainted value, possibly zero
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+        FileOffset:      3616
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0046_754_E._Dasha_and_cyclic_table.cpp'
+            FileOffset:      3614
+            Length:          6
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

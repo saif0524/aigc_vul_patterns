@@ -1,0 +1,154 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0082_p02260_Selection_Sort.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-deprecated-headers
+    DiagnosticMessage:
+      Message:         'inclusion of deprecated C++ header ''stdio.h''; consider using ''cstdio'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0082_p02260_Selection_Sort.cpp'
+      FileOffset:      8
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0082_p02260_Selection_Sort.cpp'
+          Offset:          8
+          Length:          9
+          ReplacementText: '<cstdio>'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0082_p02260_Selection_Sort.cpp'
+      FileOffset:      23
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0082_p02260_Selection_Sort.cpp'
+          Offset:          19
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0082_p02260_Selection_Sort.cpp'
+          Offset:          29
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0082_p02260_Selection_Sort.cpp'
+      FileOffset:      61
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-core.UndefinedBinaryOperatorResult
+    DiagnosticMessage:
+      Message:         'The left operand of ''<'' is a garbage value'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0082_p02260_Selection_Sort.cpp'
+      FileOffset:      213
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0082_p02260_Selection_Sort.cpp'
+          FileOffset:      209
+          Length:          4
+    Notes:
+      - Message:         'Assuming ''i'' is >= ''N'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0082_p02260_Selection_Sort.cpp'
+        FileOffset:      103
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0082_p02260_Selection_Sort.cpp'
+            FileOffset:      103
+            Length:          3
+      - Message:         Loop condition is false. Execution continues on line 10
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0082_p02260_Selection_Sort.cpp'
+        FileOffset:      95
+        Replacements:    []
+      - Message:         'The value 0 is assigned to ''i'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0082_p02260_Selection_Sort.cpp'
+        FileOffset:      146
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0082_p02260_Selection_Sort.cpp'
+            FileOffset:      146
+            Length:          3
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0082_p02260_Selection_Sort.cpp'
+        FileOffset:      150
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0082_p02260_Selection_Sort.cpp'
+            FileOffset:      150
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0082_p02260_Selection_Sort.cpp'
+        FileOffset:      142
+        Replacements:    []
+      - Message:         'The value 0 is assigned to ''j'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0082_p02260_Selection_Sort.cpp'
+        FileOffset:      183
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0082_p02260_Selection_Sort.cpp'
+            FileOffset:      183
+            Length:          3
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0082_p02260_Selection_Sort.cpp'
+        FileOffset:      179
+        Replacements:    []
+      - Message:         'The left operand of ''<'' is a garbage value'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0082_p02260_Selection_Sort.cpp'
+        FileOffset:      213
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0082_p02260_Selection_Sort.cpp'
+            FileOffset:      209
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''A'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0082_p02260_Selection_Sort.cpp'
+      FileOffset:      408
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0082_p02260_Selection_Sort.cpp'
+          FileOffset:      408
+          Length:          6
+    Notes:
+      - Message:         'Assuming ''i'' is >= ''N'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0082_p02260_Selection_Sort.cpp'
+        FileOffset:      103
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0082_p02260_Selection_Sort.cpp'
+            FileOffset:      103
+            Length:          3
+      - Message:         Loop condition is false. Execution continues on line 10
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0082_p02260_Selection_Sort.cpp'
+        FileOffset:      95
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0082_p02260_Selection_Sort.cpp'
+        FileOffset:      150
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0082_p02260_Selection_Sort.cpp'
+            FileOffset:      150
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 27
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0082_p02260_Selection_Sort.cpp'
+        FileOffset:      142
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 30
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0082_p02260_Selection_Sort.cpp'
+        FileOffset:      346
+        Replacements:    []
+      - Message:         'Access of ''A'' at negative byte offset'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0082_p02260_Selection_Sort.cpp'
+        FileOffset:      408
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0082_p02260_Selection_Sort.cpp'
+            FileOffset:      408
+            Length:          6
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

@@ -1,0 +1,69 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0016_p03794_Mujin_Programming_Challenge_2017_-_Oriented_Tree.cpp'
+Diagnostics:
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''dfs'' of similar type (''int'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0016_p03794_Mujin_Programming_Challenge_2017_-_Oriented_Tree.cpp'
+      FileOffset:      164
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0016_p03794_Mujin_Programming_Challenge_2017_-_Oriented_Tree.cpp'
+          FileOffset:      164
+          Length:          12
+    Notes:
+      - Message:         'the first parameter in the range is ''v'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0016_p03794_Mujin_Programming_Challenge_2017_-_Oriented_Tree.cpp'
+        FileOffset:      168
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0016_p03794_Mujin_Programming_Challenge_2017_-_Oriented_Tree.cpp'
+            FileOffset:      168
+            Length:          1
+      - Message:         'the last parameter in the range is ''p'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0016_p03794_Mujin_Programming_Challenge_2017_-_Oriented_Tree.cpp'
+        FileOffset:      175
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0016_p03794_Mujin_Programming_Challenge_2017_-_Oriented_Tree.cpp'
+            FileOffset:      175
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0016_p03794_Mujin_Programming_Challenge_2017_-_Oriented_Tree.cpp'
+      FileOffset:      306
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0016_p03794_Mujin_Programming_Challenge_2017_-_Oriented_Tree.cpp'
+          Offset:          302
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0016_p03794_Mujin_Programming_Challenge_2017_-_Oriented_Tree.cpp'
+          Offset:          312
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0016_p03794_Mujin_Programming_Challenge_2017_-_Oriented_Tree.cpp'
+      FileOffset:      813
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0016_p03794_Mujin_Programming_Challenge_2017_-_Oriented_Tree.cpp'
+      FileOffset:      874
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0016_p03794_Mujin_Programming_Challenge_2017_-_Oriented_Tree.cpp'
+          Offset:          874
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

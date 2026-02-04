@@ -1,0 +1,166 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0223_937_D._Sleepy_Game.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0223_937_D._Sleepy_Game.cpp'
+      FileOffset:      73
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0223_937_D._Sleepy_Game.cpp'
+      FileOffset:      127
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0223_937_D._Sleepy_Game.cpp'
+      FileOffset:      181
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''add'' of similar type (''int'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0223_937_D._Sleepy_Game.cpp'
+      FileOffset:      218
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0223_937_D._Sleepy_Game.cpp'
+          FileOffset:      218
+          Length:          12
+    Notes:
+      - Message:         'the first parameter in the range is ''a'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0223_937_D._Sleepy_Game.cpp'
+        FileOffset:      222
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0223_937_D._Sleepy_Game.cpp'
+            FileOffset:      222
+            Length:          1
+      - Message:         'the last parameter in the range is ''b'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0223_937_D._Sleepy_Game.cpp'
+        FileOffset:      229
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0223_937_D._Sleepy_Game.cpp'
+            FileOffset:      229
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''c'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0223_937_D._Sleepy_Game.cpp'
+      FileOffset:      329
+      Replacements:    []
+    Notes:
+      - Message:         'Assuming ''i'' is <= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0223_937_D._Sleepy_Game.cpp'
+        FileOffset:      725
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0223_937_D._Sleepy_Game.cpp'
+            FileOffset:      725
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0223_937_D._Sleepy_Game.cpp'
+        FileOffset:      709
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0223_937_D._Sleepy_Game.cpp'
+        FileOffset:      772
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0223_937_D._Sleepy_Game.cpp'
+            FileOffset:      772
+            Length:          5
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0223_937_D._Sleepy_Game.cpp'
+        FileOffset:      768
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 37
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0223_937_D._Sleepy_Game.cpp'
+        FileOffset:      791
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0223_937_D._Sleepy_Game.cpp'
+        FileOffset:      725
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0223_937_D._Sleepy_Game.cpp'
+            FileOffset:      725
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 46
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0223_937_D._Sleepy_Game.cpp'
+        FileOffset:      709
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0223_937_D._Sleepy_Game.cpp'
+        FileOffset:      899
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0223_937_D._Sleepy_Game.cpp'
+            FileOffset:      899
+            Length:          15
+      - Message:         Taint propagated to the 2nd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0223_937_D._Sleepy_Game.cpp'
+        FileOffset:      899
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0223_937_D._Sleepy_Game.cpp'
+            FileOffset:      899
+            Length:          15
+      - Message:         '''ok'' is 1'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0223_937_D._Sleepy_Game.cpp'
+        FileOffset:      923
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0223_937_D._Sleepy_Game.cpp'
+            FileOffset:      923
+            Length:          2
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0223_937_D._Sleepy_Game.cpp'
+        FileOffset:      918
+        Replacements:    []
+      - Message:         'Calling ''dfs'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0223_937_D._Sleepy_Game.cpp'
+        FileOffset:      971
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0223_937_D._Sleepy_Game.cpp'
+            FileOffset:      971
+            Length:          9
+      - Message:         'Access of ''c'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0223_937_D._Sleepy_Game.cpp'
+        FileOffset:      329
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0223_937_D._Sleepy_Game.cpp'
+            FileOffset:      329
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0223_937_D._Sleepy_Game.cpp'
+      FileOffset:      659
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0223_937_D._Sleepy_Game.cpp'
+          Offset:          655
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0223_937_D._Sleepy_Game.cpp'
+          Offset:          665
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

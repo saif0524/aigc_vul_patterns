@@ -1,0 +1,293 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+      FileOffset:      72
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+      FileOffset:      105
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+          Offset:          93
+          Length:          11
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+          Offset:          113
+          Length:          0
+          ReplacementText: ' -> vector<int>'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+      FileOffset:      1022
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+          Offset:          1018
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+          Offset:          1028
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-bool-literals
+    DiagnosticMessage:
+      Message:         converting integer literal to bool, use bool literal instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+      FileOffset:      1529
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+          Offset:          1529
+          Length:          1
+          ReplacementText: 'false'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''s'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+      FileOffset:      2062
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+          FileOffset:      2062
+          Length:          15
+    Notes:
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1063
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+            FileOffset:      1063
+            Length:          9
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1051
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1063
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+            FileOffset:      1063
+            Length:          9
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1051
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1063
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+            FileOffset:      1063
+            Length:          9
+      - Message:         Loop condition is false. Execution continues on line 48
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1051
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1118
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1157
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+            FileOffset:      1157
+            Length:          15
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1153
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1118
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1157
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+            FileOffset:      1157
+            Length:          15
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1153
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 55
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1118
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1292
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1292
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 59
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1292
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1417
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1417
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 63
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1417
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1535
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1573
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+            FileOffset:      1573
+            Length:          12
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1569
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1700
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+            FileOffset:      1700
+            Length:          20
+      - Message:         'Left side of ''&&'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1721
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1535
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1573
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+            FileOffset:      1573
+            Length:          12
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1569
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1700
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+            FileOffset:      1700
+            Length:          20
+      - Message:         'Left side of ''&&'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1721
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 71
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1535
+        Replacements:    []
+      - Message:         'Assuming ''i'' is < ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1833
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+            FileOffset:      1833
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1817
+        Replacements:    []
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1851
+        Replacements:    []
+      - Message:         'Assuming ''i'' is < ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1833
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+            FileOffset:      1833
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1817
+        Replacements:    []
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1851
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1833
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+            FileOffset:      1833
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 79
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1817
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1921
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+            FileOffset:      1921
+            Length:          12
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1917
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      2015
+        Replacements:    []
+      - Message:         'Access of ''s'' at negative byte offset -1'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      2062
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+            FileOffset:      2062
+            Length:          15
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

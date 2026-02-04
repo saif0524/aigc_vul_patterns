@@ -1,0 +1,804 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+Diagnostics:
+  - DiagnosticName:  performance-enum-size
+    DiagnosticMessage:
+      Message:         'enum ''Suit'' uses a larger base type (''unsigned int'', size: 4 bytes) than necessary for its value set, consider using ''std::uint8_t'' (1 byte) as the base type to reduce its size'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+      FileOffset:      52
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-enum-size
+    DiagnosticMessage:
+      Message:         'enum ''Rank'' uses a larger base type (''unsigned int'', size: 4 bytes) than necessary for its value set, consider using ''std::uint8_t'' (1 byte) as the base type to reduce its size'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+      FileOffset:      78
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+      FileOffset:      149
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+      FileOffset:      195
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nodiscard
+    DiagnosticMessage:
+      Message:         'function ''full'' should be marked [[nodiscard]]'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+      FileOffset:      307
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+          Offset:          307
+          Length:          0
+          ReplacementText: '[[nodiscard]] '
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+      FileOffset:      311
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+          Offset:          307
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+          Offset:          323
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nodiscard
+    DiagnosticMessage:
+      Message:         'function ''is_neighbor'' should be marked [[nodiscard]]'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+      FileOffset:      393
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+          Offset:          393
+          Length:          0
+          ReplacementText: '[[nodiscard]] '
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+      FileOffset:      398
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+          Offset:          393
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+          Offset:          434
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+      FileOffset:      596
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+          Offset:          591
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+          Offset:          623
+          Length:          0
+          ReplacementText: ' -> Card'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-switch-missing-default-case
+    DiagnosticMessage:
+      Message:         switching on non-enum value without default case may not cover all cases
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+      FileOffset:      660
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-switch-missing-default-case
+    DiagnosticMessage:
+      Message:         switching on non-enum value without default case may not cover all cases
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+      FileOffset:      826
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+      FileOffset:      1399
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+      FileOffset:      2180
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+          Offset:          2176
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+          Offset:          2202
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+      FileOffset:      2878
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+          Offset:          2873
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+          Offset:          2917
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+      FileOffset:      3041
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+          Offset:          3037
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+          Offset:          3047
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         "use of undeclared identifier '机器人A选择了某張卡牌移動到右桌並且沒有其他機器人在此刻衝突'"
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+      FileOffset:      5240
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+          FileOffset:      5240
+          Length:          88
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         "use of undeclared identifier '機器人A選擇了某張卡牌移動到左桌並且確實沒有其他機器人在此刻衝突'"
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+      FileOffset:      5353
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+          FileOffset:      5353
+          Length:          94
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         "use of undeclared identifier '與機器人B選擇了同一張卡牌移動到同一張桌子，但機器人A優先'"
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+      FileOffset:      5452
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+          FileOffset:      5452
+          Length:          83
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'character <U+FF0C> not allowed in an identifier'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+      FileOffset:      5513
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+          Offset:          5513
+          Length:          3
+          ReplacementText: ''
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+          FileOffset:      5513
+          Length:          3
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no viable overloaded ''='''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+      FileOffset:      5693
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+          FileOffset:      5681
+          Length:          11
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+          FileOffset:      5695
+          Length:          167
+    Notes:
+      - Message:         'candidate function not viable: cannot convert initializer list argument to ''const pair<bool, Card>'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      24352
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+            FileOffset:      24362
+            Length:          131
+      - Message:         'candidate function not viable: cannot convert initializer list argument to ''pair<bool, Card>'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      24587
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+            FileOffset:      24597
+            Length:          121
+      - Message:         'candidate template ignored: couldn''t infer template argument ''_U1'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      25121
+        Replacements:    []
+      - Message:         'candidate template ignored: couldn''t infer template argument ''_U1'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      25388
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'invalid operands to binary expression (''Card'' and ''int'')'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+      FileOffset:      6138
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+          FileOffset:      6119
+          Length:          18
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+          FileOffset:      6140
+          Length:          2
+    Notes:
+      - Message:         'candidate template ignored: could not match ''_Expr<_Dom1, typename _Dom1::value_type>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14210
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      9594
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr<_Dom, typename _Dom::value_type>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14210
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      10553
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr<_Dom, typename _Dom::value_type>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14210
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      11519
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr<_Dom, typename _Dom::value_type>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14210
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      12485
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr<_Dom, typename _Dom::value_type>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14210
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      13451
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''valarray<_Tp>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      39034
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      37574
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''valarray<_Tp>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      39034
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      38083
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''valarray<_Tp>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      39034
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      38569
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'invalid operands to binary expression (''Card'' and ''int'')'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+      FileOffset:      6178
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+          FileOffset:      6159
+          Length:          18
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+          FileOffset:      6180
+          Length:          2
+    Notes:
+      - Message:         'candidate template ignored: could not match ''_Expr<_Dom1, typename _Dom1::value_type>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14210
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      9594
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr<_Dom, typename _Dom::value_type>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14210
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      10553
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr<_Dom, typename _Dom::value_type>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14210
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      11519
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr<_Dom, typename _Dom::value_type>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14210
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      12485
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr<_Dom, typename _Dom::value_type>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14210
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      13451
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''valarray<_Tp>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      39034
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      37574
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''valarray<_Tp>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      39034
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      38083
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''valarray<_Tp>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      39034
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      38569
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'invalid operands to binary expression (''Card'' and ''int'')'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+      FileOffset:      6185
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+          FileOffset:      6084
+          Length:          100
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0230_p01210_Speed.cpp'
+          FileOffset:      6188
+          Length:          15
+    Notes:
+      - Message:         'candidate function not viable: no known conversion from ''Card'' to ''const error_code'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/system_error'
+        FileOffset:      12981
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/system_error'
+            FileOffset:      12992
+            Length:          23
+      - Message:         'candidate function not viable: no known conversion from ''Card'' to ''const error_code'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/system_error'
+        FileOffset:      13461
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/system_error'
+            FileOffset:      13472
+            Length:          23
+      - Message:         'candidate function not viable: no known conversion from ''Card'' to ''const error_condition'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/system_error'
+        FileOffset:      13892
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/system_error'
+            FileOffset:      13903
+            Length:          28
+      - Message:         'candidate function not viable: no known conversion from ''Card'' to ''const error_condition'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/system_error'
+        FileOffset:      14904
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/system_error'
+            FileOffset:      14915
+            Length:          28
+      - Message:         'candidate function not viable: no known conversion from ''Card'' to ''monostate'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/variant'
+        FileOffset:      43213
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/variant'
+            FileOffset:      43224
+            Length:          9
+      - Message:         'candidate function not viable: no known conversion from ''Card'' to ''thread::id'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/std_thread.h'
+        FileOffset:      8646
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/std_thread.h'
+            FileOffset:      8657
+            Length:          14
+      - Message:         'candidate template ignored: could not match ''pair<_T1, _T2>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      26900
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''reverse_iterator<_Iterator>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h'
+        FileOffset:      13716
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''reverse_iterator<_IteratorL>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h'
+        FileOffset:      15205
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''move_iterator<_IteratorL>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h'
+        FileOffset:      54786
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''move_iterator<_Iterator>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h'
+        FileOffset:      57401
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''fpos<_StateT>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/postypes.h'
+        FileOffset:      6507
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''allocator<_T1>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/allocator.h'
+        FileOffset:      7338
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_string_view<_CharT, _Traits>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/string_view'
+        FileOffset:      18278
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_string_view<_CharT, _Traits>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/string_view'
+        FileOffset:      18547
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_string_view<_CharT, _Traits>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/string_view'
+        FileOffset:      19556
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_string<_CharT, _Traits, _Alloc>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+        FileOffset:      132982
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_string<_CharT, _Traits, _Alloc>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+        FileOffset:      133580
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''const _CharT *'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+        FileOffset:      135422
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''tuple<_TElements...>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      63126
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''function<_Res (_Args...)>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/std_function.h'
+        FileOffset:      21773
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''function<_Res (_Args...)>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/std_function.h'
+        FileOffset:      22009
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''unordered_map<_Key, _Tp, _Hash, _Pred, _Alloc>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/unordered_map.h'
+        FileOffset:      73919
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''unordered_multimap<_Key, _Tp, _Hash, _Pred, _Alloc>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/unordered_map.h'
+        FileOffset:      74510
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''vector<_Tp, _Alloc>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h'
+        FileOffset:      67161
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''array<_Tp, _Nm>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/array'
+        FileOffset:      8830
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''istreambuf_iterator<_CharT, _Traits>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/streambuf_iterator.h'
+        FileOffset:      7495
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''unique_ptr<_Tp, _Dp>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/unique_ptr.h'
+        FileOffset:      25154
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''unique_ptr<_Tp, _Dp>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/unique_ptr.h'
+        FileOffset:      25423
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''unique_ptr<_Tp, _Dp>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/unique_ptr.h'
+        FileOffset:      25671
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''__shared_ptr<_Tp1, _Lp>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr_base.h'
+        FileOffset:      52079
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''__shared_ptr<_Tp, _Lp>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr_base.h'
+        FileOffset:      52282
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''__shared_ptr<_Tp, _Lp>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr_base.h'
+        FileOffset:      53016
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''shared_ptr<_Tp>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr.h'
+        FileOffset:      19057
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''shared_ptr<_Tp>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr.h'
+        FileOffset:      19278
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''shared_ptr<_Tp>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr.h'
+        FileOffset:      19983
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''scoped_allocator_adaptor<_OutA1, _InA...>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/scoped_allocator'
+        FileOffset:      17024
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''optional<_Tp>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/optional'
+        FileOffset:      36025
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''optional<_Tp>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/optional'
+        FileOffset:      37900
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''optional<_Tp>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/optional'
+        FileOffset:      38228
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''optional<_Tp>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/optional'
+        FileOffset:      39834
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''optional<_Tp>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/optional'
+        FileOffset:      40028
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''variant<_Types...>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/variant'
+        FileOffset:      42944
+        Replacements:    []
+      - Message:         'expanded from macro ''_VARIANT_RELATION_FUNCTION_TEMPLATE'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/variant'
+        FileOffset:      42132
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''complex<_Tp>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/complex'
+        FileOffset:      13569
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''complex<_Tp>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/complex'
+        FileOffset:      13764
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''complex<_Tp>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/complex'
+        FileOffset:      13988
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''deque<_Tp, _Alloc>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_deque.h'
+        FileOffset:      75017
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''list<_Tp, _Alloc>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_list.h'
+        FileOffset:      68010
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''map<_Key, _Tp, _Compare, _Alloc>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_map.h'
+        FileOffset:      52383
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''multimap<_Key, _Tp, _Compare, _Alloc>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_multimap.h'
+        FileOffset:      39803
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''queue<_Tp, _Seq>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_queue.h'
+        FileOffset:      12259
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''set<_Key, _Compare, _Alloc>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_set.h'
+        FileOffset:      34476
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''multiset<_Key, _Compare, _Alloc>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_multiset.h'
+        FileOffset:      34073
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''stack<_Tp, _Seq>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_stack.h'
+        FileOffset:      11454
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr<_Dom1, typename _Dom1::value_type>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14711
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      9594
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr<_Dom, typename _Dom::value_type>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14711
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      10553
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr<_Dom, typename _Dom::value_type>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14711
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      11519
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr<_Dom, typename _Dom::value_type>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14711
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      12485
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr<_Dom, typename _Dom::value_type>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14711
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      13451
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''valarray<_Tp>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      39367
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      37574
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''valarray<_Tp>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      39367
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      38083
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''valarray<_Tp>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      39367
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      38569
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''forward_list<_Tp, _Alloc>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/forward_list.tcc'
+        FileOffset:      11051
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''std::normal_distribution<_RealType>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      59904
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''sub_match<_BiIter>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/regex.h'
+        FileOffset:      36013
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''__sub_match_string<_Bi_iter, _Ch_traits, _Ch_alloc>'' (aka ''basic_string<typename iterator_traits<_Bi_iter>::value_type, _Ch_traits, _Ch_alloc>'') against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/regex.h'
+        FileOffset:      39727
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''sub_match<_Bi_iter>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/regex.h'
+        FileOffset:      42754
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''sub_match<_Bi_iter>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/regex.h'
+        FileOffset:      46446
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''sub_match<_Bi_iter>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/regex.h'
+        FileOffset:      49257
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''sub_match<_Bi_iter>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/regex.h'
+        FileOffset:      52772
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''sub_match<_Bi_iter>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/regex.h'
+        FileOffset:      55607
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''match_results<_Bi_iter, _Alloc>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/regex.h'
+        FileOffset:      73513
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''unordered_set<_Value, _Hash, _Pred, _Alloc>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/unordered_set.h'
+        FileOffset:      60318
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''unordered_multiset<_Value, _Hash, _Pred, _Alloc>'' against ''Card'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/unordered_set.h'
+        FileOffset:      60879
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

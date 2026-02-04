@@ -1,0 +1,203 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-deprecated-headers
+    DiagnosticMessage:
+      Message:         'inclusion of deprecated C++ header ''stdio.h''; consider using ''cstdio'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+      FileOffset:      8
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+          Offset:          8
+          Length:          9
+          ReplacementText: '<cstdio>'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+      FileOffset:      22
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+          Offset:          18
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+          Offset:          32
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-redundant-void-arg
+    DiagnosticMessage:
+      Message:         redundant void argument list in function definition
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+      FileOffset:      27
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+          Offset:          27
+          Length:          4
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-optin.taint.TaintedDiv
+    DiagnosticMessage:
+      Message:         Division by a tainted value, possibly zero
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+      FileOffset:      107
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+          FileOffset:      106
+          Length:          3
+    Notes:
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+        FileOffset:      53
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+            FileOffset:      53
+            Length:          26
+      - Message:         'Value assigned to ''a'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+        FileOffset:      53
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+            FileOffset:      53
+            Length:          26
+      - Message:         Taint propagated to the 2nd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+        FileOffset:      53
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+            FileOffset:      53
+            Length:          26
+      - Message:         'The value of ''a'' is assigned to ''x'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+        FileOffset:      86
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+            FileOffset:      86
+            Length:          3
+      - Message:         'Assuming ''x'' is <= ''b'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+        FileOffset:      90
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+            FileOffset:      90
+            Length:          4
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+        FileOffset:      82
+        Replacements:    []
+      - Message:         Division by a tainted value, possibly zero
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+        FileOffset:      107
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+            FileOffset:      106
+            Length:          3
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-core.uninitialized.Assign
+    DiagnosticMessage:
+      Message:         The expression uses uninitialized memory
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+      FileOffset:      118
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+          FileOffset:      118
+          Length:          1
+    Notes:
+      - Message:         '''d'' declared without an initial value'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+        FileOffset:      45
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+            FileOffset:      45
+            Length:          1
+      - Message:         'Assuming ''x'' is <= ''b'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+        FileOffset:      90
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+            FileOffset:      90
+            Length:          4
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+        FileOffset:      82
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+        FileOffset:      106
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+            FileOffset:      106
+            Length:          6
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+        FileOffset:      103
+        Replacements:    []
+      - Message:         The expression uses uninitialized memory
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+        FileOffset:      118
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+            FileOffset:      118
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-core.CallAndMessage
+    DiagnosticMessage:
+      Message:         2nd function call argument is an uninitialized value
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+      FileOffset:      131
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+          FileOffset:      145
+          Length:          1
+    Notes:
+      - Message:         '''d'' declared without an initial value'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+        FileOffset:      45
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+            FileOffset:      45
+            Length:          1
+      - Message:         'Assuming ''x'' is > ''b'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+        FileOffset:      90
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+            FileOffset:      90
+            Length:          4
+      - Message:         Loop condition is false. Execution continues on line 10
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+        FileOffset:      82
+        Replacements:    []
+      - Message:         2nd function call argument is an uninitialized value
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+        FileOffset:      131
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0238_p02398_How_Many_Divisors_.cpp'
+            FileOffset:      145
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

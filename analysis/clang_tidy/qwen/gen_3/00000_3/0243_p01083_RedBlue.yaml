@@ -1,0 +1,1436 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0243_p01083_RedBlue.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-using
+    DiagnosticMessage:
+      Message:         'use ''using'' instead of ''typedef'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0243_p01083_RedBlue.cpp'
+      FileOffset:      47
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0243_p01083_RedBlue.cpp'
+          Offset:          47
+          Length:          25
+          ReplacementText: 'using P = complex<double>'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0243_p01083_RedBlue.cpp'
+      FileOffset:      133
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0243_p01083_RedBlue.cpp'
+          Offset:          128
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0243_p01083_RedBlue.cpp'
+          Offset:          162
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0243_p01083_RedBlue.cpp'
+      FileOffset:      208
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0243_p01083_RedBlue.cpp'
+          Offset:          201
+          Length:          6
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0243_p01083_RedBlue.cpp'
+          Offset:          224
+          Length:          0
+          ReplacementText: ' -> double'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0243_p01083_RedBlue.cpp'
+      FileOffset:      260
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0243_p01083_RedBlue.cpp'
+          Offset:          255
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0243_p01083_RedBlue.cpp'
+          Offset:          311
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0243_p01083_RedBlue.cpp'
+      FileOffset:      466
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0243_p01083_RedBlue.cpp'
+          Offset:          462
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0243_p01083_RedBlue.cpp'
+          Offset:          472
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'invalid operands to binary expression (''istream'' (aka ''basic_istream<char>'') and ''double'')'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0243_p01083_RedBlue.cpp'
+      FileOffset:      540
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0243_p01083_RedBlue.cpp'
+          FileOffset:      536
+          Length:          3
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0243_p01083_RedBlue.cpp'
+          FileOffset:      543
+          Length:          4
+    Notes:
+      - Message:         'candidate function template not viable: no known conversion from ''double'' to ''unsigned char &'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      27478
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      27525
+            Length:          18
+      - Message:         'candidate function template not viable: no known conversion from ''double'' to ''signed char &'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      27672
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      27719
+            Length:          16
+      - Message:         'candidate function template not viable: no known conversion from ''double'' to ''unsigned char *'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      30745
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      30792
+            Length:          18
+      - Message:         'candidate function template not viable: no known conversion from ''double'' to ''signed char *'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      31004
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      31051
+            Length:          16
+      - Message:         'candidate function template not viable: no known conversion from ''double'' to ''_Resetiosflags'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iomanip'
+        FileOffset:      2126
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iomanip'
+            FileOffset:      2175
+            Length:          18
+      - Message:         'candidate function template not viable: no known conversion from ''double'' to ''_Setiosflags'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iomanip'
+        FileOffset:      2954
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iomanip'
+            FileOffset:      3003
+            Length:          16
+      - Message:         'candidate function template not viable: no known conversion from ''double'' to ''_Setbase'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iomanip'
+        FileOffset:      3810
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iomanip'
+            FileOffset:      3859
+            Length:          12
+      - Message:         'candidate function template not viable: no known conversion from ''double'' to ''_Setprecision'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iomanip'
+        FileOffset:      5646
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iomanip'
+            FileOffset:      5695
+            Length:          17
+      - Message:         'candidate function template not viable: no known conversion from ''double'' to ''_Setw'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iomanip'
+        FileOffset:      6363
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iomanip'
+            FileOffset:      6412
+            Length:          9
+      - Message:         'candidate function template not viable: no known conversion from ''double'' to ''std::bernoulli_distribution &'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.h'
+        FileOffset:      114262
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.h'
+            FileOffset:      114324
+            Length:          32
+      - Message:         'candidate function template not viable: no known conversion from ''istream'' (aka ''basic_istream<char>'') to ''byte'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/cstddef'
+        FileOffset:      4835
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/cstddef'
+            FileOffset:      4846
+            Length:          8
+      - Message:         'candidate template ignored: deduced conflicting types for parameter ''_CharT'' (''char'' vs. ''double'')'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/istream.tcc'
+        FileOffset:      26300
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_string<_CharT, _Traits, _Alloc>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.tcc'
+        FileOffset:      24272
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''bitset<_Nb>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bitset'
+        FileOffset:      46440
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_CharT *'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      29251
+        Replacements:    []
+      - Message:         'candidate template ignored: requirement ''__and_<std::is_class<std::basic_istream<char, std::char_traits<char>> &>, std::__not_<std::is_same<std::basic_istream<char, std::char_traits<char>> &, std::ios_base>>, std::is_convertible<std::basic_istream<char, std::char_traits<char>> *, std::ios_base *>>::value'' was not satisfied [with _Istream = istream &, _Tp = double]'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      36077
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''complex<_Tp>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/complex'
+        FileOffset:      14862
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Setfill<_CharT>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iomanip'
+        FileOffset:      4897
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Get_money<_MoneyT>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iomanip'
+        FileOffset:      7386
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Get_time<_CharT>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iomanip'
+        FileOffset:      11970
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr'' against ''basic_istream'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14520
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      9594
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr'' against ''basic_istream'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14520
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      10553
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr<_Dom, typename _Dom::value_type>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14520
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      11519
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr'' against ''basic_istream'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14520
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      12485
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr<_Dom, typename _Dom::value_type>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14520
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      13451
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''valarray'' against ''basic_istream'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      39239
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      37574
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''valarray'' against ''basic_istream'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      39239
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      38083
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''valarray<_Tp>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      39239
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      38569
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''linear_congruential_engine<_UIntType, __a, __c, __m>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      5560
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      17044
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''subtract_with_carry_engine<_UIntType, __w, __s, __r>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      22034
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''discard_block_engine<_RandomNumberEngine, __p, __r>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      24138
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''shuffle_order_engine<_RandomNumberEngine, __k>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      29048
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''uniform_int_distribution<_IntType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      30318
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''uniform_real_distribution<_RealType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      32386
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''geometric_distribution<_IntType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      36917
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''negative_binomial_distribution<_IntType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      40702
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''poisson_distribution<_IntType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      46757
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''binomial_distribution<_IntType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      54609
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''exponential_distribution<_RealType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      56632
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''normal_distribution<_RealType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      61287
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''lognormal_distribution<_RealType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      63454
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''chi_squared_distribution<_RealType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      65897
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''cauchy_distribution<_RealType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      68621
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''fisher_f_distribution<_RealType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      71260
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''student_t_distribution<_RealType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      73830
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''gamma_distribution<_RealType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      78594
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''weibull_distribution<_RealType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      81221
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''extreme_value_distribution<_RealType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      83766
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''discrete_distribution<_IntType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      88355
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''piecewise_constant_distribution<_RealType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      94384
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''piecewise_linear_distribution<_RealType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      100616
+        Replacements:    []
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''__istream_type &(*)(__istream_type &)'' (aka ''basic_istream<char, std::char_traits<char>> &(*)(basic_istream<char, std::char_traits<char>> &)'') for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      3847
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      3858
+            Length:          40
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''__ios_type &(*)(__ios_type &)'' (aka ''basic_ios<char, std::char_traits<char>> &(*)(basic_ios<char, std::char_traits<char>> &)'') for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      3959
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      3970
+            Length:          32
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''ios_base &(*)(ios_base &)'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      4078
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      4089
+            Length:          28
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''bool &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      5439
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      5450
+            Length:          9
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''short &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      5524
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      5535
+            Length:          10
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''unsigned short &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      5577
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      5588
+            Length:          19
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''int &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      5672
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      5683
+            Length:          8
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''unsigned int &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      5723
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      5734
+            Length:          17
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''long &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      5816
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      5827
+            Length:          9
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''unsigned long &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      5901
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      5912
+            Length:          18
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''long long &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      6025
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      6036
+            Length:          14
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''unsigned long long &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      6115
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      6126
+            Length:          23
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''float &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      6565
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      6576
+            Length:          10
+      - Message:         'candidate function not viable: expects an lvalue for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      6651
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      6662
+            Length:          11
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''long double &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      6738
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      6749
+            Length:          16
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''void *&'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      9311
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      9322
+            Length:          10
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''__streambuf_type *'' (aka ''basic_streambuf<char, std::char_traits<char>> *'') for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      10280
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      10291
+            Length:          22
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'invalid operands to binary expression (''istream'' (aka ''basic_istream<char>'') and ''double'')'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0243_p01083_RedBlue.cpp'
+      FileOffset:      643
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0243_p01083_RedBlue.cpp'
+          FileOffset:      639
+          Length:          3
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0243_p01083_RedBlue.cpp'
+          FileOffset:      646
+          Length:          3
+    Notes:
+      - Message:         'candidate function template not viable: no known conversion from ''double'' to ''unsigned char &'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      27478
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      27525
+            Length:          18
+      - Message:         'candidate function template not viable: no known conversion from ''double'' to ''signed char &'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      27672
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      27719
+            Length:          16
+      - Message:         'candidate function template not viable: no known conversion from ''double'' to ''unsigned char *'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      30745
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      30792
+            Length:          18
+      - Message:         'candidate function template not viable: no known conversion from ''double'' to ''signed char *'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      31004
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      31051
+            Length:          16
+      - Message:         'candidate function template not viable: no known conversion from ''double'' to ''_Resetiosflags'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iomanip'
+        FileOffset:      2126
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iomanip'
+            FileOffset:      2175
+            Length:          18
+      - Message:         'candidate function template not viable: no known conversion from ''double'' to ''_Setiosflags'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iomanip'
+        FileOffset:      2954
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iomanip'
+            FileOffset:      3003
+            Length:          16
+      - Message:         'candidate function template not viable: no known conversion from ''double'' to ''_Setbase'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iomanip'
+        FileOffset:      3810
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iomanip'
+            FileOffset:      3859
+            Length:          12
+      - Message:         'candidate function template not viable: no known conversion from ''double'' to ''_Setprecision'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iomanip'
+        FileOffset:      5646
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iomanip'
+            FileOffset:      5695
+            Length:          17
+      - Message:         'candidate function template not viable: no known conversion from ''double'' to ''_Setw'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iomanip'
+        FileOffset:      6363
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iomanip'
+            FileOffset:      6412
+            Length:          9
+      - Message:         'candidate function template not viable: no known conversion from ''double'' to ''std::bernoulli_distribution &'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.h'
+        FileOffset:      114262
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.h'
+            FileOffset:      114324
+            Length:          32
+      - Message:         'candidate function template not viable: no known conversion from ''istream'' (aka ''basic_istream<char>'') to ''byte'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/cstddef'
+        FileOffset:      4835
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/cstddef'
+            FileOffset:      4846
+            Length:          8
+      - Message:         'candidate template ignored: deduced conflicting types for parameter ''_CharT'' (''char'' vs. ''double'')'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/istream.tcc'
+        FileOffset:      26300
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_string<_CharT, _Traits, _Alloc>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.tcc'
+        FileOffset:      24272
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''bitset<_Nb>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bitset'
+        FileOffset:      46440
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_CharT *'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      29251
+        Replacements:    []
+      - Message:         'candidate template ignored: requirement ''__and_<std::is_class<std::basic_istream<char, std::char_traits<char>> &>, std::__not_<std::is_same<std::basic_istream<char, std::char_traits<char>> &, std::ios_base>>, std::is_convertible<std::basic_istream<char, std::char_traits<char>> *, std::ios_base *>>::value'' was not satisfied [with _Istream = istream &, _Tp = double]'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      36077
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''complex<_Tp>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/complex'
+        FileOffset:      14862
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Setfill<_CharT>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iomanip'
+        FileOffset:      4897
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Get_money<_MoneyT>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iomanip'
+        FileOffset:      7386
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Get_time<_CharT>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iomanip'
+        FileOffset:      11970
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr'' against ''basic_istream'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14520
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      9594
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr'' against ''basic_istream'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14520
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      10553
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr<_Dom, typename _Dom::value_type>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14520
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      11519
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr'' against ''basic_istream'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14520
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      12485
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr<_Dom, typename _Dom::value_type>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14520
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      13451
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''valarray'' against ''basic_istream'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      39239
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      37574
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''valarray'' against ''basic_istream'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      39239
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      38083
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''valarray<_Tp>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      39239
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      38569
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''linear_congruential_engine<_UIntType, __a, __c, __m>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      5560
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      17044
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''subtract_with_carry_engine<_UIntType, __w, __s, __r>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      22034
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''discard_block_engine<_RandomNumberEngine, __p, __r>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      24138
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''shuffle_order_engine<_RandomNumberEngine, __k>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      29048
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''uniform_int_distribution<_IntType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      30318
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''uniform_real_distribution<_RealType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      32386
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''geometric_distribution<_IntType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      36917
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''negative_binomial_distribution<_IntType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      40702
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''poisson_distribution<_IntType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      46757
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''binomial_distribution<_IntType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      54609
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''exponential_distribution<_RealType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      56632
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''normal_distribution<_RealType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      61287
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''lognormal_distribution<_RealType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      63454
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''chi_squared_distribution<_RealType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      65897
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''cauchy_distribution<_RealType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      68621
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''fisher_f_distribution<_RealType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      71260
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''student_t_distribution<_RealType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      73830
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''gamma_distribution<_RealType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      78594
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''weibull_distribution<_RealType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      81221
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''extreme_value_distribution<_RealType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      83766
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''discrete_distribution<_IntType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      88355
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''piecewise_constant_distribution<_RealType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      94384
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''piecewise_linear_distribution<_RealType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      100616
+        Replacements:    []
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''__istream_type &(*)(__istream_type &)'' (aka ''basic_istream<char, std::char_traits<char>> &(*)(basic_istream<char, std::char_traits<char>> &)'') for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      3847
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      3858
+            Length:          40
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''__ios_type &(*)(__ios_type &)'' (aka ''basic_ios<char, std::char_traits<char>> &(*)(basic_ios<char, std::char_traits<char>> &)'') for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      3959
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      3970
+            Length:          32
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''ios_base &(*)(ios_base &)'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      4078
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      4089
+            Length:          28
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''bool &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      5439
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      5450
+            Length:          9
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''short &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      5524
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      5535
+            Length:          10
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''unsigned short &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      5577
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      5588
+            Length:          19
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''int &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      5672
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      5683
+            Length:          8
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''unsigned int &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      5723
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      5734
+            Length:          17
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''long &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      5816
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      5827
+            Length:          9
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''unsigned long &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      5901
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      5912
+            Length:          18
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''long long &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      6025
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      6036
+            Length:          14
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''unsigned long long &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      6115
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      6126
+            Length:          23
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''float &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      6565
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      6576
+            Length:          10
+      - Message:         'candidate function not viable: expects an lvalue for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      6651
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      6662
+            Length:          11
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''long double &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      6738
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      6749
+            Length:          16
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''void *&'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      9311
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      9322
+            Length:          10
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''__streambuf_type *'' (aka ''basic_streambuf<char, std::char_traits<char>> *'') for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      10280
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      10291
+            Length:          22
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'invalid operands to binary expression (''istream'' (aka ''basic_istream<char>'') and ''double'')'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0243_p01083_RedBlue.cpp'
+      FileOffset:      686
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0243_p01083_RedBlue.cpp'
+          FileOffset:      682
+          Length:          3
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0243_p01083_RedBlue.cpp'
+          FileOffset:      689
+          Length:          3
+    Notes:
+      - Message:         'candidate function template not viable: no known conversion from ''double'' to ''unsigned char &'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      27478
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      27525
+            Length:          18
+      - Message:         'candidate function template not viable: no known conversion from ''double'' to ''signed char &'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      27672
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      27719
+            Length:          16
+      - Message:         'candidate function template not viable: no known conversion from ''double'' to ''unsigned char *'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      30745
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      30792
+            Length:          18
+      - Message:         'candidate function template not viable: no known conversion from ''double'' to ''signed char *'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      31004
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      31051
+            Length:          16
+      - Message:         'candidate function template not viable: no known conversion from ''double'' to ''_Resetiosflags'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iomanip'
+        FileOffset:      2126
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iomanip'
+            FileOffset:      2175
+            Length:          18
+      - Message:         'candidate function template not viable: no known conversion from ''double'' to ''_Setiosflags'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iomanip'
+        FileOffset:      2954
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iomanip'
+            FileOffset:      3003
+            Length:          16
+      - Message:         'candidate function template not viable: no known conversion from ''double'' to ''_Setbase'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iomanip'
+        FileOffset:      3810
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iomanip'
+            FileOffset:      3859
+            Length:          12
+      - Message:         'candidate function template not viable: no known conversion from ''double'' to ''_Setprecision'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iomanip'
+        FileOffset:      5646
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iomanip'
+            FileOffset:      5695
+            Length:          17
+      - Message:         'candidate function template not viable: no known conversion from ''double'' to ''_Setw'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iomanip'
+        FileOffset:      6363
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iomanip'
+            FileOffset:      6412
+            Length:          9
+      - Message:         'candidate function template not viable: no known conversion from ''double'' to ''std::bernoulli_distribution &'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.h'
+        FileOffset:      114262
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.h'
+            FileOffset:      114324
+            Length:          32
+      - Message:         'candidate function template not viable: no known conversion from ''istream'' (aka ''basic_istream<char>'') to ''byte'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/cstddef'
+        FileOffset:      4835
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/cstddef'
+            FileOffset:      4846
+            Length:          8
+      - Message:         'candidate template ignored: deduced conflicting types for parameter ''_CharT'' (''char'' vs. ''double'')'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/istream.tcc'
+        FileOffset:      26300
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_string<_CharT, _Traits, _Alloc>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.tcc'
+        FileOffset:      24272
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''bitset<_Nb>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bitset'
+        FileOffset:      46440
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_CharT *'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      29251
+        Replacements:    []
+      - Message:         'candidate template ignored: requirement ''__and_<std::is_class<std::basic_istream<char, std::char_traits<char>> &>, std::__not_<std::is_same<std::basic_istream<char, std::char_traits<char>> &, std::ios_base>>, std::is_convertible<std::basic_istream<char, std::char_traits<char>> *, std::ios_base *>>::value'' was not satisfied [with _Istream = istream &, _Tp = double]'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      36077
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''complex<_Tp>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/complex'
+        FileOffset:      14862
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Setfill<_CharT>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iomanip'
+        FileOffset:      4897
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Get_money<_MoneyT>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iomanip'
+        FileOffset:      7386
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Get_time<_CharT>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/iomanip'
+        FileOffset:      11970
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr'' against ''basic_istream'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14520
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      9594
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr'' against ''basic_istream'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14520
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      10553
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr<_Dom, typename _Dom::value_type>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14520
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      11519
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr'' against ''basic_istream'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14520
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      12485
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr<_Dom, typename _Dom::value_type>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14520
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      13451
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''valarray'' against ''basic_istream'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      39239
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      37574
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''valarray'' against ''basic_istream'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      39239
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      38083
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''valarray<_Tp>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      39239
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      38569
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''linear_congruential_engine<_UIntType, __a, __c, __m>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      5560
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      17044
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''subtract_with_carry_engine<_UIntType, __w, __s, __r>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      22034
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''discard_block_engine<_RandomNumberEngine, __p, __r>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      24138
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''shuffle_order_engine<_RandomNumberEngine, __k>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      29048
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''uniform_int_distribution<_IntType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      30318
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''uniform_real_distribution<_RealType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      32386
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''geometric_distribution<_IntType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      36917
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''negative_binomial_distribution<_IntType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      40702
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''poisson_distribution<_IntType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      46757
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''binomial_distribution<_IntType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      54609
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''exponential_distribution<_RealType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      56632
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''normal_distribution<_RealType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      61287
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''lognormal_distribution<_RealType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      63454
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''chi_squared_distribution<_RealType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      65897
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''cauchy_distribution<_RealType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      68621
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''fisher_f_distribution<_RealType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      71260
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''student_t_distribution<_RealType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      73830
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''gamma_distribution<_RealType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      78594
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''weibull_distribution<_RealType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      81221
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''extreme_value_distribution<_RealType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      83766
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''discrete_distribution<_IntType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      88355
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''piecewise_constant_distribution<_RealType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      94384
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''piecewise_linear_distribution<_RealType>'' against ''double'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      100616
+        Replacements:    []
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''__istream_type &(*)(__istream_type &)'' (aka ''basic_istream<char, std::char_traits<char>> &(*)(basic_istream<char, std::char_traits<char>> &)'') for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      3847
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      3858
+            Length:          40
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''__ios_type &(*)(__ios_type &)'' (aka ''basic_ios<char, std::char_traits<char>> &(*)(basic_ios<char, std::char_traits<char>> &)'') for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      3959
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      3970
+            Length:          32
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''ios_base &(*)(ios_base &)'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      4078
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      4089
+            Length:          28
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''bool &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      5439
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      5450
+            Length:          9
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''short &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      5524
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      5535
+            Length:          10
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''unsigned short &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      5577
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      5588
+            Length:          19
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''int &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      5672
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      5683
+            Length:          8
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''unsigned int &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      5723
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      5734
+            Length:          17
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''long &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      5816
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      5827
+            Length:          9
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''unsigned long &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      5901
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      5912
+            Length:          18
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''long long &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      6025
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      6036
+            Length:          14
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''unsigned long long &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      6115
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      6126
+            Length:          23
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''float &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      6565
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      6576
+            Length:          10
+      - Message:         'candidate function not viable: expects an lvalue for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      6651
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      6662
+            Length:          11
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''long double &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      6738
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      6749
+            Length:          16
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''void *&'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      9311
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      9322
+            Length:          10
+      - Message:         'candidate function not viable: no known conversion from ''double'' to ''__streambuf_type *'' (aka ''basic_streambuf<char, std::char_traits<char>> *'') for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      10280
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      10291
+            Length:          22
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'called object type ''double'' is not a function or function pointer'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0243_p01083_RedBlue.cpp'
+      FileOffset:      1177
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0243_p01083_RedBlue.cpp'
+          FileOffset:      1173
+          Length:          4
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'called object type ''double'' is not a function or function pointer'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0243_p01083_RedBlue.cpp'
+      FileOffset:      1197
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0243_p01083_RedBlue.cpp'
+          FileOffset:      1193
+          Length:          4
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0243_p01083_RedBlue.cpp'
+      FileOffset:      1439
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0243_p01083_RedBlue.cpp'
+          Offset:          1439
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0243_p01083_RedBlue.cpp'
+      FileOffset:      1629
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0243_p01083_RedBlue.cpp'
+          Offset:          1629
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

@@ -1,0 +1,109 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0030_83_C._Track.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0030_83_C._Track.cpp'
+      FileOffset:      222
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0030_83_C._Track.cpp'
+          Offset:          218
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0030_83_C._Track.cpp'
+          Offset:          228
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-core.UndefinedBinaryOperatorResult
+    DiagnosticMessage:
+      Message:         'The right operand of ''=='' is a garbage value'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0030_83_C._Track.cpp'
+      FileOffset:      852
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0030_83_C._Track.cpp'
+          FileOffset:      855
+          Length:          2
+    Notes:
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0030_83_C._Track.cpp'
+        FileOffset:      321
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0030_83_C._Track.cpp'
+            FileOffset:      321
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 26
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0030_83_C._Track.cpp'
+        FileOffset:      305
+        Replacements:    []
+      - Message:         '''tx'' declared without an initial value'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0030_83_C._Track.cpp'
+        FileOffset:      382
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0030_83_C._Track.cpp'
+            FileOffset:      382
+            Length:          2
+      - Message:         '''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0030_83_C._Track.cpp'
+        FileOffset:      410
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0030_83_C._Track.cpp'
+            FileOffset:      410
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 39
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0030_83_C._Track.cpp'
+        FileOffset:      394
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0030_83_C._Track.cpp'
+        FileOffset:      775
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0030_83_C._Track.cpp'
+            FileOffset:      775
+            Length:          10
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0030_83_C._Track.cpp'
+        FileOffset:      768
+        Replacements:    []
+      - Message:         'The right operand of ''=='' is a garbage value'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0030_83_C._Track.cpp'
+        FileOffset:      852
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0030_83_C._Track.cpp'
+            FileOffset:      855
+            Length:          2
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0030_83_C._Track.cpp'
+      FileOffset:      904
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0030_83_C._Track.cpp'
+          Offset:          904
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0030_83_C._Track.cpp'
+      FileOffset:      1828
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0030_83_C._Track.cpp'
+          Offset:          1828
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

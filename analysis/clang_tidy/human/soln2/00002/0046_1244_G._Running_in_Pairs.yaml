@@ -1,0 +1,222 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+      FileOffset:      63
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+          Offset:          53
+          Length:          9
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+          Offset:          69
+          Length:          0
+          ReplacementText: ' -> long long'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''int'' to signed type ''char'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+      FileOffset:      110
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''int'' to signed type ''char'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+      FileOffset:      190
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''int'' to signed type ''char'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+      FileOffset:      290
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+      FileOffset:      346
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+      FileOffset:      378
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+          Offset:          374
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+          Offset:          384
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''ans'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+      FileOffset:      652
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+          FileOffset:      652
+          Length:          26
+    Notes:
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+        FileOffset:      389
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+            FileOffset:      389
+            Length:          23
+      - Message:         Taint propagated to the 2nd argument, 3rd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+        FileOffset:      389
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+            FileOffset:      389
+            Length:          23
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+        FileOffset:      453
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+            FileOffset:      453
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 26
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+        FileOffset:      437
+        Replacements:    []
+      - Message:         'Assuming ''m'' is >= 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+        FileOffset:      506
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+            FileOffset:      506
+            Length:          5
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+        FileOffset:      502
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+        FileOffset:      571
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+            FileOffset:      571
+            Length:          10
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+        FileOffset:      555
+        Replacements:    []
+      - Message:         'Assuming ''m'' is <= ''now'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+        FileOffset:      629
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+            FileOffset:      629
+            Length:          8
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+        FileOffset:      625
+        Replacements:    []
+      - Message:         'Access of ''ans'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+        FileOffset:      652
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+            FileOffset:      652
+            Length:          26
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''ans'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+      FileOffset:      730
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+          FileOffset:      730
+          Length:          14
+    Notes:
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+        FileOffset:      453
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+            FileOffset:      453
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 26
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+        FileOffset:      437
+        Replacements:    []
+      - Message:         'Assuming ''m'' is >= 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+        FileOffset:      506
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+            FileOffset:      506
+            Length:          5
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+        FileOffset:      502
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+        FileOffset:      571
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+            FileOffset:      571
+            Length:          10
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+        FileOffset:      555
+        Replacements:    []
+      - Message:         'Assuming ''m'' is > ''now'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+        FileOffset:      629
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+            FileOffset:      629
+            Length:          8
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+        FileOffset:      625
+        Replacements:    []
+      - Message:         'Access of ''ans'' at negative byte offset'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+        FileOffset:      730
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0046_1244_G._Running_in_Pairs.cpp'
+            FileOffset:      730
+            Length:          14
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

@@ -1,0 +1,134 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00002/0140_529_C._Rooks_and_Rectangles.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00002/0140_529_C._Rooks_and_Rectangles.cpp'
+      FileOffset:      86
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00002/0140_529_C._Rooks_and_Rectangles.cpp'
+          Offset:          82
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00002/0140_529_C._Rooks_and_Rectangles.cpp'
+          Offset:          92
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-chained-comparison
+    DiagnosticMessage:
+      Message:         'chained comparison ''v0 <= v1 <= v2'' may generate unintended results, use parentheses to specify order of evaluation or a logical operator to separate comparison expressions'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00002/0140_529_C._Rooks_and_Rectangles.cpp'
+      FileOffset:      678
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00002/0140_529_C._Rooks_and_Rectangles.cpp'
+          FileOffset:      678
+          Length:          26
+    Notes:
+      - Message:         'operand ''v0'' is here'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00002/0140_529_C._Rooks_and_Rectangles.cpp'
+        FileOffset:      678
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00002/0140_529_C._Rooks_and_Rectangles.cpp'
+            FileOffset:      678
+            Length:          2
+      - Message:         'operand ''v1'' is here'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00002/0140_529_C._Rooks_and_Rectangles.cpp'
+        FileOffset:      684
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00002/0140_529_C._Rooks_and_Rectangles.cpp'
+            FileOffset:      684
+            Length:          14
+      - Message:         'operand ''v2'' is here'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00002/0140_529_C._Rooks_and_Rectangles.cpp'
+        FileOffset:      702
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00002/0140_529_C._Rooks_and_Rectangles.cpp'
+            FileOffset:      702
+            Length:          2
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-parentheses
+    DiagnosticMessage:
+      Message:         'chained comparison ''X <= Y <= Z'' does not behave the same as a mathematical expression'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00002/0140_529_C._Rooks_and_Rectangles.cpp'
+      FileOffset:      699
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-chained-comparison
+    DiagnosticMessage:
+      Message:         'chained comparison ''v0 <= v1 <= v2'' may generate unintended results, use parentheses to specify order of evaluation or a logical operator to separate comparison expressions'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00002/0140_529_C._Rooks_and_Rectangles.cpp'
+      FileOffset:      708
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00002/0140_529_C._Rooks_and_Rectangles.cpp'
+          FileOffset:      708
+          Length:          27
+    Notes:
+      - Message:         'operand ''v0'' is here'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00002/0140_529_C._Rooks_and_Rectangles.cpp'
+        FileOffset:      708
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00002/0140_529_C._Rooks_and_Rectangles.cpp'
+            FileOffset:      708
+            Length:          2
+      - Message:         'operand ''v1'' is here'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00002/0140_529_C._Rooks_and_Rectangles.cpp'
+        FileOffset:      714
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00002/0140_529_C._Rooks_and_Rectangles.cpp'
+            FileOffset:      714
+            Length:          15
+      - Message:         'operand ''v2'' is here'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00002/0140_529_C._Rooks_and_Rectangles.cpp'
+        FileOffset:      733
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00002/0140_529_C._Rooks_and_Rectangles.cpp'
+            FileOffset:      733
+            Length:          2
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-parentheses
+    DiagnosticMessage:
+      Message:         'chained comparison ''X <= Y <= Z'' does not behave the same as a mathematical expression'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00002/0140_529_C._Rooks_and_Rectangles.cpp'
+      FileOffset:      730
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00002/0140_529_C._Rooks_and_Rectangles.cpp'
+      FileOffset:      1130
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00002/0140_529_C._Rooks_and_Rectangles.cpp'
+          Offset:          1130
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00002/0140_529_C._Rooks_and_Rectangles.cpp'
+      FileOffset:      1181
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00002/0140_529_C._Rooks_and_Rectangles.cpp'
+          Offset:          1181
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

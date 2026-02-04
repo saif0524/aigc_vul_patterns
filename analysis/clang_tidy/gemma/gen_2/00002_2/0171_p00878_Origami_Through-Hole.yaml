@@ -1,0 +1,380 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0171_p00878_Origami_Through-Hole.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0171_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      86
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0171_p00878_Origami_Through-Hole.cpp'
+          Offset:          82
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0171_p00878_Origami_Through-Hole.cpp'
+          Offset:          92
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'invalid operands to binary expression (''__istream_type'' (aka ''basic_istream<char, std::char_traits<char>>'') and ''int'')'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0171_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      265
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0171_p00878_Origami_Through-Hole.cpp'
+          FileOffset:      228
+          Length:          36
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0171_p00878_Origami_Through-Hole.cpp'
+          FileOffset:      268
+          Length:          16
+    Notes:
+      - Message:         'candidate function template not viable: no known conversion from ''int'' to ''unsigned char &'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      27478
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      27525
+            Length:          18
+      - Message:         'candidate function template not viable: no known conversion from ''int'' to ''signed char &'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      27672
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      27719
+            Length:          16
+      - Message:         'candidate function template not viable: no known conversion from ''int'' to ''unsigned char *'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      30745
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      30792
+            Length:          18
+      - Message:         'candidate function template not viable: no known conversion from ''int'' to ''signed char *'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      31004
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      31051
+            Length:          16
+      - Message:         'candidate function template not viable: no known conversion from ''__istream_type'' (aka ''basic_istream<char, std::char_traits<char>>'') to ''byte'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/cstddef'
+        FileOffset:      4835
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/cstddef'
+            FileOffset:      4846
+            Length:          8
+      - Message:         'candidate template ignored: deduced conflicting types for parameter ''_CharT'' (''char'' vs. ''int'')'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/istream.tcc'
+        FileOffset:      26300
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_string<_CharT, _Traits, _Alloc>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.tcc'
+        FileOffset:      24272
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_CharT *'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      29251
+        Replacements:    []
+      - Message:         'candidate template ignored: requirement ''__and_<std::is_class<std::basic_istream<char, std::char_traits<char>> &>, std::__not_<std::is_same<std::basic_istream<char, std::char_traits<char>> &, std::ios_base>>, std::is_convertible<std::basic_istream<char, std::char_traits<char>> *, std::ios_base *>>::value'' was not satisfied [with _Istream = __istream_type &, _Tp = int]'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      36077
+        Replacements:    []
+      - Message:         'candidate function not viable: no known conversion from ''int'' to ''__istream_type &(*)(__istream_type &)'' (aka ''basic_istream<char, std::char_traits<char>> &(*)(basic_istream<char, std::char_traits<char>> &)'') for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      3847
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      3858
+            Length:          40
+      - Message:         'candidate function not viable: no known conversion from ''int'' to ''__ios_type &(*)(__ios_type &)'' (aka ''basic_ios<char, std::char_traits<char>> &(*)(basic_ios<char, std::char_traits<char>> &)'') for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      3959
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      3970
+            Length:          32
+      - Message:         'candidate function not viable: no known conversion from ''int'' to ''ios_base &(*)(ios_base &)'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      4078
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      4089
+            Length:          28
+      - Message:         'candidate function not viable: no known conversion from ''int'' to ''bool &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      5439
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      5450
+            Length:          9
+      - Message:         'candidate function not viable: no known conversion from ''int'' to ''short &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      5524
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      5535
+            Length:          10
+      - Message:         'candidate function not viable: no known conversion from ''int'' to ''unsigned short &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      5577
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      5588
+            Length:          19
+      - Message:         'candidate function not viable: expects an lvalue for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      5672
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      5683
+            Length:          8
+      - Message:         'candidate function not viable: no known conversion from ''int'' to ''unsigned int &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      5723
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      5734
+            Length:          17
+      - Message:         'candidate function not viable: no known conversion from ''int'' to ''long &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      5816
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      5827
+            Length:          9
+      - Message:         'candidate function not viable: no known conversion from ''int'' to ''unsigned long &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      5901
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      5912
+            Length:          18
+      - Message:         'candidate function not viable: no known conversion from ''int'' to ''long long &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      6025
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      6036
+            Length:          14
+      - Message:         'candidate function not viable: no known conversion from ''int'' to ''unsigned long long &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      6115
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      6126
+            Length:          23
+      - Message:         'candidate function not viable: no known conversion from ''int'' to ''float &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      6565
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      6576
+            Length:          10
+      - Message:         'candidate function not viable: no known conversion from ''int'' to ''double &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      6651
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      6662
+            Length:          11
+      - Message:         'candidate function not viable: no known conversion from ''int'' to ''long double &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      6738
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      6749
+            Length:          16
+      - Message:         'candidate function not viable: no known conversion from ''int'' to ''void *&'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      9311
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      9322
+            Length:          10
+      - Message:         'candidate function not viable: no known conversion from ''int'' to ''__streambuf_type *'' (aka ''basic_streambuf<char, std::char_traits<char>> *'') for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+        FileOffset:      10280
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/istream'
+            FileOffset:      10291
+            Length:          22
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-shift-op-parentheses
+    DiagnosticMessage:
+      Message:         'operator ''>>'' has lower precedence than ''+''; ''+'' will be evaluated first'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0171_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      281
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0171_p00878_Origami_Through-Hole.cpp'
+          FileOffset:      268
+          Length:          16
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0171_p00878_Origami_Through-Hole.cpp'
+          FileOffset:      265
+          Length:          2
+    Notes:
+      - Message:         'place parentheses around the ''+'' expression to silence this warning'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0171_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      281
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0171_p00878_Origami_Through-Hole.cpp'
+            Offset:          268
+            Length:          0
+            ReplacementText: '('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0171_p00878_Origami_Through-Hole.cpp'
+            Offset:          284
+            Length:          0
+            ReplacementText: ')'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-shift-op-parentheses
+    DiagnosticMessage:
+      Message:         'operator ''>>'' has lower precedence than ''+''; ''+'' will be evaluated first'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0171_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      302
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0171_p00878_Origami_Through-Hole.cpp'
+          FileOffset:      288
+          Length:          17
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0171_p00878_Origami_Through-Hole.cpp'
+          FileOffset:      285
+          Length:          2
+    Notes:
+      - Message:         'place parentheses around the ''+'' expression to silence this warning'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0171_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      302
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0171_p00878_Origami_Through-Hole.cpp'
+            Offset:          288
+            Length:          0
+            ReplacementText: '('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0171_p00878_Origami_Through-Hole.cpp'
+            Offset:          305
+            Length:          0
+            ReplacementText: ')'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0171_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      654
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0171_p00878_Origami_Through-Hole.cpp'
+          Offset:          654
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0171_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      984
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0171_p00878_Origami_Through-Hole.cpp'
+          Offset:          984
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0171_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      1423
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0171_p00878_Origami_Through-Hole.cpp'
+          Offset:          1423
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0171_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      1861
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0171_p00878_Origami_Through-Hole.cpp'
+          Offset:          1861
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0171_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      2850
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0171_p00878_Origami_Through-Hole.cpp'
+          Offset:          2850
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0171_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      3513
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0171_p00878_Origami_Through-Hole.cpp'
+          Offset:          3513
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0171_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      3843
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0171_p00878_Origami_Through-Hole.cpp'
+          Offset:          3843
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0171_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      3903
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0171_p00878_Origami_Through-Hole.cpp'
+          Offset:          3903
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

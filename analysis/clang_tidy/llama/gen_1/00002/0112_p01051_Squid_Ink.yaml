@@ -1,0 +1,431 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+      FileOffset:      183
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '3 adjacent parameters of ''State'' of similar type (''int'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+      FileOffset:      278
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+          FileOffset:      278
+          Length:          22
+    Notes:
+      - Message:         'the first parameter in the range is ''xx'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+        FileOffset:      282
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+            FileOffset:      282
+            Length:          2
+      - Message:         'the last parameter in the range is ''dd'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+        FileOffset:      298
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+            FileOffset:      298
+            Length:          2
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+      FileOffset:      335
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+          Offset:          331
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+          Offset:          341
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-core.VLASize
+    DiagnosticMessage:
+      Message:         'Declared variable-length array (VLA) has negative size'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+      FileOffset:      776
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+          FileOffset:      789
+          Length:          1
+    Notes:
+      - Message:         'Value assigned to ''R'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+        FileOffset:      362
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+            FileOffset:      362
+            Length:          8
+      - Message:         'Assuming ''i'' is >= ''R'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+        FileOffset:      425
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+            FileOffset:      425
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 25
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+        FileOffset:      409
+        Replacements:    []
+      - Message:         '''i'' is >= ''R'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+        FileOffset:      513
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+            FileOffset:      513
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 37
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+        FileOffset:      497
+        Replacements:    []
+      - Message:         'Declared variable-length array (VLA) has negative size'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+        FileOffset:      776
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+            FileOffset:      789
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C VLA arrays, use ''std::vector'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+      FileOffset:      776
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+      FileOffset:      776
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-vla-cxx-extension
+    DiagnosticMessage:
+      Message:         'variable length arrays in C++ are a Clang extension'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+      FileOffset:      789
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+          FileOffset:      789
+          Length:          1
+    Notes:
+      - Message:         'read of non-const variable ''R'' is not allowed in a constant expression'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+        FileOffset:      789
+        Replacements:    []
+      - Message:         declared here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+        FileOffset:      352
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-vla-cxx-extension
+    DiagnosticMessage:
+      Message:         'variable length arrays in C++ are a Clang extension'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+      FileOffset:      792
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+          FileOffset:      792
+          Length:          1
+    Notes:
+      - Message:         'read of non-const variable ''C'' is not allowed in a constant expression'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+        FileOffset:      792
+        Replacements:    []
+      - Message:         declared here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+        FileOffset:      355
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-emplace
+    DiagnosticMessage:
+      Message:         use emplace instead of push
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+      FileOffset:      908
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+          Offset:          908
+          Length:          11
+          ReplacementText: 'emplace('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+          Offset:          928
+          Length:          1
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-core.CallAndMessage
+    DiagnosticMessage:
+      Message:         1st function call argument is an uninitialized value
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+      FileOffset:      913
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+          FileOffset:      919
+          Length:          2
+    Notes:
+      - Message:         'Assuming ''i'' is < ''R'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+        FileOffset:      425
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+            FileOffset:      425
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+        FileOffset:      409
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''R'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+        FileOffset:      425
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+            FileOffset:      425
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 25
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+        FileOffset:      409
+        Replacements:    []
+      - Message:         '''sx'' declared without an initial value'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+        FileOffset:      477
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+            FileOffset:      477
+            Length:          2
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+        FileOffset:      497
+        Replacements:    []
+      - Message:         'Assuming ''j'' is < ''C'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+        FileOffset:      551
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+            FileOffset:      551
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+        FileOffset:      535
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+        FileOffset:      581
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+            FileOffset:      581
+            Length:          17
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+        FileOffset:      577
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+        FileOffset:      673
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+            FileOffset:      673
+            Length:          17
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+        FileOffset:      669
+        Replacements:    []
+      - Message:         'Assuming ''j'' is >= ''C'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+        FileOffset:      551
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+            FileOffset:      551
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 26
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+        FileOffset:      535
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 37
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+        FileOffset:      497
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+        FileOffset:      868
+        Replacements:    []
+      - Message:         1st function call argument is an uninitialized value
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+        FileOffset:      913
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+            FileOffset:      919
+            Length:          2
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C VLA arrays, use ''std::vector'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+      FileOffset:      977
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+      FileOffset:      977
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-vla-cxx-extension
+    DiagnosticMessage:
+      Message:         'variable length arrays in C++ are a Clang extension'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+      FileOffset:      986
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+          FileOffset:      986
+          Length:          1
+    Notes:
+      - Message:         'read of non-const variable ''R'' is not allowed in a constant expression'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+        FileOffset:      986
+        Replacements:    []
+      - Message:         declared here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+        FileOffset:      352
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-vla-cxx-extension
+    DiagnosticMessage:
+      Message:         'variable length arrays in C++ are a Clang extension'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+      FileOffset:      989
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+          FileOffset:      989
+          Length:          1
+    Notes:
+      - Message:         'read of non-const variable ''C'' is not allowed in a constant expression'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+        FileOffset:      989
+        Replacements:    []
+      - Message:         declared here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+        FileOffset:      355
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-emplace
+    DiagnosticMessage:
+      Message:         use emplace instead of push
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+      FileOffset:      1761
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+          Offset:          1761
+          Length:          11
+          ReplacementText: 'emplace('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+          Offset:          1781
+          Length:          1
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-emplace
+    DiagnosticMessage:
+      Message:         use emplace instead of push
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+      FileOffset:      1920
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+          Offset:          1920
+          Length:          11
+          ReplacementText: 'emplace('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+          Offset:          1940
+          Length:          1
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+      FileOffset:      2163
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+          Offset:          2163
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-emplace
+    DiagnosticMessage:
+      Message:         use emplace instead of push
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+      FileOffset:      2591
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+          Offset:          2591
+          Length:          11
+          ReplacementText: 'emplace('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+          Offset:          2611
+          Length:          1
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-emplace
+    DiagnosticMessage:
+      Message:         use emplace instead of push
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+      FileOffset:      2748
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+          Offset:          2748
+          Length:          11
+          ReplacementText: 'emplace('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0112_p01051_Squid_Ink.cpp'
+          Offset:          2768
+          Length:          1
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

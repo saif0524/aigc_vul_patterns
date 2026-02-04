@@ -1,0 +1,331 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+Diagnostics:
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''size_type'' (aka ''unsigned long'') of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+      FileOffset:      239
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+        FileOffset:      239
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+            Offset:          0
+            Length:          0
+            ReplacementText: "#include <cstddef>\n"
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+            Offset:          239
+            Length:          0
+            ReplacementText: 'static_cast<size_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+            Offset:          244
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+            FileOffset:      239
+            Length:          5
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+        FileOffset:      239
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+            Offset:          239
+            Length:          0
+            ReplacementText: 'static_cast<long>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+            Offset:          240
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+            FileOffset:      239
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+      FileOffset:      263
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+          Offset:          258
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+          Offset:          300
+          Length:          0
+          ReplacementText: ' -> Node'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+      FileOffset:      846
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+      FileOffset:      873
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+          Offset:          868
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+          Offset:          913
+          Length:          0
+          ReplacementText: ' -> Node'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+      FileOffset:      1143
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+          Offset:          1138
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+          Offset:          1160
+          Length:          0
+          ReplacementText: ' -> Node'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+      FileOffset:      1194
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+      FileOffset:      1226
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+          Offset:          1222
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+          Offset:          1232
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         function definition is not allowed here
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+      FileOffset:      2150
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         function definition is not allowed here
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+      FileOffset:      2259
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'use of undeclared identifier ''unite'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+      FileOffset:      2532
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+          FileOffset:      2532
+          Length:          5
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'use of undeclared identifier ''unite'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+      FileOffset:      2710
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+          FileOffset:      2710
+          Length:          5
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no matching function for call to ''find'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+      FileOffset:      2931
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+          FileOffset:      2931
+          Length:          4
+    Notes:
+      - Message:         'candidate function template not viable: requires 3 arguments, but 1 was provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/streambuf_iterator.h'
+        FileOffset:      13585
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/streambuf_iterator.h'
+            FileOffset:      13590
+            Length:          94
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no matching function for call to ''find'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+      FileOffset:      2942
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+          FileOffset:      2942
+          Length:          4
+    Notes:
+      - Message:         'candidate function template not viable: requires 3 arguments, but 1 was provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/streambuf_iterator.h'
+        FileOffset:      13585
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/streambuf_iterator.h'
+            FileOffset:      13590
+            Length:          94
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         subscripted value is not an array, pointer, or vector
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+      FileOffset:      3059
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+          FileOffset:      3058
+          Length:          1
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+          FileOffset:      3060
+          Length:          1
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         subscripted value is not an array, pointer, or vector
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+      FileOffset:      3066
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+          FileOffset:      3065
+          Length:          1
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+          FileOffset:      3067
+          Length:          1
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         subscripted value is not an array, pointer, or vector
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+      FileOffset:      3077
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+          FileOffset:      3076
+          Length:          1
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+          FileOffset:      3078
+          Length:          1
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         subscripted value is not an array, pointer, or vector
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+      FileOffset:      3094
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+          FileOffset:      3093
+          Length:          1
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+          FileOffset:      3095
+          Length:          1
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         subscripted value is not an array, pointer, or vector
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+      FileOffset:      3148
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+          FileOffset:      3147
+          Length:          1
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+          FileOffset:      3149
+          Length:          1
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         subscripted value is not an array, pointer, or vector
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+      FileOffset:      3155
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+          FileOffset:      3154
+          Length:          1
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+          FileOffset:      3156
+          Length:          1
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         subscripted value is not an array, pointer, or vector
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+      FileOffset:      3166
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+          FileOffset:      3165
+          Length:          1
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+          FileOffset:      3167
+          Length:          1
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         subscripted value is not an array, pointer, or vector
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+      FileOffset:      3183
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+          FileOffset:      3182
+          Length:          1
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0216_1271_C._Shawarma_Tent.cpp'
+          FileOffset:      3184
+          Length:          1
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

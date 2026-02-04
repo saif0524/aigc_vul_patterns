@@ -1,0 +1,248 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+      FileOffset:      86
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+          Offset:          82
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+          Offset:          92
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-core.BitwiseShift
+    DiagnosticMessage:
+      Message:         Right operand is negative in left shift
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+      FileOffset:      344
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+          FileOffset:      342
+          Length:          12
+    Notes:
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+        FileOffset:      125
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+        FileOffset:      239
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+            FileOffset:      239
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 20
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+        FileOffset:      223
+        Replacements:    []
+      - Message:         The result of left shift is undefined because the right operand is negative
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+        FileOffset:      344
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+            FileOffset:      342
+            Length:          12
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-core.BitwiseShift
+    DiagnosticMessage:
+      Message:         Right operand is negative in right shift
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+      FileOffset:      712
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+          FileOffset:      710
+          Length:          12
+    Notes:
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+        FileOffset:      125
+        Replacements:    []
+      - Message:         'Assuming ''i'' is < ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+        FileOffset:      239
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+            FileOffset:      239
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+        FileOffset:      223
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+        FileOffset:      239
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+            FileOffset:      239
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 20
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+        FileOffset:      223
+        Replacements:    []
+      - Message:         '''i'' initialized to 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+        FileOffset:      326
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+            FileOffset:      326
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+        FileOffset:      321
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+        FileOffset:      380
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+            FileOffset:      380
+            Length:          26
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+        FileOffset:      376
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+        FileOffset:      551
+        Replacements:    []
+      - Message:         'Assuming ''j'' is >= ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+        FileOffset:      626
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+            FileOffset:      626
+            Length:          5
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+        FileOffset:      622
+        Replacements:    []
+      - Message:         The result of right shift is undefined because the right operand is negative
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+        FileOffset:      712
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+            FileOffset:      710
+            Length:          12
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-deadcode.DeadStores
+    DiagnosticMessage:
+      Message:         'Value stored to ''current_x'' is never read'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+      FileOffset:      779
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+          FileOffset:      791
+          Length:          12
+    Notes:
+      - Message:         'Value stored to ''current_x'' is never read'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+        FileOffset:      779
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+            FileOffset:      791
+            Length:          12
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-deadcode.DeadStores
+    DiagnosticMessage:
+      Message:         'Value stored to ''current_x'' is never read'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+      FileOffset:      941
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+          FileOffset:      953
+          Length:          16
+    Notes:
+      - Message:         'Value stored to ''current_x'' is never read'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+        FileOffset:      941
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+            FileOffset:      953
+            Length:          16
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+      FileOffset:      3206
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+          Offset:          3206
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+      FileOffset:      3366
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+          Offset:          3366
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+      FileOffset:      3532
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+          Offset:          3532
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+      FileOffset:      3663
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+          Offset:          3663
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+      FileOffset:      3728
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0148_1290_A._Mind_Control.cpp'
+          Offset:          3728
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

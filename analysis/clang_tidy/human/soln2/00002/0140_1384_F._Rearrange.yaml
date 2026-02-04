@@ -1,0 +1,238 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+      FileOffset:      68
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+      FileOffset:      144
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+      FileOffset:      184
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+          Offset:          180
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+          Offset:          190
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''h'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+      FileOffset:      631
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+          FileOffset:      631
+          Length:          4
+    Notes:
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+        FileOffset:      236
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+            FileOffset:      236
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 13
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+        FileOffset:      220
+        Replacements:    []
+      - Message:         '''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+        FileOffset:      331
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+            FileOffset:      331
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 18
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+        FileOffset:      315
+        Replacements:    []
+      - Message:         'Assuming ''i'' is <= ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+        FileOffset:      457
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+            FileOffset:      457
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+        FileOffset:      441
+        Replacements:    []
+      - Message:         '''j'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+        FileOffset:      508
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+            FileOffset:      508
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 21
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+        FileOffset:      492
+        Replacements:    []
+      - Message:         'Assuming ''i'' is <= ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+        FileOffset:      457
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+            FileOffset:      457
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+        FileOffset:      441
+        Replacements:    []
+      - Message:         '''j'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+        FileOffset:      508
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+            FileOffset:      508
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 21
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+        FileOffset:      492
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+        FileOffset:      457
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+            FileOffset:      457
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 23
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+        FileOffset:      441
+        Replacements:    []
+      - Message:         'Assuming ''u'' is >= 1'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+        FileOffset:      607
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+            FileOffset:      607
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+        FileOffset:      587
+        Replacements:    []
+      - Message:         'Access of ''h'' at negative byte offset'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+        FileOffset:      631
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+            FileOffset:      631
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''h'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+      FileOffset:      631
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+          FileOffset:      631
+          Length:          4
+    Notes:
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+        FileOffset:      195
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+            FileOffset:      195
+            Length:          21
+      - Message:         Taint propagated to the 2nd argument, 3rd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+        FileOffset:      195
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+            FileOffset:      195
+            Length:          21
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+        FileOffset:      236
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+            FileOffset:      236
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 13
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+        FileOffset:      220
+        Replacements:    []
+      - Message:         '''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+        FileOffset:      331
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+            FileOffset:      331
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 18
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+        FileOffset:      315
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+        FileOffset:      457
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+            FileOffset:      457
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 23
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+        FileOffset:      441
+        Replacements:    []
+      - Message:         'Assuming ''u'' is >= 1'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+        FileOffset:      607
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+            FileOffset:      607
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+        FileOffset:      587
+        Replacements:    []
+      - Message:         'Access of ''h'' with a tainted index that may be too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+        FileOffset:      631
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0140_1384_F._Rearrange.cpp'
+            FileOffset:      631
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

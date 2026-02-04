@@ -1,0 +1,162 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0094_985_E._Pencils_and_Boxes.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0094_985_E._Pencils_and_Boxes.cpp'
+      FileOffset:      143
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0094_985_E._Pencils_and_Boxes.cpp'
+          Offset:          139
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0094_985_E._Pencils_and_Boxes.cpp'
+          Offset:          149
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C VLA arrays, use ''std::vector'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0094_985_E._Pencils_and_Boxes.cpp'
+      FileOffset:      203
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-vla-cxx-extension
+    DiagnosticMessage:
+      Message:         'variable length arrays in C++ are a Clang extension'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0094_985_E._Pencils_and_Boxes.cpp'
+      FileOffset:      215
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0094_985_E._Pencils_and_Boxes.cpp'
+          FileOffset:      215
+          Length:          1
+    Notes:
+      - Message:         'read of non-const variable ''n'' is not allowed in a constant expression'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0094_985_E._Pencils_and_Boxes.cpp'
+        FileOffset:      215
+        Replacements:    []
+      - Message:         declared here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0094_985_E._Pencils_and_Boxes.cpp'
+        FileOffset:      158
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''value_type'' (aka ''long long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0094_985_E._Pencils_and_Boxes.cpp'
+      FileOffset:      365
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0094_985_E._Pencils_and_Boxes.cpp'
+      FileOffset:      430
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0094_985_E._Pencils_and_Boxes.cpp'
+          Offset:          430
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''a'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0094_985_E._Pencils_and_Boxes.cpp'
+      FileOffset:      508
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0094_985_E._Pencils_and_Boxes.cpp'
+          FileOffset:      508
+          Length:          10
+    Notes:
+      - Message:         '''i'' is < ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0094_985_E._Pencils_and_Boxes.cpp'
+        FileOffset:      237
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0094_985_E._Pencils_and_Boxes.cpp'
+            FileOffset:      237
+            Length:          1
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0094_985_E._Pencils_and_Boxes.cpp'
+        FileOffset:      221
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0094_985_E._Pencils_and_Boxes.cpp'
+        FileOffset:      237
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0094_985_E._Pencils_and_Boxes.cpp'
+            FileOffset:      237
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 11
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0094_985_E._Pencils_and_Boxes.cpp'
+        FileOffset:      221
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0094_985_E._Pencils_and_Boxes.cpp'
+        FileOffset:      339
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0094_985_E._Pencils_and_Boxes.cpp'
+            FileOffset:      339
+            Length:          10
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0094_985_E._Pencils_and_Boxes.cpp'
+        FileOffset:      332
+        Replacements:    []
+      - Message:         'Assuming ''u'' is not equal to ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0094_985_E._Pencils_and_Boxes.cpp'
+        FileOffset:      397
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0094_985_E._Pencils_and_Boxes.cpp'
+            FileOffset:      397
+            Length:          6
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0094_985_E._Pencils_and_Boxes.cpp'
+        FileOffset:      393
+        Replacements:    []
+      - Message:         '''cnt'' is <= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0094_985_E._Pencils_and_Boxes.cpp'
+        FileOffset:      496
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0094_985_E._Pencils_and_Boxes.cpp'
+            FileOffset:      496
+            Length:          3
+      - Message:         'Left side of ''&&'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0094_985_E._Pencils_and_Boxes.cpp'
+        FileOffset:      496
+        Replacements:    []
+      - Message:         'Access of ''a'' at negative byte offset -8'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0094_985_E._Pencils_and_Boxes.cpp'
+        FileOffset:      508
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0094_985_E._Pencils_and_Boxes.cpp'
+            FileOffset:      508
+            Length:          10
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0094_985_E._Pencils_and_Boxes.cpp'
+      FileOffset:      574
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0094_985_E._Pencils_and_Boxes.cpp'
+          Offset:          574
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

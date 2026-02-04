@@ -1,0 +1,120 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0003_896_E._Welcome_home__Chtholly.cpp'
+Diagnostics:
+  - DiagnosticName:  clang-analyzer-deadcode.DeadStores
+    DiagnosticMessage:
+      Message:         'Value stored to ''mid'' during its initialization is never read'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0003_896_E._Welcome_home__Chtholly.cpp'
+      FileOffset:      410
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0003_896_E._Welcome_home__Chtholly.cpp'
+          FileOffset:      410
+          Length:          3
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0003_896_E._Welcome_home__Chtholly.cpp'
+          FileOffset:      416
+          Length:          28
+    Notes:
+      - Message:         'Value stored to ''mid'' during its initialization is never read'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0003_896_E._Welcome_home__Chtholly.cpp'
+        FileOffset:      410
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0003_896_E._Welcome_home__Chtholly.cpp'
+            FileOffset:      410
+            Length:          3
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0003_896_E._Welcome_home__Chtholly.cpp'
+            FileOffset:      416
+            Length:          28
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0003_896_E._Welcome_home__Chtholly.cpp'
+      FileOffset:      1088
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0003_896_E._Welcome_home__Chtholly.cpp'
+          Offset:          1084
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0003_896_E._Welcome_home__Chtholly.cpp'
+          Offset:          1122
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0003_896_E._Welcome_home__Chtholly.cpp'
+      FileOffset:      1467
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0003_896_E._Welcome_home__Chtholly.cpp'
+          Offset:          1463
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0003_896_E._Welcome_home__Chtholly.cpp'
+          Offset:          1473
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0003_896_E._Welcome_home__Chtholly.cpp'
+      FileOffset:      1521
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0003_896_E._Welcome_home__Chtholly.cpp'
+          Offset:          1521
+          Length:          1
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''size_type'' (aka ''unsigned long'') of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0003_896_E._Welcome_home__Chtholly.cpp'
+      FileOffset:      1607
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0003_896_E._Welcome_home__Chtholly.cpp'
+        FileOffset:      1607
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0003_896_E._Welcome_home__Chtholly.cpp'
+            Offset:          25
+            Length:          0
+            ReplacementText: "\n#include <cstddef>\n"
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0003_896_E._Welcome_home__Chtholly.cpp'
+            Offset:          1607
+            Length:          0
+            ReplacementText: 'static_cast<size_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0003_896_E._Welcome_home__Chtholly.cpp'
+            Offset:          1612
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0003_896_E._Welcome_home__Chtholly.cpp'
+            FileOffset:      1607
+            Length:          5
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0003_896_E._Welcome_home__Chtholly.cpp'
+        FileOffset:      1607
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0003_896_E._Welcome_home__Chtholly.cpp'
+            Offset:          1607
+            Length:          0
+            ReplacementText: 'static_cast<long>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0003_896_E._Welcome_home__Chtholly.cpp'
+            Offset:          1608
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0003_896_E._Welcome_home__Chtholly.cpp'
+            FileOffset:      1607
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

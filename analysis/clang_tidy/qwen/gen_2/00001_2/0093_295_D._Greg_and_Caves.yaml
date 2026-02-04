@@ -1,0 +1,154 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0093_295_D._Greg_and_Caves.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-using
+    DiagnosticMessage:
+      Message:         'use ''using'' instead of ''typedef'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0093_295_D._Greg_and_Caves.cpp'
+      FileOffset:      47
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0093_295_D._Greg_and_Caves.cpp'
+          Offset:          47
+          Length:          20
+          ReplacementText: 'using ll = long long'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0093_295_D._Greg_and_Caves.cpp'
+      FileOffset:      98
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0093_295_D._Greg_and_Caves.cpp'
+      FileOffset:      160
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0093_295_D._Greg_and_Caves.cpp'
+          Offset:          157
+          Length:          2
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0093_295_D._Greg_and_Caves.cpp'
+          Offset:          177
+          Length:          0
+          ReplacementText: ' -> ll'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''power'' of similar type (''ll'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0093_295_D._Greg_and_Caves.cpp'
+      FileOffset:      166
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0093_295_D._Greg_and_Caves.cpp'
+          FileOffset:      166
+          Length:          10
+    Notes:
+      - Message:         'the first parameter in the range is ''a'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0093_295_D._Greg_and_Caves.cpp'
+        FileOffset:      169
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0093_295_D._Greg_and_Caves.cpp'
+            FileOffset:      169
+            Length:          1
+      - Message:         'the last parameter in the range is ''b'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0093_295_D._Greg_and_Caves.cpp'
+        FileOffset:      175
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0093_295_D._Greg_and_Caves.cpp'
+            FileOffset:      175
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0093_295_D._Greg_and_Caves.cpp'
+      FileOffset:      347
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0093_295_D._Greg_and_Caves.cpp'
+          Offset:          343
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0093_295_D._Greg_and_Caves.cpp'
+          Offset:          353
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0093_295_D._Greg_and_Caves.cpp'
+      FileOffset:      400
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0093_295_D._Greg_and_Caves.cpp'
+          Offset:          400
+          Length:          1
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'array type ''ll[2001]'' (aka ''long long[2001]'') is not assignable'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0093_295_D._Greg_and_Caves.cpp'
+      FileOffset:      448
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0093_295_D._Greg_and_Caves.cpp'
+          FileOffset:      443
+          Length:          4
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'invalid operands to binary expression (''ll[2001]'' (aka ''long long[2001]'') and ''int'')'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0093_295_D._Greg_and_Caves.cpp'
+      FileOffset:      573
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0093_295_D._Greg_and_Caves.cpp'
+          FileOffset:      566
+          Length:          6
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0093_295_D._Greg_and_Caves.cpp'
+          FileOffset:      575
+          Length:          1
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'invalid operands to binary expression (''ll[2001]'' (aka ''long long[2001]'') and ''ll'' (aka ''long long''))'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0093_295_D._Greg_and_Caves.cpp'
+      FileOffset:      784
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0093_295_D._Greg_and_Caves.cpp'
+          FileOffset:      777
+          Length:          6
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0093_295_D._Greg_and_Caves.cpp'
+          FileOffset:      786
+          Length:          10
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'invalid operands to binary expression (''ll *'' (aka ''long long *'') and ''const int'')'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0093_295_D._Greg_and_Caves.cpp'
+      FileOffset:      994
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0093_295_D._Greg_and_Caves.cpp'
+          FileOffset:      976
+          Length:          17
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0093_295_D._Greg_and_Caves.cpp'
+          FileOffset:      996
+          Length:          3
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

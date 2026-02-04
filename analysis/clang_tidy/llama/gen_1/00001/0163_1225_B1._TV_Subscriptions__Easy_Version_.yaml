@@ -1,0 +1,170 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0163_1225_B1._TV_Subscriptions__Easy_Version_.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0163_1225_B1._TV_Subscriptions__Easy_Version_.cpp'
+      FileOffset:      40
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0163_1225_B1._TV_Subscriptions__Easy_Version_.cpp'
+          Offset:          36
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0163_1225_B1._TV_Subscriptions__Easy_Version_.cpp'
+          Offset:          46
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C VLA arrays, use ''std::vector'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0163_1225_B1._TV_Subscriptions__Easy_Version_.cpp'
+      FileOffset:      175
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-vla-cxx-extension
+    DiagnosticMessage:
+      Message:         'variable length arrays in C++ are a Clang extension'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0163_1225_B1._TV_Subscriptions__Easy_Version_.cpp'
+      FileOffset:      181
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0163_1225_B1._TV_Subscriptions__Easy_Version_.cpp'
+          FileOffset:      181
+          Length:          1
+    Notes:
+      - Message:         'read of non-const variable ''n'' is not allowed in a constant expression'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0163_1225_B1._TV_Subscriptions__Easy_Version_.cpp'
+        FileOffset:      181
+        Replacements:    []
+      - Message:         declared here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0163_1225_B1._TV_Subscriptions__Easy_Version_.cpp'
+        FileOffset:      125
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory after the end of ''a'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0163_1225_B1._TV_Subscriptions__Easy_Version_.cpp'
+      FileOffset:      446
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0163_1225_B1._TV_Subscriptions__Easy_Version_.cpp'
+          FileOffset:      446
+          Length:          4
+    Notes:
+      - Message:         'Assuming ''i'' is < ''t'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0163_1225_B1._TV_Subscriptions__Easy_Version_.cpp'
+        FileOffset:      99
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0163_1225_B1._TV_Subscriptions__Easy_Version_.cpp'
+            FileOffset:      99
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0163_1225_B1._TV_Subscriptions__Easy_Version_.cpp'
+        FileOffset:      83
+        Replacements:    []
+      - Message:         '''j'' is < ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0163_1225_B1._TV_Subscriptions__Easy_Version_.cpp'
+        FileOffset:      209
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0163_1225_B1._TV_Subscriptions__Easy_Version_.cpp'
+            FileOffset:      209
+            Length:          1
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0163_1225_B1._TV_Subscriptions__Easy_Version_.cpp'
+        FileOffset:      193
+        Replacements:    []
+      - Message:         'Assuming index ''0'' is less than the number of ''int'' elements in ''a'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0163_1225_B1._TV_Subscriptions__Easy_Version_.cpp'
+        FileOffset:      247
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0163_1225_B1._TV_Subscriptions__Easy_Version_.cpp'
+            FileOffset:      247
+            Length:          4
+      - Message:         'Assuming ''j'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0163_1225_B1._TV_Subscriptions__Easy_Version_.cpp'
+        FileOffset:      209
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0163_1225_B1._TV_Subscriptions__Easy_Version_.cpp'
+            FileOffset:      209
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 15
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0163_1225_B1._TV_Subscriptions__Easy_Version_.cpp'
+        FileOffset:      193
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0163_1225_B1._TV_Subscriptions__Easy_Version_.cpp'
+        FileOffset:      314
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0163_1225_B1._TV_Subscriptions__Easy_Version_.cpp'
+            FileOffset:      314
+            Length:          10
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0163_1225_B1._TV_Subscriptions__Easy_Version_.cpp'
+        FileOffset:      298
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0163_1225_B1._TV_Subscriptions__Easy_Version_.cpp'
+        FileOffset:      403
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0163_1225_B1._TV_Subscriptions__Easy_Version_.cpp'
+            FileOffset:      403
+            Length:          9
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0163_1225_B1._TV_Subscriptions__Easy_Version_.cpp'
+        FileOffset:      387
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0163_1225_B1._TV_Subscriptions__Easy_Version_.cpp'
+        FileOffset:      403
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0163_1225_B1._TV_Subscriptions__Easy_Version_.cpp'
+            FileOffset:      403
+            Length:          9
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0163_1225_B1._TV_Subscriptions__Easy_Version_.cpp'
+        FileOffset:      387
+        Replacements:    []
+      - Message:         'Access of ''int'' element in ''a'' at index 1'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0163_1225_B1._TV_Subscriptions__Easy_Version_.cpp'
+        FileOffset:      446
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0163_1225_B1._TV_Subscriptions__Easy_Version_.cpp'
+            FileOffset:      446
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0163_1225_B1._TV_Subscriptions__Easy_Version_.cpp'
+      FileOffset:      547
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''std::endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0163_1225_B1._TV_Subscriptions__Easy_Version_.cpp'
+      FileOffset:      622
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0163_1225_B1._TV_Subscriptions__Easy_Version_.cpp'
+          Offset:          622
+          Length:          9
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

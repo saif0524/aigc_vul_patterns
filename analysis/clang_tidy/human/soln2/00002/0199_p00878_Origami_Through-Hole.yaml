@@ -1,0 +1,1504 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-using
+    DiagnosticMessage:
+      Message:         'use ''using'' instead of ''typedef'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      129
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          129
+          Length:          19
+          ReplacementText: 'using Real = double'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-using
+    DiagnosticMessage:
+      Message:         'use ''using'' instead of ''typedef'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      150
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          150
+          Length:          27
+          ReplacementText: 'using Point = complex<Real>'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-using
+    DiagnosticMessage:
+      Message:         'use ''using'' instead of ''typedef'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      179
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          179
+          Length:          30
+          ReplacementText: 'using Line = pair<Point,Point>'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-using
+    DiagnosticMessage:
+      Message:         'use ''using'' instead of ''typedef'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      211
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          211
+          Length:          33
+          ReplacementText: 'using Segment = pair<Point,Point>'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-using
+    DiagnosticMessage:
+      Message:         'use ''using'' instead of ''typedef'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      246
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          246
+          Length:          29
+          ReplacementText: 'using Polygon = vector<Point>'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-unnecessary-value-param
+    DiagnosticMessage:
+      Message:         'the parameter ''poly'' is copied for each invocation but only used as a const reference; consider making it a const reference'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      479
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          471
+          Length:          0
+          ReplacementText: 'const '
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          478
+          Length:          0
+          ReplacementText: '&'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      647
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          642
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          658
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      706
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          702
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          714
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      780
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          775
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          810
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      860
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          855
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          880
+          Length:          0
+          ReplacementText: ' -> Real'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      918
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          913
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          938
+          Length:          0
+          ReplacementText: ' -> Real'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      977
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          971
+          Length:          5
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          998
+          Length:          0
+          ReplacementText: ' -> Point'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      1036
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          1031
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          1060
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      1101
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          1095
+          Length:          5
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          1121
+          Length:          0
+          ReplacementText: ' -> Point'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      1350
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          1345
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          1372
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      1523
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          1517
+          Length:          5
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          1544
+          Length:          0
+          ReplacementText: ' -> Point'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      1705
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          1700
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          1732
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      1909
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          1903
+          Length:          5
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          1935
+          Length:          0
+          ReplacementText: ' -> Point'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      1998
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          1992
+          Length:          5
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          2018
+          Length:          0
+          ReplacementText: ' -> Point'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      2083
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          2077
+          Length:          5
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          2103
+          Length:          0
+          ReplacementText: ' -> Point'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      2157
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          2149
+          Length:          7
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          2182
+          Length:          0
+          ReplacementText: ' -> Polygon'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-loop-convert
+    DiagnosticMessage:
+      Message:         use range-based for loop instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      2199
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          2202
+          Length:          27
+          ReplacementText: '(auto i : poly)'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          2248
+          Length:          7
+          ReplacementText: i
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      2338
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          2330
+          Length:          7
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          2362
+          Length:          0
+          ReplacementText: ' -> Segment'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      2447
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          2442
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          2473
+          Length:          0
+          ReplacementText: ' -> Line'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-return-braced-init-list
+    DiagnosticMessage:
+      Message:         'avoid repeating the return type from the declaration; use a braced initializer list instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      2588
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      2612
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          2604
+          Length:          7
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          2649
+          Length:          0
+          ReplacementText: ' -> Polygon'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      3124
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          3116
+          Length:          7
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          3151
+          Length:          0
+          ReplacementText: ' -> Segment'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      3452
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          3447
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          3481
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      3777
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          3772
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          3811
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-comment
+    DiagnosticMessage:
+      Message:         '''/*'' within block comment'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      4389
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      5455
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          5447
+          Length:          7
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          5485
+          Length:          0
+          ReplacementText: ' -> Polygon'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-unnecessary-value-param
+    DiagnosticMessage:
+      Message:         'parameter ''p1'' is passed by value and only copied once; consider moving it to avoid unnecessary copies'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      5500
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          17
+          Length:          0
+          ReplacementText: "#include <utility>\n"
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          5500
+          Length:          0
+          ReplacementText: 'std::move('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          5502
+          Length:          0
+          ReplacementText: ')'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      5629
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          5624
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          5662
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-unnecessary-value-param
+    DiagnosticMessage:
+      Message:         'the parameter ''p1'' is copied for each invocation but only used as a const reference; consider making it a const reference'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      5648
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          5640
+          Length:          0
+          ReplacementText: 'const '
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          5647
+          Length:          0
+          ReplacementText: '&'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-unnecessary-value-param
+    DiagnosticMessage:
+      Message:         'the parameter ''p2'' is copied for each invocation but only used as a const reference; consider making it a const reference'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      5659
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          5651
+          Length:          0
+          ReplacementText: 'const '
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          5658
+          Length:          0
+          ReplacementText: '&'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      5887
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      5908
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      5971
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      5996
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      6039
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      6070
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      6090
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''folded'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      8160
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          FileOffset:      8160
+          Length:          9
+    Notes:
+      - Message:         'Assuming ''i'' is >= ''V'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      6443
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      6443
+            Length:          3
+      - Message:         Loop condition is false. Execution continues on line 302
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      6431
+        Replacements:    []
+      - Message:         '''i'' is >= ''V'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      6488
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      6488
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 307
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      6476
+        Replacements:    []
+      - Message:         '''i'' is >= ''V'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      6670
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      6670
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 309
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      6658
+        Replacements:    []
+      - Message:         '''i'' is >= ''V'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      6726
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      6726
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 342
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      6714
+        Replacements:    []
+      - Message:         '''i'' is >= ''V'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7433
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      7433
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 352
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7421
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''V'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7691
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      7691
+            Length:          4
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7675
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7707
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      7707
+            Length:          19
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7704
+        Replacements:    []
+      - Message:         ' Execution continues on line 359'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7741
+        Replacements:    []
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7756
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7816
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      7816
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7804
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7816
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      7816
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 364
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7804
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8053
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      8053
+            Length:          12
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8047
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8118
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      8118
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8106
+        Replacements:    []
+      - Message:         'Assuming ''i'' is not equal to ''cur'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8136
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      8136
+            Length:          6
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8133
+        Replacements:    []
+      - Message:         'Access of ''folded'' at negative byte offset'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8160
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      8160
+            Length:          9
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory around ''polys'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      8855
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          FileOffset:      8855
+          Length:          8
+    Notes:
+      - Message:         'Assuming ''i'' is >= ''V'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      6443
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      6443
+            Length:          3
+      - Message:         Loop condition is false. Execution continues on line 302
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      6431
+        Replacements:    []
+      - Message:         '''i'' is >= ''V'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      6488
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      6488
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 307
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      6476
+        Replacements:    []
+      - Message:         '''i'' is >= ''V'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      6670
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      6670
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 309
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      6658
+        Replacements:    []
+      - Message:         '''i'' is >= ''V'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      6726
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      6726
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 342
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      6714
+        Replacements:    []
+      - Message:         '''i'' is >= ''V'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7433
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      7433
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 352
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7421
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''V'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7691
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      7691
+            Length:          4
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7675
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7707
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      7707
+            Length:          19
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7704
+        Replacements:    []
+      - Message:         ' Execution continues on line 359'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7741
+        Replacements:    []
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7756
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7816
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      7816
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 364
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7804
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8053
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      8053
+            Length:          12
+      - Message:         Loop condition is false. Execution continues on line 399
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8047
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''V'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8588
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      8588
+            Length:          3
+      - Message:         Loop condition is false. Execution continues on line 412
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8576
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''V'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8839
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      8839
+            Length:          4
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8823
+        Replacements:    []
+      - Message:         'Access of ''polys'' at a negative or overflowing index, while it holds only 1200 ''class std::vector<class std::complex<double> >'' elements'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8855
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      8855
+            Length:          8
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''polys'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      8855
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          FileOffset:      8855
+          Length:          8
+    Notes:
+      - Message:         'Assuming ''i'' is >= ''V'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      6443
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      6443
+            Length:          3
+      - Message:         Loop condition is false. Execution continues on line 302
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      6431
+        Replacements:    []
+      - Message:         '''i'' is >= ''V'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      6488
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      6488
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 307
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      6476
+        Replacements:    []
+      - Message:         '''i'' is >= ''V'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      6670
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      6670
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 309
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      6658
+        Replacements:    []
+      - Message:         '''i'' is >= ''V'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      6726
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      6726
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 342
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      6714
+        Replacements:    []
+      - Message:         '''i'' is >= ''V'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7433
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      7433
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 352
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7421
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''V'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7691
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      7691
+            Length:          4
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7675
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7707
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      7707
+            Length:          19
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7704
+        Replacements:    []
+      - Message:         ' Execution continues on line 359'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7741
+        Replacements:    []
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7756
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7816
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      7816
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7804
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7816
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      7816
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 364
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7804
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8053
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      8053
+            Length:          12
+      - Message:         Loop condition is false. Execution continues on line 399
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8047
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''V'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8588
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      8588
+            Length:          3
+      - Message:         Loop condition is false. Execution continues on line 412
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8576
+        Replacements:    []
+      - Message:         '''i'' is >= ''V'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8839
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      8839
+            Length:          1
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8823
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8855
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      8855
+            Length:          16
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8852
+        Replacements:    []
+      - Message:         ' Execution continues on line 412'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8873
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''V'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8839
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      8839
+            Length:          4
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8823
+        Replacements:    []
+      - Message:         'Access of ''polys'' at negative byte offset -24'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8855
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      8855
+            Length:          8
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''conSeg'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      9891
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          FileOffset:      9891
+          Length:          11
+    Notes:
+      - Message:         'Assuming ''i'' is >= ''V'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      6443
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      6443
+            Length:          3
+      - Message:         Loop condition is false. Execution continues on line 302
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      6431
+        Replacements:    []
+      - Message:         '''i'' is >= ''V'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      6488
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      6488
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 307
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      6476
+        Replacements:    []
+      - Message:         '''i'' is >= ''V'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      6670
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      6670
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 309
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      6658
+        Replacements:    []
+      - Message:         '''i'' is >= ''V'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      6726
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      6726
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 342
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      6714
+        Replacements:    []
+      - Message:         '''i'' is >= ''V'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7433
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      7433
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 352
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7421
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''V'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7691
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      7691
+            Length:          4
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7675
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7707
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      7707
+            Length:          19
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7704
+        Replacements:    []
+      - Message:         ' Execution continues on line 359'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7741
+        Replacements:    []
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7756
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7816
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      7816
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7804
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7816
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      7816
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7804
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7816
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      7816
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 364
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      7804
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8053
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      8053
+            Length:          12
+      - Message:         Loop condition is false. Execution continues on line 399
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8047
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''V'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8588
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      8588
+            Length:          3
+      - Message:         Loop condition is false. Execution continues on line 412
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8576
+        Replacements:    []
+      - Message:         '''i'' is >= ''V'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8839
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      8839
+            Length:          1
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8823
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8855
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      8855
+            Length:          16
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8852
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8888
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      8888
+            Length:          9
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8885
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''V'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8839
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      8839
+            Length:          4
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8823
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8855
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      8855
+            Length:          16
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8852
+        Replacements:    []
+      - Message:         ' Execution continues on line 412'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8873
+        Replacements:    []
+      - Message:         'Assuming ''i'' is < ''V'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8839
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      8839
+            Length:          4
+      - Message:         Loop condition is false. Execution continues on line 419
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8823
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 422
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      8970
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      9027
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      9027
+            Length:          19
+      - Message:         Loop condition is false. Execution continues on line 425
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      9015
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 445
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      9085
+        Replacements:    []
+      - Message:         'Assuming ''last'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      9654
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      9654
+            Length:          5
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      9651
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      9676
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      9676
+            Length:          19
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      9664
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      9715
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      9715
+            Length:          19
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      9701
+        Replacements:    []
+      - Message:         'Assuming ''id2'' is < ''V'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      9823
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      9823
+            Length:          5
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      9820
+        Replacements:    []
+      - Message:         'Access of ''conSeg'' at negative byte offset'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+        FileOffset:      9891
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+            FileOffset:      9891
+            Length:          11
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      10317
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      10669
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-loop-convert
+    DiagnosticMessage:
+      Message:         use range-based for loop instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      11227
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          11230
+          Length:          19
+          ReplacementText: '(auto & i : new_conSeg)'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          11276
+          Length:          13
+          ReplacementText: i
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      11635
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          11631
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          11643
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+      FileOffset:      11736
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          11732
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0199_p00878_Origami_Through-Hole.cpp'
+          Offset:          11742
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

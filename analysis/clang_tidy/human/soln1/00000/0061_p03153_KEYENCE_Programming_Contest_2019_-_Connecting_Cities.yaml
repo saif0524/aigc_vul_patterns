@@ -1,0 +1,233 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+      FileOffset:      66
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+      FileOffset:      112
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+          Offset:          107
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+          Offset:          141
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+      FileOffset:      170
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-shift-op-parentheses
+    DiagnosticMessage:
+      Message:         'operator ''>>'' has lower precedence than ''+''; ''+'' will be evaluated first'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+      FileOffset:      268
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+          FileOffset:      267
+          Length:          3
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+          FileOffset:      270
+          Length:          2
+    Notes:
+      - Message:         'place parentheses around the ''+'' expression to silence this warning'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+        FileOffset:      268
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            Offset:          267
+            Length:          0
+            ReplacementText: '('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            Offset:          270
+            Length:          0
+            ReplacementText: ')'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-core.uninitialized.Assign
+    DiagnosticMessage:
+      Message:         Assigned value is uninitialized
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+      FileOffset:      429
+      Replacements:    []
+    Notes:
+      - Message:         'Assuming ''i'' is <= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+        FileOffset:      1097
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            FileOffset:      1097
+            Length:          4
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+        FileOffset:      1085
+        Replacements:    []
+      - Message:         'Assuming ''i'' is <= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+        FileOffset:      1097
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            FileOffset:      1097
+            Length:          4
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+        FileOffset:      1085
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+        FileOffset:      1097
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            FileOffset:      1097
+            Length:          4
+      - Message:         Loop condition is false. Execution continues on line 56
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+        FileOffset:      1085
+        Replacements:    []
+      - Message:         'Calling ''add'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+        FileOffset:      1130
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            FileOffset:      1130
+            Length:          8
+      - Message:         '''l'' is < ''r'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+        FileOffset:      243
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            FileOffset:      243
+            Length:          1
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+        FileOffset:      240
+        Replacements:    []
+      - Message:         '''pos'' declared without an initial value'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+        FileOffset:      290
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            FileOffset:      290
+            Length:          3
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+        FileOffset:      299
+        Replacements:    []
+      - Message:         'Assuming ''f'' is >= ''mi'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+        FileOffset:      361
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            FileOffset:      361
+            Length:          4
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+        FileOffset:      358
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 22
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+        FileOffset:      299
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+        FileOffset:      389
+        Replacements:    []
+      - Message:         Assigned value is uninitialized
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+        FileOffset:      429
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            FileOffset:      430
+            Length:          3
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+      FileOffset:      430
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+      FileOffset:      638
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+      FileOffset:      707
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+          Offset:          703
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+          Offset:          720
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+      FileOffset:      777
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+          Offset:          774
+          Length:          2
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+          Offset:          786
+          Length:          0
+          ReplacementText: ' -> ll'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+      FileOffset:      1045
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+          Offset:          1041
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0061_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+          Offset:          1051
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

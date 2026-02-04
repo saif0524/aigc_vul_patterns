@@ -1,0 +1,221 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-macro-to-enum
+    DiagnosticMessage:
+      Message:         replace macro with enum
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+      FileOffset:      45
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+          Offset:          45
+          Length:          8
+          ReplacementText: "enum {\n"
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+          Offset:          56
+          Length:          0
+          ReplacementText: ' ='
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+          Offset:          68
+          Length:          0
+          ReplacementText: "};\n"
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-macro-to-enum
+    DiagnosticMessage:
+      Message:         'macro ''MOD'' defines an integral constant; prefer an enum instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+      FileOffset:      53
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-using
+    DiagnosticMessage:
+      Message:         'use ''using'' instead of ''typedef'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+      FileOffset:      68
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+          Offset:          68
+          Length:          20
+          ReplacementText: 'using ll = long long'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+      FileOffset:      117
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+      FileOffset:      151
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''dp2'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+      FileOffset:      1435
+      Replacements:    []
+    Notes:
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+        FileOffset:      1563
+        Replacements:    []
+      - Message:         'Calling ''solve'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+        FileOffset:      1585
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+            FileOffset:      1585
+            Length:          7
+      - Message:         'Assuming ''i'' is > ''N'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+        FileOffset:      277
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+            FileOffset:      277
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 20
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+        FileOffset:      261
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+        FileOffset:      342
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+            FileOffset:      342
+            Length:          10
+      - Message:         Loop condition is false. Execution continues on line 23
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+        FileOffset:      322
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+        FileOffset:      415
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+            FileOffset:      415
+            Length:          14
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+        FileOffset:      391
+        Replacements:    []
+      - Message:         'Assuming index is non-negative and less than 310000, the number of ''char'' elements in ''c'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+        FileOffset:      446
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+            FileOffset:      446
+            Length:          4
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+        FileOffset:      415
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+            FileOffset:      415
+            Length:          14
+      - Message:         Loop condition is false. Execution continues on line 27
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+        FileOffset:      391
+        Replacements:    []
+      - Message:         '''a'' is > ''N'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+        FileOffset:      554
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+            FileOffset:      554
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 35
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+        FileOffset:      542
+        Replacements:    []
+      - Message:         'Assuming ''b'' is > ''M'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+        FileOffset:      624
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+            FileOffset:      624
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 38
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+        FileOffset:      612
+        Replacements:    []
+      - Message:         'Assuming ''cc'' is > ''K'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+        FileOffset:      703
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+            FileOffset:      703
+            Length:          7
+      - Message:         Loop condition is false. Execution continues on line 42
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+        FileOffset:      690
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+        FileOffset:      798
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+            FileOffset:      798
+            Length:          14
+      - Message:         Loop condition is false. Execution continues on line 62
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+        FileOffset:      782
+        Replacements:    []
+      - Message:         'Access of ''dp2'' at negative byte offset'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+        FileOffset:      1435
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+            FileOffset:      1435
+            Length:          14
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+      FileOffset:      1461
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+          Offset:          1457
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+          Offset:          1467
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+      FileOffset:      1520
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0282_p04004_AtCoder_Regular_Contest_061_-_Card_Game_for_Three.cpp'
+          Offset:          1520
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

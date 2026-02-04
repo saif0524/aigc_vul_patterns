@@ -1,0 +1,249 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0260_763_D._Timofey_and_a_flat_tree.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0260_763_D._Timofey_and_a_flat_tree.cpp'
+      FileOffset:      74
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0260_763_D._Timofey_and_a_flat_tree.cpp'
+          Offset:          67
+          Length:          6
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0260_763_D._Timofey_and_a_flat_tree.cpp'
+          Offset:          123
+          Length:          0
+          ReplacementText: ' -> size_t'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0260_763_D._Timofey_and_a_flat_tree.cpp'
+      FileOffset:      433
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0260_763_D._Timofey_and_a_flat_tree.cpp'
+          Offset:          410
+          Length:          22
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0260_763_D._Timofey_and_a_flat_tree.cpp'
+          Offset:          456
+          Length:          0
+          ReplacementText: ' -> vector<vector<size_t>>'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no matching member function for call to ''push_back'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0260_763_D._Timofey_and_a_flat_tree.cpp'
+      FileOffset:      592
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0260_763_D._Timofey_and_a_flat_tree.cpp'
+          FileOffset:      583
+          Length:          18
+    Notes:
+      - Message:         "candidate function not viable: no known conversion from 'vector<vector<size_t>, allocator<std::vector<unsigned long>>>' to 'const vector<unsigned long, allocator<unsigned long>>' for 1st argument"
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h'
+        FileOffset:      41878
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h'
+            FileOffset:      41888
+            Length:          21
+      - Message:         "candidate function not viable: no known conversion from 'vector<vector<size_t>, allocator<std::vector<unsigned long>>>' to 'vector<unsigned long, allocator<unsigned long>>' for 1st argument"
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h'
+        FileOffset:      42305
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h'
+            FileOffset:      42315
+            Length:          16
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'invalid operands to binary expression (''vector<size_t>'' (aka ''vector<unsigned long>'') and ''vector<vector<size_t>>'' (aka ''vector<vector<unsigned long>>''))'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0260_763_D._Timofey_and_a_flat_tree.cpp'
+      FileOffset:      744
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0260_763_D._Timofey_and_a_flat_tree.cpp'
+          FileOffset:      712
+          Length:          31
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0260_763_D._Timofey_and_a_flat_tree.cpp'
+          FileOffset:      746
+          Length:          8
+    Notes:
+      - Message:         'candidate template ignored: could not match ''reverse_iterator'' against ''vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h'
+        FileOffset:      20617
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''move_iterator'' against ''vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h'
+        FileOffset:      59354
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_string'' against ''vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+        FileOffset:      126994
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''const _CharT *'' against ''vector<size_t>'' (aka ''vector<unsigned long>'')'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+        FileOffset:      127678
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_string'' against ''vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+        FileOffset:      128363
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_string'' against ''vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+        FileOffset:      128995
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_string'' against ''vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+        FileOffset:      129683
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_string'' against ''vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+        FileOffset:      130156
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_string'' against ''vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+        FileOffset:      130461
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_string'' against ''vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+        FileOffset:      130788
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''const _CharT *'' against ''vector<size_t>'' (aka ''vector<unsigned long>'')'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+        FileOffset:      131619
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_string'' against ''vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+        FileOffset:      131915
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_string'' against ''vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+        FileOffset:      132207
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_string'' against ''vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+        FileOffset:      132500
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''complex'' against ''vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/complex'
+        FileOffset:      10478
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''complex'' against ''vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/complex'
+        FileOffset:      10691
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''complex'' against ''vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/complex'
+        FileOffset:      10895
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr'' against ''vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      13976
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      9594
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr'' against ''vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      13976
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      10553
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr'' against ''vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      13976
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      11519
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr'' against ''vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      13976
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      12485
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr'' against ''vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      13976
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      13451
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''valarray'' against ''vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      38884
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      37574
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''valarray'' against ''vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      38884
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      38083
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''valarray'' against ''vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      38884
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      38569
+        Replacements:    []
+      - Message:         'candidate function template not viable: requires single argument ''__x'', but 2 arguments were provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/complex'
+        FileOffset:      13191
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/complex'
+            FileOffset:      13201
+            Length:          23
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0260_763_D._Timofey_and_a_flat_tree.cpp'
+      FileOffset:      763
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0260_763_D._Timofey_and_a_flat_tree.cpp'
+          Offset:          759
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0260_763_D._Timofey_and_a_flat_tree.cpp'
+          Offset:          769
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0260_763_D._Timofey_and_a_flat_tree.cpp'
+      FileOffset:      816
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0260_763_D._Timofey_and_a_flat_tree.cpp'
+          Offset:          816
+          Length:          1
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

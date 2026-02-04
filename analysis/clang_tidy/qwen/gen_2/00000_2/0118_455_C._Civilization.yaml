@@ -1,0 +1,251 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0118_455_C._Civilization.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0118_455_C._Civilization.cpp'
+      FileOffset:      73
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0118_455_C._Civilization.cpp'
+      FileOffset:      117
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0118_455_C._Civilization.cpp'
+      FileOffset:      145
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0118_455_C._Civilization.cpp'
+          Offset:          141
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0118_455_C._Civilization.cpp'
+          Offset:          159
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'reference to ''size'' is ambiguous'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0118_455_C._Civilization.cpp'
+      FileOffset:      333
+      Replacements:    []
+    Notes:
+      - Message:         'candidate found by name lookup is ''size'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0118_455_C._Civilization.cpp'
+        FileOffset:      91
+        Replacements:    []
+      - Message:         'candidate found by name lookup is ''std::size'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/range_access.h'
+        FileOffset:      9093
+        Replacements:    []
+      - Message:         'candidate found by name lookup is ''std::size'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/range_access.h'
+        FileOffset:      8802
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         type name requires a specifier or qualifier
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0118_455_C._Civilization.cpp'
+      FileOffset:      333
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         variable declaration in condition must have an initializer
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0118_455_C._Civilization.cpp'
+      FileOffset:      333
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-vla-cxx-extension
+    DiagnosticMessage:
+      Message:         'variable length arrays in C++ are a Clang extension'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0118_455_C._Civilization.cpp'
+      FileOffset:      338
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0118_455_C._Civilization.cpp'
+          FileOffset:      338
+          Length:          1
+    Notes:
+      - Message:         'function parameter ''u'' with unknown value cannot be used in a constant expression'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0118_455_C._Civilization.cpp'
+        FileOffset:      338
+        Replacements:    []
+      - Message:         declared here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0118_455_C._Civilization.cpp'
+        FileOffset:      248
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'reference to ''size'' is ambiguous'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0118_455_C._Civilization.cpp'
+      FileOffset:      387
+      Replacements:    []
+    Notes:
+      - Message:         'candidate found by name lookup is ''size'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0118_455_C._Civilization.cpp'
+        FileOffset:      91
+        Replacements:    []
+      - Message:         'candidate found by name lookup is ''std::size'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/range_access.h'
+        FileOffset:      9093
+        Replacements:    []
+      - Message:         'candidate found by name lookup is ''std::size'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/range_access.h'
+        FileOffset:      8802
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0118_455_C._Civilization.cpp'
+      FileOffset:      414
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0118_455_C._Civilization.cpp'
+          Offset:          410
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0118_455_C._Civilization.cpp'
+          Offset:          431
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''dfs'' of similar type (''int'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0118_455_C._Civilization.cpp'
+      FileOffset:      418
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0118_455_C._Civilization.cpp'
+          FileOffset:      418
+          Length:          12
+    Notes:
+      - Message:         'the first parameter in the range is ''u'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0118_455_C._Civilization.cpp'
+        FileOffset:      422
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0118_455_C._Civilization.cpp'
+            FileOffset:      422
+            Length:          1
+      - Message:         'the last parameter in the range is ''p'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0118_455_C._Civilization.cpp'
+        FileOffset:      429
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0118_455_C._Civilization.cpp'
+            FileOffset:      429
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'reference to ''size'' is ambiguous'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0118_455_C._Civilization.cpp'
+      FileOffset:      628
+      Replacements:    []
+    Notes:
+      - Message:         'candidate found by name lookup is ''size'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0118_455_C._Civilization.cpp'
+        FileOffset:      91
+        Replacements:    []
+      - Message:         'candidate found by name lookup is ''std::size'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/range_access.h'
+        FileOffset:      9093
+        Replacements:    []
+      - Message:         'candidate found by name lookup is ''std::size'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/range_access.h'
+        FileOffset:      8802
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'reference to ''size'' is ambiguous'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0118_455_C._Civilization.cpp'
+      FileOffset:      842
+      Replacements:    []
+    Notes:
+      - Message:         'candidate found by name lookup is ''size'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0118_455_C._Civilization.cpp'
+        FileOffset:      91
+        Replacements:    []
+      - Message:         'candidate found by name lookup is ''std::size'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/range_access.h'
+        FileOffset:      9093
+        Replacements:    []
+      - Message:         'candidate found by name lookup is ''std::size'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/range_access.h'
+        FileOffset:      8802
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0118_455_C._Civilization.cpp'
+      FileOffset:      1571
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0118_455_C._Civilization.cpp'
+          Offset:          1567
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0118_455_C._Civilization.cpp'
+          Offset:          1577
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0118_455_C._Civilization.cpp'
+      FileOffset:      1624
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0118_455_C._Civilization.cpp'
+          Offset:          1624
+          Length:          1
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'reference to ''size'' is ambiguous'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0118_455_C._Civilization.cpp'
+      FileOffset:      1729
+      Replacements:    []
+    Notes:
+      - Message:         'candidate found by name lookup is ''size'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0118_455_C._Civilization.cpp'
+        FileOffset:      91
+        Replacements:    []
+      - Message:         'candidate found by name lookup is ''std::size'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/range_access.h'
+        FileOffset:      9093
+        Replacements:    []
+      - Message:         'candidate found by name lookup is ''std::size'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/range_access.h'
+        FileOffset:      8802
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

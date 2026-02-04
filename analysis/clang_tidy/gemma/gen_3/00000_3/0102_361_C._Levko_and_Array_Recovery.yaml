@@ -1,0 +1,524 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0102_361_C._Levko_and_Array_Recovery.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0102_361_C._Levko_and_Array_Recovery.cpp'
+      FileOffset:      86
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0102_361_C._Levko_and_Array_Recovery.cpp'
+          Offset:          82
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0102_361_C._Levko_and_Array_Recovery.cpp'
+          Offset:          92
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no viable overloaded ''='''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0102_361_C._Levko_and_Array_Recovery.cpp'
+      FileOffset:      416
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0102_361_C._Levko_and_Array_Recovery.cpp'
+          FileOffset:      402
+          Length:          13
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0102_361_C._Levko_and_Array_Recovery.cpp'
+          FileOffset:      418
+          Length:          22
+    Notes:
+      - Message:         "candidate function not viable: no known conversion from 'tuple<[3 * ...], typename __decay_and_strip<int &>::__type>' to 'const tuple<[3 * ...], (no argument)>' for 1st argument"
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      35931
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+            FileOffset:      35941
+            Length:          98
+      - Message:         "candidate function not viable: no known conversion from 'tuple<[3 * ...], typename __decay_and_strip<int &>::__type>' to 'tuple<[3 * ...], (no argument)>' for 1st argument"
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      36203
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+            FileOffset:      36213
+            Length:          81
+      - Message:         'candidate template ignored: substitution failure [with _UElements = <int, int, int, int>]: no matching function for call to ''__assignable'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      36539
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+            FileOffset:      36492
+            Length:          12
+      - Message:         'candidate template ignored: substitution failure [with _UElements = <int, int, int, int>]: no matching function for call to ''__assignable'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      36805
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+            FileOffset:      36765
+            Length:          12
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no viable overloaded ''='''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0102_361_C._Levko_and_Array_Recovery.cpp'
+      FileOffset:      544
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0102_361_C._Levko_and_Array_Recovery.cpp'
+          FileOffset:      530
+          Length:          13
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0102_361_C._Levko_and_Array_Recovery.cpp'
+          FileOffset:      546
+          Length:          23
+    Notes:
+      - Message:         "candidate function not viable: no known conversion from 'tuple<[3 * ...], typename __decay_and_strip<int &>::__type>' to 'const tuple<[3 * ...], (no argument)>' for 1st argument"
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      35931
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+            FileOffset:      35941
+            Length:          98
+      - Message:         "candidate function not viable: no known conversion from 'tuple<[3 * ...], typename __decay_and_strip<int &>::__type>' to 'tuple<[3 * ...], (no argument)>' for 1st argument"
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      36203
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+            FileOffset:      36213
+            Length:          81
+      - Message:         'candidate template ignored: substitution failure [with _UElements = <int, int, int, int>]: no matching function for call to ''__assignable'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      36539
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+            FileOffset:      36492
+            Length:          12
+      - Message:         'candidate template ignored: substitution failure [with _UElements = <int, int, int, int>]: no matching function for call to ''__assignable'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      36805
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+            FileOffset:      36765
+            Length:          12
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0102_361_C._Levko_and_Array_Recovery.cpp'
+      FileOffset:      880
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0102_361_C._Levko_and_Array_Recovery.cpp'
+          Offset:          880
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0102_361_C._Levko_and_Array_Recovery.cpp'
+      FileOffset:      915
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0102_361_C._Levko_and_Array_Recovery.cpp'
+          Offset:          915
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0102_361_C._Levko_and_Array_Recovery.cpp'
+      FileOffset:      1218
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0102_361_C._Levko_and_Array_Recovery.cpp'
+          Offset:          1218
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'cannot initialize a variable of type ''int'' with an rvalue of type ''__enable_if_t<(3UL >= sizeof...(_Elements))>'' (aka ''void'')'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0102_361_C._Levko_and_Array_Recovery.cpp'
+      FileOffset:      1531
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0102_361_C._Levko_and_Array_Recovery.cpp'
+          FileOffset:      1535
+          Length:          21
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'call to deleted function ''get'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0102_361_C._Levko_and_Array_Recovery.cpp'
+      FileOffset:      1535
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0102_361_C._Levko_and_Array_Recovery.cpp'
+          FileOffset:      1535
+          Length:          6
+    Notes:
+      - Message:         'candidate function [with __i = 3, _Elements = <int, int, int>] has been explicitly deleted'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      60167
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''pair'' against ''tuple'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      34431
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''pair'' against ''tuple'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      34636
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''pair'' against ''tuple'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      34863
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''pair'' against ''tuple'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      35086
+        Replacements:    []
+      - Message:         'candidate template ignored: substitution failure [with __i = 3, _Elements = <int, int, int>]'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      58837
+        Replacements:    []
+      - Message:         'candidate template ignored: substitution failure [with __i = 3, _Elements = <int, int, int>]: no type named ''type'' in ''std::tuple_element<3, std::tuple<int, int, int>>'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      59104
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/utility.h'
+            FileOffset:      2881
+            Length:          5
+      - Message:         'candidate template ignored: substitution failure [with __i = 3, _Elements = <int, int, int>]: no type named ''type'' in ''std::tuple_element<3, std::tuple<int, int, int>>'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      59375
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/utility.h'
+            FileOffset:      2881
+            Length:          5
+      - Message:         'candidate template ignored: substitution failure [with __i = 3, _Elements = <int, int, int>]: no type named ''type'' in ''std::tuple_element<3, std::tuple<int, int, int>>'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      59772
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/utility.h'
+            FileOffset:      2881
+            Length:          5
+      - Message:         'candidate template ignored: could not match ''array'' against ''tuple'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      66795
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''array'' against ''tuple'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      66902
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''array'' against ''tuple'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      67015
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''array'' against ''tuple'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      67134
+        Replacements:    []
+      - Message:         'candidate template ignored: invalid explicitly-specified argument for template parameter ''_Tp'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      35332
+        Replacements:    []
+      - Message:         'candidate template ignored: invalid explicitly-specified argument for template parameter ''_Tp'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      35462
+        Replacements:    []
+      - Message:         'candidate template ignored: invalid explicitly-specified argument for template parameter ''_Tp'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      35593
+        Replacements:    []
+      - Message:         'candidate template ignored: invalid explicitly-specified argument for template parameter ''_Tp'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      35736
+        Replacements:    []
+      - Message:         'candidate template ignored: invalid explicitly-specified argument for template parameter ''_Tp'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      35878
+        Replacements:    []
+      - Message:         'candidate template ignored: invalid explicitly-specified argument for template parameter ''_Tp'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      36009
+        Replacements:    []
+      - Message:         'candidate template ignored: invalid explicitly-specified argument for template parameter ''_Tp'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      36141
+        Replacements:    []
+      - Message:         'candidate template ignored: invalid explicitly-specified argument for template parameter ''_Tp'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      36285
+        Replacements:    []
+      - Message:         'candidate template ignored: invalid explicitly-specified argument for template parameter ''_Tp'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      60435
+        Replacements:    []
+      - Message:         'candidate template ignored: invalid explicitly-specified argument for template parameter ''_Tp'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      60868
+        Replacements:    []
+      - Message:         'candidate template ignored: invalid explicitly-specified argument for template parameter ''_Tp'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      61325
+        Replacements:    []
+      - Message:         'candidate template ignored: invalid explicitly-specified argument for template parameter ''_Tp'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      61788
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'cannot initialize a variable of type ''int'' with an rvalue of type ''__enable_if_t<(3UL >= sizeof...(_Elements))>'' (aka ''void'')'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0102_361_C._Levko_and_Array_Recovery.cpp'
+      FileOffset:      1678
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0102_361_C._Levko_and_Array_Recovery.cpp'
+          FileOffset:      1683
+          Length:          21
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'call to deleted function ''get'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0102_361_C._Levko_and_Array_Recovery.cpp'
+      FileOffset:      1683
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0102_361_C._Levko_and_Array_Recovery.cpp'
+          FileOffset:      1683
+          Length:          6
+    Notes:
+      - Message:         'candidate function [with __i = 3, _Elements = <int, int, int>] has been explicitly deleted'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      60167
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''pair'' against ''tuple'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      34431
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''pair'' against ''tuple'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      34636
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''pair'' against ''tuple'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      34863
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''pair'' against ''tuple'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      35086
+        Replacements:    []
+      - Message:         'candidate template ignored: substitution failure [with __i = 3, _Elements = <int, int, int>]: no type named ''type'' in ''std::tuple_element<3, std::tuple<int, int, int>>'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      58837
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/utility.h'
+            FileOffset:      2881
+            Length:          5
+      - Message:         'candidate template ignored: substitution failure [with __i = 3, _Elements = <int, int, int>]: no type named ''type'' in ''std::tuple_element<3, std::tuple<int, int, int>>'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      59104
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/utility.h'
+            FileOffset:      2881
+            Length:          5
+      - Message:         'candidate template ignored: substitution failure [with __i = 3, _Elements = <int, int, int>]: no type named ''type'' in ''std::tuple_element<3, std::tuple<int, int, int>>'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      59375
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/utility.h'
+            FileOffset:      2881
+            Length:          5
+      - Message:         'candidate template ignored: substitution failure [with __i = 3, _Elements = <int, int, int>]: no type named ''type'' in ''std::tuple_element<3, std::tuple<int, int, int>>'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      59772
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/utility.h'
+            FileOffset:      2881
+            Length:          5
+      - Message:         'candidate template ignored: could not match ''array'' against ''tuple'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      66795
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''array'' against ''tuple'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      66902
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''array'' against ''tuple'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      67015
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''array'' against ''tuple'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      67134
+        Replacements:    []
+      - Message:         'candidate template ignored: invalid explicitly-specified argument for template parameter ''_Tp'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      35332
+        Replacements:    []
+      - Message:         'candidate template ignored: invalid explicitly-specified argument for template parameter ''_Tp'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      35462
+        Replacements:    []
+      - Message:         'candidate template ignored: invalid explicitly-specified argument for template parameter ''_Tp'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      35593
+        Replacements:    []
+      - Message:         'candidate template ignored: invalid explicitly-specified argument for template parameter ''_Tp'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      35736
+        Replacements:    []
+      - Message:         'candidate template ignored: invalid explicitly-specified argument for template parameter ''_Tp'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      35878
+        Replacements:    []
+      - Message:         'candidate template ignored: invalid explicitly-specified argument for template parameter ''_Tp'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      36009
+        Replacements:    []
+      - Message:         'candidate template ignored: invalid explicitly-specified argument for template parameter ''_Tp'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      36141
+        Replacements:    []
+      - Message:         'candidate template ignored: invalid explicitly-specified argument for template parameter ''_Tp'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      36285
+        Replacements:    []
+      - Message:         'candidate template ignored: invalid explicitly-specified argument for template parameter ''_Tp'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      60435
+        Replacements:    []
+      - Message:         'candidate template ignored: invalid explicitly-specified argument for template parameter ''_Tp'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      60868
+        Replacements:    []
+      - Message:         'candidate template ignored: invalid explicitly-specified argument for template parameter ''_Tp'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      61325
+        Replacements:    []
+      - Message:         'candidate template ignored: invalid explicitly-specified argument for template parameter ''_Tp'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      61788
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0102_361_C._Levko_and_Array_Recovery.cpp'
+      FileOffset:      2014
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0102_361_C._Levko_and_Array_Recovery.cpp'
+          Offset:          2014
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0102_361_C._Levko_and_Array_Recovery.cpp'
+      FileOffset:      2137
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0102_361_C._Levko_and_Array_Recovery.cpp'
+          Offset:          2137
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0102_361_C._Levko_and_Array_Recovery.cpp'
+      FileOffset:      2180
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0102_361_C._Levko_and_Array_Recovery.cpp'
+          Offset:          2180
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'static assertion failed due to requirement ''3UL < sizeof...(_Types)'': tuple index must be in range'
+      FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+      FileOffset:      57905
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+          FileOffset:      57905
+          Length:          23
+    Notes:
+      - Message:         'in instantiation of template class ''std::tuple_element<3, std::tuple<int, int, int>>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/utility.h'
+        FileOffset:      2881
+        Replacements:    []
+      - Message:         'in instantiation of template type alias ''__tuple_element_t'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      58788
+        Replacements:    []
+      - Message:         'while substituting deduced template arguments into function template ''get'' [with __i = 3, _Elements = <int, int, int>]'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0102_361_C._Levko_and_Array_Recovery.cpp'
+        FileOffset:      1535
+        Replacements:    []
+      - Message:         'expression evaluates to ''3 < 3'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      57909
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+            FileOffset:      57905
+            Length:          23
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'static assertion failed due to requirement ''sizeof...(_TElements) == sizeof...(_UElements)'': tuple objects can only be compared if they have equal sizes.'
+      FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+      FileOffset:      63237
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+          FileOffset:      63237
+          Length:          46
+    Notes:
+      - Message:         'in instantiation of function template specialization ''std::operator==<int, int, int, int, int, int, int>'' requested here'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0102_361_C._Levko_and_Array_Recovery.cpp'
+        FileOffset:      654
+        Replacements:    []
+      - Message:         'expression evaluates to ''3 == 4'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      63259
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+            FileOffset:      63237
+            Length:          46
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

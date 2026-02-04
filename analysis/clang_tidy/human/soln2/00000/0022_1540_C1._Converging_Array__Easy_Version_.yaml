@@ -1,0 +1,302 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+      FileOffset:      133
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+      FileOffset:      143
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+      FileOffset:      153
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+      FileOffset:      183
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+          Offset:          179
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+          Offset:          195
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+      FileOffset:      209
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+      FileOffset:      429
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''g'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+      FileOffset:      488
+      Replacements:    []
+    Notes:
+      - Message:         'Assuming ''i'' is <= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+        FileOffset:      805
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+            FileOffset:      805
+            Length:          4
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+        FileOffset:      793
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+        FileOffset:      823
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+            FileOffset:      823
+            Length:          17
+      - Message:         Taint propagated to the 2nd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+        FileOffset:      823
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+            FileOffset:      823
+            Length:          17
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+        FileOffset:      805
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+            FileOffset:      805
+            Length:          4
+      - Message:         Loop condition is false. Execution continues on line 37
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+        FileOffset:      793
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 39
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+        FileOffset:      846
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 41
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+        FileOffset:      898
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 43
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+        FileOffset:      951
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+        FileOffset:      1000
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 45
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+        FileOffset:      1000
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 48
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+        FileOffset:      1079
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 51
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+        FileOffset:      1158
+        Replacements:    []
+      - Message:         'Assuming ''i'' is <= ''r'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+        FileOffset:      1223
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+            FileOffset:      1223
+            Length:          4
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+        FileOffset:      1211
+        Replacements:    []
+      - Message:         'Calling ''solve'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+        FileOffset:      1248
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+            FileOffset:      1248
+            Length:          8
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+        FileOffset:      261
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 20
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+        FileOffset:      297
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+        FileOffset:      395
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+            FileOffset:      395
+            Length:          8
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+        FileOffset:      366
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+        FileOffset:      469
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+            FileOffset:      469
+            Length:          18
+      - Message:         '''?'' condition is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+        FileOffset:      469
+        Replacements:    []
+      - Message:         'Access of ''g'' with a tainted index that may be too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+        FileOffset:      488
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+            FileOffset:      488
+            Length:          23
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+      FileOffset:      760
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+          Offset:          756
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+          Offset:          766
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''sb'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+      FileOffset:      1063
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+          FileOffset:      1063
+          Length:          7
+    Notes:
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+        FileOffset:      805
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+            FileOffset:      805
+            Length:          4
+      - Message:         Loop condition is false. Execution continues on line 37
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+        FileOffset:      793
+        Replacements:    []
+      - Message:         '''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+        FileOffset:      858
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+            FileOffset:      858
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 39
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+        FileOffset:      846
+        Replacements:    []
+      - Message:         '''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+        FileOffset:      910
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+            FileOffset:      910
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 41
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+        FileOffset:      898
+        Replacements:    []
+      - Message:         '''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+        FileOffset:      963
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+            FileOffset:      963
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 43
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+        FileOffset:      951
+        Replacements:    []
+      - Message:         '''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+        FileOffset:      1012
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+            FileOffset:      1012
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 45
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+        FileOffset:      1000
+        Replacements:    []
+      - Message:         'Access of ''sb'' at negative byte offset -4'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+        FileOffset:      1063
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+            FileOffset:      1063
+            Length:          7
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0022_1540_C1._Converging_Array__Easy_Version_.cpp'
+      FileOffset:      1309
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

@@ -1,0 +1,73 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0159_p01123_Let_s_Move_Tiles_.cpp'
+Diagnostics:
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''tilt'' of convertible types are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0159_p01123_Let_s_Move_Tiles_.cpp'
+      FileOffset:      79
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0159_p01123_Let_s_Move_Tiles_.cpp'
+          FileOffset:      79
+          Length:          15
+    Notes:
+      - Message:         'the first parameter in the range is ''dir'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0159_p01123_Let_s_Move_Tiles_.cpp'
+        FileOffset:      84
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0159_p01123_Let_s_Move_Tiles_.cpp'
+            FileOffset:      84
+            Length:          3
+      - Message:         'the last parameter in the range is ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0159_p01123_Let_s_Move_Tiles_.cpp'
+        FileOffset:      93
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0159_p01123_Let_s_Move_Tiles_.cpp'
+            FileOffset:      93
+            Length:          1
+      - Message:         '''char'' and ''int'' may be implicitly converted'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0159_p01123_Let_s_Move_Tiles_.cpp'
+        FileOffset:      89
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0159_p01123_Let_s_Move_Tiles_.cpp'
+      FileOffset:      2804
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0159_p01123_Let_s_Move_Tiles_.cpp'
+          Offset:          2800
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0159_p01123_Let_s_Move_Tiles_.cpp'
+          Offset:          2810
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0159_p01123_Let_s_Move_Tiles_.cpp'
+      FileOffset:      2857
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0159_p01123_Let_s_Move_Tiles_.cpp'
+          Offset:          2857
+          Length:          1
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0159_p01123_Let_s_Move_Tiles_.cpp'
+      FileOffset:      3062
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

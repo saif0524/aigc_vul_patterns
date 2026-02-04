@@ -1,0 +1,538 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+      FileOffset:      131
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-macro-to-enum
+    DiagnosticMessage:
+      Message:         replace macro with enum
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+      FileOffset:      197
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+          Offset:          197
+          Length:          8
+          ReplacementText: "enum {\n"
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+          Offset:          208
+          Length:          0
+          ReplacementText: ' ='
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+          Offset:          217
+          Length:          0
+          ReplacementText: "};\n"
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-macro-to-enum
+    DiagnosticMessage:
+      Message:         'macro ''INF'' defines an integral constant; prefer an enum instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+      FileOffset:      205
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '3 adjacent parameters of ''Edge'' of similar type (''int'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+      FileOffset:      257
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+          FileOffset:      257
+          Length:          19
+    Notes:
+      - Message:         'the first parameter in the range is ''u'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      261
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+            FileOffset:      261
+            Length:          1
+      - Message:         'the last parameter in the range is ''c'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      275
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+            FileOffset:      275
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+      FileOffset:      309
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+          Offset:          305
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+          Offset:          324
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+      FileOffset:      540
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+          Offset:          536
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+          Offset:          546
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-emplace
+    DiagnosticMessage:
+      Message:         use emplace_back instead of push_back
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+      FileOffset:      785
+      Replacements:    []
+    Notes:
+      - Message:         'expanded from macro ''pb'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      187
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-emplace
+    DiagnosticMessage:
+      Message:         use emplace_back instead of push_back
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+      FileOffset:      810
+      Replacements:    []
+    Notes:
+      - Message:         'expanded from macro ''pb'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      187
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+      FileOffset:      838
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-core.BitwiseShift
+    DiagnosticMessage:
+      Message:         Right operand is negative in left shift
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+      FileOffset:      880
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+          FileOffset:      879
+          Length:          4
+    Notes:
+      - Message:         'Value assigned to ''M'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      556
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+            FileOffset:      556
+            Length:          8
+      - Message:         'Assuming ''M'' is not equal to 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      582
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+            FileOffset:      582
+            Length:          1
+      - Message:         'Left side of ''||'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      583
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      550
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''M'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      635
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+            FileOffset:      635
+            Length:          3
+      - Message:         Loop condition is false. Execution continues on line 53
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      622
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''D'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      682
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+            FileOffset:      682
+            Length:          3
+      - Message:         Loop condition is false. Execution continues on line 64
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      669
+        Replacements:    []
+      - Message:         The result of left shift is undefined because the right operand is negative
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      880
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+            FileOffset:      879
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-bool-literals
+    DiagnosticMessage:
+      Message:         converting integer literal to bool, use bool literal instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+      FileOffset:      971
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+          Offset:          971
+          Length:          1
+          ReplacementText: 'true'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-loop-convert
+    DiagnosticMessage:
+      Message:         use range-based for loop instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+      FileOffset:      1003
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+          Offset:          1006
+          Length:          27
+          ReplacementText: '(auto e : eg)'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+          Offset:          1074
+          Length:          17
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-core.BitwiseShift
+    DiagnosticMessage:
+      Message:         Right operand is negative in left shift
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+      FileOffset:      1156
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+          FileOffset:      1155
+          Length:          6
+    Notes:
+      - Message:         'Assuming ''M'' is 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      582
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+            FileOffset:      582
+            Length:          1
+      - Message:         'Left side of ''||'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      582
+        Replacements:    []
+      - Message:         'Assuming ''N'' is not equal to 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      585
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+            FileOffset:      585
+            Length:          1
+      - Message:         'Left side of ''||'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      586
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      550
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 53
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      622
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''D'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      682
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+            FileOffset:      682
+            Length:          3
+      - Message:         Loop condition is false. Execution continues on line 64
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      669
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      863
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      906
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+            FileOffset:      906
+            Length:          7
+      - Message:         Loop condition is false. Execution continues on line 65
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      893
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 69
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      863
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      965
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      1016
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+            FileOffset:      1016
+            Length:          11
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      1003
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      1037
+        Replacements:    []
+      - Message:         'Value assigned to ''e.v'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      1081
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+            FileOffset:      1081
+            Length:          5
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      1095
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+            FileOffset:      1095
+            Length:          17
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      1092
+        Replacements:    []
+      - Message:         'Assuming ''M'' is > field ''v'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      1131
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+            FileOffset:      1131
+            Length:          5
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      1128
+        Replacements:    []
+      - Message:         The result of left shift is undefined because the right operand is negative
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      1156
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+            FileOffset:      1155
+            Length:          6
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-core.UndefinedBinaryOperatorResult
+    DiagnosticMessage:
+      Message:         'The right operand of ''<'' is a garbage value'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+      FileOffset:      1214
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+          FileOffset:      1216
+          Length:          21
+    Notes:
+      - Message:         'Assuming ''M'' is not equal to 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      582
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+            FileOffset:      582
+            Length:          1
+      - Message:         'Left side of ''||'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      583
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      550
+        Replacements:    []
+      - Message:         'Assuming ''i'' is < ''M'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      635
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+            FileOffset:      635
+            Length:          3
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      622
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''M'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      635
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+            FileOffset:      635
+            Length:          3
+      - Message:         Loop condition is false. Execution continues on line 53
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      622
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''D'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      682
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+            FileOffset:      682
+            Length:          3
+      - Message:         Loop condition is false. Execution continues on line 64
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      669
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      863
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      906
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+            FileOffset:      906
+            Length:          7
+      - Message:         Loop condition is false. Execution continues on line 65
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      893
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      863
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 65
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      893
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 69
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      863
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      965
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      1016
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+            FileOffset:      1016
+            Length:          11
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      1003
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      1037
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      1095
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+            FileOffset:      1095
+            Length:          17
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      1092
+        Replacements:    []
+      - Message:         'Assuming ''M'' is > field ''v'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      1131
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+            FileOffset:      1131
+            Length:          5
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      1128
+        Replacements:    []
+      - Message:         Assuming right operand of bit shift is non-negative
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      1155
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+            FileOffset:      1155
+            Length:          6
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      1149
+        Replacements:    []
+      - Message:         'The right operand of ''<'' is a garbage value'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+        FileOffset:      1214
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+            FileOffset:      1216
+            Length:          21
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+      FileOffset:      1599
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0195_p00224_Bicycle_Diet.cpp'
+          Offset:          1599
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

@@ -1,0 +1,113 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0074_703_C._Chris_and_Road.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0074_703_C._Chris_and_Road.cpp'
+      FileOffset:      144
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0074_703_C._Chris_and_Road.cpp'
+          Offset:          137
+          Length:          6
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0074_703_C._Chris_and_Road.cpp'
+          Offset:          184
+          Length:          0
+          ReplacementText: ' -> double'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0074_703_C._Chris_and_Road.cpp'
+      FileOffset:      261
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0074_703_C._Chris_and_Road.cpp'
+          Offset:          256
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0074_703_C._Chris_and_Road.cpp'
+          Offset:          303
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0074_703_C._Chris_and_Road.cpp'
+      FileOffset:      318
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0074_703_C._Chris_and_Road.cpp'
+      FileOffset:      795
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0074_703_C._Chris_and_Road.cpp'
+          Offset:          791
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0074_703_C._Chris_and_Road.cpp'
+          Offset:          801
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  'clang-diagnostic-c++11-narrowing'
+    DiagnosticMessage:
+      Message:         'non-constant-expression cannot be narrowed from type ''int'' to ''double'' in initializer list'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0074_703_C._Chris_and_Road.cpp'
+      FileOffset:      1339
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0074_703_C._Chris_and_Road.cpp'
+          FileOffset:      1339
+          Length:          1
+    Notes:
+      - Message:         insert an explicit cast to silence this issue
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0074_703_C._Chris_and_Road.cpp'
+        FileOffset:      1339
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0074_703_C._Chris_and_Road.cpp'
+            Offset:          1339
+            Length:          0
+            ReplacementText: 'static_cast<double>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0074_703_C._Chris_and_Road.cpp'
+            Offset:          1340
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0074_703_C._Chris_and_Road.cpp'
+            FileOffset:      1339
+            Length:          1
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0074_703_C._Chris_and_Road.cpp'
+      FileOffset:      2309
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0074_703_C._Chris_and_Road.cpp'
+          Offset:          2309
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0074_703_C._Chris_and_Road.cpp'
+      FileOffset:      2399
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0074_703_C._Chris_and_Road.cpp'
+          Offset:          2399
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

@@ -1,0 +1,108 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0113_p01183_Tetrahedra.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0113_p01183_Tetrahedra.cpp'
+      FileOffset:      106
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0113_p01183_Tetrahedra.cpp'
+          Offset:          99
+          Length:          6
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0113_p01183_Tetrahedra.cpp'
+          Offset:          158
+          Length:          0
+          ReplacementText: ' -> double'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''calcVolume'' of similar type (''int'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0113_p01183_Tetrahedra.cpp'
+      FileOffset:      131
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0113_p01183_Tetrahedra.cpp'
+          FileOffset:      131
+          Length:          12
+    Notes:
+      - Message:         'the first parameter in the range is ''c'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0113_p01183_Tetrahedra.cpp'
+        FileOffset:      135
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0113_p01183_Tetrahedra.cpp'
+            FileOffset:      135
+            Length:          1
+      - Message:         'the last parameter in the range is ''d'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0113_p01183_Tetrahedra.cpp'
+        FileOffset:      142
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0113_p01183_Tetrahedra.cpp'
+            FileOffset:      142
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-deadcode.DeadStores
+    DiagnosticMessage:
+      Message:         'Value stored to ''h'' during its initialization is never read'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0113_p01183_Tetrahedra.cpp'
+      FileOffset:      268
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0113_p01183_Tetrahedra.cpp'
+          FileOffset:      268
+          Length:          1
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0113_p01183_Tetrahedra.cpp'
+          FileOffset:      272
+          Length:          11
+    Notes:
+      - Message:         'Value stored to ''h'' during its initialization is never read'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0113_p01183_Tetrahedra.cpp'
+        FileOffset:      268
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0113_p01183_Tetrahedra.cpp'
+            FileOffset:      268
+            Length:          1
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0113_p01183_Tetrahedra.cpp'
+            FileOffset:      272
+            Length:          11
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0113_p01183_Tetrahedra.cpp'
+      FileOffset:      374
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0113_p01183_Tetrahedra.cpp'
+          Offset:          370
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0113_p01183_Tetrahedra.cpp'
+          Offset:          380
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-transparent-functors
+    DiagnosticMessage:
+      Message:         'prefer transparent functors ''greater<>'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0113_p01183_Tetrahedra.cpp'
+      FileOffset:      571
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-tautological-compare
+    DiagnosticMessage:
+      Message:         self-comparison always evaluates to false
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0113_p01183_Tetrahedra.cpp'
+      FileOffset:      930
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

@@ -1,0 +1,133 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-using
+    DiagnosticMessage:
+      Message:         'use ''using'' instead of ''typedef'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+      FileOffset:      77
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+          Offset:          77
+          Length:          20
+          ReplacementText: 'using ll = long long'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+      FileOffset:      100
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+      FileOffset:      110
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+      FileOffset:      124
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+      FileOffset:      147
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+          Offset:          143
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+          Offset:          153
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''ll'' (aka ''long long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+      FileOffset:      425
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''f'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+      FileOffset:      539
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+          FileOffset:      539
+          Length:          7
+    Notes:
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+        FileOffset:      217
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+            FileOffset:      217
+            Length:          4
+      - Message:         Loop condition is false. Execution continues on line 20
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+        FileOffset:      205
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''k'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+        FileOffset:      252
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+            FileOffset:      252
+            Length:          4
+      - Message:         Loop condition is false. Execution continues on line 21
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+        FileOffset:      239
+        Replacements:    []
+      - Message:         '''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+        FileOffset:      301
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+            FileOffset:      301
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 35
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+        FileOffset:      289
+        Replacements:    []
+      - Message:         'Access of ''f'' at negative byte offset'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+        FileOffset:      539
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+            FileOffset:      539
+            Length:          7
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+      FileOffset:      548
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+          Offset:          548
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

@@ -1,0 +1,359 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+      FileOffset:      35
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+      FileOffset:      129
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+      FileOffset:      556
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+          Offset:          542
+          Length:          13
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+          Offset:          594
+          Length:          0
+          ReplacementText: ' -> long long int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory after the end of ''jc'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+      FileOffset:      697
+      Replacements:    []
+    Notes:
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+        FileOffset:      1439
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+            FileOffset:      1439
+            Length:          26
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+        FileOffset:      1432
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+        FileOffset:      1507
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+            FileOffset:      1507
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 62
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+        FileOffset:      1495
+        Replacements:    []
+      - Message:         'Calling ''solve'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+        FileOffset:      1672
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+            FileOffset:      1672
+            Length:          11
+      - Message:         'Assuming ''k'' is not equal to 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+        FileOffset:      844
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+            FileOffset:      844
+            Length:          6
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+        FileOffset:      840
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+        FileOffset:      1033
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+            FileOffset:      1033
+            Length:          10
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+        FileOffset:      1021
+        Replacements:    []
+      - Message:         'Calling ''COMB'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+        FileOffset:      1086
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+            FileOffset:      1086
+            Length:          22
+      - Message:         'Assuming ''m'' is >= 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+        FileOffset:      603
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+            FileOffset:      603
+            Length:          5
+      - Message:         'Left side of ''||'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+        FileOffset:      603
+        Replacements:    []
+      - Message:         'Assuming ''m'' is <= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+        FileOffset:      612
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+            FileOffset:      612
+            Length:          5
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+        FileOffset:      599
+        Replacements:    []
+      - Message:         'Assuming ''m'' is not equal to 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+        FileOffset:      637
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+            FileOffset:      637
+            Length:          6
+      - Message:         'Left side of ''||'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+        FileOffset:      637
+        Replacements:    []
+      - Message:         'Assuming ''m'' is not equal to ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+        FileOffset:      647
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+            FileOffset:      647
+            Length:          6
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+        FileOffset:      633
+        Replacements:    []
+      - Message:         'Access of ''jc'' at an overflowing index, while it holds only 100010 ''long long'' elements'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+        FileOffset:      697
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+            FileOffset:      697
+            Length:          5
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory after the end of ''a'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+      FileOffset:      922
+      Replacements:    []
+    Notes:
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+        FileOffset:      1439
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+            FileOffset:      1439
+            Length:          26
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+        FileOffset:      1432
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+        FileOffset:      1507
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+            FileOffset:      1507
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 62
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+        FileOffset:      1495
+        Replacements:    []
+      - Message:         'Calling ''solve'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+        FileOffset:      1672
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+            FileOffset:      1672
+            Length:          11
+      - Message:         'Assuming ''k'' is equal to 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+        FileOffset:      844
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+            FileOffset:      844
+            Length:          6
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+        FileOffset:      840
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+        FileOffset:      874
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+            FileOffset:      874
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+        FileOffset:      858
+        Replacements:    []
+      - Message:         'Access of ''a'' at index 2147483647, while it holds only 100010 ''long long'' elements'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+        FileOffset:      922
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+            FileOffset:      922
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-format
+    DiagnosticMessage:
+      Message:         'length modifier ''I64'' results in undefined behavior or no effect with ''d'' conversion specifier'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+      FileOffset:      973
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+          Offset:          973
+          Length:          3
+          ReplacementText: ''
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+          FileOffset:      972
+          Length:          5
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory after the end of ''presum'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+      FileOffset:      1126
+      Replacements:    []
+    Notes:
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+        FileOffset:      1439
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+            FileOffset:      1439
+            Length:          26
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+        FileOffset:      1432
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+        FileOffset:      1507
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+            FileOffset:      1507
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 62
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+        FileOffset:      1495
+        Replacements:    []
+      - Message:         'Calling ''solve'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+        FileOffset:      1672
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+            FileOffset:      1672
+            Length:          11
+      - Message:         'Assuming ''k'' is not equal to 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+        FileOffset:      844
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+            FileOffset:      844
+            Length:          6
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+        FileOffset:      840
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+        FileOffset:      1033
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+            FileOffset:      1033
+            Length:          10
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+        FileOffset:      1021
+        Replacements:    []
+      - Message:         'Access of ''presum'' at an overflowing index, while it holds only 100010 ''long long'' elements'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+        FileOffset:      1126
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+            FileOffset:      1126
+            Length:          17
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-format
+    DiagnosticMessage:
+      Message:         'length modifier ''I64'' results in undefined behavior or no effect with ''d'' conversion specifier'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+      FileOffset:      1366
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+          Offset:          1366
+          Length:          3
+          ReplacementText: ''
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+          FileOffset:      1365
+          Length:          5
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+      FileOffset:      1402
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+          Offset:          1398
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0279_521_C._Pluses_everywhere.cpp'
+          Offset:          1408
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

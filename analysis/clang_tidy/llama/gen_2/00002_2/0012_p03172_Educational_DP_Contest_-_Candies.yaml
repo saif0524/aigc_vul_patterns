@@ -1,0 +1,97 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+      FileOffset:      93
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''dp'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+      FileOffset:      532
+      Replacements:    []
+    Notes:
+      - Message:         'Calling ''solve'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+        FileOffset:      651
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+            FileOffset:      651
+            Length:          7
+      - Message:         'Assuming ''i'' is < ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+        FileOffset:      206
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+            FileOffset:      206
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+        FileOffset:      190
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+        FileOffset:      206
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+            FileOffset:      206
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 18
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+        FileOffset:      190
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+        FileOffset:      267
+        Replacements:    []
+      - Message:         'Assuming ''j'' is < 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+        FileOffset:      321
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+            FileOffset:      321
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 19
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+        FileOffset:      305
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 29
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+        FileOffset:      267
+        Replacements:    []
+      - Message:         'Access of ''dp'' at negative byte offset'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+        FileOffset:      532
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+            FileOffset:      532
+            Length:          5
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+      FileOffset:      554
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+          Offset:          550
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0012_p03172_Educational_DP_Contest_-_Candies.cpp'
+          Offset:          560
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

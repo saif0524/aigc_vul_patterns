@@ -1,0 +1,270 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0227_p00812_Equals_are_Equals.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0227_p00812_Equals_are_Equals.cpp'
+      FileOffset:      195
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0227_p00812_Equals_are_Equals.cpp'
+          Offset:          188
+          Length:          6
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0227_p00812_Equals_are_Equals.cpp'
+          Offset:          228
+          Length:          0
+          ReplacementText: ' -> size_t'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0227_p00812_Equals_are_Equals.cpp'
+      FileOffset:      531
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0227_p00812_Equals_are_Equals.cpp'
+          Offset:          527
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0227_p00812_Equals_are_Equals.cpp'
+          Offset:          552
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''int'' to signed type ''char'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0227_p00812_Equals_are_Equals.cpp'
+      FileOffset:      2168
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0227_p00812_Equals_are_Equals.cpp'
+      FileOffset:      2501
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0227_p00812_Equals_are_Equals.cpp'
+          Offset:          2497
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0227_p00812_Equals_are_Equals.cpp'
+          Offset:          2507
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0227_p00812_Equals_are_Equals.cpp'
+      FileOffset:      2555
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0227_p00812_Equals_are_Equals.cpp'
+          Offset:          2555
+          Length:          1
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no matching function for call to object of type ''key_compare'' (aka ''Hash'')'
+      FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_map.h'
+      FileOffset:      17389
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_map.h'
+          FileOffset:      17389
+          Length:          10
+    Notes:
+      - Message:         'in instantiation of member function ''std::map<std::basic_string<char>, int, Hash>::operator[]'' requested here'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0227_p00812_Equals_are_Equals.cpp'
+        FileOffset:      606
+        Replacements:    []
+      - Message:         'candidate function not viable: requires single argument ''s'', but 2 arguments were provided'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0227_p00812_Equals_are_Equals.cpp'
+        FileOffset:      195
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0227_p00812_Equals_are_Equals.cpp'
+            FileOffset:      206
+            Length:          15
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'static assertion failed due to requirement ''std::__is_invocable<Hash &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &, const std::basic_string<char, std::char_traits<char>, std::allocator<char>> &>{}'': comparison object must be invocable with two arguments of key type'
+      FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_tree.h'
+      FileOffset:      20271
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_tree.h'
+          FileOffset:      20271
+          Length:          53
+    Notes:
+      - Message:         'in instantiation of member function ''std::_Rb_tree<std::basic_string<char>, std::pair<const std::basic_string<char>, int>, std::_Select1st<std::pair<const std::basic_string<char>, int>>, Hash>::_S_key'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_tree.h'
+        FileOffset:      52850
+        Replacements:    []
+      - Message:         'in instantiation of member function ''std::_Rb_tree<std::basic_string<char>, std::pair<const std::basic_string<char>, int>, std::_Select1st<std::pair<const std::basic_string<char>, int>>, Hash>::_M_lower_bound'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_tree.h'
+        FileOffset:      70709
+        Replacements:    []
+      - Message:         'in instantiation of member function ''std::_Rb_tree<std::basic_string<char>, std::pair<const std::basic_string<char>, int>, std::_Select1st<std::pair<const std::basic_string<char>, int>>, Hash>::find'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_map.h'
+        FileOffset:      42608
+        Replacements:    []
+      - Message:         'in instantiation of member function ''std::map<std::basic_string<char>, int, Hash>::find'' requested here'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0227_p00812_Equals_are_Equals.cpp'
+        FileOffset:      566
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no viable conversion from returned value of type ''const_iterator'' (aka ''_Rb_tree_const_iterator<std::pair<const std::basic_string<char>, int>>'') to function return type ''iterator'' (aka ''_Rb_tree_iterator<std::pair<const std::basic_string<char>, int>>'')'
+      FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_tree.h'
+      FileOffset:      33901
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_tree.h'
+          FileOffset:      33901
+          Length:          41
+    Notes:
+      - Message:         'in instantiation of member function ''std::_Rb_tree<std::basic_string<char>, std::pair<const std::basic_string<char>, int>, std::_Select1st<std::pair<const std::basic_string<char>, int>>, Hash>::lower_bound'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_map.h'
+        FileOffset:      45479
+        Replacements:    []
+      - Message:         'in instantiation of member function ''std::map<std::basic_string<char>, int, Hash>::lower_bound'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_map.h'
+        FileOffset:      17297
+        Replacements:    []
+      - Message:         'in instantiation of member function ''std::map<std::basic_string<char>, int, Hash>::operator[]'' requested here'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0227_p00812_Equals_are_Equals.cpp'
+        FileOffset:      606
+        Replacements:    []
+      - Message:         'candidate constructor (the implicit copy constructor) not viable: no known conversion from ''const_iterator'' (aka ''_Rb_tree_const_iterator<std::pair<const std::basic_string<char>, int>>'') to ''const _Rb_tree_iterator<std::pair<const std::basic_string<char>, int>> &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_tree.h'
+        FileOffset:      7533
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_tree.h'
+            FileOffset:      7533
+            Length:          17
+      - Message:         'candidate constructor (the implicit move constructor) not viable: no known conversion from ''const_iterator'' (aka ''_Rb_tree_const_iterator<std::pair<const std::basic_string<char>, int>>'') to ''_Rb_tree_iterator<std::pair<const std::basic_string<char>, int>> &&'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_tree.h'
+        FileOffset:      7533
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_tree.h'
+            FileOffset:      7533
+            Length:          17
+      - Message:         explicit constructor is not a candidate
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_tree.h'
+        FileOffset:      7988
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no matching function for call to object of type ''Hash'''
+      FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_tree.h'
+      FileOffset:      52827
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_tree.h'
+          FileOffset:      52827
+          Length:          22
+    Notes:
+      - Message:         'in instantiation of member function ''std::_Rb_tree<std::basic_string<char>, std::pair<const std::basic_string<char>, int>, std::_Select1st<std::pair<const std::basic_string<char>, int>>, Hash>::_M_lower_bound'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_tree.h'
+        FileOffset:      70709
+        Replacements:    []
+      - Message:         'in instantiation of member function ''std::_Rb_tree<std::basic_string<char>, std::pair<const std::basic_string<char>, int>, std::_Select1st<std::pair<const std::basic_string<char>, int>>, Hash>::find'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_map.h'
+        FileOffset:      42608
+        Replacements:    []
+      - Message:         'in instantiation of member function ''std::map<std::basic_string<char>, int, Hash>::find'' requested here'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0227_p00812_Equals_are_Equals.cpp'
+        FileOffset:      566
+        Replacements:    []
+      - Message:         'candidate function not viable: requires single argument ''s'', but 2 arguments were provided'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0227_p00812_Equals_are_Equals.cpp'
+        FileOffset:      195
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0227_p00812_Equals_are_Equals.cpp'
+            FileOffset:      206
+            Length:          15
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no matching function for call to object of type ''const Hash'''
+      FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_tree.h'
+      FileOffset:      53343
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_tree.h'
+          FileOffset:      53343
+          Length:          22
+    Notes:
+      - Message:         'in instantiation of member function ''std::_Rb_tree<std::basic_string<char>, std::pair<const std::basic_string<char>, int>, std::_Select1st<std::pair<const std::basic_string<char>, int>>, Hash>::_M_lower_bound'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_tree.h'
+        FileOffset:      33901
+        Replacements:    []
+      - Message:         'in instantiation of member function ''std::_Rb_tree<std::basic_string<char>, std::pair<const std::basic_string<char>, int>, std::_Select1st<std::pair<const std::basic_string<char>, int>>, Hash>::lower_bound'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_map.h'
+        FileOffset:      45479
+        Replacements:    []
+      - Message:         'in instantiation of member function ''std::map<std::basic_string<char>, int, Hash>::lower_bound'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_map.h'
+        FileOffset:      17297
+        Replacements:    []
+      - Message:         'in instantiation of member function ''std::map<std::basic_string<char>, int, Hash>::operator[]'' requested here'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0227_p00812_Equals_are_Equals.cpp'
+        FileOffset:      606
+        Replacements:    []
+      - Message:         'candidate function not viable: requires single argument ''s'', but 2 arguments were provided'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0227_p00812_Equals_are_Equals.cpp'
+        FileOffset:      195
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0227_p00812_Equals_are_Equals.cpp'
+            FileOffset:      206
+            Length:          15
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no matching function for call to object of type ''Hash'''
+      FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_tree.h'
+      FileOffset:      70789
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_tree.h'
+          FileOffset:      70789
+          Length:          22
+    Notes:
+      - Message:         'in instantiation of member function ''std::_Rb_tree<std::basic_string<char>, std::pair<const std::basic_string<char>, int>, std::_Select1st<std::pair<const std::basic_string<char>, int>>, Hash>::find'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_map.h'
+        FileOffset:      42608
+        Replacements:    []
+      - Message:         'in instantiation of member function ''std::map<std::basic_string<char>, int, Hash>::find'' requested here'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0227_p00812_Equals_are_Equals.cpp'
+        FileOffset:      566
+        Replacements:    []
+      - Message:         'candidate function not viable: requires single argument ''s'', but 2 arguments were provided'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0227_p00812_Equals_are_Equals.cpp'
+        FileOffset:      195
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0227_p00812_Equals_are_Equals.cpp'
+            FileOffset:      206
+            Length:          15
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

@@ -1,0 +1,874 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+      FileOffset:      132
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-loop-convert
+    DiagnosticMessage:
+      Message:         use range-based for loop instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+      FileOffset:      362
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+          Offset:          366
+          Length:          23
+          ReplacementText: '(auto i : a)'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+          Offset:          444
+          Length:          4
+          ReplacementText: i
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+      FileOffset:      570
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+          Offset:          565
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+          Offset:          613
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+      FileOffset:      984
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+      FileOffset:      998
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+      FileOffset:      1017
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+      FileOffset:      1051
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+          Offset:          1047
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+          Offset:          1091
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''compress_a'' of similar type (''int *'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+      FileOffset:      1069
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+          FileOffset:      1069
+          Length:          21
+    Notes:
+      - Message:         'the first parameter in the range is ''a'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      1073
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      1073
+            Length:          1
+      - Message:         'the last parameter in the range is ''real_a'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      1082
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      1082
+            Length:          6
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' or ''std::vector'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+      FileOffset:      1069
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' or ''std::vector'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+      FileOffset:      1078
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+      FileOffset:      1452
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+      FileOffset:      1476
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+      FileOffset:      7000
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+          Offset:          6996
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+          Offset:          7012
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+      FileOffset:      7046
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+      FileOffset:      7068
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''a'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+      FileOffset:      7571
+      Replacements:    []
+    Notes:
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      8112
+        Replacements:    []
+      - Message:         'Calling ''solve'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      8150
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      8150
+            Length:          7
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7156
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7156
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 219
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7140
+        Replacements:    []
+      - Message:         'Assuming ''it'' is < ''q'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7301
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7301
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7284
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7335
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7335
+            Length:          21
+      - Message:         Taint propagated to the 2nd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7335
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7335
+            Length:          21
+      - Message:         'Assuming ''it'' is >= ''q'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7301
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7301
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 230
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7284
+        Replacements:    []
+      - Message:         'Assuming ''i'' is <= ''r'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7542
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7542
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7526
+        Replacements:    []
+      - Message:         'Access of ''a'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7571
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7571
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''a'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+      FileOffset:      7715
+      Replacements:    []
+    Notes:
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      8112
+        Replacements:    []
+      - Message:         'Calling ''solve'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      8150
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      8150
+            Length:          7
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7156
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7156
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 219
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7140
+        Replacements:    []
+      - Message:         'Assuming ''it'' is < ''q'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7301
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7301
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7284
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7335
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7335
+            Length:          21
+      - Message:         'Assuming ''it'' is < ''q'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7301
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7301
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7284
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7335
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7335
+            Length:          21
+      - Message:         Taint propagated to the 3rd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7335
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7335
+            Length:          21
+      - Message:         'Assuming ''it'' is >= ''q'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7301
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7301
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 230
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7284
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''r'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7542
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7542
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 236
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7526
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7624
+        Replacements:    []
+      - Message:         'Assuming ''r'' is < field ''r'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7665
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7665
+            Length:          16
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7658
+        Replacements:    []
+      - Message:         'Access of ''a'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7715
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7715
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''a'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+      FileOffset:      7789
+      Replacements:    []
+    Notes:
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      8112
+        Replacements:    []
+      - Message:         'Calling ''solve'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      8150
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      8150
+            Length:          7
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7156
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7156
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 219
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7140
+        Replacements:    []
+      - Message:         'Assuming ''it'' is < ''q'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7301
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7301
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7284
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7335
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7335
+            Length:          21
+      - Message:         'Assuming ''it'' is < ''q'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7301
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7301
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7284
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7335
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7335
+            Length:          21
+      - Message:         Taint propagated to the 2nd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7335
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7335
+            Length:          21
+      - Message:         'Assuming ''it'' is >= ''q'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7301
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7301
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 230
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7284
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''r'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7542
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7542
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 236
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7526
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7624
+        Replacements:    []
+      - Message:         'Assuming ''r'' is >= field ''r'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7665
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7665
+            Length:          16
+      - Message:         Loop condition is false. Execution continues on line 242
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7658
+        Replacements:    []
+      - Message:         'Assuming ''l'' is > field ''l'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7739
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7739
+            Length:          16
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7732
+        Replacements:    []
+      - Message:         'Access of ''a'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7789
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7789
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''a'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+      FileOffset:      7852
+      Replacements:    []
+    Notes:
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      8112
+        Replacements:    []
+      - Message:         'Calling ''solve'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      8150
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      8150
+            Length:          7
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7156
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7156
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 219
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7140
+        Replacements:    []
+      - Message:         'Assuming ''it'' is < ''q'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7301
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7301
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7284
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7335
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7335
+            Length:          21
+      - Message:         'Assuming ''it'' is < ''q'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7301
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7301
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7284
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7335
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7335
+            Length:          21
+      - Message:         Taint propagated to the 3rd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7335
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7335
+            Length:          21
+      - Message:         'Assuming ''it'' is >= ''q'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7301
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7301
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 230
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7284
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''r'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7542
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7542
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 236
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7526
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7624
+        Replacements:    []
+      - Message:         'Assuming ''r'' is >= field ''r'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7665
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7665
+            Length:          16
+      - Message:         Loop condition is false. Execution continues on line 242
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7658
+        Replacements:    []
+      - Message:         'Assuming ''l'' is <= field ''l'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7739
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7739
+            Length:          16
+      - Message:         Loop condition is false. Execution continues on line 246
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7732
+        Replacements:    []
+      - Message:         'Assuming ''r'' is > field ''r'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7813
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7813
+            Length:          16
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7806
+        Replacements:    []
+      - Message:         'Access of ''a'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7852
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7852
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''a'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+      FileOffset:      7929
+      Replacements:    []
+    Notes:
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      8112
+        Replacements:    []
+      - Message:         'Calling ''solve'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      8150
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      8150
+            Length:          7
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7156
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7156
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 219
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7140
+        Replacements:    []
+      - Message:         'Assuming ''it'' is < ''q'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7301
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7301
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7284
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7335
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7335
+            Length:          21
+      - Message:         'Assuming ''it'' is < ''q'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7301
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7301
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7284
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7335
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7335
+            Length:          21
+      - Message:         Taint propagated to the 2nd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7335
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7335
+            Length:          21
+      - Message:         'Assuming ''it'' is >= ''q'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7301
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7301
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 230
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7284
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''r'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7542
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7542
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 236
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7526
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7624
+        Replacements:    []
+      - Message:         'Assuming ''r'' is >= field ''r'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7665
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7665
+            Length:          16
+      - Message:         Loop condition is false. Execution continues on line 242
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7658
+        Replacements:    []
+      - Message:         'Assuming ''l'' is <= field ''l'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7739
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7739
+            Length:          16
+      - Message:         Loop condition is false. Execution continues on line 246
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7732
+        Replacements:    []
+      - Message:         'Assuming ''r'' is <= field ''r'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7813
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7813
+            Length:          16
+      - Message:         Loop condition is false. Execution continues on line 250
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7806
+        Replacements:    []
+      - Message:         'Assuming ''l'' is < field ''l'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7890
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7890
+            Length:          16
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7883
+        Replacements:    []
+      - Message:         'Access of ''a'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+        FileOffset:      7929
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+            FileOffset:      7929
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+      FileOffset:      8075
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+          Offset:          8071
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0210_633_H._Fibonacci-ish_II.cpp'
+          Offset:          8081
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

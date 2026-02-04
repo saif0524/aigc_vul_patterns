@@ -1,0 +1,365 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+      FileOffset:      68
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+      FileOffset:      180
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+          Offset:          175
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+          Offset:          209
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+      FileOffset:      619
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+          Offset:          615
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+          Offset:          625
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long'' to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+      FileOffset:      864
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long'' to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+      FileOffset:      923
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long'' to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+      FileOffset:      993
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long'' to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+      FileOffset:      1063
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''id'''
+      FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/predefined_ops.h'
+      FileOffset:      6146
+      Replacements:    []
+    Notes:
+      - Message:         'Assuming ''i'' is < ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+        FileOffset:      665
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+            FileOffset:      665
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+        FileOffset:      649
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+        FileOffset:      665
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+            FileOffset:      665
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 20
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+        FileOffset:      649
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+        FileOffset:      714
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 21
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+        FileOffset:      714
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+        FileOffset:      779
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 22
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+        FileOffset:      779
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+        FileOffset:      888
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 24
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+        FileOffset:      888
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+        FileOffset:      958
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 25
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+        FileOffset:      958
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+        FileOffset:      1028
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 26
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+        FileOffset:      1028
+        Replacements:    []
+      - Message:         'Assuming ''i'' is < ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+        FileOffset:      1114
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+            FileOffset:      1114
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+        FileOffset:      1098
+        Replacements:    []
+      - Message:         'Assuming ''i'' is < ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+        FileOffset:      1114
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+            FileOffset:      1114
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+        FileOffset:      1098
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+        FileOffset:      1114
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+            FileOffset:      1114
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 27
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+        FileOffset:      1098
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+        FileOffset:      1156
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+        FileOffset:      1192
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+            FileOffset:      1192
+            Length:          11
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+        FileOffset:      1188
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 29
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+        FileOffset:      1156
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+        FileOffset:      1224
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+        FileOffset:      1260
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+            FileOffset:      1260
+            Length:          11
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+        FileOffset:      1256
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 31
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+        FileOffset:      1224
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+        FileOffset:      1292
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+        FileOffset:      1328
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+            FileOffset:      1328
+            Length:          11
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+        FileOffset:      1324
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 33
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+        FileOffset:      1292
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+        FileOffset:      1360
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+        FileOffset:      1360
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+        FileOffset:      1360
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 34
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+        FileOffset:      1360
+        Replacements:    []
+      - Message:         'Calling ''sort<int *, bool (*)(int, int)>'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+        FileOffset:      1415
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0011_392_D._Three_Arrays.cpp'
+            FileOffset:      1415
+            Length:          21
+      - Message:         'Calling ''__sort<int *, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int, int)>>'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      174965
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+            FileOffset:      174965
+            Length:          72
+      - Message:         '''__first'' is not equal to ''__last'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      65748
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+            FileOffset:      65748
+            Length:          7
+      - Message:         Taking true branch
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      65744
+        Replacements:    []
+      - Message:         'Calling ''__final_insertion_sort<int *, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int, int)>>'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      65865
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+            FileOffset:      65865
+            Length:          52
+      - Message:         Taking false branch
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      63125
+        Replacements:    []
+      - Message:         'Calling ''__insertion_sort<int *, __gnu_cxx::__ops::_Iter_comp_iter<bool (*)(int, int)>>'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      63345
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+            FileOffset:      63345
+            Length:          46
+      - Message:         '''__first'' is not equal to ''__last'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      61849
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+            FileOffset:      61849
+            Length:          7
+      - Message:         Taking false branch
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      61845
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      61883
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      61961
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+            FileOffset:      61961
+            Length:          20
+      - Message:         Taking false branch
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      61957
+        Replacements:    []
+      - Message:         'Calling ''__unguarded_linear_insert<int *, __gnu_cxx::__ops::_Val_comp_iter<bool (*)(int, int)>>'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      62203
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+            FileOffset:      62203
+            Length:          82
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      61426
+        Replacements:    []
+      - Message:         'Calling ''_Val_comp_iter::operator()'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      61433
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+            FileOffset:      61433
+            Length:          21
+      - Message:         'Access of ''id'' at negative byte offset -4'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/predefined_ops.h'
+        FileOffset:      6146
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/predefined_ops.h'
+            FileOffset:      6146
+            Length:          5
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

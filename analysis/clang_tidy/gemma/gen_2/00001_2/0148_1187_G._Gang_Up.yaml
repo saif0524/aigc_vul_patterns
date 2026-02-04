@@ -1,0 +1,160 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00001_2/0148_1187_G._Gang_Up.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00001_2/0148_1187_G._Gang_Up.cpp'
+      FileOffset:      103
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00001_2/0148_1187_G._Gang_Up.cpp'
+          Offset:          99
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00001_2/0148_1187_G._Gang_Up.cpp'
+          Offset:          109
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-emplace
+    DiagnosticMessage:
+      Message:         use emplace instead of push
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00001_2/0148_1187_G._Gang_Up.cpp'
+      FileOffset:      1201
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00001_2/0148_1187_G._Gang_Up.cpp'
+          Offset:          1201
+          Length:          6
+          ReplacementText: 'emplace('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00001_2/0148_1187_G._Gang_Up.cpp'
+          Offset:          1218
+          Length:          1
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-emplace
+    DiagnosticMessage:
+      Message:         use emplace instead of push
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00001_2/0148_1187_G._Gang_Up.cpp'
+      FileOffset:      1766
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00001_2/0148_1187_G._Gang_Up.cpp'
+          Offset:          1766
+          Length:          6
+          ReplacementText: 'emplace('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00001_2/0148_1187_G._Gang_Up.cpp'
+          Offset:          1780
+          Length:          1
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-inefficient-vector-operation
+    DiagnosticMessage:
+      Message:         '''push_back'' is called inside a loop; consider pre-allocating the container capacity before the loop'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00001_2/0148_1187_G._Gang_Up.cpp'
+      FileOffset:      2706
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00001_2/0148_1187_G._Gang_Up.cpp'
+          Offset:          2635
+          Length:          0
+          ReplacementText: "edges.reserve(adj[current_node].size());\n"
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-emplace
+    DiagnosticMessage:
+      Message:         use emplace_back instead of push_back
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00001_2/0148_1187_G._Gang_Up.cpp'
+      FileOffset:      2712
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00001_2/0148_1187_G._Gang_Up.cpp'
+          Offset:          2712
+          Length:          11
+          ReplacementText: 'emplace_back('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00001_2/0148_1187_G._Gang_Up.cpp'
+          Offset:          2757
+          Length:          1
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-loop-convert
+    DiagnosticMessage:
+      Message:         use range-based for loop instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00001_2/0148_1187_G._Gang_Up.cpp'
+      FileOffset:      2866
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00001_2/0148_1187_G._Gang_Up.cpp'
+          Offset:          2869
+          Length:          30
+          ReplacementText: '(auto & edge : edges)'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00001_2/0148_1187_G._Gang_Up.cpp'
+          Offset:          2929
+          Length:          8
+          ReplacementText: edge
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00001_2/0148_1187_G._Gang_Up.cpp'
+          Offset:          2963
+          Length:          8
+          ReplacementText: edge
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00001_2/0148_1187_G._Gang_Up.cpp'
+          Offset:          3002
+          Length:          8
+          ReplacementText: edge
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00001_2/0148_1187_G._Gang_Up.cpp'
+          Offset:          3038
+          Length:          8
+          ReplacementText: edge
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-emplace
+    DiagnosticMessage:
+      Message:         use emplace_back instead of push_back
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00001_2/0148_1187_G._Gang_Up.cpp'
+      FileOffset:      3560
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00001_2/0148_1187_G._Gang_Up.cpp'
+          Offset:          3560
+          Length:          11
+          ReplacementText: 'emplace_back('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00001_2/0148_1187_G._Gang_Up.cpp'
+          Offset:          3578
+          Length:          1
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00001_2/0148_1187_G._Gang_Up.cpp'
+      FileOffset:      4633
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00001_2/0148_1187_G._Gang_Up.cpp'
+          Offset:          4633
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00001_2/0148_1187_G._Gang_Up.cpp'
+      FileOffset:      4744
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00001_2/0148_1187_G._Gang_Up.cpp'
+          Offset:          4744
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00001_2/0148_1187_G._Gang_Up.cpp'
+      FileOffset:      4809
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00001_2/0148_1187_G._Gang_Up.cpp'
+          Offset:          4809
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

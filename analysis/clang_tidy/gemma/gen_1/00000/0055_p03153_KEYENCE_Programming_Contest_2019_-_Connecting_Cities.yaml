@@ -1,0 +1,288 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+      FileOffset:      86
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+          Offset:          82
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+          Offset:          92
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+      FileOffset:      288
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+          Offset:          288
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''value_type'' (aka ''long long'') of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+      FileOffset:      357
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+        FileOffset:      357
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            Offset:          0
+            Length:          0
+            ReplacementText: "#include <cstddef>\n"
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            Offset:          357
+            Length:          0
+            ReplacementText: 'static_cast<value_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            Offset:          371
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            FileOffset:      357
+            Length:          14
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+        FileOffset:      357
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            Offset:          357
+            Length:          0
+            ReplacementText: 'static_cast<value_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            Offset:          367
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            FileOffset:      357
+            Length:          10
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+      FileOffset:      389
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+          Offset:          389
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+      FileOffset:      517
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+          Offset:          517
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+      FileOffset:      644
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+          Offset:          644
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+      FileOffset:      812
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+          Offset:          812
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+      FileOffset:      1062
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+          Offset:          1062
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''value_type'' (aka ''long long'') of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+      FileOffset:      1254
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+        FileOffset:      1254
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            Offset:          1254
+            Length:          0
+            ReplacementText: 'static_cast<value_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            Offset:          1268
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            FileOffset:      1254
+            Length:          14
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+        FileOffset:      1254
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            Offset:          1254
+            Length:          0
+            ReplacementText: 'static_cast<value_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            Offset:          1264
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+            FileOffset:      1254
+            Length:          10
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'use of undeclared identifier ''function'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+      FileOffset:      1480
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+          FileOffset:      1480
+          Length:          8
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this lambda
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+      FileOffset:      1650
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+          Offset:          1667
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no matching function for call to ''find'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+      FileOffset:      1691
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+          FileOffset:      1691
+          Length:          4
+    Notes:
+      - Message:         'candidate function template not viable: requires 3 arguments, but 1 was provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/streambuf_iterator.h'
+        FileOffset:      13585
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/streambuf_iterator.h'
+            FileOffset:      13590
+            Length:          94
+      - Message:         'candidate function template not viable: requires 3 arguments, but 1 was provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      134402
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+            FileOffset:      134407
+            Length:          65
+      - Message:         'candidate function template not viable: requires 4 arguments, but 1 was provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/pstl/glue_algorithm_defs.h'
+        FileOffset:      2594
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/pstl/glue_algorithm_defs.h'
+            FileOffset:      2599
+            Length:          96
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no matching function for call to ''find'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+      FileOffset:      1721
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+          FileOffset:      1721
+          Length:          4
+    Notes:
+      - Message:         'candidate function template not viable: requires 3 arguments, but 1 was provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/streambuf_iterator.h'
+        FileOffset:      13585
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/streambuf_iterator.h'
+            FileOffset:      13590
+            Length:          94
+      - Message:         'candidate function template not viable: requires 3 arguments, but 1 was provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      134402
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+            FileOffset:      134407
+            Length:          65
+      - Message:         'candidate function template not viable: requires 4 arguments, but 1 was provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/pstl/glue_algorithm_defs.h'
+        FileOffset:      2594
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/pstl/glue_algorithm_defs.h'
+            FileOffset:      2599
+            Length:          96
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+      FileOffset:      2251
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0055_p03153_KEYENCE_Programming_Contest_2019_-_Connecting_Cities.cpp'
+          Offset:          2251
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

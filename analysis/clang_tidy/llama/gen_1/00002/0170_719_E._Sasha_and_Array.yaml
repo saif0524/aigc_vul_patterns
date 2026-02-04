@@ -1,0 +1,202 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+      FileOffset:      148
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+      FileOffset:      164
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+      FileOffset:      180
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+      FileOffset:      196
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+      FileOffset:      217
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+          Offset:          213
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+          Offset:          223
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''a'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+      FileOffset:      613
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+          FileOffset:      613
+          Length:          4
+    Notes:
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+        FileOffset:      288
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+            FileOffset:      288
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 21
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+        FileOffset:      272
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 26
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+        FileOffset:      371
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+        FileOffset:      454
+        Replacements:    []
+      - Message:         'Assuming ''op'' is equal to 1'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+        FileOffset:      522
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+            FileOffset:      522
+            Length:          7
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+        FileOffset:      518
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+        FileOffset:      570
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+            FileOffset:      570
+            Length:          29
+      - Message:         Taint propagated to the 2nd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+        FileOffset:      570
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+            FileOffset:      570
+            Length:          29
+      - Message:         'Access of ''a'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+        FileOffset:      613
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+            FileOffset:      613
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''a'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+      FileOffset:      829
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+          FileOffset:      829
+          Length:          4
+    Notes:
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+        FileOffset:      288
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+            FileOffset:      288
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 21
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+        FileOffset:      272
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 26
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+        FileOffset:      371
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+        FileOffset:      454
+        Replacements:    []
+      - Message:         'Assuming ''op'' is not equal to 1'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+        FileOffset:      522
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+            FileOffset:      522
+            Length:          7
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+        FileOffset:      518
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+        FileOffset:      700
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+            FileOffset:      700
+            Length:          22
+      - Message:         Taint propagated to the 2nd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+        FileOffset:      700
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+            FileOffset:      700
+            Length:          22
+      - Message:         'Assuming ''i'' is <= ''r'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+        FileOffset:      783
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+            FileOffset:      783
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+        FileOffset:      767
+        Replacements:    []
+      - Message:         'Access of ''a'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+        FileOffset:      829
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0170_719_E._Sasha_and_Array.cpp'
+            FileOffset:      829
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

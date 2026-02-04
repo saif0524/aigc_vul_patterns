@@ -1,0 +1,101 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0064_p03616_AtCoder_Regular_Contest_082_-_Sandglass.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0064_p03616_AtCoder_Regular_Contest_082_-_Sandglass.cpp'
+      FileOffset:      86
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0064_p03616_AtCoder_Regular_Contest_082_-_Sandglass.cpp'
+          Offset:          82
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0064_p03616_AtCoder_Regular_Contest_082_-_Sandglass.cpp'
+          Offset:          92
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no matching function for call to ''swap'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0064_p03616_AtCoder_Regular_Contest_082_-_Sandglass.cpp'
+      FileOffset:      963
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0064_p03616_AtCoder_Regular_Contest_082_-_Sandglass.cpp'
+          FileOffset:      963
+          Length:          4
+    Notes:
+      - Message:         'candidate function [with _Tp = int] not viable: expects an lvalue for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/move.h'
+        FileOffset:      5693
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/move.h'
+            FileOffset:      5708
+            Length:          8
+      - Message:         'candidate function not viable: no known conversion from ''int'' to ''exception_ptr &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/exception_ptr.h'
+        FileOffset:      6568
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/exception_ptr.h'
+            FileOffset:      6573
+            Length:          20
+      - Message:         'candidate template ignored: could not match ''_Tp[_Nm]'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/move.h'
+        FileOffset:      6390
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''pair<_T1, _T2>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      29501
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''pair<_T1, _T2>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      30118
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_string<_CharT, _Traits, _Alloc>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+        FileOffset:      142755
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''tuple<_Elements...>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      71662
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''tuple<_Elements...>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      72359
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''vector<_Tp, _Alloc>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h'
+        FileOffset:      69754
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0064_p03616_AtCoder_Regular_Contest_082_-_Sandglass.cpp'
+      FileOffset:      1443
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0064_p03616_AtCoder_Regular_Contest_082_-_Sandglass.cpp'
+          Offset:          1443
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0064_p03616_AtCoder_Regular_Contest_082_-_Sandglass.cpp'
+      FileOffset:      1503
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0064_p03616_AtCoder_Regular_Contest_082_-_Sandglass.cpp'
+          Offset:          1503
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

@@ -1,0 +1,125 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0030_354_E._Lucky_Number_Representation.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0030_354_E._Lucky_Number_Representation.cpp'
+      FileOffset:      282
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0030_354_E._Lucky_Number_Representation.cpp'
+      FileOffset:      298
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-loop-convert
+    DiagnosticMessage:
+      Message:         use range-based for loop instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0030_354_E._Lucky_Number_Representation.cpp'
+      FileOffset:      654
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0030_354_E._Lucky_Number_Representation.cpp'
+          Offset:          658
+          Length:          29
+          ReplacementText: '(long long & j : a)'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0030_354_E._Lucky_Number_Representation.cpp'
+          Offset:          688
+          Length:          4
+          ReplacementText: j
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0030_354_E._Lucky_Number_Representation.cpp'
+      FileOffset:      801
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0030_354_E._Lucky_Number_Representation.cpp'
+          Offset:          793
+          Length:          7
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0030_354_E._Lucky_Number_Representation.cpp'
+          Offset:          807
+          Length:          0
+          ReplacementText: ' -> int32_t'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''D'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0030_354_E._Lucky_Number_Representation.cpp'
+      FileOffset:      1064
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0030_354_E._Lucky_Number_Representation.cpp'
+          FileOffset:      1064
+          Length:          8
+    Notes:
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0030_354_E._Lucky_Number_Representation.cpp'
+        FileOffset:      881
+        Replacements:    []
+      - Message:         '''i'' is not equal to 4'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0030_354_E._Lucky_Number_Representation.cpp'
+        FileOffset:      927
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0030_354_E._Lucky_Number_Representation.cpp'
+            FileOffset:      927
+            Length:          1
+      - Message:         'Left side of ''||'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0030_354_E._Lucky_Number_Representation.cpp'
+        FileOffset:      927
+        Replacements:    []
+      - Message:         '''i'' is not equal to 7'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0030_354_E._Lucky_Number_Representation.cpp'
+        FileOffset:      937
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0030_354_E._Lucky_Number_Representation.cpp'
+            FileOffset:      937
+            Length:          1
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0030_354_E._Lucky_Number_Representation.cpp'
+        FileOffset:      923
+        Replacements:    []
+      - Message:         'Left side of ''||'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0030_354_E._Lucky_Number_Representation.cpp'
+        FileOffset:      963
+        Replacements:    []
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0030_354_E._Lucky_Number_Representation.cpp'
+        FileOffset:      959
+        Replacements:    []
+      - Message:         'Access of ''D'' at negative byte offset -72'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0030_354_E._Lucky_Number_Representation.cpp'
+        FileOffset:      1064
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0030_354_E._Lucky_Number_Representation.cpp'
+            FileOffset:      1064
+            Length:          8
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-loop-convert
+    DiagnosticMessage:
+      Message:         use range-based for loop instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0030_354_E._Lucky_Number_Representation.cpp'
+      FileOffset:      1349
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0030_354_E._Lucky_Number_Representation.cpp'
+          Offset:          1353
+          Length:          29
+          ReplacementText: '(long long i : a)'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0030_354_E._Lucky_Number_Representation.cpp'
+          Offset:          1391
+          Length:          4
+          ReplacementText: i
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

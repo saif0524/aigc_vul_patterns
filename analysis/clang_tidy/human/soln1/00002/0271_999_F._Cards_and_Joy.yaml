@@ -1,0 +1,177 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0271_999_F._Cards_and_Joy.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0271_999_F._Cards_and_Joy.cpp'
+      FileOffset:      56
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0271_999_F._Cards_and_Joy.cpp'
+      FileOffset:      69
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0271_999_F._Cards_and_Joy.cpp'
+      FileOffset:      92
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0271_999_F._Cards_and_Joy.cpp'
+          Offset:          88
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0271_999_F._Cards_and_Joy.cpp'
+          Offset:          118
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''dp'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0271_999_F._Cards_and_Joy.cpp'
+      FileOffset:      390
+      Replacements:    []
+    Notes:
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0271_999_F._Cards_and_Joy.cpp'
+        FileOffset:      498
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0271_999_F._Cards_and_Joy.cpp'
+            FileOffset:      498
+            Length:          9
+      - Message:         Loop condition is false. Execution continues on line 23
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0271_999_F._Cards_and_Joy.cpp'
+        FileOffset:      482
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0271_999_F._Cards_and_Joy.cpp'
+        FileOffset:      564
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0271_999_F._Cards_and_Joy.cpp'
+            FileOffset:      564
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 27
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0271_999_F._Cards_and_Joy.cpp'
+        FileOffset:      548
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''k'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0271_999_F._Cards_and_Joy.cpp'
+        FileOffset:      626
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0271_999_F._Cards_and_Joy.cpp'
+            FileOffset:      626
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 28
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0271_999_F._Cards_and_Joy.cpp'
+        FileOffset:      610
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0271_999_F._Cards_and_Joy.cpp'
+        FileOffset:      685
+        Replacements:    []
+      - Message:         'Calling ''solve'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0271_999_F._Cards_and_Joy.cpp'
+        FileOffset:      745
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0271_999_F._Cards_and_Joy.cpp'
+            FileOffset:      745
+            Length:          54
+      - Message:         'Assuming ''i'' is > ''play'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0271_999_F._Cards_and_Joy.cpp'
+        FileOffset:      139
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0271_999_F._Cards_and_Joy.cpp'
+            FileOffset:      139
+            Length:          9
+      - Message:         Loop condition is false. Execution continues on line 9
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0271_999_F._Cards_and_Joy.cpp'
+        FileOffset:      123
+        Replacements:    []
+      - Message:         '''i'' is > ''play'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0271_999_F._Cards_and_Joy.cpp'
+        FileOffset:      224
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0271_999_F._Cards_and_Joy.cpp'
+            FileOffset:      224
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 13
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0271_999_F._Cards_and_Joy.cpp'
+        FileOffset:      208
+        Replacements:    []
+      - Message:         'Access of ''dp'' at negative byte offset'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0271_999_F._Cards_and_Joy.cpp'
+        FileOffset:      390
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0271_999_F._Cards_and_Joy.cpp'
+            FileOffset:      390
+            Length:          8
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0271_999_F._Cards_and_Joy.cpp'
+      FileOffset:      413
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0271_999_F._Cards_and_Joy.cpp'
+          Offset:          409
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0271_999_F._Cards_and_Joy.cpp'
+          Offset:          419
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-loop-convert
+    DiagnosticMessage:
+      Message:         use range-based for loop instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0271_999_F._Cards_and_Joy.cpp'
+      FileOffset:      685
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0271_999_F._Cards_and_Joy.cpp'
+          Offset:          689
+          Length:          42
+          ReplacementText: '(auto & it : f)'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0271_999_F._Cards_and_Joy.cpp'
+          Offset:          751
+          Length:          4
+          ReplacementText: it.
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0271_999_F._Cards_and_Joy.cpp'
+          Offset:          772
+          Length:          4
+          ReplacementText: it.
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0271_999_F._Cards_and_Joy.cpp'
+          Offset:          787
+          Length:          4
+          ReplacementText: it.
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0271_999_F._Cards_and_Joy.cpp'
+      FileOffset:      822
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0271_999_F._Cards_and_Joy.cpp'
+          Offset:          822
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

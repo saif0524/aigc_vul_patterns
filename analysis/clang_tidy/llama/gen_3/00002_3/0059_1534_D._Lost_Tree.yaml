@@ -1,0 +1,180 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0059_1534_D._Lost_Tree.cpp'
+Diagnostics:
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0059_1534_D._Lost_Tree.cpp'
+      FileOffset:      236
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0059_1534_D._Lost_Tree.cpp'
+          Offset:          236
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-loop-convert
+    DiagnosticMessage:
+      Message:         use range-based for loop instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0059_1534_D._Lost_Tree.cpp'
+      FileOffset:      283
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0059_1534_D._Lost_Tree.cpp'
+          Offset:          287
+          Length:          35
+          ReplacementText: '(int & depth : depths)'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0059_1534_D._Lost_Tree.cpp'
+          Offset:          366
+          Length:          9
+          ReplacementText: depth
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-deadcode.DeadStores
+    DiagnosticMessage:
+      Message:         'Value stored to ''center'' during its initialization is never read'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0059_1534_D._Lost_Tree.cpp'
+      FileOffset:      482
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0059_1534_D._Lost_Tree.cpp'
+          FileOffset:      482
+          Length:          6
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0059_1534_D._Lost_Tree.cpp'
+          FileOffset:      491
+          Length:          5
+    Notes:
+      - Message:         'Value stored to ''center'' during its initialization is never read'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0059_1534_D._Lost_Tree.cpp'
+        FileOffset:      482
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0059_1534_D._Lost_Tree.cpp'
+            FileOffset:      482
+            Length:          6
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0059_1534_D._Lost_Tree.cpp'
+            FileOffset:      491
+            Length:          5
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-deadcode.DeadStores
+    DiagnosticMessage:
+      Message:         'Value stored to ''center'' is never read'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0059_1534_D._Lost_Tree.cpp'
+      FileOffset:      528
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0059_1534_D._Lost_Tree.cpp'
+          FileOffset:      537
+          Length:          11
+    Notes:
+      - Message:         'Value stored to ''center'' is never read'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0059_1534_D._Lost_Tree.cpp'
+        FileOffset:      528
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0059_1534_D._Lost_Tree.cpp'
+            FileOffset:      537
+            Length:          11
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-loop-convert
+    DiagnosticMessage:
+      Message:         use range-based for loop instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0059_1534_D._Lost_Tree.cpp'
+      FileOffset:      711
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0059_1534_D._Lost_Tree.cpp'
+          Offset:          715
+          Length:          34
+          ReplacementText: '(int & node : nodes)'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0059_1534_D._Lost_Tree.cpp'
+          Offset:          766
+          Length:          8
+          ReplacementText: node
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0059_1534_D._Lost_Tree.cpp'
+          Offset:          976
+          Length:          8
+          ReplacementText: node
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0059_1534_D._Lost_Tree.cpp'
+          Offset:          1009
+          Length:          8
+          ReplacementText: node
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0059_1534_D._Lost_Tree.cpp'
+      FileOffset:      1072
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-inefficient-vector-operation
+    DiagnosticMessage:
+      Message:         '''push_back'' is called inside a loop; consider pre-allocating the container capacity before the loop'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0059_1534_D._Lost_Tree.cpp'
+      FileOffset:      1220
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0059_1534_D._Lost_Tree.cpp'
+          Offset:          1178
+          Length:          0
+          ReplacementText: "sortedDepth.reserve(n);\n"
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-emplace
+    DiagnosticMessage:
+      Message:         use emplace_back instead of push_back
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0059_1534_D._Lost_Tree.cpp'
+      FileOffset:      1232
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0059_1534_D._Lost_Tree.cpp'
+          Offset:          1232
+          Length:          11
+          ReplacementText: 'emplace_back('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0059_1534_D._Lost_Tree.cpp'
+          Offset:          1255
+          Length:          1
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-loop-convert
+    DiagnosticMessage:
+      Message:         use range-based for loop instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0059_1534_D._Lost_Tree.cpp'
+      FileOffset:      1459
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0059_1534_D._Lost_Tree.cpp'
+          Offset:          1463
+          Length:          34
+          ReplacementText: '(int node : nodes)'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0059_1534_D._Lost_Tree.cpp'
+          Offset:          1523
+          Length:          8
+          ReplacementText: node
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0059_1534_D._Lost_Tree.cpp'
+          Offset:          1581
+          Length:          8
+          ReplacementText: node
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0059_1534_D._Lost_Tree.cpp'
+          Offset:          1621
+          Length:          8
+          ReplacementText: node
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0059_1534_D._Lost_Tree.cpp'
+      FileOffset:      1954
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0059_1534_D._Lost_Tree.cpp'
+          Offset:          1950
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0059_1534_D._Lost_Tree.cpp'
+          Offset:          1960
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

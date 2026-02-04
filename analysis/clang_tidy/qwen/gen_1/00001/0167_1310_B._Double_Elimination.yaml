@@ -1,0 +1,65 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0167_1310_B._Double_Elimination.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0167_1310_B._Double_Elimination.cpp'
+      FileOffset:      51
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0167_1310_B._Double_Elimination.cpp'
+          Offset:          47
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0167_1310_B._Double_Elimination.cpp'
+          Offset:          57
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-core.BitwiseShift
+    DiagnosticMessage:
+      Message:         'Left shift by ''2147483646'' overflows the capacity of ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0167_1310_B._Double_Elimination.cpp'
+      FileOffset:      759
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0167_1310_B._Double_Elimination.cpp'
+          FileOffset:      757
+          Length:          20
+    Notes:
+      - Message:         'Assuming ''round'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0167_1310_B._Double_Elimination.cpp'
+        FileOffset:      294
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0167_1310_B._Double_Elimination.cpp'
+            FileOffset:      294
+            Length:          9
+      - Message:         Loop condition is false. Execution continues on line 24
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0167_1310_B._Double_Elimination.cpp'
+        FileOffset:      288
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0167_1310_B._Double_Elimination.cpp'
+        FileOffset:      713
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0167_1310_B._Double_Elimination.cpp'
+            FileOffset:      713
+            Length:          11
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0167_1310_B._Double_Elimination.cpp'
+        FileOffset:      707
+        Replacements:    []
+      - Message:         'The result of left shift is undefined because the right operand ''2147483646'' is not smaller than 32, the capacity of ''int'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0167_1310_B._Double_Elimination.cpp'
+        FileOffset:      759
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0167_1310_B._Double_Elimination.cpp'
+            FileOffset:      757
+            Length:          20
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

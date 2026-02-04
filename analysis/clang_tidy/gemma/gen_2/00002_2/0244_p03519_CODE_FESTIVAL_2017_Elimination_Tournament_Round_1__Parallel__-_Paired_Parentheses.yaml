@@ -1,0 +1,321 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+      FileOffset:      86
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+          Offset:          82
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+          Offset:          92
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''size_type'' (aka ''unsigned long'') of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+      FileOffset:      141
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+        FileOffset:      141
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+            Offset:          0
+            Length:          0
+            ReplacementText: "#include <cstddef>\n"
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+            Offset:          141
+            Length:          0
+            ReplacementText: 'static_cast<size_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+            Offset:          146
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+            FileOffset:      141
+            Length:          5
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+        FileOffset:      141
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+            Offset:          141
+            Length:          0
+            ReplacementText: 'static_cast<long>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+            Offset:          142
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+            FileOffset:      141
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''size_type'' (aka ''unsigned long'') of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+      FileOffset:      223
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+        FileOffset:      223
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+            Offset:          223
+            Length:          0
+            ReplacementText: 'static_cast<size_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+            Offset:          228
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+            FileOffset:      223
+            Length:          5
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+        FileOffset:      223
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+            Offset:          223
+            Length:          0
+            ReplacementText: 'static_cast<long>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+            Offset:          224
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+            FileOffset:      223
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''size_type'' (aka ''unsigned long'') of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+      FileOffset:      509
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+        FileOffset:      509
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+            Offset:          509
+            Length:          0
+            ReplacementText: 'static_cast<size_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+            Offset:          514
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+            FileOffset:      509
+            Length:          5
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+        FileOffset:      509
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+            Offset:          509
+            Length:          0
+            ReplacementText: 'static_cast<long>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+            Offset:          510
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+            FileOffset:      509
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''size_type'' (aka ''unsigned long'') of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+      FileOffset:      538
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+        FileOffset:      538
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+            Offset:          538
+            Length:          0
+            ReplacementText: 'static_cast<size_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+            Offset:          543
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+            FileOffset:      538
+            Length:          5
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+        FileOffset:      538
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+            Offset:          538
+            Length:          0
+            ReplacementText: 'static_cast<long>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+            Offset:          539
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+            FileOffset:      538
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-branch-clone
+    DiagnosticMessage:
+      Message:         if with identical then and else branches
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+      FileOffset:      1808
+      Replacements:    []
+    Notes:
+      - Message:         else branch starts here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+        FileOffset:      1864
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+      FileOffset:      1848
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+          Offset:          1848
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+      FileOffset:      1897
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+          Offset:          1897
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+      FileOffset:      2019
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+          Offset:          2019
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+      FileOffset:      2081
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+          Offset:          2081
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+      FileOffset:      2143
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+          Offset:          2143
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+      FileOffset:      2205
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+          Offset:          2205
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+      FileOffset:      2267
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+          Offset:          2267
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+      FileOffset:      2329
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+          Offset:          2329
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+      FileOffset:      2379
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+          Offset:          2379
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+      FileOffset:      2446
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0244_p03519_CODE_FESTIVAL_2017_Elimination_Tournament_Round_1__Parallel__-_Paired_Parentheses.cpp'
+          Offset:          2446
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

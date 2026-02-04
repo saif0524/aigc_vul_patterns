@@ -1,0 +1,382 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+      FileOffset:      140
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+      FileOffset:      167
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+      FileOffset:      194
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+      FileOffset:      221
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+      FileOffset:      242
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+      FileOffset:      261
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+          Offset:          257
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+          Offset:          267
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''N'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+      FileOffset:      1082
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+          FileOffset:      1082
+          Length:          13
+    Notes:
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      344
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+            FileOffset:      344
+            Length:          21
+      - Message:         Taint propagated to the 3rd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      344
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+            FileOffset:      344
+            Length:          21
+      - Message:         'Assuming ''i'' is > ''b'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      381
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+            FileOffset:      381
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 25
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      369
+        Replacements:    []
+      - Message:         'Assuming ''i'' is < ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      672
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+            FileOffset:      672
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      660
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      690
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+            FileOffset:      690
+            Length:          34
+      - Message:         Taint propagated to the 2nd argument, 3rd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      690
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+            FileOffset:      690
+            Length:          34
+      - Message:         'Assuming ''a'' is not equal to ''c'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      737
+        Replacements:    []
+        Ranges:
+          - FilePath:        ''
+            FileOffset:      0
+            Length:          0
+      - Message:         'expanded from macro ''assert'''
+        FilePath:        '/usr/include/assert.h'
+        FileOffset:      3051
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/include/assert.h'
+            FileOffset:      3051
+            Length:          4
+      - Message:         'Left side of ''||'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      744
+        Replacements:    []
+      - Message:         '''?'' condition is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      730
+        Replacements:    []
+      - Message:         'expanded from macro ''assert'''
+        FilePath:        '/usr/include/assert.h'
+        FileOffset:      3031
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      801
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      838
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+            FileOffset:      838
+            Length:          21
+      - Message:         'Left side of ''&&'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      838
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      863
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+            FileOffset:      863
+            Length:          22
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      834
+        Replacements:    []
+      - Message:         'Assuming ''j'' is <= ''len'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      909
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+            FileOffset:      909
+            Length:          8
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      897
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      1029
+        Replacements:    []
+      - Message:         'Access of ''N'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      1082
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+            FileOffset:      1082
+            Length:          13
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-format
+    DiagnosticMessage:
+      Message:         'length modifier ''I64'' results in undefined behavior or no effect with ''d'' conversion specifier'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+      FileOffset:      1213
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+          Offset:          1213
+          Length:          3
+          ReplacementText: ''
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+          FileOffset:      1212
+          Length:          5
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''N'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+      FileOffset:      1463
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+          FileOffset:      1463
+          Length:          10
+    Notes:
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      344
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+            FileOffset:      344
+            Length:          21
+      - Message:         Taint propagated to the 3rd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      344
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+            FileOffset:      344
+            Length:          21
+      - Message:         'Assuming ''i'' is > ''b'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      381
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+            FileOffset:      381
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 25
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      369
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      672
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+            FileOffset:      672
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 41
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      660
+        Replacements:    []
+      - Message:         'Assuming ''i'' is < ''q'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      1179
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+            FileOffset:      1179
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      1167
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      1197
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+            FileOffset:      1197
+            Length:          42
+      - Message:         Taint propagated to the 2nd argument, 3rd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      1197
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+            FileOffset:      1197
+            Length:          42
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      1283
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+            FileOffset:      1283
+            Length:          9
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      1279
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      1310
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+            FileOffset:      1310
+            Length:          9
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      1306
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      1340
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+            FileOffset:      1340
+            Length:          9
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      1336
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''q'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      1179
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+            FileOffset:      1179
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 49
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      1167
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      1368
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      1402
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      1436
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+            FileOffset:      1436
+            Length:          18
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      1432
+        Replacements:    []
+      - Message:         'Access of ''N'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+        FileOffset:      1463
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0198_331_D2._Escaping_on_Beaveractor.cpp'
+            FileOffset:      1463
+            Length:          10
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

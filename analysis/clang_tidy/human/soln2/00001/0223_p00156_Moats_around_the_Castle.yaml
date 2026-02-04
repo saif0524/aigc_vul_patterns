@@ -1,0 +1,319 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+      FileOffset:      121
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+          Offset:          116
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+          Offset:          164
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+      FileOffset:      198
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+          Offset:          194
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+          Offset:          204
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         Out of bound access to memory after the end of the heap area
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+      FileOffset:      473
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+          FileOffset:      473
+          Length:          10
+    Notes:
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+        FileOffset:      219
+        Replacements:    []
+      - Message:         'Assuming ''n'' is not equal to 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+        FileOffset:      262
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+            FileOffset:      262
+            Length:          4
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+        FileOffset:      258
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+        FileOffset:      324
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+            FileOffset:      324
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 21
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+        FileOffset:      310
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 22
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+        FileOffset:      364
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+        FileOffset:      445
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+            FileOffset:      445
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+        FileOffset:      431
+        Replacements:    []
+      - Message:         'Access of ''char *'' element in the heap area at index 2147483647'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+        FileOffset:      473
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+            FileOffset:      473
+            Length:          10
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         Out of bound access to memory after the end of the heap area
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+      FileOffset:      565
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+          FileOffset:      565
+          Length:          8
+    Notes:
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+        FileOffset:      219
+        Replacements:    []
+      - Message:         'Assuming ''n'' is not equal to 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+        FileOffset:      262
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+            FileOffset:      262
+            Length:          4
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+        FileOffset:      258
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+        FileOffset:      324
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+            FileOffset:      324
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 21
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+        FileOffset:      310
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 22
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+        FileOffset:      364
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+        FileOffset:      445
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+            FileOffset:      445
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 23
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+        FileOffset:      431
+        Replacements:    []
+      - Message:         'Assuming ''i'' is <= ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+        FileOffset:      512
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+            FileOffset:      512
+            Length:          4
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+        FileOffset:      498
+        Replacements:    []
+      - Message:         'Assuming ''j'' is <= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+        FileOffset:      542
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+            FileOffset:      542
+            Length:          4
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+        FileOffset:      528
+        Replacements:    []
+      - Message:         'Access of ''char *'' element in the heap area at index 1'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+        FileOffset:      565
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+            FileOffset:      565
+            Length:          8
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-auto
+    DiagnosticMessage:
+      Message:         use auto when initializing with new to avoid duplicating the type name
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+      FileOffset:      584
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+          Offset:          584
+          Length:          5
+          ReplacementText: auto
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-core.NullDereference
+    DiagnosticMessage:
+      Message:         Dereference of undefined pointer value
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+      FileOffset:      875
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+          FileOffset:      857
+          Length:          21
+    Notes:
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+        FileOffset:      219
+        Replacements:    []
+      - Message:         'Assuming ''n'' is not equal to 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+        FileOffset:      262
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+            FileOffset:      262
+            Length:          4
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+        FileOffset:      258
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+        FileOffset:      324
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+            FileOffset:      324
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 21
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+        FileOffset:      310
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 22
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+        FileOffset:      364
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+        FileOffset:      445
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+            FileOffset:      445
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 23
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+        FileOffset:      431
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+        FileOffset:      512
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+            FileOffset:      512
+            Length:          4
+      - Message:         Loop condition is false. Execution continues on line 26
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+        FileOffset:      498
+        Replacements:    []
+      - Message:         Storing uninitialized value
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+        FileOffset:      601
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+            FileOffset:      601
+            Length:          15
+      - Message:         Loop condition is false. Execution continues on line 28
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+        FileOffset:      620
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 36
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+        FileOffset:      676
+        Replacements:    []
+      - Message:         Dereference of undefined pointer value
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+        FileOffset:      875
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+            FileOffset:      857
+            Length:          21
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-transparent-functors
+    DiagnosticMessage:
+      Message:         'prefer transparent functors ''greater<>'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+      FileOffset:      929
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+          Offset:          942
+          Length:          30
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''std::endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+      FileOffset:      1276
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0223_p00156_Moats_around_the_Castle.cpp'
+          Offset:          1276
+          Length:          9
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

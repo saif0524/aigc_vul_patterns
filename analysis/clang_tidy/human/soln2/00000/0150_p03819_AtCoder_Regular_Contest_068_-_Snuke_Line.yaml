@@ -1,0 +1,150 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0150_p03819_AtCoder_Regular_Contest_068_-_Snuke_Line.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0150_p03819_AtCoder_Regular_Contest_068_-_Snuke_Line.cpp'
+      FileOffset:      68
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0150_p03819_AtCoder_Regular_Contest_068_-_Snuke_Line.cpp'
+      FileOffset:      93
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0150_p03819_AtCoder_Regular_Contest_068_-_Snuke_Line.cpp'
+          Offset:          89
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0150_p03819_AtCoder_Regular_Contest_068_-_Snuke_Line.cpp'
+          Offset:          99
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''d'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0150_p03819_AtCoder_Regular_Contest_068_-_Snuke_Line.cpp'
+      FileOffset:      373
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0150_p03819_AtCoder_Regular_Contest_068_-_Snuke_Line.cpp'
+          FileOffset:      373
+          Length:          6
+    Notes:
+      - Message:         'Assuming ''i'' is <= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0150_p03819_AtCoder_Regular_Contest_068_-_Snuke_Line.cpp'
+        FileOffset:      143
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0150_p03819_AtCoder_Regular_Contest_068_-_Snuke_Line.cpp'
+            FileOffset:      143
+            Length:          4
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0150_p03819_AtCoder_Regular_Contest_068_-_Snuke_Line.cpp'
+        FileOffset:      131
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0150_p03819_AtCoder_Regular_Contest_068_-_Snuke_Line.cpp'
+        FileOffset:      162
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0150_p03819_AtCoder_Regular_Contest_068_-_Snuke_Line.cpp'
+            FileOffset:      162
+            Length:          19
+      - Message:         Taint propagated to the 2nd argument, 3rd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0150_p03819_AtCoder_Regular_Contest_068_-_Snuke_Line.cpp'
+        FileOffset:      162
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0150_p03819_AtCoder_Regular_Contest_068_-_Snuke_Line.cpp'
+            FileOffset:      162
+            Length:          19
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0150_p03819_AtCoder_Regular_Contest_068_-_Snuke_Line.cpp'
+        FileOffset:      205
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0150_p03819_AtCoder_Regular_Contest_068_-_Snuke_Line.cpp'
+            FileOffset:      205
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0150_p03819_AtCoder_Regular_Contest_068_-_Snuke_Line.cpp'
+        FileOffset:      191
+        Replacements:    []
+      - Message:         'Access of ''d'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0150_p03819_AtCoder_Regular_Contest_068_-_Snuke_Line.cpp'
+        FileOffset:      373
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0150_p03819_AtCoder_Regular_Contest_068_-_Snuke_Line.cpp'
+            FileOffset:      373
+            Length:          6
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''d'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0150_p03819_AtCoder_Regular_Contest_068_-_Snuke_Line.cpp'
+      FileOffset:      410
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0150_p03819_AtCoder_Regular_Contest_068_-_Snuke_Line.cpp'
+          FileOffset:      410
+          Length:          6
+    Notes:
+      - Message:         'Assuming ''i'' is <= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0150_p03819_AtCoder_Regular_Contest_068_-_Snuke_Line.cpp'
+        FileOffset:      143
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0150_p03819_AtCoder_Regular_Contest_068_-_Snuke_Line.cpp'
+            FileOffset:      143
+            Length:          4
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0150_p03819_AtCoder_Regular_Contest_068_-_Snuke_Line.cpp'
+        FileOffset:      131
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0150_p03819_AtCoder_Regular_Contest_068_-_Snuke_Line.cpp'
+        FileOffset:      162
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0150_p03819_AtCoder_Regular_Contest_068_-_Snuke_Line.cpp'
+            FileOffset:      162
+            Length:          19
+      - Message:         Taint propagated to the 3rd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0150_p03819_AtCoder_Regular_Contest_068_-_Snuke_Line.cpp'
+        FileOffset:      162
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0150_p03819_AtCoder_Regular_Contest_068_-_Snuke_Line.cpp'
+            FileOffset:      162
+            Length:          19
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0150_p03819_AtCoder_Regular_Contest_068_-_Snuke_Line.cpp'
+        FileOffset:      205
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0150_p03819_AtCoder_Regular_Contest_068_-_Snuke_Line.cpp'
+            FileOffset:      205
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 17
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0150_p03819_AtCoder_Regular_Contest_068_-_Snuke_Line.cpp'
+        FileOffset:      191
+        Replacements:    []
+      - Message:         'Access of ''d'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0150_p03819_AtCoder_Regular_Contest_068_-_Snuke_Line.cpp'
+        FileOffset:      410
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0150_p03819_AtCoder_Regular_Contest_068_-_Snuke_Line.cpp'
+            FileOffset:      410
+            Length:          6
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

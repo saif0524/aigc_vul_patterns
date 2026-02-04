@@ -1,0 +1,138 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0263_1304_E._1-Trees_and_Queries.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-macro-to-enum
+    DiagnosticMessage:
+      Message:         replace macro with enum
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0263_1304_E._1-Trees_and_Queries.cpp'
+      FileOffset:      255
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0263_1304_E._1-Trees_and_Queries.cpp'
+          Offset:          255
+          Length:          8
+          ReplacementText: "enum {\n"
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0263_1304_E._1-Trees_and_Queries.cpp'
+          Offset:          267
+          Length:          0
+          ReplacementText: ' ='
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0263_1304_E._1-Trees_and_Queries.cpp'
+          Offset:          272
+          Length:          0
+          ReplacementText: ','
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0263_1304_E._1-Trees_and_Queries.cpp'
+          Offset:          273
+          Length:          8
+          ReplacementText: ''
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0263_1304_E._1-Trees_and_Queries.cpp'
+          Offset:          284
+          Length:          0
+          ReplacementText: ' ='
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0263_1304_E._1-Trees_and_Queries.cpp'
+          Offset:          296
+          Length:          0
+          ReplacementText: "};\n"
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-macro-to-enum
+    DiagnosticMessage:
+      Message:         'macro ''endl'' defines an integral constant; prefer an enum instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0263_1304_E._1-Trees_and_Queries.cpp'
+      FileOffset:      263
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-macro-to-enum
+    DiagnosticMessage:
+      Message:         'macro ''mod'' defines an integral constant; prefer an enum instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0263_1304_E._1-Trees_and_Queries.cpp'
+      FileOffset:      281
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-transparent-functors
+    DiagnosticMessage:
+      Message:         'prefer transparent functors ''less<>'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0263_1304_E._1-Trees_and_Queries.cpp'
+      FileOffset:      318
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0263_1304_E._1-Trees_and_Queries.cpp'
+          Offset:          323
+          Length:          3
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0263_1304_E._1-Trees_and_Queries.cpp'
+      FileOffset:      380
+      Replacements:    []
+    Notes:
+      - Message:         'expanded from macro ''int'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0263_1304_E._1-Trees_and_Queries.cpp'
+        FileOffset:      165
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''dfs'' of similar type (''long long'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0263_1304_E._1-Trees_and_Queries.cpp'
+      FileOffset:      422
+      Replacements:    []
+      Ranges:
+        - FilePath:        ''
+          FileOffset:      0
+          Length:          0
+    Notes:
+      - Message:         'expanded from macro ''int'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0263_1304_E._1-Trees_and_Queries.cpp'
+        FileOffset:      165
+        Replacements:    []
+      - Message:         'the first parameter in the range is ''node'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0263_1304_E._1-Trees_and_Queries.cpp'
+        FileOffset:      426
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0263_1304_E._1-Trees_and_Queries.cpp'
+            FileOffset:      426
+            Length:          4
+      - Message:         'the last parameter in the range is ''parent'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0263_1304_E._1-Trees_and_Queries.cpp'
+        FileOffset:      436
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0263_1304_E._1-Trees_and_Queries.cpp'
+            FileOffset:      436
+            Length:          6
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0263_1304_E._1-Trees_and_Queries.cpp'
+      FileOffset:      1669
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0263_1304_E._1-Trees_and_Queries.cpp'
+          Offset:          1662
+          Length:          6
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0263_1304_E._1-Trees_and_Queries.cpp'
+          Offset:          1675
+          Length:          0
+          ReplacementText: ' -> signed'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0263_1304_E._1-Trees_and_Queries.cpp'
+      FileOffset:      1728
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00000_3/0263_1304_E._1-Trees_and_Queries.cpp'
+          Offset:          1728
+          Length:          4
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

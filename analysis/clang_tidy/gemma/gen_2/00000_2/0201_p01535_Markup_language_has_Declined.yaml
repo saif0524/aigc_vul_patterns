@@ -1,0 +1,300 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+      FileOffset:      119
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+          Offset:          115
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+          Offset:          125
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-unused-local-non-trivial-variable
+    DiagnosticMessage:
+      Message:         'unused local variable ''tag_name'' of type ''string'' (aka ''basic_string<char>'')'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+      FileOffset:      712
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+      FileOffset:      785
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-faster-string-find
+    DiagnosticMessage:
+      Message:         '''find'' called with a string literal consisting of a single character; consider using the more effective overload accepting a character'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+      FileOffset:      802
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+          Offset:          802
+          Length:          3
+          ReplacementText: '''<'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+      FileOffset:      872
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-faster-string-find
+    DiagnosticMessage:
+      Message:         '''find'' called with a string literal consisting of a single character; consider using the more effective overload accepting a character'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+      FileOffset:      889
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+          Offset:          889
+          Length:          3
+          ReplacementText: '''>'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-deadcode.DeadStores
+    DiagnosticMessage:
+      Message:         'Value stored to ''x'' during its initialization is never read'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+      FileOffset:      1514
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+          FileOffset:      1514
+          Length:          1
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+          FileOffset:      1518
+          Length:          15
+    Notes:
+      - Message:         'Value stored to ''x'' during its initialization is never read'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+        FileOffset:      1514
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+            FileOffset:      1514
+            Length:          1
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+            FileOffset:      1518
+            Length:          15
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-deadcode.DeadStores
+    DiagnosticMessage:
+      Message:         'Value stored to ''y'' during its initialization is never read'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+      FileOffset:      1551
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+          FileOffset:      1551
+          Length:          1
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+          FileOffset:      1555
+          Length:          16
+    Notes:
+      - Message:         'Value stored to ''y'' during its initialization is never read'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+        FileOffset:      1551
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+            FileOffset:      1551
+            Length:          1
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+            FileOffset:      1555
+            Length:          16
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+      FileOffset:      2535
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-faster-string-find
+    DiagnosticMessage:
+      Message:         '''find'' called with a string literal consisting of a single character; consider using the more effective overload accepting a character'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+      FileOffset:      2552
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+          Offset:          2552
+          Length:          3
+          ReplacementText: '''<'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+      FileOffset:      2634
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-faster-string-find
+    DiagnosticMessage:
+      Message:         '''find'' called with a string literal consisting of a single character; consider using the more effective overload accepting a character'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+      FileOffset:      2651
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+          Offset:          2651
+          Length:          3
+          ReplacementText: '''>'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-faster-string-find
+    DiagnosticMessage:
+      Message:         '''find'' called with a string literal consisting of a single character; consider using the more effective overload accepting a character'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+      FileOffset:      3917
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+          Offset:          3917
+          Length:          3
+          ReplacementText: '''{'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-faster-string-find
+    DiagnosticMessage:
+      Message:         '''find'' called with a string literal consisting of a single character; consider using the more effective overload accepting a character'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+      FileOffset:      4002
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+          Offset:          4002
+          Length:          3
+          ReplacementText: '''}'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-faster-string-find
+    DiagnosticMessage:
+      Message:         '''find'' called with a string literal consisting of a single character; consider using the more effective overload accepting a character'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+      FileOffset:      4265
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+          Offset:          4265
+          Length:          3
+          ReplacementText: '''='''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-deadcode.DeadStores
+    DiagnosticMessage:
+      Message:         'Value stored to ''pos'' is never read'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+      FileOffset:      5728
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+          FileOffset:      5734
+          Length:          11
+    Notes:
+      - Message:         'Value stored to ''pos'' is never read'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+        FileOffset:      5728
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+            FileOffset:      5734
+            Length:          11
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+      FileOffset:      6063
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-faster-string-find
+    DiagnosticMessage:
+      Message:         '''find'' called with a string literal consisting of a single character; consider using the more effective overload accepting a character'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+      FileOffset:      6080
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+          Offset:          6080
+          Length:          3
+          ReplacementText: '''>'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-branch-clone
+    DiagnosticMessage:
+      Message:         if with identical then and else branches
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+      FileOffset:      6458
+      Replacements:    []
+    Notes:
+      - Message:         else branch starts here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+        FileOffset:      6635
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-loop-convert
+    DiagnosticMessage:
+      Message:         use range-based for loop instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+      FileOffset:      7384
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+          Offset:          7388
+          Length:          55
+          ReplacementText: '(auto & line : lines)'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+          Offset:          7462
+          Length:          15
+          ReplacementText: line
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+          Offset:          7510
+          Length:          15
+          ReplacementText: line
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+          Offset:          7528
+          Length:          15
+          ReplacementText: line
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+          Offset:          7643
+          Length:          15
+          ReplacementText: line
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+          Offset:          7689
+          Length:          15
+          ReplacementText: line
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+          Offset:          7760
+          Length:          15
+          ReplacementText: line
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+      FileOffset:      7779
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00000_2/0201_p01535_Markup_language_has_Declined.cpp'
+          Offset:          7779
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

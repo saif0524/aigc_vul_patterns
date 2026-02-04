@@ -1,0 +1,647 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+Diagnostics:
+  - DiagnosticName:  performance-noexcept-swap
+    DiagnosticMessage:
+      Message:         swap functions should be marked noexcept
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+      FileOffset:      51
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+          Offset:          72
+          Length:          0
+          ReplacementText: ' noexcept '
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+      FileOffset:      111
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+          Offset:          107
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+          Offset:          128
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+      FileOffset:      159
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+          Offset:          155
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+          Offset:          176
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+      FileOffset:      279
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+      FileOffset:      321
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''sum'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+      FileOffset:      874
+      Replacements:    []
+    Notes:
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      2410
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            FileOffset:      2410
+            Length:          15
+      - Message:         Taint propagated to the 2nd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      2410
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            FileOffset:      2410
+            Length:          15
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      2402
+        Replacements:    []
+      - Message:         'Calling ''run'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      2427
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            FileOffset:      2427
+            Length:          5
+      - Message:         'Calling ''build'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      2099
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            FileOffset:      2099
+            Length:          14
+      - Message:         'Assuming ''l'' is not equal to ''r'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      966
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            FileOffset:      966
+            Length:          6
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      962
+        Replacements:    []
+      - Message:         'Calling ''build'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      1174
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            FileOffset:      1174
+            Length:          22
+      - Message:         'Assuming ''l'' is not equal to ''r'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      966
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            FileOffset:      966
+            Length:          6
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      962
+        Replacements:    []
+      - Message:         'Calling ''build'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      1174
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            FileOffset:      1174
+            Length:          22
+      - Message:         'Assuming ''l'' is not equal to ''r'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      966
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            FileOffset:      966
+            Length:          6
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      962
+        Replacements:    []
+      - Message:         'Returning from ''build'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      1174
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            FileOffset:      1174
+            Length:          22
+      - Message:         'Calling ''build'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      1198
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            FileOffset:      1198
+            Length:          30
+      - Message:         'Assuming ''l'' is not equal to ''r'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      966
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            FileOffset:      966
+            Length:          6
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      962
+        Replacements:    []
+      - Message:         'Returning from ''build'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      1198
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            FileOffset:      1198
+            Length:          30
+      - Message:         'Calling ''pushUp'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      1232
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            FileOffset:      1232
+            Length:          23
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      716
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      777
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            FileOffset:      777
+            Length:          13
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      755
+        Replacements:    []
+      - Message:         'Access of ''sum'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      874
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            FileOffset:      874
+            Length:          47
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-format
+    DiagnosticMessage:
+      Message:         'length modifier ''I64'' results in undefined behavior or no effect with ''d'' conversion specifier'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+      FileOffset:      988
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+          Offset:          988
+          Length:          3
+          ReplacementText: ''
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+          FileOffset:      987
+          Length:          5
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-shift-op-parentheses
+    DiagnosticMessage:
+      Message:         'operator ''>>'' has lower precedence than ''+''; ''+'' will be evaluated first'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+      FileOffset:      1162
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+          FileOffset:      1160
+          Length:          5
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+          FileOffset:      1166
+          Length:          2
+    Notes:
+      - Message:         'place parentheses around the ''+'' expression to silence this warning'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      1162
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            Offset:          1160
+            Length:          0
+            ReplacementText: '('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            Offset:          1165
+            Length:          0
+            ReplacementText: ')'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-shift-op-parentheses
+    DiagnosticMessage:
+      Message:         'operator ''>>'' has lower precedence than ''+''; ''+'' will be evaluated first'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+      FileOffset:      1493
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+          FileOffset:      1491
+          Length:          5
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+          FileOffset:      1497
+          Length:          2
+    Notes:
+      - Message:         'place parentheses around the ''+'' expression to silence this warning'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      1493
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            Offset:          1491
+            Length:          0
+            ReplacementText: '('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            Offset:          1496
+            Length:          0
+            ReplacementText: ')'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+      FileOffset:      1643
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+          Offset:          1633
+          Length:          9
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+          Offset:          1698
+          Length:          0
+          ReplacementText: ' -> long long'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''sum'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+      FileOffset:      1738
+      Replacements:    []
+    Notes:
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      2402
+        Replacements:    []
+      - Message:         'Calling ''run'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      2427
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            FileOffset:      2427
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      2136
+        Replacements:    []
+      - Message:         'Assuming ''t'' is not equal to 1'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      2179
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            FileOffset:      2179
+            Length:          6
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      2175
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      2277
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            FileOffset:      2277
+            Length:          27
+      - Message:         Taint propagated to the 4th argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      2277
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            FileOffset:      2277
+            Length:          27
+      - Message:         'Calling ''query'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      2330
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            FileOffset:      2330
+            Length:          30
+      - Message:         'Assuming ''L'' is equal to ''l'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      1707
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            FileOffset:      1707
+            Length:          6
+      - Message:         'Left side of ''&&'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      1707
+        Replacements:    []
+      - Message:         'Assuming ''r'' is equal to ''R'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      1717
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            FileOffset:      1717
+            Length:          6
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      1703
+        Replacements:    []
+      - Message:         'Access of ''sum'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      1738
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            FileOffset:      1738
+            Length:          10
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-shift-op-parentheses
+    DiagnosticMessage:
+      Message:         'operator ''>>'' has lower precedence than ''+''; ''+'' will be evaluated first'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+      FileOffset:      1771
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+          FileOffset:      1769
+          Length:          5
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+          FileOffset:      1775
+          Length:          2
+    Notes:
+      - Message:         'place parentheses around the ''+'' expression to silence this warning'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      1771
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            Offset:          1769
+            Length:          0
+            ReplacementText: '('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            Offset:          1774
+            Length:          0
+            ReplacementText: ')'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+      FileOffset:      2024
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''cf'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+      FileOffset:      2044
+      Replacements:    []
+    Notes:
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      2402
+        Replacements:    []
+      - Message:         'Calling ''run'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      2427
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            FileOffset:      2427
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      2136
+        Replacements:    []
+      - Message:         'Assuming ''t'' is not equal to 1'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      2179
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            FileOffset:      2179
+            Length:          6
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      2175
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      2277
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            FileOffset:      2277
+            Length:          27
+      - Message:         Taint propagated to the 4th argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      2277
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            FileOffset:      2277
+            Length:          27
+      - Message:         'Calling ''query'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      2330
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            FileOffset:      2330
+            Length:          30
+      - Message:         'Assuming ''L'' is not equal to ''l'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      1707
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            FileOffset:      1707
+            Length:          6
+      - Message:         'Left side of ''&&'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      1714
+        Replacements:    []
+      - Message:         'Assuming ''R'' is <= ''mid'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      1787
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            FileOffset:      1787
+            Length:          8
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      1783
+        Replacements:    []
+      - Message:         'Calling ''query'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      1804
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            FileOffset:      1804
+            Length:          34
+      - Message:         '''L'' is not equal to ''l'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      1707
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            FileOffset:      1707
+            Length:          1
+      - Message:         'Left side of ''&&'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      1714
+        Replacements:    []
+      - Message:         'Assuming ''R'' is <= ''mid'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      1787
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            FileOffset:      1787
+            Length:          8
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      1783
+        Replacements:    []
+      - Message:         'Calling ''query'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      1804
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            FileOffset:      1804
+            Length:          34
+      - Message:         '''L'' is not equal to ''l'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      1707
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            FileOffset:      1707
+            Length:          1
+      - Message:         'Left side of ''&&'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      1714
+        Replacements:    []
+      - Message:         'Assuming ''R'' is > ''mid'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      1787
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            FileOffset:      1787
+            Length:          8
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      1783
+        Replacements:    []
+      - Message:         'Assuming ''mid'' is >= ''L'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      1846
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            FileOffset:      1846
+            Length:          7
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      1842
+        Replacements:    []
+      - Message:         'Access of ''cf'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+        FileOffset:      2044
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+            FileOffset:      2044
+            Length:          5
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-format
+    DiagnosticMessage:
+      Message:         'length modifier ''I64'' results in undefined behavior or no effect with ''d'' conversion specifier'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+      FileOffset:      2321
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+          Offset:          2321
+          Length:          3
+          ReplacementText: ''
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+          FileOffset:      2320
+          Length:          5
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+      FileOffset:      2379
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+          Offset:          2375
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0004_228_D._Zigzag.cpp'
+          Offset:          2385
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

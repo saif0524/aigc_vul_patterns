@@ -1,0 +1,235 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+      FileOffset:      46
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+          Offset:          42
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+          Offset:          52
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C VLA arrays, use ''std::vector'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+      FileOffset:      101
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-vla-cxx-extension
+    DiagnosticMessage:
+      Message:         'variable length arrays in C++ are a Clang extension'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+      FileOffset:      107
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+          FileOffset:      107
+          Length:          1
+    Notes:
+      - Message:         'read of non-const variable ''N'' is not allowed in a constant expression'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+        FileOffset:      107
+        Replacements:    []
+      - Message:         declared here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+        FileOffset:      63
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'result of multiplication in type ''int'' is used as a pointer offset after an implicit widening conversion to type ''ptrdiff_t'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+      FileOffset:      1069
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+        FileOffset:      1071
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+            Offset:          0
+            Length:          0
+            ReplacementText: "#include <cstddef>\n"
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+            Offset:          1071
+            Length:          0
+            ReplacementText: 'static_cast<ptrdiff_t>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+            Offset:          1076
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+            FileOffset:      1071
+            Length:          5
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+        FileOffset:      1071
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+            Offset:          1071
+            Length:          0
+            ReplacementText: 'static_cast<ptrdiff_t>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+            Offset:          1076
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+            FileOffset:      1071
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory after the end of ''A'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+      FileOffset:      1080
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+          FileOffset:      1080
+          Length:          12
+    Notes:
+      - Message:         '''i'' is < ''N'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+        FileOffset:      148
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+            FileOffset:      148
+            Length:          1
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+        FileOffset:      132
+        Replacements:    []
+      - Message:         'Assuming index ''0'' is less than the number of ''int'' elements in ''A'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+        FileOffset:      170
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+            FileOffset:      170
+            Length:          4
+      - Message:         'Assuming ''i'' is >= ''N'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+        FileOffset:      148
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+            FileOffset:      148
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 14
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+        FileOffset:      132
+        Replacements:    []
+      - Message:         'Assuming ''sum'' is >= ''S'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+        FileOffset:      229
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+            FileOffset:      229
+            Length:          7
+      - Message:         'Left side of ''&&'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+        FileOffset:      237
+        Replacements:    []
+      - Message:         'Left side of ''&&'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+        FileOffset:      484
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+        FileOffset:      671
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+        FileOffset:      709
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+        FileOffset:      780
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 39
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+        FileOffset:      780
+        Replacements:    []
+      - Message:         'Assuming ''tempSum'' is not equal to ''S'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+        FileOffset:      874
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+            FileOffset:      874
+            Length:          12
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+        FileOffset:      870
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 33
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+        FileOffset:      709
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 44
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+        FileOffset:      671
+        Replacements:    []
+      - Message:         'Assuming ''count'' is > ''K'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+        FileOffset:      953
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+            FileOffset:      953
+            Length:          9
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+        FileOffset:      949
+        Replacements:    []
+      - Message:         'Assuming ''i'' is < ''diff'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+        FileOffset:      1020
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+            FileOffset:      1020
+            Length:          8
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+        FileOffset:      1004
+        Replacements:    []
+      - Message:         'Access of ''int'' element in ''A'' at index 2'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+        FileOffset:      1080
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+            FileOffset:      1080
+            Length:          12
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+      FileOffset:      1402
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00002_2/0274_p02797_Keyence_Programming_Contest_2020_-_Subarray_Sum.cpp'
+          Offset:          1402
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

@@ -1,0 +1,88 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0153_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-equals-default
+    DiagnosticMessage:
+      Message:         'use ''= default'' to define a trivial default constructor'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0153_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp'
+      FileOffset:      194
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0153_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp'
+          Offset:          202
+          Length:          2
+          ReplacementText: '= default;'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-pass-by-value
+    DiagnosticMessage:
+      Message:         'pass by value and use std::move'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0153_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp'
+      FileOffset:      216
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0153_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp'
+          Offset:          25
+          Length:          0
+          ReplacementText: "\n#include <utility>\n"
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0153_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp'
+          Offset:          244
+          Length:          0
+          ReplacementText: 'std::move('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0153_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp'
+          Offset:          252
+          Length:          0
+          ReplacementText: ')'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-unnecessary-value-param
+    DiagnosticMessage:
+      Message:         'parameter ''nickname'' is passed by value and only copied once; consider moving it to avoid unnecessary copies'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0153_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp'
+      FileOffset:      244
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0153_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp'
+          Offset:          25
+          Length:          0
+          ReplacementText: "\n#include <utility>\n"
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0153_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp'
+          Offset:          244
+          Length:          0
+          ReplacementText: 'std::move('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0153_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp'
+          Offset:          252
+          Length:          0
+          ReplacementText: ')'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0153_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp'
+      FileOffset:      1262
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0153_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp'
+          Offset:          1258
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0153_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp'
+          Offset:          1273
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0153_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp'
+      FileOffset:      1818
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0153_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp'
+          Offset:          1814
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0153_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp'
+          Offset:          1824
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

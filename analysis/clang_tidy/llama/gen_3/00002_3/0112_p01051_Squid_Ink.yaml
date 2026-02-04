@@ -1,0 +1,167 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0112_p01051_Squid_Ink.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0112_p01051_Squid_Ink.cpp'
+      FileOffset:      74
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0112_p01051_Squid_Ink.cpp'
+      FileOffset:      107
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0112_p01051_Squid_Ink.cpp'
+      FileOffset:      194
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0112_p01051_Squid_Ink.cpp'
+          Offset:          190
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0112_p01051_Squid_Ink.cpp'
+          Offset:          200
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no matching constructor for initialization of ''vector<bool>'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0112_p01051_Squid_Ink.cpp'
+      FileOffset:      1655
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0112_p01051_Squid_Ink.cpp'
+          FileOffset:      1663
+          Length:          18
+    Notes:
+      - Message:         'candidate constructor not viable: no known conversion from ''vector<bool>'' to ''const allocator_type'' (aka ''const std::allocator<bool>'') for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_bvector.h'
+        FileOffset:      19964
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_bvector.h'
+            FileOffset:      19986
+            Length:          44
+      - Message:         'candidate constructor not viable: no known conversion from ''vector<bool>'' to ''const bool'' for 2nd argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_bvector.h'
+        FileOffset:      20108
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_bvector.h'
+            FileOffset:      20130
+            Length:          19
+      - Message:         'candidate constructor not viable: no known conversion from ''int'' to ''vector<bool>'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_bvector.h'
+        FileOffset:      21307
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_bvector.h'
+            FileOffset:      21314
+            Length:          12
+      - Message:         'candidate constructor not viable: no known conversion from ''int'' to ''const vector<bool>'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_bvector.h'
+        FileOffset:      21562
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_bvector.h'
+            FileOffset:      21569
+            Length:          17
+      - Message:         'candidate constructor not viable: no known conversion from ''int'' to ''initializer_list<bool>'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_bvector.h'
+        FileOffset:      21782
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_bvector.h'
+            FileOffset:      21789
+            Length:          26
+      - Message:         'candidate template ignored: deduced conflicting types for parameter ''_InputIterator'' (''int'' vs. ''vector<bool>'')'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_bvector.h'
+        FileOffset:      22144
+        Replacements:    []
+      - Message:         'candidate constructor not viable: requires single argument ''__a'', but 2 arguments were provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_bvector.h'
+        FileOffset:      19831
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_bvector.h'
+            FileOffset:      19838
+            Length:          25
+      - Message:         'candidate constructor not viable: requires single argument ''__x'', but 2 arguments were provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_bvector.h'
+        FileOffset:      20462
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_bvector.h'
+            FileOffset:      20469
+            Length:          17
+      - Message:         'candidate constructor not viable: requires 1 argument, but 2 were provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_bvector.h'
+        FileOffset:      20751
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_bvector.h'
+            FileOffset:      20758
+            Length:          8
+      - Message:         'candidate constructor not viable: requires 3 arguments, but 2 were provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_bvector.h'
+        FileOffset:      20826
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_bvector.h'
+            FileOffset:      20833
+            Length:          50
+      - Message:         'candidate constructor not viable: requires 3 arguments, but 2 were provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_bvector.h'
+        FileOffset:      20973
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_bvector.h'
+            FileOffset:      20980
+            Length:          51
+      - Message:         'candidate constructor not viable: requires 0 arguments, but 2 were provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_bvector.h'
+        FileOffset:      19730
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'type ''reference'' (aka ''std::_Bit_reference'') does not provide a subscript operator'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0112_p01051_Squid_Ink.cpp'
+      FileOffset:      1710
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0112_p01051_Squid_Ink.cpp'
+          FileOffset:      1700
+          Length:          10
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0112_p01051_Squid_Ink.cpp'
+          FileOffset:      1711
+          Length:          1
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'type ''reference'' (aka ''std::_Bit_reference'') does not provide a subscript operator'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0112_p01051_Squid_Ink.cpp'
+      FileOffset:      2030
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0112_p01051_Squid_Ink.cpp'
+          FileOffset:      2019
+          Length:          11
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0112_p01051_Squid_Ink.cpp'
+          FileOffset:      2031
+          Length:          2
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

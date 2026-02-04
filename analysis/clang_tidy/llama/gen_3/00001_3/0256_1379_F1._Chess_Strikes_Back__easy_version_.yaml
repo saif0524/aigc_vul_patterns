@@ -1,0 +1,153 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0256_1379_F1._Chess_Strikes_Back__easy_version_.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0256_1379_F1._Chess_Strikes_Back__easy_version_.cpp'
+      FileOffset:      86
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0256_1379_F1._Chess_Strikes_Back__easy_version_.cpp'
+      FileOffset:      134
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0256_1379_F1._Chess_Strikes_Back__easy_version_.cpp'
+          Offset:          130
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0256_1379_F1._Chess_Strikes_Back__easy_version_.cpp'
+          Offset:          140
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0256_1379_F1._Chess_Strikes_Back__easy_version_.cpp'
+      FileOffset:      188
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0256_1379_F1._Chess_Strikes_Back__easy_version_.cpp'
+          Offset:          188
+          Length:          1
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-deadcode.DeadStores
+    DiagnosticMessage:
+      Message:         'Value stored to ''total'' during its initialization is never read'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0256_1379_F1._Chess_Strikes_Back__easy_version_.cpp'
+      FileOffset:      226
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0256_1379_F1._Chess_Strikes_Back__easy_version_.cpp'
+          FileOffset:      226
+          Length:          5
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0256_1379_F1._Chess_Strikes_Back__easy_version_.cpp'
+          FileOffset:      234
+          Length:          5
+    Notes:
+      - Message:         'Value stored to ''total'' during its initialization is never read'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0256_1379_F1._Chess_Strikes_Back__easy_version_.cpp'
+        FileOffset:      226
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0256_1379_F1._Chess_Strikes_Back__easy_version_.cpp'
+            FileOffset:      226
+            Length:          5
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0256_1379_F1._Chess_Strikes_Back__easy_version_.cpp'
+            FileOffset:      234
+            Length:          5
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'result of multiplication in type ''int'' is used as a pointer offset after an implicit widening conversion to type ''ptrdiff_t'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0256_1379_F1._Chess_Strikes_Back__easy_version_.cpp'
+      FileOffset:      767
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0256_1379_F1._Chess_Strikes_Back__easy_version_.cpp'
+        FileOffset:      775
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0256_1379_F1._Chess_Strikes_Back__easy_version_.cpp'
+            Offset:          25
+            Length:          0
+            ReplacementText: "\n#include <cstddef>\n"
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0256_1379_F1._Chess_Strikes_Back__easy_version_.cpp'
+            Offset:          775
+            Length:          0
+            ReplacementText: 'static_cast<ptrdiff_t>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0256_1379_F1._Chess_Strikes_Back__easy_version_.cpp'
+            Offset:          780
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0256_1379_F1._Chess_Strikes_Back__easy_version_.cpp'
+            FileOffset:      775
+            Length:          5
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0256_1379_F1._Chess_Strikes_Back__easy_version_.cpp'
+        FileOffset:      775
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0256_1379_F1._Chess_Strikes_Back__easy_version_.cpp'
+            Offset:          775
+            Length:          0
+            ReplacementText: 'static_cast<ptrdiff_t>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0256_1379_F1._Chess_Strikes_Back__easy_version_.cpp'
+            Offset:          780
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0256_1379_F1._Chess_Strikes_Back__easy_version_.cpp'
+            FileOffset:      775
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'result of multiplication in type ''int'' is used as a pointer offset after an implicit widening conversion to type ''ptrdiff_t'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0256_1379_F1._Chess_Strikes_Back__easy_version_.cpp'
+      FileOffset:      964
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0256_1379_F1._Chess_Strikes_Back__easy_version_.cpp'
+        FileOffset:      972
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0256_1379_F1._Chess_Strikes_Back__easy_version_.cpp'
+            Offset:          972
+            Length:          0
+            ReplacementText: 'static_cast<ptrdiff_t>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0256_1379_F1._Chess_Strikes_Back__easy_version_.cpp'
+            Offset:          977
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0256_1379_F1._Chess_Strikes_Back__easy_version_.cpp'
+            FileOffset:      972
+            Length:          5
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0256_1379_F1._Chess_Strikes_Back__easy_version_.cpp'
+        FileOffset:      972
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0256_1379_F1._Chess_Strikes_Back__easy_version_.cpp'
+            Offset:          972
+            Length:          0
+            ReplacementText: 'static_cast<ptrdiff_t>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0256_1379_F1._Chess_Strikes_Back__easy_version_.cpp'
+            Offset:          977
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00001_3/0256_1379_F1._Chess_Strikes_Back__easy_version_.cpp'
+            FileOffset:      972
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

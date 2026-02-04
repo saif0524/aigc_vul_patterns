@@ -1,0 +1,327 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+      FileOffset:      46
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+      FileOffset:      70
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+      FileOffset:      114
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+      FileOffset:      140
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+          Offset:          136
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+          Offset:          146
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory after the end of ''cmd'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+      FileOffset:      361
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+          FileOffset:      361
+          Length:          6
+    Notes:
+      - Message:         'Assuming ''i'' is >= ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+        FileOffset:      204
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+            FileOffset:      204
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 10
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+        FileOffset:      188
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+        FileOffset:      285
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+            FileOffset:      285
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 11
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+        FileOffset:      269
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+        FileOffset:      338
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+            FileOffset:      338
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+        FileOffset:      318
+        Replacements:    []
+      - Message:         'Access of ''cmd'' at index 2147483647, while it holds only 5005 ''int'' elements'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+        FileOffset:      361
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+            FileOffset:      361
+            Length:          6
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''p'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+      FileOffset:      417
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+          FileOffset:      417
+          Length:          4
+    Notes:
+      - Message:         'Assuming ''i'' is < ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+        FileOffset:      204
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+            FileOffset:      204
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+        FileOffset:      188
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+        FileOffset:      216
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+            FileOffset:      216
+            Length:          49
+      - Message:         Taint propagated to the 3rd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+        FileOffset:      216
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+            FileOffset:      216
+            Length:          49
+      - Message:         'Assuming ''i'' is >= ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+        FileOffset:      204
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+            FileOffset:      204
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 10
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+        FileOffset:      188
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+        FileOffset:      285
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+            FileOffset:      285
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 11
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+        FileOffset:      269
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+        FileOffset:      318
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+        FileOffset:      361
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+            FileOffset:      361
+            Length:          11
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+        FileOffset:      357
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+        FileOffset:      401
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+            FileOffset:      401
+            Length:          9
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+        FileOffset:      382
+        Replacements:    []
+      - Message:         'Access of ''p'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+        FileOffset:      417
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+            FileOffset:      417
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''vis'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+      FileOffset:      501
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+          FileOffset:      501
+          Length:          6
+    Notes:
+      - Message:         'Assuming ''i'' is < ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+        FileOffset:      204
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+            FileOffset:      204
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+        FileOffset:      188
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+        FileOffset:      216
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+            FileOffset:      216
+            Length:          49
+      - Message:         Taint propagated to the 3rd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+        FileOffset:      216
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+            FileOffset:      216
+            Length:          49
+      - Message:         'Assuming ''i'' is >= ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+        FileOffset:      204
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+            FileOffset:      204
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 10
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+        FileOffset:      188
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+        FileOffset:      285
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+            FileOffset:      285
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 11
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+        FileOffset:      269
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+        FileOffset:      318
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+        FileOffset:      361
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+            FileOffset:      361
+            Length:          11
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+        FileOffset:      357
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+        FileOffset:      471
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+            FileOffset:      471
+            Length:          9
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+        FileOffset:      452
+        Replacements:    []
+      - Message:         'Access of ''vis'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+        FileOffset:      501
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+            FileOffset:      501
+            Length:          6
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-bool-literals
+    DiagnosticMessage:
+      Message:         converting integer literal to bool, use bool literal instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+      FileOffset:      577
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+          Offset:          577
+          Length:          1
+          ReplacementText: 'true'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-bool-literals
+    DiagnosticMessage:
+      Message:         converting integer literal to bool, use bool literal instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+      FileOffset:      898
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0114_361_C._Levko_and_Array_Recovery.cpp'
+          Offset:          898
+          Length:          1
+          ReplacementText: 'true'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

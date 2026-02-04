@@ -1,0 +1,193 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0166_602_C._The_Two_Routes.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0166_602_C._The_Two_Routes.cpp'
+      FileOffset:      46
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0166_602_C._The_Two_Routes.cpp'
+      FileOffset:      72
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0166_602_C._The_Two_Routes.cpp'
+          Offset:          68
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0166_602_C._The_Two_Routes.cpp'
+          Offset:          98
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0166_602_C._The_Two_Routes.cpp'
+      FileOffset:      140
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0166_602_C._The_Two_Routes.cpp'
+      FileOffset:      161
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-core.uninitialized.UndefReturn
+    DiagnosticMessage:
+      Message:         Undefined or garbage value returned to caller
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0166_602_C._The_Two_Routes.cpp'
+      FileOffset:      628
+      Replacements:    []
+    Notes:
+      - Message:         'Value assigned to ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0166_602_C._The_Two_Routes.cpp'
+        FileOffset:      680
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0166_602_C._The_Two_Routes.cpp'
+            FileOffset:      680
+            Length:          8
+      - Message:         Loop condition is false. Execution continues on line 37
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0166_602_C._The_Two_Routes.cpp'
+        FileOffset:      709
+        Replacements:    []
+      - Message:         'Calling ''bfs'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0166_602_C._The_Two_Routes.cpp'
+        FileOffset:      807
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0166_602_C._The_Two_Routes.cpp'
+            FileOffset:      807
+            Length:          13
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0166_602_C._The_Two_Routes.cpp'
+        FileOffset:      201
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0166_602_C._The_Two_Routes.cpp'
+            FileOffset:      201
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 13
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0166_602_C._The_Two_Routes.cpp'
+        FileOffset:      185
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0166_602_C._The_Two_Routes.cpp'
+        FileOffset:      321
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0166_602_C._The_Two_Routes.cpp'
+            FileOffset:      321
+            Length:          14
+      - Message:         Loop condition is false. Execution continues on line 26
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0166_602_C._The_Two_Routes.cpp'
+        FileOffset:      314
+        Replacements:    []
+      - Message:         Assuming index is non-negative
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0166_602_C._The_Two_Routes.cpp'
+        FileOffset:      635
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0166_602_C._The_Two_Routes.cpp'
+            FileOffset:      635
+            Length:          14
+      - Message:         'Returning from ''bfs'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0166_602_C._The_Two_Routes.cpp'
+        FileOffset:      807
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0166_602_C._The_Two_Routes.cpp'
+            FileOffset:      807
+            Length:          13
+      - Message:         'Passing the value 0 via 1st parameter ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0166_602_C._The_Two_Routes.cpp'
+        FileOffset:      839
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0166_602_C._The_Two_Routes.cpp'
+            FileOffset:      839
+            Length:          1
+      - Message:         'Calling ''bfs'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0166_602_C._The_Two_Routes.cpp'
+        FileOffset:      835
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0166_602_C._The_Two_Routes.cpp'
+            FileOffset:      835
+            Length:          12
+      - Message:         Loop condition is false. Execution continues on line 13
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0166_602_C._The_Two_Routes.cpp'
+        FileOffset:      185
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0166_602_C._The_Two_Routes.cpp'
+        FileOffset:      321
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0166_602_C._The_Two_Routes.cpp'
+            FileOffset:      321
+            Length:          14
+      - Message:         Loop condition is false. Execution continues on line 26
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0166_602_C._The_Two_Routes.cpp'
+        FileOffset:      314
+        Replacements:    []
+      - Message:         Undefined or garbage value returned to caller
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0166_602_C._The_Two_Routes.cpp'
+        FileOffset:      628
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0166_602_C._The_Two_Routes.cpp'
+            FileOffset:      635
+            Length:          14
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0166_602_C._The_Two_Routes.cpp'
+      FileOffset:      657
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0166_602_C._The_Two_Routes.cpp'
+          Offset:          653
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0166_602_C._The_Two_Routes.cpp'
+          Offset:          663
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0166_602_C._The_Two_Routes.cpp'
+      FileOffset:      903
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0166_602_C._The_Two_Routes.cpp'
+          Offset:          903
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0166_602_C._The_Two_Routes.cpp'
+      FileOffset:      951
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0166_602_C._The_Two_Routes.cpp'
+          Offset:          951
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

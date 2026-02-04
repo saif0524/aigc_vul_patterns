@@ -1,0 +1,233 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+      FileOffset:      86
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+          Offset:          82
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+          Offset:          92
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-emplace
+    DiagnosticMessage:
+      Message:         use emplace_back instead of push_back
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+      FileOffset:      312
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+          Offset:          312
+          Length:          11
+          ReplacementText: 'emplace_back('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+          Offset:          327
+          Length:          1
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-emplace
+    DiagnosticMessage:
+      Message:         use emplace_back instead of push_back
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+      FileOffset:      346
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+          Offset:          346
+          Length:          11
+          ReplacementText: 'emplace_back('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+          Offset:          361
+          Length:          1
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-deadcode.DeadStores
+    DiagnosticMessage:
+      Message:         'Value stored to ''color'' during its initialization is never read'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+      FileOffset:      845
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+          FileOffset:      845
+          Length:          5
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+          FileOffset:      853
+          Length:          11
+    Notes:
+      - Message:         'Value stored to ''color'' during its initialization is never read'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+        FileOffset:      845
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+            FileOffset:      845
+            Length:          5
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+            FileOffset:      853
+            Length:          11
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-branch-clone
+    DiagnosticMessage:
+      Message:         repeated branch body in conditional chain
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+      FileOffset:      2610
+      Replacements:    []
+    Notes:
+      - Message:         end of the original
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+        FileOffset:      2652
+        Replacements:    []
+      - Message:         clone 1 starts here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+        FileOffset:      3240
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+      FileOffset:      2637
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+          Offset:          2637
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-branch-clone
+    DiagnosticMessage:
+      Message:         repeated branch body in conditional chain
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+      FileOffset:      2700
+      Replacements:    []
+    Notes:
+      - Message:         end of the original
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+        FileOffset:      2742
+        Replacements:    []
+      - Message:         clone 1 starts here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+        FileOffset:      2880
+        Replacements:    []
+      - Message:         clone 2 starts here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+        FileOffset:      2970
+        Replacements:    []
+      - Message:         clone 3 starts here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+        FileOffset:      3060
+        Replacements:    []
+      - Message:         clone 4 starts here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+        FileOffset:      3150
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+      FileOffset:      2727
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+          Offset:          2727
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+      FileOffset:      2817
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+          Offset:          2817
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+      FileOffset:      2907
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+          Offset:          2907
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+      FileOffset:      2997
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+          Offset:          2997
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+      FileOffset:      3087
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+          Offset:          3087
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+      FileOffset:      3177
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+          Offset:          3177
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+      FileOffset:      3267
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+          Offset:          3267
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+      FileOffset:      3319
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00002_2/0221_505_B._Mr._Kitayuta_s_Colorful_Graph.cpp'
+          Offset:          3319
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

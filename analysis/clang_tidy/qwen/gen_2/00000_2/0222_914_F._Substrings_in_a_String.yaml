@@ -1,0 +1,254 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+      FileOffset:      92
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+      FileOffset:      285
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''typename __normal_iterator<int *, std::vector<int, std::allocator<int>>>::difference_type'' (aka ''long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+      FileOffset:      511
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''typename __normal_iterator<int *, std::vector<int, std::allocator<int>>>::difference_type'' (aka ''long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+      FileOffset:      931
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory after the end of ''s'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+      FileOffset:      1232
+      Replacements:    []
+    Notes:
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+        FileOffset:      2494
+        Replacements:    []
+      - Message:         'Assuming ''t'' is equal to 1'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+        FileOffset:      2550
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+            FileOffset:      2550
+            Length:          6
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+        FileOffset:      2547
+        Replacements:    []
+      - Message:         'Calling ''update'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+        FileOffset:      2637
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+            FileOffset:      2637
+            Length:          12
+      - Message:         'Assuming ''ky'' is <= ''idx'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+        FileOffset:      307
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+            FileOffset:      307
+            Length:          8
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+        FileOffset:      303
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+        FileOffset:      363
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+            FileOffset:      363
+            Length:          14
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+        FileOffset:      359
+        Replacements:    []
+      - Message:         'Assuming ''pos'' is < 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+        FileOffset:      433
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+            FileOffset:      433
+            Length:          8
+      - Message:         'Left side of ''&&'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+        FileOffset:      442
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+        FileOffset:      739
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+            FileOffset:      739
+            Length:          20
+      - Message:         'Left side of ''&&'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+        FileOffset:      760
+        Replacements:    []
+      - Message:         'Assuming ''ky'' is <= ''idx'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+        FileOffset:      1159
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+            FileOffset:      1159
+            Length:          9
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+        FileOffset:      1155
+        Replacements:    []
+      - Message:         'Assuming ''pos'' is >= 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+        FileOffset:      1220
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+            FileOffset:      1220
+            Length:          8
+      - Message:         'Left side of ''&&'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+        FileOffset:      1220
+        Replacements:    []
+      - Message:         'Access of ''s'' at an overflowing index, while it holds only 100100 ''char'' elements'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+        FileOffset:      1232
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+            FileOffset:      1232
+            Length:          15
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''typename __normal_iterator<int *, std::vector<int, std::allocator<int>>>::difference_type'' (aka ''long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+      FileOffset:      1281
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+      FileOffset:      1527
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+          Offset:          1523
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+          Offset:          1563
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''query'' of similar type (''int'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+      FileOffset:      1533
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+          FileOffset:      1533
+          Length:          12
+    Notes:
+      - Message:         'the first parameter in the range is ''l'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+        FileOffset:      1537
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+            FileOffset:      1537
+            Length:          1
+      - Message:         'the last parameter in the range is ''r'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+        FileOffset:      1544
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+            FileOffset:      1544
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+      FileOffset:      1579
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''typename __normal_iterator<const int *, std::vector<int, std::allocator<int>>>::difference_type'' (aka ''long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+      FileOffset:      2248
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''typename __normal_iterator<const int *, std::vector<int, std::allocator<int>>>::difference_type'' (aka ''long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+      FileOffset:      2316
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+      FileOffset:      2399
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+          Offset:          2395
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+          Offset:          2405
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+      FileOffset:      2452
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0222_914_F._Substrings_in_a_String.cpp'
+          Offset:          2452
+          Length:          1
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

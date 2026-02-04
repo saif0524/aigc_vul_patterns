@@ -1,0 +1,208 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0013_1334_D._Minimum_Euler_Cycle.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0013_1334_D._Minimum_Euler_Cycle.cpp'
+      FileOffset:      51
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0013_1334_D._Minimum_Euler_Cycle.cpp'
+          Offset:          47
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0013_1334_D._Minimum_Euler_Cycle.cpp'
+          Offset:          57
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0013_1334_D._Minimum_Euler_Cycle.cpp'
+      FileOffset:      104
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0013_1334_D._Minimum_Euler_Cycle.cpp'
+          Offset:          104
+          Length:          1
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to signed type ''value_type'' (aka ''int'') is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0013_1334_D._Minimum_Euler_Cycle.cpp'
+      FileOffset:      424
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  'clang-diagnostic-c++11-narrowing'
+    DiagnosticMessage:
+      Message:         'non-constant-expression cannot be narrowed from type ''long long'' to ''value_type'' (aka ''int'') in initializer list'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0013_1334_D._Minimum_Euler_Cycle.cpp'
+      FileOffset:      424
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0013_1334_D._Minimum_Euler_Cycle.cpp'
+          FileOffset:      424
+          Length:          5
+    Notes:
+      - Message:         insert an explicit cast to silence this issue
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0013_1334_D._Minimum_Euler_Cycle.cpp'
+        FileOffset:      424
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0013_1334_D._Minimum_Euler_Cycle.cpp'
+            Offset:          424
+            Length:          0
+            ReplacementText: 'static_cast<value_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0013_1334_D._Minimum_Euler_Cycle.cpp'
+            Offset:          429
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0013_1334_D._Minimum_Euler_Cycle.cpp'
+            FileOffset:      424
+            Length:          5
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to signed type ''value_type'' (aka ''int'') is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0013_1334_D._Minimum_Euler_Cycle.cpp'
+      FileOffset:      431
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  'clang-diagnostic-c++11-narrowing'
+    DiagnosticMessage:
+      Message:         'non-constant-expression cannot be narrowed from type ''long long'' to ''value_type'' (aka ''int'') in initializer list'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0013_1334_D._Minimum_Euler_Cycle.cpp'
+      FileOffset:      431
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0013_1334_D._Minimum_Euler_Cycle.cpp'
+          FileOffset:      431
+          Length:          18
+    Notes:
+      - Message:         insert an explicit cast to silence this issue
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0013_1334_D._Minimum_Euler_Cycle.cpp'
+        FileOffset:      431
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0013_1334_D._Minimum_Euler_Cycle.cpp'
+            Offset:          431
+            Length:          0
+            ReplacementText: 'static_cast<value_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0013_1334_D._Minimum_Euler_Cycle.cpp'
+            Offset:          449
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0013_1334_D._Minimum_Euler_Cycle.cpp'
+            FileOffset:      431
+            Length:          18
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to signed type ''value_type'' (aka ''int'') is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0013_1334_D._Minimum_Euler_Cycle.cpp'
+      FileOffset:      497
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  'clang-diagnostic-c++11-narrowing'
+    DiagnosticMessage:
+      Message:         'non-constant-expression cannot be narrowed from type ''long long'' to ''value_type'' (aka ''int'') in initializer list'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0013_1334_D._Minimum_Euler_Cycle.cpp'
+      FileOffset:      497
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0013_1334_D._Minimum_Euler_Cycle.cpp'
+          FileOffset:      497
+          Length:          26
+    Notes:
+      - Message:         insert an explicit cast to silence this issue
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0013_1334_D._Minimum_Euler_Cycle.cpp'
+        FileOffset:      497
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0013_1334_D._Minimum_Euler_Cycle.cpp'
+            Offset:          497
+            Length:          0
+            ReplacementText: 'static_cast<value_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0013_1334_D._Minimum_Euler_Cycle.cpp'
+            Offset:          523
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0013_1334_D._Minimum_Euler_Cycle.cpp'
+            FileOffset:      497
+            Length:          26
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to signed type ''value_type'' (aka ''int'') is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0013_1334_D._Minimum_Euler_Cycle.cpp'
+      FileOffset:      525
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  'clang-diagnostic-c++11-narrowing'
+    DiagnosticMessage:
+      Message:         'non-constant-expression cannot be narrowed from type ''long long'' to ''value_type'' (aka ''int'') in initializer list'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0013_1334_D._Minimum_Euler_Cycle.cpp'
+      FileOffset:      525
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0013_1334_D._Minimum_Euler_Cycle.cpp'
+          FileOffset:      525
+          Length:          5
+    Notes:
+      - Message:         insert an explicit cast to silence this issue
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0013_1334_D._Minimum_Euler_Cycle.cpp'
+        FileOffset:      525
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0013_1334_D._Minimum_Euler_Cycle.cpp'
+            Offset:          525
+            Length:          0
+            ReplacementText: 'static_cast<value_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0013_1334_D._Minimum_Euler_Cycle.cpp'
+            Offset:          530
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0013_1334_D._Minimum_Euler_Cycle.cpp'
+            FileOffset:      525
+            Length:          5
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-loop-convert
+    DiagnosticMessage:
+      Message:         use range-based for loop instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0013_1334_D._Minimum_Euler_Cycle.cpp'
+      FileOffset:      1234
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0013_1334_D._Minimum_Euler_Cycle.cpp'
+          Offset:          1237
+          Length:          34
+          ReplacementText: '(int & i : cycle)'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0013_1334_D._Minimum_Euler_Cycle.cpp'
+          Offset:          1288
+          Length:          8
+          ReplacementText: i
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0013_1334_D._Minimum_Euler_Cycle.cpp'
+          Offset:          1319
+          Length:          8
+          ReplacementText: i
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to signed type ''value_type'' (aka ''int'') is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0013_1334_D._Minimum_Euler_Cycle.cpp'
+      FileOffset:      1331
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

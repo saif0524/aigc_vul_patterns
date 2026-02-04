@@ -1,0 +1,167 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0244_575_B._Bribes.cpp'
+Diagnostics:
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'call to implicitly-deleted default constructor of ''unordered_map<pair<int, int>, vector<int>>'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0244_575_B._Bribes.cpp'
+      FileOffset:      285
+      Replacements:    []
+    Notes:
+      - Message:         explicitly defaulted function was implicitly deleted here
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/unordered_map.h'
+        FileOffset:      5703
+        Replacements:    []
+      - Message:         'default constructor of ''unordered_map<std::pair<int, int>, std::vector<int>>'' is implicitly deleted because field ''_M_h'' has a deleted default constructor'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/unordered_map.h'
+        FileOffset:      4341
+        Replacements:    []
+      - Message:         explicitly defaulted function was implicitly deleted here
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/hashtable.h'
+        FileOffset:      20156
+        Replacements:    []
+      - Message:         'default constructor of ''_Hashtable<std::pair<int, int>, std::pair<const std::pair<int, int>, std::vector<int>>, std::allocator<std::pair<const std::pair<int, int>, std::vector<int>>>, std::__detail::_Select1st, std::equal_to<std::pair<int, int>>, std::hash<std::pair<int, int>>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true>>'' is implicitly deleted because base class ''__detail::_Hashtable_base<std::pair<int, int>, std::pair<const std::pair<int, int>, std::vector<int, std::allocator<int>>>, std::__detail::_Select1st, std::equal_to<std::pair<int, int>>, std::hash<std::pair<int, int>>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Hashtable_traits<true, false, true>>'' has a deleted default constructor'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/hashtable.h'
+        FileOffset:      7794
+        Replacements:    []
+      - Message:         explicitly defaulted function was implicitly deleted here
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/hashtable_policy.h'
+        FileOffset:      53985
+        Replacements:    []
+      - Message:         'default constructor of ''_Hashtable_base<std::pair<int, int>, std::pair<const std::pair<int, int>, std::vector<int>>, std::__detail::_Select1st, std::equal_to<std::pair<int, int>>, std::hash<std::pair<int, int>>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Hashtable_traits<true, false, true>>'' is implicitly deleted because base class ''_Hash_code_base<std::pair<int, int>, std::pair<const std::pair<int, int>, std::vector<int, std::allocator<int>>>, std::__detail::_Select1st, std::hash<std::pair<int, int>>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, _Hashtable_traits<true, false, true>::__hash_cached::value>'' has a deleted default constructor'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/hashtable_policy.h'
+        FileOffset:      52615
+        Replacements:    []
+      - Message:         explicitly defaulted function was implicitly deleted here
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/hashtable_policy.h'
+        FileOffset:      41845
+        Replacements:    []
+      - Message:         'default constructor of ''_Hash_code_base<std::pair<int, int>, std::pair<const std::pair<int, int>, std::vector<int>>, std::__detail::_Select1st, std::hash<std::pair<int, int>>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, true>'' is implicitly deleted because base class ''_Hashtable_ebo_helper<1, std::hash<std::pair<int, int>>>'' has a deleted destructor'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/hashtable_policy.h'
+        FileOffset:      41248
+        Replacements:    []
+      - Message:         'destructor of ''_Hashtable_ebo_helper<1, std::hash<std::pair<int, int>>>'' is implicitly deleted because base class ''std::hash<std::pair<int, int>>'' has a deleted destructor'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/hashtable_policy.h'
+        FileOffset:      39002
+        Replacements:    []
+      - Message:         'destructor of ''hash<std::pair<int, int>>'' is implicitly deleted because base class ''__hash_enum<std::pair<int, int>>'' has an inaccessible destructor'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/functional_hash.h'
+        FileOffset:      3135
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0244_575_B._Bribes.cpp'
+      FileOffset:      299
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0244_575_B._Bribes.cpp'
+          Offset:          295
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0244_575_B._Bribes.cpp'
+          Offset:          305
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0244_575_B._Bribes.cpp'
+      FileOffset:      1519
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0244_575_B._Bribes.cpp'
+          Offset:          1519
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0244_575_B._Bribes.cpp'
+      FileOffset:      2945
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0244_575_B._Bribes.cpp'
+          Offset:          2945
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no matching member function for call to ''_M_hash_code'''
+      FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/hashtable_policy.h'
+      FileOffset:      25860
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/hashtable_policy.h'
+          FileOffset:      25855
+          Length:          17
+    Notes:
+      - Message:         'in instantiation of member function ''std::__detail::_Map_base<std::pair<int, int>, std::pair<const std::pair<int, int>, std::vector<int>>, std::allocator<std::pair<const std::pair<int, int>, std::vector<int>>>, std::__detail::_Select1st, std::equal_to<std::pair<int, int>>, std::hash<std::pair<int, int>>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true>>::operator[]'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/unordered_map.h'
+        FileOffset:      34863
+        Replacements:    []
+      - Message:         'in instantiation of member function ''std::unordered_map<std::pair<int, int>, std::vector<int>>::operator[]'' requested here'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0244_575_B._Bribes.cpp'
+        FileOffset:      1760
+        Replacements:    []
+      - Message:         'candidate function not viable: no known conversion from ''key_type'' (aka ''std::pair<int, int>'') to ''const _Hash_node_value<std::pair<const std::pair<int, int>, std::vector<int, std::allocator<int>>>, false>'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/hashtable_policy.h'
+        FileOffset:      42444
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/hashtable_policy.h'
+            FileOffset:      42457
+            Length:          42
+      - Message:         'candidate function not viable: no known conversion from ''key_type'' (aka ''std::pair<int, int>'') to ''const _Hash_node_value<std::pair<const std::pair<int, int>, std::vector<int, std::allocator<int>>>, true>'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/hashtable_policy.h'
+        FileOffset:      42590
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/hashtable_policy.h'
+            FileOffset:      42603
+            Length:          41
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'static assertion failed due to requirement ''std::__is_invocable<const std::hash<std::pair<int, int>> &, const std::pair<int, int> &>{}'': hash function must be invocable with an argument of key type'
+      FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/hashtable_policy.h'
+      FileOffset:      42027
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/hashtable_policy.h'
+          FileOffset:      42027
+          Length:          43
+    Notes:
+      - Message:         'in instantiation of member function ''std::__detail::_Hash_code_base<std::pair<int, int>, std::pair<const std::pair<int, int>, std::vector<int>>, std::__detail::_Select1st, std::hash<std::pair<int, int>>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, true>::_M_hash_code'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/hashtable.h'
+        FileOffset:      56534
+        Replacements:    []
+      - Message:         'in instantiation of member function ''std::_Hashtable<std::pair<int, int>, std::pair<const std::pair<int, int>, std::vector<int>>, std::allocator<std::pair<const std::pair<int, int>, std::vector<int>>>, std::__detail::_Select1st, std::equal_to<std::pair<int, int>>, std::hash<std::pair<int, int>>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true>>::find'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/unordered_map.h'
+        FileOffset:      31586
+        Replacements:    []
+      - Message:         'in instantiation of member function ''std::unordered_map<std::pair<int, int>, std::vector<int>>::find'' requested here'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0244_575_B._Bribes.cpp'
+        FileOffset:      1690
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'type ''const std::hash<std::pair<int, int>>'' does not provide a call operator'
+      FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/hashtable_policy.h'
+      FileOffset:      42150
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/hashtable_policy.h'
+          FileOffset:      42150
+          Length:          9
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

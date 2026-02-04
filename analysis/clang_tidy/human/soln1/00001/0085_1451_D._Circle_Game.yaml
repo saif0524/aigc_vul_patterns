@@ -1,0 +1,282 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+      FileOffset:      106
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+          Offset:          102
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+          Offset:          112
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+      FileOffset:      292
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+          Offset:          285
+          Length:          6
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+          Offset:          298
+          Length:          0
+          ReplacementText: ' -> signed'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-optin.taint.TaintedDiv
+    DiagnosticMessage:
+      Message:         Division by a tainted value, possibly zero
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+      FileOffset:      427
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+          FileOffset:      426
+          Length:          3
+    Notes:
+      - Message:         'Assuming ''greg'' is <= ''t'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+        FileOffset:      352
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+            FileOffset:      352
+            Length:          7
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+        FileOffset:      337
+        Replacements:    []
+      - Message:         'Calling ''read'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+        FileOffset:      387
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+            FileOffset:      387
+            Length:          6
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+        FileOffset:      131
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+            FileOffset:      131
+            Length:          9
+      - Message:         Taint propagated to the return value
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+        FileOffset:      131
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+            FileOffset:      131
+            Length:          9
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+        FileOffset:      149
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+            FileOffset:      149
+            Length:          6
+      - Message:         'Left side of ''||'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+        FileOffset:      149
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+        FileOffset:      157
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+            FileOffset:      157
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 14
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+        FileOffset:      143
+        Replacements:    []
+      - Message:         'Left side of ''&&'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+        FileOffset:      213
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+        FileOffset:      207
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+        FileOffset:      213
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+            FileOffset:      213
+            Length:          7
+      - Message:         'Left side of ''&&'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+        FileOffset:      220
+        Replacements:    []
+      - Message:         Returning value
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+        FileOffset:      271
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+            FileOffset:      271
+            Length:          10
+      - Message:         'Returning from ''read'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+        FileOffset:      387
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+            FileOffset:      387
+            Length:          6
+      - Message:         'Value assigned to ''k'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+        FileOffset:      385
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+            FileOffset:      385
+            Length:          8
+      - Message:         Division by a tainted value, possibly zero
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+        FileOffset:      427
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+            FileOffset:      426
+            Length:          3
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-optin.taint.TaintedDiv
+    DiagnosticMessage:
+      Message:         Division by a tainted value, possibly zero
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+      FileOffset:      467
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+          FileOffset:      462
+          Length:          11
+    Notes:
+      - Message:         'Assuming ''greg'' is <= ''t'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+        FileOffset:      352
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+            FileOffset:      352
+            Length:          7
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+        FileOffset:      337
+        Replacements:    []
+      - Message:         'Calling ''read'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+        FileOffset:      387
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+            FileOffset:      387
+            Length:          6
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+        FileOffset:      131
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+            FileOffset:      131
+            Length:          9
+      - Message:         Taint propagated to the return value
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+        FileOffset:      131
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+            FileOffset:      131
+            Length:          9
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+        FileOffset:      149
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+            FileOffset:      149
+            Length:          6
+      - Message:         'Left side of ''||'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+        FileOffset:      149
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+        FileOffset:      157
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+            FileOffset:      157
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 14
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+        FileOffset:      143
+        Replacements:    []
+      - Message:         'Left side of ''&&'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+        FileOffset:      213
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+        FileOffset:      207
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+        FileOffset:      213
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+            FileOffset:      213
+            Length:          7
+      - Message:         'Left side of ''&&'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+        FileOffset:      220
+        Replacements:    []
+      - Message:         'Returning from ''read'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+        FileOffset:      387
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+            FileOffset:      387
+            Length:          6
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+        FileOffset:      423
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+            FileOffset:      423
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+        FileOffset:      411
+        Replacements:    []
+      - Message:         Division by a tainted value, possibly zero
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+        FileOffset:      467
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0085_1451_D._Circle_Game.cpp'
+            FileOffset:      462
+            Length:          11
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

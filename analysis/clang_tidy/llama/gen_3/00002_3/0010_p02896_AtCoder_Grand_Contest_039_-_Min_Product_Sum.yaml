@@ -1,0 +1,162 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0010_p02896_AtCoder_Grand_Contest_039_-_Min_Product_Sum.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-using
+    DiagnosticMessage:
+      Message:         'use ''using'' instead of ''typedef'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0010_p02896_AtCoder_Grand_Contest_039_-_Min_Product_Sum.cpp'
+      FileOffset:      101
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0010_p02896_AtCoder_Grand_Contest_039_-_Min_Product_Sum.cpp'
+          Offset:          101
+          Length:          20
+          ReplacementText: 'using ll = long long'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0010_p02896_AtCoder_Grand_Contest_039_-_Min_Product_Sum.cpp'
+      FileOffset:      147
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0010_p02896_AtCoder_Grand_Contest_039_-_Min_Product_Sum.cpp'
+      FileOffset:      172
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0010_p02896_AtCoder_Grand_Contest_039_-_Min_Product_Sum.cpp'
+      FileOffset:      203
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0010_p02896_AtCoder_Grand_Contest_039_-_Min_Product_Sum.cpp'
+          Offset:          199
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0010_p02896_AtCoder_Grand_Contest_039_-_Min_Product_Sum.cpp'
+          Offset:          209
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''pre'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0010_p02896_AtCoder_Grand_Contest_039_-_Min_Product_Sum.cpp'
+      FileOffset:      493
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0010_p02896_AtCoder_Grand_Contest_039_-_Min_Product_Sum.cpp'
+          FileOffset:      493
+          Length:          16
+    Notes:
+      - Message:         'Assuming ''i'' is <= ''N'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0010_p02896_AtCoder_Grand_Contest_039_-_Min_Product_Sum.cpp'
+        FileOffset:      364
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0010_p02896_AtCoder_Grand_Contest_039_-_Min_Product_Sum.cpp'
+            FileOffset:      364
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0010_p02896_AtCoder_Grand_Contest_039_-_Min_Product_Sum.cpp'
+        FileOffset:      348
+        Replacements:    []
+      - Message:         'Assuming ''j'' is <= ''M'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0010_p02896_AtCoder_Grand_Contest_039_-_Min_Product_Sum.cpp'
+        FileOffset:      403
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0010_p02896_AtCoder_Grand_Contest_039_-_Min_Product_Sum.cpp'
+            FileOffset:      403
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0010_p02896_AtCoder_Grand_Contest_039_-_Min_Product_Sum.cpp'
+        FileOffset:      387
+        Replacements:    []
+      - Message:         'Assuming ''k'' is <= ''K'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0010_p02896_AtCoder_Grand_Contest_039_-_Min_Product_Sum.cpp'
+        FileOffset:      446
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0010_p02896_AtCoder_Grand_Contest_039_-_Min_Product_Sum.cpp'
+            FileOffset:      446
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0010_p02896_AtCoder_Grand_Contest_039_-_Min_Product_Sum.cpp'
+        FileOffset:      430
+        Replacements:    []
+      - Message:         'Access of ''pre'' at negative byte offset -8'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0010_p02896_AtCoder_Grand_Contest_039_-_Min_Product_Sum.cpp'
+        FileOffset:      493
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0010_p02896_AtCoder_Grand_Contest_039_-_Min_Product_Sum.cpp'
+            FileOffset:      493
+            Length:          16
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''dp'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0010_p02896_AtCoder_Grand_Contest_039_-_Min_Product_Sum.cpp'
+      FileOffset:      995
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0010_p02896_AtCoder_Grand_Contest_039_-_Min_Product_Sum.cpp'
+          FileOffset:      995
+          Length:          5
+    Notes:
+      - Message:         'Assuming ''i'' is > ''N'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0010_p02896_AtCoder_Grand_Contest_039_-_Min_Product_Sum.cpp'
+        FileOffset:      364
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0010_p02896_AtCoder_Grand_Contest_039_-_Min_Product_Sum.cpp'
+            FileOffset:      364
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 31
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0010_p02896_AtCoder_Grand_Contest_039_-_Min_Product_Sum.cpp'
+        FileOffset:      348
+        Replacements:    []
+      - Message:         '''i'' is > ''N'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0010_p02896_AtCoder_Grand_Contest_039_-_Min_Product_Sum.cpp'
+        FileOffset:      581
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0010_p02896_AtCoder_Grand_Contest_039_-_Min_Product_Sum.cpp'
+            FileOffset:      581
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 41
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0010_p02896_AtCoder_Grand_Contest_039_-_Min_Product_Sum.cpp'
+        FileOffset:      565
+        Replacements:    []
+      - Message:         'Assuming ''i'' is <= ''K'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0010_p02896_AtCoder_Grand_Contest_039_-_Min_Product_Sum.cpp'
+        FileOffset:      959
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0010_p02896_AtCoder_Grand_Contest_039_-_Min_Product_Sum.cpp'
+            FileOffset:      959
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0010_p02896_AtCoder_Grand_Contest_039_-_Min_Product_Sum.cpp'
+        FileOffset:      943
+        Replacements:    []
+      - Message:         'Access of ''dp'' at negative byte offset'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0010_p02896_AtCoder_Grand_Contest_039_-_Min_Product_Sum.cpp'
+        FileOffset:      995
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0010_p02896_AtCoder_Grand_Contest_039_-_Min_Product_Sum.cpp'
+            FileOffset:      995
+            Length:          5
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

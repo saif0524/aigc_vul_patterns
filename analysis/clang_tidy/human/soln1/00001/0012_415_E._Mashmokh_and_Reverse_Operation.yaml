@@ -1,0 +1,439 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+      FileOffset:      46
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+      FileOffset:      73
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+      FileOffset:      110
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+      FileOffset:      162
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''a'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+      FileOffset:      426
+      Replacements:    []
+    Notes:
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1224
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            FileOffset:      1224
+            Length:          15
+      - Message:         Taint propagated to the 2nd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1224
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            FileOffset:      1224
+            Length:          15
+      - Message:         Assuming right operand of bit shift is non-negative but less than 32
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1248
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            FileOffset:      1248
+            Length:          6
+      - Message:         'Assuming ''i'' is > ''_b'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1287
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            FileOffset:      1287
+            Length:          7
+      - Message:         Loop condition is false. Execution continues on line 65
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1259
+        Replacements:    []
+      - Message:         'Calling ''build'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1323
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            FileOffset:      1323
+            Length:          14
+      - Message:         '''l'' is not equal to ''r'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      241
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            FileOffset:      241
+            Length:          1
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      237
+        Replacements:    []
+      - Message:         'Assuming ''i'' is <= ''mid'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      388
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            FileOffset:      388
+            Length:          8
+      - Message:         'Left side of ''&&'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      388
+        Replacements:    []
+      - Message:         'Assuming ''j'' is <= ''r'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      400
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            FileOffset:      400
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      381
+        Replacements:    []
+      - Message:         'Access of ''a'' with a tainted index that may be too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      426
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            FileOffset:      426
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''f'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+      FileOffset:      1120
+      Replacements:    []
+    Notes:
+      - Message:         Assuming right operand of bit shift is non-negative but less than 32
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1248
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            FileOffset:      1248
+            Length:          6
+      - Message:         'Assuming ''i'' is <= ''_b'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1287
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            FileOffset:      1287
+            Length:          7
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1259
+        Replacements:    []
+      - Message:         'Assuming ''i'' is <= ''_b'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1287
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            FileOffset:      1287
+            Length:          7
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1259
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''_b'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1287
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            FileOffset:      1287
+            Length:          7
+      - Message:         Loop condition is false. Execution continues on line 65
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1259
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''_b'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1369
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            FileOffset:      1369
+            Length:          7
+      - Message:         Loop condition is false. Execution continues on line 67
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1341
+        Replacements:    []
+      - Message:         'Assuming ''i'' is <= ''_b'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1457
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            FileOffset:      1457
+            Length:          7
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1429
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1488
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            FileOffset:      1488
+            Length:          15
+      - Message:         Taint propagated to the 2nd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1488
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            FileOffset:      1488
+            Length:          15
+      - Message:         'Calling ''solve'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1509
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            FileOffset:      1509
+            Length:          12
+      - Message:         'Assuming ''i'' is <= ''_b'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1093
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            FileOffset:      1093
+            Length:          7
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1065
+        Replacements:    []
+      - Message:         'Access of ''f'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1120
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            FileOffset:      1120
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''f'' with tainted offset'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+      FileOffset:      1120
+      Replacements:    []
+    Notes:
+      - Message:         Assuming right operand of bit shift is non-negative but less than 32
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1248
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            FileOffset:      1248
+            Length:          6
+      - Message:         'Assuming ''i'' is <= ''_b'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1287
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            FileOffset:      1287
+            Length:          7
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1259
+        Replacements:    []
+      - Message:         'Assuming ''i'' is <= ''_b'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1287
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            FileOffset:      1287
+            Length:          7
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1259
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''_b'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1287
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            FileOffset:      1287
+            Length:          7
+      - Message:         Loop condition is false. Execution continues on line 65
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1259
+        Replacements:    []
+      - Message:         'Assuming ''i'' is <= ''_b'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1369
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            FileOffset:      1369
+            Length:          7
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1341
+        Replacements:    []
+      - Message:         'Assuming ''i'' is <= ''_b'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1369
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            FileOffset:      1369
+            Length:          7
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1341
+        Replacements:    []
+      - Message:         'Assuming ''i'' is > ''_b'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1369
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            FileOffset:      1369
+            Length:          7
+      - Message:         Loop condition is false. Execution continues on line 67
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1341
+        Replacements:    []
+      - Message:         'Assuming ''i'' is <= ''_b'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1457
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            FileOffset:      1457
+            Length:          7
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1429
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1488
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            FileOffset:      1488
+            Length:          15
+      - Message:         Taint propagated to the 2nd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1488
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            FileOffset:      1488
+            Length:          15
+      - Message:         'Calling ''solve'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1509
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            FileOffset:      1509
+            Length:          12
+      - Message:         'Assuming ''i'' is <= ''_b'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1093
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            FileOffset:      1093
+            Length:          7
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1065
+        Replacements:    []
+      - Message:         Assuming index is non-negative
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1120
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            FileOffset:      1120
+            Length:          4
+      - Message:         'Access of ''f'' with a tainted offset that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1120
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            FileOffset:      1120
+            Length:          7
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-format
+    DiagnosticMessage:
+      Message:         'length modifier ''I64'' results in undefined behavior or no effect with ''d'' conversion specifier'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+      FileOffset:      1192
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+          Offset:          1192
+          Length:          3
+          ReplacementText: ''
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+          FileOffset:      1191
+          Length:          5
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+      FileOffset:      1213
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+          Offset:          1209
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+          Offset:          1219
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

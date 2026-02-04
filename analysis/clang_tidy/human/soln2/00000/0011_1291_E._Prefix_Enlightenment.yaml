@@ -1,0 +1,299 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+      FileOffset:      93
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+      FileOffset:      107
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+      FileOffset:      132
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+      FileOffset:      162
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+          Offset:          158
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+          Offset:          176
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''fa'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+      FileOffset:      185
+      Replacements:    []
+    Notes:
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+        FileOffset:      496
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+            FileOffset:      496
+            Length:          21
+      - Message:         Taint propagated to the 3rd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+        FileOffset:      496
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+            FileOffset:      496
+            Length:          21
+      - Message:         'Assuming ''i'' is > ''k'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+        FileOffset:      559
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+            FileOffset:      559
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 42
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+        FileOffset:      543
+        Replacements:    []
+      - Message:         'Assuming ''i'' is <= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+        FileOffset:      867
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+            FileOffset:      867
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+        FileOffset:      851
+        Replacements:    []
+      - Message:         'Calling ''findset'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+        FileOffset:      929
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+            FileOffset:      929
+            Length:          10
+      - Message:         'Assuming index is non-negative and less than 1000007, the number of ''int'' elements in ''fa'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+        FileOffset:      185
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+            FileOffset:      185
+            Length:          5
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+        FileOffset:      185
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+            FileOffset:      185
+            Length:          10
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+        FileOffset:      181
+        Replacements:    []
+      - Message:         'Returning from ''findset'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+        FileOffset:      929
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+            FileOffset:      929
+            Length:          10
+      - Message:         'Calling ''findset'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+        FileOffset:      972
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+            FileOffset:      972
+            Length:          14
+      - Message:         'Access of ''fa'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+        FileOffset:      185
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+            FileOffset:      185
+            Length:          5
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+      FileOffset:      385
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+          Offset:          381
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+          Offset:          395
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+      FileOffset:      485
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+          Offset:          481
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+          Offset:          491
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''l'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+      FileOffset:      687
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+          FileOffset:      687
+          Length:          4
+    Notes:
+      - Message:         'Assuming ''i'' is <= ''k'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+        FileOffset:      559
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+            FileOffset:      559
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+        FileOffset:      543
+        Replacements:    []
+      - Message:         'Assuming ''j'' is <= ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+        FileOffset:      626
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+            FileOffset:      626
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+        FileOffset:      610
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+        FileOffset:      660
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+            FileOffset:      660
+            Length:          15
+      - Message:         Taint propagated to the 2nd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+        FileOffset:      660
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+            FileOffset:      660
+            Length:          15
+      - Message:         'Access of ''l'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+        FileOffset:      687
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+            FileOffset:      687
+            Length:          4
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''fa'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+      FileOffset:      795
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+          FileOffset:      795
+          Length:          9
+    Notes:
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+        FileOffset:      496
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+            FileOffset:      496
+            Length:          21
+      - Message:         Taint propagated to the 3rd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+        FileOffset:      496
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+            FileOffset:      496
+            Length:          21
+      - Message:         'Assuming ''i'' is <= ''k'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+        FileOffset:      559
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+            FileOffset:      559
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+        FileOffset:      543
+        Replacements:    []
+      - Message:         'Assuming ''j'' is > ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+        FileOffset:      626
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+            FileOffset:      626
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 38
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+        FileOffset:      610
+        Replacements:    []
+      - Message:         'Access of ''fa'' with a tainted index that may be too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+        FileOffset:      795
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0011_1291_E._Prefix_Enlightenment.cpp'
+            FileOffset:      795
+            Length:          9
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

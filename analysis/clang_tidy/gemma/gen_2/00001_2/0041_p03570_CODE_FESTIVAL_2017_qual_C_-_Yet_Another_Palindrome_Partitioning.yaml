@@ -1,0 +1,40 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00001_2/0041_p03570_CODE_FESTIVAL_2017_qual_C_-_Yet_Another_Palindrome_Partitioning.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00001_2/0041_p03570_CODE_FESTIVAL_2017_qual_C_-_Yet_Another_Palindrome_Partitioning.cpp'
+      FileOffset:      119
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00001_2/0041_p03570_CODE_FESTIVAL_2017_qual_C_-_Yet_Another_Palindrome_Partitioning.cpp'
+          Offset:          115
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00001_2/0041_p03570_CODE_FESTIVAL_2017_qual_C_-_Yet_Another_Palindrome_Partitioning.cpp'
+          Offset:          125
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00001_2/0041_p03570_CODE_FESTIVAL_2017_qual_C_-_Yet_Another_Palindrome_Partitioning.cpp'
+      FileOffset:      163
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00001_2/0041_p03570_CODE_FESTIVAL_2017_qual_C_-_Yet_Another_Palindrome_Partitioning.cpp'
+      FileOffset:      1068
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_2/00001_2/0041_p03570_CODE_FESTIVAL_2017_qual_C_-_Yet_Another_Palindrome_Partitioning.cpp'
+          Offset:          1068
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

@@ -1,0 +1,186 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+      FileOffset:      193
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+      FileOffset:      805
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-signed-char-misuse
+    DiagnosticMessage:
+      Message:         '''signed char'' to ''int'' conversion; consider casting to ''unsigned char'' first.'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+      FileOffset:      886
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+      FileOffset:      1633
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+      FileOffset:      1650
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+      FileOffset:      1665
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+      FileOffset:      1684
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+          Offset:          1680
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+          Offset:          1690
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-unix.Stream
+    DiagnosticMessage:
+      Message:         Opened stream never closed. Potential resource leak
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+      FileOffset:      1720
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+          FileOffset:      1720
+          Length:          7
+    Notes:
+      - Message:         Stream opened here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1699
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+            FileOffset:      1699
+            Length:          19
+      - Message:         'Assuming that ''fopen'' is successful'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1699
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+            FileOffset:      1699
+            Length:          19
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1695
+        Replacements:    []
+      - Message:         Opened stream never closed. Potential resource leak
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1720
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+            FileOffset:      1720
+            Length:          7
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+      FileOffset:      1784
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''delta'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+      FileOffset:      2182
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+          FileOffset:      2182
+          Length:          8
+    Notes:
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1695
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1832
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+            FileOffset:      1832
+            Length:          11
+      - Message:         Loop condition is false. Execution continues on line 83
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1814
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1934
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+            FileOffset:      1934
+            Length:          11
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1916
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1934
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+            FileOffset:      1934
+            Length:          11
+      - Message:         Loop condition is false. Execution continues on line 87
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1916
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 90
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      1996
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 93
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      2080
+        Replacements:    []
+      - Message:         'Access of ''delta'' at negative byte offset -8'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+        FileOffset:      2182
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp'
+            FileOffset:      2182
+            Length:          8
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

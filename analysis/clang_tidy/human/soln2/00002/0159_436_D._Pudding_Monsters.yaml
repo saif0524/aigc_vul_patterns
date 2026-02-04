@@ -1,0 +1,501 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+      FileOffset:      115
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+      FileOffset:      128
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+      FileOffset:      143
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+      FileOffset:      170
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+      FileOffset:      221
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+          Offset:          217
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+          Offset:          227
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory around ''right_sdf'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+      FileOffset:      553
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+          FileOffset:      553
+          Length:          16
+    Notes:
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      273
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+            FileOffset:      273
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 14
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      257
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      323
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+            FileOffset:      323
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 15
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      307
+        Replacements:    []
+      - Message:         '''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      434
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+            FileOffset:      434
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 24
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      418
+        Replacements:    []
+      - Message:         'Access of ''right_sdf'' at a negative or overflowing index, while it holds only 100005 ''int'' elements'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      553
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+            FileOffset:      553
+            Length:          16
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''right_sdf'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+      FileOffset:      553
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+          FileOffset:      553
+          Length:          16
+    Notes:
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      273
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+            FileOffset:      273
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 14
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      257
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      323
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+            FileOffset:      323
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 15
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      307
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 24
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      418
+        Replacements:    []
+      - Message:         'Access of ''right_sdf'' at negative byte offset -4'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      553
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+            FileOffset:      553
+            Length:          16
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''stx'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+      FileOffset:      724
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+          FileOffset:      724
+          Length:          6
+    Notes:
+      - Message:         'Assuming ''i'' is < ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      273
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+            FileOffset:      273
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      257
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      273
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+            FileOffset:      273
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 14
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      257
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      323
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+            FileOffset:      323
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 15
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      307
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 24
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      418
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 31
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      581
+        Replacements:    []
+      - Message:         'Access of ''stx'' at negative byte offset'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      724
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+            FileOffset:      724
+            Length:          6
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long'' to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+      FileOffset:      800
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''left_sdf'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+      FileOffset:      1046
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+          FileOffset:      1046
+          Length:          18
+    Notes:
+      - Message:         'Assuming ''i'' is < ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      273
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+            FileOffset:      273
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      257
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      285
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+            FileOffset:      285
+            Length:          18
+      - Message:         Taint propagated to the 2nd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      285
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+            FileOffset:      285
+            Length:          18
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      273
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+            FileOffset:      273
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 14
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      257
+        Replacements:    []
+      - Message:         'Assuming ''i'' is < ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      323
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+            FileOffset:      323
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      307
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      335
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+            FileOffset:      335
+            Length:          20
+      - Message:         Taint propagated to the 2nd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      335
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+            FileOffset:      335
+            Length:          20
+      - Message:         'Assuming ''i'' is >= ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      323
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+            FileOffset:      323
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 15
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      307
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 24
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      418
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 31
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      581
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      754
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      857
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+            FileOffset:      857
+            Length:          18
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      912
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''need'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      988
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+            FileOffset:      988
+            Length:          9
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      984
+        Replacements:    []
+      - Message:         'Access of ''left_sdf'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      1046
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+            FileOffset:      1046
+            Length:          18
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''right_sdf'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+      FileOffset:      1311
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+          FileOffset:      1311
+          Length:          19
+    Notes:
+      - Message:         'Assuming ''i'' is < ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      273
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+            FileOffset:      273
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      257
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      273
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+            FileOffset:      273
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 14
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      257
+        Replacements:    []
+      - Message:         'Assuming ''i'' is < ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      323
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+            FileOffset:      323
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      307
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      323
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+            FileOffset:      323
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 15
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      307
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 24
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      418
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 31
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      581
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      754
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      857
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+            FileOffset:      857
+            Length:          18
+      - Message:         Loop condition is false. Execution continues on line 42
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      912
+        Replacements:    []
+      - Message:         '''onstar'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      1134
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+            FileOffset:      1134
+            Length:          6
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      1130
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      1155
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      1231
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+            FileOffset:      1231
+            Length:          17
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      1227
+        Replacements:    []
+      - Message:         'Access of ''right_sdf'' at negative byte offset'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+        FileOffset:      1311
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+            FileOffset:      1311
+            Length:          19
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+      FileOffset:      1401
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0159_436_D._Pudding_Monsters.cpp'
+          Offset:          1401
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

@@ -1,0 +1,572 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+      FileOffset:      46
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+      FileOffset:      63
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+      FileOffset:      89
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+      FileOffset:      107
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+      FileOffset:      135
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+      FileOffset:      165
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+          Offset:          161
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+          Offset:          176
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''color'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+      FileOffset:      188
+      Replacements:    []
+    Notes:
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      681
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+            FileOffset:      681
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 31
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      665
+        Replacements:    []
+      - Message:         'Assuming ''i'' is < ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      726
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+            FileOffset:      726
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      710
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      744
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+            FileOffset:      744
+            Length:          40
+      - Message:         Taint propagated to the 2nd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      744
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+            FileOffset:      744
+            Length:          40
+      - Message:         'Assuming ''i'' is >= ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      726
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+            FileOffset:      726
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 36
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      710
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''q'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      845
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+            FileOffset:      845
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 40
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      829
+        Replacements:    []
+      - Message:         '''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      964
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+            FileOffset:      964
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 44
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      948
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      1025
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      1063
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+            FileOffset:      1063
+            Length:          6
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      1059
+        Replacements:    []
+      - Message:         'Calling ''join'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      1085
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+            FileOffset:      1085
+            Length:          33
+      - Message:         'Calling ''repr'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      337
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+            FileOffset:      337
+            Length:          7
+      - Message:         'Access of ''color'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      188
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+            FileOffset:      188
+            Length:          8
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+      FileOffset:      239
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+      FileOffset:      262
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+      FileOffset:      554
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+      FileOffset:      572
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+      FileOffset:      608
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+          Offset:          604
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+          Offset:          614
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''del'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+      FileOffset:      923
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+          FileOffset:      923
+          Length:          10
+    Notes:
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      681
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+            FileOffset:      681
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 31
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      665
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      726
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+            FileOffset:      726
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 36
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      710
+        Replacements:    []
+      - Message:         'Assuming ''i'' is < ''q'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      845
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+            FileOffset:      845
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      829
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      863
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+            FileOffset:      863
+            Length:          29
+      - Message:         Taint propagated to the 3rd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      863
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+            FileOffset:      863
+            Length:          29
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      911
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+            FileOffset:      911
+            Length:          10
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      907
+        Replacements:    []
+      - Message:         'Access of ''del'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      923
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+            FileOffset:      923
+            Length:          10
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory after the end of ''qT'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+      FileOffset:      1169
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+          FileOffset:      1169
+          Length:          5
+    Notes:
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      681
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+            FileOffset:      681
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 31
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      665
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      726
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+            FileOffset:      726
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 36
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      710
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''q'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      845
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+            FileOffset:      845
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 40
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      829
+        Replacements:    []
+      - Message:         '''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      964
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+            FileOffset:      964
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 44
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      948
+        Replacements:    []
+      - Message:         '''i'' is >= ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      1041
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+            FileOffset:      1041
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 48
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      1025
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      1146
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+            FileOffset:      1146
+            Length:          6
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      1126
+        Replacements:    []
+      - Message:         'Access of ''qT'' at index 2147483647, while it holds only 500005 ''int'' elements'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      1169
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+            FileOffset:      1169
+            Length:          5
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''root'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+      FileOffset:      1406
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+          FileOffset:      1406
+          Length:          11
+    Notes:
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      681
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+            FileOffset:      681
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 31
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      665
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      726
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+            FileOffset:      726
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 36
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      710
+        Replacements:    []
+      - Message:         'Assuming ''i'' is < ''q'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      845
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+            FileOffset:      845
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      829
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      863
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+            FileOffset:      863
+            Length:          29
+      - Message:         Taint propagated to the 3rd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      863
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+            FileOffset:      863
+            Length:          29
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      911
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+            FileOffset:      911
+            Length:          10
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      907
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''q'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      845
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+            FileOffset:      845
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 40
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      829
+        Replacements:    []
+      - Message:         '''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      964
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+            FileOffset:      964
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 44
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      948
+        Replacements:    []
+      - Message:         '''i'' is >= ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      1041
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+            FileOffset:      1041
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 48
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      1025
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      1126
+        Replacements:    []
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      1165
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 53
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      1126
+        Replacements:    []
+      - Message:         '''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      1259
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+            FileOffset:      1259
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 57
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      1243
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      1340
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      1378
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+            FileOffset:      1378
+            Length:          10
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      1374
+        Replacements:    []
+      - Message:         'Access of ''root'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+        FileOffset:      1406
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0054_1416_D._Graph_and_Queries.cpp'
+            FileOffset:      1406
+            Length:          11
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

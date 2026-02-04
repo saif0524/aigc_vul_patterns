@@ -1,0 +1,134 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-using
+    DiagnosticMessage:
+      Message:         'use ''using'' instead of ''typedef'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+      FileOffset:      47
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+          Offset:          47
+          Length:          20
+          ReplacementText: 'using ll = long long'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+      FileOffset:      283
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+          Offset:          280
+          Length:          2
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+          Offset:          297
+          Length:          0
+          ReplacementText: ' -> ll'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+      FileOffset:      432
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+          Offset:          428
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+          Offset:          438
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''difference_type'' (aka ''long'') of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+      FileOffset:      1195
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1195
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            Offset:          25
+            Length:          0
+            ReplacementText: "\n#include <cstddef>\n"
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            Offset:          1195
+            Length:          0
+            ReplacementText: 'static_cast<difference_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            Offset:          1204
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            FileOffset:      1195
+            Length:          9
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1195
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            Offset:          1195
+            Length:          0
+            ReplacementText: 'static_cast<difference_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            Offset:          1196
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            FileOffset:      1195
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''difference_type'' (aka ''long'') of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+      FileOffset:      1218
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1218
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            Offset:          1218
+            Length:          0
+            ReplacementText: 'static_cast<difference_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            Offset:          1233
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            FileOffset:      1218
+            Length:          15
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+        FileOffset:      1218
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            Offset:          1219
+            Length:          0
+            ReplacementText: 'static_cast<difference_type>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            Offset:          1224
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0012_415_E._Mashmokh_and_Reverse_Operation.cpp'
+            FileOffset:      1219
+            Length:          5
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

@@ -1,0 +1,335 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+      FileOffset:      65
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+      FileOffset:      187
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-optin.taint.TaintedDiv
+    DiagnosticMessage:
+      Message:         Division by a tainted value, possibly zero
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+      FileOffset:      218
+      Replacements:    []
+    Notes:
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+        FileOffset:      1376
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+            FileOffset:      1376
+            Length:          27
+      - Message:         'Value assigned to ''M'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+        FileOffset:      1376
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+            FileOffset:      1376
+            Length:          27
+      - Message:         Taint propagated to the 4th argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+        FileOffset:      1376
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+            FileOffset:      1376
+            Length:          27
+      - Message:         'Calling ''math_pre'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+        FileOffset:      1407
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+            FileOffset:      1407
+            Length:          10
+      - Message:         'Assuming ''n'' is < 4'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+        FileOffset:      152
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+            FileOffset:      152
+            Length:          5
+      - Message:         '''?'' condition is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+        FileOffset:      151
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+        FileOffset:      129
+        Replacements:    []
+      - Message:         Assuming index is non-negative
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+        FileOffset:      207
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+            FileOffset:      207
+            Length:          10
+      - Message:         Division by a tainted value, possibly zero
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+        FileOffset:      218
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+            FileOffset:      187
+            Length:          34
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+      FileOffset:      357
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-equals-default
+    DiagnosticMessage:
+      Message:         'use ''= default'' to define a trivial default constructor'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+      FileOffset:      392
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+          Offset:          398
+          Length:          2
+          ReplacementText: '= default;'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''pad'' of similar type (''const int &'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+      FileOffset:      409
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+          FileOffset:      409
+          Length:          30
+    Notes:
+      - Message:         'the first parameter in the range is ''KEY'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+        FileOffset:      420
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+            FileOffset:      420
+            Length:          3
+      - Message:         'the last parameter in the range is ''VAL'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+        FileOffset:      436
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+            FileOffset:      436
+            Length:          3
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+      FileOffset:      515
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+          Offset:          510
+          Length:          5
+          ReplacementText: 'auto '
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+          Offset:          535
+          Length:          0
+          ReplacementText: ' -> pad *'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+      FileOffset:      710
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+          Offset:          705
+          Length:          5
+          ReplacementText: 'auto '
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+          Offset:          717
+          Length:          0
+          ReplacementText: ' -> pad *'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+      FileOffset:      746
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+          Offset:          741
+          Length:          5
+          ReplacementText: 'auto '
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+          Offset:          751
+          Length:          0
+          ReplacementText: ' -> pad *'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory after the end of ''Map.node'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+      FileOffset:      762
+      Replacements:    []
+    Notes:
+      - Message:         'Calling ''solve'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+        FileOffset:      1421
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+            FileOffset:      1421
+            Length:          14
+      - Message:         'Assuming ''l'' is >= ''r'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+        FileOffset:      843
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+            FileOffset:      843
+            Length:          6
+      - Message:         'Left side of ''||'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+        FileOffset:      850
+        Replacements:    []
+      - Message:         'Calling ''map::end'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+        FileOffset:      936
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+            FileOffset:      936
+            Length:          9
+      - Message:         'Access of ''Map.node'' at an overflowing index, while it holds only 3 ''struct map::pad'' elements'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+        FileOffset:      762
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+            FileOffset:      762
+            Length:          9
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+      FileOffset:      1107
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+          Offset:          1103
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+          Offset:          1145
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+      FileOffset:      1207
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+      FileOffset:      1365
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+          Offset:          1361
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+          Offset:          1371
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-loop-convert
+    DiagnosticMessage:
+      Message:         use range-based for loop instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+      FileOffset:      1454
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+          Offset:          1458
+          Length:          51
+          ReplacementText: '(auto & it : Map)'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+          Offset:          1526
+          Length:          4
+          ReplacementText: it.
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+          Offset:          1541
+          Length:          4
+          ReplacementText: it.
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+      FileOffset:      1560
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+      FileOffset:      1810
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+      FileOffset:      1871
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+      FileOffset:      2019
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0003_1081_G._Mergesort_Strikes_Back.cpp'
+      FileOffset:      2064
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

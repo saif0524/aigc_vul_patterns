@@ -1,0 +1,65 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0017_p03963_AtCoder_Beginner_Contest_046_-_Painting_Balls_with_AtCoDeer.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0017_p03963_AtCoder_Beginner_Contest_046_-_Painting_Balls_with_AtCoDeer.cpp'
+      FileOffset:      46
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0017_p03963_AtCoder_Beginner_Contest_046_-_Painting_Balls_with_AtCoDeer.cpp'
+          Offset:          42
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0017_p03963_AtCoder_Beginner_Contest_046_-_Painting_Balls_with_AtCoDeer.cpp'
+          Offset:          52
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'performing an implicit widening conversion to type ''long long'' of a multiplication performed in type ''int'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0017_p03963_AtCoder_Beginner_Contest_046_-_Painting_Balls_with_AtCoDeer.cpp'
+      FileOffset:      169
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0017_p03963_AtCoder_Beginner_Contest_046_-_Painting_Balls_with_AtCoDeer.cpp'
+        FileOffset:      169
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0017_p03963_AtCoder_Beginner_Contest_046_-_Painting_Balls_with_AtCoDeer.cpp'
+            Offset:          0
+            Length:          0
+            ReplacementText: "#include <cstddef>\n"
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0017_p03963_AtCoder_Beginner_Contest_046_-_Painting_Balls_with_AtCoDeer.cpp'
+            Offset:          169
+            Length:          0
+            ReplacementText: 'static_cast<long long>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0017_p03963_AtCoder_Beginner_Contest_046_-_Painting_Balls_with_AtCoDeer.cpp'
+            Offset:          180
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0017_p03963_AtCoder_Beginner_Contest_046_-_Painting_Balls_with_AtCoDeer.cpp'
+            FileOffset:      169
+            Length:          11
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0017_p03963_AtCoder_Beginner_Contest_046_-_Painting_Balls_with_AtCoDeer.cpp'
+        FileOffset:      169
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0017_p03963_AtCoder_Beginner_Contest_046_-_Painting_Balls_with_AtCoDeer.cpp'
+            Offset:          169
+            Length:          0
+            ReplacementText: 'static_cast<long long>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0017_p03963_AtCoder_Beginner_Contest_046_-_Painting_Balls_with_AtCoDeer.cpp'
+            Offset:          170
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0017_p03963_AtCoder_Beginner_Contest_046_-_Painting_Balls_with_AtCoDeer.cpp'
+            FileOffset:      169
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

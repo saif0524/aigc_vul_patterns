@@ -1,0 +1,289 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+      FileOffset:      46
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+      FileOffset:      153
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+          Offset:          149
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+          Offset:          159
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-format
+    DiagnosticMessage:
+      Message:         'format specifies type ''int *'' but the argument has type ''long *'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+      FileOffset:      227
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+          Offset:          222
+          Length:          2
+          ReplacementText: '%ld'
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+          FileOffset:      227
+          Length:          7
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+          FileOffset:      222
+          Length:          2
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-format
+    DiagnosticMessage:
+      Message:         'format specifies type ''int *'' but the argument has type ''long *'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+      FileOffset:      289
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+          Offset:          284
+          Length:          2
+          ReplacementText: '%ld'
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+          FileOffset:      289
+          Length:          7
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+          FileOffset:      284
+          Length:          2
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''ps'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+      FileOffset:      303
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+          FileOffset:      303
+          Length:          10
+    Notes:
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+        FileOffset:      197
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+            FileOffset:      197
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 11
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+        FileOffset:      181
+        Replacements:    []
+      - Message:         'Assuming ''i'' is < ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+        FileOffset:      259
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+            FileOffset:      259
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+        FileOffset:      243
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+        FileOffset:      277
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+            FileOffset:      277
+            Length:          20
+      - Message:         Taint propagated to the 2nd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+        FileOffset:      277
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+            FileOffset:      277
+            Length:          20
+      - Message:         'Access of ''ps'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+        FileOffset:      303
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+            FileOffset:      303
+            Length:          10
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long'' to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+      FileOffset:      342
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''ar1'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+      FileOffset:      361
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+          FileOffset:      361
+          Length:          6
+    Notes:
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+        FileOffset:      197
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+            FileOffset:      197
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 11
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+        FileOffset:      181
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+        FileOffset:      259
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+            FileOffset:      259
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 15
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+        FileOffset:      243
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+        FileOffset:      345
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+            FileOffset:      345
+            Length:          9
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+        FileOffset:      329
+        Replacements:    []
+      - Message:         'Access of ''ar1'' at negative byte offset'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+        FileOffset:      361
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+            FileOffset:      361
+            Length:          6
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Potential out of bound access to ''ps'' with tainted index'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+      FileOffset:      423
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+          FileOffset:      423
+          Length:          10
+    Notes:
+      - Message:         'Assuming ''i'' is < ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+        FileOffset:      197
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+            FileOffset:      197
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+        FileOffset:      181
+        Replacements:    []
+      - Message:         Taint originated here
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+        FileOffset:      215
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+            FileOffset:      215
+            Length:          20
+      - Message:         Taint propagated to the 2nd argument
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+        FileOffset:      215
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+            FileOffset:      215
+            Length:          20
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+        FileOffset:      197
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+            FileOffset:      197
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 11
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+        FileOffset:      181
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''m'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+        FileOffset:      259
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+            FileOffset:      259
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 15
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+        FileOffset:      243
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+        FileOffset:      329
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 16
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+        FileOffset:      329
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+        FileOffset:      384
+        Replacements:    []
+      - Message:         'Access of ''ps'' with a tainted index that may be negative or too large'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+        FileOffset:      423
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+            FileOffset:      423
+            Length:          10
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+      FileOffset:      1623
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp'
+          Offset:          1623
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

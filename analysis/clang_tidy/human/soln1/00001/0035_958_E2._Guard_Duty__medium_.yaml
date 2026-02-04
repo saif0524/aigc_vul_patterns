@@ -1,0 +1,169 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0035_958_E2._Guard_Duty__medium_.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0035_958_E2._Guard_Duty__medium_.cpp'
+      FileOffset:      121
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0035_958_E2._Guard_Duty__medium_.cpp'
+      FileOffset:      140
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0035_958_E2._Guard_Duty__medium_.cpp'
+      FileOffset:      203
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0035_958_E2._Guard_Duty__medium_.cpp'
+          Offset:          199
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0035_958_E2._Guard_Duty__medium_.cpp'
+          Offset:          209
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-emplace
+    DiagnosticMessage:
+      Message:         use emplace_back instead of push_back
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0035_958_E2._Guard_Duty__medium_.cpp'
+      FileOffset:      333
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0035_958_E2._Guard_Duty__medium_.cpp'
+          Offset:          333
+          Length:          19
+          ReplacementText: emplace_back
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0035_958_E2._Guard_Duty__medium_.cpp'
+          Offset:          371
+          Length:          1
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0035_958_E2._Guard_Duty__medium_.cpp'
+      FileOffset:      416
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''f'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0035_958_E2._Guard_Duty__medium_.cpp'
+      FileOffset:      1157
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0035_958_E2._Guard_Duty__medium_.cpp'
+          FileOffset:      1157
+          Length:          11
+    Notes:
+      - Message:         'Assuming ''i'' is > ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0035_958_E2._Guard_Duty__medium_.cpp'
+        FileOffset:      247
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0035_958_E2._Guard_Duty__medium_.cpp'
+            FileOffset:      247
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 12
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0035_958_E2._Guard_Duty__medium_.cpp'
+        FileOffset:      231
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 14
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0035_958_E2._Guard_Duty__medium_.cpp'
+        FileOffset:      301
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0035_958_E2._Guard_Duty__medium_.cpp'
+        FileOffset:      461
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0035_958_E2._Guard_Duty__medium_.cpp'
+            FileOffset:      461
+            Length:          18
+      - Message:         Loop condition is false. Execution continues on line 21
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0035_958_E2._Guard_Duty__medium_.cpp'
+        FileOffset:      445
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0035_958_E2._Guard_Duty__medium_.cpp'
+        FileOffset:      613
+        Replacements:    []
+      - Message:         'Assuming ''j'' is > ''k'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0035_958_E2._Guard_Duty__medium_.cpp'
+        FileOffset:      661
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0035_958_E2._Guard_Duty__medium_.cpp'
+            FileOffset:      661
+            Length:          6
+      - Message:         Loop condition is false. Execution continues on line 24
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0035_958_E2._Guard_Duty__medium_.cpp'
+        FileOffset:      645
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0035_958_E2._Guard_Duty__medium_.cpp'
+        FileOffset:      613
+        Replacements:    []
+      - Message:         '''j'' is > ''k'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0035_958_E2._Guard_Duty__medium_.cpp'
+        FileOffset:      661
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0035_958_E2._Guard_Duty__medium_.cpp'
+            FileOffset:      661
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 24
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0035_958_E2._Guard_Duty__medium_.cpp'
+        FileOffset:      645
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 27
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0035_958_E2._Guard_Duty__medium_.cpp'
+        FileOffset:      613
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0035_958_E2._Guard_Duty__medium_.cpp'
+        FileOffset:      766
+        Replacements:    []
+      - Message:         '''j'' is > ''k'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0035_958_E2._Guard_Duty__medium_.cpp'
+        FileOffset:      823
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0035_958_E2._Guard_Duty__medium_.cpp'
+            FileOffset:      823
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 32
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0035_958_E2._Guard_Duty__medium_.cpp'
+        FileOffset:      807
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 37
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0035_958_E2._Guard_Duty__medium_.cpp'
+        FileOffset:      895
+        Replacements:    []
+      - Message:         Loop condition is false. Execution continues on line 39
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0035_958_E2._Guard_Duty__medium_.cpp'
+        FileOffset:      766
+        Replacements:    []
+      - Message:         'Access of ''f'' at negative byte offset'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0035_958_E2._Guard_Duty__medium_.cpp'
+        FileOffset:      1157
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0035_958_E2._Guard_Duty__medium_.cpp'
+            FileOffset:      1157
+            Length:          11
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

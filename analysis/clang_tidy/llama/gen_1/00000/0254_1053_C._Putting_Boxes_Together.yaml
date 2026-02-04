@@ -1,0 +1,126 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0254_1053_C._Putting_Boxes_Together.cpp'
+Diagnostics:
+  - DiagnosticName:  clang-analyzer-deadcode.DeadStores
+    DiagnosticMessage:
+      Message:         'Value stored to ''avg'' is never read'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0254_1053_C._Putting_Boxes_Together.cpp'
+      FileOffset:      586
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0254_1053_C._Putting_Boxes_Together.cpp'
+          FileOffset:      592
+          Length:          9
+    Notes:
+      - Message:         'Value stored to ''avg'' is never read'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0254_1053_C._Putting_Boxes_Together.cpp'
+        FileOffset:      586
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0254_1053_C._Putting_Boxes_Together.cpp'
+            FileOffset:      592
+            Length:          9
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-core.DivideZero
+    DiagnosticMessage:
+      Message:         Division by zero
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0254_1053_C._Putting_Boxes_Together.cpp'
+      FileOffset:      596
+      Replacements:    []
+    Notes:
+      - Message:         'Calling ''solve'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0254_1053_C._Putting_Boxes_Together.cpp'
+        FileOffset:      1222
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0254_1053_C._Putting_Boxes_Together.cpp'
+            FileOffset:      1222
+            Length:          7
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0254_1053_C._Putting_Boxes_Together.cpp'
+        FileOffset:      270
+        Replacements:    []
+      - Message:         'Assuming ''x'' is >= 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0254_1053_C._Putting_Boxes_Together.cpp'
+        FileOffset:      337
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0254_1053_C._Putting_Boxes_Together.cpp'
+            FileOffset:      337
+            Length:          5
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0254_1053_C._Putting_Boxes_Together.cpp'
+        FileOffset:      333
+        Replacements:    []
+      - Message:         '''cnt'' initialized to 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0254_1053_C._Putting_Boxes_Together.cpp'
+        FileOffset:      426
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0254_1053_C._Putting_Boxes_Together.cpp'
+            FileOffset:      426
+            Length:          6
+      - Message:         'Assuming ''i'' is >= ''y'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0254_1053_C._Putting_Boxes_Together.cpp'
+        FileOffset:      494
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0254_1053_C._Putting_Boxes_Together.cpp'
+            FileOffset:      494
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 29
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0254_1053_C._Putting_Boxes_Together.cpp'
+        FileOffset:      474
+        Replacements:    []
+      - Message:         Division by zero
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0254_1053_C._Putting_Boxes_Together.cpp'
+        FileOffset:      596
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0254_1053_C._Putting_Boxes_Together.cpp'
+            FileOffset:      592
+            Length:          9
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0254_1053_C._Putting_Boxes_Together.cpp'
+      FileOffset:      1138
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0254_1053_C._Putting_Boxes_Together.cpp'
+          Offset:          1134
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0254_1053_C._Putting_Boxes_Together.cpp'
+          Offset:          1144
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0254_1053_C._Putting_Boxes_Together.cpp'
+      FileOffset:      1197
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0254_1053_C._Putting_Boxes_Together.cpp'
+          Offset:          1197
+          Length:          1
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0254_1053_C._Putting_Boxes_Together.cpp'
+      FileOffset:      1214
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0254_1053_C._Putting_Boxes_Together.cpp'
+          Offset:          1214
+          Length:          1
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

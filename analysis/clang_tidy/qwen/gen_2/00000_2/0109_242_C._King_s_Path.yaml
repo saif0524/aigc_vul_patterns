@@ -1,0 +1,880 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0109_242_C._King_s_Path.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0109_242_C._King_s_Path.cpp'
+      FileOffset:      143
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0109_242_C._King_s_Path.cpp'
+          Offset:          138
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0109_242_C._King_s_Path.cpp'
+          Offset:          194
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0109_242_C._King_s_Path.cpp'
+      FileOffset:      281
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0109_242_C._King_s_Path.cpp'
+          Offset:          276
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0109_242_C._King_s_Path.cpp'
+          Offset:          314
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0109_242_C._King_s_Path.cpp'
+      FileOffset:      463
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0109_242_C._King_s_Path.cpp'
+          Offset:          459
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0109_242_C._King_s_Path.cpp'
+          Offset:          469
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0109_242_C._King_s_Path.cpp'
+      FileOffset:      517
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0109_242_C._King_s_Path.cpp'
+          Offset:          517
+          Length:          1
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'type ''std::pair<long long, long long> const'' decomposes into 2 elements, but 3 names were provided'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0109_242_C._King_s_Path.cpp'
+      FileOffset:      1843
+      Replacements:    []
+    Notes:
+      - Message:         'selected ''begin'' function with iterator type ''iterator'' (aka ''__normal_iterator<std::pair<long long, long long> *, std::vector<std::pair<long long, long long>, std::allocator<std::pair<long long, long long>>>>'')'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h'
+        FileOffset:      28140
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no viable overloaded ''='''
+      FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+      FileOffset:      61470
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+          FileOffset:      61462
+          Length:          7
+        - FilePath:        ''
+          FileOffset:      0
+          Length:          0
+    Notes:
+      - Message:         'in instantiation of function template specialization ''std::__unguarded_linear_insert<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>, __gnu_cxx::__ops::_Val_less_iter>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      62655
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__unguarded_insertion_sort<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>, __gnu_cxx::__ops::_Iter_less_iter>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      63250
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__final_insertion_sort<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>, __gnu_cxx::__ops::_Iter_less_iter>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      65870
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__sort<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>, __gnu_cxx::__ops::_Iter_less_iter>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      173647
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::sort<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>>'' requested here'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0109_242_C._King_s_Path.cpp'
+        FileOffset:      1187
+        Replacements:    []
+      - Message:         'candidate function not viable: ''this'' argument has type ''const std::pair<long long, long long>'', but method is not marked const'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      24352
+        Replacements:    []
+      - Message:         'candidate function not viable: ''this'' argument has type ''const std::pair<long long, long long>'', but method is not marked const'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      24587
+        Replacements:    []
+      - Message:         'candidate function template not viable: ''this'' argument has type ''const std::pair<long long, long long>'', but method is not marked const'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      25121
+        Replacements:    []
+      - Message:         'candidate function template not viable: ''this'' argument has type ''const std::pair<long long, long long>'', but method is not marked const'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      25388
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no viable overloaded ''='''
+      FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+      FileOffset:      61546
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+          FileOffset:      61538
+          Length:          7
+        - FilePath:        ''
+          FileOffset:      0
+          Length:          0
+    Notes:
+      - Message:         'candidate function not viable: ''this'' argument has type ''const std::pair<long long, long long>'', but method is not marked const'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      24352
+        Replacements:    []
+      - Message:         'candidate function not viable: ''this'' argument has type ''const std::pair<long long, long long>'', but method is not marked const'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      24587
+        Replacements:    []
+      - Message:         'candidate function template not viable: ''this'' argument has type ''const std::pair<long long, long long>'', but method is not marked const'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      25121
+        Replacements:    []
+      - Message:         'candidate function template not viable: ''this'' argument has type ''const std::pair<long long, long long>'', but method is not marked const'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      25388
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no viable overloaded ''='''
+      FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+      FileOffset:      62159
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+          FileOffset:      62150
+          Length:          8
+        - FilePath:        ''
+          FileOffset:      0
+          Length:          0
+    Notes:
+      - Message:         'in instantiation of function template specialization ''std::__insertion_sort<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>, __gnu_cxx::__ops::_Iter_less_iter>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      63178
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__final_insertion_sort<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>, __gnu_cxx::__ops::_Iter_less_iter>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      65870
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__sort<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>, __gnu_cxx::__ops::_Iter_less_iter>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      173647
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::sort<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>>'' requested here'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0109_242_C._King_s_Path.cpp'
+        FileOffset:      1187
+        Replacements:    []
+      - Message:         'candidate function not viable: ''this'' argument has type ''const std::pair<long long, long long>'', but method is not marked const'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      24352
+        Replacements:    []
+      - Message:         'candidate function not viable: ''this'' argument has type ''const std::pair<long long, long long>'', but method is not marked const'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      24587
+        Replacements:    []
+      - Message:         'candidate function template not viable: ''this'' argument has type ''const std::pair<long long, long long>'', but method is not marked const'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      25121
+        Replacements:    []
+      - Message:         'candidate function template not viable: ''this'' argument has type ''const std::pair<long long, long long>'', but method is not marked const'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      25388
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no matching function for call to ''swap'''
+      FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algobase.h'
+      FileOffset:      6153
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algobase.h'
+          FileOffset:      6153
+          Length:          4
+    Notes:
+      - Message:         'in instantiation of function template specialization ''std::iter_swap<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>, __gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      3258
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__move_median_to_first<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>, __gnu_cxx::__ops::_Iter_less_iter>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      64301
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__unguarded_partition_pivot<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>, __gnu_cxx::__ops::_Iter_less_iter>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      65378
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__introsort_loop<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>, long, __gnu_cxx::__ops::_Iter_less_iter>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      65778
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__sort<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>, __gnu_cxx::__ops::_Iter_less_iter>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      173647
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::sort<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>>'' requested here'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0109_242_C._King_s_Path.cpp'
+        FileOffset:      1187
+        Replacements:    []
+      - Message:         'candidate function not viable: no known conversion from ''const std::pair<long long, long long>'' to ''exception_ptr &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/exception_ptr.h'
+        FileOffset:      6568
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/exception_ptr.h'
+            FileOffset:      6573
+            Length:          20
+      - Message:         'candidate function not viable: no known conversion from ''const std::pair<long long, long long>'' to ''any &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/any'
+        FileOffset:      11808
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/any'
+            FileOffset:      11813
+            Length:          8
+      - Message:         'candidate function not viable: no known conversion from ''const std::pair<long long, long long>'' to ''thread &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/std_thread.h'
+        FileOffset:      8537
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/std_thread.h'
+            FileOffset:      8542
+            Length:          11
+      - Message:         'candidate template ignored: requirement ''__and_<std::__not_<std::__is_tuple_like<const std::pair<long long, long long>>>, std::is_move_constructible<const std::pair<long long, long long>>, std::is_move_assignable<const std::pair<long long, long long>>>::value'' was not satisfied [with _Tp = const std::pair<long long, long long>]'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/move.h'
+        FileOffset:      5693
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Tp[_Nm]'' against ''const std::pair<long long, long long>'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/move.h'
+        FileOffset:      6390
+        Replacements:    []
+      - Message:         "candidate template ignored: deduced type 'pair<...>' of 1st parameter does not match adjusted type 'const pair<...>' of argument [with _T1 = long long, _T2 = long long]"
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      29501
+        Replacements:    []
+      - Message:         'candidate template ignored: requirement ''!__and_<std::__is_swappable<long long>, std::__is_swappable<long long>>::value'' was not satisfied [with _T1 = long long, _T2 = long long]'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      30118
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_string'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+        FileOffset:      142755
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''tuple'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      71662
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''tuple'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      72359
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''function'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/std_function.h'
+        FileOffset:      23059
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''unordered_map'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/unordered_map.h'
+        FileOffset:      73371
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''unordered_multimap'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/unordered_map.h'
+        FileOffset:      73640
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''vector'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h'
+        FileOffset:      69754
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''array'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/array'
+        FileOffset:      11126
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''array'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/array'
+        FileOffset:      11437
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''unique_ptr'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/unique_ptr.h'
+        FileOffset:      24602
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''unique_ptr'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/unique_ptr.h'
+        FileOffset:      24872
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''__shared_ptr'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr_base.h'
+        FileOffset:      56334
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''__weak_ptr'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr_base.h'
+        FileOffset:      62784
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''shared_ptr'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr.h'
+        FileOffset:      23886
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''weak_ptr'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr.h'
+        FileOffset:      29901
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''optional'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/optional'
+        FileOffset:      42680
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''optional'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/optional'
+        FileOffset:      42900
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''variant'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/variant'
+        FileOffset:      44897
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''variant'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/variant'
+        FileOffset:      45162
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_stringbuf'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/sstream'
+        FileOffset:      38581
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_istringstream'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/sstream'
+        FileOffset:      38877
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_ostringstream'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/sstream'
+        FileOffset:      39143
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_stringstream'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/sstream'
+        FileOffset:      39408
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''deque'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_deque.h'
+        FileOffset:      77666
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_filebuf'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/fstream'
+        FileOffset:      39886
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_ifstream'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/fstream'
+        FileOffset:      40093
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_ofstream'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/fstream'
+        FileOffset:      40302
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_fstream'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/fstream'
+        FileOffset:      40510
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''list'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_list.h'
+        FileOffset:      71015
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Rb_tree'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_tree.h'
+        FileOffset:      44518
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''map'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_map.h'
+        FileOffset:      55269
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''multimap'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_multimap.h'
+        FileOffset:      42801
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''queue'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_queue.h'
+        FileOffset:      14468
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''priority_queue'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_queue.h'
+        FileOffset:      28240
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''set'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_set.h'
+        FileOffset:      37176
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''multiset'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_multiset.h'
+        FileOffset:      36876
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''stack'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_stack.h'
+        FileOffset:      13661
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''unique_lock'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/unique_lock.h'
+        FileOffset:      6120
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''forward_list'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/forward_list.h'
+        FileOffset:      50871
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''promise'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/future'
+        FileOffset:      34490
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''packaged_task'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/future'
+        FileOffset:      47414
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_regex'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/regex.h'
+        FileOffset:      29408
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''match_results'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/regex.h'
+        FileOffset:      74801
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''unordered_set'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/unordered_set.h'
+        FileOffset:      59800
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''unordered_multiset'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/unordered_set.h'
+        FileOffset:      60054
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''shared_lock'' against ''std::pair'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/shared_mutex'
+        FileOffset:      24899
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no viable overloaded ''='''
+      FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algobase.h'
+      FileOffset:      23796
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algobase.h'
+          FileOffset:      23784
+          Length:          11
+        - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algobase.h'
+          FileOffset:      23798
+          Length:          20
+    Notes:
+      - Message:         'in instantiation of function template specialization ''std::__copy_move_backward<true, false, std::random_access_iterator_tag>::__copy_move_b<const std::pair<long long, long long> *, const std::pair<long long, long long> *>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algobase.h'
+        FileOffset:      24988
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__copy_move_backward_a2<true, const std::pair<long long, long long> *, const std::pair<long long, long long> *>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algobase.h'
+        FileOffset:      25239
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__copy_move_backward_a1<true, const std::pair<long long, long long> *, const std::pair<long long, long long> *>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algobase.h'
+        FileOffset:      26403
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__copy_move_backward_a<true, __gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>, __gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algobase.h'
+        FileOffset:      30377
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::move_backward<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>, __gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      62095
+        Replacements:    []
+      - Message:         'expanded from macro ''_GLIBCXX_MOVE_BACKWARD3'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algobase.h'
+        FileOffset:      30555
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__insertion_sort<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>, __gnu_cxx::__ops::_Iter_less_iter>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      63178
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__final_insertion_sort<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>, __gnu_cxx::__ops::_Iter_less_iter>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      65870
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__sort<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>, __gnu_cxx::__ops::_Iter_less_iter>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      173647
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::sort<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>>'' requested here'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0109_242_C._King_s_Path.cpp'
+        FileOffset:      1187
+        Replacements:    []
+      - Message:         'candidate function not viable: ''this'' argument has type ''const std::pair<long long, long long>'', but method is not marked const'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      24352
+        Replacements:    []
+      - Message:         'candidate function not viable: ''this'' argument has type ''const std::pair<long long, long long>'', but method is not marked const'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      24587
+        Replacements:    []
+      - Message:         'candidate function template not viable: ''this'' argument has type ''const std::pair<long long, long long>'', but method is not marked const'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      25121
+        Replacements:    []
+      - Message:         'candidate function template not viable: ''this'' argument has type ''const std::pair<long long, long long>'', but method is not marked const'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      25388
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no viable overloaded ''='''
+      FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_heap.h'
+      FileOffset:      5037
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_heap.h'
+          FileOffset:      5012
+          Length:          24
+        - FilePath:        ''
+          FileOffset:      0
+          Length:          0
+    Notes:
+      - Message:         'in instantiation of function template specialization ''std::__push_heap<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>, long, std::pair<long long, long long>, __gnu_cxx::__ops::_Iter_less_val>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_heap.h'
+        FileOffset:      9009
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__adjust_heap<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>, long, std::pair<long long, long long>, __gnu_cxx::__ops::_Iter_less_iter>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_heap.h'
+        FileOffset:      12766
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__make_heap<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>, __gnu_cxx::__ops::_Iter_less_iter>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      55009
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__heap_select<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>, __gnu_cxx::__ops::_Iter_less_iter>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      64730
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__partial_sort<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>, __gnu_cxx::__ops::_Iter_less_iter>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      65244
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__introsort_loop<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>, long, __gnu_cxx::__ops::_Iter_less_iter>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      65778
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__sort<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>, __gnu_cxx::__ops::_Iter_less_iter>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      173647
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::sort<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>>'' requested here'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0109_242_C._King_s_Path.cpp'
+        FileOffset:      1187
+        Replacements:    []
+      - Message:         'candidate function not viable: ''this'' argument has type ''const std::pair<long long, long long>'', but method is not marked const'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      24352
+        Replacements:    []
+      - Message:         'candidate function not viable: ''this'' argument has type ''const std::pair<long long, long long>'', but method is not marked const'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      24587
+        Replacements:    []
+      - Message:         'candidate function template not viable: ''this'' argument has type ''const std::pair<long long, long long>'', but method is not marked const'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      25121
+        Replacements:    []
+      - Message:         'candidate function template not viable: ''this'' argument has type ''const std::pair<long long, long long>'', but method is not marked const'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      25388
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no viable overloaded ''='''
+      FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_heap.h'
+      FileOffset:      5175
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_heap.h'
+          FileOffset:      5150
+          Length:          24
+        - FilePath:        ''
+          FileOffset:      0
+          Length:          0
+    Notes:
+      - Message:         'candidate function not viable: ''this'' argument has type ''const std::pair<long long, long long>'', but method is not marked const'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      24352
+        Replacements:    []
+      - Message:         'candidate function not viable: ''this'' argument has type ''const std::pair<long long, long long>'', but method is not marked const'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      24587
+        Replacements:    []
+      - Message:         'candidate function template not viable: ''this'' argument has type ''const std::pair<long long, long long>'', but method is not marked const'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      25121
+        Replacements:    []
+      - Message:         'candidate function template not viable: ''this'' argument has type ''const std::pair<long long, long long>'', but method is not marked const'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      25388
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no viable overloaded ''='''
+      FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_heap.h'
+      FileOffset:      8572
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_heap.h'
+          FileOffset:      8547
+          Length:          24
+        - FilePath:        ''
+          FileOffset:      0
+          Length:          0
+    Notes:
+      - Message:         'in instantiation of function template specialization ''std::__adjust_heap<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>, long, std::pair<long long, long long>, __gnu_cxx::__ops::_Iter_less_iter>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_heap.h'
+        FileOffset:      12766
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__make_heap<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>, __gnu_cxx::__ops::_Iter_less_iter>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      55009
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__heap_select<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>, __gnu_cxx::__ops::_Iter_less_iter>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      64730
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__partial_sort<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>, __gnu_cxx::__ops::_Iter_less_iter>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      65244
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__introsort_loop<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>, long, __gnu_cxx::__ops::_Iter_less_iter>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      65778
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__sort<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>, __gnu_cxx::__ops::_Iter_less_iter>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      173647
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::sort<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>>'' requested here'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0109_242_C._King_s_Path.cpp'
+        FileOffset:      1187
+        Replacements:    []
+      - Message:         'candidate function not viable: ''this'' argument has type ''const std::pair<long long, long long>'', but method is not marked const'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      24352
+        Replacements:    []
+      - Message:         'candidate function not viable: ''this'' argument has type ''const std::pair<long long, long long>'', but method is not marked const'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      24587
+        Replacements:    []
+      - Message:         'candidate function template not viable: ''this'' argument has type ''const std::pair<long long, long long>'', but method is not marked const'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      25121
+        Replacements:    []
+      - Message:         'candidate function template not viable: ''this'' argument has type ''const std::pair<long long, long long>'', but method is not marked const'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      25388
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no viable overloaded ''='''
+      FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_heap.h'
+      FileOffset:      8791
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_heap.h'
+          FileOffset:      8766
+          Length:          24
+        - FilePath:        ''
+          FileOffset:      0
+          Length:          0
+    Notes:
+      - Message:         'candidate function not viable: ''this'' argument has type ''const std::pair<long long, long long>'', but method is not marked const'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      24352
+        Replacements:    []
+      - Message:         'candidate function not viable: ''this'' argument has type ''const std::pair<long long, long long>'', but method is not marked const'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      24587
+        Replacements:    []
+      - Message:         'candidate function template not viable: ''this'' argument has type ''const std::pair<long long, long long>'', but method is not marked const'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      25121
+        Replacements:    []
+      - Message:         'candidate function template not viable: ''this'' argument has type ''const std::pair<long long, long long>'', but method is not marked const'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      25388
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no viable overloaded ''='''
+      FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_heap.h'
+      FileOffset:      9598
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_heap.h'
+          FileOffset:      9588
+          Length:          9
+        - FilePath:        ''
+          FileOffset:      0
+          Length:          0
+    Notes:
+      - Message:         'in instantiation of function template specialization ''std::__pop_heap<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>, __gnu_cxx::__ops::_Iter_less_iter>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      55154
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__heap_select<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>, __gnu_cxx::__ops::_Iter_less_iter>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      64730
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__partial_sort<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>, __gnu_cxx::__ops::_Iter_less_iter>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      65244
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__introsort_loop<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>, long, __gnu_cxx::__ops::_Iter_less_iter>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      65778
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__sort<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>, __gnu_cxx::__ops::_Iter_less_iter>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      173647
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::sort<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>>'' requested here'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0109_242_C._King_s_Path.cpp'
+        FileOffset:      1187
+        Replacements:    []
+      - Message:         'candidate function not viable: ''this'' argument has type ''const std::pair<long long, long long>'', but method is not marked const'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      24352
+        Replacements:    []
+      - Message:         'candidate function not viable: ''this'' argument has type ''const std::pair<long long, long long>'', but method is not marked const'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      24587
+        Replacements:    []
+      - Message:         'candidate function template not viable: ''this'' argument has type ''const std::pair<long long, long long>'', but method is not marked const'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      25121
+        Replacements:    []
+      - Message:         'candidate function template not viable: ''this'' argument has type ''const std::pair<long long, long long>'', but method is not marked const'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      25388
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no matching function for call to ''__adjust_heap'''
+      FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_heap.h'
+      FileOffset:      9631
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_heap.h'
+          FileOffset:      9631
+          Length:          18
+    Notes:
+      - Message:         'candidate template ignored: substitution failure [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>, _Distance = _DistanceType, _Tp = typename std::remove_reference<std::pair<long long, long long> &>::type, _Compare = __gnu_cxx::__ops::_Iter_less_iter]'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_heap.h'
+        FileOffset:      8133
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no matching function for call to ''__pop_heap'''
+      FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_heap.h'
+      FileOffset:      15029
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_heap.h'
+          FileOffset:      15029
+          Length:          15
+    Notes:
+      - Message:         'in instantiation of function template specialization ''std::__sort_heap<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>, __gnu_cxx::__ops::_Iter_less_iter>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      64791
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__partial_sort<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>, __gnu_cxx::__ops::_Iter_less_iter>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      65244
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__introsort_loop<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>, long, __gnu_cxx::__ops::_Iter_less_iter>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      65778
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::__sort<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>, __gnu_cxx::__ops::_Iter_less_iter>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      173647
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::sort<__gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>>'' requested here'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0109_242_C._King_s_Path.cpp'
+        FileOffset:      1187
+        Replacements:    []
+      - Message:         'candidate template ignored: substitution failure [with _RandomAccessIterator = __gnu_cxx::__normal_iterator<const std::pair<long long, long long> *, std::vector<std::pair<long long, long long>>>, _Compare = __gnu_cxx::__ops::_Iter_less_iter]'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_heap.h'
+        FileOffset:      9210
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'invalid operands to binary expression (''const Point'' and ''const Point'')'
+      FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+      FileOffset:      27995
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+          FileOffset:      27984
+          Length:          10
+        - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+          FileOffset:      27997
+          Length:          10
+    Notes:
+      - Message:         'in instantiation of function template specialization ''std::operator<<long long, Point>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_function.h'
+        FileOffset:      12967
+        Replacements:    []
+      - Message:         'in instantiation of member function ''std::less<std::pair<long long, Point>>::operator()'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_tree.h'
+        FileOffset:      58087
+        Replacements:    []
+      - Message:         'in instantiation of member function ''std::_Rb_tree<std::pair<long long, Point>, std::pair<long long, Point>, std::_Identity<std::pair<long long, Point>>, std::less<std::pair<long long, Point>>>::_M_get_insert_unique_pos'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_tree.h'
+        FileOffset:      67536
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::_Rb_tree<std::pair<long long, Point>, std::pair<long long, Point>, std::_Identity<std::pair<long long, Point>>, std::less<std::pair<long long, Point>>>::_M_emplace_unique<int, Point>'' requested here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_set.h'
+        FileOffset:      16208
+        Replacements:    []
+      - Message:         'in instantiation of function template specialization ''std::set<std::pair<long long, Point>>::emplace<int, Point>'' requested here'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0109_242_C._King_s_Path.cpp'
+        FileOffset:      2218
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''const pair<_T1, _T2>'' against ''const Point'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      27847
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

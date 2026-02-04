@@ -1,0 +1,89 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0200_378_C._Maze.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0200_378_C._Maze.cpp'
+      FileOffset:      47
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0200_378_C._Maze.cpp'
+      FileOffset:      73
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0200_378_C._Maze.cpp'
+      FileOffset:      486
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0200_378_C._Maze.cpp'
+          Offset:          482
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0200_378_C._Maze.cpp'
+          Offset:          492
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0200_378_C._Maze.cpp'
+      FileOffset:      540
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0200_378_C._Maze.cpp'
+          Offset:          540
+          Length:          1
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-deprecated-declarations
+    DiagnosticMessage:
+      Message:         '''random_shuffle<__gnu_cxx::__normal_iterator<std::pair<int, int> *, std::vector<std::pair<int, int>>>>'' is deprecated: use ''std::shuffle'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0200_378_C._Maze.cpp'
+      FileOffset:      1273
+      Replacements:    []
+    Notes:
+      - Message:         '''random_shuffle<__gnu_cxx::__normal_iterator<std::pair<int, int> *, std::vector<std::pair<int, int>>>>'' has been explicitly marked deprecated here'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      162766
+        Replacements:    []
+      - Message:         'expanded from macro ''_GLIBCXX14_DEPRECATED_SUGGEST'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13/bits/c++config.h'
+        FileOffset:      3830
+        Replacements:    []
+      - Message:         'expanded from macro ''_GLIBCXX_DEPRECATED_SUGGEST'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/x86_64-linux-gnu/c++/13/bits/c++config.h'
+        FileOffset:      3282
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-replace-random-shuffle
+    DiagnosticMessage:
+      Message:         '''std::random_shuffle'' has been removed in C++17; use ''std::shuffle'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0200_378_C._Maze.cpp'
+      FileOffset:      1273
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0200_378_C._Maze.cpp'
+          Offset:          25
+          Length:          0
+          ReplacementText: "\n#include <random>\n"
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0200_378_C._Maze.cpp'
+          Offset:          1273
+          Length:          14
+          ReplacementText: shuffle
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0200_378_C._Maze.cpp'
+          Offset:          1314
+          Length:          0
+          ReplacementText: ', std::mt19937(std::random_device()())'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

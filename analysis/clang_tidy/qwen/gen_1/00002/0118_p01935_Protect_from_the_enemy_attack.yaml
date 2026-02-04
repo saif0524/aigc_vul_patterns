@@ -1,0 +1,247 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+      FileOffset:      94
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+      FileOffset:      147
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+      FileOffset:      170
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+      FileOffset:      239
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+      FileOffset:      443
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+          Offset:          438
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+          Offset:          460
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''bfs'' of similar type (''int'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+      FileOffset:      447
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+          FileOffset:      447
+          Length:          12
+    Notes:
+      - Message:         'the first parameter in the range is ''s'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+        FileOffset:      451
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+            FileOffset:      451
+            Length:          1
+      - Message:         'the last parameter in the range is ''t'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+        FileOffset:      458
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+            FileOffset:      458
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''dist'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+      FileOffset:      811
+      Replacements:    []
+    Notes:
+      - Message:         'Assuming ''i'' is >= ''E'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+        FileOffset:      2171
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+            FileOffset:      2171
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 99
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+        FileOffset:      2155
+        Replacements:    []
+      - Message:         'Calling ''max_flow'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+        FileOffset:      2319
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+            FileOffset:      2319
+            Length:          18
+      - Message:         'Calling ''bfs'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+        FileOffset:      1321
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+            FileOffset:      1321
+            Length:          9
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+        FileOffset:      555
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+            FileOffset:      555
+            Length:          10
+      - Message:         Loop condition is false. Execution continues on line 35
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+        FileOffset:      548
+        Replacements:    []
+      - Message:         'Access of ''dist'' at negative byte offset -4'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+        FileOffset:      811
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+            FileOffset:      811
+            Length:          7
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+      FileOffset:      834
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+          Offset:          830
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+          Offset:          858
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+      FileOffset:      1263
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+          Offset:          1259
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+          Offset:          1285
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''min_cut'' of similar type (''int'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+      FileOffset:      1492
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+          FileOffset:      1492
+          Length:          12
+    Notes:
+      - Message:         'the first parameter in the range is ''s'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+        FileOffset:      1496
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+            FileOffset:      1496
+            Length:          1
+      - Message:         'the last parameter in the range is ''t'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+        FileOffset:      1503
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+            FileOffset:      1503
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+      FileOffset:      1530
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-bool-literals
+    DiagnosticMessage:
+      Message:         converting integer literal to bool, use bool literal instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+      FileOffset:      1552
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+          Offset:          1552
+          Length:          1
+          ReplacementText: 'false'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+      FileOffset:      2074
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+          Offset:          2070
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+          Offset:          2080
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+      FileOffset:      2128
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0118_p01935_Protect_from_the_enemy_attack.cpp'
+          Offset:          2128
+          Length:          1
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

@@ -1,0 +1,845 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0029_331_E2._Deja_Vu.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0029_331_E2._Deja_Vu.cpp'
+      FileOffset:      152
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0029_331_E2._Deja_Vu.cpp'
+      FileOffset:      212
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '3 adjacent parameters of ''find_path'' of similar type (''int'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0029_331_E2._Deja_Vu.cpp'
+      FileOffset:      270
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0029_331_E2._Deja_Vu.cpp'
+          FileOffset:      270
+          Length:          29
+    Notes:
+      - Message:         'the first parameter in the range is ''u'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0029_331_E2._Deja_Vu.cpp'
+        FileOffset:      274
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0029_331_E2._Deja_Vu.cpp'
+            FileOffset:      274
+            Length:          1
+      - Message:         'the last parameter in the range is ''street_id'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0029_331_E2._Deja_Vu.cpp'
+        FileOffset:      290
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0029_331_E2._Deja_Vu.cpp'
+            FileOffset:      290
+            Length:          9
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'invalid operands to binary expression (''std::tuple_element<1, std::pair<int, std::vector<int>>>::type'' (aka ''std::vector<int>'') and ''int'')'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0029_331_E2._Deja_Vu.cpp'
+      FileOffset:      567
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0029_331_E2._Deja_Vu.cpp'
+          FileOffset:      559
+          Length:          7
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0029_331_E2._Deja_Vu.cpp'
+          FileOffset:      570
+          Length:          30
+    Notes:
+      - Message:         'candidate function not viable: no known conversion from ''std::tuple_element<1, std::pair<int, std::vector<int>>>::type'' (aka ''std::vector<int>'') to ''const allocator<int>'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/allocator.h'
+        FileOffset:      6717
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/allocator.h'
+            FileOffset:      6728
+            Length:          16
+      - Message:         'candidate function not viable: no known conversion from ''std::tuple_element<1, std::pair<int, std::vector<int>>>::type'' (aka ''std::vector<int>'') to ''const error_code'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/system_error'
+        FileOffset:      12981
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/system_error'
+            FileOffset:      12992
+            Length:          23
+      - Message:         'candidate function not viable: no known conversion from ''std::tuple_element<1, std::pair<int, std::vector<int>>>::type'' (aka ''std::vector<int>'') to ''const error_code'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/system_error'
+        FileOffset:      13461
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/system_error'
+            FileOffset:      13472
+            Length:          23
+      - Message:         'candidate function not viable: no known conversion from ''std::tuple_element<1, std::pair<int, std::vector<int>>>::type'' (aka ''std::vector<int>'') to ''const error_condition'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/system_error'
+        FileOffset:      13892
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/system_error'
+            FileOffset:      13903
+            Length:          28
+      - Message:         'candidate function not viable: no known conversion from ''std::tuple_element<1, std::pair<int, std::vector<int>>>::type'' (aka ''std::vector<int>'') to ''const error_condition'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/system_error'
+        FileOffset:      14904
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/system_error'
+            FileOffset:      14915
+            Length:          28
+      - Message:         'candidate function not viable: no known conversion from ''std::tuple_element<1, std::pair<int, std::vector<int>>>::type'' (aka ''std::vector<int>'') to ''monostate'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/variant'
+        FileOffset:      43213
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/variant'
+            FileOffset:      43224
+            Length:          9
+      - Message:         'candidate function not viable: no known conversion from ''std::tuple_element<1, std::pair<int, std::vector<int>>>::type'' (aka ''std::vector<int>'') to ''thread::id'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/std_thread.h'
+        FileOffset:      8646
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/std_thread.h'
+            FileOffset:      8657
+            Length:          14
+      - Message:         'candidate template ignored: could not match ''pair'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      26900
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''reverse_iterator'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h'
+        FileOffset:      13716
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''reverse_iterator'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h'
+        FileOffset:      15205
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''move_iterator'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h'
+        FileOffset:      54786
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''move_iterator'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h'
+        FileOffset:      57401
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''fpos'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/postypes.h'
+        FileOffset:      6507
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''__new_allocator<_Up>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/new_allocator.h'
+        FileOffset:      6733
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''allocator'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/allocator.h'
+        FileOffset:      7338
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_string_view'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/string_view'
+        FileOffset:      18278
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_string_view'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/string_view'
+        FileOffset:      18547
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_string_view<_CharT, _Traits>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/string_view'
+        FileOffset:      19556
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_string'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+        FileOffset:      132982
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_string'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+        FileOffset:      133580
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''const _CharT *'' against ''std::tuple_element<1, std::pair<int, std::vector<int>>>::type'' (aka ''std::vector<int>'')'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+        FileOffset:      135422
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''tuple'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      63126
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''function'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/std_function.h'
+        FileOffset:      21773
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''function<_Res (_Args...)>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/std_function.h'
+        FileOffset:      22009
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''unordered_map'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/unordered_map.h'
+        FileOffset:      73919
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''unordered_multimap'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/unordered_map.h'
+        FileOffset:      74510
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''vector<_Tp, _Alloc>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h'
+        FileOffset:      67161
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''array'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/array'
+        FileOffset:      8830
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''istreambuf_iterator'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/streambuf_iterator.h'
+        FileOffset:      7495
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''unique_ptr'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/unique_ptr.h'
+        FileOffset:      25154
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''unique_ptr'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/unique_ptr.h'
+        FileOffset:      25423
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''unique_ptr<_Tp, _Dp>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/unique_ptr.h'
+        FileOffset:      25671
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''__shared_ptr'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr_base.h'
+        FileOffset:      52079
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''__shared_ptr'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr_base.h'
+        FileOffset:      52282
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''__shared_ptr<_Tp, _Lp>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr_base.h'
+        FileOffset:      53016
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''shared_ptr'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr.h'
+        FileOffset:      19057
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''shared_ptr'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr.h'
+        FileOffset:      19278
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''shared_ptr<_Tp>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr.h'
+        FileOffset:      19983
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''scoped_allocator_adaptor'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/scoped_allocator'
+        FileOffset:      17024
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''optional'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/optional'
+        FileOffset:      36025
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''optional'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/optional'
+        FileOffset:      37900
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''optional<_Tp>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/optional'
+        FileOffset:      38228
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''optional'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/optional'
+        FileOffset:      39834
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''optional<_Tp>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/optional'
+        FileOffset:      40028
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''variant'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/variant'
+        FileOffset:      42944
+        Replacements:    []
+      - Message:         'expanded from macro ''_VARIANT_RELATION_FUNCTION_TEMPLATE'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/variant'
+        FileOffset:      42132
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''complex'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/complex'
+        FileOffset:      13569
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''complex'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/complex'
+        FileOffset:      13764
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''complex<_Tp>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/complex'
+        FileOffset:      13988
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''deque'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_deque.h'
+        FileOffset:      75017
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''list'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_list.h'
+        FileOffset:      68010
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''map'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_map.h'
+        FileOffset:      52383
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''multimap'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_multimap.h'
+        FileOffset:      39803
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''queue'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_queue.h'
+        FileOffset:      12259
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''set'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_set.h'
+        FileOffset:      34476
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''multiset'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_multiset.h'
+        FileOffset:      34073
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''stack'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_stack.h'
+        FileOffset:      11454
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14711
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      9594
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14711
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      10553
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr<_Dom, typename _Dom::value_type>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14711
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      11519
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14711
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      12485
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr<_Dom, typename _Dom::value_type>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14711
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      13451
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''valarray'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      39367
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      37574
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''valarray'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      39367
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      38083
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''valarray<_Tp>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      39367
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      38569
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''forward_list'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/forward_list.tcc'
+        FileOffset:      11051
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''std::normal_distribution'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      59904
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''sub_match'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/regex.h'
+        FileOffset:      36013
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_string'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/regex.h'
+        FileOffset:      39727
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''sub_match'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/regex.h'
+        FileOffset:      42754
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''sub_match<_Bi_iter>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/regex.h'
+        FileOffset:      46446
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''sub_match'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/regex.h'
+        FileOffset:      49257
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''sub_match<_Bi_iter>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/regex.h'
+        FileOffset:      52772
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''sub_match'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/regex.h'
+        FileOffset:      55607
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''match_results'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/regex.h'
+        FileOffset:      73513
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''unordered_set'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/unordered_set.h'
+        FileOffset:      60318
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''unordered_multiset'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/unordered_set.h'
+        FileOffset:      60879
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'invalid operands to binary expression (''std::tuple_element<1, std::pair<int, std::vector<int>>>::type'' (aka ''std::vector<int>'') and ''int'')'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0029_331_E2._Deja_Vu.cpp'
+      FileOffset:      1765
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0029_331_E2._Deja_Vu.cpp'
+          FileOffset:      1757
+          Length:          7
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0029_331_E2._Deja_Vu.cpp'
+          FileOffset:      1768
+          Length:          30
+    Notes:
+      - Message:         'candidate function not viable: no known conversion from ''std::tuple_element<1, std::pair<int, std::vector<int>>>::type'' (aka ''std::vector<int>'') to ''const allocator<int>'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/allocator.h'
+        FileOffset:      6717
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/allocator.h'
+            FileOffset:      6728
+            Length:          16
+      - Message:         'candidate function not viable: no known conversion from ''std::tuple_element<1, std::pair<int, std::vector<int>>>::type'' (aka ''std::vector<int>'') to ''const error_code'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/system_error'
+        FileOffset:      12981
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/system_error'
+            FileOffset:      12992
+            Length:          23
+      - Message:         'candidate function not viable: no known conversion from ''std::tuple_element<1, std::pair<int, std::vector<int>>>::type'' (aka ''std::vector<int>'') to ''const error_code'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/system_error'
+        FileOffset:      13461
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/system_error'
+            FileOffset:      13472
+            Length:          23
+      - Message:         'candidate function not viable: no known conversion from ''std::tuple_element<1, std::pair<int, std::vector<int>>>::type'' (aka ''std::vector<int>'') to ''const error_condition'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/system_error'
+        FileOffset:      13892
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/system_error'
+            FileOffset:      13903
+            Length:          28
+      - Message:         'candidate function not viable: no known conversion from ''std::tuple_element<1, std::pair<int, std::vector<int>>>::type'' (aka ''std::vector<int>'') to ''const error_condition'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/system_error'
+        FileOffset:      14904
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/system_error'
+            FileOffset:      14915
+            Length:          28
+      - Message:         'candidate function not viable: no known conversion from ''std::tuple_element<1, std::pair<int, std::vector<int>>>::type'' (aka ''std::vector<int>'') to ''monostate'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/variant'
+        FileOffset:      43213
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/variant'
+            FileOffset:      43224
+            Length:          9
+      - Message:         'candidate function not viable: no known conversion from ''std::tuple_element<1, std::pair<int, std::vector<int>>>::type'' (aka ''std::vector<int>'') to ''thread::id'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/std_thread.h'
+        FileOffset:      8646
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/std_thread.h'
+            FileOffset:      8657
+            Length:          14
+      - Message:         'candidate template ignored: could not match ''pair'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      26900
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''reverse_iterator'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h'
+        FileOffset:      13716
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''reverse_iterator'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h'
+        FileOffset:      15205
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''move_iterator'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h'
+        FileOffset:      54786
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''move_iterator'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_iterator.h'
+        FileOffset:      57401
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''fpos'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/postypes.h'
+        FileOffset:      6507
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''__new_allocator<_Up>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/new_allocator.h'
+        FileOffset:      6733
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''allocator'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/allocator.h'
+        FileOffset:      7338
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_string_view'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/string_view'
+        FileOffset:      18278
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_string_view'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/string_view'
+        FileOffset:      18547
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_string_view<_CharT, _Traits>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/string_view'
+        FileOffset:      19556
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_string'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+        FileOffset:      132982
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_string'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+        FileOffset:      133580
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''const _CharT *'' against ''std::tuple_element<1, std::pair<int, std::vector<int>>>::type'' (aka ''std::vector<int>'')'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/basic_string.h'
+        FileOffset:      135422
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''tuple'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/tuple'
+        FileOffset:      63126
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''function'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/std_function.h'
+        FileOffset:      21773
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''function<_Res (_Args...)>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/std_function.h'
+        FileOffset:      22009
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''unordered_map'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/unordered_map.h'
+        FileOffset:      73919
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''unordered_multimap'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/unordered_map.h'
+        FileOffset:      74510
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''vector<_Tp, _Alloc>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h'
+        FileOffset:      67161
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''array'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/array'
+        FileOffset:      8830
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''istreambuf_iterator'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/streambuf_iterator.h'
+        FileOffset:      7495
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''unique_ptr'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/unique_ptr.h'
+        FileOffset:      25154
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''unique_ptr'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/unique_ptr.h'
+        FileOffset:      25423
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''unique_ptr<_Tp, _Dp>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/unique_ptr.h'
+        FileOffset:      25671
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''__shared_ptr'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr_base.h'
+        FileOffset:      52079
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''__shared_ptr'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr_base.h'
+        FileOffset:      52282
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''__shared_ptr<_Tp, _Lp>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr_base.h'
+        FileOffset:      53016
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''shared_ptr'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr.h'
+        FileOffset:      19057
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''shared_ptr'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr.h'
+        FileOffset:      19278
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''shared_ptr<_Tp>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/shared_ptr.h'
+        FileOffset:      19983
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''scoped_allocator_adaptor'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/scoped_allocator'
+        FileOffset:      17024
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''optional'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/optional'
+        FileOffset:      36025
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''optional'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/optional'
+        FileOffset:      37900
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''optional<_Tp>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/optional'
+        FileOffset:      38228
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''optional'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/optional'
+        FileOffset:      39834
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''optional<_Tp>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/optional'
+        FileOffset:      40028
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''variant'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/variant'
+        FileOffset:      42944
+        Replacements:    []
+      - Message:         'expanded from macro ''_VARIANT_RELATION_FUNCTION_TEMPLATE'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/variant'
+        FileOffset:      42132
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''complex'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/complex'
+        FileOffset:      13569
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''complex'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/complex'
+        FileOffset:      13764
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''complex<_Tp>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/complex'
+        FileOffset:      13988
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''deque'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_deque.h'
+        FileOffset:      75017
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''list'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_list.h'
+        FileOffset:      68010
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''map'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_map.h'
+        FileOffset:      52383
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''multimap'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_multimap.h'
+        FileOffset:      39803
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''queue'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_queue.h'
+        FileOffset:      12259
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''set'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_set.h'
+        FileOffset:      34476
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''multiset'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_multiset.h'
+        FileOffset:      34073
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''stack'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_stack.h'
+        FileOffset:      11454
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14711
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      9594
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14711
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      10553
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr<_Dom, typename _Dom::value_type>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14711
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      11519
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14711
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      12485
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''_Expr<_Dom, typename _Dom::value_type>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      14711
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_EXPR_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/valarray_after.h'
+        FileOffset:      13451
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''valarray'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      39367
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      37574
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''valarray'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      39367
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      38083
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''valarray<_Tp>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      39367
+        Replacements:    []
+      - Message:         'expanded from macro ''_DEFINE_BINARY_OPERATOR'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/valarray'
+        FileOffset:      38569
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''forward_list'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/forward_list.tcc'
+        FileOffset:      11051
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''std::normal_distribution'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/random.tcc'
+        FileOffset:      59904
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''sub_match'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/regex.h'
+        FileOffset:      36013
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''basic_string'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/regex.h'
+        FileOffset:      39727
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''sub_match'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/regex.h'
+        FileOffset:      42754
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''sub_match<_Bi_iter>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/regex.h'
+        FileOffset:      46446
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''sub_match'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/regex.h'
+        FileOffset:      49257
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''sub_match<_Bi_iter>'' against ''int'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/regex.h'
+        FileOffset:      52772
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''sub_match'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/regex.h'
+        FileOffset:      55607
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''match_results'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/regex.h'
+        FileOffset:      73513
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''unordered_set'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/unordered_set.h'
+        FileOffset:      60318
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''unordered_multiset'' against ''std::vector'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/unordered_set.h'
+        FileOffset:      60879
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0029_331_E2._Deja_Vu.cpp'
+      FileOffset:      2380
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0029_331_E2._Deja_Vu.cpp'
+          Offset:          2376
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0029_331_E2._Deja_Vu.cpp'
+          Offset:          2386
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0029_331_E2._Deja_Vu.cpp'
+      FileOffset:      2433
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0029_331_E2._Deja_Vu.cpp'
+          Offset:          2433
+          Length:          1
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

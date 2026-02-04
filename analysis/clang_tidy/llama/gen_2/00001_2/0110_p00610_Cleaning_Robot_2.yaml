@@ -1,0 +1,542 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-macro-to-enum
+    DiagnosticMessage:
+      Message:         replace macro with enum
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+      FileOffset:      46
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+          Offset:          46
+          Length:          8
+          ReplacementText: "enum {\n"
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+          Offset:          58
+          Length:          0
+          ReplacementText: ' ='
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+          Offset:          64
+          Length:          0
+          ReplacementText: "};\n"
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-macro-to-enum
+    DiagnosticMessage:
+      Message:         'macro ''endl'' defines an integral constant; prefer an enum instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+      FileOffset:      54
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-macro-to-enum
+    DiagnosticMessage:
+      Message:         replace macro with enum
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+      FileOffset:      135
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+          Offset:          135
+          Length:          8
+          ReplacementText: "enum {\n"
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+          Offset:          144
+          Length:          0
+          ReplacementText: ' ='
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+          Offset:          149
+          Length:          0
+          ReplacementText: "};\n"
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-macro-to-enum
+    DiagnosticMessage:
+      Message:         'macro ''N'' defines an integral constant; prefer an enum instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+      FileOffset:      143
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+      FileOffset:      149
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+      FileOffset:      179
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+          Offset:          174
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+          Offset:          198
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-unused-local-non-trivial-variable
+    DiagnosticMessage:
+      Message:         'unused local variable ''s'' of type ''string'' (aka ''basic_string<char>'')'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+      FileOffset:      8280
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''a'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+      FileOffset:      8822
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+          FileOffset:      8822
+          Length:          8
+    Notes:
+      - Message:         'Assuming ''n'' is not equal to 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      478
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+            FileOffset:      478
+            Length:          6
+      - Message:         'Left side of ''&&'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      485
+        Replacements:    []
+      - Message:         'Assuming ''n'' is not equal to 1'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      512
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+            FileOffset:      512
+            Length:          6
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      508
+        Replacements:    []
+      - Message:         'Assuming ''n'' is not equal to 2'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      720
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+            FileOffset:      720
+            Length:          6
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      716
+        Replacements:    []
+      - Message:         'Assuming ''n'' is not equal to 3'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      1224
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+            FileOffset:      1224
+            Length:          6
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      1220
+        Replacements:    []
+      - Message:         'Assuming ''n'' is not equal to 4'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      2412
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+            FileOffset:      2412
+            Length:          6
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      2408
+        Replacements:    []
+      - Message:         'Assuming ''n'' is not equal to 5'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      4259
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+            FileOffset:      4259
+            Length:          6
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      4255
+        Replacements:    []
+      - Message:         'Assuming ''n'' is not equal to 6'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      7157
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+            FileOffset:      7157
+            Length:          6
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      7153
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      8291
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+            FileOffset:      8291
+            Length:          10
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      8287
+        Replacements:    []
+      - Message:         'Assuming ''k'' is >= 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      8330
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+            FileOffset:      8330
+            Length:          5
+      - Message:         'Left side of ''||'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      8330
+        Replacements:    []
+      - Message:         Assuming right operand of bit shift is non-negative but less than 32
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      8345
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+            FileOffset:      8345
+            Length:          16
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      8339
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+            FileOffset:      8339
+            Length:          23
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      8326
+        Replacements:    []
+      - Message:         'Assuming ''i'' is < ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      8480
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+            FileOffset:      8480
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      8464
+        Replacements:    []
+      - Message:         '''j'' is < ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      8522
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+            FileOffset:      8522
+            Length:          1
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      8506
+        Replacements:    []
+      - Message:         'Left side of ''&&'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      8556
+        Replacements:    []
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      8552
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      8614
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+            FileOffset:      8614
+            Length:          7
+      - Message:         '''?'' condition is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      8614
+        Replacements:    []
+      - Message:         '''j'' is < ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      8522
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+            FileOffset:      8522
+            Length:          1
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      8506
+        Replacements:    []
+      - Message:         'Left side of ''&&'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      8556
+        Replacements:    []
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      8552
+        Replacements:    []
+      - Message:         'Left side of ''&&'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      8702
+        Replacements:    []
+      - Message:         'Access of ''a'' at negative byte offset -100'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      8822
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+            FileOffset:      8822
+            Length:          8
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         'Out of bound access to memory preceding ''a'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+      FileOffset:      9449
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+          FileOffset:      9449
+          Length:          8
+    Notes:
+      - Message:         'Assuming ''n'' is not equal to 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      478
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+            FileOffset:      478
+            Length:          6
+      - Message:         'Left side of ''&&'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      485
+        Replacements:    []
+      - Message:         'Assuming ''n'' is not equal to 1'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      512
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+            FileOffset:      512
+            Length:          6
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      508
+        Replacements:    []
+      - Message:         'Assuming ''n'' is not equal to 2'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      720
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+            FileOffset:      720
+            Length:          6
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      716
+        Replacements:    []
+      - Message:         'Assuming ''n'' is not equal to 3'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      1224
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+            FileOffset:      1224
+            Length:          6
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      1220
+        Replacements:    []
+      - Message:         'Assuming ''n'' is not equal to 4'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      2412
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+            FileOffset:      2412
+            Length:          6
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      2408
+        Replacements:    []
+      - Message:         'Assuming ''n'' is not equal to 5'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      4259
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+            FileOffset:      4259
+            Length:          6
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      4255
+        Replacements:    []
+      - Message:         'Assuming ''n'' is not equal to 6'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      7157
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+            FileOffset:      7157
+            Length:          6
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      7153
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      8291
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+            FileOffset:      8291
+            Length:          10
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      8287
+        Replacements:    []
+      - Message:         'Assuming ''k'' is >= 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      8957
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+            FileOffset:      8957
+            Length:          5
+      - Message:         'Left side of ''||'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      8957
+        Replacements:    []
+      - Message:         Assuming right operand of bit shift is non-negative but less than 32
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      8972
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+            FileOffset:      8972
+            Length:          16
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      8966
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+            FileOffset:      8966
+            Length:          23
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      8953
+        Replacements:    []
+      - Message:         'Assuming ''i'' is < ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      9107
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+            FileOffset:      9107
+            Length:          5
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      9091
+        Replacements:    []
+      - Message:         '''j'' is < ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      9149
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+            FileOffset:      9149
+            Length:          1
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      9133
+        Replacements:    []
+      - Message:         'Left side of ''&&'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      9183
+        Replacements:    []
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      9179
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      9241
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+            FileOffset:      9241
+            Length:          7
+      - Message:         '''?'' condition is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      9241
+        Replacements:    []
+      - Message:         '''j'' is < ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      9149
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+            FileOffset:      9149
+            Length:          1
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      9133
+        Replacements:    []
+      - Message:         'Left side of ''&&'' is true'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      9183
+        Replacements:    []
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      9179
+        Replacements:    []
+      - Message:         'Left side of ''&&'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      9329
+        Replacements:    []
+      - Message:         'Access of ''a'' at negative byte offset -100'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+        FileOffset:      9449
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+            FileOffset:      9449
+            Length:          8
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+      FileOffset:      9590
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+          Offset:          9586
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0110_p00610_Cleaning_Robot_2.cpp'
+          Offset:          9596
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

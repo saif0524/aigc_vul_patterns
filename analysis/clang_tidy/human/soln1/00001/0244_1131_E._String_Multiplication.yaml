@@ -1,0 +1,157 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0244_1131_E._String_Multiplication.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0244_1131_E._String_Multiplication.cpp'
+      FileOffset:      33
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0244_1131_E._String_Multiplication.cpp'
+          Offset:          25
+          Length:          7
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0244_1131_E._String_Multiplication.cpp'
+          Offset:          77
+          Length:          0
+          ReplacementText: ' -> int32_t'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0244_1131_E._String_Multiplication.cpp'
+      FileOffset:      407
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0244_1131_E._String_Multiplication.cpp'
+          Offset:          399
+          Length:          7
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0244_1131_E._String_Multiplication.cpp'
+          Offset:          459
+          Length:          0
+          ReplacementText: ' -> int32_t'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-loop-convert
+    DiagnosticMessage:
+      Message:         use range-based for loop instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0244_1131_E._String_Multiplication.cpp'
+      FileOffset:      563
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0244_1131_E._String_Multiplication.cpp'
+          Offset:          567
+          Length:          47
+          ReplacementText: '(char i : strings[n - 1])'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0244_1131_E._String_Multiplication.cpp'
+          Offset:          625
+          Length:          17
+          ReplacementText: i
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-security.ArrayBound
+    DiagnosticMessage:
+      Message:         Out of bound access to memory around the heap area
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0244_1131_E._String_Multiplication.cpp'
+      FileOffset:      587
+      Replacements:    []
+    Notes:
+      - Message:         'Assuming ''i'' is >= ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0244_1131_E._String_Multiplication.cpp'
+        FileOffset:      1545
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0244_1131_E._String_Multiplication.cpp'
+            FileOffset:      1545
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 49
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0244_1131_E._String_Multiplication.cpp'
+        FileOffset:      1525
+        Replacements:    []
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0244_1131_E._String_Multiplication.cpp'
+        FileOffset:      1605
+        Replacements:    []
+      - Message:         'Calling ''get_answer'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0244_1131_E._String_Multiplication.cpp'
+        FileOffset:      1674
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0244_1131_E._String_Multiplication.cpp'
+            FileOffset:      1674
+            Length:          26
+      - Message:         '''n'' is not equal to 1'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0244_1131_E._String_Multiplication.cpp'
+        FileOffset:      468
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0244_1131_E._String_Multiplication.cpp'
+            FileOffset:      468
+            Length:          1
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0244_1131_E._String_Multiplication.cpp'
+        FileOffset:      464
+        Replacements:    []
+      - Message:         'Access of ''class std::basic_string<char>'' element in the heap area at a negative or overflowing index'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0244_1131_E._String_Multiplication.cpp'
+        FileOffset:      587
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0244_1131_E._String_Multiplication.cpp'
+            FileOffset:      587
+            Length:          14
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''size_type'' (aka ''unsigned long'') to signed type ''int32_t'' (aka ''int'') is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0244_1131_E._String_Multiplication.cpp'
+      FileOffset:      790
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-loop-convert
+    DiagnosticMessage:
+      Message:         use range-based for loop instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0244_1131_E._String_Multiplication.cpp'
+      FileOffset:      1013
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0244_1131_E._String_Multiplication.cpp'
+          Offset:          1017
+          Length:          43
+          ReplacementText: '(char j : strings[i])'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0244_1131_E._String_Multiplication.cpp'
+          Offset:          1083
+          Length:          13
+          ReplacementText: j
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0244_1131_E._String_Multiplication.cpp'
+      FileOffset:      1439
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0244_1131_E._String_Multiplication.cpp'
+          Offset:          1435
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0244_1131_E._String_Multiplication.cpp'
+          Offset:          1445
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-auto
+    DiagnosticMessage:
+      Message:         use auto when initializing with new to avoid duplicating the type name
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0244_1131_E._String_Multiplication.cpp'
+      FileOffset:      1480
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0244_1131_E._String_Multiplication.cpp'
+          Offset:          1480
+          Length:          11
+          ReplacementText: auto
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

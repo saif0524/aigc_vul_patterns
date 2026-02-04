@@ -1,0 +1,303 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0215_1109_F._Sasha_and_Algorithm_of_Silence_s_Sounds.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0215_1109_F._Sasha_and_Algorithm_of_Silence_s_Sounds.cpp'
+      FileOffset:      51
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0215_1109_F._Sasha_and_Algorithm_of_Silence_s_Sounds.cpp'
+          Offset:          47
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0215_1109_F._Sasha_and_Algorithm_of_Silence_s_Sounds.cpp'
+          Offset:          57
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0215_1109_F._Sasha_and_Algorithm_of_Silence_s_Sounds.cpp'
+      FileOffset:      104
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0215_1109_F._Sasha_and_Algorithm_of_Silence_s_Sounds.cpp'
+          Offset:          104
+          Length:          1
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no viable overloaded ''='''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0215_1109_F._Sasha_and_Algorithm_of_Silence_s_Sounds.cpp'
+      FileOffset:      427
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0215_1109_F._Sasha_and_Algorithm_of_Silence_s_Sounds.cpp'
+          FileOffset:      411
+          Length:          15
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0215_1109_F._Sasha_and_Algorithm_of_Silence_s_Sounds.cpp'
+          FileOffset:      429
+          Length:          6
+    Notes:
+      - Message:         'candidate function not viable: cannot convert initializer list argument to ''const pair<int, std::pair<int, int>>'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      24352
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+            FileOffset:      24362
+            Length:          131
+      - Message:         'candidate function not viable: cannot convert initializer list argument to ''pair<int, std::pair<int, int>>'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      24587
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+            FileOffset:      24597
+            Length:          121
+      - Message:         'candidate template ignored: couldn''t infer template argument ''_U1'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      25121
+        Replacements:    []
+      - Message:         'candidate template ignored: couldn''t infer template argument ''_U1'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_pair.h'
+        FileOffset:      25388
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no matching member function for call to ''insert'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0215_1109_F._Sasha_and_Algorithm_of_Silence_s_Sounds.cpp'
+      FileOffset:      638
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0215_1109_F._Sasha_and_Algorithm_of_Silence_s_Sounds.cpp'
+          FileOffset:      636
+          Length:          8
+    Notes:
+      - Message:         "candidate function not viable: no known conversion from 'pair<[...], std::pair<int, int>>' to 'const pair<[...], int>' for 1st argument"
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_set.h'
+        FileOffset:      18238
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_set.h'
+            FileOffset:      18245
+            Length:          21
+      - Message:         "candidate function not viable: no known conversion from 'pair<[...], std::pair<int, int>>' to 'pair<[...], int>' for 1st argument"
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_set.h'
+        FileOffset:      18492
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_set.h'
+            FileOffset:      18499
+            Length:          16
+      - Message:         'candidate function not viable: no known conversion from ''value_type'' (aka ''std::pair<int, std::pair<int, int>>'') to ''initializer_list<value_type>'' (aka ''initializer_list<std::pair<int, int>>'') for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_set.h'
+        FileOffset:      20858
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_set.h'
+            FileOffset:      20865
+            Length:          32
+      - Message:         'candidate function not viable: no known conversion from ''value_type'' (aka ''std::pair<int, std::pair<int, int>>'') to ''node_type'' (aka ''_Node_handle<std::pair<int, int>, std::pair<int, int>, allocator<std::_Rb_tree_node<std::pair<int, int>>>>'') for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_set.h'
+        FileOffset:      21324
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_set.h'
+            FileOffset:      21331
+            Length:          16
+      - Message:         'candidate function not viable: requires 2 arguments, but 1 was provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_set.h'
+        FileOffset:      19729
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_set.h'
+            FileOffset:      19736
+            Length:          48
+      - Message:         'candidate function not viable: requires 2 arguments, but 1 was provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_set.h'
+        FileOffset:      19893
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_set.h'
+            FileOffset:      19900
+            Length:          43
+      - Message:         'candidate function not viable: requires 2 arguments, but 1 was provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_set.h'
+        FileOffset:      21474
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_set.h'
+            FileOffset:      21481
+            Length:          39
+      - Message:         'candidate function template not viable: requires 2 arguments, but 1 was provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_set.h'
+        FileOffset:      20436
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_set.h'
+            FileOffset:      20443
+            Length:          45
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no matching member function for call to ''insert'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0215_1109_F._Sasha_and_Algorithm_of_Silence_s_Sounds.cpp'
+      FileOffset:      668
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0215_1109_F._Sasha_and_Algorithm_of_Silence_s_Sounds.cpp'
+          FileOffset:      666
+          Length:          8
+    Notes:
+      - Message:         "candidate function not viable: no known conversion from 'pair<[...], std::pair<int, int>>' to 'const pair<[...], int>' for 1st argument"
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_set.h'
+        FileOffset:      18238
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_set.h'
+            FileOffset:      18245
+            Length:          21
+      - Message:         "candidate function not viable: no known conversion from 'pair<[...], std::pair<int, int>>' to 'pair<[...], int>' for 1st argument"
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_set.h'
+        FileOffset:      18492
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_set.h'
+            FileOffset:      18499
+            Length:          16
+      - Message:         'candidate function not viable: no known conversion from ''value_type'' (aka ''std::pair<int, std::pair<int, int>>'') to ''initializer_list<value_type>'' (aka ''initializer_list<std::pair<int, int>>'') for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_set.h'
+        FileOffset:      20858
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_set.h'
+            FileOffset:      20865
+            Length:          32
+      - Message:         'candidate function not viable: no known conversion from ''value_type'' (aka ''std::pair<int, std::pair<int, int>>'') to ''node_type'' (aka ''_Node_handle<std::pair<int, int>, std::pair<int, int>, allocator<std::_Rb_tree_node<std::pair<int, int>>>>'') for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_set.h'
+        FileOffset:      21324
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_set.h'
+            FileOffset:      21331
+            Length:          16
+      - Message:         'candidate function not viable: requires 2 arguments, but 1 was provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_set.h'
+        FileOffset:      19729
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_set.h'
+            FileOffset:      19736
+            Length:          48
+      - Message:         'candidate function not viable: requires 2 arguments, but 1 was provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_set.h'
+        FileOffset:      19893
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_set.h'
+            FileOffset:      19900
+            Length:          43
+      - Message:         'candidate function not viable: requires 2 arguments, but 1 was provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_set.h'
+        FileOffset:      21474
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_set.h'
+            FileOffset:      21481
+            Length:          39
+      - Message:         'candidate function template not viable: requires 2 arguments, but 1 was provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_set.h'
+        FileOffset:      20436
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_set.h'
+            FileOffset:      20443
+            Length:          45
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no matching member function for call to ''push'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0215_1109_F._Sasha_and_Algorithm_of_Silence_s_Sounds.cpp'
+      FileOffset:      837
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0215_1109_F._Sasha_and_Algorithm_of_Silence_s_Sounds.cpp'
+          FileOffset:      835
+          Length:          6
+    Notes:
+      - Message:         "candidate function not viable: no known conversion from 'pair<[...], std::pair<int, int>>' to 'const pair<[...], int>' for 1st argument"
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_queue.h'
+        FileOffset:      9359
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_queue.h'
+            FileOffset:      9364
+            Length:          21
+      - Message:         "candidate function not viable: no known conversion from 'pair<[...], std::pair<int, int>>' to 'pair<[...], int>' for 1st argument"
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_queue.h'
+        FileOffset:      9460
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_queue.h'
+            FileOffset:      9465
+            Length:          16
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no viable overloaded operator[] for type ''value_type'' (aka ''std::vector<bool>'')'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0215_1109_F._Sasha_and_Algorithm_of_Silence_s_Sounds.cpp'
+      FileOffset:      882
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0215_1109_F._Sasha_and_Algorithm_of_Silence_s_Sounds.cpp'
+          FileOffset:      863
+          Length:          19
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0215_1109_F._Sasha_and_Algorithm_of_Silence_s_Sounds.cpp'
+          FileOffset:      883
+          Length:          13
+    Notes:
+      - Message:         'candidate function not viable: no known conversion from ''std::pair<int, int>'' to ''size_type'' (aka ''unsigned long'') for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_bvector.h'
+        FileOffset:      28384
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_bvector.h'
+            FileOffset:      28395
+            Length:          13
+      - Message:         'candidate function not viable: no known conversion from ''std::pair<int, int>'' to ''size_type'' (aka ''unsigned long'') for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_bvector.h'
+        FileOffset:      28516
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_bvector.h'
+            FileOffset:      28527
+            Length:          13
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-emplace
+    DiagnosticMessage:
+      Message:         use emplace instead of push
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0215_1109_F._Sasha_and_Algorithm_of_Silence_s_Sounds.cpp'
+      FileOffset:      1494
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0215_1109_F._Sasha_and_Algorithm_of_Silence_s_Sounds.cpp'
+          Offset:          1494
+          Length:          6
+          ReplacementText: 'emplace('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0215_1109_F._Sasha_and_Algorithm_of_Silence_s_Sounds.cpp'
+          Offset:          1506
+          Length:          1
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

@@ -1,0 +1,180 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0174_819_D._Mister_B_and_Astronomers.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0174_819_D._Mister_B_and_Astronomers.cpp'
+      FileOffset:      142
+      Replacements:    []
+    Notes:
+      - Message:         'expanded from macro ''ll'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0174_819_D._Mister_B_and_Astronomers.cpp'
+        FileOffset:      59
+        Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0174_819_D._Mister_B_and_Astronomers.cpp'
+      FileOffset:      173
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0174_819_D._Mister_B_and_Astronomers.cpp'
+          Offset:          170
+          Length:          2
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0174_819_D._Mister_B_and_Astronomers.cpp'
+          Offset:          188
+          Length:          0
+          ReplacementText: ' -> ll'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0174_819_D._Mister_B_and_Astronomers.cpp'
+      FileOffset:      232
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0174_819_D._Mister_B_and_Astronomers.cpp'
+          Offset:          228
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0174_819_D._Mister_B_and_Astronomers.cpp'
+          Offset:          238
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to signed type ''value_type'' (aka ''int'') is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0174_819_D._Mister_B_and_Astronomers.cpp'
+      FileOffset:      534
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this lambda
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0174_819_D._Mister_B_and_Astronomers.cpp'
+      FileOffset:      782
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0174_819_D._Mister_B_and_Astronomers.cpp'
+          Offset:          820
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no matching function for call to ''max'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0174_819_D._Mister_B_and_Astronomers.cpp'
+      FileOffset:      912
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0174_819_D._Mister_B_and_Astronomers.cpp'
+          FileOffset:      912
+          Length:          3
+    Notes:
+      - Message:         'candidate template ignored: deduced conflicting types for parameter ''_Tp'' (''long long'' vs. ''value_type'' (aka ''int''))'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/algorithmfwd.h'
+        FileOffset:      10233
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''initializer_list<_Tp>'' against ''long long'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      212973
+        Replacements:    []
+      - Message:         'candidate function template not viable: requires single argument ''__l'', but 2 arguments were provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      212669
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+            FileOffset:      212673
+            Length:          25
+      - Message:         'candidate function template not viable: requires 3 arguments, but 2 were provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/algorithmfwd.h'
+        FileOffset:      10351
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/algorithmfwd.h'
+            FileOffset:      10355
+            Length:          32
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no matching function for call to ''max'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0174_819_D._Mister_B_and_Astronomers.cpp'
+      FileOffset:      1016
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0174_819_D._Mister_B_and_Astronomers.cpp'
+          FileOffset:      1016
+          Length:          3
+    Notes:
+      - Message:         'candidate template ignored: deduced conflicting types for parameter ''_Tp'' (''long long'' vs. ''int'')'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/algorithmfwd.h'
+        FileOffset:      10233
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''initializer_list<_Tp>'' against ''long long'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      212973
+        Replacements:    []
+      - Message:         'candidate function template not viable: requires single argument ''__l'', but 2 arguments were provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      212669
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+            FileOffset:      212673
+            Length:          25
+      - Message:         'candidate function template not viable: requires 3 arguments, but 2 were provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/algorithmfwd.h'
+        FileOffset:      10351
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/algorithmfwd.h'
+            FileOffset:      10355
+            Length:          32
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no matching function for call to ''max'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0174_819_D._Mister_B_and_Astronomers.cpp'
+      FileOffset:      1110
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0174_819_D._Mister_B_and_Astronomers.cpp'
+          FileOffset:      1110
+          Length:          3
+    Notes:
+      - Message:         'candidate template ignored: deduced conflicting types for parameter ''_Tp'' (''long long'' vs. ''value_type'' (aka ''int''))'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/algorithmfwd.h'
+        FileOffset:      10233
+        Replacements:    []
+      - Message:         'candidate template ignored: could not match ''initializer_list<_Tp>'' against ''long long'''
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      212973
+        Replacements:    []
+      - Message:         'candidate function template not viable: requires single argument ''__l'', but 2 arguments were provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+        FileOffset:      212669
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_algo.h'
+            FileOffset:      212673
+            Length:          25
+      - Message:         'candidate function template not viable: requires 3 arguments, but 2 were provided'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/algorithmfwd.h'
+        FileOffset:      10351
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/algorithmfwd.h'
+            FileOffset:      10355
+            Length:          32
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

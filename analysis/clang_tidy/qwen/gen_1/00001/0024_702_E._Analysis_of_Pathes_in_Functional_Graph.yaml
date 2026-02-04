@@ -1,0 +1,353 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-using
+    DiagnosticMessage:
+      Message:         'use ''using'' instead of ''typedef'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+      FileOffset:      47
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+          Offset:          47
+          Length:          20
+          ReplacementText: 'using ll = long long'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+      FileOffset:      125
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+          Offset:          120
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+          Offset:          146
+          Length:          0
+          ReplacementText: ' -> Node'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+      FileOffset:      249
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+          Offset:          244
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+          Offset:          270
+          Length:          0
+          ReplacementText: ' -> Node'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+      FileOffset:      411
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'result of multiplication in type ''int'' is used as a pointer offset after an implicit widening conversion to type ''ptrdiff_t'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+      FileOffset:      702
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+        FileOffset:      704
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+            Offset:          25
+            Length:          0
+            ReplacementText: "\n#include <cstddef>\n"
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+            Offset:          704
+            Length:          0
+            ReplacementText: 'static_cast<ptrdiff_t>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+            Offset:          707
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+            FileOffset:      704
+            Length:          3
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+        FileOffset:      704
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+            Offset:          704
+            Length:          0
+            ReplacementText: 'static_cast<ptrdiff_t>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+            Offset:          707
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+            FileOffset:      704
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+      FileOffset:      844
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+          Offset:          839
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+          Offset:          886
+          Length:          0
+          ReplacementText: ' -> Node'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+      FileOffset:      1163
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+          Offset:          1158
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+          Offset:          1182
+          Length:          0
+          ReplacementText: ' -> Node'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-implicit-widening-of-multiplication-result
+    DiagnosticMessage:
+      Message:         'result of multiplication in type ''int'' is used as a pointer offset after an implicit widening conversion to type ''ptrdiff_t'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+      FileOffset:      1575
+      Replacements:    []
+    Notes:
+      - Message:         make conversion explicit to silence this warning
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+        FileOffset:      1577
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+            Offset:          1577
+            Length:          0
+            ReplacementText: 'static_cast<ptrdiff_t>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+            Offset:          1580
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+            FileOffset:      1577
+            Length:          3
+      - Message:         perform multiplication in a wider type
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+        FileOffset:      1577
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+            Offset:          1577
+            Length:          0
+            ReplacementText: 'static_cast<ptrdiff_t>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+            Offset:          1580
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+            FileOffset:      1577
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+      FileOffset:      1730
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+      FileOffset:      1809
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+      FileOffset:      1849
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-loop-convert
+    DiagnosticMessage:
+      Message:         use range-based for loop instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+      FileOffset:      1900
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+          Offset:          1904
+          Length:          26
+          ReplacementText: '(int & vi : vis)'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+          Offset:          1931
+          Length:          6
+          ReplacementText: vi
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''preprocess'' of similar type (''int'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+      FileOffset:      2300
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+          FileOffset:      2300
+          Length:          12
+    Notes:
+      - Message:         'the first parameter in the range is ''n'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+        FileOffset:      2304
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+            FileOffset:      2304
+            Length:          1
+      - Message:         'the last parameter in the range is ''v'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+        FileOffset:      2311
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+            FileOffset:      2311
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''value_type'' (aka ''long long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+      FileOffset:      2338
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  'clang-diagnostic-c++11-narrowing'
+    DiagnosticMessage:
+      Message:         'non-constant-expression cannot be narrowed from type ''value_type'' (aka ''long long'') to ''int'' in initializer list'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+      FileOffset:      2338
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+          FileOffset:      2338
+          Length:          4
+    Notes:
+      - Message:         insert an explicit cast to silence this issue
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+        FileOffset:      2338
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+            Offset:          2338
+            Length:          0
+            ReplacementText: 'static_cast<int>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+            Offset:          2342
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+            FileOffset:      2338
+            Length:          4
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''ll'' (aka ''long long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+      FileOffset:      2976
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''ll'' (aka ''long long'') to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+      FileOffset:      3232
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  'clang-diagnostic-c++11-narrowing'
+    DiagnosticMessage:
+      Message:         'non-constant-expression cannot be narrowed from type ''ll'' (aka ''long long'') to ''int'' in initializer list'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+      FileOffset:      3232
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+          FileOffset:      3232
+          Length:          1
+    Notes:
+      - Message:         insert an explicit cast to silence this issue
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+        FileOffset:      3232
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+            Offset:          3232
+            Length:          0
+            ReplacementText: 'static_cast<int>('
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+            Offset:          3233
+            Length:          0
+            ReplacementText: ')'
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+            FileOffset:      3232
+            Length:          1
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+      FileOffset:      3259
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+          Offset:          3255
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+          Offset:          3265
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+      FileOffset:      3312
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0024_702_E._Analysis_of_Pathes_in_Functional_Graph.cpp'
+          Offset:          3312
+          Length:          1
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

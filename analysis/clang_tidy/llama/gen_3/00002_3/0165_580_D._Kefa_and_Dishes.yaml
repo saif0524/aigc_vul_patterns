@@ -1,0 +1,81 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0165_580_D._Kefa_and_Dishes.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0165_580_D._Kefa_and_Dishes.cpp'
+      FileOffset:      52
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0165_580_D._Kefa_and_Dishes.cpp'
+          Offset:          48
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0165_580_D._Kefa_and_Dishes.cpp'
+          Offset:          58
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no viable conversion from ''(lambda at /home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0165_580_D._Kefa_and_Dishes.cpp:24:40)'' to ''function<long long (int, int)>'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0165_580_D._Kefa_and_Dishes.cpp'
+      FileOffset:      519
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0165_580_D._Kefa_and_Dishes.cpp'
+          FileOffset:      524
+          Length:          489
+    Notes:
+      - Message:         'candidate constructor not viable: no known conversion from ''(lambda at /home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0165_580_D._Kefa_and_Dishes.cpp:24:40)'' to ''nullptr_t'' (aka ''std::nullptr_t'') for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/std_function.h'
+        FileOffset:      10457
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/std_function.h'
+            FileOffset:      10466
+            Length:          9
+      - Message:         'candidate constructor not viable: no known conversion from ''(lambda at /home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0165_580_D._Kefa_and_Dishes.cpp:24:40)'' to ''const function<long long (int, int)> &'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/std_function.h'
+        FileOffset:      10814
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/std_function.h'
+            FileOffset:      10823
+            Length:          19
+      - Message:         'candidate constructor not viable: no known conversion from ''(lambda at /home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0165_580_D._Kefa_and_Dishes.cpp:24:40)'' to ''function<long long (int, int)> &&'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/std_function.h'
+        FileOffset:      11311
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/std_function.h'
+            FileOffset:      11320
+            Length:          14
+      - Message:         'candidate template ignored: requirement ''_Callable<(lambda at /home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0165_580_D._Kefa_and_Dishes.cpp:24:40), (lambda at /home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0165_580_D._Kefa_and_Dishes.cpp:24:40), std::__invoke_result<(lambda at /home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0165_580_D._Kefa_and_Dishes.cpp:24:40) &, int, int>>::value'' was not satisfied [with _Functor = (lambda at /home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0165_580_D._Kefa_and_Dishes.cpp:24:40)]'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/std_function.h'
+        FileOffset:      12560
+        Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this lambda
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0165_580_D._Kefa_and_Dishes.cpp'
+      FileOffset:      524
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0165_580_D._Kefa_and_Dishes.cpp'
+          Offset:          547
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'return type ''value_type'' (aka ''long long'') must match previous return type ''int'' when lambda expression has unspecified explicit return type'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_3/00002_3/0165_580_D._Kefa_and_Dishes.cpp'
+      FileOffset:      637
+      Replacements:    []
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

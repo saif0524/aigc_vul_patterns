@@ -1,0 +1,1444 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      205
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          203
+          Length:          1
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          220
+          Length:          0
+          ReplacementText: ' -> T'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''Rational'' of similar type (''long long'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      282
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          FileOffset:      282
+          Length:          36
+    Notes:
+      - Message:         'the first parameter in the range is ''num'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      292
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      292
+            Length:          3
+      - Message:         'the last parameter in the range is ''den'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      311
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      311
+            Length:          3
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      489
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          480
+          Length:          8
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          527
+          Length:          0
+          ReplacementText: ' -> Rational'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-return-braced-init-list
+    DiagnosticMessage:
+      Message:         'avoid repeating the return type from the declaration; use a braced initializer list instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      581
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          581
+          Length:          9
+          ReplacementText: '{'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          642
+          Length:          1
+          ReplacementText: '}'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-core.DivideZero
+    DiagnosticMessage:
+      Message:         Division by zero
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      599
+      Replacements:    []
+    Notes:
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      5160
+        Replacements:    []
+      - Message:         'Assuming ''N'' is not equal to 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      5197
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      5197
+            Length:          4
+      - Message:         'Left side of ''&&'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      5202
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''N'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      5300
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      5300
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 231
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      5283
+        Replacements:    []
+      - Message:         'Assuming ''i'' is >= ''M'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      5517
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      5517
+            Length:          5
+      - Message:         Loop condition is false. Execution continues on line 238
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      5500
+        Replacements:    []
+      - Message:         '''i'' is >= ''N'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      5885
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      5885
+            Length:          1
+      - Message:         Loop condition is false. Execution continues on line 261
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      5868
+        Replacements:    []
+      - Message:         Assuming the condition is true
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      6292
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      6292
+            Length:          15
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      6272
+        Replacements:    []
+      - Message:         Assuming the condition is false
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      6365
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      6365
+            Length:          15
+      - Message:         Loop condition is false. Execution continues on line 274
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      6345
+        Replacements:    []
+      - Message:         'Calling ''Vec2::operator-'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      6739
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      6739
+            Length:          30
+      - Message:         'Calling ''Rational::operator-'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      1784
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      1784
+            Length:          7
+      - Message:         'Calling default constructor for ''Rational'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      709
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      709
+            Length:          36
+      - Message:         'Assuming field ''n'' is 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      348
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      348
+            Length:          1
+      - Message:         'Left side of ''&&'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      350
+        Replacements:    []
+      - Message:         'Field ''n'' is 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      425
+        Replacements:    []
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      420
+        Replacements:    []
+      - Message:         'Assuming field ''d'' is 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      455
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      455
+            Length:          1
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      450
+        Replacements:    []
+      - Message:         'Returning from default constructor for ''Rational'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      709
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      709
+            Length:          36
+      - Message:         'Returning from ''Rational::operator-'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      1784
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      1784
+            Length:          7
+      - Message:         'Calling constructor for ''Vec2<Rational>'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      1770
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      1770
+            Length:          22
+      - Message:         'Value assigned to ''d.y.d'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      1573
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      1573
+            Length:          5
+      - Message:         'Returning from constructor for ''Vec2<Rational>'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      1770
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      1770
+            Length:          22
+      - Message:         'Returning from ''Vec2::operator-'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      6739
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      6739
+            Length:          30
+      - Message:         Loop condition is true.  Entering loop body
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      6773
+        Replacements:    []
+      - Message:         'Calling ''Vec2::operator-'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      6818
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      6818
+            Length:          24
+      - Message:         'Calling ''Rational::operator-'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      1784
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      1784
+            Length:          7
+      - Message:         'Calling default constructor for ''Rational'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      709
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      709
+            Length:          36
+      - Message:         'Assuming field ''n'' is 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      348
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      348
+            Length:          1
+      - Message:         'Left side of ''&&'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      350
+        Replacements:    []
+      - Message:         'Field ''n'' is 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      425
+        Replacements:    []
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      420
+        Replacements:    []
+      - Message:         'Assuming field ''d'' is 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      455
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      455
+            Length:          1
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      450
+        Replacements:    []
+      - Message:         'Returning from default constructor for ''Rational'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      709
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      709
+            Length:          36
+      - Message:         'Returning from ''Rational::operator-'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      1784
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      1784
+            Length:          7
+      - Message:         'Calling constructor for ''Vec2<Rational>'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      1770
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      1770
+            Length:          22
+      - Message:         'Value assigned to ''ds.y.d'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      1573
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      1573
+            Length:          5
+      - Message:         'Returning from constructor for ''Vec2<Rational>'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      1770
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      1770
+            Length:          22
+      - Message:         'Returning from ''Vec2::operator-'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      6818
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      6818
+            Length:          24
+      - Message:         Taking true branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      6847
+        Replacements:    []
+      - Message:         'Calling ''Vec2::dot'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      6890
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      6890
+            Length:          9
+      - Message:         'Calling ''Rational::operator*'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      1909
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      1909
+            Length:          7
+      - Message:         'Passing the value 0 via 2nd parameter ''den'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      826
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      826
+            Length:          5
+      - Message:         'Calling default constructor for ''Rational'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      819
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      819
+            Length:          14
+      - Message:         'The value 0 is assigned to ''r1.d'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      331
+        Replacements:    []
+      - Message:         'Field ''n'' is 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      348
+        Replacements:    []
+      - Message:         'Left side of ''&&'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      350
+        Replacements:    []
+      - Message:         'Field ''n'' is 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      425
+        Replacements:    []
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      420
+        Replacements:    []
+      - Message:         'Field ''d'' is 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      455
+        Replacements:    []
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      450
+        Replacements:    []
+      - Message:         'Returning from default constructor for ''Rational'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      819
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      819
+            Length:          14
+      - Message:         'Passing the value 0 via 2nd parameter ''den'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      846
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      846
+            Length:          1
+      - Message:         'Calling default constructor for ''Rational'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      835
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      835
+            Length:          14
+      - Message:         'The value 0 is assigned to ''r2.d'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      331
+        Replacements:    []
+      - Message:         'Field ''n'' is 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      348
+        Replacements:    []
+      - Message:         'Left side of ''&&'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      350
+        Replacements:    []
+      - Message:         'Field ''n'' is 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      425
+        Replacements:    []
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      420
+        Replacements:    []
+      - Message:         'Field ''d'' is 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      455
+        Replacements:    []
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      450
+        Replacements:    []
+      - Message:         'Returning from default constructor for ''Rational'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      835
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      835
+            Length:          14
+      - Message:         'Passing the value 0 via 2nd parameter ''den'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      881
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      881
+            Length:          9
+      - Message:         'Calling default constructor for ''Rational'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      860
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      860
+            Length:          32
+      - Message:         'The value 0 is assigned to field ''d'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      331
+        Replacements:    []
+      - Message:         'Field ''n'' is 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      348
+        Replacements:    []
+      - Message:         'Left side of ''&&'' is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      350
+        Replacements:    []
+      - Message:         'Field ''n'' is 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      425
+        Replacements:    []
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      420
+        Replacements:    []
+      - Message:         'Field ''d'' is 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      455
+        Replacements:    []
+      - Message:         Taking false branch
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      450
+        Replacements:    []
+      - Message:         'Returning from default constructor for ''Rational'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      860
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      860
+            Length:          32
+      - Message:         'Returning from ''Rational::operator*'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      1909
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      1909
+            Length:          7
+      - Message:         'Calling ''Rational::operator+'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      1899
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      1899
+            Length:          17
+      - Message:         'Passing the value 0 via 2nd parameter ''y'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      563
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      563
+            Length:          5
+      - Message:         'Calling ''GCD<long long>'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      555
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      555
+            Length:          15
+      - Message:         '''x'' is 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      230
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      230
+            Length:          1
+      - Message:         '''?'' condition is false'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      230
+        Replacements:    []
+      - Message:         Returning zero
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      223
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      223
+            Length:          25
+      - Message:         'Returning from ''GCD<long long>'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      555
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      555
+            Length:          15
+      - Message:         '''gcd'' initialized to 0'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      539
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      539
+            Length:          13
+      - Message:         Division by zero
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      599
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      594
+            Length:          9
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      658
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          649
+          Length:          8
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          696
+          Length:          0
+          ReplacementText: ' -> Rational'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-return-braced-init-list
+    DiagnosticMessage:
+      Message:         'avoid repeating the return type from the declaration; use a braced initializer list instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      709
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          709
+          Length:          9
+          ReplacementText: '{'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          744
+          Length:          1
+          ReplacementText: '}'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      760
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          751
+          Length:          8
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          798
+          Length:          0
+          ReplacementText: ' -> Rational'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-return-braced-init-list
+    DiagnosticMessage:
+      Message:         'avoid repeating the return type from the declaration; use a braced initializer list instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      860
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          860
+          Length:          9
+          ReplacementText: '{'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          891
+          Length:          1
+          ReplacementText: '}'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      907
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          898
+          Length:          8
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          945
+          Length:          0
+          ReplacementText: ' -> Rational'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      1006
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          1001
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          1044
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      1102
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          1097
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          1141
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      1205
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          1200
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          1244
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      1293
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          1288
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          1332
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nodiscard
+    DiagnosticMessage:
+      Message:         'function ''abs'' should be marked [[nodiscard]]'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      1372
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          1372
+          Length:          0
+          ReplacementText: '[[nodiscard]] '
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      1381
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          1372
+          Length:          8
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          1392
+          Length:          0
+          ReplacementText: ' -> Rational'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-return-braced-init-list
+    DiagnosticMessage:
+      Message:         'avoid repeating the return type from the declaration; use a braced initializer list instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      1402
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          1402
+          Length:          9
+          ReplacementText: '{'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          1428
+          Length:          1
+          ReplacementText: '}'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-absolute-value
+    DiagnosticMessage:
+      Message:         'absolute value function ''abs'' given an argument of type ''const long long'' but has parameter of type ''int'' which may cause truncation of value'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      1411
+      Replacements:    []
+    Notes:
+      - Message:         'use function ''std::abs'' instead'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      1411
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            Offset:          1411
+            Length:          5
+            ReplacementText: 'std::abs'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      1417
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-absolute-value
+    DiagnosticMessage:
+      Message:         'absolute value function ''abs'' given an argument of type ''const long long'' but has parameter of type ''int'' which may cause truncation of value'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      1420
+      Replacements:    []
+    Notes:
+      - Message:         'use function ''std::abs'' instead'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      1420
+        Replacements:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            Offset:          1420
+            Length:          5
+            ReplacementText: 'std::abs'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to signed type ''int'' is implementation-defined'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      1426
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nodiscard
+    DiagnosticMessage:
+      Message:         'function ''to_f'' should be marked [[nodiscard]]'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      1435
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          1435
+          Length:          0
+          ReplacementText: '[[nodiscard]] '
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      1442
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          1435
+          Length:          6
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          1454
+          Length:          0
+          ReplacementText: ' -> double'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to ''double'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      1468
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-narrowing-conversions
+    DiagnosticMessage:
+      Message:         'narrowing conversion from ''long long'' to ''double'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      1470
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nodiscard
+    DiagnosticMessage:
+      Message:         'function ''length'' should be marked [[nodiscard]]'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      1587
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          1587
+          Length:          0
+          ReplacementText: '[[nodiscard]] '
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      1594
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          1587
+          Length:          6
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          1608
+          Length:          0
+          ReplacementText: ' -> double'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      1647
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          1642
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          1681
+          Length:          0
+          ReplacementText: ' -> Vec2'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      1726
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          1721
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          1760
+          Length:          0
+          ReplacementText: ' -> Vec2'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      1805
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          1800
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          1827
+          Length:          0
+          ReplacementText: ' -> Vec2'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nodiscard
+    DiagnosticMessage:
+      Message:         'function ''dot'' should be marked [[nodiscard]]'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      1859
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          1859
+          Length:          0
+          ReplacementText: '[[nodiscard]] '
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      1861
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          1859
+          Length:          1
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          1889
+          Length:          0
+          ReplacementText: ' -> T'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nodiscard
+    DiagnosticMessage:
+      Message:         'function ''cross'' should be marked [[nodiscard]]'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      1924
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          1924
+          Length:          0
+          ReplacementText: '[[nodiscard]] '
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      1926
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          1924
+          Length:          1
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          1956
+          Length:          0
+          ReplacementText: ' -> T'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      1994
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          1989
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          2028
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      2102
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          2097
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          2137
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      2201
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          2196
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          2236
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-using
+    DiagnosticMessage:
+      Message:         'use ''using'' instead of ''typedef'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      2298
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          2298
+          Length:          25
+          ReplacementText: 'using VecD = Vec2<double>'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-using
+    DiagnosticMessage:
+      Message:         'use ''using'' instead of ''typedef'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      2325
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          2325
+          Length:          27
+          ReplacementText: 'using VecR = Vec2<Rational>'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      2375
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          2373
+          Length:          1
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          2434
+          Length:          0
+          ReplacementText: ' -> T'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-inefficient-vector-operation
+    DiagnosticMessage:
+      Message:         '''push_back'' is called inside a loop; consider pre-allocating the container capacity before the loop'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      2651
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          2601
+          Length:          0
+          ReplacementText: "P.reserve((int)point.size());\n"
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      3310
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          3305
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          3391
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''IsIntSegments'' of similar type (''const pair<Vec2<T>, Vec2<T>> &'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      3325
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          FileOffset:      3325
+          Length:          64
+    Notes:
+      - Message:         'the first parameter in the range is ''A'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      3355
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      3355
+            Length:          1
+      - Message:         'the last parameter in the range is ''B'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      3388
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      3388
+            Length:          1
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      3612
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          3607
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          3682
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      3961
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          3954
+          Length:          6
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          4044
+          Length:          0
+          ReplacementText: ' -> double'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-loop-convert
+    DiagnosticMessage:
+      Message:         use range-based for loop instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      4076
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          4080
+          Length:          40
+          ReplacementText: '(const auto & i : shadow)'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          4149
+          Length:          9
+          ReplacementText: i
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          4227
+          Length:          9
+          ReplacementText: i
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          4241
+          Length:          9
+          ReplacementText: i
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          4294
+          Length:          9
+          ReplacementText: i
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          4311
+          Length:          9
+          ReplacementText: i
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          4353
+          Length:          9
+          ReplacementText: i
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          4367
+          Length:          9
+          ReplacementText: i
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          4418
+          Length:          9
+          ReplacementText: i
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          4432
+          Length:          9
+          ReplacementText: i
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-analyzer-deadcode.DeadStores
+    DiagnosticMessage:
+      Message:         'Value stored to ''d'' during its initialization is never read'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      4290
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          FileOffset:      4290
+          Length:          1
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          FileOffset:      4294
+          Length:          29
+    Notes:
+      - Message:         'Value stored to ''d'' during its initialization is never read'
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+        FileOffset:      4290
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      4290
+            Length:          1
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+            FileOffset:      4294
+            Length:          29
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-loop-convert
+    DiagnosticMessage:
+      Message:         use range-based for loop instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      4751
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          4755
+          Length:          40
+          ReplacementText: '(const auto & j : shadow)'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          4834
+          Length:          9
+          ReplacementText: j
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      5002
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          4997
+          Length:          4
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          5036
+          Length:          0
+          ReplacementText: ' -> bool'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-default-member-init
+    DiagnosticMessage:
+      Message:         'use default member initializer for ''sum'''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      5126
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          4984
+          Length:          9
+          ReplacementText: ''
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          5129
+          Length:          0
+          ReplacementText: '{0.0}'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      5139
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          5135
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          5145
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-bool-literals
+    DiagnosticMessage:
+      Message:         converting integer literal to bool, use bool literal instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      5168
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          5168
+          Length:          1
+          ReplacementText: 'true'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-emplace
+    DiagnosticMessage:
+      Message:         use emplace_back instead of push_back
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      5435
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          5435
+          Length:          16
+          ReplacementText: 'emplace_back('
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          5454
+          Length:          1
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-emplace
+    DiagnosticMessage:
+      Message:         use emplace_back instead of push_back
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      5589
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          5589
+          Length:          20
+          ReplacementText: emplace_back
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          5636
+          Length:          2
+          ReplacementText: ''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      5786
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-loop-convert
+    DiagnosticMessage:
+      Message:         use range-based for loop instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      6158
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          6162
+          Length:          38
+          ReplacementText: '(unsigned long j : hull)'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          6232
+          Length:          7
+          ReplacementText: j
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-loop-convert
+    DiagnosticMessage:
+      Message:         use range-based for loop instead
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+      FileOffset:      6773
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          6777
+          Length:          25
+          ReplacementText: '(const auto & term : terms)'
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0075_p01222_Walk_under_a_Scorching_Sun.cpp'
+          Offset:          6818
+          Length:          8
+          ReplacementText: term
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

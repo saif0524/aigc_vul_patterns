@@ -1,0 +1,112 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00002_2/0104_p01488_TransferTrain.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00002_2/0104_p01488_TransferTrain.cpp'
+      FileOffset:      119
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00002_2/0104_p01488_TransferTrain.cpp'
+          Offset:          115
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00002_2/0104_p01488_TransferTrain.cpp'
+          Offset:          125
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-unnecessary-copy-initialization
+    DiagnosticMessage:
+      Message:         'the variable ''start_city'' is copy-constructed from a const reference but is only used as const reference; consider making it a const reference'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00002_2/0104_p01488_TransferTrain.cpp'
+      FileOffset:      988
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00002_2/0104_p01488_TransferTrain.cpp'
+          Offset:          981
+          Length:          0
+          ReplacementText: 'const '
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00002_2/0104_p01488_TransferTrain.cpp'
+          Offset:          987
+          Length:          0
+          ReplacementText: '&'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-unnecessary-copy-initialization
+    DiagnosticMessage:
+      Message:         'the variable ''end_city'' is copy-constructed from a const reference but is only used as const reference; consider making it a const reference'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00002_2/0104_p01488_TransferTrain.cpp'
+      FileOffset:      1031
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00002_2/0104_p01488_TransferTrain.cpp'
+          Offset:          1024
+          Length:          0
+          ReplacementText: 'const '
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00002_2/0104_p01488_TransferTrain.cpp'
+          Offset:          1030
+          Length:          0
+          ReplacementText: '&'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-unnecessary-copy-initialization
+    DiagnosticMessage:
+      Message:         'the variable ''city1'' is copy-constructed from a const reference but is only used as const reference; consider making it a const reference'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00002_2/0104_p01488_TransferTrain.cpp'
+      FileOffset:      1373
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00002_2/0104_p01488_TransferTrain.cpp'
+          Offset:          1366
+          Length:          0
+          ReplacementText: 'const '
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00002_2/0104_p01488_TransferTrain.cpp'
+          Offset:          1372
+          Length:          0
+          ReplacementText: '&'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-unnecessary-copy-initialization
+    DiagnosticMessage:
+      Message:         'the variable ''city2'' is copy-constructed from a const reference but is only used as const reference; consider making it a const reference'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00002_2/0104_p01488_TransferTrain.cpp'
+      FileOffset:      1411
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00002_2/0104_p01488_TransferTrain.cpp'
+          Offset:          1404
+          Length:          0
+          ReplacementText: 'const '
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00002_2/0104_p01488_TransferTrain.cpp'
+          Offset:          1410
+          Length:          0
+          ReplacementText: '&'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-unnecessary-copy-initialization
+    DiagnosticMessage:
+      Message:         'the variable ''city3'' is copy-constructed from a const reference but is only used as const reference; consider making it a const reference'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00002_2/0104_p01488_TransferTrain.cpp'
+      FileOffset:      1449
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00002_2/0104_p01488_TransferTrain.cpp'
+          Offset:          1442
+          Length:          0
+          ReplacementText: 'const '
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00002_2/0104_p01488_TransferTrain.cpp'
+          Offset:          1448
+          Length:          0
+          ReplacementText: '&'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  performance-avoid-endl
+    DiagnosticMessage:
+      Message:         'do not use ''endl'' with streams; use ''\n'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00002_2/0104_p01488_TransferTrain.cpp'
+      FileOffset:      1975
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00002_2/0104_p01488_TransferTrain.cpp'
+          Offset:          1975
+          Length:          4
+          ReplacementText: '''\n'''
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...
