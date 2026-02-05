@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;p.size()&gt;1&apos; is always true" verbose="Condition &apos;p.size()&gt;1&apos; is always true" cwe="571" file0="derived/cpp/human/soln1/00002/0142_1427_D._Unshuffling_a_Deck.cpp">
+            <location file="derived/cpp/human/soln1/00002/0142_1427_D._Unshuffling_a_Deck.cpp" line="87" column="22" info="Condition &apos;p.size()&gt;1&apos; is always true"/>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;s&apos; should be passed by const reference." verbose="Parameter &apos;s&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln1/00002/0142_1427_D._Unshuffling_a_Deck.cpp">
+            <location file="derived/cpp/human/soln1/00002/0142_1427_D._Unshuffling_a_Deck.cpp" line="12" column="42" info="Function parameter &apos;s&apos; should be passed by const reference."/>
+            <symbol>s</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;par&apos; should be passed by const reference." verbose="Parameter &apos;par&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln1/00002/0142_1427_D._Unshuffling_a_Deck.cpp">
+            <location file="derived/cpp/human/soln1/00002/0142_1427_D._Unshuffling_a_Deck.cpp" line="31" column="27" info="Function parameter &apos;par&apos; should be passed by const reference."/>
+            <symbol>par</symbol>
+        </error>
+        <error id="iterateByValue" severity="performance" msg="Range variable &apos;k&apos; should be declared as const reference." verbose="Variable &apos;k&apos; is used to iterate by value. It could be declared as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln1/00002/0142_1427_D._Unshuffling_a_Deck.cpp">
+            <location file="derived/cpp/human/soln1/00002/0142_1427_D._Unshuffling_a_Deck.cpp" line="45" column="13" info="Range variable &apos;k&apos; should be declared as const reference."/>
+            <symbol>k</symbol>
+        </error>
+        <error id="iterateByValue" severity="performance" msg="Range variable &apos;r&apos; should be declared as const reference." verbose="Variable &apos;r&apos; is used to iterate by value. It could be declared as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln1/00002/0142_1427_D._Unshuffling_a_Deck.cpp">
+            <location file="derived/cpp/human/soln1/00002/0142_1427_D._Unshuffling_a_Deck.cpp" line="103" column="13" info="Range variable &apos;r&apos; should be declared as const reference."/>
+            <symbol>r</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::copy algorithm instead of a raw loop." verbose="Consider using std::copy algorithm instead of a raw loop." cwe="398" file0="derived/cpp/human/soln1/00002/0142_1427_D._Unshuffling_a_Deck.cpp">
+            <location file="derived/cpp/human/soln1/00002/0142_1427_D._Unshuffling_a_Deck.cpp" line="46" column="25"/>
+        </error>
+    </errors>
+</results>

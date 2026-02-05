@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &apos;SegTree::lc&apos; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &apos;SegTree::lc&apos; can be made a static function. Making a function static can bring a performance benefit since no &apos;this&apos; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to an unnamed namespace." cwe="398" inconclusive="true" file0="derived/cpp/human/soln1/00002/0216_1109_F._Sasha_and_Algorithm_of_Silence_s_Sounds.cpp">
+            <location file="derived/cpp/human/soln1/00002/0216_1109_F._Sasha_and_Algorithm_of_Silence_s_Sounds.cpp" line="82" column="14"/>
+            <symbol>SegTree::lc</symbol>
+        </error>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &apos;SegTree::rc&apos; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &apos;SegTree::rc&apos; can be made a static function. Making a function static can bring a performance benefit since no &apos;this&apos; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to an unnamed namespace." cwe="398" inconclusive="true" file0="derived/cpp/human/soln1/00002/0216_1109_F._Sasha_and_Algorithm_of_Silence_s_Sounds.cpp">
+            <location file="derived/cpp/human/soln1/00002/0216_1109_F._Sasha_and_Algorithm_of_Silence_s_Sounds.cpp" line="83" column="14"/>
+            <symbol>SegTree::rc</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;w&apos; shadows outer variable" verbose="Local variable &apos;w&apos; shadows outer variable" cwe="398" file0="derived/cpp/human/soln1/00002/0216_1109_F._Sasha_and_Algorithm_of_Silence_s_Sounds.cpp">
+            <location file="derived/cpp/human/soln1/00002/0216_1109_F._Sasha_and_Algorithm_of_Silence_s_Sounds.cpp" line="22" column="56" info="Shadow variable"/>
+            <location file="derived/cpp/human/soln1/00002/0216_1109_F._Sasha_and_Algorithm_of_Silence_s_Sounds.cpp" line="141" column="11" info="Shadowed declaration"/>
+            <symbol>w</symbol>
+        </error>
+        <error id="clarifyCalculation" severity="style" msg="Clarify calculation precedence for &apos;^&apos; and &apos;?&apos;." verbose="Suspicious calculation. Please use parentheses to clarify the code. The code &apos;&apos;a^b?c:d&apos;&apos; should be written as either &apos;&apos;(a^b)?c:d&apos;&apos; or &apos;&apos;a^(b?c:d)&apos;&apos;." cwe="783" file0="derived/cpp/human/soln1/00002/0216_1109_F._Sasha_and_Algorithm_of_Silence_s_Sounds.cpp">
+            <location file="derived/cpp/human/soln1/00002/0216_1109_F._Sasha_and_Algorithm_of_Silence_s_Sounds.cpp" line="38" column="68"/>
+        </error>
+        <error id="constVariableReference" severity="style" msg="Variable &apos;d&apos; can be declared as reference to const" verbose="Variable &apos;d&apos; can be declared as reference to const" cwe="398" file0="derived/cpp/human/soln1/00002/0216_1109_F._Sasha_and_Algorithm_of_Silence_s_Sounds.cpp">
+            <location file="derived/cpp/human/soln1/00002/0216_1109_F._Sasha_and_Algorithm_of_Silence_s_Sounds.cpp" line="161" column="18" info="Variable &apos;d&apos; can be declared as reference to const"/>
+            <symbol>d</symbol>
+        </error>
+        <error id="constVariableReference" severity="style" msg="Variable &apos;d&apos; can be declared as reference to const" verbose="Variable &apos;d&apos; can be declared as reference to const" cwe="398" file0="derived/cpp/human/soln1/00002/0216_1109_F._Sasha_and_Algorithm_of_Silence_s_Sounds.cpp">
+            <location file="derived/cpp/human/soln1/00002/0216_1109_F._Sasha_and_Algorithm_of_Silence_s_Sounds.cpp" line="166" column="18" info="Variable &apos;d&apos; can be declared as reference to const"/>
+            <symbol>d</symbol>
+        </error>
+        <error id="constVariableReference" severity="style" msg="Variable &apos;d&apos; can be declared as reference to const" verbose="Variable &apos;d&apos; can be declared as reference to const" cwe="398" file0="derived/cpp/human/soln1/00002/0216_1109_F._Sasha_and_Algorithm_of_Silence_s_Sounds.cpp">
+            <location file="derived/cpp/human/soln1/00002/0216_1109_F._Sasha_and_Algorithm_of_Silence_s_Sounds.cpp" line="170" column="18" info="Variable &apos;d&apos; can be declared as reference to const"/>
+            <symbol>d</symbol>
+        </error>
+        <error id="constVariableReference" severity="style" msg="Variable &apos;d&apos; can be declared as reference to const" verbose="Variable &apos;d&apos; can be declared as reference to const" cwe="398" file0="derived/cpp/human/soln1/00002/0216_1109_F._Sasha_and_Algorithm_of_Silence_s_Sounds.cpp">
+            <location file="derived/cpp/human/soln1/00002/0216_1109_F._Sasha_and_Algorithm_of_Silence_s_Sounds.cpp" line="176" column="16" info="Variable &apos;d&apos; can be declared as reference to const"/>
+            <symbol>d</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::any_of algorithm instead of a raw loop." verbose="Consider using std::any_of algorithm instead of a raw loop." cwe="398" file0="derived/cpp/human/soln1/00002/0216_1109_F._Sasha_and_Algorithm_of_Silence_s_Sounds.cpp">
+            <location file="derived/cpp/human/soln1/00002/0216_1109_F._Sasha_and_Algorithm_of_Silence_s_Sounds.cpp" line="162" column="50"/>
+        </error>
+    </errors>
+</results>

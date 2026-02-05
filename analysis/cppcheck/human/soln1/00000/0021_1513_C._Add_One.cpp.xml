@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;ModInt &lt; mod &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;ModInt &lt; mod &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="derived/cpp/human/soln1/00000/0021_1513_C._Add_One.cpp">
+            <location file="derived/cpp/human/soln1/00000/0021_1513_C._Add_One.cpp" line="50" column="3"/>
+            <symbol>ModInt &lt; mod &gt;</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;res&apos; shadows outer variable" verbose="Local variable &apos;res&apos; shadows outer variable" cwe="398" file0="derived/cpp/human/soln1/00000/0021_1513_C._Add_One.cpp">
+            <location file="derived/cpp/human/soln1/00000/0021_1513_C._Add_One.cpp" line="14" column="51" info="Shadow variable"/>
+            <location file="derived/cpp/human/soln1/00000/0021_1513_C._Add_One.cpp" line="102" column="14" info="Shadowed declaration"/>
+            <symbol>res</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::accumulate algorithm instead of a raw loop." verbose="Consider using std::accumulate algorithm instead of a raw loop." cwe="398" file0="derived/cpp/human/soln1/00000/0021_1513_C._Add_One.cpp">
+            <location file="derived/cpp/human/soln1/00000/0021_1513_C._Add_One.cpp" line="14" column="75"/>
+        </error>
+    </errors>
+</results>

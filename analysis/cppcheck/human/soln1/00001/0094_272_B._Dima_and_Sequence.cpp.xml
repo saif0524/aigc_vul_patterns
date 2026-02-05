@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="bitwiseOnBoolean" severity="style" msg="Boolean expression &apos;1==1&apos; is used in bitwise operation. Did you mean &apos;&amp;&amp;&apos;?" verbose="Boolean expression &apos;1==1&apos; is used in bitwise operation. Did you mean &apos;&amp;&amp;&apos;?" cwe="398" inconclusive="true" file0="derived/cpp/human/soln1/00001/0094_272_B._Dima_and_Sequence.cpp">
+            <location file="derived/cpp/human/soln1/00001/0094_272_B._Dima_and_Sequence.cpp" line="7" column="11"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;h[65]&apos; accessed at index 65, which is out of bounds." verbose="Array &apos;h[65]&apos; accessed at index 65, which is out of bounds." cwe="788" file0="derived/cpp/human/soln1/00001/0094_272_B._Dima_and_Sequence.cpp">
+            <location file="derived/cpp/human/soln1/00001/0094_272_B._Dima_and_Sequence.cpp" line="18" column="6" info="Array index out of bounds"/>
+        </error>
+        <error id="clarifyCondition" severity="style" msg="Suspicious condition (bitwise operator + comparison); Clarify expression with parentheses." verbose="Suspicious condition. Comparison operators have higher precedence than bitwise operators. Please clarify the condition with parentheses." cwe="398" file0="derived/cpp/human/soln1/00001/0094_272_B._Dima_and_Sequence.cpp">
+            <location file="derived/cpp/human/soln1/00001/0094_272_B._Dima_and_Sequence.cpp" line="7" column="8"/>
+        </error>
+        <error id="clarifyCondition" severity="style" msg="Boolean result is used in bitwise operation. Clarify expression with parentheses." verbose="Suspicious expression. Boolean result is used in bitwise operation. The operator &apos;!&apos; and the comparison operators have higher precedence than bitwise operators. It is recommended that the expression is clarified with parentheses." cwe="398" file0="derived/cpp/human/soln1/00001/0094_272_B._Dima_and_Sequence.cpp">
+            <location file="derived/cpp/human/soln1/00001/0094_272_B._Dima_and_Sequence.cpp" line="7" column="11"/>
+        </error>
+        <error id="duplicateExpression" severity="style" msg="Same expression on both sides of &apos;==&apos;." verbose="Finding the same expression on both sides of an operator is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" file0="derived/cpp/human/soln1/00001/0094_272_B._Dima_and_Sequence.cpp">
+            <location file="derived/cpp/human/soln1/00001/0094_272_B._Dima_and_Sequence.cpp" line="7" column="15"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;j&apos; can be reduced." verbose="The scope of the variable &apos;j&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="derived/cpp/human/soln1/00001/0094_272_B._Dima_and_Sequence.cpp">
+            <location file="derived/cpp/human/soln1/00001/0094_272_B._Dima_and_Sequence.cpp" line="15" column="13"/>
+            <symbol>j</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;d&apos; is assigned a value that is never used." verbose="Variable &apos;d&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/human/soln1/00001/0094_272_B._Dima_and_Sequence.cpp">
+            <location file="derived/cpp/human/soln1/00001/0094_272_B._Dima_and_Sequence.cpp" line="5" column="16"/>
+            <symbol>d</symbol>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: m" verbose="Unused variable: m" cwe="563" file0="derived/cpp/human/soln1/00001/0094_272_B._Dima_and_Sequence.cpp">
+            <location file="derived/cpp/human/soln1/00001/0094_272_B._Dima_and_Sequence.cpp" line="13" column="7"/>
+            <symbol>m</symbol>
+        </error>
+    </errors>
+</results>

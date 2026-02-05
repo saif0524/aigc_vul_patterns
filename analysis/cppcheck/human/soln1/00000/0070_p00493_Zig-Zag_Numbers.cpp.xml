@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;Mod::operatorint&apos; can be const." verbose="The member function &apos;Mod::operatorint&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true" file0="derived/cpp/human/soln1/00000/0070_p00493_Zig-Zag_Numbers.cpp">
+            <location file="derived/cpp/human/soln1/00000/0070_p00493_Zig-Zag_Numbers.cpp" line="16" column="2"/>
+            <symbol>Mod::operatorint</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;Mod&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;Mod&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="derived/cpp/human/soln1/00000/0070_p00493_Zig-Zag_Numbers.cpp">
+            <location file="derived/cpp/human/soln1/00000/0070_p00493_Zig-Zag_Numbers.cpp" line="12" column="2"/>
+            <symbol>Mod</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;Mod&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;Mod&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="derived/cpp/human/soln1/00000/0070_p00493_Zig-Zag_Numbers.cpp">
+            <location file="derived/cpp/human/soln1/00000/0070_p00493_Zig-Zag_Numbers.cpp" line="15" column="2"/>
+            <symbol>Mod</symbol>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;a&apos; can be declared as reference to const" verbose="Parameter &apos;a&apos; can be declared as reference to const" cwe="398" file0="derived/cpp/human/soln1/00000/0070_p00493_Zig-Zag_Numbers.cpp">
+            <location file="derived/cpp/human/soln1/00000/0070_p00493_Zig-Zag_Numbers.cpp" line="22" column="21" info="Parameter &apos;a&apos; can be declared as reference to const"/>
+            <symbol>a</symbol>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;a&apos; can be declared as reference to const" verbose="Parameter &apos;a&apos; can be declared as reference to const" cwe="398" file0="derived/cpp/human/soln1/00000/0070_p00493_Zig-Zag_Numbers.cpp">
+            <location file="derived/cpp/human/soln1/00000/0070_p00493_Zig-Zag_Numbers.cpp" line="25" column="21" info="Parameter &apos;a&apos; can be declared as reference to const"/>
+            <symbol>a</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;c&apos; is assigned a value that is never used." verbose="Variable &apos;c&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/human/soln1/00000/0070_p00493_Zig-Zag_Numbers.cpp">
+            <location file="derived/cpp/human/soln1/00000/0070_p00493_Zig-Zag_Numbers.cpp" line="152" column="24"/>
+            <symbol>c</symbol>
+        </error>
+    </errors>
+</results>

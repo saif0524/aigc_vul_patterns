@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="initializerList" severity="style" msg="Member variable &apos;Line::from&apos; is in the wrong place in the initializer list." verbose="Member variable &apos;Line::from&apos; is in the wrong place in the initializer list. Members are initialized in the order they are declared, not in the order they are in the initializer list.  Keeping the initializer list in the same order that the members were declared prevents order dependent initialization errors." cwe="398" inconclusive="true" file0="derived/cpp/human/soln2/00000/0243_p01083_RedBlue.cpp">
+            <location file="derived/cpp/human/soln2/00000/0243_p01083_RedBlue.cpp" line="59" column="19"/>
+            <location file="derived/cpp/human/soln2/00000/0243_p01083_RedBlue.cpp" line="65" column="60"/>
+            <symbol>Line::from</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;is_blocked&apos; shadows outer variable" verbose="Local variable &apos;is_blocked&apos; shadows outer variable" cwe="398" file0="derived/cpp/human/soln2/00000/0243_p01083_RedBlue.cpp">
+            <location file="derived/cpp/human/soln2/00000/0243_p01083_RedBlue.cpp" line="260" column="11" info="Shadow variable"/>
+            <location file="derived/cpp/human/soln2/00000/0243_p01083_RedBlue.cpp" line="250" column="8" info="Shadowed declaration"/>
+            <symbol>is_blocked</symbol>
+        </error>
+    </errors>
+</results>

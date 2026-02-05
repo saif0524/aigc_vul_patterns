@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;current_stages&apos; should be passed by const reference." verbose="Parameter &apos;current_stages&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/qwen/gen_3/00001_3/0140_1011_A._Stages.cpp">
+            <location file="derived/cpp/qwen/gen_3/00001_3/0140_1011_A._Stages.cpp" line="24" column="25" info="Function parameter &apos;current_stages&apos; should be passed by const reference."/>
+            <symbol>current_stages</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::transform algorithm instead of a raw loop." verbose="Consider using std::transform algorithm instead of a raw loop." cwe="398" file0="derived/cpp/qwen/gen_3/00001_3/0140_1011_A._Stages.cpp">
+            <location file="derived/cpp/qwen/gen_3/00001_3/0140_1011_A._Stages.cpp" line="16" column="16"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::any_of algorithm instead of a raw loop." verbose="Consider using std::any_of algorithm instead of a raw loop." cwe="398" file0="derived/cpp/qwen/gen_3/00001_3/0140_1011_A._Stages.cpp">
+            <location file="derived/cpp/qwen/gen_3/00001_3/0140_1011_A._Stages.cpp" line="35" column="41"/>
+        </error>
+    </errors>
+</results>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;x&apos; can be reduced." verbose="The scope of the variable &apos;x&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="derived/cpp/human/soln1/00001/0260_1468_J._Road_Reform.cpp">
+            <location file="derived/cpp/human/soln1/00001/0260_1468_J._Road_Reform.cpp" line="48" column="6"/>
+            <symbol>x</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;y&apos; can be reduced." verbose="The scope of the variable &apos;y&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="derived/cpp/human/soln1/00001/0260_1468_J._Road_Reform.cpp">
+            <location file="derived/cpp/human/soln1/00001/0260_1468_J._Road_Reform.cpp" line="48" column="9"/>
+            <symbol>y</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;cost&apos; can be reduced." verbose="The scope of the variable &apos;cost&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="derived/cpp/human/soln1/00001/0260_1468_J._Road_Reform.cpp">
+            <location file="derived/cpp/human/soln1/00001/0260_1468_J._Road_Reform.cpp" line="49" column="12"/>
+            <symbol>cost</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;p&apos; shadows outer variable" verbose="Local variable &apos;p&apos; shadows outer variable" cwe="398" file0="derived/cpp/human/soln1/00001/0260_1468_J._Road_Reform.cpp">
+            <location file="derived/cpp/human/soln1/00001/0260_1468_J._Road_Reform.cpp" line="41" column="6" info="Shadow variable"/>
+            <location file="derived/cpp/human/soln1/00001/0260_1468_J._Road_Reform.cpp" line="21" column="35" info="Shadowed declaration"/>
+            <symbol>p</symbol>
+        </error>
+    </errors>
+</results>

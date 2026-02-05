@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;cplx::a&apos; is not initialized in the constructor." verbose="Member variable &apos;cplx::a&apos; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" inconclusive="true" file0="derived/cpp/human/soln2/00000/0132_784_B._Kids__Riddle.cpp">
+            <location file="derived/cpp/human/soln2/00000/0132_784_B._Kids__Riddle.cpp" line="42" column="3"/>
+            <symbol>cplx::a</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;cplx::b&apos; is not initialized in the constructor." verbose="Member variable &apos;cplx::b&apos; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" inconclusive="true" file0="derived/cpp/human/soln2/00000/0132_784_B._Kids__Riddle.cpp">
+            <location file="derived/cpp/human/soln2/00000/0132_784_B._Kids__Riddle.cpp" line="42" column="3"/>
+            <symbol>cplx::b</symbol>
+        </error>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &apos;Polynomial::FFT::cplx::sqr&apos; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &apos;Polynomial::FFT::cplx::sqr&apos; can be made a static function. Making a function static can bring a performance benefit since no &apos;this&apos; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to an unnamed namespace." cwe="398" inconclusive="true" file0="derived/cpp/human/soln2/00000/0132_784_B._Kids__Riddle.cpp">
+            <location file="derived/cpp/human/soln2/00000/0132_784_B._Kids__Riddle.cpp" line="50" column="17"/>
+            <symbol>Polynomial::FFT::cplx::sqr</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;cplx&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;cplx&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="derived/cpp/human/soln2/00000/0132_784_B._Kids__Riddle.cpp">
+            <location file="derived/cpp/human/soln2/00000/0132_784_B._Kids__Riddle.cpp" line="43" column="3"/>
+            <symbol>cplx</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;c&apos; shadows outer variable" verbose="Local variable &apos;c&apos; shadows outer variable" cwe="398" file0="derived/cpp/human/soln2/00000/0132_784_B._Kids__Riddle.cpp">
+            <location file="derived/cpp/human/soln2/00000/0132_784_B._Kids__Riddle.cpp" line="6" column="8" info="Shadow variable"/>
+            <location file="derived/cpp/human/soln2/00000/0132_784_B._Kids__Riddle.cpp" line="148" column="13" info="Shadowed declaration"/>
+            <symbol>c</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;x&apos; shadows outer variable" verbose="Local variable &apos;x&apos; shadows outer variable" cwe="398" file0="derived/cpp/human/soln2/00000/0132_784_B._Kids__Riddle.cpp">
+            <location file="derived/cpp/human/soln2/00000/0132_784_B._Kids__Riddle.cpp" line="63" column="8" info="Shadow variable"/>
+            <location file="derived/cpp/human/soln2/00000/0132_784_B._Kids__Riddle.cpp" line="148" column="10" info="Shadowed declaration"/>
+            <symbol>x</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;x&apos; shadows outer variable" verbose="Local variable &apos;x&apos; shadows outer variable" cwe="398" file0="derived/cpp/human/soln2/00000/0132_784_B._Kids__Riddle.cpp">
+            <location file="derived/cpp/human/soln2/00000/0132_784_B._Kids__Riddle.cpp" line="104" column="7" info="Shadow variable"/>
+            <location file="derived/cpp/human/soln2/00000/0132_784_B._Kids__Riddle.cpp" line="148" column="10" info="Shadowed declaration"/>
+            <symbol>x</symbol>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;c&apos; can be declared as pointer to const" verbose="Parameter &apos;c&apos; can be declared as pointer to const" cwe="398" file0="derived/cpp/human/soln2/00000/0132_784_B._Kids__Riddle.cpp">
+            <location file="derived/cpp/human/soln2/00000/0132_784_B._Kids__Riddle.cpp" line="29" column="23" info="Parameter &apos;c&apos; can be declared as pointer to const"/>
+            <symbol>c</symbol>
+        </error>
+    </errors>
+</results>

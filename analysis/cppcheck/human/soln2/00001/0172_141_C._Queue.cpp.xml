@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;node::x&apos; is not initialized in the constructor." verbose="Member variable &apos;node::x&apos; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" inconclusive="true" file0="derived/cpp/human/soln2/00001/0172_141_C._Queue.cpp">
+            <location file="derived/cpp/human/soln2/00001/0172_141_C._Queue.cpp" line="9" column="3"/>
+            <symbol>node::x</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;s&apos; should be passed by const reference." verbose="Parameter &apos;s&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00001/0172_141_C._Queue.cpp">
+            <location file="derived/cpp/human/soln2/00001/0172_141_C._Queue.cpp" line="10" column="22" info="Function parameter &apos;s&apos; should be passed by const reference."/>
+            <symbol>s</symbol>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: k" verbose="Unused variable: k" cwe="563" file0="derived/cpp/human/soln2/00001/0172_141_C._Queue.cpp">
+            <location file="derived/cpp/human/soln2/00001/0172_141_C._Queue.cpp" line="16" column="13"/>
+            <symbol>k</symbol>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: l" verbose="Unused variable: l" cwe="563" file0="derived/cpp/human/soln2/00001/0172_141_C._Queue.cpp">
+            <location file="derived/cpp/human/soln2/00001/0172_141_C._Queue.cpp" line="16" column="16"/>
+            <symbol>l</symbol>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: x" verbose="Unused variable: x" cwe="563" file0="derived/cpp/human/soln2/00001/0172_141_C._Queue.cpp">
+            <location file="derived/cpp/human/soln2/00001/0172_141_C._Queue.cpp" line="16" column="19"/>
+            <symbol>x</symbol>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: y" verbose="Unused variable: y" cwe="563" file0="derived/cpp/human/soln2/00001/0172_141_C._Queue.cpp">
+            <location file="derived/cpp/human/soln2/00001/0172_141_C._Queue.cpp" line="16" column="22"/>
+            <symbol>y</symbol>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: z" verbose="Unused variable: z" cwe="563" file0="derived/cpp/human/soln2/00001/0172_141_C._Queue.cpp">
+            <location file="derived/cpp/human/soln2/00001/0172_141_C._Queue.cpp" line="16" column="25"/>
+            <symbol>z</symbol>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: t" verbose="Unused variable: t" cwe="563" file0="derived/cpp/human/soln2/00001/0172_141_C._Queue.cpp">
+            <location file="derived/cpp/human/soln2/00001/0172_141_C._Queue.cpp" line="16" column="28"/>
+            <symbol>t</symbol>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: m" verbose="Unused variable: m" cwe="563" file0="derived/cpp/human/soln2/00001/0172_141_C._Queue.cpp">
+            <location file="derived/cpp/human/soln2/00001/0172_141_C._Queue.cpp" line="16" column="31"/>
+            <symbol>m</symbol>
+        </error>
+    </errors>
+</results>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;SA::n&apos; is not initialized in the constructor." verbose="Member variable &apos;SA::n&apos; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" inconclusive="true" file0="derived/cpp/human/soln1/00001/0237_p02250_Multiple_String_Matching.cpp">
+            <location file="derived/cpp/human/soln1/00001/0237_p02250_Multiple_String_Matching.cpp" line="8" column="3"/>
+            <symbol>SA::n</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;SA::k&apos; is not initialized in the constructor." verbose="Member variable &apos;SA::k&apos; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" inconclusive="true" file0="derived/cpp/human/soln1/00001/0237_p02250_Multiple_String_Matching.cpp">
+            <location file="derived/cpp/human/soln1/00001/0237_p02250_Multiple_String_Matching.cpp" line="8" column="3"/>
+            <symbol>SA::k</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;SA::compare_sa&apos; can be const." verbose="The member function &apos;SA::compare_sa&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true" file0="derived/cpp/human/soln1/00001/0237_p02250_Multiple_String_Matching.cpp">
+            <location file="derived/cpp/human/soln1/00001/0237_p02250_Multiple_String_Matching.cpp" line="18" column="8"/>
+            <symbol>SA::compare_sa</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;SA&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;SA&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="derived/cpp/human/soln1/00001/0237_p02250_Multiple_String_Matching.cpp">
+            <location file="derived/cpp/human/soln1/00001/0237_p02250_Multiple_String_Matching.cpp" line="9" column="3"/>
+            <symbol>SA</symbol>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="scanf() without field width limits can crash with huge input data." verbose="scanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="derived/cpp/human/soln1/00001/0237_p02250_Multiple_String_Matching.cpp">
+            <location file="derived/cpp/human/soln1/00001/0237_p02250_Multiple_String_Matching.cpp" line="64" column="3"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="scanf() without field width limits can crash with huge input data." verbose="scanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="derived/cpp/human/soln1/00001/0237_p02250_Multiple_String_Matching.cpp">
+            <location file="derived/cpp/human/soln1/00001/0237_p02250_Multiple_String_Matching.cpp" line="70" column="5"/>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;S&apos; should be passed by const reference." verbose="Parameter &apos;S&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln1/00001/0237_p02250_Multiple_String_Matching.cpp">
+            <location file="derived/cpp/human/soln1/00001/0237_p02250_Multiple_String_Matching.cpp" line="9" column="13" info="Function parameter &apos;S&apos; should be passed by const reference."/>
+            <symbol>S</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;T&apos; should be passed by const reference." verbose="Parameter &apos;T&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln1/00001/0237_p02250_Multiple_String_Matching.cpp">
+            <location file="derived/cpp/human/soln1/00001/0237_p02250_Multiple_String_Matching.cpp" line="50" column="24" info="Function parameter &apos;T&apos; should be passed by const reference."/>
+            <symbol>T</symbol>
+        </error>
+    </errors>
+</results>

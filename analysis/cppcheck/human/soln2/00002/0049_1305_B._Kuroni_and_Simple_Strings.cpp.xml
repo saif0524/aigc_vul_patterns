@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;s[i]==&apos;(&apos;&apos; is always true" verbose="Condition &apos;s[i]==&apos;(&apos;&apos; is always true" cwe="571" file0="derived/cpp/human/soln2/00002/0049_1305_B._Kuroni_and_Simple_Strings.cpp">
+            <location file="derived/cpp/human/soln2/00002/0049_1305_B._Kuroni_and_Simple_Strings.cpp" line="30" column="16" info="Condition &apos;s[i]==&apos;(&apos;&apos; is always true"/>
+            <location file="derived/cpp/human/soln2/00002/0049_1305_B._Kuroni_and_Simple_Strings.cpp" line="29" column="26" info="Assuming that condition &apos;s[i]==&apos;(&apos;&apos; is not redundant"/>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;i&apos; shadows outer variable" verbose="Local variable &apos;i&apos; shadows outer variable" cwe="398" file0="derived/cpp/human/soln2/00002/0049_1305_B._Kuroni_and_Simple_Strings.cpp">
+            <location file="derived/cpp/human/soln2/00002/0049_1305_B._Kuroni_and_Simple_Strings.cpp" line="45" column="24" info="Shadow variable"/>
+            <location file="derived/cpp/human/soln2/00002/0049_1305_B._Kuroni_and_Simple_Strings.cpp" line="22" column="20" info="Shadowed declaration"/>
+            <symbol>i</symbol>
+        </error>
+    </errors>
+</results>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;node::x&apos; is not initialized in the constructor." verbose="Member variable &apos;node::x&apos; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" inconclusive="true" file0="derived/cpp/human/soln2/00001/0030_83_C._Track.cpp">
+            <location file="derived/cpp/human/soln2/00001/0030_83_C._Track.cpp" line="10" column="3"/>
+            <symbol>node::x</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;node::y&apos; is not initialized in the constructor." verbose="Member variable &apos;node::y&apos; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" inconclusive="true" file0="derived/cpp/human/soln2/00001/0030_83_C._Track.cpp">
+            <location file="derived/cpp/human/soln2/00001/0030_83_C._Track.cpp" line="10" column="3"/>
+            <symbol>node::y</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;node::mask&apos; is not initialized in the constructor." verbose="Member variable &apos;node::mask&apos; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" inconclusive="true" file0="derived/cpp/human/soln2/00001/0030_83_C._Track.cpp">
+            <location file="derived/cpp/human/soln2/00001/0030_83_C._Track.cpp" line="10" column="3"/>
+            <symbol>node::mask</symbol>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="scanf() without field width limits can crash with huge input data." verbose="scanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="derived/cpp/human/soln2/00001/0030_83_C._Track.cpp">
+            <location file="derived/cpp/human/soln2/00001/0030_83_C._Track.cpp" line="50" column="32"/>
+        </error>
+        <error id="shadowArgument" severity="style" msg="Local variable &apos;x&apos; shadows outer argument" verbose="Local variable &apos;x&apos; shadows outer argument" cwe="398" file0="derived/cpp/human/soln2/00001/0030_83_C._Track.cpp">
+            <location file="derived/cpp/human/soln2/00001/0030_83_C._Track.cpp" line="29" column="11" info="Shadow variable"/>
+            <location file="derived/cpp/human/soln2/00001/0030_83_C._Track.cpp" line="19" column="16" info="Shadowed declaration"/>
+            <symbol>x</symbol>
+        </error>
+        <error id="shadowArgument" severity="style" msg="Local variable &apos;y&apos; shadows outer argument" verbose="Local variable &apos;y&apos; shadows outer argument" cwe="398" file0="derived/cpp/human/soln2/00001/0030_83_C._Track.cpp">
+            <location file="derived/cpp/human/soln2/00001/0030_83_C._Track.cpp" line="29" column="28" info="Shadow variable"/>
+            <location file="derived/cpp/human/soln2/00001/0030_83_C._Track.cpp" line="19" column="23" info="Shadowed declaration"/>
+            <symbol>y</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;a&apos; should be passed by const reference." verbose="Parameter &apos;a&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00001/0030_83_C._Track.cpp">
+            <location file="derived/cpp/human/soln2/00001/0030_83_C._Track.cpp" line="3" column="17" info="Function parameter &apos;a&apos; should be passed by const reference."/>
+            <symbol>a</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;b&apos; should be passed by const reference." verbose="Parameter &apos;b&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00001/0030_83_C._Track.cpp">
+            <location file="derived/cpp/human/soln2/00001/0030_83_C._Track.cpp" line="3" column="27" info="Function parameter &apos;b&apos; should be passed by const reference."/>
+            <symbol>b</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;p&apos; should be passed by const reference." verbose="Parameter &apos;p&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00001/0030_83_C._Track.cpp">
+            <location file="derived/cpp/human/soln2/00001/0030_83_C._Track.cpp" line="11" column="36" info="Function parameter &apos;p&apos; should be passed by const reference."/>
+            <symbol>p</symbol>
+        </error>
+    </errors>
+</results>

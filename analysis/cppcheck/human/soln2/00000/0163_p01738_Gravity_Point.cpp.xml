@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;Point::norm&apos; can be const." verbose="The member function &apos;Point::norm&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true" file0="derived/cpp/human/soln2/00000/0163_p01738_Gravity_Point.cpp">
+            <location file="derived/cpp/human/soln2/00000/0163_p01738_Gravity_Point.cpp" line="28" column="9"/>
+            <symbol>Point::norm</symbol>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="scanf() without field width limits can crash with huge input data." verbose="scanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="derived/cpp/human/soln2/00000/0163_p01738_Gravity_Point.cpp">
+            <location file="derived/cpp/human/soln2/00000/0163_p01738_Gravity_Point.cpp" line="174" column="3"/>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;g&apos; should be passed by const reference." verbose="Parameter &apos;g&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0163_p01738_Gravity_Point.cpp">
+            <location file="derived/cpp/human/soln2/00000/0163_p01738_Gravity_Point.cpp" line="114" column="27" info="Function parameter &apos;g&apos; should be passed by const reference."/>
+            <symbol>g</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;g&apos; should be passed by const reference." verbose="Parameter &apos;g&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0163_p01738_Gravity_Point.cpp">
+            <location file="derived/cpp/human/soln2/00000/0163_p01738_Gravity_Point.cpp" line="128" column="23" info="Function parameter &apos;g&apos; should be passed by const reference."/>
+            <symbol>g</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;A&apos; should be passed by const reference." verbose="Parameter &apos;A&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0163_p01738_Gravity_Point.cpp">
+            <location file="derived/cpp/human/soln2/00000/0163_p01738_Gravity_Point.cpp" line="139" column="24" info="Function parameter &apos;A&apos; should be passed by const reference."/>
+            <symbol>A</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;A&apos; should be passed by const reference." verbose="Parameter &apos;A&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0163_p01738_Gravity_Point.cpp">
+            <location file="derived/cpp/human/soln2/00000/0163_p01738_Gravity_Point.cpp" line="156" column="20" info="Function parameter &apos;A&apos; should be passed by const reference."/>
+            <symbol>A</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;B&apos; should be passed by const reference." verbose="Parameter &apos;B&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0163_p01738_Gravity_Point.cpp">
+            <location file="derived/cpp/human/soln2/00000/0163_p01738_Gravity_Point.cpp" line="156" column="27" info="Function parameter &apos;B&apos; should be passed by const reference."/>
+            <symbol>B</symbol>
+        </error>
+    </errors>
+</results>

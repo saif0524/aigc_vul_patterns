@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;p!=s[k].end()&apos; is always true" verbose="Condition &apos;p!=s[k].end()&apos; is always true" cwe="571" file0="derived/cpp/human/soln2/00000/0242_p00950_Infallibly_Crack_Perplexing_Cryptarithm.cpp">
+            <location file="derived/cpp/human/soln2/00000/0242_p00950_Infallibly_Crack_Perplexing_Cryptarithm.cpp" line="26" column="9" info="Condition &apos;p!=s[k].end()&apos; is always true"/>
+        </error>
+        <error id="derefInvalidIteratorRedundantCheck" severity="warning" msg="Either the condition &apos;p!=s[k].end()&apos; is redundant or there is possible dereference of an invalid iterator: p." verbose="Either the condition &apos;p!=s[k].end()&apos; is redundant or there is possible dereference of an invalid iterator: p." cwe="825" file0="derived/cpp/human/soln2/00000/0242_p00950_Infallibly_Crack_Perplexing_Cryptarithm.cpp">
+            <location file="derived/cpp/human/soln2/00000/0242_p00950_Infallibly_Crack_Perplexing_Cryptarithm.cpp" line="18" column="18" info="Dereference of an invalid iterator"/>
+            <location file="derived/cpp/human/soln2/00000/0242_p00950_Infallibly_Crack_Perplexing_Cryptarithm.cpp" line="23" column="14" info="Assuming that condition &apos;p!=s[k].end()&apos; is not redundant"/>
+            <symbol>p</symbol>
+        </error>
+        <error id="legacyUninitvar" severity="error" msg="Uninitialized variable: x" verbose="Uninitialized variable: x" cwe="457" file0="derived/cpp/human/soln2/00000/0242_p00950_Infallibly_Crack_Perplexing_Cryptarithm.cpp">
+            <location file="derived/cpp/human/soln2/00000/0242_p00950_Infallibly_Crack_Perplexing_Cryptarithm.cpp" line="31" column="10"/>
+            <symbol>x</symbol>
+        </error>
+    </errors>
+</results>

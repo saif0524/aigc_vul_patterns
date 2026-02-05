@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="invalidContainerLoop" severity="error" msg="Calling &apos;erase&apos; while iterating the container is invalid." verbose="Calling &apos;erase&apos; while iterating the container is invalid." cwe="664" file0="derived/cpp/qwen/gen_2/00002_2/0028_p01991_Namo.._Cut.cpp">
+            <location file="derived/cpp/qwen/gen_2/00002_2/0028_p01991_Namo.._Cut.cpp" line="87" column="41"/>
+            <location file="derived/cpp/qwen/gen_2/00002_2/0028_p01991_Namo.._Cut.cpp" line="74" column="11" info="Iterating container here."/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;remove_edge&apos; is assigned a value that is never used." verbose="Variable &apos;remove_edge&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/qwen/gen_2/00002_2/0028_p01991_Namo.._Cut.cpp">
+            <location file="derived/cpp/qwen/gen_2/00002_2/0028_p01991_Namo.._Cut.cpp" line="37" column="30"/>
+            <symbol>remove_edge</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;edge_index&apos; is assigned a value that is never used." verbose="Variable &apos;edge_index&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/qwen/gen_2/00002_2/0028_p01991_Namo.._Cut.cpp">
+            <location file="derived/cpp/qwen/gen_2/00002_2/0028_p01991_Namo.._Cut.cpp" line="46" column="28"/>
+            <symbol>edge_index</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;found&apos; is assigned a value that is never used." verbose="Variable &apos;found&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/qwen/gen_2/00002_2/0028_p01991_Namo.._Cut.cpp">
+            <location file="derived/cpp/qwen/gen_2/00002_2/0028_p01991_Namo.._Cut.cpp" line="57" column="24"/>
+            <symbol>found</symbol>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: edges_to_remove" verbose="Unused variable: edges_to_remove" cwe="563" file0="derived/cpp/qwen/gen_2/00002_2/0028_p01991_Namo.._Cut.cpp">
+            <location file="derived/cpp/qwen/gen_2/00002_2/0028_p01991_Namo.._Cut.cpp" line="30" column="30"/>
+            <symbol>edges_to_remove</symbol>
+        </error>
+    </errors>
+</results>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;BIT::qry&apos; can be const." verbose="The member function &apos;BIT::qry&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true" file0="derived/cpp/human/soln1/00001/0254_1336_F._Journey.cpp">
+            <location file="derived/cpp/human/soln1/00001/0254_1336_F._Journey.cpp" line="11" column="7"/>
+            <symbol>BIT::qry</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;segTree::qry&apos; can be const." verbose="The member function &apos;segTree::qry&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true" file0="derived/cpp/human/soln1/00001/0254_1336_F._Journey.cpp">
+            <location file="derived/cpp/human/soln1/00001/0254_1336_F._Journey.cpp" line="50" column="7"/>
+            <symbol>segTree::qry</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;v&apos; shadows outer variable" verbose="Local variable &apos;v&apos; shadows outer variable" cwe="398" file0="derived/cpp/human/soln1/00001/0254_1336_F._Journey.cpp">
+            <location file="derived/cpp/human/soln1/00001/0254_1336_F._Journey.cpp" line="170" column="12" info="Shadow variable"/>
+            <location file="derived/cpp/human/soln1/00001/0254_1336_F._Journey.cpp" line="68" column="26" info="Shadowed declaration"/>
+            <symbol>v</symbol>
+        </error>
+        <error id="clarifyCalculation" severity="style" msg="Clarify calculation precedence for &apos;~&apos; and &apos;?&apos;." verbose="Suspicious calculation. Please use parentheses to clarify the code. The code &apos;&apos;a~b?c:d&apos;&apos; should be written as either &apos;&apos;(a~b)?c:d&apos;&apos; or &apos;&apos;a~(b?c:d)&apos;&apos;." cwe="783" file0="derived/cpp/human/soln1/00001/0254_1336_F._Journey.cpp">
+            <location file="derived/cpp/human/soln1/00001/0254_1336_F._Journey.cpp" line="74" column="28"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::accumulate algorithm instead of a raw loop." verbose="Consider using std::accumulate algorithm instead of a raw loop." cwe="398" file0="derived/cpp/human/soln1/00001/0254_1336_F._Journey.cpp">
+            <location file="derived/cpp/human/soln1/00001/0254_1336_F._Journey.cpp" line="148" column="27"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::accumulate algorithm instead of a raw loop." verbose="Consider using std::accumulate algorithm instead of a raw loop." cwe="398" file0="derived/cpp/human/soln1/00001/0254_1336_F._Journey.cpp">
+            <location file="derived/cpp/human/soln1/00001/0254_1336_F._Journey.cpp" line="150" column="28"/>
+        </error>
+    </errors>
+</results>

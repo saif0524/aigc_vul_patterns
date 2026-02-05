@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="passedByValueCallback" severity="performance" msg="Function parameter &apos;a&apos; should be passed by const reference. However it seems that &apos;cmp&apos; is a callback function." verbose="Parameter &apos;a&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln1/00002/0077_587_D._Duff_in_Mafia.cpp">
+            <location file="derived/cpp/human/soln1/00002/0077_587_D._Duff_in_Mafia.cpp" line="10" column="15" info="Function parameter &apos;a&apos; should be passed by const reference. However it seems that &apos;cmp&apos; is a callback function."/>
+            <location file="derived/cpp/human/soln1/00002/0077_587_D._Duff_in_Mafia.cpp" line="74" column="34" info="Function pointer used here."/>
+            <symbol>a</symbol>
+        </error>
+        <error id="passedByValueCallback" severity="performance" msg="Function parameter &apos;b&apos; should be passed by const reference. However it seems that &apos;cmp&apos; is a callback function." verbose="Parameter &apos;b&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln1/00002/0077_587_D._Duff_in_Mafia.cpp">
+            <location file="derived/cpp/human/soln1/00002/0077_587_D._Duff_in_Mafia.cpp" line="10" column="23" info="Function parameter &apos;b&apos; should be passed by const reference. However it seems that &apos;cmp&apos; is a callback function."/>
+            <location file="derived/cpp/human/soln1/00002/0077_587_D._Duff_in_Mafia.cpp" line="74" column="34" info="Function pointer used here."/>
+            <symbol>b</symbol>
+        </error>
+    </errors>
+</results>

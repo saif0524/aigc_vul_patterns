@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="arrayIndexThenCheck" severity="style" msg="Array index &apos;i&apos; is used before limits check." verbose="Defensive programming: The variable &apos;i&apos; is used as an array index before it is checked that is within limits. This can mean that the array might be accessed out of bounds. Reorder conditions such as &apos;(a[i] &amp;&amp; i &lt; 10)&apos; to &apos;(i &lt; 10 &amp;&amp; a[i])&apos;. That way the array will not be accessed if the index is out of limits." cwe="398" file0="derived/cpp/llama/gen_2/00002_2/0077_587_D._Duff_in_Mafia.cpp">
+            <location file="derived/cpp/llama/gen_2/00002_2/0077_587_D._Duff_in_Mafia.cpp" line="85" column="18"/>
+            <symbol>i</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::find_if algorithm instead of a raw loop." verbose="Consider using std::find_if algorithm instead of a raw loop." cwe="398" file0="derived/cpp/llama/gen_2/00002_2/0077_587_D._Duff_in_Mafia.cpp">
+            <location file="derived/cpp/llama/gen_2/00002_2/0077_587_D._Duff_in_Mafia.cpp" line="30" column="46"/>
+        </error>
+    </errors>
+</results>

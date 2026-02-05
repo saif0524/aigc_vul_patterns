@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="iterateByValue" severity="performance" msg="Range variable &apos;e&apos; should be declared as const reference." verbose="Variable &apos;e&apos; is used to iterate by value. It could be declared as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00002/0030_p01856_Typhoon.cpp">
+            <location file="derived/cpp/human/soln2/00002/0030_p01856_Typhoon.cpp" line="17" column="11" info="Range variable &apos;e&apos; should be declared as const reference."/>
+            <symbol>e</symbol>
+        </error>
+        <error id="iterateByValue" severity="performance" msg="Range variable &apos;a&apos; should be declared as const reference." verbose="Variable &apos;a&apos; is used to iterate by value. It could be declared as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00002/0030_p01856_Typhoon.cpp">
+            <location file="derived/cpp/human/soln2/00002/0030_p01856_Typhoon.cpp" line="52" column="11" info="Range variable &apos;a&apos; should be declared as const reference."/>
+            <symbol>a</symbol>
+        </error>
+        <error id="iterateByValue" severity="performance" msg="Range variable &apos;a&apos; should be declared as const reference." verbose="Variable &apos;a&apos; is used to iterate by value. It could be declared as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00002/0030_p01856_Typhoon.cpp">
+            <location file="derived/cpp/human/soln2/00002/0030_p01856_Typhoon.cpp" line="83" column="12" info="Range variable &apos;a&apos; should be declared as const reference."/>
+            <symbol>a</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::all_of or std::none_of algorithm instead of a raw loop." verbose="Consider using std::all_of or std::none_of algorithm instead of a raw loop." cwe="398" file0="derived/cpp/human/soln2/00002/0030_p01856_Typhoon.cpp">
+            <location file="derived/cpp/human/soln2/00002/0030_p01856_Typhoon.cpp" line="52" column="2"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::count_if algorithm instead of a raw loop." verbose="Consider using std::count_if algorithm instead of a raw loop." cwe="398" file0="derived/cpp/human/soln2/00002/0030_p01856_Typhoon.cpp">
+            <location file="derived/cpp/human/soln2/00002/0030_p01856_Typhoon.cpp" line="83" column="42"/>
+        </error>
+    </errors>
+</results>

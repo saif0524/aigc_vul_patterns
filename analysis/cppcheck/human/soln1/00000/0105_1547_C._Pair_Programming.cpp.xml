@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="arrayIndexThenCheck" severity="style" msg="Array index &apos;i&apos; is used before limits check." verbose="Defensive programming: The variable &apos;i&apos; is used as an array index before it is checked that is within limits. This can mean that the array might be accessed out of bounds. Reorder conditions such as &apos;(a[i] &amp;&amp; i &lt; 10)&apos; to &apos;(i &lt; 10 &amp;&amp; a[i])&apos;. That way the array will not be accessed if the index is out of limits." cwe="398" file0="derived/cpp/human/soln1/00000/0105_1547_C._Pair_Programming.cpp">
+            <location file="derived/cpp/human/soln1/00000/0105_1547_C._Pair_Programming.cpp" line="32" column="11"/>
+            <symbol>i</symbol>
+        </error>
+        <error id="arrayIndexThenCheck" severity="style" msg="Array index &apos;j&apos; is used before limits check." verbose="Defensive programming: The variable &apos;j&apos; is used as an array index before it is checked that is within limits. This can mean that the array might be accessed out of bounds. Reorder conditions such as &apos;(a[i] &amp;&amp; i &lt; 10)&apos; to &apos;(i &lt; 10 &amp;&amp; a[i])&apos;. That way the array will not be accessed if the index is out of limits." cwe="398" file0="derived/cpp/human/soln1/00000/0105_1547_C._Pair_Programming.cpp">
+            <location file="derived/cpp/human/soln1/00000/0105_1547_C._Pair_Programming.cpp" line="33" column="11"/>
+            <symbol>j</symbol>
+        </error>
+        <error id="arrayIndexThenCheck" severity="style" msg="Array index &apos;i&apos; is used before limits check." verbose="Defensive programming: The variable &apos;i&apos; is used as an array index before it is checked that is within limits. This can mean that the array might be accessed out of bounds. Reorder conditions such as &apos;(a[i] &amp;&amp; i &lt; 10)&apos; to &apos;(i &lt; 10 &amp;&amp; a[i])&apos;. That way the array will not be accessed if the index is out of limits." cwe="398" file0="derived/cpp/human/soln1/00000/0105_1547_C._Pair_Programming.cpp">
+            <location file="derived/cpp/human/soln1/00000/0105_1547_C._Pair_Programming.cpp" line="34" column="8"/>
+            <symbol>i</symbol>
+        </error>
+        <error id="arrayIndexThenCheck" severity="style" msg="Array index &apos;j&apos; is used before limits check." verbose="Defensive programming: The variable &apos;j&apos; is used as an array index before it is checked that is within limits. This can mean that the array might be accessed out of bounds. Reorder conditions such as &apos;(a[i] &amp;&amp; i &lt; 10)&apos; to &apos;(i &lt; 10 &amp;&amp; a[i])&apos;. That way the array will not be accessed if the index is out of limits." cwe="398" file0="derived/cpp/human/soln1/00000/0105_1547_C._Pair_Programming.cpp">
+            <location file="derived/cpp/human/soln1/00000/0105_1547_C._Pair_Programming.cpp" line="35" column="13"/>
+            <symbol>j</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;i&apos; shadows outer variable" verbose="Local variable &apos;i&apos; shadows outer variable" cwe="398" file0="derived/cpp/human/soln1/00000/0105_1547_C._Pair_Programming.cpp">
+            <location file="derived/cpp/human/soln1/00000/0105_1547_C._Pair_Programming.cpp" line="39" column="16" info="Shadow variable"/>
+            <location file="derived/cpp/human/soln1/00000/0105_1547_C._Pair_Programming.cpp" line="30" column="7" info="Shadowed declaration"/>
+            <symbol>i</symbol>
+        </error>
+    </errors>
+</results>

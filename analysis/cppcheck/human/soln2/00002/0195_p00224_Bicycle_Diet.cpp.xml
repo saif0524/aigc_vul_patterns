@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="missingReturn" severity="error" msg="Found an exit path from function with non-void return type that has missing return statement" verbose="Found an exit path from function with non-void return type that has missing return statement" cwe="758" file0="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp">
+            <location file="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp" line="38" column="13"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Graph::n&apos; is not initialized in the constructor." verbose="Member variable &apos;Graph::n&apos; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp">
+            <location file="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp" line="68" column="5"/>
+            <symbol>Graph::n</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;BellmanFord &lt; Node , BF_TABLE &lt; int &gt; , BF_TABLE &lt; char &gt; &gt;::G&apos; is not initialized in the constructor." verbose="Member variable &apos;BellmanFord &lt; Node , BF_TABLE &lt; int &gt; , BF_TABLE &lt; char &gt; &gt;::G&apos; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp">
+            <location file="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp" line="109" column="5"/>
+            <symbol>BellmanFord &lt; Node , BF_TABLE &lt; int &gt; , BF_TABLE &lt; char &gt; &gt;::G</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;Graph::getCost&apos; can be const." verbose="The member function &apos;Graph::getCost&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true" file0="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp">
+            <location file="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp" line="85" column="9"/>
+            <symbol>Graph::getCost</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;Graph::getCost&apos; can be const." verbose="The member function &apos;Graph::getCost&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true" file0="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp">
+            <location file="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp" line="91" column="9"/>
+            <symbol>Graph::getCost</symbol>
+        </error>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &apos;solution::Solution::add_node&apos; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &apos;solution::Solution::add_node&apos; can be made a static function. Making a function static can bring a performance benefit since no &apos;this&apos; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to an unnamed namespace." cwe="398" inconclusive="true" file0="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp">
+            <location file="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp" line="251" column="14"/>
+            <symbol>solution::Solution::add_node</symbol>
+        </error>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &apos;solution::Solution::find_node&apos; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &apos;solution::Solution::find_node&apos; can be made a static function. Making a function static can bring a performance benefit since no &apos;this&apos; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to an unnamed namespace." cwe="398" inconclusive="true" file0="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp">
+            <location file="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp" line="256" column="13"/>
+            <symbol>solution::Solution::find_node</symbol>
+        </error>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &apos;solution::Solution::output&apos; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &apos;solution::Solution::output&apos; can be made a static function. Making a function static can bring a performance benefit since no &apos;this&apos; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to an unnamed namespace." cwe="398" inconclusive="true" file0="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp">
+            <location file="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp" line="301" column="14"/>
+            <symbol>solution::Solution::output</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Graph&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Graph&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp">
+            <location file="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp" line="71" column="5"/>
+            <symbol>Graph</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;distribute&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;distribute&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp">
+            <location file="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp" line="183" column="14" info="Function in derived class"/>
+            <location file="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp" line="123" column="18" info="Virtual function in base class"/>
+            <symbol>distribute</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;init&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;init&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp">
+            <location file="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp" line="247" column="14" info="Function in derived class"/>
+            <location file="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp" line="132" column="22" info="Virtual function in base class"/>
+            <symbol>init</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;input&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;input&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp">
+            <location file="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp" line="259" column="14" info="Function in derived class"/>
+            <location file="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp" line="133" column="22" info="Virtual function in base class"/>
+            <symbol>input</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;run&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;run&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp">
+            <location file="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp" line="304" column="13" info="Function in derived class"/>
+            <location file="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp" line="135" column="21" info="Virtual function in base class"/>
+            <symbol>run</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;mapping&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;mapping&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." file0="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp">
+            <location file="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp" line="168" column="17" info="Function in derived class"/>
+            <location file="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp" line="33" column="21" info="Virtual function in base class"/>
+            <symbol>mapping</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;s&apos; should be passed by const reference." verbose="Parameter &apos;s&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp">
+            <location file="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp" line="251" column="31" info="Function parameter &apos;s&apos; should be passed by const reference."/>
+            <symbol>s</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;s&apos; should be passed by const reference." verbose="Parameter &apos;s&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp">
+            <location file="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp" line="256" column="31" info="Function parameter &apos;s&apos; should be passed by const reference."/>
+            <symbol>s</symbol>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;edge&apos; can be declared as reference to const" verbose="Parameter &apos;edge&apos; can be declared as reference to const" cwe="398" file0="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp">
+            <location file="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp" line="51" column="64" info="Parameter &apos;edge&apos; can be declared as reference to const"/>
+            <symbol>edge</symbol>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;node&apos; can be declared as reference to const" verbose="Parameter &apos;node&apos; can be declared as reference to const" cwe="398" file0="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp">
+            <location file="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp" line="151" column="58" info="Parameter &apos;node&apos; can be declared as reference to const"/>
+            <symbol>node</symbol>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;node&apos; can be declared as reference to const" verbose="Parameter &apos;node&apos; can be declared as reference to const" cwe="398" file0="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp">
+            <location file="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp" line="198" column="28" info="Parameter &apos;node&apos; can be declared as reference to const"/>
+            <symbol>node</symbol>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;value&apos; can be declared as reference to const" verbose="Parameter &apos;value&apos; can be declared as reference to const" cwe="398" file0="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp">
+            <location file="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp" line="30" column="26" info="Parameter &apos;value&apos; can be declared as reference to const"/>
+            <symbol>value</symbol>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;right&apos; can be declared as reference to const" verbose="Parameter &apos;right&apos; can be declared as reference to const" cwe="398" file0="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp">
+            <location file="derived/cpp/human/soln2/00002/0195_p00224_Bicycle_Diet.cpp" line="37" column="33" info="Parameter &apos;right&apos; can be declared as reference to const"/>
+            <symbol>right</symbol>
+        </error>
+    </errors>
+</results>

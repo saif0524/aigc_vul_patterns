@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="invalidContainer" severity="error" msg="Using iterator to local container &apos;numbers&apos; that may be invalid." verbose="Using iterator to local container &apos;numbers&apos; that may be invalid." cwe="664" inconclusive="true" file0="derived/cpp/llama/gen_2/00002_2/0040_1118_C._Palindromic_Matrix.cpp">
+            <location file="derived/cpp/llama/gen_2/00002_2/0040_1118_C._Palindromic_Matrix.cpp" line="55" column="37"/>
+            <location file="derived/cpp/llama/gen_2/00002_2/0040_1118_C._Palindromic_Matrix.cpp" line="12" column="13" info="Variable created here."/>
+            <location file="derived/cpp/llama/gen_2/00002_2/0040_1118_C._Palindromic_Matrix.cpp" line="51" column="25" info="After calling &apos;erase&apos;, iterators or references to the container&apos;s data may be invalid ."/>
+            <location file="derived/cpp/llama/gen_2/00002_2/0040_1118_C._Palindromic_Matrix.cpp" line="50" column="45" info="Passed to &apos;find&apos;."/>
+            <location file="derived/cpp/llama/gen_2/00002_2/0040_1118_C._Palindromic_Matrix.cpp" line="50" column="45" info="Iterator to container is created here."/>
+        </error>
+    </errors>
+</results>

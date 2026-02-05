@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;j*s&lt;=M&apos; is always true" verbose="Condition &apos;j*s&lt;=M&apos; is always true" cwe="571" file0="derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp">
+            <location file="derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp" line="18" column="23" info="Condition &apos;j*s&lt;=M&apos; is always true"/>
+            <location file="derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp" line="16" column="23" info="Assuming condition &apos;s*j&gt;M&apos; is false"/>
+        </error>
+        <error id="truncLongCastAssignment" severity="style" msg="int result is assigned to long long variable. If the variable is long long to avoid loss of information, then you have loss of information." verbose="int result is assigned to long long variable. If the variable is long long to avoid loss of information, then there is loss of information. To avoid loss of information you must cast a calculation operand to long long, for example &apos;l = a * b;&apos; =&gt; &apos;l = (long long)a * b;&apos;." cwe="197" file0="derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp">
+            <location file="derived/cpp/llama/gen_1/00000/0218_846_B._Math_Show.cpp" line="17" column="18"/>
+        </error>
+    </errors>
+</results>

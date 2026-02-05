@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;sss&apos; can be declared as pointer to const" verbose="Variable &apos;sss&apos; can be declared as pointer to const" cwe="398" file0="derived/cpp/human/soln2/00002/0037_1054_B._Appending_Mex.cpp">
+            <location file="derived/cpp/human/soln2/00002/0037_1054_B._Appending_Mex.cpp" line="6" column="24" info="Variable &apos;sss&apos; can be declared as pointer to const"/>
+            <symbol>sss</symbol>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;ttt&apos; can be declared as pointer to const" verbose="Variable &apos;ttt&apos; can be declared as pointer to const" cwe="398" file0="derived/cpp/human/soln2/00002/0037_1054_B._Appending_Mex.cpp">
+            <location file="derived/cpp/human/soln2/00002/0037_1054_B._Appending_Mex.cpp" line="6" column="36" info="Variable &apos;ttt&apos; can be declared as pointer to const"/>
+            <symbol>ttt</symbol>
+        </error>
+        <error id="checkCastIntToCharAndBack" severity="warning" msg="Storing getchar() return value in char variable and then comparing with EOF." verbose="When saving getchar() return value in char variable there is loss of precision.  When getchar() returns EOF this value is truncated. Comparing the char variable with EOF can have unexpected results. For instance a loop &quot;while (EOF != (c = getchar());&quot; loops forever on some compilers/platforms and on other compilers/platforms it will stop when the file contains a matching character." cwe="197" file0="derived/cpp/human/soln2/00002/0037_1054_B._Appending_Mex.cpp">
+            <location file="derived/cpp/human/soln2/00002/0037_1054_B._Appending_Mex.cpp" line="18" column="9"/>
+            <symbol>getchar</symbol>
+        </error>
+    </errors>
+</results>

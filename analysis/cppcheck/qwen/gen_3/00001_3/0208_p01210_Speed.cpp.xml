@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="incorrectLogicOperator" severity="warning" msg="Logical conjunction always evaluates to false: rank &gt;= &apos;9&apos; &amp;&amp; rank &lt;= &apos;2&apos;." verbose="Logical conjunction always evaluates to false: rank &gt;= &apos;9&apos; &amp;&amp; rank &lt;= &apos;2&apos;. Are these conditions necessary? Did you intend to use || instead? Are the numbers correct? Are you comparing the correct variables?" cwe="570" inconclusive="true" file0="derived/cpp/qwen/gen_3/00001_3/0208_p01210_Speed.cpp">
+            <location file="derived/cpp/qwen/gen_3/00001_3/0208_p01210_Speed.cpp" line="14" column="21"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;deck_a_idx&lt;deck_a.size()&apos; is always false" verbose="Condition &apos;deck_a_idx&lt;deck_a.size()&apos; is always false" cwe="570" file0="derived/cpp/qwen/gen_3/00001_3/0208_p01210_Speed.cpp">
+            <location file="derived/cpp/qwen/gen_3/00001_3/0208_p01210_Speed.cpp" line="55" column="28" info="Condition &apos;deck_a_idx&lt;deck_a.size()&apos; is always false"/>
+            <location file="derived/cpp/qwen/gen_3/00001_3/0208_p01210_Speed.cpp" line="49" column="24" info="Assuming that condition &apos;deck_a_idx&lt;deck_a.size()&apos; is not redundant"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;deck_b_idx&lt;deck_b.size()&apos; is always false" verbose="Condition &apos;deck_b_idx&lt;deck_b.size()&apos; is always false" cwe="570" file0="derived/cpp/qwen/gen_3/00001_3/0208_p01210_Speed.cpp">
+            <location file="derived/cpp/qwen/gen_3/00001_3/0208_p01210_Speed.cpp" line="64" column="28" info="Condition &apos;deck_b_idx&lt;deck_b.size()&apos; is always false"/>
+            <location file="derived/cpp/qwen/gen_3/00001_3/0208_p01210_Speed.cpp" line="59" column="24" info="Assuming that condition &apos;deck_b_idx&lt;deck_b.size()&apos; is not redundant"/>
+        </error>
+        <error id="duplicateBranch" severity="style" msg="Found duplicate branches for &apos;if&apos; and &apos;else&apos;." verbose="Finding the same code in an &apos;if&apos; and related &apos;else&apos; branch is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" inconclusive="true" file0="derived/cpp/qwen/gen_3/00001_3/0208_p01210_Speed.cpp">
+            <location file="derived/cpp/qwen/gen_3/00001_3/0208_p01210_Speed.cpp" line="107" column="14"/>
+            <location file="derived/cpp/qwen/gen_3/00001_3/0208_p01210_Speed.cpp" line="111" column="9"/>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;card&apos; should be passed by const reference." verbose="Parameter &apos;card&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/qwen/gen_3/00001_3/0208_p01210_Speed.cpp">
+            <location file="derived/cpp/qwen/gen_3/00001_3/0208_p01210_Speed.cpp" line="7" column="23" info="Function parameter &apos;card&apos; should be passed by const reference."/>
+            <symbol>card</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;a_wins&apos; is assigned a value that is never used." verbose="Variable &apos;a_wins&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/qwen/gen_3/00001_3/0208_p01210_Speed.cpp">
+            <location file="derived/cpp/qwen/gen_3/00001_3/0208_p01210_Speed.cpp" line="70" column="14"/>
+            <symbol>a_wins</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;b_wins&apos; is assigned a value that is never used." verbose="Variable &apos;b_wins&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/qwen/gen_3/00001_3/0208_p01210_Speed.cpp">
+            <location file="derived/cpp/qwen/gen_3/00001_3/0208_p01210_Speed.cpp" line="71" column="14"/>
+            <symbol>b_wins</symbol>
+        </error>
+    </errors>
+</results>

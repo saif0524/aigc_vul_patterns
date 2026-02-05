@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;Solver::getId&apos; can be const." verbose="The member function &apos;Solver::getId&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true" file0="derived/cpp/llama/gen_3/00002_3/0023_p00839_Organize_Your_Train.cpp">
+            <location file="derived/cpp/llama/gen_3/00002_3/0023_p00839_Organize_Your_Train.cpp" line="37" column="7"/>
+            <symbol>Solver::getId</symbol>
+        </error>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &apos;Solver::eq&apos; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &apos;Solver::eq&apos; can be made a static function. Making a function static can bring a performance benefit since no &apos;this&apos; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to an unnamed namespace." cwe="398" inconclusive="true" file0="derived/cpp/llama/gen_3/00002_3/0023_p00839_Organize_Your_Train.cpp">
+            <location file="derived/cpp/llama/gen_3/00002_3/0023_p00839_Organize_Your_Train.cpp" line="44" column="8"/>
+            <symbol>Solver::eq</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;s&apos; shadows outer variable" verbose="Local variable &apos;s&apos; shadows outer variable" cwe="398" file0="derived/cpp/llama/gen_3/00002_3/0023_p00839_Organize_Your_Train.cpp">
+            <location file="derived/cpp/llama/gen_3/00002_3/0023_p00839_Organize_Your_Train.cpp" line="39" column="16" info="Shadow variable"/>
+            <location file="derived/cpp/llama/gen_3/00002_3/0023_p00839_Organize_Your_Train.cpp" line="18" column="18" info="Shadowed declaration"/>
+            <symbol>s</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;curr&apos; shadows outer variable" verbose="Local variable &apos;curr&apos; shadows outer variable" cwe="398" file0="derived/cpp/llama/gen_3/00002_3/0023_p00839_Organize_Your_Train.cpp">
+            <location file="derived/cpp/llama/gen_3/00002_3/0023_p00839_Organize_Your_Train.cpp" line="75" column="12" info="Shadow variable"/>
+            <location file="derived/cpp/llama/gen_3/00002_3/0023_p00839_Organize_Your_Train.cpp" line="68" column="28" info="Shadowed declaration"/>
+            <symbol>curr</symbol>
+        </error>
+        <error id="constVariableReference" severity="style" msg="Variable &apos;s&apos; can be declared as reference to const" verbose="Variable &apos;s&apos; can be declared as reference to const" cwe="398" file0="derived/cpp/llama/gen_3/00002_3/0023_p00839_Organize_Your_Train.cpp">
+            <location file="derived/cpp/llama/gen_3/00002_3/0023_p00839_Organize_Your_Train.cpp" line="39" column="16" info="Variable &apos;s&apos; can be declared as reference to const"/>
+            <symbol>s</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::accumulate algorithm instead of a raw loop." verbose="Consider using std::accumulate algorithm instead of a raw loop." cwe="398" file0="derived/cpp/llama/gen_3/00002_3/0023_p00839_Organize_Your_Train.cpp">
+            <location file="derived/cpp/llama/gen_3/00002_3/0023_p00839_Organize_Your_Train.cpp" line="40" column="11"/>
+        </error>
+    </errors>
+</results>

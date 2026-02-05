@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="invalidLifetime" severity="error" msg="Using object that points to local variable &apos;currentState&apos; that is out of scope." verbose="Using object that points to local variable &apos;currentState&apos; that is out of scope." cwe="562" file0="derived/cpp/llama/gen_2/00002_2/0111_p00918_Dragon_s_Cruller.cpp">
+            <location file="derived/cpp/llama/gen_2/00002_2/0111_p00918_Dragon_s_Cruller.cpp" line="92" column="17"/>
+            <location file="derived/cpp/llama/gen_2/00002_2/0111_p00918_Dragon_s_Cruller.cpp" line="93" column="19" info="Variable created here."/>
+            <location file="derived/cpp/llama/gen_2/00002_2/0111_p00918_Dragon_s_Cruller.cpp" line="122" column="45" info="Added to container &apos;pq&apos;."/>
+            <location file="derived/cpp/llama/gen_2/00002_2/0111_p00918_Dragon_s_Cruller.cpp" line="121" column="55" info="Address of variable taken here."/>
+        </error>
+        <error id="initializerList" severity="style" msg="Member variable &apos;State::cost&apos; is in the wrong place in the initializer list." verbose="Member variable &apos;State::cost&apos; is in the wrong place in the initializer list. Members are initialized in the order they are declared, not in the order they are in the initializer list.  Keeping the initializer list in the same order that the members were declared prevents order dependent initialization errors." cwe="398" inconclusive="true" file0="derived/cpp/llama/gen_2/00002_2/0111_p00918_Dragon_s_Cruller.cpp">
+            <location file="derived/cpp/llama/gen_2/00002_2/0111_p00918_Dragon_s_Cruller.cpp" line="21" column="9"/>
+            <location file="derived/cpp/llama/gen_2/00002_2/0111_p00918_Dragon_s_Cruller.cpp" line="27" column="43"/>
+            <symbol>State::cost</symbol>
+        </error>
+        <error id="initializerList" severity="style" msg="Member variable &apos;State::cost&apos; is in the wrong place in the initializer list." verbose="Member variable &apos;State::cost&apos; is in the wrong place in the initializer list. Members are initialized in the order they are declared, not in the order they are in the initializer list.  Keeping the initializer list in the same order that the members were declared prevents order dependent initialization errors." cwe="398" inconclusive="true" file0="derived/cpp/llama/gen_2/00002_2/0111_p00918_Dragon_s_Cruller.cpp">
+            <location file="derived/cpp/llama/gen_2/00002_2/0111_p00918_Dragon_s_Cruller.cpp" line="21" column="9"/>
+            <location file="derived/cpp/llama/gen_2/00002_2/0111_p00918_Dragon_s_Cruller.cpp" line="35" column="57"/>
+            <symbol>State::cost</symbol>
+        </error>
+    </errors>
+</results>

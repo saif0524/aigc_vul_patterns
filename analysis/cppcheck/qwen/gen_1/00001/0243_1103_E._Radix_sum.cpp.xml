@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;count_digits[100005][5]&apos; accessed at index count_digits[0][9], which is out of bounds." verbose="Array &apos;count_digits[100005][5]&apos; accessed at index count_digits[0][9], which is out of bounds." cwe="788" file0="derived/cpp/qwen/gen_1/00001/0243_1103_E._Radix_sum.cpp">
+            <location file="derived/cpp/qwen/gen_1/00001/0243_1103_E._Radix_sum.cpp" line="36" column="32" info="Array index out of bounds"/>
+            <location file="derived/cpp/qwen/gen_1/00001/0243_1103_E._Radix_sum.cpp" line="35" column="19" info="Assuming that condition &apos;d&lt;10&apos; is not redundant"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;count_digits[100005][5]&apos; accessed at index count_digits[*][9], which is out of bounds." verbose="Array &apos;count_digits[100005][5]&apos; accessed at index count_digits[*][9], which is out of bounds." cwe="788" file0="derived/cpp/qwen/gen_1/00001/0243_1103_E._Radix_sum.cpp">
+            <location file="derived/cpp/qwen/gen_1/00001/0243_1103_E._Radix_sum.cpp" line="46" column="33" info="Array index out of bounds"/>
+            <location file="derived/cpp/qwen/gen_1/00001/0243_1103_E._Radix_sum.cpp" line="45" column="23" info="Assuming that condition &apos;d&lt;10&apos; is not redundant"/>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;k&apos; shadows outer variable" verbose="Local variable &apos;k&apos; shadows outer variable" cwe="398" file0="derived/cpp/qwen/gen_1/00001/0243_1103_E._Radix_sum.cpp">
+            <location file="derived/cpp/qwen/gen_1/00001/0243_1103_E._Radix_sum.cpp" line="79" column="25" info="Shadow variable"/>
+            <location file="derived/cpp/qwen/gen_1/00001/0243_1103_E._Radix_sum.cpp" line="70" column="17" info="Shadowed declaration"/>
+            <symbol>k</symbol>
+        </error>
+    </errors>
+</results>

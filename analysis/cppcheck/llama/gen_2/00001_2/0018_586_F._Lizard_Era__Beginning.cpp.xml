@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="clarifyCalculation" severity="style" msg="Clarify calculation precedence for &apos;&amp;&apos; and &apos;?&apos;." verbose="Suspicious calculation. Please use parentheses to clarify the code. The code &apos;&apos;a&amp;b?c:d&apos;&apos; should be written as either &apos;&apos;(a&amp;b)?c:d&apos;&apos; or &apos;&apos;a&amp;(b?c:d)&apos;&apos;." cwe="783" file0="derived/cpp/llama/gen_2/00001_2/0018_586_F._Lizard_Era__Beginning.cpp">
+            <location file="derived/cpp/llama/gen_2/00001_2/0018_586_F._Lizard_Era__Beginning.cpp" line="40" column="44"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;last&apos; is assigned a value that is never used." verbose="Variable &apos;last&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/llama/gen_2/00001_2/0018_586_F._Lizard_Era__Beginning.cpp">
+            <location file="derived/cpp/llama/gen_2/00001_2/0018_586_F._Lizard_Era__Beginning.cpp" line="40" column="17"/>
+            <symbol>last</symbol>
+        </error>
+    </errors>
+</results>

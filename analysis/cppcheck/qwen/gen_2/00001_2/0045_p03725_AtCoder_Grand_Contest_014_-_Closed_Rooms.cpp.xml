@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;nr&apos; can be reduced." verbose="The scope of the variable &apos;nr&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="derived/cpp/qwen/gen_2/00001_2/0045_p03725_AtCoder_Grand_Contest_014_-_Closed_Rooms.cpp">
+            <location file="derived/cpp/qwen/gen_2/00001_2/0045_p03725_AtCoder_Grand_Contest_014_-_Closed_Rooms.cpp" line="39" column="17"/>
+            <symbol>nr</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;nc&apos; can be reduced." verbose="The scope of the variable &apos;nc&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="derived/cpp/qwen/gen_2/00001_2/0045_p03725_AtCoder_Grand_Contest_014_-_Closed_Rooms.cpp">
+            <location file="derived/cpp/qwen/gen_2/00001_2/0045_p03725_AtCoder_Grand_Contest_014_-_Closed_Rooms.cpp" line="39" column="25"/>
+            <symbol>nc</symbol>
+        </error>
+        <error id="negativeContainerIndex" severity="warning" msg="Array index -1 is out of bounds." verbose="Array index -1 is out of bounds." cwe="786" inconclusive="true" file0="derived/cpp/qwen/gen_2/00001_2/0045_p03725_AtCoder_Grand_Contest_014_-_Closed_Rooms.cpp">
+            <location file="derived/cpp/qwen/gen_2/00001_2/0045_p03725_AtCoder_Grand_Contest_014_-_Closed_Rooms.cpp" line="29" column="5" info="Negative array index"/>
+            <location file="derived/cpp/qwen/gen_2/00001_2/0045_p03725_AtCoder_Grand_Contest_014_-_Closed_Rooms.cpp" line="17" column="23" info="Assuming condition is false"/>
+            <location file="derived/cpp/qwen/gen_2/00001_2/0045_p03725_AtCoder_Grand_Contest_014_-_Closed_Rooms.cpp" line="16" column="15" info="Assignment &apos;sr=-1&apos;, assigned value is -1"/>
+        </error>
+        <error id="unusedStructMember" severity="style" msg="struct member &apos;State::r&apos; is never used." verbose="struct member &apos;State::r&apos; is never used." cwe="563" file0="derived/cpp/qwen/gen_2/00001_2/0045_p03725_AtCoder_Grand_Contest_014_-_Closed_Rooms.cpp">
+            <location file="derived/cpp/qwen/gen_2/00001_2/0045_p03725_AtCoder_Grand_Contest_014_-_Closed_Rooms.cpp" line="5" column="9"/>
+            <symbol>State::r</symbol>
+        </error>
+        <error id="unusedStructMember" severity="style" msg="struct member &apos;State::c&apos; is never used." verbose="struct member &apos;State::c&apos; is never used." cwe="563" file0="derived/cpp/qwen/gen_2/00001_2/0045_p03725_AtCoder_Grand_Contest_014_-_Closed_Rooms.cpp">
+            <location file="derived/cpp/qwen/gen_2/00001_2/0045_p03725_AtCoder_Grand_Contest_014_-_Closed_Rooms.cpp" line="5" column="12"/>
+            <symbol>State::c</symbol>
+        </error>
+        <error id="unusedStructMember" severity="style" msg="struct member &apos;State::k&apos; is never used." verbose="struct member &apos;State::k&apos; is never used." cwe="563" file0="derived/cpp/qwen/gen_2/00001_2/0045_p03725_AtCoder_Grand_Contest_014_-_Closed_Rooms.cpp">
+            <location file="derived/cpp/qwen/gen_2/00001_2/0045_p03725_AtCoder_Grand_Contest_014_-_Closed_Rooms.cpp" line="5" column="15"/>
+            <symbol>State::k</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;nr&apos; is assigned a value that is never used." verbose="Variable &apos;nr&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/qwen/gen_2/00001_2/0045_p03725_AtCoder_Grand_Contest_014_-_Closed_Rooms.cpp">
+            <location file="derived/cpp/qwen/gen_2/00001_2/0045_p03725_AtCoder_Grand_Contest_014_-_Closed_Rooms.cpp" line="39" column="20"/>
+            <symbol>nr</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;nc&apos; is assigned a value that is never used." verbose="Variable &apos;nc&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/qwen/gen_2/00001_2/0045_p03725_AtCoder_Grand_Contest_014_-_Closed_Rooms.cpp">
+            <location file="derived/cpp/qwen/gen_2/00001_2/0045_p03725_AtCoder_Grand_Contest_014_-_Closed_Rooms.cpp" line="39" column="28"/>
+            <symbol>nc</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;nr&apos; is assigned a value that is never used." verbose="Variable &apos;nr&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/qwen/gen_2/00001_2/0045_p03725_AtCoder_Grand_Contest_014_-_Closed_Rooms.cpp">
+            <location file="derived/cpp/qwen/gen_2/00001_2/0045_p03725_AtCoder_Grand_Contest_014_-_Closed_Rooms.cpp" line="48" column="24"/>
+            <symbol>nr</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;nc&apos; is assigned a value that is never used." verbose="Variable &apos;nc&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/qwen/gen_2/00001_2/0045_p03725_AtCoder_Grand_Contest_014_-_Closed_Rooms.cpp">
+            <location file="derived/cpp/qwen/gen_2/00001_2/0045_p03725_AtCoder_Grand_Contest_014_-_Closed_Rooms.cpp" line="49" column="24"/>
+            <symbol>nc</symbol>
+        </error>
+    </errors>
+</results>

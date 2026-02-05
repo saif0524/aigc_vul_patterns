@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="iterateByValue" severity="performance" msg="Range variable &apos;comp&apos; should be declared as const reference." verbose="Variable &apos;comp&apos; is used to iterate by value. It could be declared as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln1/00000/0055_963_B._Destruction_of_a_Tree.cpp">
+            <location file="derived/cpp/human/soln1/00000/0055_963_B._Destruction_of_a_Tree.cpp" line="89" column="22" info="Range variable &apos;comp&apos; should be declared as const reference."/>
+            <symbol>comp</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::accumulate algorithm instead of a raw loop." verbose="Consider using std::accumulate algorithm instead of a raw loop." cwe="398" file0="derived/cpp/human/soln1/00000/0055_963_B._Destruction_of_a_Tree.cpp">
+            <location file="derived/cpp/human/soln1/00000/0055_963_B._Destruction_of_a_Tree.cpp" line="53" column="15"/>
+        </error>
+    </errors>
+</results>

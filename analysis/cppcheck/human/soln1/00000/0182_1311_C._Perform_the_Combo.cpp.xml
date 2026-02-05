@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="arrayIndexThenCheck" severity="style" msg="Array index &apos;sci&apos; is used before limits check." verbose="Defensive programming: The variable &apos;sci&apos; is used as an array index before it is checked that is within limits. This can mean that the array might be accessed out of bounds. Reorder conditions such as &apos;(a[i] &amp;&amp; i &lt; 10)&apos; to &apos;(i &lt; 10 &amp;&amp; a[i])&apos;. That way the array will not be accessed if the index is out of limits." cwe="398" file0="derived/cpp/human/soln1/00000/0182_1311_C._Perform_the_Combo.cpp">
+            <location file="derived/cpp/human/soln1/00000/0182_1311_C._Perform_the_Combo.cpp" line="25" column="20"/>
+            <symbol>sci</symbol>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;long long&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;long long&apos;." cwe="686" file0="derived/cpp/human/soln1/00000/0182_1311_C._Perform_the_Combo.cpp">
+            <location file="derived/cpp/human/soln1/00000/0182_1311_C._Perform_the_Combo.cpp" line="31" column="34"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="scanf() without field width limits can crash with huge input data." verbose="scanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="derived/cpp/human/soln1/00000/0182_1311_C._Perform_the_Combo.cpp">
+            <location file="derived/cpp/human/soln1/00000/0182_1311_C._Perform_the_Combo.cpp" line="13" column="5"/>
+        </error>
+    </errors>
+</results>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;a&apos; can be declared as reference to const" verbose="Parameter &apos;a&apos; can be declared as reference to const" cwe="398" file0="derived/cpp/human/soln2/00000/0238_p00320_Cuboid.cpp">
+            <location file="derived/cpp/human/soln2/00000/0238_p00320_Cuboid.cpp" line="42" column="60" info="Parameter &apos;a&apos; can be declared as reference to const"/>
+            <symbol>a</symbol>
+        </error>
+        <error id="constVariableReference" severity="style" msg="Variable &apos;e&apos; can be declared as reference to const" verbose="Variable &apos;e&apos; can be declared as reference to const" cwe="398" file0="derived/cpp/human/soln2/00000/0238_p00320_Cuboid.cpp">
+            <location file="derived/cpp/human/soln2/00000/0238_p00320_Cuboid.cpp" line="23" column="13" info="Variable &apos;e&apos; can be declared as reference to const"/>
+            <symbol>e</symbol>
+        </error>
+        <error id="stlFindInsert" severity="performance" msg="Searching before insertion is not necessary. Instead of &apos;parent[a]=a&apos; consider using &apos;parent.try_emplace(a, a);&apos;." verbose="Searching before insertion is not necessary. Instead of &apos;parent[a]=a&apos; consider using &apos;parent.try_emplace(a, a);&apos;." cwe="398" file0="derived/cpp/human/soln2/00000/0238_p00320_Cuboid.cpp">
+            <location file="derived/cpp/human/soln2/00000/0238_p00320_Cuboid.cpp" line="12" column="45"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;f&apos; is assigned a value that is never used." verbose="Variable &apos;f&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/human/soln2/00000/0238_p00320_Cuboid.cpp">
+            <location file="derived/cpp/human/soln2/00000/0238_p00320_Cuboid.cpp" line="33" column="7"/>
+            <symbol>f</symbol>
+        </error>
+    </errors>
+</results>

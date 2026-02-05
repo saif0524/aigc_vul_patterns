@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="redundantInitialization" severity="style" msg="Redundant initialization for &apos;required_weight&apos;. The initialized value is overwritten before it is read." verbose="Redundant initialization for &apos;required_weight&apos;. The initialized value is overwritten before it is read." cwe="563" file0="derived/cpp/gemma/gen_2/00000_2/0100_716_D._Complete_The_Graph.cpp">
+            <location file="derived/cpp/gemma/gen_2/00000_2/0100_716_D._Complete_The_Graph.cpp" line="137" column="25" info="required_weight is overwritten"/>
+            <location file="derived/cpp/gemma/gen_2/00000_2/0100_716_D._Complete_The_Graph.cpp" line="82" column="35" info="required_weight is initialized"/>
+            <symbol>required_weight</symbol>
+        </error>
+        <error id="constVariableReference" severity="style" msg="Variable &apos;edge&apos; can be declared as reference to const" verbose="Variable &apos;edge&apos; can be declared as reference to const" cwe="398" file0="derived/cpp/gemma/gen_2/00000_2/0100_716_D._Complete_The_Graph.cpp">
+            <location file="derived/cpp/gemma/gen_2/00000_2/0100_716_D._Complete_The_Graph.cpp" line="49" column="24" info="Variable &apos;edge&apos; can be declared as reference to const"/>
+            <symbol>edge</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;dist&apos; is assigned a value that is never used." verbose="Variable &apos;dist&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_2/00000_2/0100_716_D._Complete_The_Graph.cpp">
+            <location file="derived/cpp/gemma/gen_2/00000_2/0100_716_D._Complete_The_Graph.cpp" line="85" column="31"/>
+            <symbol>dist</symbol>
+        </error>
+    </errors>
+</results>

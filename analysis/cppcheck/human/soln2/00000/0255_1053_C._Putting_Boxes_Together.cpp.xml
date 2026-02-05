@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="negativeIndex" severity="error" msg="Array &apos;a[300010]&apos; accessed at index -1, which is out of bounds." verbose="Array &apos;a[300010]&apos; accessed at index -1, which is out of bounds." cwe="786" file0="derived/cpp/human/soln2/00000/0255_1053_C._Putting_Boxes_Together.cpp">
+            <location file="derived/cpp/human/soln2/00000/0255_1053_C._Putting_Boxes_Together.cpp" line="99" column="27" info="Negative array index"/>
+            <location file="derived/cpp/human/soln2/00000/0255_1053_C._Putting_Boxes_Together.cpp" line="92" column="16" info="Assuming condition is false"/>
+            <location file="derived/cpp/human/soln2/00000/0255_1053_C._Putting_Boxes_Together.cpp" line="91" column="41" info="Assignment &apos;pos=-1&apos;, assigned value is -1"/>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;w&apos; shadows outer variable" verbose="Local variable &apos;w&apos; shadows outer variable" cwe="398" file0="derived/cpp/human/soln2/00000/0255_1053_C._Putting_Boxes_Together.cpp">
+            <location file="derived/cpp/human/soln2/00000/0255_1053_C._Putting_Boxes_Together.cpp" line="4" column="22" info="Shadow variable"/>
+            <location file="derived/cpp/human/soln2/00000/0255_1053_C._Putting_Boxes_Together.cpp" line="12" column="16" info="Shadowed declaration"/>
+            <symbol>w</symbol>
+        </error>
+    </errors>
+</results>

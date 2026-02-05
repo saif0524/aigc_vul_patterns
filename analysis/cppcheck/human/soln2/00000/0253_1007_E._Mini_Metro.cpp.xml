@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;f&apos; shadows outer variable" verbose="Local variable &apos;f&apos; shadows outer variable" cwe="398" file0="derived/cpp/human/soln2/00000/0253_1007_E._Mini_Metro.cpp">
+            <location file="derived/cpp/human/soln2/00000/0253_1007_E._Mini_Metro.cpp" line="26" column="8" info="Shadow variable"/>
+            <location file="derived/cpp/human/soln2/00000/0253_1007_E._Mini_Metro.cpp" line="47" column="50" info="Shadowed declaration"/>
+            <symbol>f</symbol>
+        </error>
+        <error id="checkCastIntToCharAndBack" severity="warning" msg="Storing getchar() return value in char variable and then comparing with EOF." verbose="When saving getchar() return value in char variable there is loss of precision.  When getchar() returns EOF this value is truncated. Comparing the char variable with EOF can have unexpected results. For instance a loop &quot;while (EOF != (c = getchar());&quot; loops forever on some compilers/platforms and on other compilers/platforms it will stop when the file contains a matching character." cwe="197" file0="derived/cpp/human/soln2/00000/0253_1007_E._Mini_Metro.cpp">
+            <location file="derived/cpp/human/soln2/00000/0253_1007_E._Mini_Metro.cpp" line="42" column="51"/>
+            <symbol>getchar</symbol>
+        </error>
+    </errors>
+</results>

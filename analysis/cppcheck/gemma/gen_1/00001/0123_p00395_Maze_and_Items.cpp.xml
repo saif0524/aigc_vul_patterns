@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;start_row&apos; can be reduced." verbose="The scope of the variable &apos;start_row&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="derived/cpp/gemma/gen_1/00001/0123_p00395_Maze_and_Items.cpp">
+            <location file="derived/cpp/gemma/gen_1/00001/0123_p00395_Maze_and_Items.cpp" line="24" column="9"/>
+            <symbol>start_row</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;start_col&apos; can be reduced." verbose="The scope of the variable &apos;start_col&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="derived/cpp/gemma/gen_1/00001/0123_p00395_Maze_and_Items.cpp">
+            <location file="derived/cpp/gemma/gen_1/00001/0123_p00395_Maze_and_Items.cpp" line="24" column="25"/>
+            <symbol>start_col</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;target_row&apos; can be reduced." verbose="The scope of the variable &apos;target_row&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="derived/cpp/gemma/gen_1/00001/0123_p00395_Maze_and_Items.cpp">
+            <location file="derived/cpp/gemma/gen_1/00001/0123_p00395_Maze_and_Items.cpp" line="25" column="9"/>
+            <symbol>target_row</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;target_col&apos; can be reduced." verbose="The scope of the variable &apos;target_col&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="derived/cpp/gemma/gen_1/00001/0123_p00395_Maze_and_Items.cpp">
+            <location file="derived/cpp/gemma/gen_1/00001/0123_p00395_Maze_and_Items.cpp" line="25" column="26"/>
+            <symbol>target_col</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;start_row&apos; is assigned a value that is never used." verbose="Variable &apos;start_row&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_1/00001/0123_p00395_Maze_and_Items.cpp">
+            <location file="derived/cpp/gemma/gen_1/00001/0123_p00395_Maze_and_Items.cpp" line="24" column="19"/>
+            <symbol>start_row</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;start_col&apos; is assigned a value that is never used." verbose="Variable &apos;start_col&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_1/00001/0123_p00395_Maze_and_Items.cpp">
+            <location file="derived/cpp/gemma/gen_1/00001/0123_p00395_Maze_and_Items.cpp" line="24" column="35"/>
+            <symbol>start_col</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;target_row&apos; is assigned a value that is never used." verbose="Variable &apos;target_row&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_1/00001/0123_p00395_Maze_and_Items.cpp">
+            <location file="derived/cpp/gemma/gen_1/00001/0123_p00395_Maze_and_Items.cpp" line="25" column="20"/>
+            <symbol>target_row</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;target_col&apos; is assigned a value that is never used." verbose="Variable &apos;target_col&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_1/00001/0123_p00395_Maze_and_Items.cpp">
+            <location file="derived/cpp/gemma/gen_1/00001/0123_p00395_Maze_and_Items.cpp" line="25" column="37"/>
+            <symbol>target_col</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;start_row&apos; is assigned a value that is never used." verbose="Variable &apos;start_row&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_1/00001/0123_p00395_Maze_and_Items.cpp">
+            <location file="derived/cpp/gemma/gen_1/00001/0123_p00395_Maze_and_Items.cpp" line="31" column="27"/>
+            <symbol>start_row</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;start_col&apos; is assigned a value that is never used." verbose="Variable &apos;start_col&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_1/00001/0123_p00395_Maze_and_Items.cpp">
+            <location file="derived/cpp/gemma/gen_1/00001/0123_p00395_Maze_and_Items.cpp" line="32" column="27"/>
+            <symbol>start_col</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;target_row&apos; is assigned a value that is never used." verbose="Variable &apos;target_row&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_1/00001/0123_p00395_Maze_and_Items.cpp">
+            <location file="derived/cpp/gemma/gen_1/00001/0123_p00395_Maze_and_Items.cpp" line="34" column="28"/>
+            <symbol>target_row</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;target_col&apos; is assigned a value that is never used." verbose="Variable &apos;target_col&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_1/00001/0123_p00395_Maze_and_Items.cpp">
+            <location file="derived/cpp/gemma/gen_1/00001/0123_p00395_Maze_and_Items.cpp" line="35" column="28"/>
+            <symbol>target_col</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;num_items&apos; is assigned a value that is never used." verbose="Variable &apos;num_items&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_1/00001/0123_p00395_Maze_and_Items.cpp">
+            <location file="derived/cpp/gemma/gen_1/00001/0123_p00395_Maze_and_Items.cpp" line="42" column="19"/>
+            <symbol>num_items</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;min_moves&apos; is assigned a value that is never used." verbose="Variable &apos;min_moves&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_1/00001/0123_p00395_Maze_and_Items.cpp">
+            <location file="derived/cpp/gemma/gen_1/00001/0123_p00395_Maze_and_Items.cpp" line="44" column="19"/>
+            <symbol>min_moves</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;max_score&apos; is assigned a value that is never used." verbose="Variable &apos;max_score&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_1/00001/0123_p00395_Maze_and_Items.cpp">
+            <location file="derived/cpp/gemma/gen_1/00001/0123_p00395_Maze_and_Items.cpp" line="45" column="19"/>
+            <symbol>max_score</symbol>
+        </error>
+    </errors>
+</results>

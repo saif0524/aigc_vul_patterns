@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="negativeIndex" severity="warning" msg="Either the condition &apos;left&gt;=0&apos; is redundant or the array &apos;st[2147483648]&apos; is accessed at index -1, which is out of bounds." verbose="Either the condition &apos;left&gt;=0&apos; is redundant or the array &apos;st[2147483648]&apos; is accessed at index -1, which is out of bounds." cwe="786" file0="derived/cpp/human/soln1/00001/0288_733_C._Epidemic_in_Monstropolis.cpp">
+            <location file="derived/cpp/human/soln1/00001/0288_733_C._Epidemic_in_Monstropolis.cpp" line="37" column="11" info="Negative array index"/>
+            <location file="derived/cpp/human/soln1/00001/0288_733_C._Epidemic_in_Monstropolis.cpp" line="36" column="9" info="left is decremented&apos;, new value is -1"/>
+            <location file="derived/cpp/human/soln1/00001/0288_733_C._Epidemic_in_Monstropolis.cpp" line="35" column="19" info="Assuming that condition &apos;left&gt;=0&apos; is not redundant"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;i&lt;prev&apos; is always true" verbose="Condition &apos;i&lt;prev&apos; is always true" cwe="571" file0="derived/cpp/human/soln1/00001/0288_733_C._Epidemic_in_Monstropolis.cpp">
+            <location file="derived/cpp/human/soln1/00001/0288_733_C._Epidemic_in_Monstropolis.cpp" line="49" column="17" info="Condition &apos;i&lt;prev&apos; is always true"/>
+            <location file="derived/cpp/human/soln1/00001/0288_733_C._Epidemic_in_Monstropolis.cpp" line="44" column="32" info="Assuming that condition &apos;i&lt;prev&apos; is not redundant"/>
+        </error>
+    </errors>
+</results>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;dp[50][2][1125899906842624]&apos; accessed at index dp[*][2][*], which is out of bounds." verbose="Array &apos;dp[50][2][1125899906842624]&apos; accessed at index dp[*][2][*], which is out of bounds." cwe="788" file0="derived/cpp/qwen/gen_1/00002/0269_979_E._Kuro_and_Topological_Parity.cpp">
+            <location file="derived/cpp/qwen/gen_1/00002/0269_979_E._Kuro_and_Topological_Parity.cpp" line="23" column="18" info="Array index out of bounds"/>
+            <location file="derived/cpp/qwen/gen_1/00002/0269_979_E._Kuro_and_Topological_Parity.cpp" line="12" column="13" info="Assuming condition is false"/>
+            <location file="derived/cpp/qwen/gen_1/00002/0269_979_E._Kuro_and_Topological_Parity.cpp" line="43" column="22" info="Calling function &apos;solve&apos;, 2nd argument &apos;2&apos; value is 2"/>
+        </error>
+        <error id="shiftTooManyBits" severity="error" msg="Shifting 32-bit value by 50 bits is undefined behaviour" verbose="Shifting 32-bit value by 50 bits is undefined behaviour" cwe="758" file0="derived/cpp/qwen/gen_1/00002/0269_979_E._Kuro_and_Topological_Parity.cpp">
+            <location file="derived/cpp/qwen/gen_1/00002/0269_979_E._Kuro_and_Topological_Parity.cpp" line="7" column="19" info="Shift"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;1&lt;&lt;MAXN&apos;." verbose="Signed integer overflow for expression &apos;1&lt;&lt;MAXN&apos;." cwe="190" file0="derived/cpp/qwen/gen_1/00002/0269_979_E._Kuro_and_Topological_Parity.cpp">
+            <location file="derived/cpp/qwen/gen_1/00002/0269_979_E._Kuro_and_Topological_Parity.cpp" line="7" column="19" info="Integer overflow"/>
+        </error>
+    </errors>
+</results>

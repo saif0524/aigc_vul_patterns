@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="arrayIndexOutOfBoundsCond" severity="warning" msg="Either the condition &apos;idx&gt;0&apos; is redundant or the array &apos;data[200448]&apos; is accessed at index 200448, which is out of bounds." verbose="Either the condition &apos;idx&gt;0&apos; is redundant or the array &apos;data[200448]&apos; is accessed at index 200448, which is out of bounds." cwe="788" file0="derived/cpp/human/soln1/00000/0008_1208_D._Restore_Permutation.cpp">
+            <location file="derived/cpp/human/soln1/00000/0008_1208_D._Restore_Permutation.cpp" line="19" column="18" info="Array index out of bounds"/>
+            <location file="derived/cpp/human/soln1/00000/0008_1208_D._Restore_Permutation.cpp" line="18" column="16" info="Assuming that condition &apos;idx&gt;0&apos; is not redundant"/>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;BIT::query&apos; can be const." verbose="The member function &apos;BIT::query&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true" file0="derived/cpp/human/soln1/00000/0008_1208_D._Restore_Permutation.cpp">
+            <location file="derived/cpp/human/soln1/00000/0008_1208_D._Restore_Permutation.cpp" line="16" column="13"/>
+            <symbol>BIT::query</symbol>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;v[i]&lt;val&apos; is always true" verbose="Condition &apos;v[i]&lt;val&apos; is always true" cwe="571" file0="derived/cpp/human/soln1/00000/0008_1208_D._Restore_Permutation.cpp">
+            <location file="derived/cpp/human/soln1/00000/0008_1208_D._Restore_Permutation.cpp" line="103" column="23" info="Condition &apos;v[i]&lt;val&apos; is always true"/>
+            <location file="derived/cpp/human/soln1/00000/0008_1208_D._Restore_Permutation.cpp" line="98" column="15" info="Assuming that condition &apos;val==v[i]&apos; is not redundant"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;mid&apos; can be reduced." verbose="The scope of the variable &apos;mid&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="derived/cpp/human/soln1/00000/0008_1208_D._Restore_Permutation.cpp">
+            <location file="derived/cpp/human/soln1/00000/0008_1208_D._Restore_Permutation.cpp" line="83" column="15"/>
+            <symbol>mid</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;val&apos; can be reduced." verbose="The scope of the variable &apos;val&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="derived/cpp/human/soln1/00000/0008_1208_D._Restore_Permutation.cpp">
+            <location file="derived/cpp/human/soln1/00000/0008_1208_D._Restore_Permutation.cpp" line="85" column="15"/>
+            <symbol>val</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: ans" verbose="Uninitialized variable: ans" cwe="457" file0="derived/cpp/human/soln1/00000/0008_1208_D._Restore_Permutation.cpp">
+            <location file="derived/cpp/human/soln1/00000/0008_1208_D._Restore_Permutation.cpp" line="107" column="14"/>
+            <location file="derived/cpp/human/soln1/00000/0008_1208_D._Restore_Permutation.cpp" line="87" column="15" info="Assuming condition is false"/>
+            <symbol>ans</symbol>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: temp" verbose="Unused variable: temp" cwe="563" file0="derived/cpp/human/soln1/00000/0008_1208_D._Restore_Permutation.cpp">
+            <location file="derived/cpp/human/soln1/00000/0008_1208_D._Restore_Permutation.cpp" line="86" column="15"/>
+            <symbol>temp</symbol>
+        </error>
+    </errors>
+</results>

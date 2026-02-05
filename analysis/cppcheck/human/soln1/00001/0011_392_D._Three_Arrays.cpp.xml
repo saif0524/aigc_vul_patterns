@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Type::pos&apos; is not initialized in the constructor." verbose="Member variable &apos;Type::pos&apos; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" inconclusive="true" file0="derived/cpp/human/soln1/00001/0011_392_D._Three_Arrays.cpp">
+            <location file="derived/cpp/human/soln1/00001/0011_392_D._Three_Arrays.cpp" line="9" column="3"/>
+            <symbol>Type::pos</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Type::val&apos; is not initialized in the constructor." verbose="Member variable &apos;Type::val&apos; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" inconclusive="true" file0="derived/cpp/human/soln1/00001/0011_392_D._Three_Arrays.cpp">
+            <location file="derived/cpp/human/soln1/00001/0011_392_D._Three_Arrays.cpp" line="9" column="3"/>
+            <symbol>Type::val</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Type::size&apos; is not initialized in the constructor." verbose="Member variable &apos;Type::size&apos; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" inconclusive="true" file0="derived/cpp/human/soln1/00001/0011_392_D._Three_Arrays.cpp">
+            <location file="derived/cpp/human/soln1/00001/0011_392_D._Three_Arrays.cpp" line="9" column="3"/>
+            <symbol>Type::size</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Type::father&apos; is not initialized in the constructor." verbose="Member variable &apos;Type::father&apos; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" inconclusive="true" file0="derived/cpp/human/soln1/00001/0011_392_D._Three_Arrays.cpp">
+            <location file="derived/cpp/human/soln1/00001/0011_392_D._Three_Arrays.cpp" line="9" column="3"/>
+            <symbol>Type::father</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;Type::son&apos; is not initialized in the constructor." verbose="Member variable &apos;Type::son&apos; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" inconclusive="true" file0="derived/cpp/human/soln1/00001/0011_392_D._Three_Arrays.cpp">
+            <location file="derived/cpp/human/soln1/00001/0011_392_D._Three_Arrays.cpp" line="9" column="3"/>
+            <symbol>Type::son</symbol>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: current" verbose="Possible null pointer dereference: current" cwe="476" file0="derived/cpp/human/soln1/00001/0011_392_D._Three_Arrays.cpp">
+            <location file="derived/cpp/human/soln1/00001/0011_392_D._Three_Arrays.cpp" line="105" column="10" info="Null pointer dereference"/>
+            <location file="derived/cpp/human/soln1/00001/0011_392_D._Three_Arrays.cpp" line="137" column="9" info="Calling function &apos;Splay&apos;, 1st argument &apos;best&apos; value is 0"/>
+            <location file="derived/cpp/human/soln1/00001/0011_392_D._Three_Arrays.cpp" line="129" column="10" info="Assuming condition is false"/>
+            <location file="derived/cpp/human/soln1/00001/0011_392_D._Three_Arrays.cpp" line="128" column="33" info="Assignment &apos;best=0&apos;, assigned value is 0"/>
+            <symbol>current</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;mid&apos; can be reduced." verbose="The scope of the variable &apos;mid&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="derived/cpp/human/soln1/00001/0011_392_D._Three_Arrays.cpp">
+            <location file="derived/cpp/human/soln1/00001/0011_392_D._Three_Arrays.cpp" line="25" column="12"/>
+            <symbol>mid</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;solved&apos; can be reduced." verbose="The scope of the variable &apos;solved&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="derived/cpp/human/soln1/00001/0011_392_D._Three_Arrays.cpp">
+            <location file="derived/cpp/human/soln1/00001/0011_392_D._Three_Arrays.cpp" line="198" column="8"/>
+            <symbol>solved</symbol>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;target&apos; can be declared as pointer to const" verbose="Parameter &apos;target&apos; can be declared as pointer to const" cwe="398" file0="derived/cpp/human/soln1/00001/0011_392_D._Three_Arrays.cpp">
+            <location file="derived/cpp/human/soln1/00001/0011_392_D._Three_Arrays.cpp" line="104" column="33" info="Parameter &apos;target&apos; can be declared as pointer to const"/>
+            <symbol>target</symbol>
+        </error>
+        <error id="ctunullpointer" severity="error" msg="Null pointer dereference: current" verbose="Null pointer dereference: current" cwe="476">
+            <location file="derived/cpp/human/soln1/00001/0011_392_D._Three_Arrays.cpp" line="105" column="10" info="Dereferencing argument current that is null"/>
+            <location file="derived/cpp/human/soln1/00001/0011_392_D._Three_Arrays.cpp" line="137" column="8" info="Calling function Splay, 1st argument is null"/>
+            <location file="derived/cpp/human/soln1/00001/0011_392_D._Three_Arrays.cpp" line="129" column="10" info="Assuming condition is false"/>
+            <location file="derived/cpp/human/soln1/00001/0011_392_D._Three_Arrays.cpp" line="128" column="33" info="Assignment &apos;best=0&apos;, assigned value is 0"/>
+        </error>
+    </errors>
+</results>

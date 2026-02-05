@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="identicalInnerCondition" severity="warning" msg="Identical inner &apos;if&apos; condition is always true." verbose="Identical inner &apos;if&apos; condition is always true (outer condition is &apos;use&apos; and inner condition is &apos;use&apos;)." cwe="398" file0="derived/cpp/human/soln2/00000/0102_1470_E._Strange_Permutation.cpp">
+            <location file="derived/cpp/human/soln2/00000/0102_1470_E._Strange_Permutation.cpp" line="38" column="7" info="identical inner condition: use"/>
+            <location file="derived/cpp/human/soln2/00000/0102_1470_E._Strange_Permutation.cpp" line="37" column="10" info="outer condition: use"/>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;c&apos; shadows outer variable" verbose="Local variable &apos;c&apos; shadows outer variable" cwe="398" file0="derived/cpp/human/soln2/00000/0102_1470_E._Strange_Permutation.cpp">
+            <location file="derived/cpp/human/soln2/00000/0102_1470_E._Strange_Permutation.cpp" line="5" column="20" info="Shadow variable"/>
+            <location file="derived/cpp/human/soln2/00000/0102_1470_E._Strange_Permutation.cpp" line="18" column="11" info="Shadowed declaration"/>
+            <symbol>c</symbol>
+        </error>
+    </errors>
+</results>

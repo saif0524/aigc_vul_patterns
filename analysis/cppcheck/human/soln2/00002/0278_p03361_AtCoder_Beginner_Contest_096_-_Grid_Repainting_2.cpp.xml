@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;i!=h&apos; is always true" verbose="Condition &apos;i!=h&apos; is always true" cwe="571" file0="derived/cpp/human/soln2/00002/0278_p03361_AtCoder_Beginner_Contest_096_-_Grid_Repainting_2.cpp">
+            <location file="derived/cpp/human/soln2/00002/0278_p03361_AtCoder_Beginner_Contest_096_-_Grid_Repainting_2.cpp" line="13" column="13" info="Condition &apos;i!=h&apos; is always true"/>
+            <location file="derived/cpp/human/soln2/00002/0278_p03361_AtCoder_Beginner_Contest_096_-_Grid_Repainting_2.cpp" line="8" column="17" info="Assuming that condition &apos;i&lt;h&apos; is not redundant"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;j!=k&apos; is always true" verbose="Condition &apos;j!=k&apos; is always true" cwe="571" file0="derived/cpp/human/soln2/00002/0278_p03361_AtCoder_Beginner_Contest_096_-_Grid_Repainting_2.cpp">
+            <location file="derived/cpp/human/soln2/00002/0278_p03361_AtCoder_Beginner_Contest_096_-_Grid_Repainting_2.cpp" line="15" column="13" info="Condition &apos;j!=k&apos; is always true"/>
+            <location file="derived/cpp/human/soln2/00002/0278_p03361_AtCoder_Beginner_Contest_096_-_Grid_Repainting_2.cpp" line="9" column="19" info="Assuming that condition &apos;j&lt;k&apos; is not redundant"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;t&apos; can be reduced." verbose="The scope of the variable &apos;t&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="derived/cpp/human/soln2/00002/0278_p03361_AtCoder_Beginner_Contest_096_-_Grid_Repainting_2.cpp">
+            <location file="derived/cpp/human/soln2/00002/0278_p03361_AtCoder_Beginner_Contest_096_-_Grid_Repainting_2.cpp" line="10" column="12"/>
+            <symbol>t</symbol>
+        </error>
+    </errors>
+</results>

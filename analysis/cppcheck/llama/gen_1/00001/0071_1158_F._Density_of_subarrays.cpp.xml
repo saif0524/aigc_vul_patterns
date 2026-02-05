@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &apos;Binomial::inv&apos; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &apos;Binomial::inv&apos; can be made a static function. Making a function static can bring a performance benefit since no &apos;this&apos; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to an unnamed namespace." cwe="398" inconclusive="true" file0="derived/cpp/llama/gen_1/00001/0071_1158_F._Density_of_subarrays.cpp">
+            <location file="derived/cpp/llama/gen_1/00001/0071_1158_F._Density_of_subarrays.cpp" line="13" column="9"/>
+            <symbol>Binomial::inv</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;Binomial::C&apos; can be const." verbose="The member function &apos;Binomial::C&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true" file0="derived/cpp/llama/gen_1/00001/0071_1158_F._Density_of_subarrays.cpp">
+            <location file="derived/cpp/llama/gen_1/00001/0071_1158_F._Density_of_subarrays.cpp" line="23" column="9"/>
+            <symbol>Binomial::C</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;Binomial&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;Binomial&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="derived/cpp/llama/gen_1/00001/0071_1158_F._Density_of_subarrays.cpp">
+            <location file="derived/cpp/llama/gen_1/00001/0071_1158_F._Density_of_subarrays.cpp" line="7" column="5"/>
+            <symbol>Binomial</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;binom&apos; is assigned a value that is never used." verbose="Variable &apos;binom&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/llama/gen_1/00001/0071_1158_F._Density_of_subarrays.cpp">
+            <location file="derived/cpp/llama/gen_1/00001/0071_1158_F._Density_of_subarrays.cpp" line="40" column="19"/>
+            <symbol>binom</symbol>
+        </error>
+    </errors>
+</results>

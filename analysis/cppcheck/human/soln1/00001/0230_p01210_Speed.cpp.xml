@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="redundantInitialization" severity="style" msg="Redundant initialization for &apos;next&apos;. The initialized value is overwritten before it is read." verbose="Redundant initialization for &apos;next&apos;. The initialized value is overwritten before it is read." cwe="563" file0="derived/cpp/human/soln1/00001/0230_p01210_Speed.cpp">
+            <location file="derived/cpp/human/soln1/00001/0230_p01210_Speed.cpp" line="73" column="11" info="next is overwritten"/>
+            <location file="derived/cpp/human/soln1/00001/0230_p01210_Speed.cpp" line="54" column="12" info="next is initialized"/>
+            <symbol>next</symbol>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;a&apos; can be declared as pointer to const" verbose="Parameter &apos;a&apos; can be declared as pointer to const" cwe="398" file0="derived/cpp/human/soln1/00001/0230_p01210_Speed.cpp">
+            <location file="derived/cpp/human/soln1/00001/0230_p01210_Speed.cpp" line="18" column="17" info="Parameter &apos;a&apos; can be declared as pointer to const"/>
+            <symbol>a</symbol>
+        </error>
+    </errors>
+</results>

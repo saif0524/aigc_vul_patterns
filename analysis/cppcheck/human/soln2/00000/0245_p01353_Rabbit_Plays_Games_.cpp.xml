@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;_Reader::operator,&apos; can be const." verbose="The member function &apos;_Reader::operator,&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true" file0="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp">
+            <location file="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp" line="73" column="45"/>
+            <symbol>_Reader::operator,</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;vevector&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;vevector&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp">
+            <location file="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp" line="53" column="65"/>
+            <symbol>vevector</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;vevevector&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;vevevector&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp">
+            <location file="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp" line="54" column="69"/>
+            <symbol>vevevector</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;vevevevector&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;vevevevector&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp">
+            <location file="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp" line="55" column="73"/>
+            <symbol>vevevevector</symbol>
+        </error>
+        <error id="constStatement" severity="warning" msg="Found suspicious operator &apos;,&apos;, result is not used." verbose="Found suspicious operator &apos;,&apos;, result is not used." cwe="398" file0="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp">
+            <location file="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp" line="115" column="3"/>
+        </error>
+        <error id="constStatement" severity="warning" msg="Found suspicious operator &apos;,&apos;, result is not used." verbose="Found suspicious operator &apos;,&apos;, result is not used." cwe="398" file0="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp">
+            <location file="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp" line="121" column="4"/>
+        </error>
+        <error id="iterateByValue" severity="performance" msg="Range variable &apos;e&apos; should be declared as const reference." verbose="Variable &apos;e&apos; is used to iterate by value. It could be declared as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp">
+            <location file="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp" line="151" column="13" info="Range variable &apos;e&apos; should be declared as const reference."/>
+            <symbol>e</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: n" verbose="Uninitialized variable: n" cwe="457" file0="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp">
+            <location file="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp" line="114" column="3"/>
+            <symbol>n</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: hp" verbose="Uninitialized variable: hp" cwe="457" file0="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp">
+            <location file="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp" line="115" column="3"/>
+            <symbol>hp</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: pa" verbose="Uninitialized variable: pa" cwe="457" file0="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp">
+            <location file="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp" line="115" column="3"/>
+            <symbol>pa</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: pd" verbose="Uninitialized variable: pd" cwe="457" file0="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp">
+            <location file="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp" line="115" column="3"/>
+            <symbol>pd</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: ps" verbose="Uninitialized variable: ps" cwe="457" file0="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp">
+            <location file="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp" line="115" column="3"/>
+            <symbol>ps</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: h" verbose="Uninitialized variable: h" cwe="457" file0="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp">
+            <location file="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp" line="121" column="4"/>
+            <symbol>h</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: a" verbose="Uninitialized variable: a" cwe="457" file0="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp">
+            <location file="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp" line="121" column="4"/>
+            <symbol>a</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: d" verbose="Uninitialized variable: d" cwe="457" file0="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp">
+            <location file="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp" line="121" column="4"/>
+            <symbol>d</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: s" verbose="Uninitialized variable: s" cwe="457" file0="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp">
+            <location file="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp" line="121" column="4"/>
+            <symbol>s</symbol>
+        </error>
+        <error id="unusedStructMember" severity="style" msg="struct member &apos;C::d&apos; is never used." verbose="struct member &apos;C::d&apos; is never used." cwe="563" file0="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp">
+            <location file="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp" line="125" column="22"/>
+            <symbol>C::d</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::freopen() is not used." verbose="Return value of function std::freopen() is not used." cwe="252" file0="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp">
+            <location file="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp" line="61" column="41"/>
+            <symbol>std::freopen</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::freopen() is not used." verbose="Return value of function std::freopen() is not used." cwe="252" file0="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp">
+            <location file="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp" line="62" column="40"/>
+            <symbol>std::freopen</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;filename&apos; should be passed by const reference." verbose="Parameter &apos;filename&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp">
+            <location file="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp" line="61" column="29" info="Function parameter &apos;filename&apos; should be passed by const reference."/>
+            <symbol>filename</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;filename&apos; should be passed by const reference." verbose="Parameter &apos;filename&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp">
+            <location file="derived/cpp/human/soln2/00000/0245_p01353_Rabbit_Plays_Games_.cpp" line="62" column="28" info="Function parameter &apos;filename&apos; should be passed by const reference."/>
+            <symbol>filename</symbol>
+        </error>
+    </errors>
+</results>

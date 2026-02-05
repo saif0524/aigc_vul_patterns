@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="getsCalled" severity="warning" msg="Obsolete function &apos;gets&apos; called. It is recommended to use &apos;fgets&apos; or &apos;gets_s&apos; instead." verbose="The obsolete function &apos;gets&apos; is called. With &apos;gets&apos; you&apos;ll get a buffer overrun if the input data exceeds the size of the buffer. It is recommended to use the functions &apos;fgets&apos; or &apos;gets_s&apos; instead." cwe="477" file0="derived/cpp/human/soln1/00002/0151_245_F._Log_Stream_Analysis.cpp">
+            <location file="derived/cpp/human/soln1/00002/0151_245_F._Log_Stream_Analysis.cpp" line="13" column="5"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;now&apos; can be reduced." verbose="The scope of the variable &apos;now&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="derived/cpp/human/soln1/00002/0151_245_F._Log_Stream_Analysis.cpp">
+            <location file="derived/cpp/human/soln1/00002/0151_245_F._Log_Stream_Analysis.cpp" line="9" column="7"/>
+            <symbol>now</symbol>
+        </error>
+    </errors>
+</results>

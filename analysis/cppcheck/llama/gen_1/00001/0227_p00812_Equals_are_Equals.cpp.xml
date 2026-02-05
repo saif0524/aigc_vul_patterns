@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;i&apos; shadows outer variable" verbose="Local variable &apos;i&apos; shadows outer variable" cwe="398" file0="derived/cpp/llama/gen_1/00001/0227_p00812_Equals_are_Equals.cpp">
+            <location file="derived/cpp/llama/gen_1/00001/0227_p00812_Equals_are_Equals.cpp" line="76" column="30" info="Shadow variable"/>
+            <location file="derived/cpp/llama/gen_1/00001/0227_p00812_Equals_are_Equals.cpp" line="42" column="12" info="Shadowed declaration"/>
+            <symbol>i</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;mp&apos; shadows outer variable" verbose="Local variable &apos;mp&apos; shadows outer variable" cwe="398" file0="derived/cpp/llama/gen_1/00001/0227_p00812_Equals_are_Equals.cpp">
+            <location file="derived/cpp/llama/gen_1/00001/0227_p00812_Equals_are_Equals.cpp" line="97" column="22" info="Shadow variable"/>
+            <location file="derived/cpp/llama/gen_1/00001/0227_p00812_Equals_are_Equals.cpp" line="25" column="24" info="Shadowed declaration"/>
+            <symbol>mp</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::accumulate algorithm instead of a raw loop." verbose="Consider using std::accumulate algorithm instead of a raw loop." cwe="398" file0="derived/cpp/llama/gen_1/00001/0227_p00812_Equals_are_Equals.cpp">
+            <location file="derived/cpp/llama/gen_1/00001/0227_p00812_Equals_are_Equals.cpp" line="19" column="15"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;mp[var]&apos; is assigned a value that is never used." verbose="Variable &apos;mp[var]&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/llama/gen_1/00001/0227_p00812_Equals_are_Equals.cpp">
+            <location file="derived/cpp/llama/gen_1/00001/0227_p00812_Equals_are_Equals.cpp" line="101" column="17"/>
+            <symbol>mp[var]</symbol>
+        </error>
+    </errors>
+</results>

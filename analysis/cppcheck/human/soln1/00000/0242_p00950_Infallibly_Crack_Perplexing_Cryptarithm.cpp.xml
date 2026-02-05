@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;ch&apos; shadows outer variable" verbose="Local variable &apos;ch&apos; shadows outer variable" cwe="398" file0="derived/cpp/human/soln1/00000/0242_p00950_Infallibly_Crack_Perplexing_Cryptarithm.cpp">
+            <location file="derived/cpp/human/soln1/00000/0242_p00950_Infallibly_Crack_Perplexing_Cryptarithm.cpp" line="30" column="8" info="Shadow variable"/>
+            <location file="derived/cpp/human/soln1/00000/0242_p00950_Infallibly_Crack_Perplexing_Cryptarithm.cpp" line="9" column="6" info="Shadowed declaration"/>
+            <symbol>ch</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;ch&apos; shadows outer variable" verbose="Local variable &apos;ch&apos; shadows outer variable" cwe="398" file0="derived/cpp/human/soln1/00000/0242_p00950_Infallibly_Crack_Perplexing_Cryptarithm.cpp">
+            <location file="derived/cpp/human/soln1/00000/0242_p00950_Infallibly_Crack_Perplexing_Cryptarithm.cpp" line="55" column="10" info="Shadow variable"/>
+            <location file="derived/cpp/human/soln1/00000/0242_p00950_Infallibly_Crack_Perplexing_Cryptarithm.cpp" line="9" column="6" info="Shadowed declaration"/>
+            <symbol>ch</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;a&apos; should be passed by const reference." verbose="Parameter &apos;a&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln1/00000/0242_p00950_Infallibly_Crack_Perplexing_Cryptarithm.cpp">
+            <location file="derived/cpp/human/soln1/00000/0242_p00950_Infallibly_Crack_Perplexing_Cryptarithm.cpp" line="12" column="19" info="Function parameter &apos;a&apos; should be passed by const reference."/>
+            <symbol>a</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;a&apos; should be passed by const reference." verbose="Parameter &apos;a&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln1/00000/0242_p00950_Infallibly_Crack_Perplexing_Cryptarithm.cpp">
+            <location file="derived/cpp/human/soln1/00000/0242_p00950_Infallibly_Crack_Perplexing_Cryptarithm.cpp" line="67" column="19" info="Function parameter &apos;a&apos; should be passed by const reference."/>
+            <symbol>a</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;res&apos; is assigned a value that is never used." verbose="Variable &apos;res&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/human/soln1/00000/0242_p00950_Infallibly_Crack_Perplexing_Cryptarithm.cpp">
+            <location file="derived/cpp/human/soln1/00000/0242_p00950_Infallibly_Crack_Perplexing_Cryptarithm.cpp" line="31" column="11"/>
+            <symbol>res</symbol>
+        </error>
+    </errors>
+</results>

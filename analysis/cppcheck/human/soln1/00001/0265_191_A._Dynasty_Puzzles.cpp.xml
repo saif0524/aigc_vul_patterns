@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;k&apos; can be reduced." verbose="The scope of the variable &apos;k&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="derived/cpp/human/soln1/00001/0265_191_A._Dynasty_Puzzles.cpp">
+            <location file="derived/cpp/human/soln1/00001/0265_191_A._Dynasty_Puzzles.cpp" line="8" column="46"/>
+            <symbol>k</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;i&apos; shadows outer variable" verbose="Local variable &apos;i&apos; shadows outer variable" cwe="398" file0="derived/cpp/human/soln1/00001/0265_191_A._Dynasty_Puzzles.cpp">
+            <location file="derived/cpp/human/soln1/00001/0265_191_A._Dynasty_Puzzles.cpp" line="11" column="18" info="Shadow variable"/>
+            <location file="derived/cpp/human/soln1/00001/0265_191_A._Dynasty_Puzzles.cpp" line="8" column="33" info="Shadowed declaration"/>
+            <symbol>i</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;i&apos; shadows outer variable" verbose="Local variable &apos;i&apos; shadows outer variable" cwe="398" file0="derived/cpp/human/soln1/00001/0265_191_A._Dynasty_Puzzles.cpp">
+            <location file="derived/cpp/human/soln1/00001/0265_191_A._Dynasty_Puzzles.cpp" line="23" column="18" info="Shadow variable"/>
+            <location file="derived/cpp/human/soln1/00001/0265_191_A._Dynasty_Puzzles.cpp" line="8" column="33" info="Shadowed declaration"/>
+            <symbol>i</symbol>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: m" verbose="Unused variable: m" cwe="563" file0="derived/cpp/human/soln1/00001/0265_191_A._Dynasty_Puzzles.cpp">
+            <location file="derived/cpp/human/soln1/00001/0265_191_A._Dynasty_Puzzles.cpp" line="8" column="16"/>
+            <symbol>m</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;l&apos; is assigned a value that is never used." verbose="Variable &apos;l&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/human/soln1/00001/0265_191_A._Dynasty_Puzzles.cpp">
+            <location file="derived/cpp/human/soln1/00001/0265_191_A._Dynasty_Puzzles.cpp" line="8" column="19"/>
+            <symbol>l</symbol>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: i" verbose="Unused variable: i" cwe="563" file0="derived/cpp/human/soln1/00001/0265_191_A._Dynasty_Puzzles.cpp">
+            <location file="derived/cpp/human/soln1/00001/0265_191_A._Dynasty_Puzzles.cpp" line="8" column="33"/>
+            <symbol>i</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;flag&apos; is assigned a value that is never used." verbose="Variable &apos;flag&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/human/soln1/00001/0265_191_A._Dynasty_Puzzles.cpp">
+            <location file="derived/cpp/human/soln1/00001/0265_191_A._Dynasty_Puzzles.cpp" line="8" column="36"/>
+            <symbol>flag</symbol>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: t" verbose="Unused variable: t" cwe="563" file0="derived/cpp/human/soln1/00001/0265_191_A._Dynasty_Puzzles.cpp">
+            <location file="derived/cpp/human/soln1/00001/0265_191_A._Dynasty_Puzzles.cpp" line="8" column="49"/>
+            <symbol>t</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;d&apos; is assigned a value that is never used." verbose="Variable &apos;d&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/human/soln1/00001/0265_191_A._Dynasty_Puzzles.cpp">
+            <location file="derived/cpp/human/soln1/00001/0265_191_A._Dynasty_Puzzles.cpp" line="8" column="52"/>
+            <symbol>d</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;q&apos; is assigned a value that is never used." verbose="Variable &apos;q&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/human/soln1/00001/0265_191_A._Dynasty_Puzzles.cpp">
+            <location file="derived/cpp/human/soln1/00001/0265_191_A._Dynasty_Puzzles.cpp" line="8" column="59"/>
+            <symbol>q</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;r&apos; is assigned a value that is never used." verbose="Variable &apos;r&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/human/soln1/00001/0265_191_A._Dynasty_Puzzles.cpp">
+            <location file="derived/cpp/human/soln1/00001/0265_191_A._Dynasty_Puzzles.cpp" line="8" column="66"/>
+            <symbol>r</symbol>
+        </error>
+    </errors>
+</results>

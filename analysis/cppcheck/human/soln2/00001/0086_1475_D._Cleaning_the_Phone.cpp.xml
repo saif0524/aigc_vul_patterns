@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;i&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;i&apos; is reassigned a value before the old one has been used." cwe="563" file0="derived/cpp/human/soln2/00001/0086_1475_D._Cleaning_the_Phone.cpp">
+            <location file="derived/cpp/human/soln2/00001/0086_1475_D._Cleaning_the_Phone.cpp" line="101" column="14" info="i is overwritten"/>
+            <location file="derived/cpp/human/soln2/00001/0086_1475_D._Cleaning_the_Phone.cpp" line="97" column="10" info="i is assigned"/>
+            <symbol>i</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;j&apos; can be reduced." verbose="The scope of the variable &apos;j&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="derived/cpp/human/soln2/00001/0086_1475_D._Cleaning_the_Phone.cpp">
+            <location file="derived/cpp/human/soln2/00001/0086_1475_D._Cleaning_the_Phone.cpp" line="71" column="11"/>
+            <symbol>j</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;temp&apos; can be reduced." verbose="The scope of the variable &apos;temp&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="derived/cpp/human/soln2/00001/0086_1475_D._Cleaning_the_Phone.cpp">
+            <location file="derived/cpp/human/soln2/00001/0086_1475_D._Cleaning_the_Phone.cpp" line="99" column="64"/>
+            <symbol>temp</symbol>
+        </error>
+        <error id="constVariableReference" severity="style" msg="Variable &apos;i&apos; can be declared as reference to const" verbose="Variable &apos;i&apos; can be declared as reference to const" cwe="398" file0="derived/cpp/human/soln2/00001/0086_1475_D._Cleaning_the_Phone.cpp">
+            <location file="derived/cpp/human/soln2/00001/0086_1475_D._Cleaning_the_Phone.cpp" line="31" column="62" info="Variable &apos;i&apos; can be declared as reference to const"/>
+            <symbol>i</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;j&apos; is assigned a value that is never used." verbose="Variable &apos;j&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/human/soln2/00001/0086_1475_D._Cleaning_the_Phone.cpp">
+            <location file="derived/cpp/human/soln2/00001/0086_1475_D._Cleaning_the_Phone.cpp" line="98" column="10"/>
+            <symbol>j</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;temp&apos; is assigned a value that is never used." verbose="Variable &apos;temp&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/human/soln2/00001/0086_1475_D._Cleaning_the_Phone.cpp">
+            <location file="derived/cpp/human/soln2/00001/0086_1475_D._Cleaning_the_Phone.cpp" line="99" column="68"/>
+            <symbol>temp</symbol>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: tempans" verbose="Unused variable: tempans" cwe="563" file0="derived/cpp/human/soln2/00001/0086_1475_D._Cleaning_the_Phone.cpp">
+            <location file="derived/cpp/human/soln2/00001/0086_1475_D._Cleaning_the_Phone.cpp" line="99" column="71"/>
+            <symbol>tempans</symbol>
+        </error>
+    </errors>
+</results>

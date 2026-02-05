@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;cmp_for_set::operator()&apos; can be const." verbose="The member function &apos;cmp_for_set::operator()&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true" file0="derived/cpp/human/soln1/00001/0019_586_F._Lizard_Era__Beginning.cpp">
+            <location file="derived/cpp/human/soln1/00001/0019_586_F._Lizard_Era__Beginning.cpp" line="10" column="8"/>
+            <symbol>cmp_for_set::operator()</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;j&apos; shadows outer variable" verbose="Local variable &apos;j&apos; shadows outer variable" cwe="398" file0="derived/cpp/human/soln1/00001/0019_586_F._Lizard_Era__Beginning.cpp">
+            <location file="derived/cpp/human/soln1/00001/0019_586_F._Lizard_Era__Beginning.cpp" line="150" column="16" info="Shadow variable"/>
+            <location file="derived/cpp/human/soln1/00001/0019_586_F._Lizard_Era__Beginning.cpp" line="148" column="14" info="Shadowed declaration"/>
+            <symbol>j</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;j&apos; shadows outer variable" verbose="Local variable &apos;j&apos; shadows outer variable" cwe="398" file0="derived/cpp/human/soln1/00001/0019_586_F._Lizard_Era__Beginning.cpp">
+            <location file="derived/cpp/human/soln1/00001/0019_586_F._Lizard_Era__Beginning.cpp" line="163" column="16" info="Shadow variable"/>
+            <location file="derived/cpp/human/soln1/00001/0019_586_F._Lizard_Era__Beginning.cpp" line="161" column="14" info="Shadowed declaration"/>
+            <symbol>j</symbol>
+        </error>
+    </errors>
+</results>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &apos;A830::cost&apos; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &apos;A830::cost&apos; can be made a static function. Making a function static can bring a performance benefit since no &apos;this&apos; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to an unnamed namespace." cwe="398" inconclusive="true" file0="derived/cpp/human/soln1/00000/0134_830_A._Office_Keys.cpp">
+            <location file="derived/cpp/human/soln1/00000/0134_830_A._Office_Keys.cpp" line="6" column="7"/>
+            <symbol>A830::cost</symbol>
+        </error>
+    </errors>
+</results>

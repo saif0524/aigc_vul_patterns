@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;primes[i]==primes[i-1]&apos; is always false" verbose="Condition &apos;primes[i]==primes[i-1]&apos; is always false" cwe="570" file0="derived/cpp/llama/gen_2/00000_2/0236_p01970_The_Diversity_of_Prime_Factorization.cpp">
+            <location file="derived/cpp/llama/gen_2/00000_2/0236_p01970_The_Diversity_of_Prime_Factorization.cpp" line="63" column="17" info="Condition &apos;primes[i]==primes[i-1]&apos; is always false"/>
+            <location file="derived/cpp/llama/gen_2/00000_2/0236_p01970_The_Diversity_of_Prime_Factorization.cpp" line="59" column="17" info="Assuming that condition &apos;primes[i]&lt;=primes[i-1]&apos; is not redundant"/>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;arr&apos; should be passed by const reference." verbose="Parameter &apos;arr&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/llama/gen_2/00000_2/0236_p01970_The_Diversity_of_Prime_Factorization.cpp">
+            <location file="derived/cpp/llama/gen_2/00000_2/0236_p01970_The_Diversity_of_Prime_Factorization.cpp" line="27" column="44" info="Function parameter &apos;arr&apos; should be passed by const reference."/>
+            <symbol>arr</symbol>
+        </error>
+    </errors>
+</results>

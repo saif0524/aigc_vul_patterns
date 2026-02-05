@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="negativeIndex" severity="error" msg="Array &apos;dp[262144][18]&apos; accessed at index dp[*][-1], which is out of bounds." verbose="Array &apos;dp[262144][18]&apos; accessed at index dp[*][-1], which is out of bounds." cwe="786" inconclusive="true" file0="derived/cpp/llama/gen_1/00002/0165_580_D._Kefa_and_Dishes.cpp">
+            <location file="derived/cpp/llama/gen_1/00002/0165_580_D._Kefa_and_Dishes.cpp" line="33" column="11" info="Negative array index"/>
+            <location file="derived/cpp/llama/gen_1/00002/0165_580_D._Kefa_and_Dishes.cpp" line="29" column="34" info="Assuming condition is false"/>
+            <location file="derived/cpp/llama/gen_1/00002/0165_580_D._Kefa_and_Dishes.cpp" line="76" column="23" info="Calling function &apos;solve&apos;, 2nd argument &apos;-1&apos; value is -1"/>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;v&apos; should be passed by const reference." verbose="Parameter &apos;v&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/llama/gen_1/00002/0165_580_D._Kefa_and_Dishes.cpp">
+            <location file="derived/cpp/llama/gen_1/00002/0165_580_D._Kefa_and_Dishes.cpp" line="20" column="26" info="Function parameter &apos;v&apos; should be passed by const reference."/>
+            <symbol>v</symbol>
+        </error>
+        <error id="iterateByValue" severity="performance" msg="Range variable &apos;r&apos; should be declared as const reference." verbose="Variable &apos;r&apos; is used to iterate by value. It could be declared as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/llama/gen_1/00002/0165_580_D._Kefa_and_Dishes.cpp">
+            <location file="derived/cpp/llama/gen_1/00002/0165_580_D._Kefa_and_Dishes.cpp" line="42" column="27" info="Range variable &apos;r&apos; should be declared as const reference."/>
+            <symbol>r</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::any_of, std::all_of, std::none_of, or std::accumulate algorithm instead of a raw loop." verbose="Consider using std::any_of, std::all_of, std::none_of, or std::accumulate algorithm instead of a raw loop." cwe="398" file0="derived/cpp/llama/gen_1/00002/0165_580_D._Kefa_and_Dishes.cpp">
+            <location file="derived/cpp/llama/gen_1/00002/0165_580_D._Kefa_and_Dishes.cpp" line="23" column="14"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::find_if algorithm instead of a raw loop." verbose="Consider using std::find_if algorithm instead of a raw loop." cwe="398" file0="derived/cpp/llama/gen_1/00002/0165_580_D._Kefa_and_Dishes.cpp">
+            <location file="derived/cpp/llama/gen_1/00002/0165_580_D._Kefa_and_Dishes.cpp" line="43" column="50"/>
+        </error>
+        <error id="unusedStructMember" severity="style" msg="struct member &apos;Edge::to&apos; is never used." verbose="struct member &apos;Edge::to&apos; is never used." cwe="563" file0="derived/cpp/llama/gen_1/00002/0165_580_D._Kefa_and_Dishes.cpp">
+            <location file="derived/cpp/llama/gen_1/00002/0165_580_D._Kefa_and_Dishes.cpp" line="8" column="9"/>
+            <symbol>Edge::to</symbol>
+        </error>
+        <error id="unusedStructMember" severity="style" msg="struct member &apos;Edge::weight&apos; is never used." verbose="struct member &apos;Edge::weight&apos; is never used." cwe="563" file0="derived/cpp/llama/gen_1/00002/0165_580_D._Kefa_and_Dishes.cpp">
+            <location file="derived/cpp/llama/gen_1/00002/0165_580_D._Kefa_and_Dishes.cpp" line="8" column="13"/>
+            <symbol>Edge::weight</symbol>
+        </error>
+    </errors>
+</results>

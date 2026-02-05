@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="stlFindInsert" severity="performance" msg="Searching before insertion is not necessary. Instead of &apos;first[a[j]]=j&apos; consider using &apos;first.try_emplace(a[j], j);&apos;." verbose="Searching before insertion is not necessary. Instead of &apos;first[a[j]]=j&apos; consider using &apos;first.try_emplace(a[j], j);&apos;." cwe="398" file0="derived/cpp/llama/gen_2/00002_2/0001_848_C._Goodbye_Souvenir.cpp">
+            <location file="derived/cpp/llama/gen_2/00002_2/0001_848_C._Goodbye_Souvenir.cpp" line="33" column="35"/>
+        </error>
+    </errors>
+</results>

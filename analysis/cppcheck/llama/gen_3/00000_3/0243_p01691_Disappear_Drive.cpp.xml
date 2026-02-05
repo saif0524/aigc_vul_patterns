@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;intersecting&apos; can be reduced." verbose="The scope of the variable &apos;intersecting&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="derived/cpp/llama/gen_3/00000_3/0243_p01691_Disappear_Drive.cpp">
+            <location file="derived/cpp/llama/gen_3/00000_3/0243_p01691_Disappear_Drive.cpp" line="56" column="22"/>
+            <symbol>intersecting</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::any_of algorithm instead of a raw loop." verbose="Consider using std::any_of algorithm instead of a raw loop." cwe="398" file0="derived/cpp/llama/gen_3/00000_3/0243_p01691_Disappear_Drive.cpp">
+            <location file="derived/cpp/llama/gen_3/00000_3/0243_p01691_Disappear_Drive.cpp" line="46" column="46"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::any_of algorithm instead of a raw loop." verbose="Consider using std::any_of algorithm instead of a raw loop." cwe="398" file0="derived/cpp/llama/gen_3/00000_3/0243_p01691_Disappear_Drive.cpp">
+            <location file="derived/cpp/llama/gen_3/00000_3/0243_p01691_Disappear_Drive.cpp" line="59" column="67"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;intersecting&apos; is assigned a value that is never used." verbose="Variable &apos;intersecting&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/llama/gen_3/00000_3/0243_p01691_Disappear_Drive.cpp">
+            <location file="derived/cpp/llama/gen_3/00000_3/0243_p01691_Disappear_Drive.cpp" line="56" column="35"/>
+            <symbol>intersecting</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;intersecting&apos; is assigned a value that is never used." verbose="Variable &apos;intersecting&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/llama/gen_3/00000_3/0243_p01691_Disappear_Drive.cpp">
+            <location file="derived/cpp/llama/gen_3/00000_3/0243_p01691_Disappear_Drive.cpp" line="60" column="38"/>
+            <symbol>intersecting</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;start&apos; is assigned a value that is never used." verbose="Variable &apos;start&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/llama/gen_3/00000_3/0243_p01691_Disappear_Drive.cpp">
+            <location file="derived/cpp/llama/gen_3/00000_3/0243_p01691_Disappear_Drive.cpp" line="34" column="11"/>
+            <symbol>start</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;end&apos; is assigned a value that is never used." verbose="Variable &apos;end&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/llama/gen_3/00000_3/0243_p01691_Disappear_Drive.cpp">
+            <location file="derived/cpp/llama/gen_3/00000_3/0243_p01691_Disappear_Drive.cpp" line="35" column="11"/>
+            <symbol>end</symbol>
+        </error>
+    </errors>
+</results>

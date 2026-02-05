@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;sum&apos; shadows outer variable" verbose="Local variable &apos;sum&apos; shadows outer variable" cwe="398" file0="derived/cpp/llama/gen_1/00002/0022_p00698_Missing_Numbers.cpp">
+            <location file="derived/cpp/llama/gen_1/00002/0022_p00698_Missing_Numbers.cpp" line="46" column="17" info="Shadow variable"/>
+            <location file="derived/cpp/llama/gen_1/00002/0022_p00698_Missing_Numbers.cpp" line="40" column="13" info="Shadowed declaration"/>
+            <symbol>sum</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;cnt&apos; is assigned a value that is never used." verbose="Variable &apos;cnt&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/llama/gen_1/00002/0022_p00698_Missing_Numbers.cpp">
+            <location file="derived/cpp/llama/gen_1/00002/0022_p00698_Missing_Numbers.cpp" line="23" column="21"/>
+            <symbol>cnt</symbol>
+        </error>
+    </errors>
+</results>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="invalidscanf" severity="warning" msg="scanf() without field width limits can crash with huge input data." verbose="scanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="derived/cpp/human/soln1/00001/0218_p03443_AtCoder_Petrozavodsk_Contest_001_-_Colorful_Doors.cpp">
+            <location file="derived/cpp/human/soln1/00001/0218_p03443_AtCoder_Petrozavodsk_Contest_001_-_Colorful_Doors.cpp" line="61" column="2"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="scanf() without field width limits can crash with huge input data." verbose="scanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="derived/cpp/human/soln1/00001/0218_p03443_AtCoder_Petrozavodsk_Contest_001_-_Colorful_Doors.cpp">
+            <location file="derived/cpp/human/soln1/00001/0218_p03443_AtCoder_Petrozavodsk_Contest_001_-_Colorful_Doors.cpp" line="69" column="2"/>
+        </error>
+        <error id="iterateByValue" severity="performance" msg="Range variable &apos;zz&apos; should be declared as const reference." verbose="Variable &apos;zz&apos; is used to iterate by value. It could be declared as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln1/00001/0218_p03443_AtCoder_Petrozavodsk_Contest_001_-_Colorful_Doors.cpp">
+            <location file="derived/cpp/human/soln1/00001/0218_p03443_AtCoder_Petrozavodsk_Contest_001_-_Colorful_Doors.cpp" line="214" column="13" info="Range variable &apos;zz&apos; should be declared as const reference."/>
+            <symbol>zz</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;s&apos; should be passed by const reference." verbose="Parameter &apos;s&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln1/00001/0218_p03443_AtCoder_Petrozavodsk_Contest_001_-_Colorful_Doors.cpp">
+            <location file="derived/cpp/human/soln1/00001/0218_p03443_AtCoder_Petrozavodsk_Contest_001_-_Colorful_Doors.cpp" line="249" column="24" info="Function parameter &apos;s&apos; should be passed by const reference."/>
+            <symbol>s</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;s&apos; should be passed by const reference." verbose="Parameter &apos;s&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln1/00001/0218_p03443_AtCoder_Petrozavodsk_Contest_001_-_Colorful_Doors.cpp">
+            <location file="derived/cpp/human/soln1/00001/0218_p03443_AtCoder_Petrozavodsk_Contest_001_-_Colorful_Doors.cpp" line="262" column="25" info="Function parameter &apos;s&apos; should be passed by const reference."/>
+            <symbol>s</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;s&apos; should be passed by const reference." verbose="Parameter &apos;s&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln1/00001/0218_p03443_AtCoder_Petrozavodsk_Contest_001_-_Colorful_Doors.cpp">
+            <location file="derived/cpp/human/soln1/00001/0218_p03443_AtCoder_Petrozavodsk_Contest_001_-_Colorful_Doors.cpp" line="268" column="24" info="Function parameter &apos;s&apos; should be passed by const reference."/>
+            <symbol>s</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::copy algorithm instead of a raw loop." verbose="Consider using std::copy algorithm instead of a raw loop." cwe="398" file0="derived/cpp/human/soln1/00001/0218_p03443_AtCoder_Petrozavodsk_Contest_001_-_Colorful_Doors.cpp">
+            <location file="derived/cpp/human/soln1/00001/0218_p03443_AtCoder_Petrozavodsk_Contest_001_-_Colorful_Doors.cpp" line="215" column="11"/>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: a" verbose="Uninitialized variable: a" cwe="457" file0="derived/cpp/human/soln1/00001/0218_p03443_AtCoder_Petrozavodsk_Contest_001_-_Colorful_Doors.cpp">
+            <location file="derived/cpp/human/soln1/00001/0218_p03443_AtCoder_Petrozavodsk_Contest_001_-_Colorful_Doors.cpp" line="202" column="8"/>
+            <location file="derived/cpp/human/soln1/00001/0218_p03443_AtCoder_Petrozavodsk_Contest_001_-_Colorful_Doors.cpp" line="198" column="4" info="Assuming condition is false"/>
+            <symbol>a</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: b" verbose="Uninitialized variable: b" cwe="457" file0="derived/cpp/human/soln1/00001/0218_p03443_AtCoder_Petrozavodsk_Contest_001_-_Colorful_Doors.cpp">
+            <location file="derived/cpp/human/soln1/00001/0218_p03443_AtCoder_Petrozavodsk_Contest_001_-_Colorful_Doors.cpp" line="207" column="25"/>
+            <location file="derived/cpp/human/soln1/00001/0218_p03443_AtCoder_Petrozavodsk_Contest_001_-_Colorful_Doors.cpp" line="201" column="4" info="Assuming condition is false"/>
+            <symbol>b</symbol>
+        </error>
+    </errors>
+</results>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;p&apos; shadows outer variable" verbose="Local variable &apos;p&apos; shadows outer variable" cwe="398" file0="derived/cpp/human/soln2/00001/0014_464_D._World_of_Darkraft_-_2.cpp">
+            <location file="derived/cpp/human/soln2/00001/0014_464_D._World_of_Darkraft_-_2.cpp" line="40" column="13" info="Shadow variable"/>
+            <location file="derived/cpp/human/soln2/00001/0014_464_D._World_of_Darkraft_-_2.cpp" line="73" column="13" info="Shadowed declaration"/>
+            <symbol>p</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;s&apos; should be passed by const reference." verbose="Parameter &apos;s&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00001/0014_464_D._World_of_Darkraft_-_2.cpp">
+            <location file="derived/cpp/human/soln2/00001/0014_464_D._World_of_Darkraft_-_2.cpp" line="9" column="24" info="Function parameter &apos;s&apos; should be passed by const reference."/>
+            <symbol>s</symbol>
+        </error>
+    </errors>
+</results>

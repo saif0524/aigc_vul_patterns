@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;N&apos; shadows outer variable" verbose="Local variable &apos;N&apos; shadows outer variable" cwe="398" file0="derived/cpp/human/soln2/00001/0176_1511_F._Chainword.cpp">
+            <location file="derived/cpp/human/soln2/00001/0176_1511_F._Chainword.cpp" line="115" column="9" info="Shadow variable"/>
+            <location file="derived/cpp/human/soln2/00001/0176_1511_F._Chainword.cpp" line="4" column="11" info="Shadowed declaration"/>
+            <symbol>N</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;tr&apos; shadows outer variable" verbose="Local variable &apos;tr&apos; shadows outer variable" cwe="398" file0="derived/cpp/human/soln2/00001/0176_1511_F._Chainword.cpp">
+            <location file="derived/cpp/human/soln2/00001/0176_1511_F._Chainword.cpp" line="116" column="12" info="Shadow variable"/>
+            <location file="derived/cpp/human/soln2/00001/0176_1511_F._Chainword.cpp" line="5" column="5" info="Shadowed declaration"/>
+            <symbol>tr</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;s&apos; should be passed by const reference." verbose="Parameter &apos;s&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00001/0176_1511_F._Chainword.cpp">
+            <location file="derived/cpp/human/soln2/00001/0176_1511_F._Chainword.cpp" line="8" column="17" info="Function parameter &apos;s&apos; should be passed by const reference."/>
+            <symbol>s</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;k&apos; is assigned a value that is never used." verbose="Variable &apos;k&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/human/soln2/00001/0176_1511_F._Chainword.cpp">
+            <location file="derived/cpp/human/soln2/00001/0176_1511_F._Chainword.cpp" line="103" column="11"/>
+            <symbol>k</symbol>
+        </error>
+    </errors>
+</results>

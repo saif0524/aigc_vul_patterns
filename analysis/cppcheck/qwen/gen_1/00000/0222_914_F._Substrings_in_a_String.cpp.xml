@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;m&gt;1&apos; is always true" verbose="Condition &apos;m&gt;1&apos; is always true" cwe="571" file0="derived/cpp/qwen/gen_1/00000/0222_914_F._Substrings_in_a_String.cpp">
+            <location file="derived/cpp/qwen/gen_1/00000/0222_914_F._Substrings_in_a_String.cpp" line="138" column="26" info="Condition &apos;m&gt;1&apos; is always true"/>
+            <location file="derived/cpp/qwen/gen_1/00000/0222_914_F._Substrings_in_a_String.cpp" line="135" column="22" info="Assuming that condition &apos;m&gt;1&apos; is not redundant"/>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;len&apos; shadows outer variable" verbose="Local variable &apos;len&apos; shadows outer variable" cwe="398" file0="derived/cpp/qwen/gen_1/00000/0222_914_F._Substrings_in_a_String.cpp">
+            <location file="derived/cpp/qwen/gen_1/00000/0222_914_F._Substrings_in_a_String.cpp" line="141" column="33" info="Shadow variable"/>
+            <location file="derived/cpp/qwen/gen_1/00000/0222_914_F._Substrings_in_a_String.cpp" line="115" column="17" info="Shadowed declaration"/>
+            <symbol>len</symbol>
+        </error>
+        <error id="constStatement" severity="warning" msg="Unused variable value &apos;j&apos;" verbose="Unused variable value &apos;j&apos;" cwe="398" file0="derived/cpp/qwen/gen_1/00000/0222_914_F._Substrings_in_a_String.cpp">
+            <location file="derived/cpp/qwen/gen_1/00000/0222_914_F._Substrings_in_a_String.cpp" line="157" column="17"/>
+        </error>
+    </errors>
+</results>

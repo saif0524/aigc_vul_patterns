@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;LCA::query&apos; can be const." verbose="The member function &apos;LCA::query&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true" file0="derived/cpp/qwen/gen_2/00001_2/0252_1336_F._Journey.cpp">
+            <location file="derived/cpp/qwen/gen_2/00001_2/0252_1336_F._Journey.cpp" line="47" column="9"/>
+            <symbol>LCA::query</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;LCA&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;LCA&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="derived/cpp/qwen/gen_2/00001_2/0252_1336_F._Journey.cpp">
+            <location file="derived/cpp/qwen/gen_2/00001_2/0252_1336_F._Journey.cpp" line="9" column="5"/>
+            <symbol>LCA</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;n&apos; shadows outer variable" verbose="Local variable &apos;n&apos; shadows outer variable" cwe="398" file0="derived/cpp/qwen/gen_2/00001_2/0252_1336_F._Journey.cpp">
+            <location file="derived/cpp/qwen/gen_2/00001_2/0252_1336_F._Journey.cpp" line="36" column="16" info="Shadow variable"/>
+            <location file="derived/cpp/qwen/gen_2/00001_2/0252_1336_F._Journey.cpp" line="7" column="16" info="Shadowed declaration"/>
+            <symbol>n</symbol>
+        </error>
+    </errors>
+</results>

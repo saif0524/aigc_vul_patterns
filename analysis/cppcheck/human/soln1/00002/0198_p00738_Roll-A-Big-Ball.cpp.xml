@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;B::inter&apos; can be const." verbose="The member function &apos;B::inter&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true" file0="derived/cpp/human/soln1/00002/0198_p00738_Roll-A-Big-Ball.cpp">
+            <location file="derived/cpp/human/soln1/00002/0198_p00738_Roll-A-Big-Ball.cpp" line="84" column="8"/>
+            <symbol>B::inter</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::any_of algorithm instead of a raw loop." verbose="Consider using std::any_of algorithm instead of a raw loop." cwe="398" file0="derived/cpp/human/soln1/00002/0198_p00738_Roll-A-Big-Ball.cpp">
+            <location file="derived/cpp/human/soln1/00002/0198_p00738_Roll-A-Big-Ball.cpp" line="130" column="0"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::accumulate algorithm instead of a raw loop." verbose="Consider using std::accumulate algorithm instead of a raw loop." cwe="398" file0="derived/cpp/human/soln1/00002/0198_p00738_Roll-A-Big-Ball.cpp">
+            <location file="derived/cpp/human/soln1/00002/0198_p00738_Roll-A-Big-Ball.cpp" line="139" column="10"/>
+        </error>
+    </errors>
+</results>

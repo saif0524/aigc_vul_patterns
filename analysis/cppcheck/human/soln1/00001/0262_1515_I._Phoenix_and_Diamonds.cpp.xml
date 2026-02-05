@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;SegmentTree::merge&apos; can be const." verbose="The member function &apos;SegmentTree::merge&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true" file0="derived/cpp/human/soln1/00001/0262_1515_I._Phoenix_and_Diamonds.cpp">
+            <location file="derived/cpp/human/soln1/00001/0262_1515_I._Phoenix_and_Diamonds.cpp" line="55" column="7"/>
+            <symbol>SegmentTree::merge</symbol>
+        </error>
+        <error id="constStatement" severity="warning" msg="Found suspicious operator &apos;*&apos;, result is not used." verbose="Found suspicious operator &apos;*&apos;, result is not used." cwe="398" inconclusive="true" file0="derived/cpp/human/soln1/00001/0262_1515_I._Phoenix_and_Diamonds.cpp">
+            <location file="derived/cpp/human/soln1/00001/0262_1515_I._Phoenix_and_Diamonds.cpp" line="26" column="30"/>
+        </error>
+        <error id="passedByValueCallback" severity="performance" msg="Function parameter &apos;a&apos; should be passed by const reference. However it seems that &apos;cmp&apos; is a callback function." verbose="Parameter &apos;a&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln1/00001/0262_1515_I._Phoenix_and_Diamonds.cpp">
+            <location file="derived/cpp/human/soln1/00001/0262_1515_I._Phoenix_and_Diamonds.cpp" line="13" column="13" info="Function parameter &apos;a&apos; should be passed by const reference. However it seems that &apos;cmp&apos; is a callback function."/>
+            <location file="derived/cpp/human/soln1/00001/0262_1515_I._Phoenix_and_Diamonds.cpp" line="75" column="17" info="Function pointer used here."/>
+            <symbol>a</symbol>
+        </error>
+        <error id="passedByValueCallback" severity="performance" msg="Function parameter &apos;b&apos; should be passed by const reference. However it seems that &apos;cmp&apos; is a callback function." verbose="Parameter &apos;b&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln1/00001/0262_1515_I._Phoenix_and_Diamonds.cpp">
+            <location file="derived/cpp/human/soln1/00001/0262_1515_I._Phoenix_and_Diamonds.cpp" line="13" column="19" info="Function parameter &apos;b&apos; should be passed by const reference. However it seems that &apos;cmp&apos; is a callback function."/>
+            <location file="derived/cpp/human/soln1/00001/0262_1515_I._Phoenix_and_Diamonds.cpp" line="75" column="17" info="Function pointer used here."/>
+            <symbol>b</symbol>
+        </error>
+    </errors>
+</results>

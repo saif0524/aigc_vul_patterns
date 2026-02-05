@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="passedByValueCallback" severity="performance" msg="Function parameter &apos;x&apos; should be passed by const reference. However it seems that &apos;cmp1&apos; is a callback function." verbose="Parameter &apos;x&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln1/00001/0195_56_E._Domino_Principle.cpp">
+            <location file="derived/cpp/human/soln1/00001/0195_56_E._Domino_Principle.cpp" line="7" column="14" info="Function parameter &apos;x&apos; should be passed by const reference. However it seems that &apos;cmp1&apos; is a callback function."/>
+            <location file="derived/cpp/human/soln1/00001/0195_56_E._Domino_Principle.cpp" line="52" column="28" info="Function pointer used here."/>
+            <symbol>x</symbol>
+        </error>
+        <error id="passedByValueCallback" severity="performance" msg="Function parameter &apos;y&apos; should be passed by const reference. However it seems that &apos;cmp1&apos; is a callback function." verbose="Parameter &apos;y&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln1/00001/0195_56_E._Domino_Principle.cpp">
+            <location file="derived/cpp/human/soln1/00001/0195_56_E._Domino_Principle.cpp" line="7" column="20" info="Function parameter &apos;y&apos; should be passed by const reference. However it seems that &apos;cmp1&apos; is a callback function."/>
+            <location file="derived/cpp/human/soln1/00001/0195_56_E._Domino_Principle.cpp" line="52" column="28" info="Function pointer used here."/>
+            <symbol>y</symbol>
+        </error>
+        <error id="passedByValueCallback" severity="performance" msg="Function parameter &apos;x&apos; should be passed by const reference. However it seems that &apos;cmp2&apos; is a callback function." verbose="Parameter &apos;x&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln1/00001/0195_56_E._Domino_Principle.cpp">
+            <location file="derived/cpp/human/soln1/00001/0195_56_E._Domino_Principle.cpp" line="8" column="14" info="Function parameter &apos;x&apos; should be passed by const reference. However it seems that &apos;cmp2&apos; is a callback function."/>
+            <location file="derived/cpp/human/soln1/00001/0195_56_E._Domino_Principle.cpp" line="70" column="28" info="Function pointer used here."/>
+            <symbol>x</symbol>
+        </error>
+        <error id="passedByValueCallback" severity="performance" msg="Function parameter &apos;y&apos; should be passed by const reference. However it seems that &apos;cmp2&apos; is a callback function." verbose="Parameter &apos;y&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln1/00001/0195_56_E._Domino_Principle.cpp">
+            <location file="derived/cpp/human/soln1/00001/0195_56_E._Domino_Principle.cpp" line="8" column="20" info="Function parameter &apos;y&apos; should be passed by const reference. However it seems that &apos;cmp2&apos; is a callback function."/>
+            <location file="derived/cpp/human/soln1/00001/0195_56_E._Domino_Principle.cpp" line="70" column="28" info="Function pointer used here."/>
+            <symbol>y</symbol>
+        </error>
+        <error id="postfixOperator" severity="performance" msg="Prefer prefix ++/-- operators for non-primitive types." verbose="Prefix ++/-- operators should be preferred for non-primitive types. Pre-increment/decrement can be more efficient than post-increment/decrement. Post-increment/decrement usually involves keeping a copy of the previous value around and adds a little extra code." cwe="398" file0="derived/cpp/human/soln1/00001/0195_56_E._Domino_Principle.cpp">
+            <location file="derived/cpp/human/soln1/00001/0195_56_E._Domino_Principle.cpp" line="51" column="41"/>
+        </error>
+    </errors>
+</results>

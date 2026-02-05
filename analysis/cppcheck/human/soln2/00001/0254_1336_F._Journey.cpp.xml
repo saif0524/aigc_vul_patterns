@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="noCopyConstructor" severity="warning" msg="Struct &apos;Block&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." verbose="Struct &apos;Block&apos; does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="derived/cpp/human/soln2/00001/0254_1336_F._Journey.cpp">
+            <location file="derived/cpp/human/soln2/00001/0254_1336_F._Journey.cpp" line="124" column="47"/>
+            <symbol>Block</symbol>
+        </error>
+        <error id="noOperatorEq" severity="warning" msg="Struct &apos;Block&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." verbose="Struct &apos;Block&apos; does not have a operator= which is recommended since it has dynamic memory/resource allocation(s)." cwe="398" file0="derived/cpp/human/soln2/00001/0254_1336_F._Journey.cpp">
+            <location file="derived/cpp/human/soln2/00001/0254_1336_F._Journey.cpp" line="124" column="47"/>
+            <symbol>Block</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;Block&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;Block&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="derived/cpp/human/soln2/00001/0254_1336_F._Journey.cpp">
+            <location file="derived/cpp/human/soln2/00001/0254_1336_F._Journey.cpp" line="123" column="3"/>
+            <symbol>Block</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;ny&apos; shadows outer variable" verbose="Local variable &apos;ny&apos; shadows outer variable" cwe="398" file0="derived/cpp/human/soln2/00001/0254_1336_F._Journey.cpp">
+            <location file="derived/cpp/human/soln2/00001/0254_1336_F._Journey.cpp" line="141" column="13" info="Shadow variable"/>
+            <location file="derived/cpp/human/soln2/00001/0254_1336_F._Journey.cpp" line="135" column="11" info="Shadowed declaration"/>
+            <symbol>ny</symbol>
+        </error>
+        <error id="postfixOperator" severity="performance" msg="Prefer prefix ++/-- operators for non-primitive types." verbose="Prefix ++/-- operators should be preferred for non-primitive types. Pre-increment/decrement can be more efficient than post-increment/decrement. Post-increment/decrement usually involves keeping a copy of the previous value around and adds a little extra code." cwe="398" file0="derived/cpp/human/soln2/00001/0254_1336_F._Journey.cpp">
+            <location file="derived/cpp/human/soln2/00001/0254_1336_F._Journey.cpp" line="131" column="67"/>
+        </error>
+    </errors>
+</results>

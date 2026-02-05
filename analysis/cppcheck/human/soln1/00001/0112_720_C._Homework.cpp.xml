@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="arrayIndexOutOfBoundsCond" severity="warning" msg="Either the condition &apos;y&lt;2&apos; is redundant or the array &apos;a[41414][320]&apos; is accessed at index a[*][320], which is out of bounds." verbose="Either the condition &apos;y&lt;2&apos; is redundant or the array &apos;a[41414][320]&apos; is accessed at index a[*][320], which is out of bounds." cwe="788" file0="derived/cpp/human/soln1/00001/0112_720_C._Homework.cpp">
+            <location file="derived/cpp/human/soln1/00001/0112_720_C._Homework.cpp" line="28" column="42" info="Array index out of bounds"/>
+            <location file="derived/cpp/human/soln1/00001/0112_720_C._Homework.cpp" line="28" column="34" info="Assuming that condition &apos;y&lt;2&apos; is not redundant"/>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;t&apos; shadows outer variable" verbose="Local variable &apos;t&apos; shadows outer variable" cwe="398" file0="derived/cpp/human/soln1/00001/0112_720_C._Homework.cpp">
+            <location file="derived/cpp/human/soln1/00001/0112_720_C._Homework.cpp" line="36" column="7" info="Shadow variable"/>
+            <location file="derived/cpp/human/soln1/00001/0112_720_C._Homework.cpp" line="5" column="22" info="Shadowed declaration"/>
+            <symbol>t</symbol>
+        </error>
+    </errors>
+</results>

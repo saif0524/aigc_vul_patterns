@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;Data::write&apos; can be const." verbose="The member function &apos;Data::write&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true" file0="derived/cpp/human/soln1/00002/0087_815_B._Karen_and_Test.cpp">
+            <location file="derived/cpp/human/soln1/00002/0087_815_B._Karen_and_Test.cpp" line="44" column="8"/>
+            <symbol>Data::write</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;Main::Solution::c&apos; can be const." verbose="The member function &apos;Main::Solution::c&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true" file0="derived/cpp/human/soln1/00002/0087_815_B._Karen_and_Test.cpp">
+            <location file="derived/cpp/human/soln1/00002/0087_815_B._Karen_and_Test.cpp" line="50" column="11"/>
+            <symbol>Main::Solution::c</symbol>
+        </error>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &apos;Main::Solution::pw&apos; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &apos;Main::Solution::pw&apos; can be made a static function. Making a function static can bring a performance benefit since no &apos;this&apos; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to an unnamed namespace." cwe="398" inconclusive="true" file0="derived/cpp/human/soln1/00002/0087_815_B._Karen_and_Test.cpp">
+            <location file="derived/cpp/human/soln1/00002/0087_815_B._Karen_and_Test.cpp" line="51" column="11"/>
+            <symbol>Main::Solution::pw</symbol>
+        </error>
+    </errors>
+</results>

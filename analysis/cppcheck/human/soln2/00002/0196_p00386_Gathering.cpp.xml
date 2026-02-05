@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;i&apos; shadows outer variable" verbose="Local variable &apos;i&apos; shadows outer variable" cwe="398" file0="derived/cpp/human/soln2/00002/0196_p00386_Gathering.cpp">
+            <location file="derived/cpp/human/soln2/00002/0196_p00386_Gathering.cpp" line="97" column="13" info="Shadow variable"/>
+            <location file="derived/cpp/human/soln2/00002/0196_p00386_Gathering.cpp" line="87" column="2" info="Shadowed declaration"/>
+            <symbol>i</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;r&apos; is assigned a value that is never used." verbose="Variable &apos;r&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/human/soln2/00002/0196_p00386_Gathering.cpp">
+            <location file="derived/cpp/human/soln2/00002/0196_p00386_Gathering.cpp" line="94" column="11"/>
+            <symbol>r</symbol>
+        </error>
+    </errors>
+</results>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="duplicateConditionalAssign" severity="style" msg="The statement &apos;if (!found) found=true&apos; is logically equivalent to &apos;found=true&apos;." verbose="The statement &apos;if (!found) found=true&apos; is logically equivalent to &apos;found=true&apos;." cwe="398" file0="derived/cpp/llama/gen_2/00001_2/0230_239_A._Two_Bags_of_Potatoes.cpp">
+            <location file="derived/cpp/llama/gen_2/00001_2/0230_239_A._Two_Bags_of_Potatoes.cpp" line="10" column="17" info="Condition &apos;!found&apos; is redundant"/>
+            <location file="derived/cpp/llama/gen_2/00001_2/0230_239_A._Two_Bags_of_Potatoes.cpp" line="10" column="31" info="Assignment &apos;found=true&apos;"/>
+        </error>
+    </errors>
+</results>

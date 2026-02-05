@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;per_seg::query&apos; can be const." verbose="The member function &apos;per_seg::query&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true" file0="derived/cpp/human/soln1/00002/0119_p02074_N-by-M_grid_calculation.cpp">
+            <location file="derived/cpp/human/soln1/00002/0119_p02074_N-by-M_grid_calculation.cpp" line="55" column="15"/>
+            <symbol>per_seg::query</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;R&apos; shadows outer variable" verbose="Local variable &apos;R&apos; shadows outer variable" cwe="398" file0="derived/cpp/human/soln1/00002/0119_p02074_N-by-M_grid_calculation.cpp">
+            <location file="derived/cpp/human/soln1/00002/0119_p02074_N-by-M_grid_calculation.cpp" line="51" column="7" info="Shadow variable"/>
+            <location file="derived/cpp/human/soln1/00002/0119_p02074_N-by-M_grid_calculation.cpp" line="26" column="18" info="Shadowed declaration"/>
+            <symbol>R</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;sum&apos; shadows outer variable" verbose="Local variable &apos;sum&apos; shadows outer variable" cwe="398" file0="derived/cpp/human/soln1/00002/0119_p02074_N-by-M_grid_calculation.cpp">
+            <location file="derived/cpp/human/soln1/00002/0119_p02074_N-by-M_grid_calculation.cpp" line="57" column="12" info="Shadow variable"/>
+            <location file="derived/cpp/human/soln1/00002/0119_p02074_N-by-M_grid_calculation.cpp" line="76" column="24" info="Shadowed declaration"/>
+            <symbol>sum</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;a&apos; shadows outer variable" verbose="Local variable &apos;a&apos; shadows outer variable" cwe="398" file0="derived/cpp/human/soln1/00002/0119_p02074_N-by-M_grid_calculation.cpp">
+            <location file="derived/cpp/human/soln1/00002/0119_p02074_N-by-M_grid_calculation.cpp" line="132" column="17" info="Shadow variable"/>
+            <location file="derived/cpp/human/soln1/00002/0119_p02074_N-by-M_grid_calculation.cpp" line="76" column="4" info="Shadowed declaration"/>
+            <symbol>a</symbol>
+        </error>
+    </errors>
+</results>

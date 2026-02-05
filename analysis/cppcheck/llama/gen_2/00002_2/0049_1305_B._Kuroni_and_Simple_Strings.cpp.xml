@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="iterateByValue" severity="performance" msg="Range variable &apos;op&apos; should be declared as const reference." verbose="Variable &apos;op&apos; is used to iterate by value. It could be declared as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/llama/gen_2/00002_2/0049_1305_B._Kuroni_and_Simple_Strings.cpp">
+            <location file="derived/cpp/llama/gen_2/00002_2/0049_1305_B._Kuroni_and_Simple_Strings.cpp" line="42" column="15" info="Range variable &apos;op&apos; should be declared as const reference."/>
+            <symbol>op</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;rf&apos; is assigned a value that is never used." verbose="Variable &apos;rf&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/llama/gen_2/00002_2/0049_1305_B._Kuroni_and_Simple_Strings.cpp">
+            <location file="derived/cpp/llama/gen_2/00002_2/0049_1305_B._Kuroni_and_Simple_Strings.cpp" line="14" column="24"/>
+            <symbol>rf</symbol>
+        </error>
+    </errors>
+</results>

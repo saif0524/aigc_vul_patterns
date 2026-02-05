@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;node::l&apos; is not initialized in the constructor." verbose="Member variable &apos;node::l&apos; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" inconclusive="true" file0="derived/cpp/human/soln1/00000/0214_730_G._Car_Repair_Shop.cpp">
+            <location file="derived/cpp/human/soln1/00000/0214_730_G._Car_Repair_Shop.cpp" line="6" column="3"/>
+            <symbol>node::l</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;node::r&apos; is not initialized in the constructor." verbose="Member variable &apos;node::r&apos; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" inconclusive="true" file0="derived/cpp/human/soln1/00000/0214_730_G._Car_Repair_Shop.cpp">
+            <location file="derived/cpp/human/soln1/00000/0214_730_G._Car_Repair_Shop.cpp" line="6" column="3"/>
+            <symbol>node::r</symbol>
+        </error>
+        <error id="postfixOperator" severity="performance" msg="Prefer prefix ++/-- operators for non-primitive types." verbose="Prefix ++/-- operators should be preferred for non-primitive types. Pre-increment/decrement can be more efficient than post-increment/decrement. Post-increment/decrement usually involves keeping a copy of the previous value around and adds a little extra code." cwe="398" file0="derived/cpp/human/soln1/00000/0214_730_G._Car_Repair_Shop.cpp">
+            <location file="derived/cpp/human/soln1/00000/0214_730_G._Car_Repair_Shop.cpp" line="21" column="41"/>
+        </error>
+        <error id="postfixOperator" severity="performance" msg="Prefer prefix ++/-- operators for non-primitive types." verbose="Prefix ++/-- operators should be preferred for non-primitive types. Pre-increment/decrement can be more efficient than post-increment/decrement. Post-increment/decrement usually involves keeping a copy of the previous value around and adds a little extra code." cwe="398" file0="derived/cpp/human/soln1/00000/0214_730_G._Car_Repair_Shop.cpp">
+            <location file="derived/cpp/human/soln1/00000/0214_730_G._Car_Repair_Shop.cpp" line="37" column="41"/>
+        </error>
+    </errors>
+</results>

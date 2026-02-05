@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="duplicateCondition" severity="style" msg="The if condition is the same as the previous if condition" verbose="The if condition is the same as the previous if condition" cwe="398" file0="derived/cpp/gemma/gen_2/00001_2/0042_p03725_AtCoder_Grand_Contest_014_-_Closed_Rooms.cpp">
+            <location file="derived/cpp/gemma/gen_2/00001_2/0042_p03725_AtCoder_Grand_Contest_014_-_Closed_Rooms.cpp" line="133" column="16" info="Second condition"/>
+            <location file="derived/cpp/gemma/gen_2/00001_2/0042_p03725_AtCoder_Grand_Contest_014_-_Closed_Rooms.cpp" line="125" column="16" info="First condition"/>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;q&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;q&apos; is reassigned a value before the old one has been used." cwe="563" file0="derived/cpp/gemma/gen_2/00001_2/0042_p03725_AtCoder_Grand_Contest_014_-_Closed_Rooms.cpp">
+            <location file="derived/cpp/gemma/gen_2/00001_2/0042_p03725_AtCoder_Grand_Contest_014_-_Closed_Rooms.cpp" line="89" column="11" info="q is overwritten"/>
+            <location file="derived/cpp/gemma/gen_2/00001_2/0042_p03725_AtCoder_Grand_Contest_014_-_Closed_Rooms.cpp" line="66" column="11" info="q is assigned"/>
+            <symbol>q</symbol>
+        </error>
+        <error id="constVariable" severity="style" msg="Variable &apos;dr&apos; can be declared as const array" verbose="Variable &apos;dr&apos; can be declared as const array" cwe="398" file0="derived/cpp/gemma/gen_2/00001_2/0042_p03725_AtCoder_Grand_Contest_014_-_Closed_Rooms.cpp">
+            <location file="derived/cpp/gemma/gen_2/00001_2/0042_p03725_AtCoder_Grand_Contest_014_-_Closed_Rooms.cpp" line="34" column="7" info="Variable &apos;dr&apos; can be declared as const array"/>
+            <symbol>dr</symbol>
+        </error>
+        <error id="constVariable" severity="style" msg="Variable &apos;dc&apos; can be declared as const array" verbose="Variable &apos;dc&apos; can be declared as const array" cwe="398" file0="derived/cpp/gemma/gen_2/00001_2/0042_p03725_AtCoder_Grand_Contest_014_-_Closed_Rooms.cpp">
+            <location file="derived/cpp/gemma/gen_2/00001_2/0042_p03725_AtCoder_Grand_Contest_014_-_Closed_Rooms.cpp" line="35" column="7" info="Variable &apos;dc&apos; can be declared as const array"/>
+            <symbol>dc</symbol>
+        </error>
+        <error id="negativeContainerIndex" severity="warning" msg="Array index -1 is out of bounds." verbose="Array index -1 is out of bounds." cwe="786" inconclusive="true" file0="derived/cpp/gemma/gen_2/00001_2/0042_p03725_AtCoder_Grand_Contest_014_-_Closed_Rooms.cpp">
+            <location file="derived/cpp/gemma/gen_2/00001_2/0042_p03725_AtCoder_Grand_Contest_014_-_Closed_Rooms.cpp" line="32" column="3" info="Negative array index"/>
+            <location file="derived/cpp/gemma/gen_2/00001_2/0042_p03725_AtCoder_Grand_Contest_014_-_Closed_Rooms.cpp" line="18" column="21" info="Assuming condition is false"/>
+            <location file="derived/cpp/gemma/gen_2/00001_2/0042_p03725_AtCoder_Grand_Contest_014_-_Closed_Rooms.cpp" line="17" column="20" info="Assignment &apos;start_row=-1&apos;, assigned value is -1"/>
+        </error>
+    </errors>
+</results>

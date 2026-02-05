@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="constVariableReference" severity="style" msg="Variable &apos;v&apos; can be declared as reference to const" verbose="Variable &apos;v&apos; can be declared as reference to const" cwe="398" file0="derived/cpp/qwen/gen_3/00002_3/0258_763_D._Timofey_and_a_flat_tree.cpp">
+            <location file="derived/cpp/qwen/gen_3/00002_3/0258_763_D._Timofey_and_a_flat_tree.cpp" line="9" column="16" info="Variable &apos;v&apos; can be declared as reference to const"/>
+            <symbol>v</symbol>
+        </error>
+        <error id="stlFindInsert" severity="performance" msg="Searching before insertion is not necessary. Instead of &apos;cnt[u][s]=cnt[u].size()&apos; consider using &apos;cnt[u].try_emplace(s, cnt[u].size());&apos;." verbose="Searching before insertion is not necessary. Instead of &apos;cnt[u][s]=cnt[u].size()&apos; consider using &apos;cnt[u].try_emplace(s, cnt[u].size());&apos;." cwe="398" file0="derived/cpp/qwen/gen_3/00002_3/0258_763_D._Timofey_and_a_flat_tree.cpp">
+            <location file="derived/cpp/qwen/gen_3/00002_3/0258_763_D._Timofey_and_a_flat_tree.cpp" line="14" column="54"/>
+        </error>
+    </errors>
+</results>

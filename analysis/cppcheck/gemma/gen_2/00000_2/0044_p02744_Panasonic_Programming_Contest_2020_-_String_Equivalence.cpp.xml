@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="stlFindInsert" severity="performance" msg="Searching before insertion is not necessary. Instead of &apos;char_map[s[j]]=&apos;a&apos;+char_count++&apos; consider using &apos;char_map.try_emplace(s[j], &apos;a&apos;+char_count++);&apos;." verbose="Searching before insertion is not necessary. Instead of &apos;char_map[s[j]]=&apos;a&apos;+char_count++&apos; consider using &apos;char_map.try_emplace(s[j], &apos;a&apos;+char_count++);&apos;." cwe="398" file0="derived/cpp/gemma/gen_2/00000_2/0044_p02744_Panasonic_Programming_Contest_2020_-_String_Equivalence.cpp">
+            <location file="derived/cpp/gemma/gen_2/00000_2/0044_p02744_Panasonic_Programming_Contest_2020_-_String_Equivalence.cpp" line="74" column="46"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;t&apos; is assigned a value that is never used." verbose="Variable &apos;t&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/gemma/gen_2/00000_2/0044_p02744_Panasonic_Programming_Contest_2020_-_String_Equivalence.cpp">
+            <location file="derived/cpp/gemma/gen_2/00000_2/0044_p02744_Panasonic_Programming_Contest_2020_-_String_Equivalence.cpp" line="35" column="18"/>
+            <symbol>t</symbol>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: mapping" verbose="Unused variable: mapping" cwe="563" file0="derived/cpp/gemma/gen_2/00000_2/0044_p02744_Panasonic_Programming_Contest_2020_-_String_Equivalence.cpp">
+            <location file="derived/cpp/gemma/gen_2/00000_2/0044_p02744_Panasonic_Programming_Contest_2020_-_String_Equivalence.cpp" line="36" column="25"/>
+            <symbol>mapping</symbol>
+        </error>
+    </errors>
+</results>

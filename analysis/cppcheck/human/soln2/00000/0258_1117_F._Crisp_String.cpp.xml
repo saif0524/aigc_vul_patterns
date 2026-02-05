@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="bitwiseOnBoolean" severity="style" msg="Boolean expression &apos;_b[x]&apos; is used in bitwise operation. Did you mean &apos;||&apos;?" verbose="Boolean expression &apos;_b[x]&apos; is used in bitwise operation. Did you mean &apos;||&apos;?" cwe="398" inconclusive="true" file0="derived/cpp/human/soln2/00000/0258_1117_F._Crisp_String.cpp">
+            <location file="derived/cpp/human/soln2/00000/0258_1117_F._Crisp_String.cpp" line="48" column="21"/>
+        </error>
+        <error id="shadowFunction" severity="style" msg="Local variable &apos;f&apos; shadows outer function" verbose="Local variable &apos;f&apos; shadows outer function" cwe="398" file0="derived/cpp/human/soln2/00000/0258_1117_F._Crisp_String.cpp">
+            <location file="derived/cpp/human/soln2/00000/0258_1117_F._Crisp_String.cpp" line="17" column="17" info="Shadow variable"/>
+            <location file="derived/cpp/human/soln2/00000/0258_1117_F._Crisp_String.cpp" line="32" column="8" info="Shadowed declaration"/>
+            <symbol>f</symbol>
+        </error>
+    </errors>
+</results>

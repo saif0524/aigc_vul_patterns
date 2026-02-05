@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;end_row&apos; can be reduced." verbose="The scope of the variable &apos;end_row&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="derived/cpp/qwen/gen_3/00001_3/0201_p00156_Moats_around_the_Castle.cpp">
+            <location file="derived/cpp/qwen/gen_3/00001_3/0201_p00156_Moats_around_the_Castle.cpp" line="16" column="9"/>
+            <symbol>end_row</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;end_col&apos; can be reduced." verbose="The scope of the variable &apos;end_col&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="derived/cpp/qwen/gen_3/00001_3/0201_p00156_Moats_around_the_Castle.cpp">
+            <location file="derived/cpp/qwen/gen_3/00001_3/0201_p00156_Moats_around_the_Castle.cpp" line="16" column="23"/>
+            <symbol>end_col</symbol>
+        </error>
+        <error id="constVariable" severity="style" msg="Variable &apos;dr&apos; can be declared as const array" verbose="Variable &apos;dr&apos; can be declared as const array" cwe="398" file0="derived/cpp/qwen/gen_3/00001_3/0201_p00156_Moats_around_the_Castle.cpp">
+            <location file="derived/cpp/qwen/gen_3/00001_3/0201_p00156_Moats_around_the_Castle.cpp" line="57" column="9" info="Variable &apos;dr&apos; can be declared as const array"/>
+            <symbol>dr</symbol>
+        </error>
+        <error id="constVariable" severity="style" msg="Variable &apos;dc&apos; can be declared as const array" verbose="Variable &apos;dc&apos; can be declared as const array" cwe="398" file0="derived/cpp/qwen/gen_3/00001_3/0201_p00156_Moats_around_the_Castle.cpp">
+            <location file="derived/cpp/qwen/gen_3/00001_3/0201_p00156_Moats_around_the_Castle.cpp" line="58" column="9" info="Variable &apos;dc&apos; can be declared as const array"/>
+            <symbol>dc</symbol>
+        </error>
+        <error id="negativeContainerIndex" severity="warning" msg="Array index -1 is out of bounds." verbose="Array index -1 is out of bounds." cwe="786" inconclusive="true" file0="derived/cpp/qwen/gen_3/00001_3/0201_p00156_Moats_around_the_Castle.cpp">
+            <location file="derived/cpp/qwen/gen_3/00001_3/0201_p00156_Moats_around_the_Castle.cpp" line="55" column="5" info="Negative array index"/>
+            <location file="derived/cpp/qwen/gen_3/00001_3/0201_p00156_Moats_around_the_Castle.cpp" line="28" column="23" info="Assuming condition is false"/>
+            <location file="derived/cpp/qwen/gen_3/00001_3/0201_p00156_Moats_around_the_Castle.cpp" line="15" column="22" info="Assignment &apos;start_row=-1&apos;, assigned value is -1"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;moat_count&apos; is assigned a value that is never used." verbose="Variable &apos;moat_count&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/qwen/gen_3/00001_3/0201_p00156_Moats_around_the_Castle.cpp">
+            <location file="derived/cpp/qwen/gen_3/00001_3/0201_p00156_Moats_around_the_Castle.cpp" line="78" column="9"/>
+            <symbol>moat_count</symbol>
+        </error>
+    </errors>
+</results>

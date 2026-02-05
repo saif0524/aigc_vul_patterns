@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;Vector2&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;Vector2&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="9" column="3"/>
+            <symbol>Vector2</symbol>
+        </error>
+        <error id="clarifyCalculation" severity="style" msg="Clarify calculation precedence for &apos;^&apos; and &apos;?&apos;." verbose="Suspicious calculation. Please use parentheses to clarify the code. The code &apos;&apos;a^b?c:d&apos;&apos; should be written as either &apos;&apos;(a^b)?c:d&apos;&apos; or &apos;&apos;a^(b?c:d)&apos;&apos;." cwe="783" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="23" column="78"/>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;P&apos; should be passed by const reference." verbose="Parameter &apos;P&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="28" column="25" info="Function parameter &apos;P&apos; should be passed by const reference."/>
+            <symbol>P</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;L1&apos; should be passed by const reference." verbose="Parameter &apos;L1&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="28" column="33" info="Function parameter &apos;L1&apos; should be passed by const reference."/>
+            <symbol>L1</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;L2&apos; should be passed by const reference." verbose="Parameter &apos;L2&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="28" column="42" info="Function parameter &apos;L2&apos; should be passed by const reference."/>
+            <symbol>L2</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;P&apos; should be passed by const reference." verbose="Parameter &apos;P&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="34" column="25" info="Function parameter &apos;P&apos; should be passed by const reference."/>
+            <symbol>P</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;L1&apos; should be passed by const reference." verbose="Parameter &apos;L1&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="34" column="33" info="Function parameter &apos;L1&apos; should be passed by const reference."/>
+            <symbol>L1</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;L2&apos; should be passed by const reference." verbose="Parameter &apos;L2&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="34" column="42" info="Function parameter &apos;L2&apos; should be passed by const reference."/>
+            <symbol>L2</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;S&apos; should be passed by const reference." verbose="Parameter &apos;S&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="48" column="30" info="Function parameter &apos;S&apos; should be passed by const reference."/>
+            <symbol>S</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;T1&apos; should be passed by const reference." verbose="Parameter &apos;T1&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="48" column="38" info="Function parameter &apos;T1&apos; should be passed by const reference."/>
+            <symbol>T1</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;T2&apos; should be passed by const reference." verbose="Parameter &apos;T2&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="48" column="47" info="Function parameter &apos;T2&apos; should be passed by const reference."/>
+            <symbol>T2</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;S&apos; should be passed by const reference." verbose="Parameter &apos;S&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="56" column="35" info="Function parameter &apos;S&apos; should be passed by const reference."/>
+            <symbol>S</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;T1&apos; should be passed by const reference." verbose="Parameter &apos;T1&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="56" column="43" info="Function parameter &apos;T1&apos; should be passed by const reference."/>
+            <symbol>T1</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;T2&apos; should be passed by const reference." verbose="Parameter &apos;T2&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="56" column="52" info="Function parameter &apos;T2&apos; should be passed by const reference."/>
+            <symbol>T2</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;S1&apos; should be passed by const reference." verbose="Parameter &apos;S1&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="65" column="21" info="Function parameter &apos;S1&apos; should be passed by const reference."/>
+            <symbol>S1</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;T1&apos; should be passed by const reference." verbose="Parameter &apos;T1&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="65" column="30" info="Function parameter &apos;T1&apos; should be passed by const reference."/>
+            <symbol>T1</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;S2&apos; should be passed by const reference." verbose="Parameter &apos;S2&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="65" column="39" info="Function parameter &apos;S2&apos; should be passed by const reference."/>
+            <symbol>S2</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;T2&apos; should be passed by const reference." verbose="Parameter &apos;T2&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="65" column="48" info="Function parameter &apos;T2&apos; should be passed by const reference."/>
+            <symbol>T2</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;S1&apos; should be passed by const reference." verbose="Parameter &apos;S1&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="69" column="23" info="Function parameter &apos;S1&apos; should be passed by const reference."/>
+            <symbol>S1</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;T1&apos; should be passed by const reference." verbose="Parameter &apos;T1&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="69" column="32" info="Function parameter &apos;T1&apos; should be passed by const reference."/>
+            <symbol>T1</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;S2&apos; should be passed by const reference." verbose="Parameter &apos;S2&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="69" column="41" info="Function parameter &apos;S2&apos; should be passed by const reference."/>
+            <symbol>S2</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;T2&apos; should be passed by const reference." verbose="Parameter &apos;T2&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="69" column="50" info="Function parameter &apos;T2&apos; should be passed by const reference."/>
+            <symbol>T2</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;S1&apos; should be passed by const reference." verbose="Parameter &apos;S1&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="78" column="32" info="Function parameter &apos;S1&apos; should be passed by const reference."/>
+            <symbol>S1</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;T1&apos; should be passed by const reference." verbose="Parameter &apos;T1&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="78" column="41" info="Function parameter &apos;T1&apos; should be passed by const reference."/>
+            <symbol>T1</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;S2&apos; should be passed by const reference." verbose="Parameter &apos;S2&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="78" column="50" info="Function parameter &apos;S2&apos; should be passed by const reference."/>
+            <symbol>S2</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;T2&apos; should be passed by const reference." verbose="Parameter &apos;T2&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="78" column="59" info="Function parameter &apos;T2&apos; should be passed by const reference."/>
+            <symbol>T2</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;S1&apos; should be passed by const reference." verbose="Parameter &apos;S1&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="85" column="25" info="Function parameter &apos;S1&apos; should be passed by const reference."/>
+            <symbol>S1</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;T1&apos; should be passed by const reference." verbose="Parameter &apos;T1&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="85" column="34" info="Function parameter &apos;T1&apos; should be passed by const reference."/>
+            <symbol>T1</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;S2&apos; should be passed by const reference." verbose="Parameter &apos;S2&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="85" column="43" info="Function parameter &apos;S2&apos; should be passed by const reference."/>
+            <symbol>S2</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;T2&apos; should be passed by const reference." verbose="Parameter &apos;T2&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="85" column="52" info="Function parameter &apos;T2&apos; should be passed by const reference."/>
+            <symbol>T2</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;S1&apos; should be passed by const reference." verbose="Parameter &apos;S1&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="90" column="25" info="Function parameter &apos;S1&apos; should be passed by const reference."/>
+            <symbol>S1</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;T1&apos; should be passed by const reference." verbose="Parameter &apos;T1&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="90" column="34" info="Function parameter &apos;T1&apos; should be passed by const reference."/>
+            <symbol>T1</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;S2&apos; should be passed by const reference." verbose="Parameter &apos;S2&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="90" column="43" info="Function parameter &apos;S2&apos; should be passed by const reference."/>
+            <symbol>S2</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;T2&apos; should be passed by const reference." verbose="Parameter &apos;T2&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="90" column="52" info="Function parameter &apos;T2&apos; should be passed by const reference."/>
+            <symbol>T2</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;S&apos; should be passed by const reference." verbose="Parameter &apos;S&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="96" column="31" info="Function parameter &apos;S&apos; should be passed by const reference."/>
+            <symbol>S</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;T&apos; should be passed by const reference." verbose="Parameter &apos;T&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="96" column="39" info="Function parameter &apos;T&apos; should be passed by const reference."/>
+            <symbol>T</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;P&apos; should be passed by const reference." verbose="Parameter &apos;P&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="96" column="47" info="Function parameter &apos;P&apos; should be passed by const reference."/>
+            <symbol>P</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;S&apos; should be passed by const reference." verbose="Parameter &apos;S&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="100" column="31" info="Function parameter &apos;S&apos; should be passed by const reference."/>
+            <symbol>S</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;T&apos; should be passed by const reference." verbose="Parameter &apos;T&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="100" column="39" info="Function parameter &apos;T&apos; should be passed by const reference."/>
+            <symbol>T</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;P&apos; should be passed by const reference." verbose="Parameter &apos;P&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="100" column="47" info="Function parameter &apos;P&apos; should be passed by const reference."/>
+            <symbol>P</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;S1&apos; should be passed by const reference." verbose="Parameter &apos;S1&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="106" column="29" info="Function parameter &apos;S1&apos; should be passed by const reference."/>
+            <symbol>S1</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;T1&apos; should be passed by const reference." verbose="Parameter &apos;T1&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="106" column="38" info="Function parameter &apos;T1&apos; should be passed by const reference."/>
+            <symbol>T1</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;S2&apos; should be passed by const reference." verbose="Parameter &apos;S2&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="106" column="47" info="Function parameter &apos;S2&apos; should be passed by const reference."/>
+            <symbol>S2</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;T2&apos; should be passed by const reference." verbose="Parameter &apos;T2&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="106" column="56" info="Function parameter &apos;T2&apos; should be passed by const reference."/>
+            <symbol>T2</symbol>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;P&apos; can be declared as pointer to const" verbose="Parameter &apos;P&apos; can be declared as pointer to const" cwe="398" file0="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp">
+            <location file="derived/cpp/human/soln2/00000/0167_p02298_Is-Convex.cpp" line="112" column="26" info="Parameter &apos;P&apos; can be declared as pointer to const"/>
+            <symbol>P</symbol>
+        </error>
+    </errors>
+</results>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="returnStdMoveLocal" severity="performance" msg="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" verbose="Using std::move for returning object by-value from function will affect copy elision optimization. More: https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-return-move-local" file0="derived/cpp/human/soln2/00000/0268_1328_F._Make_k_Equal.cpp">
+            <location file="derived/cpp/human/soln2/00000/0268_1328_F._Make_k_Equal.cpp" line="42" column="15"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;tc&apos; is assigned a value that is never used." verbose="Variable &apos;tc&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/human/soln2/00000/0268_1328_F._Make_k_Equal.cpp">
+            <location file="derived/cpp/human/soln2/00000/0268_1328_F._Make_k_Equal.cpp" line="109" column="20"/>
+            <symbol>tc</symbol>
+        </error>
+    </errors>
+</results>

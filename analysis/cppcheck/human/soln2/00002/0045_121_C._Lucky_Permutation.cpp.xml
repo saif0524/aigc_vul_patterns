@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;fact[15]&apos; accessed at index 15, which is out of bounds." verbose="Array &apos;fact[15]&apos; accessed at index 15, which is out of bounds." cwe="788" file0="derived/cpp/human/soln2/00002/0045_121_C._Lucky_Permutation.cpp">
+            <location file="derived/cpp/human/soln2/00002/0045_121_C._Lucky_Permutation.cpp" line="40" column="37" info="Array index out of bounds"/>
+            <location file="derived/cpp/human/soln2/00002/0045_121_C._Lucky_Permutation.cpp" line="40" column="21" info="Assuming that condition &apos;i&lt;=15&apos; is not redundant"/>
+        </error>
+        <error id="arrayIndexThenCheck" severity="style" msg="Array index &apos;i&apos; is used before limits check." verbose="Defensive programming: The variable &apos;i&apos; is used as an array index before it is checked that is within limits. This can mean that the array might be accessed out of bounds. Reorder conditions such as &apos;(a[i] &amp;&amp; i &lt; 10)&apos; to &apos;(i &lt; 10 &amp;&amp; a[i])&apos;. That way the array will not be accessed if the index is out of limits." cwe="398" file0="derived/cpp/human/soln2/00002/0045_121_C._Lucky_Permutation.cpp">
+            <location file="derived/cpp/human/soln2/00002/0045_121_C._Lucky_Permutation.cpp" line="59" column="13"/>
+            <symbol>i</symbol>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;!use[i]&apos; is always true" verbose="Condition &apos;!use[i]&apos; is always true" cwe="571" file0="derived/cpp/human/soln2/00002/0045_121_C._Lucky_Permutation.cpp">
+            <location file="derived/cpp/human/soln2/00002/0045_121_C._Lucky_Permutation.cpp" line="18" column="28" info="Condition &apos;!use[i]&apos; is always true"/>
+            <location file="derived/cpp/human/soln2/00002/0045_121_C._Lucky_Permutation.cpp" line="17" column="12" info="Assuming condition &apos;use[i]&apos; is false"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;!use[i]&apos; is always true" verbose="Condition &apos;!use[i]&apos; is always true" cwe="571" file0="derived/cpp/human/soln2/00002/0045_121_C._Lucky_Permutation.cpp">
+            <location file="derived/cpp/human/soln2/00002/0045_121_C._Lucky_Permutation.cpp" line="20" column="34" info="Condition &apos;!use[i]&apos; is always true"/>
+            <location file="derived/cpp/human/soln2/00002/0045_121_C._Lucky_Permutation.cpp" line="17" column="12" info="Assuming condition &apos;use[i]&apos; is false"/>
+        </error>
+    </errors>
+</results>

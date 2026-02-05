@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="negativeIndex" severity="warning" msg="Either the condition &apos;t2==1&apos; is redundant or the array &apos;q2[200005]&apos; is accessed at index -1, which is out of bounds." verbose="Either the condition &apos;t2==1&apos; is redundant or the array &apos;q2[200005]&apos; is accessed at index -1, which is out of bounds." cwe="786" file0="derived/cpp/human/soln2/00001/0168_1332_G._No_Monotone_Triples.cpp">
+            <location file="derived/cpp/human/soln2/00001/0168_1332_G._No_Monotone_Triples.cpp" line="73" column="22" info="Negative array index"/>
+            <location file="derived/cpp/human/soln2/00001/0168_1332_G._No_Monotone_Triples.cpp" line="75" column="21" info="t2 is incremented&apos;, new value is -1"/>
+            <location file="derived/cpp/human/soln2/00001/0168_1332_G._No_Monotone_Triples.cpp" line="75" column="21" info="t2 is incremented&apos;, new value is 0"/>
+            <location file="derived/cpp/human/soln2/00001/0168_1332_G._No_Monotone_Triples.cpp" line="77" column="23" info="Assuming that condition &apos;t2==1&apos; is not redundant"/>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;q&apos; can be declared as pointer to const" verbose="Parameter &apos;q&apos; can be declared as pointer to const" cwe="398" file0="derived/cpp/human/soln2/00001/0168_1332_G._No_Monotone_Triples.cpp">
+            <location file="derived/cpp/human/soln2/00001/0168_1332_G._No_Monotone_Triples.cpp" line="45" column="15" info="Parameter &apos;q&apos; can be declared as pointer to const"/>
+            <symbol>q</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: ans" verbose="Uninitialized variable: ans" cwe="457" file0="derived/cpp/human/soln2/00001/0168_1332_G._No_Monotone_Triples.cpp">
+            <location file="derived/cpp/human/soln2/00001/0168_1332_G._No_Monotone_Triples.cpp" line="54" column="12"/>
+            <location file="derived/cpp/human/soln2/00001/0168_1332_G._No_Monotone_Triples.cpp" line="49" column="16" info="Assuming condition is false"/>
+            <symbol>ans</symbol>
+        </error>
+        <error id="unassignedVariable" severity="style" msg="Variable &apos;S&apos; is not assigned a value." verbose="Variable &apos;S&apos; is not assigned a value." cwe="665" file0="derived/cpp/human/soln2/00001/0168_1332_G._No_Monotone_Triples.cpp">
+            <location file="derived/cpp/human/soln2/00001/0168_1332_G._No_Monotone_Triples.cpp" line="58" column="28"/>
+            <symbol>S</symbol>
+        </error>
+    </errors>
+</results>

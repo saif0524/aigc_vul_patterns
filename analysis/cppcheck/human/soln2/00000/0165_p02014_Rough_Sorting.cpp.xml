@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;BIT &lt; int &gt;::n&apos; is not initialized in the constructor." verbose="Member variable &apos;BIT &lt; int &gt;::n&apos; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" inconclusive="true" file0="derived/cpp/human/soln2/00000/0165_p02014_Rough_Sorting.cpp">
+            <location file="derived/cpp/human/soln2/00000/0165_p02014_Rough_Sorting.cpp" line="67" column="5"/>
+            <symbol>BIT &lt; int &gt;::n</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;segtree_ &lt; int &gt;::query&apos; can be const." verbose="The member function &apos;segtree_ &lt; int &gt;::query&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true" file0="derived/cpp/human/soln2/00000/0165_p02014_Rough_Sorting.cpp">
+            <location file="derived/cpp/human/soln2/00000/0165_p02014_Rough_Sorting.cpp" line="158" column="7"/>
+            <symbol>segtree_ &lt; int &gt;::query</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;segtree_ &lt; int &gt;::query_&apos; can be const." verbose="The member function &apos;segtree_ &lt; int &gt;::query_&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true" file0="derived/cpp/human/soln2/00000/0165_p02014_Rough_Sorting.cpp">
+            <location file="derived/cpp/human/soln2/00000/0165_p02014_Rough_Sorting.cpp" line="172" column="9"/>
+            <symbol>segtree_ &lt; int &gt;::query_</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;BIT &lt; int &gt;::sum&apos; can be const." verbose="The member function &apos;BIT &lt; int &gt;::sum&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true" file0="derived/cpp/human/soln2/00000/0165_p02014_Rough_Sorting.cpp">
+            <location file="derived/cpp/human/soln2/00000/0165_p02014_Rough_Sorting.cpp" line="66" column="7"/>
+            <symbol>BIT &lt; int &gt;::sum</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;segtree_ &lt; int &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;segtree_ &lt; int &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="derived/cpp/human/soln2/00000/0165_p02014_Rough_Sorting.cpp">
+            <location file="derived/cpp/human/soln2/00000/0165_p02014_Rough_Sorting.cpp" line="135" column="5"/>
+            <symbol>segtree_ &lt; int &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;segtree &lt; int &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;segtree &lt; int &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="derived/cpp/human/soln2/00000/0165_p02014_Rough_Sorting.cpp">
+            <location file="derived/cpp/human/soln2/00000/0165_p02014_Rough_Sorting.cpp" line="89" column="5"/>
+            <symbol>segtree &lt; int &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;BIT &lt; int &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;BIT &lt; int &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="derived/cpp/human/soln2/00000/0165_p02014_Rough_Sorting.cpp">
+            <location file="derived/cpp/human/soln2/00000/0165_p02014_Rough_Sorting.cpp" line="67" column="13"/>
+            <symbol>BIT &lt; int &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;BIT &lt; int &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;BIT &lt; int &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="derived/cpp/human/soln2/00000/0165_p02014_Rough_Sorting.cpp">
+            <location file="derived/cpp/human/soln2/00000/0165_p02014_Rough_Sorting.cpp" line="68" column="5"/>
+            <symbol>BIT &lt; int &gt;</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;n&apos; shadows outer variable" verbose="Local variable &apos;n&apos; shadows outer variable" cwe="398" file0="derived/cpp/human/soln2/00000/0165_p02014_Rough_Sorting.cpp">
+            <location file="derived/cpp/human/soln2/00000/0165_p02014_Rough_Sorting.cpp" line="44" column="9" info="Shadow variable"/>
+            <location file="derived/cpp/human/soln2/00000/0165_p02014_Rough_Sorting.cpp" line="58" column="5" info="Shadowed declaration"/>
+            <symbol>n</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;v&apos; should be passed by const reference." verbose="Parameter &apos;v&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="derived/cpp/human/soln2/00000/0165_p02014_Rough_Sorting.cpp">
+            <location file="derived/cpp/human/soln2/00000/0165_p02014_Rough_Sorting.cpp" line="68" column="19" info="Function parameter &apos;v&apos; should be passed by const reference."/>
+            <symbol>v</symbol>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;v&apos; can be declared as reference to const" verbose="Parameter &apos;v&apos; can be declared as reference to const" cwe="398" file0="derived/cpp/human/soln2/00000/0165_p02014_Rough_Sorting.cpp">
+            <location file="derived/cpp/human/soln2/00000/0165_p02014_Rough_Sorting.cpp" line="135" column="25" info="Parameter &apos;v&apos; can be declared as reference to const"/>
+            <symbol>v</symbol>
+        </error>
+    </errors>
+</results>

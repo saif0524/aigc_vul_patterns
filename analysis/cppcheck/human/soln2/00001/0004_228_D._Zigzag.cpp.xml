@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="arrayIndexOutOfBoundsCond" severity="warning" msg="Either the condition &apos;pos&gt;0&apos; is redundant or the array &apos;a[100002]&apos; is accessed at index 100002, which is out of bounds." verbose="Either the condition &apos;pos&gt;0&apos; is redundant or the array &apos;a[100002]&apos; is accessed at index 100002, which is out of bounds." cwe="788" file0="derived/cpp/human/soln2/00001/0004_228_D._Zigzag.cpp">
+            <location file="derived/cpp/human/soln2/00001/0004_228_D._Zigzag.cpp" line="20" column="15" info="Array index out of bounds"/>
+            <location file="derived/cpp/human/soln2/00001/0004_228_D._Zigzag.cpp" line="19" column="16" info="Assuming that condition &apos;pos&gt;0&apos; is not redundant"/>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;summator::fsum&apos; can be const." verbose="The member function &apos;summator::fsum&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true" file0="derived/cpp/human/soln2/00001/0004_228_D._Zigzag.cpp">
+            <location file="derived/cpp/human/soln2/00001/0004_228_D._Zigzag.cpp" line="17" column="13"/>
+            <symbol>summator::fsum</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;val&apos; shadows outer variable" verbose="Local variable &apos;val&apos; shadows outer variable" cwe="398" file0="derived/cpp/human/soln2/00001/0004_228_D._Zigzag.cpp">
+            <location file="derived/cpp/human/soln2/00001/0004_228_D._Zigzag.cpp" line="50" column="11" info="Shadow variable"/>
+            <location file="derived/cpp/human/soln2/00001/0004_228_D._Zigzag.cpp" line="27" column="11" info="Shadowed declaration"/>
+            <symbol>val</symbol>
+        </error>
+    </errors>
+</results>

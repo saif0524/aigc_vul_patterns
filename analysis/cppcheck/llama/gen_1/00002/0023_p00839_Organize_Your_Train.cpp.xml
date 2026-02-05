@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;edge.first==i&apos; is always false" verbose="Condition &apos;edge.first==i&apos; is always false" cwe="570" file0="derived/cpp/llama/gen_1/00002/0023_p00839_Organize_Your_Train.cpp">
+            <location file="derived/cpp/llama/gen_1/00002/0023_p00839_Organize_Your_Train.cpp" line="76" column="39" info="Condition &apos;edge.first==i&apos; is always false"/>
+        </error>
+        <error id="duplicateBranch" severity="style" msg="Found duplicate branches for &apos;if&apos; and &apos;else&apos;." verbose="Finding the same code in an &apos;if&apos; and related &apos;else&apos; branch is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" inconclusive="true" file0="derived/cpp/llama/gen_1/00002/0023_p00839_Organize_Your_Train.cpp">
+            <location file="derived/cpp/llama/gen_1/00002/0023_p00839_Organize_Your_Train.cpp" line="62" column="25"/>
+            <location file="derived/cpp/llama/gen_1/00002/0023_p00839_Organize_Your_Train.cpp" line="68" column="27"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::accumulate algorithm instead of a raw loop." verbose="Consider using std::accumulate algorithm instead of a raw loop." cwe="398" file0="derived/cpp/llama/gen_1/00002/0023_p00839_Organize_Your_Train.cpp">
+            <location file="derived/cpp/llama/gen_1/00002/0023_p00839_Organize_Your_Train.cpp" line="19" column="18"/>
+        </error>
+    </errors>
+</results>

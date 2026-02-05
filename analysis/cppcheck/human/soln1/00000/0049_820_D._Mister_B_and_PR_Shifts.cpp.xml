@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;l&apos; shadows outer variable" verbose="Local variable &apos;l&apos; shadows outer variable" cwe="398" file0="derived/cpp/human/soln1/00000/0049_820_D._Mister_B_and_PR_Shifts.cpp">
+            <location file="derived/cpp/human/soln1/00000/0049_820_D._Mister_B_and_PR_Shifts.cpp" line="4" column="43" info="Shadow variable"/>
+            <location file="derived/cpp/human/soln1/00000/0049_820_D._Mister_B_and_PR_Shifts.cpp" line="25" column="25" info="Shadowed declaration"/>
+            <symbol>l</symbol>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;l&apos; can be declared as pointer to const" verbose="Variable &apos;l&apos; can be declared as pointer to const" cwe="398" file0="derived/cpp/human/soln1/00000/0049_820_D._Mister_B_and_PR_Shifts.cpp">
+            <location file="derived/cpp/human/soln1/00000/0049_820_D._Mister_B_and_PR_Shifts.cpp" line="4" column="43" info="Variable &apos;l&apos; can be declared as pointer to const"/>
+            <symbol>l</symbol>
+        </error>
+    </errors>
+</results>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;sensor1[j-1][z-1]&apos; is always true" verbose="Condition &apos;sensor1[j-1][z-1]&apos; is always true" cwe="571" file0="derived/cpp/qwen/gen_2/00000_2/0096_1320_F._Blocks_and_Sensors.cpp">
+            <location file="derived/cpp/qwen/gen_2/00000_2/0096_1320_F._Blocks_and_Sensors.cpp" line="126" column="42" info="Condition &apos;sensor1[j-1][z-1]&apos; is always true"/>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;last&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;last&apos; is reassigned a value before the old one has been used." cwe="563" file0="derived/cpp/qwen/gen_2/00000_2/0096_1320_F._Blocks_and_Sensors.cpp">
+            <location file="derived/cpp/qwen/gen_2/00000_2/0096_1320_F._Blocks_and_Sensors.cpp" line="130" column="22" info="last is overwritten"/>
+            <location file="derived/cpp/qwen/gen_2/00000_2/0096_1320_F._Blocks_and_Sensors.cpp" line="97" column="26" info="last is assigned"/>
+            <symbol>last</symbol>
+        </error>
+    </errors>
+</results>

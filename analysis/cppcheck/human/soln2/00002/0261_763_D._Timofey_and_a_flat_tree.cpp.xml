@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="initializerList" severity="style" msg="Member variable &apos;_node::cnt&apos; is in the wrong place in the initializer list." verbose="Member variable &apos;_node::cnt&apos; is in the wrong place in the initializer list. Members are initialized in the order they are declared, not in the order they are in the initializer list.  Keeping the initializer list in the same order that the members were declared prevents order dependent initialization errors." cwe="398" inconclusive="true" file0="derived/cpp/human/soln2/00002/0261_763_D._Timofey_and_a_flat_tree.cpp">
+            <location file="derived/cpp/human/soln2/00002/0261_763_D._Timofey_and_a_flat_tree.cpp" line="51" column="15"/>
+            <location file="derived/cpp/human/soln2/00002/0261_763_D._Timofey_and_a_flat_tree.cpp" line="56" column="62"/>
+            <symbol>_node::cnt</symbol>
+        </error>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &apos;Treap::merge&apos; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &apos;Treap::merge&apos; can be made a static function. Making a function static can bring a performance benefit since no &apos;this&apos; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to an unnamed namespace." cwe="398" inconclusive="true" file0="derived/cpp/human/soln2/00002/0261_763_D._Timofey_and_a_flat_tree.cpp">
+            <location file="derived/cpp/human/soln2/00002/0261_763_D._Timofey_and_a_flat_tree.cpp" line="87" column="8"/>
+            <symbol>Treap::merge</symbol>
+        </error>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &apos;Treap::split&apos; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &apos;Treap::split&apos; can be made a static function. Making a function static can bring a performance benefit since no &apos;this&apos; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to an unnamed namespace." cwe="398" inconclusive="true" file0="derived/cpp/human/soln2/00002/0261_763_D._Timofey_and_a_flat_tree.cpp">
+            <location file="derived/cpp/human/soln2/00002/0261_763_D._Timofey_and_a_flat_tree.cpp" line="102" column="8"/>
+            <symbol>Treap::split</symbol>
+        </error>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &apos;Treap::splitCnt&apos; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &apos;Treap::splitCnt&apos; can be made a static function. Making a function static can bring a performance benefit since no &apos;this&apos; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to an unnamed namespace." cwe="398" inconclusive="true" file0="derived/cpp/human/soln2/00002/0261_763_D._Timofey_and_a_flat_tree.cpp">
+            <location file="derived/cpp/human/soln2/00002/0261_763_D._Timofey_and_a_flat_tree.cpp" line="116" column="8"/>
+            <symbol>Treap::splitCnt</symbol>
+        </error>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &apos;Treap::_node::push&apos; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &apos;Treap::_node::push&apos; can be made a static function. Making a function static can bring a performance benefit since no &apos;this&apos; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to an unnamed namespace." cwe="398" inconclusive="true" file0="derived/cpp/human/soln2/00002/0261_763_D._Timofey_and_a_flat_tree.cpp">
+            <location file="derived/cpp/human/soln2/00002/0261_763_D._Timofey_and_a_flat_tree.cpp" line="61" column="10"/>
+            <symbol>Treap::_node::push</symbol>
+        </error>
+        <error id="functionConst" severity="style" msg="Technically the member function &apos;Treap::_node::get_hash&apos; can be const." verbose="The member function &apos;Treap::_node::get_hash&apos; can be made a const function. Making this function &apos;const&apos; should not cause compiler errors. Even though the function can be made const function technically it may not make sense conceptually. Think about your design and the task of the function first - is it a function that must not change object internal state?" cwe="398" inconclusive="true" file0="derived/cpp/human/soln2/00002/0261_763_D._Timofey_and_a_flat_tree.cpp">
+            <location file="derived/cpp/human/soln2/00002/0261_763_D._Timofey_and_a_flat_tree.cpp" line="75" column="15"/>
+            <symbol>Treap::_node::get_hash</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;_node&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;_node&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="derived/cpp/human/soln2/00002/0261_763_D._Timofey_and_a_flat_tree.cpp">
+            <location file="derived/cpp/human/soln2/00002/0261_763_D._Timofey_and_a_flat_tree.cpp" line="56" column="5"/>
+            <symbol>_node</symbol>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;v&apos; can be declared as pointer to const" verbose="Parameter &apos;v&apos; can be declared as pointer to const" cwe="398" file0="derived/cpp/human/soln2/00002/0261_763_D._Timofey_and_a_flat_tree.cpp">
+            <location file="derived/cpp/human/soln2/00002/0261_763_D._Timofey_and_a_flat_tree.cpp" line="76" column="33" info="Parameter &apos;v&apos; can be declared as pointer to const"/>
+            <symbol>v</symbol>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;v&apos; can be declared as pointer to const" verbose="Parameter &apos;v&apos; can be declared as pointer to const" cwe="398" file0="derived/cpp/human/soln2/00002/0261_763_D._Timofey_and_a_flat_tree.cpp">
+            <location file="derived/cpp/human/soln2/00002/0261_763_D._Timofey_and_a_flat_tree.cpp" line="81" column="29" info="Parameter &apos;v&apos; can be declared as pointer to const"/>
+            <symbol>v</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;testNum&apos; is assigned a value that is never used." verbose="Variable &apos;testNum&apos; is assigned a value that is never used." cwe="563" file0="derived/cpp/human/soln2/00002/0261_763_D._Timofey_and_a_flat_tree.cpp">
+            <location file="derived/cpp/human/soln2/00002/0261_763_D._Timofey_and_a_flat_tree.cpp" line="17" column="15"/>
+            <symbol>testNum</symbol>
+        </error>
+    </errors>
+</results>

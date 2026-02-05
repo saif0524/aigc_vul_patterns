@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;k&gt;=1&apos; is always false" verbose="Condition &apos;k&gt;=1&apos; is always false" cwe="570" file0="derived/cpp/qwen/gen_1/00002/0046_1244_G._Running_in_Pairs.cpp">
+            <location file="derived/cpp/qwen/gen_1/00002/0046_1244_G._Running_in_Pairs.cpp" line="24" column="14" info="Condition &apos;k&gt;=1&apos; is always false"/>
+            <location file="derived/cpp/qwen/gen_1/00002/0046_1244_G._Running_in_Pairs.cpp" line="19" column="12" info="Assuming condition is false"/>
+            <location file="derived/cpp/qwen/gen_1/00002/0046_1244_G._Running_in_Pairs.cpp" line="9" column="18" info="Assuming that condition &apos;n*(2*n-1)&lt;=k&apos; is not redundant"/>
+            <location file="derived/cpp/qwen/gen_1/00002/0046_1244_G._Running_in_Pairs.cpp" line="23" column="10" info="Assuming that condition &apos;n==1&apos; is not redundant"/>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;h&apos; shadows outer variable" verbose="Local variable &apos;h&apos; shadows outer variable" cwe="398" file0="derived/cpp/qwen/gen_1/00002/0046_1244_G._Running_in_Pairs.cpp">
+            <location file="derived/cpp/qwen/gen_1/00002/0046_1244_G._Running_in_Pairs.cpp" line="52" column="17" info="Shadow variable"/>
+            <location file="derived/cpp/qwen/gen_1/00002/0046_1244_G._Running_in_Pairs.cpp" line="33" column="13" info="Shadowed declaration"/>
+            <symbol>h</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::copy algorithm instead of a raw loop." verbose="Consider using std::copy algorithm instead of a raw loop." cwe="398" file0="derived/cpp/qwen/gen_1/00002/0046_1244_G._Running_in_Pairs.cpp">
+            <location file="derived/cpp/qwen/gen_1/00002/0046_1244_G._Running_in_Pairs.cpp" line="96" column="27"/>
+        </error>
+    </errors>
+</results>

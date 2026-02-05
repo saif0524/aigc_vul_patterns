@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.13.0"/>
+    <errors>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;off&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;off&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="derived/cpp/human/soln2/00000/0005_1129_D._Isolation.cpp">
+            <location file="derived/cpp/human/soln2/00000/0005_1129_D._Isolation.cpp" line="11" column="5"/>
+            <symbol>off</symbol>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;pre&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;pre&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="derived/cpp/human/soln2/00000/0005_1129_D._Isolation.cpp">
+            <location file="derived/cpp/human/soln2/00000/0005_1129_D._Isolation.cpp" line="12" column="5"/>
+            <symbol>pre</symbol>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;dps&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;dps&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="derived/cpp/human/soln2/00000/0005_1129_D._Isolation.cpp">
+            <location file="derived/cpp/human/soln2/00000/0005_1129_D._Isolation.cpp" line="13" column="5"/>
+            <symbol>dps</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;bucket&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;bucket&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="derived/cpp/human/soln2/00000/0005_1129_D._Isolation.cpp">
+            <location file="derived/cpp/human/soln2/00000/0005_1129_D._Isolation.cpp" line="9" column="3"/>
+            <symbol>bucket</symbol>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;l&gt;=j*b&apos; is always true" verbose="Condition &apos;l&gt;=j*b&apos; is always true" cwe="571" file0="derived/cpp/human/soln2/00000/0005_1129_D._Isolation.cpp">
+            <location file="derived/cpp/human/soln2/00000/0005_1129_D._Isolation.cpp" line="49" column="9" info="Condition &apos;l&gt;=j*b&apos; is always true"/>
+            <location file="derived/cpp/human/soln2/00000/0005_1129_D._Isolation.cpp" line="45" column="16" info="Assuming that condition &apos;j*b&gt;l&apos; is not redundant"/>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;ds&apos; can be declared as reference to const" verbose="Parameter &apos;ds&apos; can be declared as reference to const" cwe="398" file0="derived/cpp/human/soln2/00000/0005_1129_D._Isolation.cpp">
+            <location file="derived/cpp/human/soln2/00000/0005_1129_D._Isolation.cpp" line="51" column="33" info="Parameter &apos;ds&apos; can be declared as reference to const"/>
+            <symbol>ds</symbol>
+        </error>
+    </errors>
+</results>
