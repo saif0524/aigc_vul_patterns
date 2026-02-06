@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;num&apos; shadows outer variable" verbose="Local variable &apos;num&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0219_p01970_The_Diversity_of_Prime_Factorization.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0219_p01970_The_Diversity_of_Prime_Factorization.cpp" line="148" column="23" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0219_p01970_The_Diversity_of_Prime_Factorization.cpp" line="20" column="9" info="Shadowed declaration"/>
+            <symbol>num</symbol>
+        </error>
+        <error id="constVariableReference" severity="style" msg="Variable &apos;factor&apos; can be declared as reference to const" verbose="Variable &apos;factor&apos; can be declared as reference to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0219_p01970_The_Diversity_of_Prime_Factorization.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0219_p01970_The_Diversity_of_Prime_Factorization.cpp" line="149" column="24" info="Variable &apos;factor&apos; can be declared as reference to const"/>
+            <symbol>factor</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::accumulate algorithm instead of a raw loop." verbose="Consider using std::accumulate algorithm instead of a raw loop." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0219_p01970_The_Diversity_of_Prime_Factorization.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0219_p01970_The_Diversity_of_Prime_Factorization.cpp" line="150" column="21"/>
+        </error>
+    </errors>
+</results>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="invalidscanf" severity="warning" msg="scanf() without field width limits can crash with huge input data." verbose="scanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp" line="45" column="3"/>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;t&apos; shadows outer variable" verbose="Local variable &apos;t&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp" line="59" column="9" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp" line="7" column="15" info="Shadowed declaration"/>
+            <symbol>t</symbol>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;s&apos; can be declared as pointer to const" verbose="Parameter &apos;s&apos; can be declared as pointer to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp" line="27" column="16" info="Parameter &apos;s&apos; can be declared as pointer to const"/>
+            <symbol>s</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;res&apos; is assigned a value that is never used." verbose="Variable &apos;res&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp" line="56" column="11"/>
+            <symbol>res</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;res&apos; is assigned a value that is never used." verbose="Variable &apos;res&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0024_p00971_Shortest_Common_Non-Subsequence.cpp" line="56" column="7"/>
+            <symbol>res</symbol>
+        </error>
+    </errors>
+</results>

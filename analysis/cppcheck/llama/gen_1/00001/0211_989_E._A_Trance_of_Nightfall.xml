@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="duplicateCondition" severity="style" msg="The if condition is the same as the previous if condition" verbose="The if condition is the same as the previous if condition" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0211_989_E._A_Trance_of_Nightfall.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0211_989_E._A_Trance_of_Nightfall.cpp" line="66" column="12" info="Second condition"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0211_989_E._A_Trance_of_Nightfall.cpp" line="65" column="12" info="First condition"/>
+        </error>
+        <error id="redundantInitialization" severity="style" msg="Redundant initialization for &apos;all_prob&apos;. The initialized value is overwritten before it is read." verbose="Redundant initialization for &apos;all_prob&apos;. The initialized value is overwritten before it is read." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0211_989_E._A_Trance_of_Nightfall.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0211_989_E._A_Trance_of_Nightfall.cpp" line="88" column="13" info="all_prob is overwritten"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0211_989_E._A_Trance_of_Nightfall.cpp" line="87" column="20" info="all_prob is initialized"/>
+            <symbol>all_prob</symbol>
+        </error>
+    </errors>
+</results>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="constVariableReference" severity="style" msg="Variable &apos;pair&apos; can be declared as reference to const" verbose="Variable &apos;pair&apos; can be declared as reference to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0193_p00812_Equals_are_Equals.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0193_p00812_Equals_are_Equals.cpp" line="20" column="16" info="Variable &apos;pair&apos; can be declared as reference to const"/>
+            <symbol>pair</symbol>
+        </error>
+        <error id="constVariableReference" severity="style" msg="Variable &apos;pair&apos; can be declared as reference to const" verbose="Variable &apos;pair&apos; can be declared as reference to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0193_p00812_Equals_are_Equals.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0193_p00812_Equals_are_Equals.cpp" line="37" column="16" info="Variable &apos;pair&apos; can be declared as reference to const"/>
+            <symbol>pair</symbol>
+        </error>
+        <error id="stlFindInsert" severity="performance" msg="Searching before insertion is not necessary. Instead of &apos;result.variables[pair.first]=pair.second&apos; consider using &apos;result.variables.try_emplace(pair.first, pair.second);&apos;." verbose="Searching before insertion is not necessary. Instead of &apos;result.variables[pair.first]=pair.second&apos; consider using &apos;result.variables.try_emplace(pair.first, pair.second);&apos;." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0193_p00812_Equals_are_Equals.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0193_p00812_Equals_are_Equals.cpp" line="25" column="48"/>
+        </error>
+        <error id="stlFindInsert" severity="performance" msg="Searching before insertion is not necessary. Instead of &apos;result.variables[pair.first]=pair.second&apos; consider using &apos;result.variables.try_emplace(pair.first, pair.second);&apos;." verbose="Searching before insertion is not necessary. Instead of &apos;result.variables[pair.first]=pair.second&apos; consider using &apos;result.variables.try_emplace(pair.first, pair.second);&apos;." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0193_p00812_Equals_are_Equals.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0193_p00812_Equals_are_Equals.cpp" line="42" column="48"/>
+        </error>
+    </errors>
+</results>

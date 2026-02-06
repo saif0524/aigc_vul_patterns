@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="functionStatic" severity="style" msg="The member function &apos;Polynomial::FFT::cplx::sqr&apos; can be static." verbose="The member function &apos;Polynomial::FFT::cplx::sqr&apos; can be static." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0132_784_B._Kids__Riddle.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0132_784_B._Kids__Riddle.cpp" line="50" column="17"/>
+            <symbol>Polynomial::FFT::cplx::sqr</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;cplx&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;cplx&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0132_784_B._Kids__Riddle.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0132_784_B._Kids__Riddle.cpp" line="43" column="3"/>
+            <symbol>cplx</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;c&apos; shadows outer variable" verbose="Local variable &apos;c&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0132_784_B._Kids__Riddle.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0132_784_B._Kids__Riddle.cpp" line="6" column="8" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0132_784_B._Kids__Riddle.cpp" line="148" column="13" info="Shadowed declaration"/>
+            <symbol>c</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;x&apos; shadows outer variable" verbose="Local variable &apos;x&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0132_784_B._Kids__Riddle.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0132_784_B._Kids__Riddle.cpp" line="63" column="8" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0132_784_B._Kids__Riddle.cpp" line="148" column="10" info="Shadowed declaration"/>
+            <symbol>x</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;x&apos; shadows outer variable" verbose="Local variable &apos;x&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0132_784_B._Kids__Riddle.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0132_784_B._Kids__Riddle.cpp" line="104" column="7" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0132_784_B._Kids__Riddle.cpp" line="148" column="10" info="Shadowed declaration"/>
+            <symbol>x</symbol>
+        </error>
+    </errors>
+</results>

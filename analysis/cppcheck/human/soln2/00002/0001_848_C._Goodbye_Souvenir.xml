@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;fenwick_tree &lt; long long &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;fenwick_tree &lt; long long &gt;&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0001_848_C._Goodbye_Souvenir.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0001_848_C._Goodbye_Souvenir.cpp" line="14" column="3"/>
+            <symbol>fenwick_tree &lt; long long &gt;</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;ans&apos; shadows outer variable" verbose="Local variable &apos;ans&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0001_848_C._Goodbye_Souvenir.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0001_848_C._Goodbye_Souvenir.cpp" line="24" column="7" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0001_848_C._Goodbye_Souvenir.cpp" line="44" column="19" info="Shadowed declaration"/>
+            <symbol>ans</symbol>
+        </error>
+        <error id="constVariableReference" severity="style" msg="Variable &apos;x&apos; can be declared as reference to const" verbose="Variable &apos;x&apos; can be declared as reference to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0001_848_C._Goodbye_Souvenir.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0001_848_C._Goodbye_Souvenir.cpp" line="149" column="14" info="Variable &apos;x&apos; can be declared as reference to const"/>
+            <symbol>x</symbol>
+        </error>
+    </errors>
+</results>

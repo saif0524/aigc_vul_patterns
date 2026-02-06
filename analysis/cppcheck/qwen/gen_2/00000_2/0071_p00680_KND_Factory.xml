@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;G&apos; shadows outer variable" verbose="Local variable &apos;G&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0071_p00680_KND_Factory.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0071_p00680_KND_Factory.cpp" line="152" column="30" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0071_p00680_KND_Factory.cpp" line="11" column="22" info="Shadowed declaration"/>
+            <symbol>G</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;cost&apos; shadows outer variable" verbose="Local variable &apos;cost&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0071_p00680_KND_Factory.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0071_p00680_KND_Factory.cpp" line="153" column="20" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0071_p00680_KND_Factory.cpp" line="12" column="12" info="Shadowed declaration"/>
+            <symbol>cost</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;cost&apos; shadows outer variable" verbose="Local variable &apos;cost&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0071_p00680_KND_Factory.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0071_p00680_KND_Factory.cpp" line="158" column="20" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0071_p00680_KND_Factory.cpp" line="153" column="20" info="Shadowed declaration"/>
+            <symbol>cost</symbol>
+        </error>
+        <error id="constVariableReference" severity="style" msg="Variable &apos;e&apos; can be declared as reference to const" verbose="Variable &apos;e&apos; can be declared as reference to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0071_p00680_KND_Factory.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0071_p00680_KND_Factory.cpp" line="24" column="19" info="Variable &apos;e&apos; can be declared as reference to const"/>
+            <symbol>e</symbol>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;pipeline&apos; can be declared as reference to const" verbose="Parameter &apos;pipeline&apos; can be declared as reference to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0071_p00680_KND_Factory.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0071_p00680_KND_Factory.cpp" line="57" column="68" info="Parameter &apos;pipeline&apos; can be declared as reference to const"/>
+            <symbol>pipeline</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;n&apos; is assigned a value that is never used." verbose="Variable &apos;n&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0071_p00680_KND_Factory.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0071_p00680_KND_Factory.cpp" line="37" column="11"/>
+            <symbol>n</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;n&apos; is assigned a value that is never used." verbose="Variable &apos;n&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0071_p00680_KND_Factory.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0071_p00680_KND_Factory.cpp" line="37" column="9"/>
+            <symbol>n</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;costs[i][j]&apos; is assigned a value that is never used." verbose="Variable &apos;costs[i][j]&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0071_p00680_KND_Factory.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0071_p00680_KND_Factory.cpp" line="98" column="29"/>
+            <symbol>costs[i][j]</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;cost&apos; is assigned a value that is never used." verbose="Variable &apos;cost&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0071_p00680_KND_Factory.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0071_p00680_KND_Factory.cpp" line="158" column="25"/>
+            <symbol>cost</symbol>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: cost" verbose="Unused variable: cost" cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0071_p00680_KND_Factory.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0071_p00680_KND_Factory.cpp" line="153" column="20"/>
+            <symbol>cost</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;cost&apos; is assigned a value that is never used." verbose="Variable &apos;cost&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0071_p00680_KND_Factory.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0071_p00680_KND_Factory.cpp" line="158" column="20"/>
+            <symbol>cost</symbol>
+        </error>
+    </errors>
+</results>

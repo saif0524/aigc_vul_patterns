@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::freopen() is not used." verbose="Return value of function std::freopen() is not used." cwe="252" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0030_354_E._Lucky_Number_Representation.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0030_354_E._Lucky_Number_Representation.cpp" line="56" column="5"/>
+            <symbol>std::freopen</symbol>
+        </error>
+        <error id="leakNoVarFunctionCall" severity="error" msg="Allocation with fopen, if doesn&apos;t release it." verbose="Allocation with fopen, if doesn&apos;t release it." cwe="772" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0030_354_E._Lucky_Number_Representation.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0030_354_E._Lucky_Number_Representation.cpp" line="55" column="7"/>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;s&apos; shadows outer variable" verbose="Local variable &apos;s&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0030_354_E._Lucky_Number_Representation.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0030_354_E._Lucky_Number_Representation.cpp" line="42" column="17" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0030_354_E._Lucky_Number_Representation.cpp" line="34" column="9" info="Shadowed declaration"/>
+            <symbol>s</symbol>
+        </error>
+    </errors>
+</results>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="compareValueOutOfTypeRangeError" severity="style" msg="Comparing expression of type &apos;signed int&apos; against value 9223372036854775807. Condition is always false." verbose="Comparing expression of type &apos;signed int&apos; against value 9223372036854775807. Condition is always false." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0076_p01356_Nearest_Station.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0076_p01356_Nearest_Station.cpp" line="34" column="31"/>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;P&apos; shadows outer variable" verbose="Local variable &apos;P&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0076_p01356_Nearest_Station.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0076_p01356_Nearest_Station.cpp" line="74" column="28" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0076_p01356_Nearest_Station.cpp" line="13" column="4" info="Shadowed declaration"/>
+            <symbol>P</symbol>
+        </error>
+    </errors>
+</results>

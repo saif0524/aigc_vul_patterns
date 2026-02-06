@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;SegTree::segTree&apos; is not initialized in the constructor." verbose="Member variable &apos;SegTree::segTree&apos; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp" line="189" column="2"/>
+            <symbol>SegTree::segTree</symbol>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;monoidFunc&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;monoidFunc&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp" line="190" column="3"/>
+            <symbol>monoidFunc</symbol>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;t&apos; can be declared as reference to const" verbose="Parameter &apos;t&apos; can be declared as reference to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp" line="30" column="25" info="Parameter &apos;t&apos; can be declared as reference to const"/>
+            <symbol>t</symbol>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;s&apos; can be declared as reference to const" verbose="Parameter &apos;s&apos; can be declared as reference to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp" line="34" column="38" info="Parameter &apos;s&apos; can be declared as reference to const"/>
+            <symbol>s</symbol>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;t&apos; can be declared as reference to const" verbose="Parameter &apos;t&apos; can be declared as reference to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp" line="34" column="61" info="Parameter &apos;t&apos; can be declared as reference to const"/>
+            <symbol>t</symbol>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;s&apos; can be declared as reference to const" verbose="Parameter &apos;s&apos; can be declared as reference to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp" line="157" column="30" info="Parameter &apos;s&apos; can be declared as reference to const"/>
+            <symbol>s</symbol>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;sa&apos; can be declared as reference to const" verbose="Parameter &apos;sa&apos; can be declared as reference to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp" line="157" column="46" info="Parameter &apos;sa&apos; can be declared as reference to const"/>
+            <symbol>sa</symbol>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;T&apos; can be declared as reference to const" verbose="Parameter &apos;T&apos; can be declared as reference to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp" line="240" column="21" info="Parameter &apos;T&apos; can be declared as reference to const"/>
+            <symbol>T</symbol>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;P&apos; can be declared as reference to const" verbose="Parameter &apos;P&apos; can be declared as reference to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp" line="240" column="32" info="Parameter &apos;P&apos; can be declared as reference to const"/>
+            <symbol>P</symbol>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;sa&apos; can be declared as reference to const" verbose="Parameter &apos;sa&apos; can be declared as reference to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp" line="240" column="48" info="Parameter &apos;sa&apos; can be declared as reference to const"/>
+            <symbol>sa</symbol>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;lcpArray&apos; can be declared as reference to const" verbose="Parameter &apos;lcpArray&apos; can be declared as reference to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp" line="240" column="65" info="Parameter &apos;lcpArray&apos; can be declared as reference to const"/>
+            <symbol>lcpArray</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::copy_if algorithm instead of a raw loop." verbose="Consider using std::copy_if algorithm instead of a raw loop." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp" line="105" column="7"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::copy_if algorithm instead of a raw loop." verbose="Consider using std::copy_if algorithm instead of a raw loop." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp" line="133" column="9"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::transform algorithm instead of a raw loop." verbose="Consider using std::transform algorithm instead of a raw loop." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp" line="150" column="8"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::copy algorithm instead of a raw loop." verbose="Consider using std::copy algorithm instead of a raw loop." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0237_p02250_Multiple_String_Matching.cpp" line="282" column="6"/>
+        </error>
+    </errors>
+</results>

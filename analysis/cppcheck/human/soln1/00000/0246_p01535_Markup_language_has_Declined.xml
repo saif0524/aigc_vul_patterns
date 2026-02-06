@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;Node&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;Node&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0246_p01535_Markup_language_has_Declined.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0246_p01535_Markup_language_has_Declined.cpp" line="45" column="5"/>
+            <symbol>Node</symbol>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="sscanf() without field width limits can crash with huge input data." verbose="sscanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0246_p01535_Markup_language_has_Declined.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0246_p01535_Markup_language_has_Declined.cpp" line="308" column="9"/>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;_&apos; shadows outer variable" verbose="Local variable &apos;_&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0246_p01535_Markup_language_has_Declined.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0246_p01535_Markup_language_has_Declined.cpp" line="311" column="9" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0246_p01535_Markup_language_has_Declined.cpp" line="304" column="5" info="Shadowed declaration"/>
+            <symbol>_</symbol>
+        </error>
+    </errors>
+</results>

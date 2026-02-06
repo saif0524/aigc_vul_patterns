@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;mid&apos; can be reduced." verbose="The scope of the variable &apos;mid&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0074_1216_D._Swords.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0074_1216_D._Swords.cpp" line="42" column="32"/>
+            <symbol>mid</symbol>
+        </error>
+        <error id="zerodiv" severity="error" msg="Division by zero." verbose="Division by zero." cwe="369" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0074_1216_D._Swords.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0074_1216_D._Swords.cpp" line="31" column="22" info="Division by zero"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0074_1216_D._Swords.cpp" line="24" column="27" info="Assuming condition is false"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0074_1216_D._Swords.cpp" line="23" column="34" info="Assignment &apos;z=0&apos;, assigned value is 0"/>
+        </error>
+        <error id="zerodiv" severity="error" msg="Division by zero." verbose="Division by zero." cwe="369" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0074_1216_D._Swords.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0074_1216_D._Swords.cpp" line="31" column="34" info="Division by zero"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0074_1216_D._Swords.cpp" line="24" column="27" info="Assuming condition is false"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0074_1216_D._Swords.cpp" line="23" column="34" info="Assignment &apos;z=0&apos;, assigned value is 0"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;ts&apos; is assigned a value that is never used." verbose="Variable &apos;ts&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0074_1216_D._Swords.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0074_1216_D._Swords.cpp" line="50" column="16"/>
+            <symbol>ts</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;ts&apos; is assigned a value that is never used." verbose="Variable &apos;ts&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0074_1216_D._Swords.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0074_1216_D._Swords.cpp" line="50" column="13"/>
+            <symbol>ts</symbol>
+        </error>
+    </errors>
+</results>

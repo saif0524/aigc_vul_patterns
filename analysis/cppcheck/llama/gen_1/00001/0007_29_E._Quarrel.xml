@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;path&apos; should be passed by const reference." verbose="Parameter &apos;path&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0007_29_E._Quarrel.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0007_29_E._Quarrel.cpp" line="15" column="58" info="Function parameter &apos;path&apos; should be passed by const reference."/>
+            <symbol>path</symbol>
+        </error>
+        <error id="iterateByValue" severity="performance" msg="Range variable &apos;path&apos; should be declared as const reference." verbose="Variable &apos;path&apos; is used to iterate by value. It could be declared as a const reference which is usually faster and recommended in C++." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0007_29_E._Quarrel.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00001/0007_29_E._Quarrel.cpp" line="64" column="15" info="Range variable &apos;path&apos; should be declared as const reference."/>
+            <symbol>path</symbol>
+        </error>
+    </errors>
+</results>

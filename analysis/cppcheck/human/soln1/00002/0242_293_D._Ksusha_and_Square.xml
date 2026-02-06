@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="duplicateAssignExpression" severity="style" msg="Same expression used in consecutive assignments of &apos;minY&apos; and &apos;maxY&apos;." verbose="Finding variables &apos;minY&apos; and &apos;maxY&apos; that are assigned the same expression is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0242_293_D._Ksusha_and_Square.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0242_293_D._Ksusha_and_Square.cpp" line="65" column="37"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0242_293_D._Ksusha_and_Square.cpp" line="65" column="52"/>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;e&apos; can be declared as pointer to const" verbose="Parameter &apos;e&apos; can be declared as pointer to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0242_293_D._Ksusha_and_Square.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0242_293_D._Ksusha_and_Square.cpp" line="25" column="18" info="Parameter &apos;e&apos; can be declared as pointer to const"/>
+            <symbol>e</symbol>
+        </error>
+        <error id="postfixOperator" severity="performance" msg="Prefer prefix ++/-- operators for non-primitive types." verbose="Prefix ++/-- operators should be preferred for non-primitive types. Pre-increment/decrement can be more efficient than post-increment/decrement. Post-increment/decrement usually involves keeping a copy of the previous value around and adds a little extra code." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0242_293_D._Ksusha_and_Square.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0242_293_D._Ksusha_and_Square.cpp" line="75" column="28"/>
+        </error>
+        <error id="postfixOperator" severity="performance" msg="Prefer prefix ++/-- operators for non-primitive types." verbose="Prefix ++/-- operators should be preferred for non-primitive types. Pre-increment/decrement can be more efficient than post-increment/decrement. Post-increment/decrement usually involves keeping a copy of the previous value around and adds a little extra code." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0242_293_D._Ksusha_and_Square.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0242_293_D._Ksusha_and_Square.cpp" line="76" column="28"/>
+        </error>
+    </errors>
+</results>

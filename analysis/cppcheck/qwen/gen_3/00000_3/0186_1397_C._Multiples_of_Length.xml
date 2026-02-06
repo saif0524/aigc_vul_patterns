@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="redundantInitialization" severity="style" msg="Redundant initialization for &apos;r&apos;. The initialized value is overwritten before it is read." verbose="Redundant initialization for &apos;r&apos;. The initialized value is overwritten before it is read." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0186_1397_C._Multiples_of_Length.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0186_1397_C._Multiples_of_Length.cpp" line="19" column="14" info="r is overwritten"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00000_3/0186_1397_C._Multiples_of_Length.cpp" line="13" column="18" info="r is initialized"/>
+            <symbol>r</symbol>
+        </error>
+    </errors>
+</results>

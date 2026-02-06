@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::freopen() is not used." verbose="Return value of function std::freopen() is not used." cwe="252" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp" line="75" column="28"/>
+            <symbol>std::freopen</symbol>
+        </error>
+        <error id="leakNoVarFunctionCall" severity="error" msg="Allocation with fopen, if doesn&apos;t release it." verbose="Allocation with fopen, if doesn&apos;t release it." cwe="772" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp" line="75" column="7"/>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;s&apos; shadows outer variable" verbose="Local variable &apos;s&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp" line="17" column="9" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp" line="8" column="10" info="Shadowed declaration"/>
+            <symbol>s</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::min_element algorithm instead of a raw loop." verbose="Consider using std::min_element algorithm instead of a raw loop." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp" line="105" column="14"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::min_element algorithm instead of a raw loop." verbose="Consider using std::min_element algorithm instead of a raw loop." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0252_529_A._And_Yet_Another_Bracket_Sequence.cpp" line="128" column="14"/>
+        </error>
+    </errors>
+</results>

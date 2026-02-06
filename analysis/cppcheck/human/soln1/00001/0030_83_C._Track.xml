@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;ner&apos; can be reduced." verbose="The scope of the variable &apos;ner&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0030_83_C._Track.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0030_83_C._Track.cpp" line="67" column="9"/>
+            <symbol>ner</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;nec&apos; can be reduced." verbose="The scope of the variable &apos;nec&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0030_83_C._Track.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0030_83_C._Track.cpp" line="67" column="14"/>
+            <symbol>nec</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::any_of algorithm instead of a raw loop." verbose="Consider using std::any_of algorithm instead of a raw loop." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0030_83_C._Track.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0030_83_C._Track.cpp" line="79" column="29"/>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: ness" verbose="Unused variable: ness" cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0030_83_C._Track.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0030_83_C._Track.cpp" line="58" column="27"/>
+            <symbol>ness</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;ro&apos; is assigned a value that is never used." verbose="Variable &apos;ro&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0030_83_C._Track.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0030_83_C._Track.cpp" line="59" column="12"/>
+            <symbol>ro</symbol>
+        </error>
+    </errors>
+</results>

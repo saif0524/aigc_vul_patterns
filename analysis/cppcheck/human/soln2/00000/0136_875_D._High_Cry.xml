@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="redundantInitialization" severity="style" msg="Redundant initialization for &apos;e&apos;. The initialized value is overwritten before it is read." verbose="Redundant initialization for &apos;e&apos;. The initialized value is overwritten before it is read." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0136_875_D._High_Cry.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0136_875_D._High_Cry.cpp" line="104" column="13" info="e is overwritten"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0136_875_D._High_Cry.cpp" line="103" column="17" info="e is initialized"/>
+            <symbol>e</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;d&apos; shadows outer variable" verbose="Local variable &apos;d&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0136_875_D._High_Cry.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0136_875_D._High_Cry.cpp" line="66" column="7" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0136_875_D._High_Cry.cpp" line="4" column="5" info="Shadowed declaration"/>
+            <symbol>d</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;n&apos; shadows outer variable" verbose="Local variable &apos;n&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0136_875_D._High_Cry.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0136_875_D._High_Cry.cpp" line="75" column="9" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0136_875_D._High_Cry.cpp" line="63" column="7" info="Shadowed declaration"/>
+            <symbol>n</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;n&apos; shadows outer variable" verbose="Local variable &apos;n&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0136_875_D._High_Cry.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0136_875_D._High_Cry.cpp" line="95" column="9" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0136_875_D._High_Cry.cpp" line="63" column="7" info="Shadowed declaration"/>
+            <symbol>n</symbol>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;A&apos; can be declared as reference to const" verbose="Parameter &apos;A&apos; can be declared as reference to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0136_875_D._High_Cry.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0136_875_D._High_Cry.cpp" line="18" column="45" info="Parameter &apos;A&apos; can be declared as reference to const"/>
+            <symbol>A</symbol>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;A&apos; can be declared as reference to const" verbose="Parameter &apos;A&apos; can be declared as reference to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0136_875_D._High_Cry.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0136_875_D._High_Cry.cpp" line="29" column="45" info="Parameter &apos;A&apos; can be declared as reference to const"/>
+            <symbol>A</symbol>
+        </error>
+    </errors>
+</results>

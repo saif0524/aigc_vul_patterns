@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;current_points&apos; can be reduced." verbose="The scope of the variable &apos;current_points&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0193_846_B._Math_Show.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0193_846_B._Math_Show.cpp" line="70" column="19"/>
+            <symbol>current_points</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::accumulate algorithm instead of a raw loop." verbose="Consider using std::accumulate algorithm instead of a raw loop." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0193_846_B._Math_Show.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0193_846_B._Math_Show.cpp" line="25" column="31"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::accumulate algorithm instead of a raw loop." verbose="Consider using std::accumulate algorithm instead of a raw loop." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0193_846_B._Math_Show.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0193_846_B._Math_Show.cpp" line="82" column="27"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;current_time&apos; is assigned a value that is never used." verbose="Variable &apos;current_time&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0193_846_B._Math_Show.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0193_846_B._Math_Show.cpp" line="69" column="32"/>
+            <symbol>current_time</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;current_points&apos; is assigned a value that is never used." verbose="Variable &apos;current_points&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0193_846_B._Math_Show.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0193_846_B._Math_Show.cpp" line="70" column="34"/>
+            <symbol>current_points</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;current_time&apos; is assigned a value that is never used." verbose="Variable &apos;current_time&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0193_846_B._Math_Show.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00000_3/0193_846_B._Math_Show.cpp" line="69" column="19"/>
+            <symbol>current_time</symbol>
+        </error>
+    </errors>
+</results>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;edge&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;edge&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0161_1187_G._Gang_Up.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0161_1187_G._Gang_Up.cpp" line="107" column="3"/>
+            <symbol>edge</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;node&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;node&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0161_1187_G._Gang_Up.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0161_1187_G._Gang_Up.cpp" line="117" column="3"/>
+            <symbol>node</symbol>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Return value &apos;write(x)&apos; is always false" verbose="Return value &apos;write(x)&apos; is always false" cwe="570" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0161_1187_G._Gang_Up.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0161_1187_G._Gang_Up.cpp" line="94" column="15" info="Return value &apos;write(x)&apos; is always false"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0161_1187_G._Gang_Up.cpp" line="94" column="15" info="Calling function &apos;write&apos; returns 0"/>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;x&apos; can be declared as pointer to const" verbose="Parameter &apos;x&apos; can be declared as pointer to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0161_1187_G._Gang_Up.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0161_1187_G._Gang_Up.cpp" line="85" column="25" info="Parameter &apos;x&apos; can be declared as pointer to const"/>
+            <symbol>x</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;f&apos; is assigned a value that is never used." verbose="Variable &apos;f&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0161_1187_G._Gang_Up.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0161_1187_G._Gang_Up.cpp" line="138" column="15"/>
+            <symbol>f</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;f&apos; is assigned a value that is never used." verbose="Variable &apos;f&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0161_1187_G._Gang_Up.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0161_1187_G._Gang_Up.cpp" line="138" column="13"/>
+            <symbol>f</symbol>
+        </error>
+    </errors>
+</results>

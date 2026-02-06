@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="functionStatic" severity="style" msg="The member function &apos;SegmentTree::merge&apos; can be static." verbose="The member function &apos;SegmentTree::merge&apos; can be static." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0170_719_E._Sasha_and_Array.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0170_719_E._Sasha_and_Array.cpp" line="59" column="17"/>
+            <symbol>SegmentTree::merge</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;n&apos; shadows outer variable" verbose="Local variable &apos;n&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0170_719_E._Sasha_and_Array.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0170_719_E._Sasha_and_Array.cpp" line="4" column="14" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0170_719_E._Sasha_and_Array.cpp" line="43" column="5" info="Shadowed declaration"/>
+            <symbol>n</symbol>
+        </error>
+        <error id="shiftTooManyBitsSigned" severity="portability" msg="Shifting signed 64-bit value by 63 bits is implementation-defined behaviour" verbose="Shifting signed 64-bit value by 63 bits is implementation-defined behaviour" cwe="758" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0170_719_E._Sasha_and_Array.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0170_719_E._Sasha_and_Array.cpp" line="32" column="12" info="Shift"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0170_719_E._Sasha_and_Array.cpp" line="31" column="21" info="Assuming that condition &apos;i&lt;MAX_S&apos; is not redundant"/>
+        </error>
+    </errors>
+</results>

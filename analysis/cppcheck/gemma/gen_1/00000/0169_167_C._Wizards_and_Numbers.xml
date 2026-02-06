@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;b==1&apos; is always false" verbose="Condition &apos;b==1&apos; is always false" cwe="570" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0169_167_C._Wizards_and_Numbers.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0169_167_C._Wizards_and_Numbers.cpp" line="61" column="11" info="Condition &apos;b==1&apos; is always false"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;(b-a)&gt;0&apos; is always true" verbose="Condition &apos;(b-a)&gt;0&apos; is always true" cwe="571" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0169_167_C._Wizards_and_Numbers.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0169_167_C._Wizards_and_Numbers.cpp" line="133" column="22" info="Condition &apos;(b-a)&gt;0&apos; is always true"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0169_167_C._Wizards_and_Numbers.cpp" line="132" column="11" info="Assuming that condition &apos;b&gt;a&apos; is not redundant"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;(b%a)!=0&apos; is always true" verbose="Condition &apos;(b%a)!=0&apos; is always true" cwe="571" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0169_167_C._Wizards_and_Numbers.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0169_167_C._Wizards_and_Numbers.cpp" line="136" column="28" info="Condition &apos;(b%a)!=0&apos; is always true"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;(b-a)==1&apos; is always false" verbose="Condition &apos;(b-a)==1&apos; is always false" cwe="570" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0169_167_C._Wizards_and_Numbers.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0169_167_C._Wizards_and_Numbers.cpp" line="149" column="17" info="Condition &apos;(b-a)==1&apos; is always false"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0169_167_C._Wizards_and_Numbers.cpp" line="143" column="11" info="Assuming condition is false"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0169_167_C._Wizards_and_Numbers.cpp" line="132" column="11" info="Assuming that condition &apos;b&gt;a&apos; is not redundant"/>
+        </error>
+        <error id="zerodivcond" severity="warning" msg="Either the condition &apos;a==0&apos; is redundant or there is division by zero at line 18." verbose="Either the condition &apos;a==0&apos; is redundant or there is division by zero at line 18." cwe="369" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0169_167_C._Wizards_and_Numbers.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0169_167_C._Wizards_and_Numbers.cpp" line="18" column="11" info="Division by zero"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00000/0169_167_C._Wizards_and_Numbers.cpp" line="61" column="21" info="Assuming that condition &apos;a==0&apos; is not redundant"/>
+        </error>
+    </errors>
+</results>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;MY_WRITER::buf&apos; is not initialized in the constructor." verbose="Member variable &apos;MY_WRITER::buf&apos; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0102_1470_E._Strange_Permutation.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0102_1470_E._Strange_Permutation.cpp" line="110" column="3"/>
+            <symbol>MY_WRITER::buf</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;skip&apos; shadows outer variable" verbose="Local variable &apos;skip&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0102_1470_E._Strange_Permutation.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0102_1470_E._Strange_Permutation.cpp" line="10" column="14" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0102_1470_E._Strange_Permutation.cpp" line="239" column="5" info="Shadowed declaration"/>
+            <symbol>skip</symbol>
+        </error>
+    </errors>
+</results>

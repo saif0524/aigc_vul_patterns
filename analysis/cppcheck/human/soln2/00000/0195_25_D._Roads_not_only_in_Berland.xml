@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="negativeIndex" severity="error" msg="Array &apos;visited[1005]&apos; accessed at index -1, which is out of bounds." verbose="Array &apos;visited[1005]&apos; accessed at index -1, which is out of bounds." cwe="786" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0195_25_D._Roads_not_only_in_Berland.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0195_25_D._Roads_not_only_in_Berland.cpp" line="53" column="12" info="Negative array index"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0195_25_D._Roads_not_only_in_Berland.cpp" line="47" column="23" info="Assuming condition is false"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0195_25_D._Roads_not_only_in_Berland.cpp" line="46" column="25" info="Assignment &apos;current_node=-1&apos;, assigned value is -1"/>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;num_repete_edge&apos; shadows outer variable" verbose="Local variable &apos;num_repete_edge&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0195_25_D._Roads_not_only_in_Berland.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0195_25_D._Roads_not_only_in_Berland.cpp" line="68" column="9" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0195_25_D._Roads_not_only_in_Berland.cpp" line="43" column="7" info="Shadowed declaration"/>
+            <symbol>num_repete_edge</symbol>
+        </error>
+        <error id="negativeContainerIndex" severity="warning" msg="Array index -1 is out of bounds." verbose="Array index -1 is out of bounds." cwe="786" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0195_25_D._Roads_not_only_in_Berland.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0195_25_D._Roads_not_only_in_Berland.cpp" line="10" column="23" info="Negative array index"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0195_25_D._Roads_not_only_in_Berland.cpp" line="55" column="9" info="Calling function &apos;DFS&apos;, 1st argument &apos;current_node&apos; value is -1"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0195_25_D._Roads_not_only_in_Berland.cpp" line="47" column="23" info="Assuming condition is false"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0195_25_D._Roads_not_only_in_Berland.cpp" line="46" column="25" info="Assignment &apos;current_node=-1&apos;, assigned value is -1"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;current_visited_nodes&apos; is assigned a value that is never used." verbose="Variable &apos;current_visited_nodes&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0195_25_D._Roads_not_only_in_Berland.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0195_25_D._Roads_not_only_in_Berland.cpp" line="42" column="29"/>
+            <symbol>current_visited_nodes</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;num_repete_edge&apos; is assigned a value that is never used." verbose="Variable &apos;num_repete_edge&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0195_25_D._Roads_not_only_in_Berland.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0195_25_D._Roads_not_only_in_Berland.cpp" line="43" column="23"/>
+            <symbol>num_repete_edge</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;current_visited_nodes&apos; is assigned a value that is never used." verbose="Variable &apos;current_visited_nodes&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0195_25_D._Roads_not_only_in_Berland.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0195_25_D._Roads_not_only_in_Berland.cpp" line="42" column="7"/>
+            <symbol>current_visited_nodes</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;num_repete_edge&apos; is assigned a value that is never used." verbose="Variable &apos;num_repete_edge&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0195_25_D._Roads_not_only_in_Berland.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0195_25_D._Roads_not_only_in_Berland.cpp" line="43" column="7"/>
+            <symbol>num_repete_edge</symbol>
+        </error>
+    </errors>
+</results>

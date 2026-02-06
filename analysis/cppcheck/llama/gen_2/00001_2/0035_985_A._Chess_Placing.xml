@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="derefInvalidIteratorRedundantCheck" severity="warning" msg="Either the condition &apos;it1!=black.end()&apos; is redundant or there is possible dereference of an invalid iterator: it1." verbose="Either the condition &apos;it1!=black.end()&apos; is redundant or there is possible dereference of an invalid iterator: it1." cwe="825" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0035_985_A._Chess_Placing.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0035_985_A._Chess_Placing.cpp" line="32" column="32" info="Dereference of an invalid iterator"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0035_985_A._Chess_Placing.cpp" line="33" column="17" info="Assuming that condition &apos;it1!=black.end()&apos; is not redundant"/>
+            <symbol>it1</symbol>
+        </error>
+        <error id="derefInvalidIteratorRedundantCheck" severity="warning" msg="Either the condition &apos;it1!=white2.end()&apos; is redundant or there is possible dereference of an invalid iterator: it1." verbose="Either the condition &apos;it1!=white2.end()&apos; is redundant or there is possible dereference of an invalid iterator: it1." cwe="825" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0035_985_A._Chess_Placing.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0035_985_A._Chess_Placing.cpp" line="61" column="34" info="Dereference of an invalid iterator"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0035_985_A._Chess_Placing.cpp" line="62" column="17" info="Assuming that condition &apos;it1!=white2.end()&apos; is not redundant"/>
+            <symbol>it1</symbol>
+        </error>
+    </errors>
+</results>

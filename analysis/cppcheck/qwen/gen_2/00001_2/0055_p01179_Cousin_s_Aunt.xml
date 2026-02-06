@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;end&apos; should be passed by const reference." verbose="Parameter &apos;end&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0055_p01179_Cousin_s_Aunt.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0055_p01179_Cousin_s_Aunt.cpp" line="7" column="30" info="Function parameter &apos;end&apos; should be passed by const reference."/>
+            <symbol>end</symbol>
+        </error>
+        <error id="stlFindInsert" severity="performance" msg="Searching before insertion is not necessary." verbose="Searching before insertion is not necessary." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0055_p01179_Cousin_s_Aunt.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0055_p01179_Cousin_s_Aunt.cpp" line="17" column="32"/>
+        </error>
+    </errors>
+</results>

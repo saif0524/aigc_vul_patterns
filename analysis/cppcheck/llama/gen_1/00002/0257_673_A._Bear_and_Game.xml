@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="redundantInitialization" severity="style" msg="Redundant initialization for &apos;ans&apos;. The initialized value is overwritten before it is read." verbose="Redundant initialization for &apos;ans&apos;. The initialized value is overwritten before it is read." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0257_673_A._Bear_and_Game.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0257_673_A._Bear_and_Game.cpp" line="30" column="13" info="ans is overwritten"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0257_673_A._Bear_and_Game.cpp" line="19" column="13" info="ans is initialized"/>
+            <symbol>ans</symbol>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;ans&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;ans&apos; is reassigned a value before the old one has been used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0257_673_A._Bear_and_Game.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0257_673_A._Bear_and_Game.cpp" line="30" column="13" info="ans is overwritten"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00002/0257_673_A._Bear_and_Game.cpp" line="26" column="13" info="ans is assigned"/>
+            <symbol>ans</symbol>
+        </error>
+    </errors>
+</results>

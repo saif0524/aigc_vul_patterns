@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;R&apos; shadows outer variable" verbose="Local variable &apos;R&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0119_p02074_N-by-M_grid_calculation.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0119_p02074_N-by-M_grid_calculation.cpp" line="51" column="7" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0119_p02074_N-by-M_grid_calculation.cpp" line="26" column="18" info="Shadowed declaration"/>
+            <symbol>R</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;sum&apos; shadows outer variable" verbose="Local variable &apos;sum&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0119_p02074_N-by-M_grid_calculation.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0119_p02074_N-by-M_grid_calculation.cpp" line="57" column="12" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0119_p02074_N-by-M_grid_calculation.cpp" line="76" column="24" info="Shadowed declaration"/>
+            <symbol>sum</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;a&apos; shadows outer variable" verbose="Local variable &apos;a&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0119_p02074_N-by-M_grid_calculation.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0119_p02074_N-by-M_grid_calculation.cpp" line="132" column="17" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0119_p02074_N-by-M_grid_calculation.cpp" line="76" column="4" info="Shadowed declaration"/>
+            <symbol>a</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::accumulate algorithm instead of a raw loop." verbose="Consider using std::accumulate algorithm instead of a raw loop." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0119_p02074_N-by-M_grid_calculation.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0119_p02074_N-by-M_grid_calculation.cpp" line="58" column="29"/>
+        </error>
+    </errors>
+</results>

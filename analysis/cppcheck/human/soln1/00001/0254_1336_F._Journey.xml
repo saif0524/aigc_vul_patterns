@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;v&apos; shadows outer variable" verbose="Local variable &apos;v&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0254_1336_F._Journey.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0254_1336_F._Journey.cpp" line="170" column="12" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0254_1336_F._Journey.cpp" line="68" column="26" info="Shadowed declaration"/>
+            <symbol>v</symbol>
+        </error>
+        <error id="clarifyCalculation" severity="style" msg="Clarify calculation precedence for &apos;~&apos; and &apos;?&apos;." verbose="Suspicious calculation. Please use parentheses to clarify the code. The code &apos;&apos;a~b?c:d&apos;&apos; should be written as either &apos;&apos;(a~b)?c:d&apos;&apos; or &apos;&apos;a~(b?c:d)&apos;&apos;." cwe="783" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0254_1336_F._Journey.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0254_1336_F._Journey.cpp" line="74" column="28"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::accumulate algorithm instead of a raw loop." verbose="Consider using std::accumulate algorithm instead of a raw loop." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0254_1336_F._Journey.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0254_1336_F._Journey.cpp" line="148" column="27"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::accumulate algorithm instead of a raw loop." verbose="Consider using std::accumulate algorithm instead of a raw loop." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0254_1336_F._Journey.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0254_1336_F._Journey.cpp" line="150" column="28"/>
+        </error>
+    </errors>
+</results>

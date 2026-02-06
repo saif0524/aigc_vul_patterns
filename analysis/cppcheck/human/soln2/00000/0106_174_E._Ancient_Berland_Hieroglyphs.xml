@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="arrayIndexThenCheck" severity="style" msg="Array index &apos;r&apos; is used before limits check." verbose="Defensive programming: The variable &apos;r&apos; is used as an array index before it is checked that is within limits. This can mean that the array might be accessed out of bounds. Reorder conditions such as &apos;(a[i] &amp;&amp; i &lt; 10)&apos; to &apos;(i &lt; 10 &amp;&amp; a[i])&apos;. That way the array will not be accessed if the index is out of limits." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp" line="48" column="19"/>
+            <symbol>r</symbol>
+        </error>
+        <error id="invalidScanfArgType_int" severity="warning" msg="%d in format string (no. 1) requires &apos;int *&apos; but the argument type is &apos;signed long *&apos;." verbose="%d in format string (no. 1) requires &apos;int *&apos; but the argument type is &apos;signed long *&apos;." cwe="686" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp" line="9" column="5"/>
+        </error>
+        <error id="invalidScanfArgType_int" severity="warning" msg="%d in format string (no. 1) requires &apos;int *&apos; but the argument type is &apos;signed long *&apos;." verbose="%d in format string (no. 1) requires &apos;int *&apos; but the argument type is &apos;signed long *&apos;." cwe="686" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp" line="12" column="5"/>
+        </error>
+    </errors>
+</results>

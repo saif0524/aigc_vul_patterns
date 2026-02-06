@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Robot&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Robot&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0153_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0153_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp" line="14" column="5"/>
+            <symbol>Robot</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;DisjointSet&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;DisjointSet&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0153_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0153_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp" line="48" column="5"/>
+            <symbol>DisjointSet</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;nickname&apos; should be passed by const reference." verbose="Parameter &apos;nickname&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0153_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0153_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp" line="14" column="18" info="Function parameter &apos;nickname&apos; should be passed by const reference."/>
+            <symbol>nickname</symbol>
+        </error>
+        <error id="constVariableReference" severity="style" msg="Variable &apos;event&apos; can be declared as reference to const" verbose="Variable &apos;event&apos; can be declared as reference to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0153_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0153_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp" line="128" column="24" info="Variable &apos;event&apos; can be declared as reference to const"/>
+            <symbol>event</symbol>
+        </error>
+        <error id="unusedStructMember" severity="style" msg="class member &apos;Robot::velocities&apos; is never used." verbose="class member &apos;Robot::velocities&apos; is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0153_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0153_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp" line="9" column="17"/>
+            <symbol>Robot::velocities</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;nicknames[i]&apos; is assigned a value that is never used." verbose="Variable &apos;nicknames[i]&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0153_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00000_2/0153_p00720_Earth_Observation_with_a_Mobile_Robot_Team.cpp" line="93" column="26"/>
+            <symbol>nicknames[i]</symbol>
+        </error>
+    </errors>
+</results>

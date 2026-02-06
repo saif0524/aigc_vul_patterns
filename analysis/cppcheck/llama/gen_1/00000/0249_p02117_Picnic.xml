@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="negativeIndex" severity="warning" msg="Either the condition &apos;sweet&gt;=0&apos; is redundant or the array &apos;dp[15][10001][1001]&apos; is accessed at index dp[*][-1][-1], which is out of bounds." verbose="Either the condition &apos;sweet&gt;=0&apos; is redundant or the array &apos;dp[15][10001][1001]&apos; is accessed at index dp[*][-1][-1], which is out of bounds." cwe="786" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0249_p02117_Picnic.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0249_p02117_Picnic.cpp" line="51" column="11" info="Negative array index"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_1/00000/0249_p02117_Picnic.cpp" line="48" column="42" info="Assuming that condition &apos;sweet&gt;=0&apos; is not redundant"/>
+        </error>
+    </errors>
+</results>

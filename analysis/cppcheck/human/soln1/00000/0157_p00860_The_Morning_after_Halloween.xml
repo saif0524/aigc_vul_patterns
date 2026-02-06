@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;p&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;p&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0157_p00860_The_Morning_after_Halloween.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0157_p00860_The_Morning_after_Halloween.cpp" line="28" column="9"/>
+            <symbol>p</symbol>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;bs&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;bs&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0157_p00860_The_Morning_after_Halloween.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0157_p00860_The_Morning_after_Halloween.cpp" line="29" column="9"/>
+            <symbol>bs</symbol>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;p0&apos; can be declared as reference to const" verbose="Parameter &apos;p0&apos; can be declared as reference to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0157_p00860_The_Morning_after_Halloween.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0157_p00860_The_Morning_after_Halloween.cpp" line="27" column="23" info="Parameter &apos;p0&apos; can be declared as reference to const"/>
+            <symbol>p0</symbol>
+        </error>
+        <error id="constVariable" severity="style" msg="Variable &apos;diff&apos; can be declared as const array" verbose="Variable &apos;diff&apos; can be declared as const array" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0157_p00860_The_Morning_after_Halloween.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0157_p00860_The_Morning_after_Halloween.cpp" line="44" column="9" info="Variable &apos;diff&apos; can be declared as const array"/>
+            <symbol>diff</symbol>
+        </error>
+    </errors>
+</results>

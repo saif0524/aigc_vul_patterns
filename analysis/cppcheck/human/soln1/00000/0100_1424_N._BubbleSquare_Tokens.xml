@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::freopen() is not used." verbose="Return value of function std::freopen() is not used." cwe="252" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0100_1424_N._BubbleSquare_Tokens.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0100_1424_N._BubbleSquare_Tokens.cpp" line="102" column="3"/>
+            <symbol>std::freopen</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::freopen() is not used." verbose="Return value of function std::freopen() is not used." cwe="252" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0100_1424_N._BubbleSquare_Tokens.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0100_1424_N._BubbleSquare_Tokens.cpp" line="103" column="3"/>
+            <symbol>std::freopen</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;Vector&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;Vector&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0100_1424_N._BubbleSquare_Tokens.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0100_1424_N._BubbleSquare_Tokens.cpp" line="107" column="3"/>
+            <symbol>Vector</symbol>
+        </error>
+        <error id="selfAssignment" severity="style" msg="Redundant assignment of &apos;x&apos; to itself." verbose="Redundant assignment of &apos;x&apos; to itself." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0100_1424_N._BubbleSquare_Tokens.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0100_1424_N._BubbleSquare_Tokens.cpp" line="91" column="13"/>
+            <symbol>x</symbol>
+        </error>
+        <error id="selfAssignment" severity="style" msg="Redundant assignment of &apos;x&apos; to itself." verbose="Redundant assignment of &apos;x&apos; to itself." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0100_1424_N._BubbleSquare_Tokens.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0100_1424_N._BubbleSquare_Tokens.cpp" line="95" column="13"/>
+            <symbol>x</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;s&apos; shadows outer variable" verbose="Local variable &apos;s&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0100_1424_N._BubbleSquare_Tokens.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0100_1424_N._BubbleSquare_Tokens.cpp" line="52" column="15" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0100_1424_N._BubbleSquare_Tokens.cpp" line="131" column="23" info="Shadowed declaration"/>
+            <symbol>s</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;x&apos; should be passed by const reference." verbose="Parameter &apos;x&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0100_1424_N._BubbleSquare_Tokens.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0100_1424_N._BubbleSquare_Tokens.cpp" line="38" column="29" info="Function parameter &apos;x&apos; should be passed by const reference."/>
+            <symbol>x</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;str&apos; should be passed by const reference." verbose="Parameter &apos;str&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0100_1424_N._BubbleSquare_Tokens.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0100_1424_N._BubbleSquare_Tokens.cpp" line="101" column="25" info="Function parameter &apos;str&apos; should be passed by const reference."/>
+            <symbol>str</symbol>
+        </error>
+        <error id="constVariablePointer" severity="style" msg="Variable &apos;p2&apos; can be declared as pointer to const" verbose="Variable &apos;p2&apos; can be declared as pointer to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0100_1424_N._BubbleSquare_Tokens.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0100_1424_N._BubbleSquare_Tokens.cpp" line="7" column="40" info="Variable &apos;p2&apos; can be declared as pointer to const"/>
+            <symbol>p2</symbol>
+        </error>
+    </errors>
+</results>

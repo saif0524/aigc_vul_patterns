@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;f&apos; can be reduced." verbose="The scope of the variable &apos;f&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0232_1450_B._Balls_of_Steel.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0232_1450_B._Balls_of_Steel.cpp" line="5" column="25"/>
+            <symbol>f</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::any_of algorithm instead of a raw loop." verbose="Consider using std::any_of algorithm instead of a raw loop." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0232_1450_B._Balls_of_Steel.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0232_1450_B._Balls_of_Steel.cpp" line="42" column="13"/>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: mp" verbose="Uninitialized variable: mp" cwe="457" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0232_1450_B._Balls_of_Steel.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0232_1450_B._Balls_of_Steel.cpp" line="41" column="16"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0232_1450_B._Balls_of_Steel.cpp" line="13" column="19" info="Assuming condition is false"/>
+            <symbol>mp</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;ct&apos; is assigned a value that is never used." verbose="Variable &apos;ct&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0232_1450_B._Balls_of_Steel.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0232_1450_B._Balls_of_Steel.cpp" line="18" column="20"/>
+            <symbol>ct</symbol>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: e" verbose="Unused variable: e" cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0232_1450_B._Balls_of_Steel.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0232_1450_B._Balls_of_Steel.cpp" line="5" column="23"/>
+            <symbol>e</symbol>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: g" verbose="Unused variable: g" cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0232_1450_B._Balls_of_Steel.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0232_1450_B._Balls_of_Steel.cpp" line="5" column="27"/>
+            <symbol>g</symbol>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: h" verbose="Unused variable: h" cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0232_1450_B._Balls_of_Steel.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0232_1450_B._Balls_of_Steel.cpp" line="5" column="29"/>
+            <symbol>h</symbol>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: k" verbose="Unused variable: k" cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0232_1450_B._Balls_of_Steel.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0232_1450_B._Balls_of_Steel.cpp" line="5" column="35"/>
+            <symbol>k</symbol>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: l" verbose="Unused variable: l" cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0232_1450_B._Balls_of_Steel.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0232_1450_B._Balls_of_Steel.cpp" line="5" column="37"/>
+            <symbol>l</symbol>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: m" verbose="Unused variable: m" cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0232_1450_B._Balls_of_Steel.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0232_1450_B._Balls_of_Steel.cpp" line="5" column="39"/>
+            <symbol>m</symbol>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: n" verbose="Unused variable: n" cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0232_1450_B._Balls_of_Steel.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0232_1450_B._Balls_of_Steel.cpp" line="5" column="41"/>
+            <symbol>n</symbol>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: x" verbose="Unused variable: x" cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0232_1450_B._Balls_of_Steel.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0232_1450_B._Balls_of_Steel.cpp" line="5" column="43"/>
+            <symbol>x</symbol>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: y" verbose="Unused variable: y" cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0232_1450_B._Balls_of_Steel.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0232_1450_B._Balls_of_Steel.cpp" line="5" column="45"/>
+            <symbol>y</symbol>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: z" verbose="Unused variable: z" cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0232_1450_B._Balls_of_Steel.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0232_1450_B._Balls_of_Steel.cpp" line="5" column="47"/>
+            <symbol>z</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;ct&apos; is assigned a value that is never used." verbose="Variable &apos;ct&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0232_1450_B._Balls_of_Steel.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0232_1450_B._Balls_of_Steel.cpp" line="18" column="18"/>
+            <symbol>ct</symbol>
+        </error>
+    </errors>
+</results>

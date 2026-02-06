@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="danglingLifetime" severity="error" msg="Non-local variable &apos;p&apos; will use pointer to local variable &apos;op&apos;." verbose="Non-local variable &apos;p&apos; will use pointer to local variable &apos;op&apos;." cwe="562" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0159_p01123_Let_s_Move_Tiles_.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0159_p01123_Let_s_Move_Tiles_.cpp" line="221" column="3"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0159_p01123_Let_s_Move_Tiles_.cpp" line="86" column="10" info="Variable created here."/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0159_p01123_Let_s_Move_Tiles_.cpp" line="221" column="15" info="Pointer to container is created here."/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;solver::p&apos; is not initialized in the constructor." verbose="Member variable &apos;solver::p&apos; is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0159_p01123_Let_s_Move_Tiles_.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0159_p01123_Let_s_Move_Tiles_.cpp" line="36" column="2"/>
+            <symbol>solver::p</symbol>
+        </error>
+        <error id="functionStatic" severity="style" msg="The member function &apos;solver::mul&apos; can be static." verbose="The member function &apos;solver::mul&apos; can be static." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0159_p01123_Let_s_Move_Tiles_.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0159_p01123_Let_s_Move_Tiles_.cpp" line="42" column="7"/>
+            <symbol>solver::mul</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;solver&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;solver&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0159_p01123_Let_s_Move_Tiles_.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0159_p01123_Let_s_Move_Tiles_.cpp" line="36" column="2"/>
+            <symbol>solver</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::find_if algorithm instead of a raw loop." verbose="Consider using std::find_if algorithm instead of a raw loop." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0159_p01123_Let_s_Move_Tiles_.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0159_p01123_Let_s_Move_Tiles_.cpp" line="91" column="18"/>
+        </error>
+    </errors>
+</results>

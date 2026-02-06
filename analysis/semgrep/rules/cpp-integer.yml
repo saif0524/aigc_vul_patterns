@@ -1,0 +1,16 @@
+rules:
+  - id: cpp-integer-overflow-add
+    languages: [cpp]
+    severity: WARNING
+    message: Possible integer overflow in addition.
+    pattern: $X + $Y
+    metadata:
+      cwe: CWE-190
+
+  - id: cpp-integer-overflow-mul
+    languages: [cpp]
+    severity: WARNING
+    message: Possible integer overflow in multiplication.
+    pattern: $X * $Y
+    metadata:
+      cwe: CWE-190

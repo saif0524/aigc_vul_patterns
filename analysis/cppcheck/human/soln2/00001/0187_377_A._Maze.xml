@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;!b&apos; is always true" verbose="Condition &apos;!b&apos; is always true" cwe="571" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0187_377_A._Maze.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0187_377_A._Maze.cpp" line="28" column="28" info="Condition &apos;!b&apos; is always true"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0187_377_A._Maze.cpp" line="30" column="19" info="Assuming condition is false"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0187_377_A._Maze.cpp" line="27" column="12" info="Assignment &apos;b=false&apos;, assigned value is 0"/>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;k&apos; shadows outer variable" verbose="Local variable &apos;k&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0187_377_A._Maze.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0187_377_A._Maze.cpp" line="12" column="12" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0187_377_A._Maze.cpp" line="4" column="11" info="Shadowed declaration"/>
+            <symbol>k</symbol>
+        </error>
+    </errors>
+</results>

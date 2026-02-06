@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="arrayIndexOutOfBoundsCond" severity="warning" msg="Either the condition &apos;l&gt;0&apos; is redundant or the array &apos;fenw[2147483648]&apos; is accessed at index 2147483648, which is out of bounds." verbose="Either the condition &apos;l&gt;0&apos; is redundant or the array &apos;fenw[2147483648]&apos; is accessed at index 2147483648, which is out of bounds." cwe="788" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0050_1329_D._Dreamoon_Likes_Strings.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0050_1329_D._Dreamoon_Likes_Strings.cpp" line="20" column="16" info="Array index out of bounds"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0050_1329_D._Dreamoon_Likes_Strings.cpp" line="19" column="12" info="Assuming that condition &apos;l&gt;0&apos; is not redundant"/>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;symb&apos; shadows outer variable" verbose="Local variable &apos;symb&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0050_1329_D._Dreamoon_Likes_Strings.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0050_1329_D._Dreamoon_Likes_Strings.cpp" line="132" column="9" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0050_1329_D._Dreamoon_Likes_Strings.cpp" line="25" column="6" info="Shadowed declaration"/>
+            <symbol>symb</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;pp&apos; is assigned a value that is never used." verbose="Variable &apos;pp&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0050_1329_D._Dreamoon_Likes_Strings.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0050_1329_D._Dreamoon_Likes_Strings.cpp" line="37" column="7"/>
+            <symbol>pp</symbol>
+        </error>
+    </errors>
+</results>

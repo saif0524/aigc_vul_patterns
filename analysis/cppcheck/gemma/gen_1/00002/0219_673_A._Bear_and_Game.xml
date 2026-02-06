@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;watched_minutes&apos; is assigned an expression that holds the same value." verbose="Variable &apos;watched_minutes&apos; is assigned an expression that holds the same value." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00002/0219_673_A._Bear_and_Game.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00002/0219_673_A._Bear_and_Game.cpp" line="47" column="13"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00002/0219_673_A._Bear_and_Game.cpp" line="45" column="25" info="Assuming that condition &apos;watched_minutes==interesting_minutes[n-1]&apos; is not redundant"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00002/0219_673_A._Bear_and_Game.cpp" line="45" column="25" info="Assuming that condition &apos;watched_minutes==interesting_minutes[n-1]&apos; is not redundant"/>
+            <symbol>watched_minutes</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;current_boring_streak&apos; is assigned a value that is never used." verbose="Variable &apos;current_boring_streak&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00002/0219_673_A._Bear_and_Game.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_1/00002/0219_673_A._Bear_and_Game.cpp" line="17" column="31"/>
+            <symbol>current_boring_streak</symbol>
+        </error>
+    </errors>
+</results>

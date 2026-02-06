@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;A&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;A&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="127" column="5"/>
+            <symbol>A</symbol>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;B&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;B&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="127" column="13"/>
+            <symbol>B</symbol>
+        </error>
+        <error id="useInitializationList" severity="performance" msg="Variable &apos;C&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;C&apos; a value by passing the value to the constructor in the initialization list." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="127" column="21"/>
+            <symbol>C</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;point&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;point&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="47" column="3"/>
+            <symbol>point</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;vec&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;vec&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="65" column="3"/>
+            <symbol>vec</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;line&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;line&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="77" column="3"/>
+            <symbol>line</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;circle&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;circle&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="105" column="3"/>
+            <symbol>circle</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;triangle&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;triangle&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="123" column="3"/>
+            <symbol>triangle</symbol>
+        </error>
+        <error id="duplicateBreak" severity="style" msg="Consecutive return, break, continue, goto or throw statements are unnecessary." verbose="Consecutive return, break, continue, goto or throw statements are unnecessary. The second statement can never be executed, and so should be removed." cwe="561" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="192" column="3"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;x1&apos; can be reduced." verbose="The scope of the variable &apos;x1&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="274" column="10"/>
+            <symbol>x1</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;x2&apos; can be reduced." verbose="The scope of the variable &apos;x2&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="274" column="14"/>
+            <symbol>x2</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;y1&apos; can be reduced." verbose="The scope of the variable &apos;y1&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="274" column="18"/>
+            <symbol>y1</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;y2&apos; can be reduced." verbose="The scope of the variable &apos;y2&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="274" column="22"/>
+            <symbol>y2</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;R&apos; shadows outer variable" verbose="Local variable &apos;R&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="108" column="35" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="356" column="11" info="Shadowed declaration"/>
+            <symbol>R</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;r&apos; shadows outer variable" verbose="Local variable &apos;r&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="249" column="10" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="356" column="8" info="Shadowed declaration"/>
+            <symbol>r</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;r&apos; shadows outer variable" verbose="Local variable &apos;r&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="257" column="10" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="356" column="8" info="Shadowed declaration"/>
+            <symbol>r</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;n&apos; shadows outer variable" verbose="Local variable &apos;n&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="266" column="7" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="353" column="5" info="Shadowed declaration"/>
+            <symbol>n</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;n&apos; shadows outer variable" verbose="Local variable &apos;n&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="272" column="7" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="353" column="5" info="Shadowed declaration"/>
+            <symbol>n</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;n&apos; shadows outer variable" verbose="Local variable &apos;n&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="284" column="7" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="353" column="5" info="Shadowed declaration"/>
+            <symbol>n</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;n&apos; shadows outer variable" verbose="Local variable &apos;n&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="292" column="7" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="353" column="5" info="Shadowed declaration"/>
+            <symbol>n</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;n&apos; shadows outer variable" verbose="Local variable &apos;n&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="303" column="7" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="353" column="5" info="Shadowed declaration"/>
+            <symbol>n</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;n&apos; shadows outer variable" verbose="Local variable &apos;n&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="322" column="7" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="353" column="5" info="Shadowed declaration"/>
+            <symbol>n</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;n&apos; shadows outer variable" verbose="Local variable &apos;n&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="348" column="7" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="353" column="5" info="Shadowed declaration"/>
+            <symbol>n</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;l&apos; should be passed by const reference." verbose="Parameter &apos;l&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="149" column="24" info="Function parameter &apos;l&apos; should be passed by const reference."/>
+            <symbol>l</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;d&apos; should be passed by const reference." verbose="Parameter &apos;d&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="149" column="32" info="Function parameter &apos;d&apos; should be passed by const reference."/>
+            <symbol>d</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;l&apos; should be passed by const reference." verbose="Parameter &apos;l&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="152" column="20" info="Function parameter &apos;l&apos; should be passed by const reference."/>
+            <symbol>l</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;d&apos; should be passed by const reference." verbose="Parameter &apos;d&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="152" column="28" info="Function parameter &apos;d&apos; should be passed by const reference."/>
+            <symbol>d</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;l&apos; should be passed by const reference." verbose="Parameter &apos;l&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="178" column="25" info="Function parameter &apos;l&apos; should be passed by const reference."/>
+            <symbol>l</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;d&apos; should be passed by const reference." verbose="Parameter &apos;d&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="178" column="33" info="Function parameter &apos;d&apos; should be passed by const reference."/>
+            <symbol>d</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;P&apos; should be passed by const reference." verbose="Parameter &apos;P&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="265" column="32" info="Function parameter &apos;P&apos; should be passed by const reference."/>
+            <symbol>P</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;P&apos; should be passed by const reference." verbose="Parameter &apos;P&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="271" column="27" info="Function parameter &apos;P&apos; should be passed by const reference."/>
+            <symbol>P</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;P&apos; should be passed by const reference." verbose="Parameter &apos;P&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="283" column="30" info="Function parameter &apos;P&apos; should be passed by const reference."/>
+            <symbol>P</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;P&apos; should be passed by const reference." verbose="Parameter &apos;P&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="291" column="35" info="Function parameter &apos;P&apos; should be passed by const reference."/>
+            <symbol>P</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;P&apos; should be passed by const reference." verbose="Parameter &apos;P&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="302" column="33" info="Function parameter &apos;P&apos; should be passed by const reference."/>
+            <symbol>P</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;P&apos; should be passed by const reference." verbose="Parameter &apos;P&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="347" column="26" info="Function parameter &apos;P&apos; should be passed by const reference."/>
+            <symbol>P</symbol>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;p&apos; can be declared as reference to const" verbose="Parameter &apos;p&apos; can be declared as reference to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="59" column="50" info="Parameter &apos;p&apos; can be declared as reference to const"/>
+            <symbol>p</symbol>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;u&apos; can be declared as reference to const" verbose="Parameter &apos;u&apos; can be declared as reference to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0209_614_C._Peter_and_Snow_Blower.cpp" line="71" column="48" info="Parameter &apos;u&apos; can be declared as reference to const"/>
+            <symbol>u</symbol>
+        </error>
+    </errors>
+</results>

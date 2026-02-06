@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="negativeIndex" severity="error" msg="Array &apos;del[210]&apos; accessed at index -1, which is out of bounds." verbose="Array &apos;del[210]&apos; accessed at index -1, which is out of bounds." cwe="786" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0135_1249_D1._Too_Many_Segments__easy_version_.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0135_1249_D1._Too_Many_Segments__easy_version_.cpp" line="91" column="16" info="Negative array index"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0135_1249_D1._Too_Many_Segments__easy_version_.cpp" line="64" column="31" info="Assuming condition is false"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0135_1249_D1._Too_Many_Segments__easy_version_.cpp" line="63" column="27" info="Assignment &apos;minIdx=-1&apos;, assigned value is -1"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;maxCnt&apos; is assigned a value that is never used." verbose="Variable &apos;maxCnt&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0135_1249_D1._Too_Many_Segments__easy_version_.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0135_1249_D1._Too_Many_Segments__easy_version_.cpp" line="63" column="30"/>
+            <symbol>maxCnt</symbol>
+        </error>
+    </errors>
+</results>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="functionStatic" severity="style" msg="The member function &apos;SuffixArray::create_begin_bucket&apos; can be static." verbose="The member function &apos;SuffixArray::create_begin_bucket&apos; can be static." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp" line="30" column="8"/>
+            <symbol>SuffixArray::create_begin_bucket</symbol>
+        </error>
+        <error id="functionStatic" severity="style" msg="The member function &apos;SuffixArray::create_end_bucket&apos; can be static." verbose="The member function &apos;SuffixArray::create_end_bucket&apos; can be static." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp" line="39" column="8"/>
+            <symbol>SuffixArray::create_end_bucket</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;SuffixArray&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;SuffixArray&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp" line="183" column="3"/>
+            <symbol>SuffixArray</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;sparse_table&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;sparse_table&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp" line="170" column="5"/>
+            <symbol>sparse_table</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;sparse_table&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;sparse_table&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp" line="231" column="3"/>
+            <symbol>sparse_table</symbol>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="scanf() without field width limits can crash with huge input data." verbose="scanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp" line="206" column="3"/>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;sa&apos; shadows outer variable" verbose="Local variable &apos;sa&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp" line="60" column="17" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp" line="176" column="15" info="Shadowed declaration"/>
+            <symbol>sa</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;vec&apos; should be passed by const reference." verbose="Parameter &apos;vec&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp" line="152" column="27" info="Function parameter &apos;vec&apos; should be passed by const reference."/>
+            <symbol>vec</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;vec&apos; should be passed by const reference." verbose="Parameter &apos;vec&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp" line="170" column="30" info="Function parameter &apos;vec&apos; should be passed by const reference."/>
+            <symbol>vec</symbol>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;v&apos; can be declared as reference to const" verbose="Parameter &apos;v&apos; can be declared as reference to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp" line="30" column="41" info="Parameter &apos;v&apos; can be declared as reference to const"/>
+            <symbol>v</symbol>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;v&apos; can be declared as reference to const" verbose="Parameter &apos;v&apos; can be declared as reference to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp" line="39" column="39" info="Parameter &apos;v&apos; can be declared as reference to const"/>
+            <symbol>v</symbol>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;is_l&apos; can be declared as reference to const" verbose="Parameter &apos;is_l&apos; can be declared as reference to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp" line="45" column="55" info="Parameter &apos;is_l&apos; can be declared as reference to const"/>
+            <symbol>is_l</symbol>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;is_l&apos; can be declared as reference to const" verbose="Parameter &apos;is_l&apos; can be declared as reference to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp" line="51" column="62" info="Parameter &apos;is_l&apos; can be declared as reference to const"/>
+            <symbol>is_l</symbol>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;s&apos; can be declared as reference to const" verbose="Parameter &apos;s&apos; can be declared as reference to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp" line="108" column="22" info="Parameter &apos;s&apos; can be declared as reference to const"/>
+            <symbol>s</symbol>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;v&apos; can be declared as reference to const" verbose="Parameter &apos;v&apos; can be declared as reference to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp" line="132" column="28" info="Parameter &apos;v&apos; can be declared as reference to const"/>
+            <symbol>v</symbol>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;t&apos; can be declared as reference to const" verbose="Parameter &apos;t&apos; can be declared as reference to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp" line="177" column="21" info="Parameter &apos;t&apos; can be declared as reference to const"/>
+            <symbol>t</symbol>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;t&apos; can be declared as reference to const" verbose="Parameter &apos;t&apos; can be declared as reference to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp" line="185" column="24" info="Parameter &apos;t&apos; can be declared as reference to const"/>
+            <symbol>t</symbol>
+        </error>
+    </errors>
+</results>

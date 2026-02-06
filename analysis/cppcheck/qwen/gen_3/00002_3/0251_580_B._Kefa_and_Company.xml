@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="invalidContainerLoop" severity="error" msg="Calling &apos;erase&apos; while iterating the container is invalid." verbose="Calling &apos;erase&apos; while iterating the container is invalid." cwe="664" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0251_580_B._Kefa_and_Company.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0251_580_B._Kefa_and_Company.cpp" line="23" column="21"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0251_580_B._Kefa_and_Company.cpp" line="17" column="5" info="Iterating container here."/>
+        </error>
+        <error id="invalidContainerReference" severity="error" msg="Reference to friends that may be invalid." verbose="Reference to friends that may be invalid." cwe="664" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0251_580_B._Kefa_and_Company.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0251_580_B._Kefa_and_Company.cpp" line="20" column="15"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0251_580_B._Kefa_and_Company.cpp" line="23" column="21" info="After calling &apos;erase&apos;, iterators or references to the container&apos;s data may be invalid ."/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0251_580_B._Kefa_and_Company.cpp" line="20" column="47" info="Assuming condition is true."/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0251_580_B._Kefa_and_Company.cpp" line="20" column="47" info="Assuming condition is true."/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0251_580_B._Kefa_and_Company.cpp" line="17" column="22" info="Assuming condition is true."/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_3/00002_3/0251_580_B._Kefa_and_Company.cpp" line="17" column="21" info="Assigned to reference."/>
+        </error>
+    </errors>
+</results>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::freopen() is not used." verbose="Return value of function std::freopen() is not used." cwe="252" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0262_1515_I._Phoenix_and_Diamonds.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0262_1515_I._Phoenix_and_Diamonds.cpp" line="36" column="5"/>
+            <symbol>std::freopen</symbol>
+        </error>
+        <error id="invalidFunctionArg" severity="warning" msg="Invalid std::log2() argument nr 1. The value is 0 but the valid values are &apos;4.94066e-324:&apos;." verbose="Invalid std::log2() argument nr 1. The value is 0 but the valid values are &apos;4.94066e-324:&apos;." cwe="628" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0262_1515_I._Phoenix_and_Diamonds.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0262_1515_I._Phoenix_and_Diamonds.cpp" line="385" column="12" info="Invalid argument"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0262_1515_I._Phoenix_and_Diamonds.cpp" line="377" column="21" info="Assuming condition is false"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0262_1515_I._Phoenix_and_Diamonds.cpp" line="375" column="12" info="Assignment &apos;mx=0&apos;, assigned value is 0"/>
+            <symbol>std::log2</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;kek&apos; can be reduced." verbose="The scope of the variable &apos;kek&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0262_1515_I._Phoenix_and_Diamonds.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0262_1515_I._Phoenix_and_Diamonds.cpp" line="279" column="19"/>
+            <symbol>kek</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;val&apos; shadows outer variable" verbose="Local variable &apos;val&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0262_1515_I._Phoenix_and_Diamonds.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0262_1515_I._Phoenix_and_Diamonds.cpp" line="280" column="8" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0262_1515_I._Phoenix_and_Diamonds.cpp" line="80" column="4" info="Shadowed declaration"/>
+            <symbol>val</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;val&apos; shadows outer variable" verbose="Local variable &apos;val&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0262_1515_I._Phoenix_and_Diamonds.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0262_1515_I._Phoenix_and_Diamonds.cpp" line="326" column="8" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0262_1515_I._Phoenix_and_Diamonds.cpp" line="80" column="4" info="Shadowed declaration"/>
+            <symbol>val</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;a&apos; should be passed by const reference." verbose="Parameter &apos;a&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0262_1515_I._Phoenix_and_Diamonds.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0262_1515_I._Phoenix_and_Diamonds.cpp" line="54" column="20" info="Function parameter &apos;a&apos; should be passed by const reference."/>
+            <symbol>a</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;b&apos; should be passed by const reference." verbose="Parameter &apos;b&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0262_1515_I._Phoenix_and_Diamonds.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0262_1515_I._Phoenix_and_Diamonds.cpp" line="54" column="25" info="Function parameter &apos;b&apos; should be passed by const reference."/>
+            <symbol>b</symbol>
+        </error>
+        <error id="floatConversionOverflow" severity="error" msg="Undefined behaviour: float (-inf) to integer conversion overflow." verbose="Undefined behaviour: float (-inf) to integer conversion overflow." cwe="190" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0262_1515_I._Phoenix_and_Diamonds.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0262_1515_I._Phoenix_and_Diamonds.cpp" line="385" column="5" info="float to integer conversion"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0262_1515_I._Phoenix_and_Diamonds.cpp" line="377" column="21" info="Assuming condition is false"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0262_1515_I._Phoenix_and_Diamonds.cpp" line="375" column="12" info="Assignment &apos;mx=0&apos;, assigned value is 0"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;l&apos; is assigned a value that is never used." verbose="Variable &apos;l&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0262_1515_I._Phoenix_and_Diamonds.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0262_1515_I._Phoenix_and_Diamonds.cpp" line="325" column="11"/>
+            <symbol>l</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;r&apos; is assigned a value that is never used." verbose="Variable &apos;r&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0262_1515_I._Phoenix_and_Diamonds.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0262_1515_I._Phoenix_and_Diamonds.cpp" line="325" column="18"/>
+            <symbol>r</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;l&apos; is assigned a value that is never used." verbose="Variable &apos;l&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0262_1515_I._Phoenix_and_Diamonds.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0262_1515_I._Phoenix_and_Diamonds.cpp" line="325" column="9"/>
+            <symbol>l</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;r&apos; is assigned a value that is never used." verbose="Variable &apos;r&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0262_1515_I._Phoenix_and_Diamonds.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0262_1515_I._Phoenix_and_Diamonds.cpp" line="325" column="16"/>
+            <symbol>r</symbol>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;home&apos; is always false" verbose="Condition &apos;home&apos; is always false" cwe="570" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0262_1515_I._Phoenix_and_Diamonds.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0262_1515_I._Phoenix_and_Diamonds.cpp" line="35" column="7" info="Condition &apos;home&apos; is always false"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00001/0262_1515_I._Phoenix_and_Diamonds.cpp" line="33" column="10" info="Assignment &apos;home=0&apos;, assigned value is 0"/>
+        </error>
+    </errors>
+</results>

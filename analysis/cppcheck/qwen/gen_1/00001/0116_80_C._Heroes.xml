@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;best_teams&apos; can be reduced." verbose="The scope of the variable &apos;best_teams&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0116_80_C._Heroes.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0116_80_C._Heroes.cpp" line="26" column="12"/>
+            <symbol>best_teams</symbol>
+        </error>
+        <error id="constVariable" severity="style" msg="Variable &apos;names&apos; can be declared as const array" verbose="Variable &apos;names&apos; can be declared as const array" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0116_80_C._Heroes.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0116_80_C._Heroes.cpp" line="9" column="12" info="Variable &apos;names&apos; can be declared as const array"/>
+            <symbol>names</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::count_if algorithm instead of a raw loop." verbose="Consider using std::count_if algorithm instead of a raw loop." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0116_80_C._Heroes.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0116_80_C._Heroes.cpp" line="42" column="54"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::count_if algorithm instead of a raw loop." verbose="Consider using std::count_if algorithm instead of a raw loop." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0116_80_C._Heroes.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0116_80_C._Heroes.cpp" line="47" column="54"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::count_if algorithm instead of a raw loop." verbose="Consider using std::count_if algorithm instead of a raw loop." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0116_80_C._Heroes.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0116_80_C._Heroes.cpp" line="52" column="54"/>
+        </error>
+    </errors>
+</results>

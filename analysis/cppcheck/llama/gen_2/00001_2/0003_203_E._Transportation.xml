@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="passedByValueCallback" severity="performance" msg="Function parameter &apos;a&apos; should be passed by const reference. However it seems that &apos;cmp&apos; is a callback function." verbose="Parameter &apos;a&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0003_203_E._Transportation.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0003_203_E._Transportation.cpp" line="11" column="16" info="Function parameter &apos;a&apos; should be passed by const reference. However it seems that &apos;cmp&apos; is a callback function."/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0003_203_E._Transportation.cpp" line="28" column="40" info="Function pointer used here."/>
+            <symbol>a</symbol>
+        </error>
+        <error id="passedByValueCallback" severity="performance" msg="Function parameter &apos;b&apos; should be passed by const reference. However it seems that &apos;cmp&apos; is a callback function." verbose="Parameter &apos;b&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0003_203_E._Transportation.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0003_203_E._Transportation.cpp" line="11" column="25" info="Function parameter &apos;b&apos; should be passed by const reference. However it seems that &apos;cmp&apos; is a callback function."/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0003_203_E._Transportation.cpp" line="28" column="40" info="Function pointer used here."/>
+            <symbol>b</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::find_if algorithm instead of a raw loop." verbose="Consider using std::find_if algorithm instead of a raw loop." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0003_203_E._Transportation.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0003_203_E._Transportation.cpp" line="58" column="42"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::count_if algorithm instead of a raw loop." verbose="Consider using std::count_if algorithm instead of a raw loop." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0003_203_E._Transportation.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0003_203_E._Transportation.cpp" line="68" column="26"/>
+        </error>
+    </errors>
+</results>

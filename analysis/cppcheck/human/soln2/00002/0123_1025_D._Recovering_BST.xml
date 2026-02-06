@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="negativeIndex" severity="error" msg="Array &apos;mem[705][705][3]&apos; accessed at index mem[*][*][-1], which is out of bounds." verbose="Array &apos;mem[705][705][3]&apos; accessed at index mem[*][*][-1], which is out of bounds." cwe="786" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0123_1025_D._Recovering_BST.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0123_1025_D._Recovering_BST.cpp" line="9" column="11" info="Negative array index"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0123_1025_D._Recovering_BST.cpp" line="8" column="9" info="Assuming condition is false"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0123_1025_D._Recovering_BST.cpp" line="14" column="56" info="Calling function &apos;solve&apos;, 3rd argument &apos;-1&apos; value is -1"/>
+        </error>
+    </errors>
+</results>

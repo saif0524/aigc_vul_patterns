@@ -1,24 +1,29 @@
-import json, glob, csv
+# scripts/extract_problem_tags.py
+import json, glob, csv, os
 
 rows = []
 
-for jf in glob.glob("data/problem_tags/problem_tags_*.json"):
-    shard = jf.split("_")[-1].replace(".json","")
+for jf in sorted(glob.glob("data/problem_tags/problem_tags_*.json")):
+    shard_file = os.path.basename(jf).split("_")[-1].replace(".json", "")
     data = json.load(open(jf))
 
-    for idx, entry in enumerate(data):
+    for entry in data:
+        shard = str(entry.get("shard", shard_file))
+        problem_key = entry["problem_name"]           # e.g., "1012_E. Cycle sort"
+        tags = entry.get("cf_tags", [])
+
         rows.append({
-            "instruction_id": idx,
+            "problem_key": problem_key,
             "shard": shard,
-            "tags": "|".join(entry["cf_tags"])
+            "tags": "|".join(tags)
         })
 
-with open("results/raw_csv/instruction_tags.csv", "w", newline="") as f:
-    writer = csv.DictWriter(
-        f,
-        fieldnames=["instruction_id","shard","tags"]
-    )
+out_path = "results/raw_csv/problem_tags.csv"
+os.makedirs(os.path.dirname(out_path), exist_ok=True)
+
+with open(out_path, "w", newline="") as f:
+    writer = csv.DictWriter(f, fieldnames=["problem_key", "shard", "tags"])
     writer.writeheader()
     writer.writerows(rows)
 
-print("Saved results/raw_csv/instruction_tags.csv")
+print(f"Saved {out_path} with {len(rows)} rows")

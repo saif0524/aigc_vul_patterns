@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="invalidscanf" severity="warning" msg="scanf() without field width limits can crash with huge input data." verbose="scanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0176_1511_F._Chainword.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0176_1511_F._Chainword.cpp" line="137" column="3"/>
+        </error>
+        <error id="duplicateBreak" severity="style" msg="Consecutive return, break, continue, goto or throw statements are unnecessary." verbose="Consecutive return, break, continue, goto or throw statements are unnecessary. The second statement can never be executed, and so should be removed." cwe="561" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0176_1511_F._Chainword.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0176_1511_F._Chainword.cpp" line="125" column="2"/>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;v&apos; can be declared as reference to const" verbose="Parameter &apos;v&apos; can be declared as reference to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0176_1511_F._Chainword.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0176_1511_F._Chainword.cpp" line="52" column="29" info="Parameter &apos;v&apos; can be declared as reference to const"/>
+            <symbol>v</symbol>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;m&apos; can be declared as reference to const" verbose="Parameter &apos;m&apos; can be declared as reference to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0176_1511_F._Chainword.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0176_1511_F._Chainword.cpp" line="59" column="29" info="Parameter &apos;m&apos; can be declared as reference to const"/>
+            <symbol>m</symbol>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;a&apos; can be declared as pointer to const" verbose="Parameter &apos;a&apos; can be declared as pointer to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0176_1511_F._Chainword.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0176_1511_F._Chainword.cpp" line="109" column="19" info="Parameter &apos;a&apos; can be declared as pointer to const"/>
+            <symbol>a</symbol>
+        </error>
+        <error id="constParameterPointer" severity="style" msg="Parameter &apos;b&apos; can be declared as pointer to const" verbose="Parameter &apos;b&apos; can be declared as pointer to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0176_1511_F._Chainword.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0176_1511_F._Chainword.cpp" line="109" column="28" info="Parameter &apos;b&apos; can be declared as pointer to const"/>
+            <symbol>b</symbol>
+        </error>
+    </errors>
+</results>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;s&apos; shadows outer variable" verbose="Local variable &apos;s&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0092_931_E._Game_with_String.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0092_931_E._Game_with_String.cpp" line="20" column="14" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0092_931_E._Game_with_String.cpp" line="11" column="10" info="Shadowed declaration"/>
+            <symbol>s</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;is&apos; shadows outer variable" verbose="Local variable &apos;is&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0092_931_E._Game_with_String.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0092_931_E._Game_with_String.cpp" line="21" column="19" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0092_931_E._Game_with_String.cpp" line="5" column="5" info="Shadowed declaration"/>
+            <symbol>is</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::accumulate algorithm instead of a raw loop." verbose="Consider using std::accumulate algorithm instead of a raw loop." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0092_931_E._Game_with_String.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0092_931_E._Game_with_String.cpp" line="26" column="44"/>
+        </error>
+    </errors>
+</results>

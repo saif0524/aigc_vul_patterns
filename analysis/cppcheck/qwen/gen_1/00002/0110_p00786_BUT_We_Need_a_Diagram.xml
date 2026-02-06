@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="noConstructor" severity="style" msg="The class &apos;Parser&apos; does not declare a constructor although it has private member variables which likely require initialization." verbose="The class &apos;Parser&apos; does not declare a constructor although it has private member variables which likely require initialization. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0110_p00786_BUT_We_Need_a_Diagram.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0110_p00786_BUT_We_Need_a_Diagram.cpp" line="16" column="1"/>
+            <symbol>Parser</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;Node&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;Node&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0110_p00786_BUT_We_Need_a_Diagram.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0110_p00786_BUT_We_Need_a_Diagram.cpp" line="13" column="5"/>
+            <symbol>Node</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;Diagram&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;Diagram&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0110_p00786_BUT_We_Need_a_Diagram.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00002/0110_p00786_BUT_We_Need_a_Diagram.cpp" line="43" column="5"/>
+            <symbol>Diagram</symbol>
+        </error>
+    </errors>
+</results>

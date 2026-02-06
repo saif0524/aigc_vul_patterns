@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="duplicateConditionalAssign" severity="style" msg="The statement &apos;if (a[i]!=i+1) a[i]=i+1&apos; is logically equivalent to &apos;a[i]=i+1&apos;." verbose="The statement &apos;if (a[i]!=i+1) a[i]=i+1&apos; is logically equivalent to &apos;a[i]=i+1&apos;." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00002_3/0229_698_B._Fix_a_Tree.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00002_3/0229_698_B._Fix_a_Tree.cpp" line="28" column="22" info="Condition &apos;a[i]!=i+1&apos; is redundant"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00002_3/0229_698_B._Fix_a_Tree.cpp" line="29" column="22" info="Assignment &apos;a[i]=i+1&apos;"/>
+        </error>
+        <error id="duplicateConditionalAssign" severity="style" msg="The statement &apos;if (a[i]!=i+1) a[i]=i+1&apos; is logically equivalent to &apos;a[i]=i+1&apos;." verbose="The statement &apos;if (a[i]!=i+1) a[i]=i+1&apos; is logically equivalent to &apos;a[i]=i+1&apos;." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00002_3/0229_698_B._Fix_a_Tree.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00002_3/0229_698_B._Fix_a_Tree.cpp" line="45" column="26" info="Condition &apos;a[i]!=i+1&apos; is redundant"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00002_3/0229_698_B._Fix_a_Tree.cpp" line="46" column="26" info="Assignment &apos;a[i]=i+1&apos;"/>
+        </error>
+        <error id="duplicateConditionalAssign" severity="style" msg="The statement &apos;if (a[i]!=i+1) a[i]=i+1&apos; is logically equivalent to &apos;a[i]=i+1&apos;." verbose="The statement &apos;if (a[i]!=i+1) a[i]=i+1&apos; is logically equivalent to &apos;a[i]=i+1&apos;." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00002_3/0229_698_B._Fix_a_Tree.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00002_3/0229_698_B._Fix_a_Tree.cpp" line="98" column="26" info="Condition &apos;a[i]!=i+1&apos; is redundant"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00002_3/0229_698_B._Fix_a_Tree.cpp" line="99" column="26" info="Assignment &apos;a[i]=i+1&apos;"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;root==-1&apos; is always false" verbose="Condition &apos;root==-1&apos; is always false" cwe="570" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00002_3/0229_698_B._Fix_a_Tree.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00002_3/0229_698_B._Fix_a_Tree.cpp" line="51" column="18" info="Condition &apos;root==-1&apos; is always false"/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;root_index&apos; can be reduced." verbose="The scope of the variable &apos;root_index&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00002_3/0229_698_B._Fix_a_Tree.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00002_3/0229_698_B._Fix_a_Tree.cpp" line="82" column="13"/>
+            <symbol>root_index</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;valid&apos; is assigned a value that is never used." verbose="Variable &apos;valid&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00002_3/0229_698_B._Fix_a_Tree.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00002_3/0229_698_B._Fix_a_Tree.cpp" line="80" column="20"/>
+            <symbol>valid</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;root_index&apos; is assigned a value that is never used." verbose="Variable &apos;root_index&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00002_3/0229_698_B._Fix_a_Tree.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00002_3/0229_698_B._Fix_a_Tree.cpp" line="82" column="24"/>
+            <symbol>root_index</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;root_index&apos; is assigned a value that is never used." verbose="Variable &apos;root_index&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00002_3/0229_698_B._Fix_a_Tree.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00002_3/0229_698_B._Fix_a_Tree.cpp" line="89" column="28"/>
+            <symbol>root_index</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;valid&apos; is assigned a value that is never used." verbose="Variable &apos;valid&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00002_3/0229_698_B._Fix_a_Tree.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00002_3/0229_698_B._Fix_a_Tree.cpp" line="80" column="14"/>
+            <symbol>valid</symbol>
+        </error>
+    </errors>
+</results>

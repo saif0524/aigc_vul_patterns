@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;tmp&lt;0&apos; is always false" verbose="Condition &apos;tmp&lt;0&apos; is always false" cwe="570" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0224_127_C._Hot_Bath.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0224_127_C._Hot_Bath.cpp" line="34" column="17" info="Condition &apos;tmp&lt;0&apos; is always false"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0224_127_C._Hot_Bath.cpp" line="33" column="29" info="Assuming that condition &apos;tmp&lt;0&apos; is not redundant"/>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: y1" verbose="Uninitialized variable: y1" cwe="457" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0224_127_C._Hot_Bath.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0224_127_C._Hot_Bath.cpp" line="51" column="13"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0224_127_C._Hot_Bath.cpp" line="24" column="19" info="Assuming condition is false"/>
+            <symbol>y1</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: y2" verbose="Uninitialized variable: y2" cwe="457" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0224_127_C._Hot_Bath.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0224_127_C._Hot_Bath.cpp" line="51" column="26"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0224_127_C._Hot_Bath.cpp" line="24" column="19" info="Assuming condition is false"/>
+            <symbol>y2</symbol>
+        </error>
+    </errors>
+</results>

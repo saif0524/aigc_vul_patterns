@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;prime[1000000]&apos; accessed at index 1000000, which is out of bounds." verbose="Array &apos;prime[1000000]&apos; accessed at index 1000000, which is out of bounds." cwe="788" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0144_1474_B._Different_Divisors.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0144_1474_B._Different_Divisors.cpp" line="25" column="12" info="Array index out of bounds"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0144_1474_B._Different_Divisors.cpp" line="23" column="20" info="Assuming that condition &apos;p&lt;=n&apos; is not redundant"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0144_1474_B._Different_Divisors.cpp" line="41" column="6" info="Calling function &apos;fun&apos;, 1st argument &apos;1000000&apos; value is 1000000"/>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: ans2" verbose="Uninitialized variable: ans2" cwe="457" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0144_1474_B._Different_Divisors.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0144_1474_B._Different_Divisors.cpp" line="69" column="11"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0144_1474_B._Different_Divisors.cpp" line="60" column="23" info="Assuming condition is false"/>
+            <symbol>ans2</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;a&apos; is assigned a value that is never used." verbose="Variable &apos;a&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0144_1474_B._Different_Divisors.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0144_1474_B._Different_Divisors.cpp" line="48" column="8"/>
+            <symbol>a</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;pro&apos; is assigned a value that is never used." verbose="Variable &apos;pro&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0144_1474_B._Different_Divisors.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0144_1474_B._Different_Divisors.cpp" line="48" column="17"/>
+            <symbol>pro</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;a&apos; is assigned a value that is never used." verbose="Variable &apos;a&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0144_1474_B._Different_Divisors.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0144_1474_B._Different_Divisors.cpp" line="48" column="6"/>
+            <symbol>a</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;pro&apos; is assigned a value that is never used." verbose="Variable &apos;pro&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0144_1474_B._Different_Divisors.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0144_1474_B._Different_Divisors.cpp" line="48" column="13"/>
+            <symbol>pro</symbol>
+        </error>
+    </errors>
+</results>

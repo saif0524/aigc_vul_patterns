@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;BigInt&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;BigInt&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0068_1091_G._New_Year_and_the_Factorisation_Collaboration.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0068_1091_G._New_Year_and_the_Factorisation_Collaboration.cpp" line="11" column="3"/>
+            <symbol>BigInt</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;BigDecimal&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;BigDecimal&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0068_1091_G._New_Year_and_the_Factorisation_Collaboration.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0068_1091_G._New_Year_and_the_Factorisation_Collaboration.cpp" line="230" column="3"/>
+            <symbol>BigDecimal</symbol>
+        </error>
+        <error id="unsignedPositive" severity="style" msg="Unsigned expression &apos;b&apos; can&apos;t be negative so it is unnecessary to test it." verbose="Unsigned expression &apos;b&apos; can&apos;t be negative so it is unnecessary to test it." cwe="570" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0068_1091_G._New_Year_and_the_Factorisation_Collaboration.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0068_1091_G._New_Year_and_the_Factorisation_Collaboration.cpp" line="88" column="12" info="Unsigned positive"/>
+            <symbol>b</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;ans&apos; shadows outer variable" verbose="Local variable &apos;ans&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0068_1091_G._New_Year_and_the_Factorisation_Collaboration.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0068_1091_G._New_Year_and_the_Factorisation_Collaboration.cpp" line="283" column="14" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0068_1091_G._New_Year_and_the_Factorisation_Collaboration.cpp" line="529" column="16" info="Shadowed declaration"/>
+            <symbol>ans</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;n&apos; should be passed by const reference." verbose="Parameter &apos;n&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0068_1091_G._New_Year_and_the_Factorisation_Collaboration.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0068_1091_G._New_Year_and_the_Factorisation_Collaboration.cpp" line="426" column="28" info="Function parameter &apos;n&apos; should be passed by const reference."/>
+            <symbol>n</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;mod&apos; should be passed by const reference." verbose="Parameter &apos;mod&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0068_1091_G._New_Year_and_the_Factorisation_Collaboration.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0068_1091_G._New_Year_and_the_Factorisation_Collaboration.cpp" line="426" column="38" info="Function parameter &apos;mod&apos; should be passed by const reference."/>
+            <symbol>mod</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;a&apos; should be passed by const reference." verbose="Parameter &apos;a&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0068_1091_G._New_Year_and_the_Factorisation_Collaboration.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0068_1091_G._New_Year_and_the_Factorisation_Collaboration.cpp" line="475" column="20" info="Function parameter &apos;a&apos; should be passed by const reference."/>
+            <symbol>a</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;b&apos; should be passed by const reference." verbose="Parameter &apos;b&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0068_1091_G._New_Year_and_the_Factorisation_Collaboration.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0068_1091_G._New_Year_and_the_Factorisation_Collaboration.cpp" line="475" column="30" info="Function parameter &apos;b&apos; should be passed by const reference."/>
+            <symbol>b</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;x&apos; should be passed by const reference." verbose="Parameter &apos;x&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0068_1091_G._New_Year_and_the_Factorisation_Collaboration.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0068_1091_G._New_Year_and_the_Factorisation_Collaboration.cpp" line="506" column="21" info="Function parameter &apos;x&apos; should be passed by const reference."/>
+            <symbol>x</symbol>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;rnd&apos; can be declared as reference to const" verbose="Parameter &apos;rnd&apos; can be declared as reference to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0068_1091_G._New_Year_and_the_Factorisation_Collaboration.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0068_1091_G._New_Year_and_the_Factorisation_Collaboration.cpp" line="418" column="37" info="Parameter &apos;rnd&apos; can be declared as reference to const"/>
+            <symbol>rnd</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::accumulate algorithm instead of a raw loop." verbose="Consider using std::accumulate algorithm instead of a raw loop." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0068_1091_G._New_Year_and_the_Factorisation_Collaboration.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0068_1091_G._New_Year_and_the_Factorisation_Collaboration.cpp" line="17" column="11"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::any_of algorithm instead of a raw loop." verbose="Consider using std::any_of algorithm instead of a raw loop." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0068_1091_G._New_Year_and_the_Factorisation_Collaboration.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0068_1091_G._New_Year_and_the_Factorisation_Collaboration.cpp" line="565" column="44"/>
+        </error>
+        <error id="shiftTooManyBitsSigned" severity="portability" msg="Shifting signed 32-bit value by 31 bits is implementation-defined behaviour" verbose="Shifting signed 32-bit value by 31 bits is implementation-defined behaviour" cwe="758" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0068_1091_G._New_Year_and_the_Factorisation_Collaboration.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0068_1091_G._New_Year_and_the_Factorisation_Collaboration.cpp" line="609" column="71" info="Shift"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0068_1091_G._New_Year_and_the_Factorisation_Collaboration.cpp" line="609" column="27" info="Assuming that condition &apos;j&lt;(BIGINTBITS)&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBitsSigned" severity="portability" msg="Shifting signed 32-bit value by 31 bits is implementation-defined behaviour" verbose="Shifting signed 32-bit value by 31 bits is implementation-defined behaviour" cwe="758" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0068_1091_G._New_Year_and_the_Factorisation_Collaboration.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0068_1091_G._New_Year_and_the_Factorisation_Collaboration.cpp" line="614" column="71" info="Shift"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0068_1091_G._New_Year_and_the_Factorisation_Collaboration.cpp" line="614" column="27" info="Assuming that condition &apos;j&lt;(BIGINTBITS)&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBitsSigned" severity="portability" msg="Shifting signed 32-bit value by 31 bits is implementation-defined behaviour" verbose="Shifting signed 32-bit value by 31 bits is implementation-defined behaviour" cwe="758" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0068_1091_G._New_Year_and_the_Factorisation_Collaboration.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0068_1091_G._New_Year_and_the_Factorisation_Collaboration.cpp" line="672" column="71" info="Shift"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0068_1091_G._New_Year_and_the_Factorisation_Collaboration.cpp" line="672" column="27" info="Assuming that condition &apos;j&lt;(BIGINTBITS)&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBitsSigned" severity="portability" msg="Shifting signed 32-bit value by 31 bits is implementation-defined behaviour" verbose="Shifting signed 32-bit value by 31 bits is implementation-defined behaviour" cwe="758" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0068_1091_G._New_Year_and_the_Factorisation_Collaboration.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0068_1091_G._New_Year_and_the_Factorisation_Collaboration.cpp" line="677" column="71" info="Shift"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0068_1091_G._New_Year_and_the_Factorisation_Collaboration.cpp" line="677" column="27" info="Assuming that condition &apos;j&lt;(BIGINTBITS)&apos; is not redundant"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;A&apos; is assigned a value that is never used." verbose="Variable &apos;A&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0068_1091_G._New_Year_and_the_Factorisation_Collaboration.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0068_1091_G._New_Year_and_the_Factorisation_Collaboration.cpp" line="520" column="16"/>
+            <symbol>A</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;B&apos; is assigned a value that is never used." verbose="Variable &apos;B&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0068_1091_G._New_Year_and_the_Factorisation_Collaboration.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0068_1091_G._New_Year_and_the_Factorisation_Collaboration.cpp" line="520" column="39"/>
+            <symbol>B</symbol>
+        </error>
+    </errors>
+</results>

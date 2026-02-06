@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="missingReturn" severity="error" msg="Found an exit path from function with non-void return type that has missing return statement" verbose="Found an exit path from function with non-void return type that has missing return statement" cwe="758" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp" line="9" column="53"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;POINT&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;POINT&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp" line="5" column="3"/>
+            <symbol>POINT</symbol>
+        </error>
+        <error id="constParameterReference" severity="style" msg="Parameter &apos;other&apos; can be declared as reference to const" verbose="Parameter &apos;other&apos; can be declared as reference to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0199_685_D._Kay_and_Eternity.cpp" line="6" column="25" info="Parameter &apos;other&apos; can be declared as reference to const"/>
+            <symbol>other</symbol>
+        </error>
+    </errors>
+</results>

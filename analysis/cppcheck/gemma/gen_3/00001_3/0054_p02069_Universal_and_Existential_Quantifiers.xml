@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;x&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;x&apos; is reassigned a value before the old one has been used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0054_p02069_Universal_and_Existential_Quantifiers.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0054_p02069_Universal_and_Existential_Quantifiers.cpp" line="134" column="11" info="x is overwritten"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0054_p02069_Universal_and_Existential_Quantifiers.cpp" line="104" column="7" info="x is assigned"/>
+            <symbol>x</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::any_of algorithm instead of a raw loop." verbose="Consider using std::any_of algorithm instead of a raw loop." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0054_p02069_Universal_and_Existential_Quantifiers.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0054_p02069_Universal_and_Existential_Quantifiers.cpp" line="69" column="26"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::any_of algorithm instead of a raw loop." verbose="Consider using std::any_of algorithm instead of a raw loop." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0054_p02069_Universal_and_Existential_Quantifiers.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/gemma/gen_3/00001_3/0054_p02069_Universal_and_Existential_Quantifiers.cpp" line="118" column="32"/>
+        </error>
+    </errors>
+</results>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;d&apos; can be reduced." verbose="The scope of the variable &apos;d&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0038_571_E._Geometric_Progressions.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0038_571_E._Geometric_Progressions.cpp" line="40" column="19"/>
+            <symbol>d</symbol>
+        </error>
+        <error id="shadowArgument" severity="style" msg="Local variable &apos;a&apos; shadows outer argument" verbose="Local variable &apos;a&apos; shadows outer argument" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0038_571_E._Geometric_Progressions.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0038_571_E._Geometric_Progressions.cpp" line="63" column="19" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0038_571_E._Geometric_Progressions.cpp" line="46" column="15" info="Shadowed declaration"/>
+            <symbol>a</symbol>
+        </error>
+        <error id="shadowArgument" severity="style" msg="Local variable &apos;b&apos; shadows outer argument" verbose="Local variable &apos;b&apos; shadows outer argument" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0038_571_E._Geometric_Progressions.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0038_571_E._Geometric_Progressions.cpp" line="63" column="40" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0038_571_E._Geometric_Progressions.cpp" line="46" column="22" info="Shadowed declaration"/>
+            <symbol>b</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;x&apos; shadows outer variable" verbose="Local variable &apos;x&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0038_571_E._Geometric_Progressions.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0038_571_E._Geometric_Progressions.cpp" line="74" column="15" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0038_571_E._Geometric_Progressions.cpp" line="48" column="13" info="Shadowed declaration"/>
+            <symbol>x</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: A" verbose="Uninitialized variable: A" cwe="457" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0038_571_E._Geometric_Progressions.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0038_571_E._Geometric_Progressions.cpp" line="74" column="25"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0038_571_E._Geometric_Progressions.cpp" line="49" column="21" info="Assuming condition is false"/>
+            <symbol>A</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: B" verbose="Uninitialized variable: B" cwe="457" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0038_571_E._Geometric_Progressions.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0038_571_E._Geometric_Progressions.cpp" line="74" column="28"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0038_571_E._Geometric_Progressions.cpp" line="49" column="21" info="Assuming condition is false"/>
+            <symbol>B</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: C" verbose="Uninitialized variable: C" cwe="457" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0038_571_E._Geometric_Progressions.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0038_571_E._Geometric_Progressions.cpp" line="74" column="31"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00000/0038_571_E._Geometric_Progressions.cpp" line="49" column="21" info="Assuming condition is false"/>
+            <symbol>C</symbol>
+        </error>
+    </errors>
+</results>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;x&apos; shadows outer variable" verbose="Local variable &apos;x&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0256_1075_D._Intersecting_Subtrees.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0256_1075_D._Intersecting_Subtrees.cpp" line="13" column="13" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0256_1075_D._Intersecting_Subtrees.cpp" line="106" column="22" info="Shadowed declaration"/>
+            <symbol>x</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: st" verbose="Uninitialized variable: st" cwe="457" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0256_1075_D._Intersecting_Subtrees.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0256_1075_D._Intersecting_Subtrees.cpp" line="175" column="33"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0256_1075_D._Intersecting_Subtrees.cpp" line="169" column="29" info="Assuming condition is false"/>
+            <symbol>st</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: toCompare" verbose="Uninitialized variable: toCompare" cwe="457" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0256_1075_D._Intersecting_Subtrees.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0256_1075_D._Intersecting_Subtrees.cpp" line="193" column="32"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0256_1075_D._Intersecting_Subtrees.cpp" line="180" column="12" info="Assuming condition is false"/>
+            <symbol>toCompare</symbol>
+        </error>
+        <error id="unusedStructMember" severity="style" msg="struct member &apos;node::id&apos; is never used." verbose="struct member &apos;node::id&apos; is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0256_1075_D._Intersecting_Subtrees.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0256_1075_D._Intersecting_Subtrees.cpp" line="100" column="13"/>
+            <symbol>node::id</symbol>
+        </error>
+        <error id="unusedStructMember" severity="style" msg="struct member &apos;node::val&apos; is never used." verbose="struct member &apos;node::val&apos; is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0256_1075_D._Intersecting_Subtrees.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0256_1075_D._Intersecting_Subtrees.cpp" line="101" column="13"/>
+            <symbol>node::val</symbol>
+        </error>
+        <error id="unusedStructMember" severity="style" msg="struct member &apos;node::dir&apos; is never used." verbose="struct member &apos;node::dir&apos; is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0256_1075_D._Intersecting_Subtrees.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00000/0256_1075_D._Intersecting_Subtrees.cpp" line="102" column="8"/>
+            <symbol>node::dir</symbol>
+        </error>
+    </errors>
+</results>

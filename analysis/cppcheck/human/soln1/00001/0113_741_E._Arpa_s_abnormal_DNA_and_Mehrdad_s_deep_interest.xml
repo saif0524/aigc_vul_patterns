@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="selfAssignment" severity="style" msg="Redundant assignment of &apos;slen&apos; to itself." verbose="Redundant assignment of &apos;slen&apos; to itself." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp" line="146" column="61"/>
+            <symbol>slen</symbol>
+        </error>
+        <error id="selfAssignment" severity="style" msg="Redundant assignment of &apos;tlen&apos; to itself." verbose="Redundant assignment of &apos;tlen&apos; to itself." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp" line="148" column="61"/>
+            <symbol>tlen</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;t&apos; can be reduced." verbose="The scope of the variable &apos;t&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp" line="18" column="16"/>
+            <symbol>t</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;t&apos; shadows outer variable" verbose="Local variable &apos;t&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp" line="18" column="16" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp" line="63" column="15" info="Shadowed declaration"/>
+            <symbol>t</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;k&apos; shadows outer variable" verbose="Local variable &apos;k&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp" line="34" column="12" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp" line="65" column="26" info="Shadowed declaration"/>
+            <symbol>k</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;t&apos; shadows outer variable" verbose="Local variable &apos;t&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp" line="113" column="14" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp" line="63" column="15" info="Shadowed declaration"/>
+            <symbol>t</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;k&apos; shadows outer variable" verbose="Local variable &apos;k&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp" line="118" column="16" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0113_741_E._Arpa_s_abnormal_DNA_and_Mehrdad_s_deep_interest.cpp" line="65" column="26" info="Shadowed declaration"/>
+            <symbol>k</symbol>
+        </error>
+    </errors>
+</results>

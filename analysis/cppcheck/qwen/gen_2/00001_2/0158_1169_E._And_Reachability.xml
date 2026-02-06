@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="oppositeInnerCondition" severity="warning" msg="Opposite inner &apos;if&apos; condition leads to a dead code block." verbose="Opposite inner &apos;if&apos; condition leads to a dead code block (outer condition is &apos;x&lt;y&apos; and inner condition is &apos;x==y&apos;)." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0158_1169_E._And_Reachability.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0158_1169_E._And_Reachability.cpp" line="26" column="18" info="opposite inner condition: x==y"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0158_1169_E._And_Reachability.cpp" line="25" column="28" info="outer condition: x&lt;y"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::find_if algorithm instead of a raw loop." verbose="Consider using std::find_if algorithm instead of a raw loop." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0158_1169_E._And_Reachability.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00001_2/0158_1169_E._And_Reachability.cpp" line="15" column="28"/>
+        </error>
+    </errors>
+</results>

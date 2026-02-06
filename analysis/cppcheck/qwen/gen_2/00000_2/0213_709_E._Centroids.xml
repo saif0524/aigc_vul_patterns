@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="negativeIndex" severity="error" msg="Array &apos;subtree_size[400005]&apos; accessed at index -1, which is out of bounds." verbose="Array &apos;subtree_size[400005]&apos; accessed at index -1, which is out of bounds." cwe="786" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0213_709_E._Centroids.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0213_709_E._Centroids.cpp" line="46" column="32" info="Negative array index"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0213_709_E._Centroids.cpp" line="74" column="14" info="Calling function &apos;dfs2&apos;, 2nd argument &apos;-1&apos; value is -1"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::find_if algorithm instead of a raw loop." verbose="Consider using std::find_if algorithm instead of a raw loop." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0213_709_E._Centroids.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00000_2/0213_709_E._Centroids.cpp" line="33" column="59"/>
+        </error>
+    </errors>
+</results>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;point&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;point&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0169_698_D._Limak_and_Shooting_Points.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0169_698_D._Limak_and_Shooting_Points.cpp" line="22" column="3"/>
+            <symbol>point</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;tmp&apos; shadows outer variable" verbose="Local variable &apos;tmp&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0169_698_D._Limak_and_Shooting_Points.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0169_698_D._Limak_and_Shooting_Points.cpp" line="6" column="8" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00002/0169_698_D._Limak_and_Shooting_Points.cpp" line="29" column="24" info="Shadowed declaration"/>
+            <symbol>tmp</symbol>
+        </error>
+    </errors>
+</results>

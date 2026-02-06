@@ -1,0 +1,23 @@
+rules:
+  - id: cpp-use-after-free-delete
+    languages: [cpp]
+    severity: ERROR
+    message: Potential use-after-free after delete.
+    patterns:
+      - pattern: |
+          delete $X;
+          ...
+          $X
+    metadata:
+      cwe: CWE-416
+
+  - id: cpp-dangerous-strcpy
+    languages: [cpp]
+    severity: ERROR
+    message: Use of unsafe string copy function.
+    pattern-either:
+      - pattern: strcpy(...)
+      - pattern: gets(...)
+      - pattern: sprintf(...)
+    metadata:
+      cwe: CWE-120

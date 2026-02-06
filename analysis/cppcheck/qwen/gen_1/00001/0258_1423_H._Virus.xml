@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;q&apos; shadows outer variable" verbose="Local variable &apos;q&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0258_1423_H._Virus.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0258_1423_H._Virus.cpp" line="25" column="24" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0258_1423_H._Virus.cpp" line="7" column="12" info="Shadowed declaration"/>
+            <symbol>q</symbol>
+        </error>
+        <error id="stlFindInsert" severity="performance" msg="Searching before insertion is not necessary." verbose="Searching before insertion is not necessary." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0258_1423_H._Virus.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_1/00001/0258_1423_H._Virus.cpp" line="33" column="37"/>
+        </error>
+    </errors>
+</results>

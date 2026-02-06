@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;std::fscanf&apos;." verbose="Non-pure function: &apos;std::fscanf&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0059_1534_D._Lost_Tree.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0059_1534_D._Lost_Tree.cpp" line="18" column="29"/>
+            <symbol>std::fscanf</symbol>
+        </error>
+        <error id="assertWithSideEffect" severity="warning" msg="Assert statement calls a function which may have desired side effects: &apos;std::fscanf&apos;." verbose="Non-pure function: &apos;std::fscanf&apos; is called inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0059_1534_D._Lost_Tree.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0059_1534_D._Lost_Tree.cpp" line="26" column="21"/>
+            <symbol>std::fscanf</symbol>
+        </error>
+        <error id="constVariableReference" severity="style" msg="Variable &apos;d1&apos; can be declared as reference to const" verbose="Variable &apos;d1&apos; can be declared as reference to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0059_1534_D._Lost_Tree.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0059_1534_D._Lost_Tree.cpp" line="56" column="8" info="Variable &apos;d1&apos; can be declared as reference to const"/>
+            <symbol>d1</symbol>
+        </error>
+        <error id="constVariableReference" severity="style" msg="Variable &apos;e&apos; can be declared as reference to const" verbose="Variable &apos;e&apos; can be declared as reference to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0059_1534_D._Lost_Tree.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0059_1534_D._Lost_Tree.cpp" line="94" column="13" info="Variable &apos;e&apos; can be declared as reference to const"/>
+            <symbol>e</symbol>
+        </error>
+        <error id="unusedVariable" severity="style" msg="Unused variable: ntests" verbose="Unused variable: ntests" cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0059_1534_D._Lost_Tree.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln2/00002/0059_1534_D._Lost_Tree.cpp" line="41" column="10"/>
+            <symbol>ntests</symbol>
+        </error>
+    </errors>
+</results>

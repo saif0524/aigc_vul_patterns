@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;k&apos; shadows outer variable" verbose="Local variable &apos;k&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0132_1187_G._Gang_Up.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0132_1187_G._Gang_Up.cpp" line="31" column="14" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0132_1187_G._Gang_Up.cpp" line="13" column="15" info="Shadowed declaration"/>
+            <symbol>k</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;ans[id]&apos; is assigned a value that is never used." verbose="Variable &apos;ans[id]&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0132_1187_G._Gang_Up.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/llama/gen_2/00001_2/0132_1187_G._Gang_Up.cpp" line="62" column="17"/>
+            <symbol>ans[id]</symbol>
+        </error>
+    </errors>
+</results>

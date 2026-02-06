@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;selected_sticks.size()&gt;=6&apos; is always true" verbose="Condition &apos;selected_sticks.size()&gt;=6&apos; is always true" cwe="571" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00002_2/0102_p01183_Tetrahedra.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00002_2/0102_p01183_Tetrahedra.cpp" line="32" column="40" info="Condition &apos;selected_sticks.size()&gt;=6&apos; is always true"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00002_2/0102_p01183_Tetrahedra.cpp" line="27" column="40" info="Assuming that condition &apos;selected_sticks.size()&lt;6&apos; is not redundant"/>
+        </error>
+        <error id="duplicateExpression" severity="style" msg="Same expression &apos;d+f&gt;a&apos; found multiple times in chain of &apos;&amp;&amp;&apos; operators." verbose="Finding the same expression more than once in a condition is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00002_2/0102_p01183_Tetrahedra.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00002_2/0102_p01183_Tetrahedra.cpp" line="43" column="210"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00002_2/0102_p01183_Tetrahedra.cpp" line="39" column="43" info="&apos;e&apos; is assigned value &apos;selected_sticks[4]&apos; here."/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00002_2/0102_p01183_Tetrahedra.cpp" line="35" column="43" info="&apos;a&apos; is assigned value &apos;selected_sticks[0]&apos; here."/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00002_2/0102_p01183_Tetrahedra.cpp" line="36" column="43" info="&apos;b&apos; is assigned value &apos;selected_sticks[1]&apos; here."/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00002_2/0102_p01183_Tetrahedra.cpp" line="40" column="43" info="&apos;f&apos; is assigned value &apos;selected_sticks[5]&apos; here."/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00002_2/0102_p01183_Tetrahedra.cpp" line="37" column="43" info="&apos;c&apos; is assigned value &apos;selected_sticks[2]&apos; here."/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/qwen/gen_2/00002_2/0102_p01183_Tetrahedra.cpp" line="38" column="43" info="&apos;d&apos; is assigned value &apos;selected_sticks[3]&apos; here."/>
+        </error>
+    </errors>
+</results>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;m&apos; shadows outer variable" verbose="Local variable &apos;m&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0087_1500_B._Two_chandeliers.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0087_1500_B._Two_chandeliers.cpp" line="193" column="6" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0087_1500_B._Two_chandeliers.cpp" line="127" column="14" info="Shadowed declaration"/>
+            <symbol>m</symbol>
+        </error>
+        <error id="ignoredReturnValue" severity="warning" msg="Return value of function std::freopen() is not used." verbose="Return value of function std::freopen() is not used." cwe="252" file0="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0087_1500_B._Two_chandeliers.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/derived/cpp/human/soln1/00001/0087_1500_B._Two_chandeliers.cpp" line="210" column="2"/>
+            <symbol>std::freopen</symbol>
+        </error>
+    </errors>
+</results>
