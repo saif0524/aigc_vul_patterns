@@ -1,0 +1,797 @@
+{
+  "problem_key": "1286_A_Garland",
+  "shard": 2,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 62,
+  "n_passed": 2,
+  "n_sanitizer_triggered": 39,
+  "n_timeout": 20,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow",
+    "null pointer"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122",
+    "CWE-476"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": true,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -1,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "null pointer"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "/usr/include/c++/13/bits/stl_vector.h:1129:34: runtime error: reference binding to null pointer of type 'value_type'\n"
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==69859==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x511000000140 at pc 0x5d9043833fd0 bp 0x7ffe08aaae00 sp 0x7ffe08aaadf0\nREAD of size 4 at 0x511000000140 thread T0\n    #0 0x5d9043833fcf in main derived/cpp/gemma/gen_3/00002_3/0044_1286_A._Garland.cpp:32\n    #1 0x7f1a1942a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7f1a1942a28a in __libc_start_main_impl ../csu/libc-start.c:360\n "
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==69860==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50c0000000c0 at pc 0x5b18dda35fd0 bp 0x7fff3366b580 sp 0x7fff3366b570\nREAD of size 4 at 0x50c0000000c0 thread T0\n    #0 0x5b18dda35fcf in main derived/cpp/gemma/gen_3/00002_3/0044_1286_A._Garland.cpp:32\n    #1 0x79000942a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x79000942a28a in __libc_start_main_impl ../csu/libc-start.c:360\n "
+    },
+    {
+      "test_idx": 4,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==69861==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000014 at pc 0x5bf2e3c2efd0 bp 0x7ffd00db3f80 sp 0x7ffd00db3f70\nREAD of size 4 at 0x502000000014 thread T0\n    #0 0x5bf2e3c2efcf in main derived/cpp/gemma/gen_3/00002_3/0044_1286_A._Garland.cpp:32\n    #1 0x76249cc2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x76249cc2a28a in __libc_start_main_impl ../csu/libc-start.c:360\n "
+    },
+    {
+      "test_idx": 5,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==69862==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x503000000060 at pc 0x63b4251dffd0 bp 0x7ffd4f5d2480 sp 0x7ffd4f5d2470\nREAD of size 4 at 0x503000000060 thread T0\n    #0 0x63b4251dffcf in main derived/cpp/gemma/gen_3/00002_3/0044_1286_A._Garland.cpp:32\n    #1 0x70e12842a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x70e12842a28a in __libc_start_main_impl ../csu/libc-start.c:360\n "
+    },
+    {
+      "test_idx": 6,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==69863==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000038 at pc 0x5cceeba76fd0 bp 0x7ffda27da3e0 sp 0x7ffda27da3d0\nREAD of size 4 at 0x502000000038 thread T0\n    #0 0x5cceeba76fcf in main derived/cpp/gemma/gen_3/00002_3/0044_1286_A._Garland.cpp:32\n    #1 0x75a88e02a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x75a88e02a28a in __libc_start_main_impl ../csu/libc-start.c:360\n "
+    },
+    {
+      "test_idx": 7,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==69864==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000060 at pc 0x55677c0e1fd0 bp 0x7ffc89839510 sp 0x7ffc89839500\nREAD of size 4 at 0x502000000060 thread T0\n    #0 0x55677c0e1fcf in main derived/cpp/gemma/gen_3/00002_3/0044_1286_A._Garland.cpp:32\n    #1 0x77a351e2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x77a351e2a28a in __libc_start_main_impl ../csu/libc-start.c:360\n "
+    },
+    {
+      "test_idx": 8,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==69865==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000060 at pc 0x642229f77fd0 bp 0x7fff9a20bb80 sp 0x7fff9a20bb70\nREAD of size 4 at 0x502000000060 thread T0\n    #0 0x642229f77fcf in main derived/cpp/gemma/gen_3/00002_3/0044_1286_A._Garland.cpp:32\n    #1 0x7c8ddbc2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7c8ddbc2a28a in __libc_start_main_impl ../csu/libc-start.c:360\n "
+    },
+    {
+      "test_idx": 9,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==69866==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x503000000060 at pc 0x5e0e52cb6fd0 bp 0x7ffdc34c68d0 sp 0x7ffdc34c68c0\nREAD of size 4 at 0x503000000060 thread T0\n    #0 0x5e0e52cb6fcf in main derived/cpp/gemma/gen_3/00002_3/0044_1286_A._Garland.cpp:32\n    #1 0x7c4470e2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7c4470e2a28a in __libc_start_main_impl ../csu/libc-start.c:360\n "
+    },
+    {
+      "test_idx": 10,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 11,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==69917==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000060 at pc 0x63b9cda28fd0 bp 0x7fff08a21200 sp 0x7fff08a211f0\nREAD of size 4 at 0x502000000060 thread T0\n    #0 0x63b9cda28fcf in main derived/cpp/gemma/gen_3/00002_3/0044_1286_A._Garland.cpp:32\n    #1 0x7f1de322a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7f1de322a28a in __libc_start_main_impl ../csu/libc-start.c:360\n "
+    },
+    {
+      "test_idx": 12,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==69918==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000060 at pc 0x5d28a5abbfd0 bp 0x7fff014960e0 sp 0x7fff014960d0\nREAD of size 4 at 0x502000000060 thread T0\n    #0 0x5d28a5abbfcf in main derived/cpp/gemma/gen_3/00002_3/0044_1286_A._Garland.cpp:32\n    #1 0x71361942a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x71361942a28a in __libc_start_main_impl ../csu/libc-start.c:360\n "
+    },
+    {
+      "test_idx": 13,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==69928==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000060 at pc 0x6294afd60fd0 bp 0x7ffe33a58ae0 sp 0x7ffe33a58ad0\nREAD of size 4 at 0x502000000060 thread T0\n    #0 0x6294afd60fcf in main derived/cpp/gemma/gen_3/00002_3/0044_1286_A._Garland.cpp:32\n    #1 0x75266222a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x75266222a28a in __libc_start_main_impl ../csu/libc-start.c:360\n "
+    },
+    {
+      "test_idx": 14,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==69956==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x503000000060 at pc 0x653348055fd0 bp 0x7ffcad038fd0 sp 0x7ffcad038fc0\nREAD of size 4 at 0x503000000060 thread T0\n    #0 0x653348055fcf in main derived/cpp/gemma/gen_3/00002_3/0044_1286_A._Garland.cpp:32\n    #1 0x73dcb502a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x73dcb502a28a in __libc_start_main_impl ../csu/libc-start.c:360\n "
+    },
+    {
+      "test_idx": 15,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==69957==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000060 at pc 0x638b1585ffd0 bp 0x7ffc83bda5d0 sp 0x7ffc83bda5c0\nREAD of size 4 at 0x502000000060 thread T0\n    #0 0x638b1585ffcf in main derived/cpp/gemma/gen_3/00002_3/0044_1286_A._Garland.cpp:32\n    #1 0x751b07c2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x751b07c2a28a in __libc_start_main_impl ../csu/libc-start.c:360\n "
+    },
+    {
+      "test_idx": 16,
+      "correct": false,
+      "timeout": true,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -1,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 17,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==70478==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50c0000000c0 at pc 0x61653b2f1fd0 bp 0x7fff40db6fb0 sp 0x7fff40db6fa0\nREAD of size 4 at 0x50c0000000c0 thread T0\n    #0 0x61653b2f1fcf in main derived/cpp/gemma/gen_3/00002_3/0044_1286_A._Garland.cpp:32\n    #1 0x70fd2d82a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x70fd2d82a28a in __libc_start_main_impl ../csu/libc-start.c:360\n "
+    },
+    {
+      "test_idx": 18,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==70479==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000038 at pc 0x55b173142fd0 bp 0x7ffea8fdcfb0 sp 0x7ffea8fdcfa0\nREAD of size 4 at 0x502000000038 thread T0\n    #0 0x55b173142fcf in main derived/cpp/gemma/gen_3/00002_3/0044_1286_A._Garland.cpp:32\n    #1 0x72833a22a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x72833a22a28a in __libc_start_main_impl ../csu/libc-start.c:360\n "
+    },
+    {
+      "test_idx": 19,
+      "correct": false,
+      "timeout": true,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -1,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 20,
+      "correct": false,
+      "timeout": true,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -1,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 21,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==72054==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000060 at pc 0x5b7c44ed3fd0 bp 0x7fff030fb780 sp 0x7fff030fb770\nREAD of size 4 at 0x502000000060 thread T0\n    #0 0x5b7c44ed3fcf in main derived/cpp/gemma/gen_3/00002_3/0044_1286_A._Garland.cpp:32\n    #1 0x705935a2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x705935a2a28a in __libc_start_main_impl ../csu/libc-start.c:360\n "
+    },
+    {
+      "test_idx": 22,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==72055==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50c0000000c0 at pc 0x5a6609ebdfd0 bp 0x7ffed7b0d610 sp 0x7ffed7b0d600\nREAD of size 4 at 0x50c0000000c0 thread T0\n    #0 0x5a6609ebdfcf in main derived/cpp/gemma/gen_3/00002_3/0044_1286_A._Garland.cpp:32\n    #1 0x7a674ba2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7a674ba2a28a in __libc_start_main_impl ../csu/libc-start.c:360\n "
+    },
+    {
+      "test_idx": 23,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 24,
+      "correct": false,
+      "timeout": true,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -1,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 25,
+      "correct": false,
+      "timeout": true,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -1,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 26,
+      "correct": false,
+      "timeout": true,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -1,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 27,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==74630==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000038 at pc 0x5d7be632bfd0 bp 0x7ffd25b3b4b0 sp 0x7ffd25b3b4a0\nREAD of size 4 at 0x502000000038 thread T0\n    #0 0x5d7be632bfcf in main derived/cpp/gemma/gen_3/00002_3/0044_1286_A._Garland.cpp:32\n    #1 0x754698a2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x754698a2a28a in __libc_start_main_impl ../csu/libc-start.c:360\n "
+    },
+    {
+      "test_idx": 28,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==74632==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50c0000000c0 at pc 0x6400ce8d4fd0 bp 0x7fff60f39c60 sp 0x7fff60f39c50\nREAD of size 4 at 0x50c0000000c0 thread T0\n    #0 0x6400ce8d4fcf in main derived/cpp/gemma/gen_3/00002_3/0044_1286_A._Garland.cpp:32\n    #1 0x799da922a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x799da922a28a in __libc_start_main_impl ../csu/libc-start.c:360\n "
+    },
+    {
+      "test_idx": 29,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==74639==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50c0000000c0 at pc 0x60f3f03fcfd0 bp 0x7fffecf77a90 sp 0x7fffecf77a80\nREAD of size 4 at 0x50c0000000c0 thread T0\n    #0 0x60f3f03fcfcf in main derived/cpp/gemma/gen_3/00002_3/0044_1286_A._Garland.cpp:32\n    #1 0x7c35c022a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7c35c022a28a in __libc_start_main_impl ../csu/libc-start.c:360\n "
+    },
+    {
+      "test_idx": 30,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==74641==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50c0000000c0 at pc 0x639351432fd0 bp 0x7ffe07cddfd0 sp 0x7ffe07cddfc0\nREAD of size 4 at 0x50c0000000c0 thread T0\n    #0 0x639351432fcf in main derived/cpp/gemma/gen_3/00002_3/0044_1286_A._Garland.cpp:32\n    #1 0x7a810ae2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7a810ae2a28a in __libc_start_main_impl ../csu/libc-start.c:360\n "
+    },
+    {
+      "test_idx": 31,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==74644==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x511000000140 at pc 0x574a0c66ffd0 bp 0x7ffcd1d57aa0 sp 0x7ffcd1d57a90\nREAD of size 4 at 0x511000000140 thread T0\n    #0 0x574a0c66ffcf in main derived/cpp/gemma/gen_3/00002_3/0044_1286_A._Garland.cpp:32\n    #1 0x774fe4e2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x774fe4e2a28a in __libc_start_main_impl ../csu/libc-start.c:360\n "
+    },
+    {
+      "test_idx": 32,
+      "correct": false,
+      "timeout": true,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -1,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 33,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==74926==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x503000000060 at pc 0x64a501c84fd0 bp 0x7fff78df16c0 sp 0x7fff78df16b0\nREAD of size 4 at 0x503000000060 thread T0\n    #0 0x64a501c84fcf in main derived/cpp/gemma/gen_3/00002_3/0044_1286_A._Garland.cpp:32\n    #1 0x76806b82a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x76806b82a28a in __libc_start_main_impl ../csu/libc-start.c:360\n "
+    },
+    {
+      "test_idx": 34,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==74927==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50c0000000c0 at pc 0x5768fce65fd0 bp 0x7ffd183c3500 sp 0x7ffd183c34f0\nREAD of size 4 at 0x50c0000000c0 thread T0\n    #0 0x5768fce65fcf in main derived/cpp/gemma/gen_3/00002_3/0044_1286_A._Garland.cpp:32\n    #1 0x7ec7c982a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7ec7c982a28a in __libc_start_main_impl ../csu/libc-start.c:360\n "
+    },
+    {
+      "test_idx": 35,
+      "correct": false,
+      "timeout": true,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -1,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 36,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==75089==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000060 at pc 0x59292d216fd0 bp 0x7fff324fefc0 sp 0x7fff324fefb0\nREAD of size 4 at 0x502000000060 thread T0\n    #0 0x59292d216fcf in main derived/cpp/gemma/gen_3/00002_3/0044_1286_A._Garland.cpp:32\n    #1 0x70ca5302a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x70ca5302a28a in __libc_start_main_impl ../csu/libc-start.c:360\n "
+    },
+    {
+      "test_idx": 37,
+      "correct": false,
+      "timeout": true,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -1,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 38,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==75744==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x503000000060 at pc 0x5f2ab4a4efd0 bp 0x7ffd32d8c580 sp 0x7ffd32d8c570\nREAD of size 4 at 0x503000000060 thread T0\n    #0 0x5f2ab4a4efcf in main derived/cpp/gemma/gen_3/00002_3/0044_1286_A._Garland.cpp:32\n    #1 0x7db368a2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7db368a2a28a in __libc_start_main_impl ../csu/libc-start.c:360\n "
+    },
+    {
+      "test_idx": 39,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 40,
+      "correct": false,
+      "timeout": true,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -1,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 41,
+      "correct": false,
+      "timeout": true,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -1,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 42,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==78225==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50c0000000c0 at pc 0x5b31e256efd0 bp 0x7ffc5a8504e0 sp 0x7ffc5a8504d0\nREAD of size 4 at 0x50c0000000c0 thread T0\n    #0 0x5b31e256efcf in main derived/cpp/gemma/gen_3/00002_3/0044_1286_A._Garland.cpp:32\n    #1 0x75d5d302a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x75d5d302a28a in __libc_start_main_impl ../csu/libc-start.c:360\n "
+    },
+    {
+      "test_idx": 43,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==78226==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000038 at pc 0x5e2769810fd0 bp 0x7fff28a22810 sp 0x7fff28a22800\nREAD of size 4 at 0x502000000038 thread T0\n    #0 0x5e2769810fcf in main derived/cpp/gemma/gen_3/00002_3/0044_1286_A._Garland.cpp:32\n    #1 0x78101602a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x78101602a28a in __libc_start_main_impl ../csu/libc-start.c:360\n "
+    },
+    {
+      "test_idx": 44,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==78227==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x503000000060 at pc 0x6501f61effd0 bp 0x7ffe342cf5d0 sp 0x7ffe342cf5c0\nREAD of size 4 at 0x503000000060 thread T0\n    #0 0x6501f61effcf in main derived/cpp/gemma/gen_3/00002_3/0044_1286_A._Garland.cpp:32\n    #1 0x7bfbf542a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7bfbf542a28a in __libc_start_main_impl ../csu/libc-start.c:360\n "
+    },
+    {
+      "test_idx": 45,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==78228==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000038 at pc 0x5b3578fa5fd0 bp 0x7ffe27077e80 sp 0x7ffe27077e70\nREAD of size 4 at 0x502000000038 thread T0\n    #0 0x5b3578fa5fcf in main derived/cpp/gemma/gen_3/00002_3/0044_1286_A._Garland.cpp:32\n    #1 0x7dde01c2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7dde01c2a28a in __libc_start_main_impl ../csu/libc-start.c:360\n "
+    },
+    {
+      "test_idx": 46,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==78229==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000060 at pc 0x5e0051d8ffd0 bp 0x7ffd98439270 sp 0x7ffd98439260\nREAD of size 4 at 0x502000000060 thread T0\n    #0 0x5e0051d8ffcf in main derived/cpp/gemma/gen_3/00002_3/0044_1286_A._Garland.cpp:32\n    #1 0x7407eb42a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7407eb42a28a in __libc_start_main_impl ../csu/libc-start.c:360\n "
+    },
+    {
+      "test_idx": 47,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==78230==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000060 at pc 0x569821464fd0 bp 0x7ffe7cc860d0 sp 0x7ffe7cc860c0\nREAD of size 4 at 0x502000000060 thread T0\n    #0 0x569821464fcf in main derived/cpp/gemma/gen_3/00002_3/0044_1286_A._Garland.cpp:32\n    #1 0x73bf15a2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x73bf15a2a28a in __libc_start_main_impl ../csu/libc-start.c:360\n "
+    },
+    {
+      "test_idx": 48,
+      "correct": false,
+      "timeout": true,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -1,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 49,
+      "correct": false,
+      "timeout": true,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -1,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 50,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==79176==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x503000000060 at pc 0x5fe7df48afd0 bp 0x7ffd646e10d0 sp 0x7ffd646e10c0\nREAD of size 4 at 0x503000000060 thread T0\n    #0 0x5fe7df48afcf in main derived/cpp/gemma/gen_3/00002_3/0044_1286_A._Garland.cpp:32\n    #1 0x786b67c2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x786b67c2a28a in __libc_start_main_impl ../csu/libc-start.c:360\n "
+    },
+    {
+      "test_idx": 51,
+      "correct": false,
+      "timeout": true,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -1,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 52,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==79597==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x503000000060 at pc 0x58de683fdfd0 bp 0x7ffe687cadf0 sp 0x7ffe687cade0\nREAD of size 4 at 0x503000000060 thread T0\n    #0 0x58de683fdfcf in main derived/cpp/gemma/gen_3/00002_3/0044_1286_A._Garland.cpp:32\n    #1 0x75bb6c62a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x75bb6c62a28a in __libc_start_main_impl ../csu/libc-start.c:360\n "
+    },
+    {
+      "test_idx": 53,
+      "correct": false,
+      "timeout": true,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -1,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 54,
+      "correct": false,
+      "timeout": true,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -1,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 55,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==80379==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50c0000000c0 at pc 0x5a688bddafd0 bp 0x7ffea8afead0 sp 0x7ffea8afeac0\nREAD of size 4 at 0x50c0000000c0 thread T0\n    #0 0x5a688bddafcf in main derived/cpp/gemma/gen_3/00002_3/0044_1286_A._Garland.cpp:32\n    #1 0x7709e122a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7709e122a28a in __libc_start_main_impl ../csu/libc-start.c:360\n "
+    },
+    {
+      "test_idx": 56,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==80380==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x506000000060 at pc 0x632ee40d8fd0 bp 0x7ffe5e086060 sp 0x7ffe5e086050\nREAD of size 4 at 0x506000000060 thread T0\n    #0 0x632ee40d8fcf in main derived/cpp/gemma/gen_3/00002_3/0044_1286_A._Garland.cpp:32\n    #1 0x7e15c222a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7e15c222a28a in __libc_start_main_impl ../csu/libc-start.c:360\n "
+    },
+    {
+      "test_idx": 57,
+      "correct": false,
+      "timeout": true,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -1,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 58,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "null pointer"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "/usr/include/c++/13/bits/stl_vector.h:1129:34: runtime error: reference binding to null pointer of type 'value_type'\n"
+    },
+    {
+      "test_idx": 59,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==81009==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x511000000140 at pc 0x589f0d700fd0 bp 0x7ffd47385a50 sp 0x7ffd47385a40\nREAD of size 4 at 0x511000000140 thread T0\n    #0 0x589f0d700fcf in main derived/cpp/gemma/gen_3/00002_3/0044_1286_A._Garland.cpp:32\n    #1 0x747c7082a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x747c7082a28a in __libc_start_main_impl ../csu/libc-start.c:360\n "
+    },
+    {
+      "test_idx": 60,
+      "correct": false,
+      "timeout": true,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -1,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 61,
+      "correct": false,
+      "timeout": true,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -1,
+      "stderr_head": ""
+    }
+  ]
+}

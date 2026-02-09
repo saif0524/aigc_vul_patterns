@@ -1,0 +1,143 @@
+{
+  "problem_key": "776_A_A_Serial_Killer",
+  "shard": 0,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 10,
+  "n_passed": 0,
+  "n_sanitizer_triggered": 6,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==149744==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x512000000028 at pc 0x564d07066c15 bp 0x7ffe8a55b9f0 sp 0x7ffe8a55b9e0\nREAD of size 8 at 0x512000000028 thread T0\n    #0 0x564d07066c14 in std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::size() const /usr/include/c++/13/bits/basic_string.h:1072\n    #1 0x564d07066c14 in bool std::operator==<char, std::char_traits<char>, std::allocat"
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==149748==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x516000000068 at pc 0x5fc0e86fdc15 bp 0x7ffd3727aac0 sp 0x7ffd3727aab0\nREAD of size 8 at 0x516000000068 thread T0\n    #0 0x5fc0e86fdc14 in std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::size() const /usr/include/c++/13/bits/basic_string.h:1072\n    #1 0x5fc0e86fdc14 in bool std::operator==<char, std::char_traits<char>, std::allocat"
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==149752==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50e000000028 at pc 0x5a8378be5c15 bp 0x7fffbaf55040 sp 0x7fffbaf55030\nREAD of size 8 at 0x50e000000028 thread T0\n    #0 0x5a8378be5c14 in std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::size() const /usr/include/c++/13/bits/basic_string.h:1072\n    #1 0x5a8378be5c14 in bool std::operator==<char, std::char_traits<char>, std::allocat"
+    },
+    {
+      "test_idx": 4,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 5,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==149755==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x511000000028 at pc 0x5c5a2a9a4c15 bp 0x7ffefb97b7a0 sp 0x7ffefb97b790\nREAD of size 8 at 0x511000000028 thread T0\n    #0 0x5c5a2a9a4c14 in std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::size() const /usr/include/c++/13/bits/basic_string.h:1072\n    #1 0x5c5a2a9a4c14 in bool std::operator==<char, std::char_traits<char>, std::allocat"
+    },
+    {
+      "test_idx": 6,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 7,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==149760==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50c000000028 at pc 0x5cee18ba7c15 bp 0x7ffc47bd4010 sp 0x7ffc47bd4000\nREAD of size 8 at 0x50c000000028 thread T0\n    #0 0x5cee18ba7c14 in std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::size() const /usr/include/c++/13/bits/basic_string.h:1072\n    #1 0x5cee18ba7c14 in bool std::operator==<char, std::char_traits<char>, std::allocat"
+    },
+    {
+      "test_idx": 8,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==149768==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x513000000028 at pc 0x57a770c54c15 bp 0x7ffee2ab2da0 sp 0x7ffee2ab2d90\nREAD of size 8 at 0x513000000028 thread T0\n    #0 0x57a770c54c14 in std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::size() const /usr/include/c++/13/bits/basic_string.h:1072\n    #1 0x57a770c54c14 in bool std::operator==<char, std::char_traits<char>, std::allocat"
+    },
+    {
+      "test_idx": 9,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    }
+  ]
+}

@@ -1,0 +1,285 @@
+{
+  "problem_key": "1096_E_The_Top_Scorer",
+  "shard": 0,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 20,
+  "n_passed": 0,
+  "n_sanitizer_triggered": 16,
+  "n_timeout": 4,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow",
+    "null pointer"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122",
+    "CWE-476"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==113935==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x52a0000001fc at pc 0x55afdc6b25db bp 0x7ffe9d9052f0 sp 0x7ffe9d9052e0\nREAD of size 4 at 0x52a0000001fc thread T0\n    #0 0x55afdc6b25da in F(int, int) derived/cpp/llama/gen_3/00000_3/0253_1096_E._The_Top_Scorer.cpp:62\n    #1 0x55afdc6b3000 in main derived/cpp/llama/gen_3/00000_3/0253_1096_E._The_Top_Scorer.cpp:82\n    #2 0x7f0052a2a1c9 in __libc_start_call_main ../"
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "null pointer"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "/usr/include/c++/13/bits/stl_vector.h:1129:34: runtime error: applying non-zero offset 18446744073709551612 to null pointer\n"
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==113937==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x51500000007c at pc 0x5ea54b76b5db bp 0x7ffc60f49a30 sp 0x7ffc60f49a20\nREAD of size 4 at 0x51500000007c thread T0\n    #0 0x5ea54b76b5da in F(int, int) derived/cpp/llama/gen_3/00000_3/0253_1096_E._The_Top_Scorer.cpp:62\n    #1 0x5ea54b76c000 in main derived/cpp/llama/gen_3/00000_3/0253_1096_E._The_Top_Scorer.cpp:82\n    #2 0x79643682a1c9 in __libc_start_call_main ../"
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": true,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -1,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 4,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "null pointer"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "/usr/include/c++/13/bits/stl_vector.h:1129:34: runtime error: applying non-zero offset 18446744073709551612 to null pointer\n"
+    },
+    {
+      "test_idx": 5,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==114167==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x51b00000007c at pc 0x5a60c1f0e5db bp 0x7fff9ae836b0 sp 0x7fff9ae836a0\nREAD of size 4 at 0x51b00000007c thread T0\n    #0 0x5a60c1f0e5da in F(int, int) derived/cpp/llama/gen_3/00000_3/0253_1096_E._The_Top_Scorer.cpp:62\n    #1 0x5a60c1f0f000 in main derived/cpp/llama/gen_3/00000_3/0253_1096_E._The_Top_Scorer.cpp:82\n    #2 0x79d0d462a1c9 in __libc_start_call_main ../"
+    },
+    {
+      "test_idx": 6,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==114170==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50200000002c at pc 0x5c990987f5db bp 0x7fff7c03f000 sp 0x7fff7c03eff0\nREAD of size 4 at 0x50200000002c thread T0\n    #0 0x5c990987f5da in F(int, int) derived/cpp/llama/gen_3/00000_3/0253_1096_E._The_Top_Scorer.cpp:62\n    #1 0x5c9909880000 in main derived/cpp/llama/gen_3/00000_3/0253_1096_E._The_Top_Scorer.cpp:82\n    #2 0x70dfc462a1c9 in __libc_start_call_main ../"
+    },
+    {
+      "test_idx": 7,
+      "correct": false,
+      "timeout": true,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -1,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 8,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==114326==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50200000002c at pc 0x63092af1e5db bp 0x7ffef367e900 sp 0x7ffef367e8f0\nREAD of size 4 at 0x50200000002c thread T0\n    #0 0x63092af1e5da in F(int, int) derived/cpp/llama/gen_3/00000_3/0253_1096_E._The_Top_Scorer.cpp:62\n    #1 0x63092af1f000 in main derived/cpp/llama/gen_3/00000_3/0253_1096_E._The_Top_Scorer.cpp:82\n    #2 0x7cbb6b62a1c9 in __libc_start_call_main ../"
+    },
+    {
+      "test_idx": 9,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==114330==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50c00000003c at pc 0x5f79ed9265db bp 0x7ffed3551bd0 sp 0x7ffed3551bc0\nREAD of size 4 at 0x50c00000003c thread T0\n    #0 0x5f79ed9265da in F(int, int) derived/cpp/llama/gen_3/00000_3/0253_1096_E._The_Top_Scorer.cpp:62\n    #1 0x5f79ed927000 in main derived/cpp/llama/gen_3/00000_3/0253_1096_E._The_Top_Scorer.cpp:82\n    #2 0x758e5c02a1c9 in __libc_start_call_main ../"
+    },
+    {
+      "test_idx": 10,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "null pointer"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "/usr/include/c++/13/bits/stl_vector.h:1129:34: runtime error: applying non-zero offset 18446744073709551612 to null pointer\n"
+    },
+    {
+      "test_idx": 11,
+      "correct": false,
+      "timeout": true,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -1,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 12,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==114785==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x51900000007c at pc 0x583c1fe385db bp 0x7ffccf3c0ef0 sp 0x7ffccf3c0ee0\nREAD of size 4 at 0x51900000007c thread T0\n    #0 0x583c1fe385da in F(int, int) derived/cpp/llama/gen_3/00000_3/0253_1096_E._The_Top_Scorer.cpp:62\n    #1 0x583c1fe39000 in main derived/cpp/llama/gen_3/00000_3/0253_1096_E._The_Top_Scorer.cpp:82\n    #2 0x7a7775c2a1c9 in __libc_start_call_main ../"
+    },
+    {
+      "test_idx": 13,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==114795==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x51d00000007c at pc 0x6411ccb9e5db bp 0x7ffe23dcd6e0 sp 0x7ffe23dcd6d0\nREAD of size 4 at 0x51d00000007c thread T0\n    #0 0x6411ccb9e5da in F(int, int) derived/cpp/llama/gen_3/00000_3/0253_1096_E._The_Top_Scorer.cpp:62\n    #1 0x6411ccb9f000 in main derived/cpp/llama/gen_3/00000_3/0253_1096_E._The_Top_Scorer.cpp:82\n    #2 0x77d98fe2a1c9 in __libc_start_call_main ../"
+    },
+    {
+      "test_idx": 14,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==114863==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50200000002c at pc 0x5d975056c5db bp 0x7ffd2b1d0870 sp 0x7ffd2b1d0860\nREAD of size 4 at 0x50200000002c thread T0\n    #0 0x5d975056c5da in F(int, int) derived/cpp/llama/gen_3/00000_3/0253_1096_E._The_Top_Scorer.cpp:62\n    #1 0x5d975056d000 in main derived/cpp/llama/gen_3/00000_3/0253_1096_E._The_Top_Scorer.cpp:82\n    #2 0x7f2849e2a1c9 in __libc_start_call_main ../"
+    },
+    {
+      "test_idx": 15,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==114864==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x51f00000007c at pc 0x635fcda855db bp 0x7fff6f0dad20 sp 0x7fff6f0dad10\nREAD of size 4 at 0x51f00000007c thread T0\n    #0 0x635fcda855da in F(int, int) derived/cpp/llama/gen_3/00000_3/0253_1096_E._The_Top_Scorer.cpp:62\n    #1 0x635fcda86000 in main derived/cpp/llama/gen_3/00000_3/0253_1096_E._The_Top_Scorer.cpp:82\n    #2 0x7a054682a1c9 in __libc_start_call_main ../"
+    },
+    {
+      "test_idx": 16,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==114882==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5170000003fc at pc 0x58fc698bb5db bp 0x7ffca36a3d80 sp 0x7ffca36a3d70\nREAD of size 4 at 0x5170000003fc thread T0\n    #0 0x58fc698bb5da in F(int, int) derived/cpp/llama/gen_3/00000_3/0253_1096_E._The_Top_Scorer.cpp:62\n    #1 0x58fc698bc000 in main derived/cpp/llama/gen_3/00000_3/0253_1096_E._The_Top_Scorer.cpp:82\n    #2 0x775006e2a1c9 in __libc_start_call_main ../"
+    },
+    {
+      "test_idx": 17,
+      "correct": false,
+      "timeout": true,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -1,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 18,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "null pointer"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "/usr/include/c++/13/bits/stl_vector.h:1129:34: runtime error: applying non-zero offset 18446744073709551612 to null pointer\n"
+    },
+    {
+      "test_idx": 19,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "null pointer"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "/usr/include/c++/13/bits/stl_vector.h:1129:34: runtime error: applying non-zero offset 18446744073709551612 to null pointer\n"
+    }
+  ]
+}

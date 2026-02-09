@@ -1,0 +1,47 @@
+{
+  "problem_key": "1103_E_Radix_sum",
+  "shard": 1,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 2,
+  "n_passed": 0,
+  "n_sanitizer_triggered": 2,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "index .* out of bounds"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-125"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "index .* out of bounds"
+      ],
+      "sanitizer_cwes": [
+        "CWE-125"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/qwen/gen_1/00001/0243_1103_E._Radix_sum.cpp:36:37: runtime error: index 5 out of bounds for type 'int [5]'\n"
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "index .* out of bounds"
+      ],
+      "sanitizer_cwes": [
+        "CWE-125"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/qwen/gen_1/00001/0243_1103_E._Radix_sum.cpp:36:37: runtime error: index 5 out of bounds for type 'int [5]'\n"
+    }
+  ]
+}

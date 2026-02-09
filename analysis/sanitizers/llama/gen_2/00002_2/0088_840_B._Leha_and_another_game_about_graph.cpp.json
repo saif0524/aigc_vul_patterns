@@ -1,0 +1,35 @@
+{
+  "problem_key": "840_B_Leha_and_another_game_about_graph",
+  "shard": 2,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 2,
+  "n_passed": 0,
+  "n_sanitizer_triggered": 1,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [],
+  "all_sanitizer_cwes": [],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==108394==ERROR: AddressSanitizer: stack-overflow on address 0x7ffd1ccf4fe8 (pc 0x7d655f736195 bp 0x7ffd1ccf5030 sp 0x7ffd1ccf4fe0 T0)\n    #0 0x7d655f736195 in __sanitizer::DTLS_on_tls_get_addr(void*, void*, unsigned long, unsigned long) ../../../../src/libsanitizer/sanitizer_common/sanitizer_tls_get_addr.cpp:114\n    #1 0x7d655f6dde32 in __tls_get_addr ../../../../src/libsanitizer/sanitizer_common/san"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "problem_key": "750_F_New_Year_and_Finding_Roots",
+  "shard": 1,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 4,
+  "n_passed": 0,
+  "n_sanitizer_triggered": 1,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==136603==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000058 at pc 0x5cf13e7e450f bp 0x7fff826be2d0 sp 0x7fff826be2c0\nREAD of size 4 at 0x502000000058 thread T0\n    #0 0x5cf13e7e450e in main derived/cpp/qwen/gen_1/00001/0201_750_F._New_Year_and_Finding_Roots.cpp:28\n    #1 0x7e63fec2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7e63fec2a28a in __libc_start_main_impl ../csu/li"
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    }
+  ]
+}

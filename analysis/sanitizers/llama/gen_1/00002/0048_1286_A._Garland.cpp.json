@@ -1,0 +1,801 @@
+{
+  "problem_key": "1286_A_Garland",
+  "shard": 2,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 62,
+  "n_passed": 6,
+  "n_sanitizer_triggered": 40,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow",
+    "null pointer"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122",
+    "CWE-476"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "null pointer"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "/usr/include/c++/13/bits/stl_iterator.h:1158:45: runtime error: applying non-zero offset 18446744073709551612 to null pointer\n"
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==88519==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50c0000000fc at pc 0x57e383ffbe7e bp 0x7fff071a1070 sp 0x7fff071a1060\nREAD of size 4 at 0x50c0000000fc thread T0\n    #0 0x57e383ffbe7d in void std::__new_allocator<int>::construct<int, int const&>(int*, int const&) /usr/include/c++/13/bits/new_allocator.h:191\n    #1 0x57e383ffbe7d in void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std:"
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==88520==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50600000007c at pc 0x577922004e7e bp 0x7ffe38e0ac00 sp 0x7ffe38e0abf0\nREAD of size 4 at 0x50600000007c thread T0\n    #0 0x577922004e7d in void std::__new_allocator<int>::construct<int, int const&>(int*, int const&) /usr/include/c++/13/bits/new_allocator.h:191\n    #1 0x577922004e7d in void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std:"
+    },
+    {
+      "test_idx": 4,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "null pointer"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "/usr/include/c++/13/bits/stl_iterator.h:1158:45: runtime error: applying non-zero offset 18446744073709551612 to null pointer\n"
+    },
+    {
+      "test_idx": 5,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==88522==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50200000006c at pc 0x5b2b80500e7e bp 0x7ffc21de0070 sp 0x7ffc21de0060\nREAD of size 4 at 0x50200000006c thread T0\n    #0 0x5b2b80500e7d in void std::__new_allocator<int>::construct<int, int const&>(int*, int const&) /usr/include/c++/13/bits/new_allocator.h:191\n    #1 0x5b2b80500e7d in void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std:"
+    },
+    {
+      "test_idx": 6,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==88525==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50200000002c at pc 0x5ebb7ba3f9fc bp 0x7ffe8af11d30 sp 0x7ffe8af11d20\nREAD of size 4 at 0x50200000002c thread T0\n    #0 0x5ebb7ba3f9fb in void std::__new_allocator<int>::construct<int, int const&>(int*, int const&) /usr/include/c++/13/bits/new_allocator.h:191\n    #1 0x5ebb7ba3f9fb in void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std:"
+    },
+    {
+      "test_idx": 7,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==88526==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50200000004c at pc 0x629276678e7e bp 0x7ffd30f6ef80 sp 0x7ffd30f6ef70\nREAD of size 4 at 0x50200000004c thread T0\n    #0 0x629276678e7d in void std::__new_allocator<int>::construct<int, int const&>(int*, int const&) /usr/include/c++/13/bits/new_allocator.h:191\n    #1 0x629276678e7d in void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std:"
+    },
+    {
+      "test_idx": 8,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==88527==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50200000004c at pc 0x562c898d09fc bp 0x7fffb02c8c10 sp 0x7fffb02c8c00\nREAD of size 4 at 0x50200000004c thread T0\n    #0 0x562c898d09fb in void std::__new_allocator<int>::construct<int, int const&>(int*, int const&) /usr/include/c++/13/bits/new_allocator.h:191\n    #1 0x562c898d09fb in void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std:"
+    },
+    {
+      "test_idx": 9,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==88528==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5020000000ac at pc 0x5b581d494e7e bp 0x7ffc385bb050 sp 0x7ffc385bb040\nREAD of size 4 at 0x5020000000ac thread T0\n    #0 0x5b581d494e7d in void std::__new_allocator<int>::construct<int, int const&>(int*, int const&) /usr/include/c++/13/bits/new_allocator.h:191\n    #1 0x5b581d494e7d in void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std:"
+    },
+    {
+      "test_idx": 10,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 11,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==88530==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50200000006c at pc 0x562de56a29fc bp 0x7ffe417dd4f0 sp 0x7ffe417dd4e0\nREAD of size 4 at 0x50200000006c thread T0\n    #0 0x562de56a29fb in void std::__new_allocator<int>::construct<int, int const&>(int*, int const&) /usr/include/c++/13/bits/new_allocator.h:191\n    #1 0x562de56a29fb in void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std:"
+    },
+    {
+      "test_idx": 12,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==88531==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50200000002c at pc 0x6117f9ef4e7e bp 0x7fff9891d910 sp 0x7fff9891d900\nREAD of size 4 at 0x50200000002c thread T0\n    #0 0x6117f9ef4e7d in void std::__new_allocator<int>::construct<int, int const&>(int*, int const&) /usr/include/c++/13/bits/new_allocator.h:191\n    #1 0x6117f9ef4e7d in void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std:"
+    },
+    {
+      "test_idx": 13,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==88532==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50200000004c at pc 0x5cd5b97e1e7e bp 0x7ffcf77fb430 sp 0x7ffcf77fb420\nREAD of size 4 at 0x50200000004c thread T0\n    #0 0x5cd5b97e1e7d in void std::__new_allocator<int>::construct<int, int const&>(int*, int const&) /usr/include/c++/13/bits/new_allocator.h:191\n    #1 0x5cd5b97e1e7d in void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std:"
+    },
+    {
+      "test_idx": 14,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==88533==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50200000008c at pc 0x5e53f1e9ce7e bp 0x7ffe24c466c0 sp 0x7ffe24c466b0\nREAD of size 4 at 0x50200000008c thread T0\n    #0 0x5e53f1e9ce7d in void std::__new_allocator<int>::construct<int, int const&>(int*, int const&) /usr/include/c++/13/bits/new_allocator.h:191\n    #1 0x5e53f1e9ce7d in void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std:"
+    },
+    {
+      "test_idx": 15,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==88534==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50200000002c at pc 0x59639ec689fc bp 0x7ffe9ba32290 sp 0x7ffe9ba32280\nREAD of size 4 at 0x50200000002c thread T0\n    #0 0x59639ec689fb in void std::__new_allocator<int>::construct<int, int const&>(int*, int const&) /usr/include/c++/13/bits/new_allocator.h:191\n    #1 0x59639ec689fb in void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std:"
+    },
+    {
+      "test_idx": 16,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 17,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==88537==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50c00000003c at pc 0x610edd89de7e bp 0x7ffdb8b52570 sp 0x7ffdb8b52560\nREAD of size 4 at 0x50c00000003c thread T0\n    #0 0x610edd89de7d in void std::__new_allocator<int>::construct<int, int const&>(int*, int const&) /usr/include/c++/13/bits/new_allocator.h:191\n    #1 0x610edd89de7d in void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std:"
+    },
+    {
+      "test_idx": 18,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==88538==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50200000000c at pc 0x60aeaf5689fc bp 0x7fff8e2816d0 sp 0x7fff8e2816c0\nREAD of size 4 at 0x50200000000c thread T0\n    #0 0x60aeaf5689fb in void std::__new_allocator<int>::construct<int, int const&>(int*, int const&) /usr/include/c++/13/bits/new_allocator.h:191\n    #1 0x60aeaf5689fb in void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std:"
+    },
+    {
+      "test_idx": 19,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 20,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 21,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==88541==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50200000004c at pc 0x58e4d7cf2e7e bp 0x7ffc55842930 sp 0x7ffc55842920\nREAD of size 4 at 0x50200000004c thread T0\n    #0 0x58e4d7cf2e7d in void std::__new_allocator<int>::construct<int, int const&>(int*, int const&) /usr/include/c++/13/bits/new_allocator.h:191\n    #1 0x58e4d7cf2e7d in void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std:"
+    },
+    {
+      "test_idx": 22,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==88542==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50300000006c at pc 0x64c80fe69e7e bp 0x7ffd5cbb34b0 sp 0x7ffd5cbb34a0\nREAD of size 4 at 0x50300000006c thread T0\n    #0 0x64c80fe69e7d in void std::__new_allocator<int>::construct<int, int const&>(int*, int const&) /usr/include/c++/13/bits/new_allocator.h:191\n    #1 0x64c80fe69e7d in void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std:"
+    },
+    {
+      "test_idx": 23,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 24,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 25,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==88545==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50c00000003c at pc 0x58e78cadfe7e bp 0x7fff6c396da0 sp 0x7fff6c396d90\nREAD of size 4 at 0x50c00000003c thread T0\n    #0 0x58e78cadfe7d in void std::__new_allocator<int>::construct<int, int const&>(int*, int const&) /usr/include/c++/13/bits/new_allocator.h:191\n    #1 0x58e78cadfe7d in void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std:"
+    },
+    {
+      "test_idx": 26,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 27,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==88547==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50200000000c at pc 0x55cf65cace7e bp 0x7ffe50b3f1e0 sp 0x7ffe50b3f1d0\nREAD of size 4 at 0x50200000000c thread T0\n    #0 0x55cf65cace7d in void std::__new_allocator<int>::construct<int, int const&>(int*, int const&) /usr/include/c++/13/bits/new_allocator.h:191\n    #1 0x55cf65cace7d in void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std:"
+    },
+    {
+      "test_idx": 28,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==88548==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50600000001c at pc 0x5583fd177e7e bp 0x7ffec6a11410 sp 0x7ffec6a11400\nREAD of size 4 at 0x50600000001c thread T0\n    #0 0x5583fd177e7d in void std::__new_allocator<int>::construct<int, int const&>(int*, int const&) /usr/include/c++/13/bits/new_allocator.h:191\n    #1 0x5583fd177e7d in void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std:"
+    },
+    {
+      "test_idx": 29,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==88550==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50600000007c at pc 0x5ee8453bee7e bp 0x7ffd878a9720 sp 0x7ffd878a9710\nREAD of size 4 at 0x50600000007c thread T0\n    #0 0x5ee8453bee7d in void std::__new_allocator<int>::construct<int, int const&>(int*, int const&) /usr/include/c++/13/bits/new_allocator.h:191\n    #1 0x5ee8453bee7d in void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std:"
+    },
+    {
+      "test_idx": 30,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "null pointer"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "/usr/include/c++/13/bits/stl_iterator.h:1158:45: runtime error: applying non-zero offset 18446744073709551612 to null pointer\n"
+    },
+    {
+      "test_idx": 31,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==88552==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50c00000003c at pc 0x5edbd9b0de7e bp 0x7ffd2a18a750 sp 0x7ffd2a18a740\nREAD of size 4 at 0x50c00000003c thread T0\n    #0 0x5edbd9b0de7d in void std::__new_allocator<int>::construct<int, int const&>(int*, int const&) /usr/include/c++/13/bits/new_allocator.h:191\n    #1 0x5edbd9b0de7d in void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std:"
+    },
+    {
+      "test_idx": 32,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 33,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==88554==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50200000008c at pc 0x5f234955fe7e bp 0x7fff545541f0 sp 0x7fff545541e0\nREAD of size 4 at 0x50200000008c thread T0\n    #0 0x5f234955fe7d in void std::__new_allocator<int>::construct<int, int const&>(int*, int const&) /usr/include/c++/13/bits/new_allocator.h:191\n    #1 0x5f234955fe7d in void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std:"
+    },
+    {
+      "test_idx": 34,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==88555==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50600000007c at pc 0x58f574fbae7e bp 0x7ffff2864c40 sp 0x7ffff2864c30\nREAD of size 4 at 0x50600000007c thread T0\n    #0 0x58f574fbae7d in void std::__new_allocator<int>::construct<int, int const&>(int*, int const&) /usr/include/c++/13/bits/new_allocator.h:191\n    #1 0x58f574fbae7d in void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std:"
+    },
+    {
+      "test_idx": 35,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 36,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==88559==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50200000002c at pc 0x5cbe25179e7e bp 0x7ffeb956b640 sp 0x7ffeb956b630\nREAD of size 4 at 0x50200000002c thread T0\n    #0 0x5cbe25179e7d in void std::__new_allocator<int>::construct<int, int const&>(int*, int const&) /usr/include/c++/13/bits/new_allocator.h:191\n    #1 0x5cbe25179e7d in void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std:"
+    },
+    {
+      "test_idx": 37,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 38,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==88561==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50200000008c at pc 0x641c8968ce7e bp 0x7ffeb7837780 sp 0x7ffeb7837770\nREAD of size 4 at 0x50200000008c thread T0\n    #0 0x641c8968ce7d in void std::__new_allocator<int>::construct<int, int const&>(int*, int const&) /usr/include/c++/13/bits/new_allocator.h:191\n    #1 0x641c8968ce7d in void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std:"
+    },
+    {
+      "test_idx": 39,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 40,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 41,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 42,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==88565==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50600000001c at pc 0x61c0a712ce7e bp 0x7fff329d4f40 sp 0x7fff329d4f30\nREAD of size 4 at 0x50600000001c thread T0\n    #0 0x61c0a712ce7d in void std::__new_allocator<int>::construct<int, int const&>(int*, int const&) /usr/include/c++/13/bits/new_allocator.h:191\n    #1 0x61c0a712ce7d in void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std:"
+    },
+    {
+      "test_idx": 43,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "null pointer"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "/usr/include/c++/13/bits/stl_iterator.h:1158:45: runtime error: applying non-zero offset 18446744073709551612 to null pointer\n"
+    },
+    {
+      "test_idx": 44,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==88568==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50200000008c at pc 0x64ca1e82de7e bp 0x7ffdc7133f10 sp 0x7ffdc7133f00\nREAD of size 4 at 0x50200000008c thread T0\n    #0 0x64ca1e82de7d in void std::__new_allocator<int>::construct<int, int const&>(int*, int const&) /usr/include/c++/13/bits/new_allocator.h:191\n    #1 0x64ca1e82de7d in void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std:"
+    },
+    {
+      "test_idx": 45,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "null pointer"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "/usr/include/c++/13/bits/stl_iterator.h:1158:45: runtime error: applying non-zero offset 18446744073709551612 to null pointer\n"
+    },
+    {
+      "test_idx": 46,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==88570==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50200000004c at pc 0x62fbef44ce7e bp 0x7ffc68170110 sp 0x7ffc68170100\nREAD of size 4 at 0x50200000004c thread T0\n    #0 0x62fbef44ce7d in void std::__new_allocator<int>::construct<int, int const&>(int*, int const&) /usr/include/c++/13/bits/new_allocator.h:191\n    #1 0x62fbef44ce7d in void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std:"
+    },
+    {
+      "test_idx": 47,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "null pointer"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "/usr/include/c++/13/bits/stl_iterator.h:1158:45: runtime error: applying non-zero offset 18446744073709551612 to null pointer\n"
+    },
+    {
+      "test_idx": 48,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 49,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 50,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==88575==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50200000006c at pc 0x64a984597e7e bp 0x7ffe43b83a10 sp 0x7ffe43b83a00\nREAD of size 4 at 0x50200000006c thread T0\n    #0 0x64a984597e7d in void std::__new_allocator<int>::construct<int, int const&>(int*, int const&) /usr/include/c++/13/bits/new_allocator.h:191\n    #1 0x64a984597e7d in void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std:"
+    },
+    {
+      "test_idx": 51,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 52,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==88577==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5020000000ac at pc 0x6146b9dc4e7e bp 0x7ffd81582300 sp 0x7ffd815822f0\nREAD of size 4 at 0x5020000000ac thread T0\n    #0 0x6146b9dc4e7d in void std::__new_allocator<int>::construct<int, int const&>(int*, int const&) /usr/include/c++/13/bits/new_allocator.h:191\n    #1 0x6146b9dc4e7d in void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std:"
+    },
+    {
+      "test_idx": 53,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 54,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 55,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==88580==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50600000007c at pc 0x6513e3399e7e bp 0x7fff6dfa4c70 sp 0x7fff6dfa4c60\nREAD of size 4 at 0x50600000007c thread T0\n    #0 0x6513e3399e7d in void std::__new_allocator<int>::construct<int, int const&>(int*, int const&) /usr/include/c++/13/bits/new_allocator.h:191\n    #1 0x6513e3399e7d in void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std:"
+    },
+    {
+      "test_idx": 56,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==88581==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5020000000ac at pc 0x5c7be1546e7e bp 0x7ffc34b9d950 sp 0x7ffc34b9d940\nREAD of size 4 at 0x5020000000ac thread T0\n    #0 0x5c7be1546e7d in void std::__new_allocator<int>::construct<int, int const&>(int*, int const&) /usr/include/c++/13/bits/new_allocator.h:191\n    #1 0x5c7be1546e7d in void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std:"
+    },
+    {
+      "test_idx": 57,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 58,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "null pointer"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "/usr/include/c++/13/bits/stl_iterator.h:1158:45: runtime error: applying non-zero offset 18446744073709551612 to null pointer\n"
+    },
+    {
+      "test_idx": 59,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==88584==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50c0000000fc at pc 0x56dd39e86e7e bp 0x7ffe15b472c0 sp 0x7ffe15b472b0\nREAD of size 4 at 0x50c0000000fc thread T0\n    #0 0x56dd39e86e7d in void std::__new_allocator<int>::construct<int, int const&>(int*, int const&) /usr/include/c++/13/bits/new_allocator.h:191\n    #1 0x56dd39e86e7d in void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std:"
+    },
+    {
+      "test_idx": 60,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 61,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    }
+  ]
+}

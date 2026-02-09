@@ -1,0 +1,531 @@
+{
+  "problem_key": "725_C_Hidden_Word",
+  "shard": 2,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 46,
+  "n_passed": 6,
+  "n_sanitizer_triggered": 13,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==218581==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50300000003f at pc 0x5e02a7b3fbcc bp 0x7ffdc27bd9d0 sp 0x7ffdc27bd9c0\nREAD of size 1 at 0x50300000003f thread T0\n    #0 0x5e02a7b3fbcb in main derived/cpp/human/soln2/00002/0083_725_C._Hidden_Word.cpp:32\n    #1 0x76d4a922a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x76d4a922a28a in __libc_start_main_impl ../csu/libc-start.c:360"
+    },
+    {
+      "test_idx": 2,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 3,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 4,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 5,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 6,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==218591==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50300000003f at pc 0x590ce6b6fbcc bp 0x7ffe35c20880 sp 0x7ffe35c20870\nREAD of size 1 at 0x50300000003f thread T0\n    #0 0x590ce6b6fbcb in main derived/cpp/human/soln2/00002/0083_725_C._Hidden_Word.cpp:32\n    #1 0x74397ca2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x74397ca2a28a in __libc_start_main_impl ../csu/libc-start.c:360"
+    },
+    {
+      "test_idx": 7,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==218605==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50300000003f at pc 0x5fdb1ba49bcc bp 0x7ffed15c1860 sp 0x7ffed15c1850\nREAD of size 1 at 0x50300000003f thread T0\n    #0 0x5fdb1ba49bcb in main derived/cpp/human/soln2/00002/0083_725_C._Hidden_Word.cpp:32\n    #1 0x7b3fc022a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7b3fc022a28a in __libc_start_main_impl ../csu/libc-start.c:360"
+    },
+    {
+      "test_idx": 8,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 9,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==218609==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50300000005f at pc 0x63fea818f349 bp 0x7ffdacd6fcb0 sp 0x7ffdacd6fca0\nREAD of size 1 at 0x50300000005f thread T0\n    #0 0x63fea818f348 in main derived/cpp/human/soln2/00002/0083_725_C._Hidden_Word.cpp:57\n    #1 0x7ffbf222a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7ffbf222a28a in __libc_start_main_impl ../csu/libc-start.c:360"
+    },
+    {
+      "test_idx": 10,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==218610==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50300000003f at pc 0x5bfdcce3fbcc bp 0x7ffcd81c4d00 sp 0x7ffcd81c4cf0\nREAD of size 1 at 0x50300000003f thread T0\n    #0 0x5bfdcce3fbcb in main derived/cpp/human/soln2/00002/0083_725_C._Hidden_Word.cpp:32\n    #1 0x7010b4c2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7010b4c2a28a in __libc_start_main_impl ../csu/libc-start.c:360"
+    },
+    {
+      "test_idx": 11,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 12,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 13,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 14,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 15,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 16,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 17,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 18,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 19,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 20,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 21,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 22,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==218629==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50300000003f at pc 0x64b3d3da6bcc bp 0x7fffda0be390 sp 0x7fffda0be380\nREAD of size 1 at 0x50300000003f thread T0\n    #0 0x64b3d3da6bcb in main derived/cpp/human/soln2/00002/0083_725_C._Hidden_Word.cpp:32\n    #1 0x72587ea2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x72587ea2a28a in __libc_start_main_impl ../csu/libc-start.c:360"
+    },
+    {
+      "test_idx": 23,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==218653==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50300000003f at pc 0x5d34354efbcc bp 0x7fff3ffa8b40 sp 0x7fff3ffa8b30\nREAD of size 1 at 0x50300000003f thread T0\n    #0 0x5d34354efbcb in main derived/cpp/human/soln2/00002/0083_725_C._Hidden_Word.cpp:32\n    #1 0x7f270c82a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7f270c82a28a in __libc_start_main_impl ../csu/libc-start.c:360"
+    },
+    {
+      "test_idx": 24,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==218666==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50300000003f at pc 0x5a63e9727bcc bp 0x7fff8d75f2b0 sp 0x7fff8d75f2a0\nREAD of size 1 at 0x50300000003f thread T0\n    #0 0x5a63e9727bcb in main derived/cpp/human/soln2/00002/0083_725_C._Hidden_Word.cpp:32\n    #1 0x7ac05002a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7ac05002a28a in __libc_start_main_impl ../csu/libc-start.c:360"
+    },
+    {
+      "test_idx": 25,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 26,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==218678==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50300000003f at pc 0x599cf1830bcc bp 0x7ffc4f7553b0 sp 0x7ffc4f7553a0\nREAD of size 1 at 0x50300000003f thread T0\n    #0 0x599cf1830bcb in main derived/cpp/human/soln2/00002/0083_725_C._Hidden_Word.cpp:32\n    #1 0x7dc46202a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7dc46202a28a in __libc_start_main_impl ../csu/libc-start.c:360"
+    },
+    {
+      "test_idx": 27,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 28,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 29,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==218681==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50300000005f at pc 0x6099f1c59349 bp 0x7ffc5a23cd60 sp 0x7ffc5a23cd50\nREAD of size 1 at 0x50300000005f thread T0\n    #0 0x6099f1c59348 in main derived/cpp/human/soln2/00002/0083_725_C._Hidden_Word.cpp:57\n    #1 0x70fb4862a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x70fb4862a28a in __libc_start_main_impl ../csu/libc-start.c:360"
+    },
+    {
+      "test_idx": 30,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 31,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 32,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 33,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==218685==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50300000003f at pc 0x612068945bcc bp 0x7ffe83892690 sp 0x7ffe83892680\nREAD of size 1 at 0x50300000003f thread T0\n    #0 0x612068945bcb in main derived/cpp/human/soln2/00002/0083_725_C._Hidden_Word.cpp:32\n    #1 0x72f94582a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x72f94582a28a in __libc_start_main_impl ../csu/libc-start.c:360"
+    },
+    {
+      "test_idx": 34,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==218687==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50300000003f at pc 0x5e80fbe12bcc bp 0x7fff0526f810 sp 0x7fff0526f800\nREAD of size 1 at 0x50300000003f thread T0\n    #0 0x5e80fbe12bcb in main derived/cpp/human/soln2/00002/0083_725_C._Hidden_Word.cpp:32\n    #1 0x7fbdfc42a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7fbdfc42a28a in __libc_start_main_impl ../csu/libc-start.c:360"
+    },
+    {
+      "test_idx": 35,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 36,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 37,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==218703==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50300000003f at pc 0x64b7b30b6bcc bp 0x7fff82c0dfa0 sp 0x7fff82c0df90\nREAD of size 1 at 0x50300000003f thread T0\n    #0 0x64b7b30b6bcb in main derived/cpp/human/soln2/00002/0083_725_C._Hidden_Word.cpp:32\n    #1 0x71fa3d22a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x71fa3d22a28a in __libc_start_main_impl ../csu/libc-start.c:360"
+    },
+    {
+      "test_idx": 38,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 39,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 40,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 41,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 42,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 43,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 44,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 45,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    }
+  ]
+}

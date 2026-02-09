@@ -1,0 +1,119 @@
+{
+  "problem_key": "392_D_Three_Arrays",
+  "shard": 1,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 8,
+  "n_passed": 0,
+  "n_sanitizer_triggered": 5,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==141358==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50200000014c at pc 0x5df18d617b7c bp 0x7ffc8196de30 sp 0x7ffc8196de20\nREAD of size 4 at 0x50200000014c thread T0\n    #0 0x5df18d617b7b in int const& std::min<int>(int const&, int const&) /usr/include/c++/13/bits/stl_algobase.h:238\n    #1 0x5df18d617b7b in main derived/cpp/qwen/gen_1/00001/0011_392_D._Three_Arrays.cpp:48\n    #2 0x73f28a42a1c9 in __libc_start_call_"
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==141359==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5020000000dc at pc 0x608b7d87a6be bp 0x7fff38afffa0 sp 0x7fff38afff90\nREAD of size 4 at 0x5020000000dc thread T0\n    #0 0x608b7d87a6bd in main derived/cpp/qwen/gen_1/00001/0011_392_D._Three_Arrays.cpp:47\n    #1 0x7c6aa842a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7c6aa842a28a in __libc_start_main_impl ../csu/libc-start.c:360"
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==141360==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50200000014c at pc 0x5cceb0b6eb7c bp 0x7ffd9ec05b90 sp 0x7ffd9ec05b80\nREAD of size 4 at 0x50200000014c thread T0\n    #0 0x5cceb0b6eb7b in int const& std::min<int>(int const&, int const&) /usr/include/c++/13/bits/stl_algobase.h:238\n    #1 0x5cceb0b6eb7b in main derived/cpp/qwen/gen_1/00001/0011_392_D._Three_Arrays.cpp:48\n    #2 0x7df300c2a1c9 in __libc_start_call_"
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==141361==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50200000014c at pc 0x5e980711eb7c bp 0x7ffe76afabc0 sp 0x7ffe76afabb0\nREAD of size 4 at 0x50200000014c thread T0\n    #0 0x5e980711eb7b in int const& std::min<int>(int const&, int const&) /usr/include/c++/13/bits/stl_algobase.h:238\n    #1 0x5e980711eb7b in main derived/cpp/qwen/gen_1/00001/0011_392_D._Three_Arrays.cpp:48\n    #2 0x7a934582a1c9 in __libc_start_call_"
+    },
+    {
+      "test_idx": 4,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 5,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==141363==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000138 at pc 0x55afa30776be bp 0x7ffc91e8bf50 sp 0x7ffc91e8bf40\nREAD of size 4 at 0x502000000138 thread T0\n    #0 0x55afa30776bd in main derived/cpp/qwen/gen_1/00001/0011_392_D._Three_Arrays.cpp:47\n    #1 0x7800e5a2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7800e5a2a28a in __libc_start_main_impl ../csu/libc-start.c:360"
+    },
+    {
+      "test_idx": 6,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 7,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    }
+  ]
+}

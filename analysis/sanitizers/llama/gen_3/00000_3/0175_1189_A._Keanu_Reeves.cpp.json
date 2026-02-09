@@ -1,0 +1,383 @@
+{
+  "problem_key": "1189_A_Keanu_Reeves",
+  "shard": 0,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 34,
+  "n_passed": 6,
+  "n_sanitizer_triggered": 21,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -6,
+      "stderr_head": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  basic_string::substr: __pos (which is 4) > this->size() (which is 0)\n"
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==114647==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x503000000081 at pc 0x64b280ad893b bp 0x7ffd3c2abe80 sp 0x7ffd3c2abe70\nREAD of size 1 at 0x503000000081 thread T0\n    #0 0x64b280ad893a in main derived/cpp/llama/gen_3/00000_3/0175_1189_A._Keanu_Reeves.cpp:15\n    #1 0x75e13942a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x75e13942a28a in __libc_start_main_impl ../csu/libc-start.c"
+    },
+    {
+      "test_idx": 3,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 4,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -6,
+      "stderr_head": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  basic_string::substr: __pos (which is 2) > this->size() (which is 1)\n"
+    },
+    {
+      "test_idx": 5,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 6,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 7,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -6,
+      "stderr_head": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  basic_string::substr: __pos (which is 2) > this->size() (which is 0)\n"
+    },
+    {
+      "test_idx": 8,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -6,
+      "stderr_head": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  basic_string::substr: __pos (which is 4) > this->size() (which is 0)\n"
+    },
+    {
+      "test_idx": 9,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==114684==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x503000000111 at pc 0x5e790304493b bp 0x7ffc59653cd0 sp 0x7ffc59653cc0\nREAD of size 1 at 0x503000000111 thread T0\n    #0 0x5e790304493a in main derived/cpp/llama/gen_3/00000_3/0175_1189_A._Keanu_Reeves.cpp:15\n    #1 0x71d22b42a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x71d22b42a28a in __libc_start_main_impl ../csu/libc-start.c"
+    },
+    {
+      "test_idx": 10,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 11,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -6,
+      "stderr_head": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  basic_string::substr: __pos (which is 2) > this->size() (which is 0)\n"
+    },
+    {
+      "test_idx": 12,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -6,
+      "stderr_head": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  basic_string::substr: __pos (which is 6) > this->size() (which is 5)\n"
+    },
+    {
+      "test_idx": 13,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 14,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -6,
+      "stderr_head": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  basic_string::substr: __pos (which is 2) > this->size() (which is 0)\n"
+    },
+    {
+      "test_idx": 15,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 16,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 17,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -6,
+      "stderr_head": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  basic_string::substr: __pos (which is 4) > this->size() (which is 0)\n"
+    },
+    {
+      "test_idx": 18,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -6,
+      "stderr_head": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  basic_string::substr: __pos (which is 2) > this->size() (which is 0)\n"
+    },
+    {
+      "test_idx": 19,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -6,
+      "stderr_head": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  basic_string::substr: __pos (which is 2) > this->size() (which is 1)\n"
+    },
+    {
+      "test_idx": 20,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 21,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 22,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==114738==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5030000000ed at pc 0x5ad76071093b bp 0x7fff73d23a00 sp 0x7fff73d239f0\nREAD of size 1 at 0x5030000000ed thread T0\n    #0 0x5ad76071093a in main derived/cpp/llama/gen_3/00000_3/0175_1189_A._Keanu_Reeves.cpp:15\n    #1 0x781f86a2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x781f86a2a28a in __libc_start_main_impl ../csu/libc-start.c"
+    },
+    {
+      "test_idx": 23,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==114739==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5070000000df at pc 0x5685f10b193b bp 0x7ffdbd957390 sp 0x7ffdbd957380\nREAD of size 1 at 0x5070000000df thread T0\n    #0 0x5685f10b193a in main derived/cpp/llama/gen_3/00000_3/0175_1189_A._Keanu_Reeves.cpp:15\n    #1 0x774421a2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x774421a2a28a in __libc_start_main_impl ../csu/libc-start.c"
+    },
+    {
+      "test_idx": 24,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -6,
+      "stderr_head": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  basic_string::substr: __pos (which is 2) > this->size() (which is 0)\n"
+    },
+    {
+      "test_idx": 25,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -6,
+      "stderr_head": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  basic_string::substr: __pos (which is 2) > this->size() (which is 0)\n"
+    },
+    {
+      "test_idx": 26,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==114765==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x503000000113 at pc 0x603e0df6d93b bp 0x7ffca7cde130 sp 0x7ffca7cde120\nREAD of size 1 at 0x503000000113 thread T0\n    #0 0x603e0df6d93a in main derived/cpp/llama/gen_3/00000_3/0175_1189_A._Keanu_Reeves.cpp:15\n    #1 0x7ca45b62a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7ca45b62a28a in __libc_start_main_impl ../csu/libc-start.c"
+    },
+    {
+      "test_idx": 27,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 28,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -6,
+      "stderr_head": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  basic_string::substr: __pos (which is 4) > this->size() (which is 0)\n"
+    },
+    {
+      "test_idx": 29,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -6,
+      "stderr_head": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  basic_string::substr: __pos (which is 2) > this->size() (which is 0)\n"
+    },
+    {
+      "test_idx": 30,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 31,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==114787==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5040000000f6 at pc 0x629c55ae693b bp 0x7ffe408688f0 sp 0x7ffe408688e0\nREAD of size 1 at 0x5040000000f6 thread T0\n    #0 0x629c55ae693a in main derived/cpp/llama/gen_3/00000_3/0175_1189_A._Keanu_Reeves.cpp:15\n    #1 0x77407b62a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x77407b62a28a in __libc_start_main_impl ../csu/libc-start.c"
+    },
+    {
+      "test_idx": 32,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -6,
+      "stderr_head": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  basic_string::substr: __pos (which is 4) > this->size() (which is 0)\n"
+    },
+    {
+      "test_idx": 33,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "problem_key": "901_D_Weighting_a_Tree",
+  "shard": 2,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 8,
+  "n_passed": 1,
+  "n_sanitizer_triggered": 5,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==148550==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000078 at pc 0x61c675d23131 bp 0x7ffc3711e2e0 sp 0x7ffc3711e2d0\nWRITE of size 8 at 0x502000000078 thread T0\n    #0 0x61c675d23130 in operator() derived/cpp/qwen/gen_1/00002/0266_901_D._Weighting_a_Tree.cpp:27\n    #1 0x61c675d23130 in __invoke_impl<void, main()::<lambda(int)>&, int> /usr/include/c++/13/bits/invoke.h:61\n    #2 0x61c675d23130 in __invoke_r<voi"
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==148554==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x508000000080 at pc 0x5f3046438131 bp 0x7fffd4929b40 sp 0x7fffd4929b30\nWRITE of size 8 at 0x508000000080 thread T0\n    #0 0x5f3046438130 in operator() derived/cpp/qwen/gen_1/00002/0266_901_D._Weighting_a_Tree.cpp:27\n    #1 0x5f3046438130 in __invoke_impl<void, main()::<lambda(int)>&, int> /usr/include/c++/13/bits/invoke.h:61\n    #2 0x5f3046438130 in __invoke_r<voi"
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==148556==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50b0000000a8 at pc 0x5c04f5a12131 bp 0x7fff92458b10 sp 0x7fff92458b00\nWRITE of size 8 at 0x50b0000000a8 thread T0\n    #0 0x5c04f5a12130 in operator() derived/cpp/qwen/gen_1/00002/0266_901_D._Weighting_a_Tree.cpp:27\n    #1 0x5c04f5a12130 in __invoke_impl<void, main()::<lambda(int)>&, int> /usr/include/c++/13/bits/invoke.h:61\n    #2 0x5c04f5a12130 in __invoke_r<voi"
+    },
+    {
+      "test_idx": 3,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 4,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==148559==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000078 at pc 0x654edd6f7131 bp 0x7ffd4ad3a100 sp 0x7ffd4ad3a0f0\nWRITE of size 8 at 0x502000000078 thread T0\n    #0 0x654edd6f7130 in operator() derived/cpp/qwen/gen_1/00002/0266_901_D._Weighting_a_Tree.cpp:27\n    #1 0x654edd6f7130 in __invoke_impl<void, main()::<lambda(int)>&, int> /usr/include/c++/13/bits/invoke.h:61\n    #2 0x654edd6f7130 in __invoke_r<voi"
+    },
+    {
+      "test_idx": 5,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==148561==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x506000000058 at pc 0x5869bd078131 bp 0x7ffc322bfed0 sp 0x7ffc322bfec0\nWRITE of size 8 at 0x506000000058 thread T0\n    #0 0x5869bd078130 in operator() derived/cpp/qwen/gen_1/00002/0266_901_D._Weighting_a_Tree.cpp:27\n    #1 0x5869bd078130 in __invoke_impl<void, main()::<lambda(int)>&, int> /usr/include/c++/13/bits/invoke.h:61\n    #2 0x5869bd078130 in __invoke_r<voi"
+    },
+    {
+      "test_idx": 6,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 7,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "problem_key": "415_E_Mashmokh_and_Reverse_Operation",
+  "shard": 1,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 1,
+  "n_passed": 0,
+  "n_sanitizer_triggered": 1,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==159972==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000020 at pc 0x60ddd13af6d1 bp 0x7ffd053b4a90 sp 0x7ffd053b4a80\nREAD of size 4 at 0x502000000020 thread T0\n    #0 0x60ddd13af6d0 in std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<int> >, std::is_move_constructible<int>, std::is_move_assignable<int> >::value, void>::type std::swap<int>(int&, int&) /usr/include/c++/13/bits/move.h:197\n    #1 0x60d"
+    }
+  ]
+}

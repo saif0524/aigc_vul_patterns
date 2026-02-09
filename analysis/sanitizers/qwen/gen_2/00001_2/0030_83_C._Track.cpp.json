@@ -1,0 +1,355 @@
+{
+  "problem_key": "83_C_Track",
+  "shard": 1,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 30,
+  "n_passed": 17,
+  "n_sanitizer_triggered": 8,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "SEGV",
+    "heap-buffer-overflow",
+    "heap-use-after-free"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122",
+    "CWE-416",
+    "CWE-476"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==158557==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000001690 at pc 0x55ab25381433 bp 0x7fff5b1e5cb0 sp 0x7fff5b1e5ca0\nREAD of size 8 at 0x502000001690 thread T0\n    #0 0x55ab25381432 in std::_Bit_reference::operator bool() const /usr/include/c++/13/bits/stl_bvector.h:100\n    #1 0x55ab25381432 in main derived/cpp/qwen/gen_2/00001_2/0030_83_C._Track.cpp:58\n    #2 0x7940f0a2a1c9 in __libc_start_call_main ../sysde"
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 4,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 5,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 6,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 7,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 8,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 9,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 10,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 11,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==158573==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5020000044d0 at pc 0x59abfb532433 bp 0x7ffd679e2070 sp 0x7ffd679e2060\nREAD of size 8 at 0x5020000044d0 thread T0\n    #0 0x59abfb532432 in std::_Bit_reference::operator bool() const /usr/include/c++/13/bits/stl_bvector.h:100\n    #1 0x59abfb532432 in main derived/cpp/qwen/gen_2/00001_2/0030_83_C._Track.cpp:58\n    #2 0x744dac82a1c9 in __libc_start_call_main ../sysde"
+    },
+    {
+      "test_idx": 12,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 13,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 14,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 15,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 16,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 17,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==158583==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000b20 at pc 0x6167ec503433 bp 0x7ffd06c6ce20 sp 0x7ffd06c6ce10\nREAD of size 8 at 0x502000000b20 thread T0\n    #0 0x6167ec503432 in std::_Bit_reference::operator bool() const /usr/include/c++/13/bits/stl_bvector.h:100\n    #1 0x6167ec503432 in main derived/cpp/qwen/gen_2/00001_2/0030_83_C._Track.cpp:58\n    #2 0x78a767e2a1c9 in __libc_start_call_main ../sysde"
+    },
+    {
+      "test_idx": 18,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==158587==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000438 at pc 0x5f40b6920433 bp 0x7ffe0ab80c30 sp 0x7ffe0ab80c20\nREAD of size 8 at 0x502000000438 thread T0\n    #0 0x5f40b6920432 in std::_Bit_reference::operator bool() const /usr/include/c++/13/bits/stl_bvector.h:100\n    #1 0x5f40b6920432 in main derived/cpp/qwen/gen_2/00001_2/0030_83_C._Track.cpp:58\n    #2 0x7a13f242a1c9 in __libc_start_call_main ../sysde"
+    },
+    {
+      "test_idx": 19,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==158588==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000cd0 at pc 0x575c2fd03433 bp 0x7ffc36848420 sp 0x7ffc36848410\nREAD of size 8 at 0x502000000cd0 thread T0\n    #0 0x575c2fd03432 in std::_Bit_reference::operator bool() const /usr/include/c++/13/bits/stl_bvector.h:100\n    #1 0x575c2fd03432 in main derived/cpp/qwen/gen_2/00001_2/0030_83_C._Track.cpp:58\n    #2 0x7b2bd902a1c9 in __libc_start_call_main ../sysde"
+    },
+    {
+      "test_idx": 20,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 21,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 22,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==158607==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000898 at pc 0x5d0da9fbc433 bp 0x7ffe4cc66680 sp 0x7ffe4cc66670\nREAD of size 8 at 0x502000000898 thread T0\n    #0 0x5d0da9fbc432 in std::_Bit_reference::operator bool() const /usr/include/c++/13/bits/stl_bvector.h:100\n    #1 0x5d0da9fbc432 in main derived/cpp/qwen/gen_2/00001_2/0030_83_C._Track.cpp:58\n    #2 0x765d54e2a1c9 in __libc_start_call_main ../sysde"
+    },
+    {
+      "test_idx": 23,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 24,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-use-after-free"
+      ],
+      "sanitizer_cwes": [
+        "CWE-416"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==158629==ERROR: AddressSanitizer: heap-use-after-free on address 0x502000001a70 at pc 0x64e145f94433 bp 0x7ffe8efb7270 sp 0x7ffe8efb7260\nREAD of size 8 at 0x502000001a70 thread T0\n    #0 0x64e145f94432 in std::_Bit_reference::operator bool() const /usr/include/c++/13/bits/stl_bvector.h:100\n    #1 0x64e145f94432 in main derived/cpp/qwen/gen_2/00001_2/0030_83_C._Track.cpp:58\n    #2 0x748668e2a1c9 in __libc_start_call_main ../sysdep"
+    },
+    {
+      "test_idx": 25,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==158630==ERROR: AddressSanitizer: SEGV on unknown address 0x502000020e90 (pc 0x63183c97b2fb bp 0x7fff3c1c2640 sp 0x7fff3c1c1be0 T0)\n==158630==The signal is caused by a READ memory access.\n    #0 0x63183c97b2fb in std::_Bit_reference::operator bool() const /usr/include/c++/13/bits/stl_bvector.h:100\n    #1 0x63183c97b2fb in main derived/cpp/qwen/gen_2/00001_2/0030_83_C._Track.cpp:58\n    #2 0x76dbcbc2a1"
+    },
+    {
+      "test_idx": 26,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 27,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 28,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 29,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    }
+  ]
+}

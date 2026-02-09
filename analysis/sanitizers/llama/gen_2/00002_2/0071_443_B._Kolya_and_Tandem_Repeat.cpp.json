@@ -1,0 +1,359 @@
+{
+  "problem_key": "443_B_Kolya_and_Tandem_Repeat",
+  "shard": 2,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 31,
+  "n_passed": 3,
+  "n_sanitizer_triggered": 7,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow",
+    "stack-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-121",
+    "CWE-122"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 1,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 4,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 5,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 6,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 7,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 8,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 9,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 10,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 11,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==106185==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50300000005f at pc 0x5ac0bea63862 bp 0x7ffecbea21a0 sp 0x7ffecbea2190\nREAD of size 1 at 0x50300000005f thread T0\n    #0 0x5ac0bea63861 in main derived/cpp/llama/gen_2/00002_2/0071_443_B._Kolya_and_Tandem_Repeat.cpp:22\n    #1 0x79444c22a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x79444c22a28a in __libc_start_main_impl ../csu/li"
+    },
+    {
+      "test_idx": 12,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 13,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "stack-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-121"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==106221==ERROR: AddressSanitizer: stack-buffer-overflow on address 0x7e1c58a00060 at pc 0x5dd49456b862 bp 0x7fff62581d40 sp 0x7fff62581d30\nREAD of size 1 at 0x7e1c58a00060 thread T0\n    #0 0x5dd49456b861 in main derived/cpp/llama/gen_2/00002_2/0071_443_B._Kolya_and_Tandem_Repeat.cpp:22\n    #1 0x7e1c5aa2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7e1c5aa2a28a in __libc_start_main_impl ../csu/l"
+    },
+    {
+      "test_idx": 14,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==106254==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50300000005f at pc 0x64ff6ba59862 bp 0x7ffc7fc52230 sp 0x7ffc7fc52220\nREAD of size 1 at 0x50300000005f thread T0\n    #0 0x64ff6ba59861 in main derived/cpp/llama/gen_2/00002_2/0071_443_B._Kolya_and_Tandem_Repeat.cpp:22\n    #1 0x76b4c8a2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x76b4c8a2a28a in __libc_start_main_impl ../csu/li"
+    },
+    {
+      "test_idx": 15,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 16,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 17,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==106264==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50300000005f at pc 0x587eba341862 bp 0x7ffc5355b2f0 sp 0x7ffc5355b2e0\nREAD of size 1 at 0x50300000005f thread T0\n    #0 0x587eba341861 in main derived/cpp/llama/gen_2/00002_2/0071_443_B._Kolya_and_Tandem_Repeat.cpp:22\n    #1 0x7b6edaa2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7b6edaa2a28a in __libc_start_main_impl ../csu/li"
+    },
+    {
+      "test_idx": 18,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 19,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 20,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==106269==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50300000005f at pc 0x5d2d59b21862 bp 0x7ffc8cad50a0 sp 0x7ffc8cad5090\nREAD of size 1 at 0x50300000005f thread T0\n    #0 0x5d2d59b21861 in main derived/cpp/llama/gen_2/00002_2/0071_443_B._Kolya_and_Tandem_Repeat.cpp:22\n    #1 0x7c779bc2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7c779bc2a28a in __libc_start_main_impl ../csu/li"
+    },
+    {
+      "test_idx": 21,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 22,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 23,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 24,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 25,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==106276==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50300000005f at pc 0x57c938a22862 bp 0x7fff51493130 sp 0x7fff51493120\nREAD of size 1 at 0x50300000005f thread T0\n    #0 0x57c938a22861 in main derived/cpp/llama/gen_2/00002_2/0071_443_B._Kolya_and_Tandem_Repeat.cpp:22\n    #1 0x75700ae2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x75700ae2a28a in __libc_start_main_impl ../csu/li"
+    },
+    {
+      "test_idx": 26,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==106278==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50300000005f at pc 0x5c2b625db862 bp 0x7ffc555f1370 sp 0x7ffc555f1360\nREAD of size 1 at 0x50300000005f thread T0\n    #0 0x5c2b625db861 in main derived/cpp/llama/gen_2/00002_2/0071_443_B._Kolya_and_Tandem_Repeat.cpp:22\n    #1 0x741cc2a2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x741cc2a2a28a in __libc_start_main_impl ../csu/li"
+    },
+    {
+      "test_idx": 27,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 28,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 29,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 30,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    }
+  ]
+}

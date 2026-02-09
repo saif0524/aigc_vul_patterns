@@ -1,0 +1,183 @@
+{
+  "problem_key": "1131_E_String_Multiplication",
+  "shard": 1,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 14,
+  "n_passed": 7,
+  "n_sanitizer_triggered": 6,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "stack-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-121"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "stack-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-121"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==33770==ERROR: AddressSanitizer: stack-buffer-overflow on address 0x78ac7c200120 at pc 0x568c07931aba bp 0x7ffebb0af8f0 sp 0x7ffebb0af8e0\nREAD of size 1 at 0x78ac7c200120 thread T0\n    #0 0x568c07931ab9 in main derived/cpp/gemma/gen_1/00001/0224_1131_E._String_Multiplication.cpp:22\n    #1 0x78ac7e02a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x78ac7e02a28a in __libc_start_main_impl ../csu/libc-"
+    },
+    {
+      "test_idx": 1,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "stack-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-121"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==33773==ERROR: AddressSanitizer: stack-buffer-overflow on address 0x77bd93400120 at pc 0x58ea8be0daba bp 0x7ffc95213b10 sp 0x7ffc95213b00\nREAD of size 1 at 0x77bd93400120 thread T0\n    #0 0x58ea8be0dab9 in main derived/cpp/gemma/gen_1/00001/0224_1131_E._String_Multiplication.cpp:22\n    #1 0x77bd9522a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x77bd9522a28a in __libc_start_main_impl ../csu/libc-"
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "stack-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-121"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==33785==ERROR: AddressSanitizer: stack-buffer-overflow on address 0x7e8c58600120 at pc 0x60361719daba bp 0x7ffe34c15890 sp 0x7ffe34c15880\nREAD of size 1 at 0x7e8c58600120 thread T0\n    #0 0x60361719dab9 in main derived/cpp/gemma/gen_1/00001/0224_1131_E._String_Multiplication.cpp:22\n    #1 0x7e8c5a42a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7e8c5a42a28a in __libc_start_main_impl ../csu/libc-"
+    },
+    {
+      "test_idx": 4,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "stack-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-121"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==33786==ERROR: AddressSanitizer: stack-buffer-overflow on address 0x708947800120 at pc 0x61066f131aba bp 0x7ffe764e9ac0 sp 0x7ffe764e9ab0\nREAD of size 1 at 0x708947800120 thread T0\n    #0 0x61066f131ab9 in main derived/cpp/gemma/gen_1/00001/0224_1131_E._String_Multiplication.cpp:22\n    #1 0x70894962a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x70894962a28a in __libc_start_main_impl ../csu/libc-"
+    },
+    {
+      "test_idx": 5,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 6,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 7,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 8,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 9,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "stack-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-121"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==33791==ERROR: AddressSanitizer: stack-buffer-overflow on address 0x7c78be600120 at pc 0x55c7ecfe1aba bp 0x7ffc69b2ffd0 sp 0x7ffc69b2ffc0\nREAD of size 1 at 0x7c78be600120 thread T0\n    #0 0x55c7ecfe1ab9 in main derived/cpp/gemma/gen_1/00001/0224_1131_E._String_Multiplication.cpp:22\n    #1 0x7c78c042a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7c78c042a28a in __libc_start_main_impl ../csu/libc-"
+    },
+    {
+      "test_idx": 10,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 11,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "stack-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-121"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==33794==ERROR: AddressSanitizer: stack-buffer-overflow on address 0x711abfa00120 at pc 0x61108a7bfaba bp 0x7ffdec3cf540 sp 0x7ffdec3cf530\nREAD of size 1 at 0x711abfa00120 thread T0\n    #0 0x61108a7bfab9 in main derived/cpp/gemma/gen_1/00001/0224_1131_E._String_Multiplication.cpp:22\n    #1 0x711ac182a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x711ac182a28a in __libc_start_main_impl ../csu/libc-"
+    },
+    {
+      "test_idx": 12,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 13,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    }
+  ]
+}

@@ -1,0 +1,735 @@
+{
+  "problem_key": "401_E_Olympic_Games",
+  "shard": 1,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 59,
+  "n_passed": 0,
+  "n_sanitizer_triggered": 31,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow",
+    "signed integer overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122",
+    "CWE-190"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==120819==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x52c000007780 at pc 0x5896bc20ec57 bp 0x7ffd9850e810 sp 0x7ffd9850e800\nREAD of size 4 at 0x52c000007780 thread T0\n    #0 0x5896bc20ec56 in main derived/cpp/llama/gen_3/00001_3/0274_401_E._Olympic_Games.cpp:17\n    #1 0x704339e2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x704339e2a28a in __libc_start_main_impl ../csu/libc-start.c"
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==120820==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x72ac366ff27c at pc 0x61f780119c57 bp 0x7fff38efaa80 sp 0x7fff38efaa70\nREAD of size 4 at 0x72ac366ff27c thread T0\n    #0 0x61f780119c56 in main derived/cpp/llama/gen_3/00001_3/0274_401_E._Olympic_Games.cpp:17\n    #1 0x72ac3582a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x72ac3582a28a in __libc_start_main_impl ../csu/libc-start.c"
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==120821==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x52c000007108 at pc 0x55d4c919ec57 bp 0x7ffda953eb00 sp 0x7ffda953eaf0\nREAD of size 4 at 0x52c000007108 thread T0\n    #0 0x55d4c919ec56 in main derived/cpp/llama/gen_3/00001_3/0274_401_E._Olympic_Games.cpp:17\n    #1 0x77890522a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x77890522a28a in __libc_start_main_impl ../csu/libc-start.c"
+    },
+    {
+      "test_idx": 4,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 5,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "signed integer overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/llama/gen_3/00001_3/0274_401_E._Olympic_Games.cpp:19:24: runtime error: signed integer overflow: 99999 * 100000 cannot be represented in type 'int'\n"
+    },
+    {
+      "test_idx": 6,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "signed integer overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/llama/gen_3/00001_3/0274_401_E._Olympic_Games.cpp:19:24: runtime error: signed integer overflow: 99999 * 100000 cannot be represented in type 'int'\n"
+    },
+    {
+      "test_idx": 7,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==120825==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x53000000ea30 at pc 0x5e059a7b5c57 bp 0x7ffca9541950 sp 0x7ffca9541940\nREAD of size 4 at 0x53000000ea30 thread T0\n    #0 0x5e059a7b5c56 in main derived/cpp/llama/gen_3/00001_3/0274_401_E._Olympic_Games.cpp:17\n    #1 0x73364262a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x73364262a28a in __libc_start_main_impl ../csu/libc-start.c"
+    },
+    {
+      "test_idx": 8,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==120826==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x52e00000a4ac at pc 0x58c86f244c57 bp 0x7ffce360d6e0 sp 0x7ffce360d6d0\nREAD of size 4 at 0x52e00000a4ac thread T0\n    #0 0x58c86f244c56 in main derived/cpp/llama/gen_3/00001_3/0274_401_E._Olympic_Games.cpp:17\n    #1 0x77a81382a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x77a81382a28a in __libc_start_main_impl ../csu/libc-start.c"
+    },
+    {
+      "test_idx": 9,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 10,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 11,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 12,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 13,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==120831==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5180000003ac at pc 0x5f727cdcbc57 bp 0x7ffe0366a850 sp 0x7ffe0366a840\nREAD of size 4 at 0x5180000003ac thread T0\n    #0 0x5f727cdcbc56 in main derived/cpp/llama/gen_3/00001_3/0274_401_E._Olympic_Games.cpp:17\n    #1 0x776128a2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x776128a2a28a in __libc_start_main_impl ../csu/libc-start.c"
+    },
+    {
+      "test_idx": 14,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "signed integer overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/llama/gen_3/00001_3/0274_401_E._Olympic_Games.cpp:19:24: runtime error: signed integer overflow: 99998 * 99999 cannot be represented in type 'int'\n"
+    },
+    {
+      "test_idx": 15,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 16,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 17,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 18,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "signed integer overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/llama/gen_3/00001_3/0274_401_E._Olympic_Games.cpp:19:24: runtime error: signed integer overflow: 99999 * 100000 cannot be represented in type 'int'\n"
+    },
+    {
+      "test_idx": 19,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 20,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==120841==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x512000000160 at pc 0x5874c15cbc57 bp 0x7ffed0e004f0 sp 0x7ffed0e004e0\nREAD of size 4 at 0x512000000160 thread T0\n    #0 0x5874c15cbc56 in main derived/cpp/llama/gen_3/00001_3/0274_401_E._Olympic_Games.cpp:17\n    #1 0x706546c2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x706546c2a28a in __libc_start_main_impl ../csu/libc-start.c"
+    },
+    {
+      "test_idx": 21,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 22,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==120843==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50e0000000dc at pc 0x5a7c96340c57 bp 0x7ffdff7655a0 sp 0x7ffdff765590\nREAD of size 4 at 0x50e0000000dc thread T0\n    #0 0x5a7c96340c56 in main derived/cpp/llama/gen_3/00001_3/0274_401_E._Olympic_Games.cpp:17\n    #1 0x7b131aa2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7b131aa2a28a in __libc_start_main_impl ../csu/libc-start.c"
+    },
+    {
+      "test_idx": 23,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "signed integer overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/llama/gen_3/00001_3/0274_401_E._Olympic_Games.cpp:19:24: runtime error: signed integer overflow: 50004 * 50005 cannot be represented in type 'int'\n"
+    },
+    {
+      "test_idx": 24,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==120845==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5260000028e8 at pc 0x58f414ebbc57 bp 0x7fff56e2af90 sp 0x7fff56e2af80\nREAD of size 4 at 0x5260000028e8 thread T0\n    #0 0x58f414ebbc56 in main derived/cpp/llama/gen_3/00001_3/0274_401_E._Olympic_Games.cpp:17\n    #1 0x779c9982a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x779c9982a28a in __libc_start_main_impl ../csu/libc-start.c"
+    },
+    {
+      "test_idx": 25,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 26,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 27,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 28,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==120849==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x532000015e94 at pc 0x5d179e03ec57 bp 0x7ffc7efe36e0 sp 0x7ffc7efe36d0\nREAD of size 4 at 0x532000015e94 thread T0\n    #0 0x5d179e03ec56 in main derived/cpp/llama/gen_3/00001_3/0274_401_E._Olympic_Games.cpp:17\n    #1 0x74363b62a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x74363b62a28a in __libc_start_main_impl ../csu/libc-start.c"
+    },
+    {
+      "test_idx": 29,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==120850==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x528000003d68 at pc 0x5cd0a40a5c57 bp 0x7ffd6b37fc90 sp 0x7ffd6b37fc80\nREAD of size 4 at 0x528000003d68 thread T0\n    #0 0x5cd0a40a5c56 in main derived/cpp/llama/gen_3/00001_3/0274_401_E._Olympic_Games.cpp:17\n    #1 0x7a26c1a2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7a26c1a2a28a in __libc_start_main_impl ../csu/libc-start.c"
+    },
+    {
+      "test_idx": 30,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==120851==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x52c000007944 at pc 0x5dd46f8c3c57 bp 0x7ffc6fdca4b0 sp 0x7ffc6fdca4a0\nREAD of size 4 at 0x52c000007944 thread T0\n    #0 0x5dd46f8c3c56 in main derived/cpp/llama/gen_3/00001_3/0274_401_E._Olympic_Games.cpp:17\n    #1 0x71f7fe62a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x71f7fe62a28a in __libc_start_main_impl ../csu/libc-start.c"
+    },
+    {
+      "test_idx": 31,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 32,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 33,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==120854==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x528000003c88 at pc 0x5624c74bdc57 bp 0x7ffd9d1a2b90 sp 0x7ffd9d1a2b80\nREAD of size 4 at 0x528000003c88 thread T0\n    #0 0x5624c74bdc56 in main derived/cpp/llama/gen_3/00001_3/0274_401_E._Olympic_Games.cpp:17\n    #1 0x7f86baa2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7f86baa2a28a in __libc_start_main_impl ../csu/libc-start.c"
+    },
+    {
+      "test_idx": 34,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 35,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 36,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 37,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 38,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==120859==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5220000017f8 at pc 0x615c3dac5c57 bp 0x7ffcfbbbbd80 sp 0x7ffcfbbbbd70\nREAD of size 4 at 0x5220000017f8 thread T0\n    #0 0x615c3dac5c56 in main derived/cpp/llama/gen_3/00001_3/0274_401_E._Olympic_Games.cpp:17\n    #1 0x7e53a142a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7e53a142a28a in __libc_start_main_impl ../csu/libc-start.c"
+    },
+    {
+      "test_idx": 39,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 40,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 41,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 42,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 43,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==120864==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x51e000000ac0 at pc 0x567c6885ec57 bp 0x7fffd7eb5d20 sp 0x7fffd7eb5d10\nREAD of size 4 at 0x51e000000ac0 thread T0\n    #0 0x567c6885ec56 in main derived/cpp/llama/gen_3/00001_3/0274_401_E._Olympic_Games.cpp:17\n    #1 0x7ccefa42a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7ccefa42a28a in __libc_start_main_impl ../csu/libc-start.c"
+    },
+    {
+      "test_idx": 44,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==120865==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x529000004e64 at pc 0x6120e94ddc57 bp 0x7fff00789720 sp 0x7fff00789710\nREAD of size 4 at 0x529000004e64 thread T0\n    #0 0x6120e94ddc56 in main derived/cpp/llama/gen_3/00001_3/0274_401_E._Olympic_Games.cpp:17\n    #1 0x7a11a862a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7a11a862a28a in __libc_start_main_impl ../csu/libc-start.c"
+    },
+    {
+      "test_idx": 45,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==120866==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x53400001cef0 at pc 0x5a4156709c57 bp 0x7ffe86560d30 sp 0x7ffe86560d20\nREAD of size 4 at 0x53400001cef0 thread T0\n    #0 0x5a4156709c56 in main derived/cpp/llama/gen_3/00001_3/0274_401_E._Olympic_Games.cpp:17\n    #1 0x711bcf42a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x711bcf42a28a in __libc_start_main_impl ../csu/libc-start.c"
+    },
+    {
+      "test_idx": 46,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==120867==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x7a57cc2fdab4 at pc 0x5e4a7a70ac57 bp 0x7fffdf663dd0 sp 0x7fffdf663dc0\nREAD of size 4 at 0x7a57cc2fdab4 thread T0\n    #0 0x5e4a7a70ac56 in main derived/cpp/llama/gen_3/00001_3/0274_401_E._Olympic_Games.cpp:17\n    #1 0x7a57cb42a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7a57cb42a28a in __libc_start_main_impl ../csu/libc-start.c"
+    },
+    {
+      "test_idx": 47,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "signed integer overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/llama/gen_3/00001_3/0274_401_E._Olympic_Games.cpp:19:24: runtime error: signed integer overflow: 99999 * 100000 cannot be represented in type 'int'\n"
+    },
+    {
+      "test_idx": 48,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==120869==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x700dfbdff274 at pc 0x5bcba7c3cc57 bp 0x7ffcb9244800 sp 0x7ffcb92447f0\nREAD of size 4 at 0x700dfbdff274 thread T0\n    #0 0x5bcba7c3cc56 in main derived/cpp/llama/gen_3/00001_3/0274_401_E._Olympic_Games.cpp:17\n    #1 0x700dfb22a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x700dfb22a28a in __libc_start_main_impl ../csu/libc-start.c"
+    },
+    {
+      "test_idx": 49,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 50,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "signed integer overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/llama/gen_3/00001_3/0274_401_E._Olympic_Games.cpp:19:24: runtime error: signed integer overflow: 99999 * 100000 cannot be represented in type 'int'\n"
+    },
+    {
+      "test_idx": 51,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==120880==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x51a000000538 at pc 0x5df6d61a7c57 bp 0x7ffd52165b90 sp 0x7ffd52165b80\nREAD of size 4 at 0x51a000000538 thread T0\n    #0 0x5df6d61a7c56 in main derived/cpp/llama/gen_3/00001_3/0274_401_E._Olympic_Games.cpp:17\n    #1 0x754c4942a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x754c4942a28a in __libc_start_main_impl ../csu/libc-start.c"
+    },
+    {
+      "test_idx": 52,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==120881==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5210000026d8 at pc 0x5c0601439c57 bp 0x7fffda7257c0 sp 0x7fffda7257b0\nREAD of size 4 at 0x5210000026d8 thread T0\n    #0 0x5c0601439c56 in main derived/cpp/llama/gen_3/00001_3/0274_401_E._Olympic_Games.cpp:17\n    #1 0x74b81fa2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x74b81fa2a28a in __libc_start_main_impl ../csu/libc-start.c"
+    },
+    {
+      "test_idx": 53,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==120882==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x523000001998 at pc 0x56bfbc508c57 bp 0x7ffc565a17d0 sp 0x7ffc565a17c0\nREAD of size 4 at 0x523000001998 thread T0\n    #0 0x56bfbc508c56 in main derived/cpp/llama/gen_3/00001_3/0274_401_E._Olympic_Games.cpp:17\n    #1 0x7e707842a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7e707842a28a in __libc_start_main_impl ../csu/libc-start.c"
+    },
+    {
+      "test_idx": 54,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==120883==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x529000004980 at pc 0x5d97725f2c57 bp 0x7ffe52e451f0 sp 0x7ffe52e451e0\nREAD of size 4 at 0x529000004980 thread T0\n    #0 0x5d97725f2c56 in main derived/cpp/llama/gen_3/00001_3/0274_401_E._Olympic_Games.cpp:17\n    #1 0x7866d8a2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7866d8a2a28a in __libc_start_main_impl ../csu/libc-start.c"
+    },
+    {
+      "test_idx": 55,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 56,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==120885==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x529000004218 at pc 0x623941e6fc57 bp 0x7ffebcc485b0 sp 0x7ffebcc485a0\nREAD of size 4 at 0x529000004218 thread T0\n    #0 0x623941e6fc56 in main derived/cpp/llama/gen_3/00001_3/0274_401_E._Olympic_Games.cpp:17\n    #1 0x7f46e782a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7f46e782a28a in __libc_start_main_impl ../csu/libc-start.c"
+    },
+    {
+      "test_idx": 57,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 58,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    }
+  ]
+}

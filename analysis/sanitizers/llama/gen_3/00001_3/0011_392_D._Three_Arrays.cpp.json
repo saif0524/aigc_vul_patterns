@@ -1,0 +1,119 @@
+{
+  "problem_key": "392_D_Three_Arrays",
+  "shard": 1,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 8,
+  "n_passed": 3,
+  "n_sanitizer_triggered": 5,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==122640==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000054 at pc 0x5cb7f95e9dd9 bp 0x7fff6d11a740 sp 0x7fff6d11a730\nREAD of size 4 at 0x502000000054 thread T0\n    #0 0x5cb7f95e9dd8 in std::less<int>::operator()(int const&, int const&) const /usr/include/c++/13/bits/stl_function.h:408\n    #1 0x5cb7f95e9dd8 in std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_M_get_insert_uni"
+    },
+    {
+      "test_idx": 1,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 2,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==122653==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000054 at pc 0x5c9b2965add9 bp 0x7fff5daa8fd0 sp 0x7fff5daa8fc0\nREAD of size 4 at 0x502000000054 thread T0\n    #0 0x5c9b2965add8 in std::less<int>::operator()(int const&, int const&) const /usr/include/c++/13/bits/stl_function.h:408\n    #1 0x5c9b2965add8 in std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_M_get_insert_uni"
+    },
+    {
+      "test_idx": 4,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==122659==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000058 at pc 0x565af304add9 bp 0x7ffe11dddb80 sp 0x7ffe11dddb70\nREAD of size 4 at 0x502000000058 thread T0\n    #0 0x565af304add8 in std::less<int>::operator()(int const&, int const&) const /usr/include/c++/13/bits/stl_function.h:408\n    #1 0x565af304add8 in std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_M_get_insert_uni"
+    },
+    {
+      "test_idx": 5,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 6,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==122662==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000058 at pc 0x5fdb62ee2dd9 bp 0x7ffc084223c0 sp 0x7ffc084223b0\nREAD of size 4 at 0x502000000058 thread T0\n    #0 0x5fdb62ee2dd8 in std::less<int>::operator()(int const&, int const&) const /usr/include/c++/13/bits/stl_function.h:408\n    #1 0x5fdb62ee2dd8 in std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_M_get_insert_uni"
+    },
+    {
+      "test_idx": 7,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==122667==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50200000005c at pc 0x5ce7d5479dd9 bp 0x7ffdcfe39510 sp 0x7ffdcfe39500\nREAD of size 4 at 0x50200000005c thread T0\n    #0 0x5ce7d5479dd8 in std::less<int>::operator()(int const&, int const&) const /usr/include/c++/13/bits/stl_function.h:408\n    #1 0x5ce7d5479dd8 in std::_Rb_tree<int, int, std::_Identity<int>, std::less<int>, std::allocator<int> >::_M_get_insert_uni"
+    }
+  ]
+}

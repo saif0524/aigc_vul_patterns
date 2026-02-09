@@ -1,0 +1,183 @@
+{
+  "problem_key": "1131_E_String_Multiplication",
+  "shard": 1,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 14,
+  "n_passed": 7,
+  "n_sanitizer_triggered": 6,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "stack-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-121"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "stack-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-121"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==175094==ERROR: AddressSanitizer: stack-buffer-overflow on address 0x7aa2164000e0 at pc 0x56534e916a66 bp 0x7ffef0e023b0 sp 0x7ffef0e023a0\nREAD of size 1 at 0x7aa2164000e0 thread T0\n    #0 0x56534e916a65 in main derived/cpp/qwen/gen_3/00001_3/0222_1131_E._String_Multiplication.cpp:22\n    #1 0x7aa21822a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7aa21822a28a in __libc_start_main_impl ../csu/lib"
+    },
+    {
+      "test_idx": 1,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "stack-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-121"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==175096==ERROR: AddressSanitizer: stack-buffer-overflow on address 0x7099e3c000e0 at pc 0x55f37dfcea66 bp 0x7ffc0f59ab60 sp 0x7ffc0f59ab50\nREAD of size 1 at 0x7099e3c000e0 thread T0\n    #0 0x55f37dfcea65 in main derived/cpp/qwen/gen_3/00001_3/0222_1131_E._String_Multiplication.cpp:22\n    #1 0x7099e5a2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7099e5a2a28a in __libc_start_main_impl ../csu/lib"
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "stack-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-121"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==175097==ERROR: AddressSanitizer: stack-buffer-overflow on address 0x71f0d42000e0 at pc 0x5b1e7cfb7a66 bp 0x7ffdd3fbc490 sp 0x7ffdd3fbc480\nREAD of size 1 at 0x71f0d42000e0 thread T0\n    #0 0x5b1e7cfb7a65 in main derived/cpp/qwen/gen_3/00001_3/0222_1131_E._String_Multiplication.cpp:22\n    #1 0x71f0d602a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x71f0d602a28a in __libc_start_main_impl ../csu/lib"
+    },
+    {
+      "test_idx": 4,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "stack-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-121"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==175101==ERROR: AddressSanitizer: stack-buffer-overflow on address 0x79c648c000e0 at pc 0x6160c0648a66 bp 0x7ffcd1f3be20 sp 0x7ffcd1f3be10\nREAD of size 1 at 0x79c648c000e0 thread T0\n    #0 0x6160c0648a65 in main derived/cpp/qwen/gen_3/00001_3/0222_1131_E._String_Multiplication.cpp:22\n    #1 0x79c64aa2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x79c64aa2a28a in __libc_start_main_impl ../csu/lib"
+    },
+    {
+      "test_idx": 5,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 6,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 7,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 8,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 9,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "stack-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-121"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==175110==ERROR: AddressSanitizer: stack-buffer-overflow on address 0x7c8fa56000e0 at pc 0x612843db9a66 bp 0x7ffd0745bd00 sp 0x7ffd0745bcf0\nREAD of size 1 at 0x7c8fa56000e0 thread T0\n    #0 0x612843db9a65 in main derived/cpp/qwen/gen_3/00001_3/0222_1131_E._String_Multiplication.cpp:22\n    #1 0x7c8fa742a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7c8fa742a28a in __libc_start_main_impl ../csu/lib"
+    },
+    {
+      "test_idx": 10,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 11,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "stack-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-121"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==175113==ERROR: AddressSanitizer: stack-buffer-overflow on address 0x79d0d54000e0 at pc 0x6528bd4dca66 bp 0x7ffc28a48f90 sp 0x7ffc28a48f80\nREAD of size 1 at 0x79d0d54000e0 thread T0\n    #0 0x6528bd4dca65 in main derived/cpp/qwen/gen_3/00001_3/0222_1131_E._String_Multiplication.cpp:22\n    #1 0x79d0d722a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x79d0d722a28a in __libc_start_main_impl ../csu/lib"
+    },
+    {
+      "test_idx": 12,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 13,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    }
+  ]
+}

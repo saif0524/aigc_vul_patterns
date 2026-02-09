@@ -1,0 +1,63 @@
+{
+  "problem_key": "1342_C_Yet_Another_Counting_Problem",
+  "shard": 2,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 4,
+  "n_passed": 3,
+  "n_sanitizer_triggered": 1,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "signed integer overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-190"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 1,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 2,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "signed integer overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/llama/gen_3/00002_3/0227_1342_C._Yet_Another_Counting_Problem.cpp:34:42: runtime error: signed integer overflow: 999999999999800000 * 198800 cannot be represented in type 'long long int'\n"
+    }
+  ]
+}

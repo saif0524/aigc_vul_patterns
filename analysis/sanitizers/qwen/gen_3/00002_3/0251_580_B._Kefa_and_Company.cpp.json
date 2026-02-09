@@ -1,0 +1,165 @@
+{
+  "problem_key": "580_B_Kefa_and_Company",
+  "shard": 2,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 13,
+  "n_passed": 7,
+  "n_sanitizer_triggered": 4,
+  "n_timeout": 1,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "attempting free on"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-761"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 1,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 2,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "attempting free on"
+      ],
+      "sanitizer_cwes": [
+        "CWE-761"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==180463==ERROR: AddressSanitizer: attempting free on address which was not malloc()-ed: 0x7797fd8005d8 in thread T0\n    #0 0x7798004ff5e8 in operator delete(void*, unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:164\n    #1 0x5a420fcc3fe8 in std::__new_allocator<std::_Rb_tree_node<long long> >::deallocate(std::_Rb_tree_node<long long>*, unsigned long) /usr/include/c++/13/bits/new_allocator.h:172\n    #2 0x5a420"
+    },
+    {
+      "test_idx": 4,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "attempting free on"
+      ],
+      "sanitizer_cwes": [
+        "CWE-761"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==180464==ERROR: AddressSanitizer: attempting free on address which was not malloc()-ed: 0x7c15abe005d8 in thread T0\n    #0 0x7c15aeaff5e8 in operator delete(void*, unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:164\n    #1 0x5c1eb388ffe8 in std::__new_allocator<std::_Rb_tree_node<long long> >::deallocate(std::_Rb_tree_node<long long>*, unsigned long) /usr/include/c++/13/bits/new_allocator.h:172\n    #2 0x5c1eb"
+    },
+    {
+      "test_idx": 5,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 6,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "attempting free on"
+      ],
+      "sanitizer_cwes": [
+        "CWE-761"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==180474==ERROR: AddressSanitizer: attempting free on address which was not malloc()-ed: 0x70bf93a005d8 in thread T0\n    #0 0x70bf966ff5e8 in operator delete(void*, unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:164\n    #1 0x5ae32eb89fe8 in std::__new_allocator<std::_Rb_tree_node<long long> >::deallocate(std::_Rb_tree_node<long long>*, unsigned long) /usr/include/c++/13/bits/new_allocator.h:172\n    #2 0x5ae32"
+    },
+    {
+      "test_idx": 7,
+      "correct": false,
+      "timeout": true,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -1,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 8,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "attempting free on"
+      ],
+      "sanitizer_cwes": [
+        "CWE-761"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==180756==ERROR: AddressSanitizer: attempting free on address which was not malloc()-ed: 0x77f60ae005d8 in thread T0\n    #0 0x77f60daff5e8 in operator delete(void*, unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:164\n    #1 0x5929ff578fe8 in std::__new_allocator<std::_Rb_tree_node<long long> >::deallocate(std::_Rb_tree_node<long long>*, unsigned long) /usr/include/c++/13/bits/new_allocator.h:172\n    #2 0x5929f"
+    },
+    {
+      "test_idx": 9,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 10,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 11,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 12,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    }
+  ]
+}

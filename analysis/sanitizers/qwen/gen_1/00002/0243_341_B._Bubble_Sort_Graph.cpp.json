@@ -1,0 +1,71 @@
+{
+  "problem_key": "341_B_Bubble_Sort_Graph",
+  "shard": 2,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 4,
+  "n_passed": 0,
+  "n_sanitizer_triggered": 3,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==142939==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5140000003d4 at pc 0x5ae4953393ab bp 0x7ffca1a12610 sp 0x7ffca1a12600\nREAD of size 4 at 0x5140000003d4 thread T0\n    #0 0x5ae4953393aa in main derived/cpp/qwen/gen_1/00002/0243_341_B._Bubble_Sort_Graph.cpp:19\n    #1 0x78cbacc2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x78cbacc2a28a in __libc_start_main_impl ../csu/libc-start."
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==142949==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50400000007c at pc 0x599a3308e3ab bp 0x7ffde663f390 sp 0x7ffde663f380\nREAD of size 4 at 0x50400000007c thread T0\n    #0 0x599a3308e3aa in main derived/cpp/qwen/gen_1/00002/0243_341_B._Bubble_Sort_Graph.cpp:19\n    #1 0x71d0e922a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x71d0e922a28a in __libc_start_main_impl ../csu/libc-start."
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==142950==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x51100000024c at pc 0x5b175690b3ab bp 0x7ffe4a3cd9d0 sp 0x7ffe4a3cd9c0\nREAD of size 4 at 0x51100000024c thread T0\n    #0 0x5b175690b3aa in main derived/cpp/qwen/gen_1/00002/0243_341_B._Bubble_Sort_Graph.cpp:19\n    #1 0x78a18022a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x78a18022a28a in __libc_start_main_impl ../csu/libc-start."
+    }
+  ]
+}

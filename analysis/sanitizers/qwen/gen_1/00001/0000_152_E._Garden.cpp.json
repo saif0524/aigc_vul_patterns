@@ -1,0 +1,147 @@
+{
+  "problem_key": "152_E_Garden",
+  "shard": 1,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 9,
+  "n_passed": 0,
+  "n_sanitizer_triggered": 9,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow",
+    "index .* out of bounds"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122",
+    "CWE-125"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "index .* out of bounds"
+      ],
+      "sanitizer_cwes": [
+        "CWE-125"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/qwen/gen_1/00001/0000_152_E._Garden.cpp:102:26: runtime error: index -1 out of bounds for type 'int [4]'\n"
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "index .* out of bounds"
+      ],
+      "sanitizer_cwes": [
+        "CWE-125"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/qwen/gen_1/00001/0000_152_E._Garden.cpp:102:26: runtime error: index -1 out of bounds for type 'int [4]'\n"
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==136081==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000048 at pc 0x570aac3db8ef bp 0x7ffec43e0810 sp 0x7ffec43e0800\nREAD of size 4 at 0x502000000048 thread T0\n    #0 0x570aac3db8ee in main derived/cpp/qwen/gen_1/00001/0000_152_E._Garden.cpp:81\n    #1 0x7feaa122a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7feaa122a28a in __libc_start_main_impl ../csu/libc-start.c:360\n    #"
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "index .* out of bounds"
+      ],
+      "sanitizer_cwes": [
+        "CWE-125"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/qwen/gen_1/00001/0000_152_E._Garden.cpp:102:26: runtime error: index -1 out of bounds for type 'int [4]'\n"
+    },
+    {
+      "test_idx": 4,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "index .* out of bounds"
+      ],
+      "sanitizer_cwes": [
+        "CWE-125"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/qwen/gen_1/00001/0000_152_E._Garden.cpp:102:26: runtime error: index -1 out of bounds for type 'int [4]'\n"
+    },
+    {
+      "test_idx": 5,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "index .* out of bounds"
+      ],
+      "sanitizer_cwes": [
+        "CWE-125"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/qwen/gen_1/00001/0000_152_E._Garden.cpp:102:26: runtime error: index -1 out of bounds for type 'int [4]'\n"
+    },
+    {
+      "test_idx": 6,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "index .* out of bounds"
+      ],
+      "sanitizer_cwes": [
+        "CWE-125"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/qwen/gen_1/00001/0000_152_E._Garden.cpp:102:26: runtime error: index -1 out of bounds for type 'int [4]'\n"
+    },
+    {
+      "test_idx": 7,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "index .* out of bounds"
+      ],
+      "sanitizer_cwes": [
+        "CWE-125"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/qwen/gen_1/00001/0000_152_E._Garden.cpp:102:26: runtime error: index -1 out of bounds for type 'int [4]'\n"
+    },
+    {
+      "test_idx": 8,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "index .* out of bounds"
+      ],
+      "sanitizer_cwes": [
+        "CWE-125"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/qwen/gen_1/00001/0000_152_E._Garden.cpp:102:26: runtime error: index -1 out of bounds for type 'int [4]'\n"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "problem_key": "878_D_Magic_Breeding",
+  "shard": 2,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 4,
+  "n_passed": 1,
+  "n_sanitizer_triggered": 3,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==144496==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5070000000e8 at pc 0x644717b317ff bp 0x7ffee717b070 sp 0x7ffee717b060\nREAD of size 8 at 0x5070000000e8 thread T0\n    #0 0x644717b317fe in std::vector<long long, std::allocator<long long> >::capacity() const /usr/include/c++/13/bits/stl_vector.h:1079\n    #1 0x644717b317fe in std::vector<long long, std::allocator<long long> >::operator=(std::vector<long long, std::"
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==144497==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x508000000090 at pc 0x5d6da0af17ff bp 0x7ffce0599980 sp 0x7ffce0599970\nREAD of size 8 at 0x508000000090 thread T0\n    #0 0x5d6da0af17fe in std::vector<long long, std::allocator<long long> >::capacity() const /usr/include/c++/13/bits/stl_vector.h:1079\n    #1 0x5d6da0af17fe in std::vector<long long, std::allocator<long long> >::operator=(std::vector<long long, std::"
+    },
+    {
+      "test_idx": 2,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==144506==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50d0000000e0 at pc 0x61b8e780b7ff bp 0x7ffed9184690 sp 0x7ffed9184680\nREAD of size 8 at 0x50d0000000e0 thread T0\n    #0 0x61b8e780b7fe in std::vector<long long, std::allocator<long long> >::capacity() const /usr/include/c++/13/bits/stl_vector.h:1079\n    #1 0x61b8e780b7fe in std::vector<long long, std::allocator<long long> >::operator=(std::vector<long long, std::"
+    }
+  ]
+}

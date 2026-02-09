@@ -1,0 +1,14 @@
+{
+  "problem_key": "p00812_Equals_are_Equals",
+  "shard": 1,
+  "compiled": false,
+  "compile_error": "derived/cpp/qwen/gen_1/00001/0227_p00812_Equals_are_Equals.cpp: In member function \u2018void Polynomial::addTerm(const Term&)\u2019:\nderived/cpp/qwen/gen_1/00001/0227_p00812_Equals_are_Equals.cpp:41:32: error: no matching function for call to \u2018std::vector<Term>::erase(long int)\u2019\n   41 |                     terms.erase(&t - &terms[0]);\n      |                     ~~~~~~~~~~~^~~~~~~~~~~~~~~~\nIn file included from /usr/include/c++/13/vector:66,\n                 from derived/cpp/qwen/gen_1/00001/0227_p00812_Equals_are_Equals.cpp:3:\n/usr/include/c++/13/bits/stl_vector.h:1534:7: note: candidate: \u2018std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::erase(const_iterator) [with _Tp = Term; _Alloc = std::allocator<Term>; iterator = std::vector<Term>::iterator; const_iterator = std::vector<Term>::const_iterator]\u2019\n 1534 |       erase(const_iterator __position)\n      |       ^~~~~\n/usr/include/c++/13/bits/stl_vector.h:1534:28: note:   no known conversion for argument 1 from \u2018long int\u2019 to \u2018std::vect",
+  "n_tests": 0,
+  "n_passed": 0,
+  "n_sanitizer_triggered": 0,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": false,
+  "all_sanitizer_errors": [],
+  "all_sanitizer_cwes": [],
+  "per_test": []
+}

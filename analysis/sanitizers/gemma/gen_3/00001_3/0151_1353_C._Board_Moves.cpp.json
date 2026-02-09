@@ -1,0 +1,85 @@
+{
+  "problem_key": "1353_C_Board_Moves",
+  "shard": 1,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 5,
+  "n_passed": 0,
+  "n_sanitizer_triggered": 4,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "signed integer overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-190"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "signed integer overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/gemma/gen_3/00001_3/0151_1353_C._Board_Moves.cpp:21:20: runtime error: signed integer overflow: 69791 * 69791 cannot be represented in type 'int'\n"
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "signed integer overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/gemma/gen_3/00001_3/0151_1353_C._Board_Moves.cpp:21:20: runtime error: signed integer overflow: 214541 * 214541 cannot be represented in type 'int'\n"
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "signed integer overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/gemma/gen_3/00001_3/0151_1353_C._Board_Moves.cpp:21:20: runtime error: signed integer overflow: 499999 * 499999 cannot be represented in type 'int'\n"
+    },
+    {
+      "test_idx": 4,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "signed integer overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/gemma/gen_3/00001_3/0151_1353_C._Board_Moves.cpp:21:20: runtime error: signed integer overflow: 214145 * 214145 cannot be represented in type 'int'\n"
+    }
+  ]
+}

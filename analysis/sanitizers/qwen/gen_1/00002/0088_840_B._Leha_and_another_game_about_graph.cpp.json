@@ -1,0 +1,35 @@
+{
+  "problem_key": "840_B_Leha_and_another_game_about_graph",
+  "shard": 2,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 2,
+  "n_passed": 0,
+  "n_sanitizer_triggered": 1,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [],
+  "all_sanitizer_cwes": [],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==147985==ERROR: AddressSanitizer: stack-overflow on address 0x7ffdaa6c6fd8 (pc 0x611a216c18db bp 0x7ffdaa6c7110 sp 0x7ffdaa6c6fe0 T0)\n    #0 0x611a216c18db in dfs(int, int) derived/cpp/qwen/gen_1/00002/0088_840_B._Leha_and_another_game_about_graph.cpp:11\n    #1 0x611a216c1c47 in dfs(int, int) derived/cpp/qwen/gen_1/00002/0088_840_B._Leha_and_another_game_about_graph.cpp:16\n    #2 0x611a216c1c47 in df"
+    }
+  ]
+}

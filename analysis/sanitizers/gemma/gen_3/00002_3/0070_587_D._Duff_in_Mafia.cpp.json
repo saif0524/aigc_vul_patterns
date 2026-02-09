@@ -1,0 +1,61 @@
+{
+  "problem_key": "587_D_Duff_in_Mafia",
+  "shard": 2,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 3,
+  "n_passed": 0,
+  "n_sanitizer_triggered": 3,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "SEGV"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-476"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==68412==ERROR: AddressSanitizer: SEGV on unknown address 0x51f36698d638 (pc 0x5f2fff70e01d bp 0x7ffd49b9d300 sp 0x7ffd49b9ce40 T0)\n==68412==The signal is caused by a READ memory access.\n    #0 0x5f2fff70e01d in __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::__normal_iterator(std::pair<int, int>* const&) /usr/include/c++/13"
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==68413==ERROR: AddressSanitizer: SEGV on unknown address 0x51f1c614ba08 (pc 0x637cf620b01d bp 0x7ffd991db5d0 sp 0x7ffd991db110 T0)\n==68413==The signal is caused by a READ memory access.\n    #0 0x637cf620b01d in __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::__normal_iterator(std::pair<int, int>* const&) /usr/include/c++/13"
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==68414==ERROR: AddressSanitizer: SEGV on unknown address 0x51f50d6437c0 (pc 0x558f283ef01d bp 0x7ffd5162b8f0 sp 0x7ffd5162b430 T0)\n==68414==The signal is caused by a READ memory access.\n    #0 0x558f283ef01d in __gnu_cxx::__normal_iterator<std::pair<int, int>*, std::vector<std::pair<int, int>, std::allocator<std::pair<int, int> > > >::__normal_iterator(std::pair<int, int>* const&) /usr/include/c++/13"
+    }
+  ]
+}

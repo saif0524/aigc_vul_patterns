@@ -1,0 +1,53 @@
+{
+  "problem_key": "177_D1_Encrypting_Messages",
+  "shard": 2,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 3,
+  "n_passed": 0,
+  "n_sanitizer_triggered": 1,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==181325==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x508000000074 at pc 0x56eee33b2350 bp 0x7fff09cca530 sp 0x7fff09cca520\nREAD of size 4 at 0x508000000074 thread T0\n    #0 0x56eee33b234f in main derived/cpp/qwen/gen_3/00002_3/0146_177_D1._Encrypting_Messages.cpp:15\n    #1 0x79a77202a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x79a77202a28a in __libc_start_main_impl ../csu/libc-s"
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    }
+  ]
+}

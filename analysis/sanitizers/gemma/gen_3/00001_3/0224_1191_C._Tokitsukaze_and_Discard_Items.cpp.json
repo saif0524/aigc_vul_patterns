@@ -1,0 +1,205 @@
+{
+  "problem_key": "1191_C_Tokitsukaze_and_Discard_Items",
+  "shard": 1,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 19,
+  "n_passed": 11,
+  "n_sanitizer_triggered": 5,
+  "n_timeout": 3,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [],
+  "all_sanitizer_cwes": [],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 1,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==64533==ERROR: AddressSanitizer: requested allocation size 0x6f05b59d3b200000 (0x6f05b59d3b201000 after adjustments for alignment, red zones etc.) exceeds maximum supported size of 0x10000000000 (thread T0)\n    #0 0x7e189b8fe548 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:95\n    #1 0x5ef296b8cefd in std::__new_allocator<long long>::allocate(unsigned long, void const*) /usr/include/c++/13/b"
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==64534==ERROR: AddressSanitizer: requested allocation size 0x6f05b59d3b200000 (0x6f05b59d3b201000 after adjustments for alignment, red zones etc.) exceeds maximum supported size of 0x10000000000 (thread T0)\n    #0 0x785d058fe548 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:95\n    #1 0x5ed710eb5efd in std::__new_allocator<long long>::allocate(unsigned long, void const*) /usr/include/c++/13/b"
+    },
+    {
+      "test_idx": 4,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 5,
+      "correct": false,
+      "timeout": true,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -1,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 6,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==65358==ERROR: AddressSanitizer: requested allocation size 0x6f05b59d3b200000 (0x6f05b59d3b201000 after adjustments for alignment, red zones etc.) exceeds maximum supported size of 0x10000000000 (thread T0)\n    #0 0x74407defe548 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:95\n    #1 0x5bdf3b3e8efd in std::__new_allocator<long long>::allocate(unsigned long, void const*) /usr/include/c++/13/b"
+    },
+    {
+      "test_idx": 7,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 8,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 9,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 10,
+      "correct": false,
+      "timeout": true,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -1,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 11,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 12,
+      "correct": false,
+      "timeout": true,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -1,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 13,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 14,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 15,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==66212==ERROR: AddressSanitizer: requested allocation size 0x6f05b59d3b200000 (0x6f05b59d3b201000 after adjustments for alignment, red zones etc.) exceeds maximum supported size of 0x10000000000 (thread T0)\n    #0 0x7f55e6efe548 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:95\n    #1 0x5d813d674efd in std::__new_allocator<long long>::allocate(unsigned long, void const*) /usr/include/c++/13/b"
+    },
+    {
+      "test_idx": 16,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 17,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 18,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==66215==ERROR: AddressSanitizer: requested allocation size 0x6f05b59d3b200000 (0x6f05b59d3b201000 after adjustments for alignment, red zones etc.) exceeds maximum supported size of 0x10000000000 (thread T0)\n    #0 0x743a25efe548 in operator new(unsigned long) ../../../../src/libsanitizer/asan/asan_new_delete.cpp:95\n    #1 0x615a0fb15efd in std::__new_allocator<long long>::allocate(unsigned long, void const*) /usr/include/c++/13/b"
+    }
+  ]
+}

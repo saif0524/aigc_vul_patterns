@@ -1,0 +1,119 @@
+{
+  "problem_key": "388_C_Fox_and_Card_Game",
+  "shard": 2,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 8,
+  "n_passed": 1,
+  "n_sanitizer_triggered": 5,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==54406==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x504000000000 at pc 0x5f0cc62d6593 bp 0x7fff5151b8c0 sp 0x7fff5151b8b0\nREAD of size 8 at 0x504000000000 thread T0\n    #0 0x5f0cc62d6592 in __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::__normal_iterator(int* const&) /usr/include/c++/13/bits/stl_iterator.h:1077\n    #1 0x5f0cc62d6592 in std::vector<int, std::allocator<int> >::end() /usr"
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==54411==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x503000000030 at pc 0x61559f4ec593 bp 0x7ffc2a3674c0 sp 0x7ffc2a3674b0\nREAD of size 8 at 0x503000000030 thread T0\n    #0 0x61559f4ec592 in __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::__normal_iterator(int* const&) /usr/include/c++/13/bits/stl_iterator.h:1077\n    #1 0x61559f4ec592 in std::vector<int, std::allocator<int> >::end() /usr"
+    },
+    {
+      "test_idx": 4,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==54415==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50c000000030 at pc 0x5a049cee9593 bp 0x7ffece348050 sp 0x7ffece348040\nREAD of size 8 at 0x50c000000030 thread T0\n    #0 0x5a049cee9592 in __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::__normal_iterator(int* const&) /usr/include/c++/13/bits/stl_iterator.h:1077\n    #1 0x5a049cee9592 in std::vector<int, std::allocator<int> >::end() /usr"
+    },
+    {
+      "test_idx": 5,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 6,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==54417==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x507000000080 at pc 0x5fc13d480593 bp 0x7ffc08dbd5e0 sp 0x7ffc08dbd5d0\nREAD of size 8 at 0x507000000080 thread T0\n    #0 0x5fc13d480592 in __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::__normal_iterator(int* const&) /usr/include/c++/13/bits/stl_iterator.h:1077\n    #1 0x5fc13d480592 in std::vector<int, std::allocator<int> >::end() /usr"
+    },
+    {
+      "test_idx": 7,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==54418==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50c000000030 at pc 0x5e7d724f1593 bp 0x7ffffa605be0 sp 0x7ffffa605bd0\nREAD of size 8 at 0x50c000000030 thread T0\n    #0 0x5e7d724f1592 in __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >::__normal_iterator(int* const&) /usr/include/c++/13/bits/stl_iterator.h:1077\n    #1 0x5e7d724f1592 in std::vector<int, std::allocator<int> >::end() /usr"
+    }
+  ]
+}

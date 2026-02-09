@@ -1,0 +1,14 @@
+{
+  "problem_key": "p01083_RedBlue",
+  "shard": 0,
+  "compiled": false,
+  "compile_error": "derived/cpp/llama/gen_3/00000_3/0239_p01083_RedBlue.cpp: In function \u2018double distance(const Point&, const Point&)\u2019:\nderived/cpp/llama/gen_3/00000_3/0239_p01083_RedBlue.cpp:22:21: error: no match for \u2018operator-\u2019 (operand types are \u2018const Point\u2019 and \u2018const Point\u2019)\n   22 |     return sqrt((p1 - p2).norm());\n      |                  ~~ ^ ~~\n      |                  |    |\n      |                  |    const Point\n      |                  const Point\nderived/cpp/llama/gen_3/00000_3/0239_p01083_RedBlue.cpp:15:11: note: candidate: \u2018Point Point::operator-(const Point&)\u2019 (near match)\n   15 |     Point operator-(const Point& other) { return Point(x - other.x, y - other.y); }\n      |           ^~~~~~~~\nderived/cpp/llama/gen_3/00000_3/0239_p01083_RedBlue.cpp:15:11: note:   passing \u2018const Point*\u2019 as \u2018this\u2019 argument discards qualifiers\nIn file included from /usr/include/c++/13/string:48,\n                 from /usr/include/c++/13/bits/locale_classes.h:40,\n                 from /usr/include/c++/13/bit",
+  "n_tests": 0,
+  "n_passed": 0,
+  "n_sanitizer_triggered": 0,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": false,
+  "all_sanitizer_errors": [],
+  "all_sanitizer_cwes": [],
+  "per_test": []
+}

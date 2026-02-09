@@ -1,0 +1,33 @@
+{
+  "problem_key": "415_E_Mashmokh_and_Reverse_Operation",
+  "shard": 1,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 1,
+  "n_passed": 0,
+  "n_sanitizer_triggered": 1,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==64041==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000020 at pc 0x5eabd3b76362 bp 0x7fff01a10a40 sp 0x7fff01a10a30\nREAD of size 4 at 0x502000000020 thread T0\n    #0 0x5eabd3b76361 in void std::__new_allocator<int>::construct<int, int const&>(int*, int const&) /usr/include/c++/13/bits/new_allocator.h:191\n    #1 0x5eabd3b76361 in void std::allocator_traits<std::allocator<int> >::construct<int, int const&>(std:"
+    }
+  ]
+}

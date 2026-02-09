@@ -1,0 +1,43 @@
+{
+  "problem_key": "1406_A_Subset_Mex",
+  "shard": 2,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 2,
+  "n_passed": 0,
+  "n_sanitizer_triggered": 1,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==123139==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000038 at pc 0x59bfe6e9c4ff bp 0x7fffb67fdc50 sp 0x7fffb67fdc40\nREAD of size 4 at 0x502000000038 thread T0\n    #0 0x59bfe6e9c4fe in main derived/cpp/llama/gen_3/00002_3/0230_1406_A._Subset_Mex.cpp:30\n    #1 0x71590c42a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x71590c42a28a in __libc_start_main_impl ../csu/libc-start.c:3"
+    }
+  ]
+}

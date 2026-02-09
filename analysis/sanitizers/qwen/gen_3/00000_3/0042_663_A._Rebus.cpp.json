@@ -1,0 +1,373 @@
+{
+  "problem_key": "663_A_Rebus",
+  "shard": 0,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 29,
+  "n_passed": 2,
+  "n_sanitizer_triggered": 16,
+  "n_timeout": 4,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==167805==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50c000000240 at pc 0x634ece3eac1a bp 0x7fff96e57e80 sp 0x7fff96e57e70\nREAD of size 1 at 0x50c000000240 thread T0\n    #0 0x634ece3eac19 in main derived/cpp/qwen/gen_3/00000_3/0042_663_A._Rebus.cpp:72\n    #1 0x7cd196e2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7cd196e2a28a in __libc_start_main_impl ../csu/libc-start.c:360\n    "
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": true,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -1,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==169141==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50c000000240 at pc 0x5dfd8a22fc1a bp 0x7ffde2305820 sp 0x7ffde2305810\nREAD of size 1 at 0x50c000000240 thread T0\n    #0 0x5dfd8a22fc19 in main derived/cpp/qwen/gen_3/00000_3/0042_663_A._Rebus.cpp:72\n    #1 0x773fd522a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x773fd522a28a in __libc_start_main_impl ../csu/libc-start.c:360\n    "
+    },
+    {
+      "test_idx": 4,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==169145==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50c000000240 at pc 0x61ce646c9c1a bp 0x7fff21097a20 sp 0x7fff21097a10\nREAD of size 1 at 0x50c000000240 thread T0\n    #0 0x61ce646c9c19 in main derived/cpp/qwen/gen_3/00000_3/0042_663_A._Rebus.cpp:72\n    #1 0x783a19e2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x783a19e2a28a in __libc_start_main_impl ../csu/libc-start.c:360\n    "
+    },
+    {
+      "test_idx": 5,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==169149==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50c000000240 at pc 0x562e04789c1a bp 0x7ffd54769e00 sp 0x7ffd54769df0\nREAD of size 1 at 0x50c000000240 thread T0\n    #0 0x562e04789c19 in main derived/cpp/qwen/gen_3/00000_3/0042_663_A._Rebus.cpp:72\n    #1 0x733bc882a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x733bc882a28a in __libc_start_main_impl ../csu/libc-start.c:360\n    "
+    },
+    {
+      "test_idx": 6,
+      "correct": false,
+      "timeout": true,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -1,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 7,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 8,
+      "correct": false,
+      "timeout": true,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -1,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 9,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==170463==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5030000000c0 at pc 0x5edfa6baac1a bp 0x7fffdc737310 sp 0x7fffdc737300\nREAD of size 1 at 0x5030000000c0 thread T0\n    #0 0x5edfa6baac19 in main derived/cpp/qwen/gen_3/00000_3/0042_663_A._Rebus.cpp:72\n    #1 0x70a70902a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x70a70902a28a in __libc_start_main_impl ../csu/libc-start.c:360\n    "
+    },
+    {
+      "test_idx": 10,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==170464==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000100 at pc 0x60b8d2b8fc1a bp 0x7ffe9c7fc9c0 sp 0x7ffe9c7fc9b0\nREAD of size 1 at 0x502000000100 thread T0\n    #0 0x60b8d2b8fc19 in main derived/cpp/qwen/gen_3/00000_3/0042_663_A._Rebus.cpp:72\n    #1 0x710fdc42a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x710fdc42a28a in __libc_start_main_impl ../csu/libc-start.c:360\n    "
+    },
+    {
+      "test_idx": 11,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==170468==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50c000000240 at pc 0x5e7430614c1a bp 0x7ffc4e256910 sp 0x7ffc4e256900\nREAD of size 1 at 0x50c000000240 thread T0\n    #0 0x5e7430614c19 in main derived/cpp/qwen/gen_3/00000_3/0042_663_A._Rebus.cpp:72\n    #1 0x76baf9a2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x76baf9a2a28a in __libc_start_main_impl ../csu/libc-start.c:360\n    "
+    },
+    {
+      "test_idx": 12,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==170472==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000100 at pc 0x5dfc50c41c1a bp 0x7fff80a4e4f0 sp 0x7fff80a4e4e0\nREAD of size 1 at 0x502000000100 thread T0\n    #0 0x5dfc50c41c19 in main derived/cpp/qwen/gen_3/00000_3/0042_663_A._Rebus.cpp:72\n    #1 0x7d37b2e2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7d37b2e2a28a in __libc_start_main_impl ../csu/libc-start.c:360\n    "
+    },
+    {
+      "test_idx": 13,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 14,
+      "correct": false,
+      "timeout": true,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": -1,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 15,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==170944==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5020000000b4 at pc 0x614ba82b5c1a bp 0x7ffe47cf7710 sp 0x7ffe47cf7700\nREAD of size 1 at 0x5020000000b4 thread T0\n    #0 0x614ba82b5c19 in main derived/cpp/qwen/gen_3/00000_3/0042_663_A._Rebus.cpp:72\n    #1 0x7ac9a262a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7ac9a262a28a in __libc_start_main_impl ../csu/libc-start.c:360\n    "
+    },
+    {
+      "test_idx": 16,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 17,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==170972==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50c000000240 at pc 0x59ceda6bbc1a bp 0x7ffea450ab10 sp 0x7ffea450ab00\nREAD of size 1 at 0x50c000000240 thread T0\n    #0 0x59ceda6bbc19 in main derived/cpp/qwen/gen_3/00000_3/0042_663_A._Rebus.cpp:72\n    #1 0x73dfe862a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x73dfe862a28a in __libc_start_main_impl ../csu/libc-start.c:360\n    "
+    },
+    {
+      "test_idx": 18,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==170974==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50c000000240 at pc 0x55dfc6f73c1a bp 0x7fff29064ee0 sp 0x7fff29064ed0\nREAD of size 1 at 0x50c000000240 thread T0\n    #0 0x55dfc6f73c19 in main derived/cpp/qwen/gen_3/00000_3/0042_663_A._Rebus.cpp:72\n    #1 0x7855e482a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7855e482a28a in __libc_start_main_impl ../csu/libc-start.c:360\n    "
+    },
+    {
+      "test_idx": 19,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 20,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 21,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 22,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==170991==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5020000000b4 at pc 0x5dbf99189c1a bp 0x7ffdc6fe9990 sp 0x7ffdc6fe9980\nREAD of size 1 at 0x5020000000b4 thread T0\n    #0 0x5dbf99189c19 in main derived/cpp/qwen/gen_3/00000_3/0042_663_A._Rebus.cpp:72\n    #1 0x7536d862a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7536d862a28a in __libc_start_main_impl ../csu/libc-start.c:360\n    "
+    },
+    {
+      "test_idx": 23,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 24,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==170993==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50c000000240 at pc 0x624315869c1a bp 0x7ffe7a8e1a20 sp 0x7ffe7a8e1a10\nREAD of size 1 at 0x50c000000240 thread T0\n    #0 0x624315869c19 in main derived/cpp/qwen/gen_3/00000_3/0042_663_A._Rebus.cpp:72\n    #1 0x726f6682a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x726f6682a28a in __libc_start_main_impl ../csu/libc-start.c:360\n    "
+    },
+    {
+      "test_idx": 25,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 26,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==170995==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50c000000240 at pc 0x5fab61dcdc1a bp 0x7ffd5b831b70 sp 0x7ffd5b831b60\nREAD of size 1 at 0x50c000000240 thread T0\n    #0 0x5fab61dcdc19 in main derived/cpp/qwen/gen_3/00000_3/0042_663_A._Rebus.cpp:72\n    #1 0x7ffb47c2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7ffb47c2a28a in __libc_start_main_impl ../csu/libc-start.c:360\n    "
+    },
+    {
+      "test_idx": 27,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==171023==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000092 at pc 0x55de22071c1a bp 0x7ffebcebe000 sp 0x7ffebcebdff0\nREAD of size 1 at 0x502000000092 thread T0\n    #0 0x55de22071c19 in main derived/cpp/qwen/gen_3/00000_3/0042_663_A._Rebus.cpp:72\n    #1 0x7ce91722a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7ce91722a28a in __libc_start_main_impl ../csu/libc-start.c:360\n    "
+    },
+    {
+      "test_idx": 28,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==171024==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5020000000b4 at pc 0x55ef6a540c1a bp 0x7ffce2841c20 sp 0x7ffce2841c10\nREAD of size 1 at 0x5020000000b4 thread T0\n    #0 0x55ef6a540c19 in main derived/cpp/qwen/gen_3/00000_3/0042_663_A._Rebus.cpp:72\n    #1 0x77b65f42a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x77b65f42a28a in __libc_start_main_impl ../csu/libc-start.c:360\n    "
+    }
+  ]
+}

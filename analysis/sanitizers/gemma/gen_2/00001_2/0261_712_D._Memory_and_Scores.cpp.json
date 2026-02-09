@@ -1,0 +1,843 @@
+{
+  "problem_key": "712_D_Memory_and_Scores",
+  "shard": 1,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 64,
+  "n_passed": 3,
+  "n_sanitizer_triggered": 45,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "SEGV",
+    "heap-buffer-overflow",
+    "shift exponent"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122",
+    "CWE-190",
+    "CWE-476"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==44367==ERROR: AddressSanitizer: SEGV on unknown address 0x51b000065dc0 (pc 0x59c9af650f80 bp 0x7ffed2b002b0 sp 0x7ffed2b00110 T0)\n==44367==The signal is caused by a WRITE memory access.\n    #0 0x59c9af650f80 in main derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:34\n    #1 0x7e622d42a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7e622d42a28a in __"
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==44368==ERROR: AddressSanitizer: SEGV on unknown address 0x51b0000c3cd0 (pc 0x63de7ac8df80 bp 0x7fffa51f53f0 sp 0x7fffa51f5250 T0)\n==44368==The signal is caused by a WRITE memory access.\n    #0 0x63de7ac8df80 in main derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:34\n    #1 0x7f58fac2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7f58fac2a28a in __"
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==44369==ERROR: AddressSanitizer: SEGV on unknown address 0x51b0000238c0 (pc 0x5fcfb5c63f80 bp 0x7fffb67acdb0 sp 0x7fffb67acc10 T0)\n==44369==The signal is caused by a WRITE memory access.\n    #0 0x5fcfb5c63f80 in main derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:34\n    #1 0x79467c82a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x79467c82a28a in __"
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==44370==ERROR: AddressSanitizer: SEGV on unknown address 0x51b000035570 (pc 0x608c3c2abf80 bp 0x7ffffcce5ee0 sp 0x7ffffcce5d40 T0)\n==44370==The signal is caused by a WRITE memory access.\n    #0 0x608c3c2abf80 in main derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:34\n    #1 0x7e7d6e02a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7e7d6e02a28a in __"
+    },
+    {
+      "test_idx": 4,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==44371==ERROR: AddressSanitizer: SEGV on unknown address 0x51b00002e760 (pc 0x5555da7bcf80 bp 0x7ffdce9fe990 sp 0x7ffdce9fe7f0 T0)\n==44371==The signal is caused by a WRITE memory access.\n    #0 0x5555da7bcf80 in main derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:34\n    #1 0x70da2922a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x70da2922a28a in __"
+    },
+    {
+      "test_idx": 5,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "shift exponent"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:111:28: runtime error: shift exponent 51 is too large for 32-bit type 'int'\n"
+    },
+    {
+      "test_idx": 6,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==44373==ERROR: AddressSanitizer: SEGV on unknown address 0x51b0000b1be8 (pc 0x57fa3c3d9f80 bp 0x7ffe0dd295c0 sp 0x7ffe0dd29420 T0)\n==44373==The signal is caused by a WRITE memory access.\n    #0 0x57fa3c3d9f80 in main derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:34\n    #1 0x76cb29e2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x76cb29e2a28a in __"
+    },
+    {
+      "test_idx": 7,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "shift exponent"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:111:28: runtime error: shift exponent 49 is too large for 32-bit type 'int'\n"
+    },
+    {
+      "test_idx": 8,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 9,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==44376==ERROR: AddressSanitizer: SEGV on unknown address 0x51b000019860 (pc 0x602fe9264f80 bp 0x7ffc86011190 sp 0x7ffc86010ff0 T0)\n==44376==The signal is caused by a WRITE memory access.\n    #0 0x602fe9264f80 in main derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:34\n    #1 0x7d20b122a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7d20b122a28a in __"
+    },
+    {
+      "test_idx": 10,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 11,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 12,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 13,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==44380==ERROR: AddressSanitizer: SEGV on unknown address 0x51b00004b8e8 (pc 0x5bfa24386f80 bp 0x7ffe171bcbb0 sp 0x7ffe171bca10 T0)\n==44380==The signal is caused by a WRITE memory access.\n    #0 0x5bfa24386f80 in main derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:34\n    #1 0x7ec25542a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7ec25542a28a in __"
+    },
+    {
+      "test_idx": 14,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==44382==ERROR: AddressSanitizer: SEGV on unknown address 0x51b000029e40 (pc 0x5c8a06834f80 bp 0x7ffc14841a60 sp 0x7ffc148418c0 T0)\n==44382==The signal is caused by a WRITE memory access.\n    #0 0x5c8a06834f80 in main derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:34\n    #1 0x7a22d262a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7a22d262a28a in __"
+    },
+    {
+      "test_idx": 15,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 16,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==44384==ERROR: AddressSanitizer: SEGV on unknown address 0x51b00005b948 (pc 0x5e1bce48bf80 bp 0x7ffe43af0320 sp 0x7ffe43af0180 T0)\n==44384==The signal is caused by a WRITE memory access.\n    #0 0x5e1bce48bf80 in main derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:34\n    #1 0x7ce502c2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7ce502c2a28a in __"
+    },
+    {
+      "test_idx": 17,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==44385==ERROR: AddressSanitizer: SEGV on unknown address 0x51b00007fa40 (pc 0x64c74bf65f80 bp 0x7fff05f73e30 sp 0x7fff05f73c90 T0)\n==44385==The signal is caused by a WRITE memory access.\n    #0 0x64c74bf65f80 in main derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:34\n    #1 0x747e8782a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x747e8782a28a in __"
+    },
+    {
+      "test_idx": 18,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==44386==ERROR: AddressSanitizer: SEGV on unknown address 0x51b0000c3c88 (pc 0x62c9b05e6f80 bp 0x7fffbacbe740 sp 0x7fffbacbe5a0 T0)\n==44386==The signal is caused by a WRITE memory access.\n    #0 0x62c9b05e6f80 in main derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:34\n    #1 0x77b1a5e2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x77b1a5e2a28a in __"
+    },
+    {
+      "test_idx": 19,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==44387==ERROR: AddressSanitizer: SEGV on unknown address 0x51b000019c10 (pc 0x60d7b47eef80 bp 0x7ffd7b1d26d0 sp 0x7ffd7b1d2530 T0)\n==44387==The signal is caused by a WRITE memory access.\n    #0 0x60d7b47eef80 in main derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:34\n    #1 0x7a9983a2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7a9983a2a28a in __"
+    },
+    {
+      "test_idx": 20,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==44388==ERROR: AddressSanitizer: SEGV on unknown address 0x51b0000368e0 (pc 0x5e822347af80 bp 0x7ffd29082ab0 sp 0x7ffd29082910 T0)\n==44388==The signal is caused by a WRITE memory access.\n    #0 0x5e822347af80 in main derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:34\n    #1 0x7e927c42a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7e927c42a28a in __"
+    },
+    {
+      "test_idx": 21,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "shift exponent"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:111:28: runtime error: shift exponent 80 is too large for 32-bit type 'int'\n"
+    },
+    {
+      "test_idx": 22,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "shift exponent"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:111:28: runtime error: shift exponent 56 is too large for 32-bit type 'int'\n"
+    },
+    {
+      "test_idx": 23,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "shift exponent"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:111:28: runtime error: shift exponent 41 is too large for 32-bit type 'int'\n"
+    },
+    {
+      "test_idx": 24,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 25,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 26,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 27,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==44396==ERROR: AddressSanitizer: SEGV on unknown address 0x51b000038998 (pc 0x615dcaf5cf80 bp 0x7ffe794f7ce0 sp 0x7ffe794f7b40 T0)\n==44396==The signal is caused by a WRITE memory access.\n    #0 0x615dcaf5cf80 in main derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:34\n    #1 0x78354d42a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x78354d42a28a in __"
+    },
+    {
+      "test_idx": 28,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 29,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==44398==ERROR: AddressSanitizer: SEGV on unknown address 0x51b00004f678 (pc 0x5d036faf8f80 bp 0x7ffe70d6e7e0 sp 0x7ffe70d6e640 T0)\n==44398==The signal is caused by a WRITE memory access.\n    #0 0x5d036faf8f80 in main derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:34\n    #1 0x7b6f3c02a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7b6f3c02a28a in __"
+    },
+    {
+      "test_idx": 30,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 31,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==44400==ERROR: AddressSanitizer: SEGV on unknown address 0x51b000012698 (pc 0x62700b856f80 bp 0x7ffe3d077680 sp 0x7ffe3d0774e0 T0)\n==44400==The signal is caused by a WRITE memory access.\n    #0 0x62700b856f80 in main derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:34\n    #1 0x7536fec2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7536fec2a28a in __"
+    },
+    {
+      "test_idx": 32,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 33,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 34,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==44403==ERROR: AddressSanitizer: SEGV on unknown address 0x51b00007c7f0 (pc 0x56bd31dabf80 bp 0x7ffeb393e720 sp 0x7ffeb393e580 T0)\n==44403==The signal is caused by a WRITE memory access.\n    #0 0x56bd31dabf80 in main derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:34\n    #1 0x7d7913e2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7d7913e2a28a in __"
+    },
+    {
+      "test_idx": 35,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==44404==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x51b00000f040 at pc 0x585a88afbfba bp 0x7ffd6ce7d800 sp 0x7ffd6ce7d7f0\nWRITE of size 8 at 0x51b00000f040 thread T0\n    #0 0x585a88afbfb9 in main derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:34\n    #1 0x73f5ef22a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x73f5ef22a28a in __libc_start_main_impl ../csu/libc-sta"
+    },
+    {
+      "test_idx": 36,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==44405==ERROR: AddressSanitizer: SEGV on unknown address 0x51b0000964d8 (pc 0x6172b509bf80 bp 0x7ffeb9254320 sp 0x7ffeb9254180 T0)\n==44405==The signal is caused by a WRITE memory access.\n    #0 0x6172b509bf80 in main derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:34\n    #1 0x74d07302a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x74d07302a28a in __"
+    },
+    {
+      "test_idx": 37,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==44406==ERROR: AddressSanitizer: SEGV on unknown address 0x51b0000c3fa0 (pc 0x618c54789f80 bp 0x7ffebc4cb820 sp 0x7ffebc4cb680 T0)\n==44406==The signal is caused by a WRITE memory access.\n    #0 0x618c54789f80 in main derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:34\n    #1 0x73d90662a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x73d90662a28a in __"
+    },
+    {
+      "test_idx": 38,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==44407==ERROR: AddressSanitizer: SEGV on unknown address 0x51b0000c3fa0 (pc 0x62dfde7f3f80 bp 0x7fff57d37890 sp 0x7fff57d376f0 T0)\n==44407==The signal is caused by a WRITE memory access.\n    #0 0x62dfde7f3f80 in main derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:34\n    #1 0x79443d82a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x79443d82a28a in __"
+    },
+    {
+      "test_idx": 39,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==44408==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x51b00001fe38 at pc 0x60c273d73fba bp 0x7ffd424c2da0 sp 0x7ffd424c2d90\nWRITE of size 8 at 0x51b00001fe38 thread T0\n    #0 0x60c273d73fb9 in main derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:34\n    #1 0x72ffb542a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x72ffb542a28a in __libc_start_main_impl ../csu/libc-sta"
+    },
+    {
+      "test_idx": 40,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==44409==ERROR: AddressSanitizer: SEGV on unknown address 0x51b00002a778 (pc 0x5cfc2f560f80 bp 0x7ffe442d42f0 sp 0x7ffe442d4150 T0)\n==44409==The signal is caused by a WRITE memory access.\n    #0 0x5cfc2f560f80 in main derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:34\n    #1 0x78590222a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x78590222a28a in __"
+    },
+    {
+      "test_idx": 41,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 42,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 43,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==44412==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x51b000009170 at pc 0x5c193a660fba bp 0x7fff8041cb50 sp 0x7fff8041cb40\nWRITE of size 8 at 0x51b000009170 thread T0\n    #0 0x5c193a660fb9 in main derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:34\n    #1 0x7ff79622a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7ff79622a28a in __libc_start_main_impl ../csu/libc-sta"
+    },
+    {
+      "test_idx": 44,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==44413==ERROR: AddressSanitizer: SEGV on unknown address 0x51b0000c3c88 (pc 0x5695a02bef80 bp 0x7ffc013b7560 sp 0x7ffc013b73c0 T0)\n==44413==The signal is caused by a WRITE memory access.\n    #0 0x5695a02bef80 in main derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:34\n    #1 0x788c9862a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x788c9862a28a in __"
+    },
+    {
+      "test_idx": 45,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 46,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==44415==ERROR: AddressSanitizer: SEGV on unknown address 0x51b000023458 (pc 0x5c60e27e2f80 bp 0x7ffd951725d0 sp 0x7ffd95172430 T0)\n==44415==The signal is caused by a WRITE memory access.\n    #0 0x5c60e27e2f80 in main derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:34\n    #1 0x7b597ca2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7b597ca2a28a in __"
+    },
+    {
+      "test_idx": 47,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "shift exponent"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:111:28: runtime error: shift exponent 42 is too large for 32-bit type 'int'\n"
+    },
+    {
+      "test_idx": 48,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==44417==ERROR: AddressSanitizer: SEGV on unknown address 0x51b00004a528 (pc 0x60791e58ef80 bp 0x7fff75e01a40 sp 0x7fff75e018a0 T0)\n==44417==The signal is caused by a WRITE memory access.\n    #0 0x60791e58ef80 in main derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:34\n    #1 0x7e728842a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7e728842a28a in __"
+    },
+    {
+      "test_idx": 49,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 50,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==44419==ERROR: AddressSanitizer: SEGV on unknown address 0x51b000026128 (pc 0x6012d458ef80 bp 0x7fffbcd54d10 sp 0x7fffbcd54b70 T0)\n==44419==The signal is caused by a WRITE memory access.\n    #0 0x6012d458ef80 in main derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:34\n    #1 0x79de2202a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x79de2202a28a in __"
+    },
+    {
+      "test_idx": 51,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==44420==ERROR: AddressSanitizer: SEGV on unknown address 0x51b000012410 (pc 0x5cbc8a39cf80 bp 0x7ffd294e25b0 sp 0x7ffd294e2410 T0)\n==44420==The signal is caused by a WRITE memory access.\n    #0 0x5cbc8a39cf80 in main derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:34\n    #1 0x723380c2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x723380c2a28a in __"
+    },
+    {
+      "test_idx": 52,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "shift exponent"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:111:28: runtime error: shift exponent 42 is too large for 32-bit type 'int'\n"
+    },
+    {
+      "test_idx": 53,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "shift exponent"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:111:28: runtime error: shift exponent 79 is too large for 32-bit type 'int'\n"
+    },
+    {
+      "test_idx": 54,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==44423==ERROR: AddressSanitizer: SEGV on unknown address 0x51b00005ba40 (pc 0x56d68cd28f80 bp 0x7ffc55e00b10 sp 0x7ffc55e00970 T0)\n==44423==The signal is caused by a WRITE memory access.\n    #0 0x56d68cd28f80 in main derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:34\n    #1 0x78aa5d42a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x78aa5d42a28a in __"
+    },
+    {
+      "test_idx": 55,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==44424==ERROR: AddressSanitizer: SEGV on unknown address 0x51b00004d320 (pc 0x626eef663f80 bp 0x7ffe57e76ec0 sp 0x7ffe57e76d20 T0)\n==44424==The signal is caused by a WRITE memory access.\n    #0 0x626eef663f80 in main derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:34\n    #1 0x7939fca2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7939fca2a28a in __"
+    },
+    {
+      "test_idx": 56,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==44425==ERROR: AddressSanitizer: SEGV on unknown address 0x51b00001d3c0 (pc 0x5ec4e5e79f80 bp 0x7ffd509ae5c0 sp 0x7ffd509ae420 T0)\n==44425==The signal is caused by a WRITE memory access.\n    #0 0x5ec4e5e79f80 in main derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:34\n    #1 0x7c94aa22a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7c94aa22a28a in __"
+    },
+    {
+      "test_idx": 57,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 58,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 59,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==44428==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x51b00000e7a8 at pc 0x5a99fe302fba bp 0x7ffc5e6f2260 sp 0x7ffc5e6f2250\nWRITE of size 8 at 0x51b00000e7a8 thread T0\n    #0 0x5a99fe302fb9 in main derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:34\n    #1 0x755fcde2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x755fcde2a28a in __libc_start_main_impl ../csu/libc-sta"
+    },
+    {
+      "test_idx": 60,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 61,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==44430==ERROR: AddressSanitizer: SEGV on unknown address 0x51b0000218e8 (pc 0x5b0c85e7bf80 bp 0x7ffc2e20d8a0 sp 0x7ffc2e20d700 T0)\n==44430==The signal is caused by a WRITE memory access.\n    #0 0x5b0c85e7bf80 in main derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:34\n    #1 0x7c7f37a2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7c7f37a2a28a in __"
+    },
+    {
+      "test_idx": 62,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==44431==ERROR: AddressSanitizer: SEGV on unknown address 0x51b000052540 (pc 0x5620416f8f80 bp 0x7fffcfcba460 sp 0x7fffcfcba2c0 T0)\n==44431==The signal is caused by a WRITE memory access.\n    #0 0x5620416f8f80 in main derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:34\n    #1 0x723cbd02a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x723cbd02a28a in __"
+    },
+    {
+      "test_idx": 63,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==44432==ERROR: AddressSanitizer: SEGV on unknown address 0x51b0000c3c88 (pc 0x6115ec642f80 bp 0x7ffc5ab0a700 sp 0x7ffc5ab0a560 T0)\n==44432==The signal is caused by a WRITE memory access.\n    #0 0x6115ec642f80 in main derived/cpp/gemma/gen_2/00001_2/0261_712_D._Memory_and_Scores.cpp:34\n    #1 0x73839d22a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x73839d22a28a in __"
+    }
+  ]
+}

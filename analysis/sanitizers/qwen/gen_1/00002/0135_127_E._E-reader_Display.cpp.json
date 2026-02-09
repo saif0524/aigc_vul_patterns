@@ -1,0 +1,295 @@
+{
+  "problem_key": "127_E_E-reader_Display",
+  "shard": 2,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 22,
+  "n_passed": 0,
+  "n_sanitizer_triggered": 14,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==143294==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x514000000018 at pc 0x581c2e234710 bp 0x7ffc6cea03b0 sp 0x7ffc6cea03a0\nREAD of size 8 at 0x514000000018 thread T0\n    #0 0x581c2e23470f in std::vector<bool, std::allocator<bool> >::begin() /usr/include/c++/13/bits/stl_bvector.h:996\n    #1 0x581c2e23470f in std::vector<bool, std::allocator<bool> >::operator[](unsigned long) /usr/include/c++/13/bits/stl_bvector.h:10"
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==143295==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x514000000018 at pc 0x59da81840710 bp 0x7fff82c45f70 sp 0x7fff82c45f60\nREAD of size 8 at 0x514000000018 thread T0\n    #0 0x59da8184070f in std::vector<bool, std::allocator<bool> >::begin() /usr/include/c++/13/bits/stl_bvector.h:996\n    #1 0x59da8184070f in std::vector<bool, std::allocator<bool> >::operator[](unsigned long) /usr/include/c++/13/bits/stl_bvector.h:10"
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 4,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 5,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==143301==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x514000000018 at pc 0x58c33b259710 bp 0x7ffd04817350 sp 0x7ffd04817340\nREAD of size 8 at 0x514000000018 thread T0\n    #0 0x58c33b25970f in std::vector<bool, std::allocator<bool> >::begin() /usr/include/c++/13/bits/stl_bvector.h:996\n    #1 0x58c33b25970f in std::vector<bool, std::allocator<bool> >::operator[](unsigned long) /usr/include/c++/13/bits/stl_bvector.h:10"
+    },
+    {
+      "test_idx": 6,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==143333==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50c000000018 at pc 0x61f5f3251710 bp 0x7ffc4c3c4b10 sp 0x7ffc4c3c4b00\nREAD of size 8 at 0x50c000000018 thread T0\n    #0 0x61f5f325170f in std::vector<bool, std::allocator<bool> >::begin() /usr/include/c++/13/bits/stl_bvector.h:996\n    #1 0x61f5f325170f in std::vector<bool, std::allocator<bool> >::operator[](unsigned long) /usr/include/c++/13/bits/stl_bvector.h:10"
+    },
+    {
+      "test_idx": 7,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==143354==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x511000000018 at pc 0x5f1a04310710 bp 0x7fff5efbbb10 sp 0x7fff5efbbb00\nREAD of size 8 at 0x511000000018 thread T0\n    #0 0x5f1a0431070f in std::vector<bool, std::allocator<bool> >::begin() /usr/include/c++/13/bits/stl_bvector.h:996\n    #1 0x5f1a0431070f in std::vector<bool, std::allocator<bool> >::operator[](unsigned long) /usr/include/c++/13/bits/stl_bvector.h:10"
+    },
+    {
+      "test_idx": 8,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==143355==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000068 at pc 0x55ce079c1fec bp 0x7ffd8ed60100 sp 0x7ffd8ed600f0\nREAD of size 8 at 0x502000000068 thread T0\n    #0 0x55ce079c1feb in std::_Bit_reference::operator bool() const /usr/include/c++/13/bits/stl_bvector.h:100\n    #1 0x55ce079c1feb in main derived/cpp/qwen/gen_1/00002/0135_127_E._E-reader_Display.cpp:23\n    #2 0x76666482a1c9 in __libc_start_call_mai"
+    },
+    {
+      "test_idx": 9,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==143356==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50c000000018 at pc 0x5ae30dea3710 bp 0x7ffd8bee3030 sp 0x7ffd8bee3020\nREAD of size 8 at 0x50c000000018 thread T0\n    #0 0x5ae30dea370f in std::vector<bool, std::allocator<bool> >::begin() /usr/include/c++/13/bits/stl_bvector.h:996\n    #1 0x5ae30dea370f in std::vector<bool, std::allocator<bool> >::operator[](unsigned long) /usr/include/c++/13/bits/stl_bvector.h:10"
+    },
+    {
+      "test_idx": 10,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 11,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==143358==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50e000000018 at pc 0x5c815fecd710 bp 0x7ffd15484690 sp 0x7ffd15484680\nREAD of size 8 at 0x50e000000018 thread T0\n    #0 0x5c815fecd70f in std::vector<bool, std::allocator<bool> >::begin() /usr/include/c++/13/bits/stl_bvector.h:996\n    #1 0x5c815fecd70f in std::vector<bool, std::allocator<bool> >::operator[](unsigned long) /usr/include/c++/13/bits/stl_bvector.h:10"
+    },
+    {
+      "test_idx": 12,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==143359==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x514000000018 at pc 0x5c74e0a05710 bp 0x7ffe23901930 sp 0x7ffe23901920\nREAD of size 8 at 0x514000000018 thread T0\n    #0 0x5c74e0a0570f in std::vector<bool, std::allocator<bool> >::begin() /usr/include/c++/13/bits/stl_bvector.h:996\n    #1 0x5c74e0a0570f in std::vector<bool, std::allocator<bool> >::operator[](unsigned long) /usr/include/c++/13/bits/stl_bvector.h:10"
+    },
+    {
+      "test_idx": 13,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==143360==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x511000000018 at pc 0x5d33377b5710 bp 0x7ffc0d1d5ec0 sp 0x7ffc0d1d5eb0\nREAD of size 8 at 0x511000000018 thread T0\n    #0 0x5d33377b570f in std::vector<bool, std::allocator<bool> >::begin() /usr/include/c++/13/bits/stl_bvector.h:996\n    #1 0x5d33377b570f in std::vector<bool, std::allocator<bool> >::operator[](unsigned long) /usr/include/c++/13/bits/stl_bvector.h:10"
+    },
+    {
+      "test_idx": 14,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==143361==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x511000000018 at pc 0x5e5204aa8710 bp 0x7ffcbc58b830 sp 0x7ffcbc58b820\nREAD of size 8 at 0x511000000018 thread T0\n    #0 0x5e5204aa870f in std::vector<bool, std::allocator<bool> >::begin() /usr/include/c++/13/bits/stl_bvector.h:996\n    #1 0x5e5204aa870f in std::vector<bool, std::allocator<bool> >::operator[](unsigned long) /usr/include/c++/13/bits/stl_bvector.h:10"
+    },
+    {
+      "test_idx": 15,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 16,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==143363==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000048 at pc 0x6007973d4fec bp 0x7ffc72f0b850 sp 0x7ffc72f0b840\nREAD of size 8 at 0x502000000048 thread T0\n    #0 0x6007973d4feb in std::_Bit_reference::operator bool() const /usr/include/c++/13/bits/stl_bvector.h:100\n    #1 0x6007973d4feb in main derived/cpp/qwen/gen_1/00002/0135_127_E._E-reader_Display.cpp:23\n    #2 0x764e2da2a1c9 in __libc_start_call_mai"
+    },
+    {
+      "test_idx": 17,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==143364==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x507000000068 at pc 0x61bf5dee4710 bp 0x7ffcb5e1efd0 sp 0x7ffcb5e1efc0\nREAD of size 8 at 0x507000000068 thread T0\n    #0 0x61bf5dee470f in std::vector<bool, std::allocator<bool> >::begin() /usr/include/c++/13/bits/stl_bvector.h:996\n    #1 0x61bf5dee470f in std::vector<bool, std::allocator<bool> >::operator[](unsigned long) /usr/include/c++/13/bits/stl_bvector.h:10"
+    },
+    {
+      "test_idx": 18,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 19,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 20,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==143367==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x512000000018 at pc 0x63c9519d0710 bp 0x7ffe75a184c0 sp 0x7ffe75a184b0\nREAD of size 8 at 0x512000000018 thread T0\n    #0 0x63c9519d070f in std::vector<bool, std::allocator<bool> >::begin() /usr/include/c++/13/bits/stl_bvector.h:996\n    #1 0x63c9519d070f in std::vector<bool, std::allocator<bool> >::operator[](unsigned long) /usr/include/c++/13/bits/stl_bvector.h:10"
+    },
+    {
+      "test_idx": 21,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    }
+  ]
+}

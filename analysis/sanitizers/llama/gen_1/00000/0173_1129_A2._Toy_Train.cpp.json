@@ -1,0 +1,433 @@
+{
+  "problem_key": "1129_A2_Toy_Train",
+  "shard": 0,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 31,
+  "n_passed": 0,
+  "n_sanitizer_triggered": 26,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==74364==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000080 at pc 0x621a01719236 bp 0x7fffa38756a0 sp 0x7fffa3875690\nREAD of size 4 at 0x502000000080 thread T0\n    #0 0x621a01719235 in main derived/cpp/llama/gen_1/00000/0173_1129_A2._Toy_Train.cpp:41\n    #1 0x7ae3da02a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7ae3da02a28a in __libc_start_main_impl ../csu/libc-start.c:360\n"
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==74417==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50300000005c at pc 0x5dc717195236 bp 0x7ffc45c8bd30 sp 0x7ffc45c8bd20\nREAD of size 4 at 0x50300000005c thread T0\n    #0 0x5dc717195235 in main derived/cpp/llama/gen_1/00000/0173_1129_A2._Toy_Train.cpp:41\n    #1 0x75d9dfc2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x75d9dfc2a28a in __libc_start_main_impl ../csu/libc-start.c:360\n"
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==74455==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x508000000094 at pc 0x591ad915b236 bp 0x7ffc4e162680 sp 0x7ffc4e162670\nREAD of size 4 at 0x508000000094 thread T0\n    #0 0x591ad915b235 in main derived/cpp/llama/gen_1/00000/0173_1129_A2._Toy_Train.cpp:41\n    #1 0x78d8ed82a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x78d8ed82a28a in __libc_start_main_impl ../csu/libc-start.c:360\n"
+    },
+    {
+      "test_idx": 4,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==74494==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000064 at pc 0x61035e3b3236 bp 0x7ffd56ebc890 sp 0x7ffd56ebc880\nREAD of size 4 at 0x502000000064 thread T0\n    #0 0x61035e3b3235 in main derived/cpp/llama/gen_1/00000/0173_1129_A2._Toy_Train.cpp:41\n    #1 0x79e0e602a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x79e0e602a28a in __libc_start_main_impl ../csu/libc-start.c:360\n"
+    },
+    {
+      "test_idx": 5,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 6,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==74535==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000064 at pc 0x631591ee3236 bp 0x7ffff8a19d10 sp 0x7ffff8a19d00\nREAD of size 4 at 0x502000000064 thread T0\n    #0 0x631591ee3235 in main derived/cpp/llama/gen_1/00000/0173_1129_A2._Toy_Train.cpp:41\n    #1 0x773b1542a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x773b1542a28a in __libc_start_main_impl ../csu/libc-start.c:360\n"
+    },
+    {
+      "test_idx": 7,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==74571==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5110000001bc at pc 0x5add147d7236 bp 0x7ffcf3cc22e0 sp 0x7ffcf3cc22d0\nREAD of size 4 at 0x5110000001bc thread T0\n    #0 0x5add147d7235 in main derived/cpp/llama/gen_1/00000/0173_1129_A2._Toy_Train.cpp:41\n    #1 0x7a1180e2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7a1180e2a28a in __libc_start_main_impl ../csu/libc-start.c:360\n"
+    },
+    {
+      "test_idx": 8,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==74572==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x514000000338 at pc 0x56c1183fa236 bp 0x7ffcb82445b0 sp 0x7ffcb82445a0\nREAD of size 4 at 0x514000000338 thread T0\n    #0 0x56c1183fa235 in main derived/cpp/llama/gen_1/00000/0173_1129_A2._Toy_Train.cpp:41\n    #1 0x7b36a922a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7b36a922a28a in __libc_start_main_impl ../csu/libc-start.c:360\n"
+    },
+    {
+      "test_idx": 9,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==74573==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x504000000048 at pc 0x57c246367236 bp 0x7ffe364d7e30 sp 0x7ffe364d7e20\nREAD of size 4 at 0x504000000048 thread T0\n    #0 0x57c246367235 in main derived/cpp/llama/gen_1/00000/0173_1129_A2._Toy_Train.cpp:41\n    #1 0x71f58c62a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x71f58c62a28a in __libc_start_main_impl ../csu/libc-start.c:360\n"
+    },
+    {
+      "test_idx": 10,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 11,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==74580==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000040 at pc 0x589b67faa236 bp 0x7fff5575b730 sp 0x7fff5575b720\nREAD of size 4 at 0x502000000040 thread T0\n    #0 0x589b67faa235 in main derived/cpp/llama/gen_1/00000/0173_1129_A2._Toy_Train.cpp:41\n    #1 0x712c3202a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x712c3202a28a in __libc_start_main_impl ../csu/libc-start.c:360\n"
+    },
+    {
+      "test_idx": 12,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==74581==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x511000000198 at pc 0x5e2fe8b70236 bp 0x7ffc342869d0 sp 0x7ffc342869c0\nREAD of size 4 at 0x511000000198 thread T0\n    #0 0x5e2fe8b70235 in main derived/cpp/llama/gen_1/00000/0173_1129_A2._Toy_Train.cpp:41\n    #1 0x70d6dca2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x70d6dca2a28a in __libc_start_main_impl ../csu/libc-start.c:360\n"
+    },
+    {
+      "test_idx": 13,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==74584==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x504000000048 at pc 0x5c33aaa04236 bp 0x7ffe0971d7b0 sp 0x7ffe0971d7a0\nREAD of size 4 at 0x504000000048 thread T0\n    #0 0x5c33aaa04235 in main derived/cpp/llama/gen_1/00000/0173_1129_A2._Toy_Train.cpp:41\n    #1 0x7cf944e2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7cf944e2a28a in __libc_start_main_impl ../csu/libc-start.c:360\n"
+    },
+    {
+      "test_idx": 14,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==74606==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x504000000050 at pc 0x60d2f474e236 bp 0x7fffff935950 sp 0x7fffff935940\nREAD of size 4 at 0x504000000050 thread T0\n    #0 0x60d2f474e235 in main derived/cpp/llama/gen_1/00000/0173_1129_A2._Toy_Train.cpp:41\n    #1 0x7a7b4d62a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7a7b4d62a28a in __libc_start_main_impl ../csu/libc-start.c:360\n"
+    },
+    {
+      "test_idx": 15,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==74612==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x504000000040 at pc 0x64a47dba7236 bp 0x7ffc6f3199e0 sp 0x7ffc6f3199d0\nREAD of size 4 at 0x504000000040 thread T0\n    #0 0x64a47dba7235 in main derived/cpp/llama/gen_1/00000/0173_1129_A2._Toy_Train.cpp:41\n    #1 0x728e7242a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x728e7242a28a in __libc_start_main_impl ../csu/libc-start.c:360\n"
+    },
+    {
+      "test_idx": 16,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==74613==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x504000000050 at pc 0x593a32a6d236 bp 0x7ffca7bd2900 sp 0x7ffca7bd28f0\nREAD of size 4 at 0x504000000050 thread T0\n    #0 0x593a32a6d235 in main derived/cpp/llama/gen_1/00000/0173_1129_A2._Toy_Train.cpp:41\n    #1 0x75362b22a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x75362b22a28a in __libc_start_main_impl ../csu/libc-start.c:360\n"
+    },
+    {
+      "test_idx": 17,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 18,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==74618==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000060 at pc 0x5c68eeafa236 bp 0x7ffe7da3f5e0 sp 0x7ffe7da3f5d0\nREAD of size 4 at 0x502000000060 thread T0\n    #0 0x5c68eeafa235 in main derived/cpp/llama/gen_1/00000/0173_1129_A2._Toy_Train.cpp:41\n    #1 0x7dd99f22a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7dd99f22a28a in __libc_start_main_impl ../csu/libc-start.c:360\n"
+    },
+    {
+      "test_idx": 19,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==74624==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x504000000040 at pc 0x573e0cc61236 bp 0x7ffd6d9c7bf0 sp 0x7ffd6d9c7be0\nREAD of size 4 at 0x504000000040 thread T0\n    #0 0x573e0cc61235 in main derived/cpp/llama/gen_1/00000/0173_1129_A2._Toy_Train.cpp:41\n    #1 0x73d27e02a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x73d27e02a28a in __libc_start_main_impl ../csu/libc-start.c:360\n"
+    },
+    {
+      "test_idx": 20,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==74628==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5140000002e0 at pc 0x64028b124236 bp 0x7ffea1b387f0 sp 0x7ffea1b387e0\nREAD of size 4 at 0x5140000002e0 thread T0\n    #0 0x64028b124235 in main derived/cpp/llama/gen_1/00000/0173_1129_A2._Toy_Train.cpp:41\n    #1 0x70c0e962a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x70c0e962a28a in __libc_start_main_impl ../csu/libc-start.c:360\n"
+    },
+    {
+      "test_idx": 21,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==74629==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000080 at pc 0x61a4f85c4236 bp 0x7fffeca177c0 sp 0x7fffeca177b0\nREAD of size 4 at 0x502000000080 thread T0\n    #0 0x61a4f85c4235 in main derived/cpp/llama/gen_1/00000/0173_1129_A2._Toy_Train.cpp:41\n    #1 0x7cc16f42a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7cc16f42a28a in __libc_start_main_impl ../csu/libc-start.c:360\n"
+    },
+    {
+      "test_idx": 22,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==74631==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x504000000058 at pc 0x57fd13f17236 bp 0x7fff3a833d30 sp 0x7fff3a833d20\nREAD of size 4 at 0x504000000058 thread T0\n    #0 0x57fd13f17235 in main derived/cpp/llama/gen_1/00000/0173_1129_A2._Toy_Train.cpp:41\n    #1 0x7de023c2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7de023c2a28a in __libc_start_main_impl ../csu/libc-start.c:360\n"
+    },
+    {
+      "test_idx": 23,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==74638==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x51400000023c at pc 0x5fa834a65236 bp 0x7fff550555c0 sp 0x7fff550555b0\nREAD of size 4 at 0x51400000023c thread T0\n    #0 0x5fa834a65235 in main derived/cpp/llama/gen_1/00000/0173_1129_A2._Toy_Train.cpp:41\n    #1 0x72215ae2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x72215ae2a28a in __libc_start_main_impl ../csu/libc-start.c:360\n"
+    },
+    {
+      "test_idx": 24,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==74640==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000060 at pc 0x5a1519f32236 bp 0x7ffeb00c0f10 sp 0x7ffeb00c0f00\nREAD of size 4 at 0x502000000060 thread T0\n    #0 0x5a1519f32235 in main derived/cpp/llama/gen_1/00000/0173_1129_A2._Toy_Train.cpp:41\n    #1 0x78ab1d62a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x78ab1d62a28a in __libc_start_main_impl ../csu/libc-start.c:360\n"
+    },
+    {
+      "test_idx": 25,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==74643==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50400000005c at pc 0x6292161d6236 bp 0x7fffd9369ea0 sp 0x7fffd9369e90\nREAD of size 4 at 0x50400000005c thread T0\n    #0 0x6292161d6235 in main derived/cpp/llama/gen_1/00000/0173_1129_A2._Toy_Train.cpp:41\n    #1 0x7e9f53e2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7e9f53e2a28a in __libc_start_main_impl ../csu/libc-start.c:360\n"
+    },
+    {
+      "test_idx": 26,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==74645==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x504000000054 at pc 0x653417107236 bp 0x7ffc5e485280 sp 0x7ffc5e485270\nREAD of size 4 at 0x504000000054 thread T0\n    #0 0x653417107235 in main derived/cpp/llama/gen_1/00000/0173_1129_A2._Toy_Train.cpp:41\n    #1 0x71827bc2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x71827bc2a28a in __libc_start_main_impl ../csu/libc-start.c:360\n"
+    },
+    {
+      "test_idx": 27,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 28,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==74651==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x504000000048 at pc 0x5ce7c42a9236 bp 0x7ffcedf15d10 sp 0x7ffcedf15d00\nREAD of size 4 at 0x504000000048 thread T0\n    #0 0x5ce7c42a9235 in main derived/cpp/llama/gen_1/00000/0173_1129_A2._Toy_Train.cpp:41\n    #1 0x7ad4ec22a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7ad4ec22a28a in __libc_start_main_impl ../csu/libc-start.c:360\n"
+    },
+    {
+      "test_idx": 29,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==74657==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x503000000064 at pc 0x5fc9b25d9236 bp 0x7fffb2ede7e0 sp 0x7fffb2ede7d0\nREAD of size 4 at 0x503000000064 thread T0\n    #0 0x5fc9b25d9235 in main derived/cpp/llama/gen_1/00000/0173_1129_A2._Toy_Train.cpp:41\n    #1 0x71afcfc2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x71afcfc2a28a in __libc_start_main_impl ../csu/libc-start.c:360\n"
+    },
+    {
+      "test_idx": 30,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==74662==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000084 at pc 0x59bbe69f6236 bp 0x7ffc428f8ba0 sp 0x7ffc428f8b90\nREAD of size 4 at 0x502000000084 thread T0\n    #0 0x59bbe69f6235 in main derived/cpp/llama/gen_1/00000/0173_1129_A2._Toy_Train.cpp:41\n    #1 0x73a0e8e2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x73a0e8e2a28a in __libc_start_main_impl ../csu/libc-start.c:360\n"
+    }
+  ]
+}

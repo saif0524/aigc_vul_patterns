@@ -1,0 +1,127 @@
+{
+  "problem_key": "388_C_Fox_and_Card_Game",
+  "shard": 2,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 8,
+  "n_passed": 1,
+  "n_sanitizer_triggered": 7,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==145455==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000048 at pc 0x57fa6588b6af bp 0x7ffe25bd7ef0 sp 0x7ffe25bd7ee0\nREAD of size 4 at 0x502000000048 thread T0\n    #0 0x57fa6588b6ae in std::pair<int, int>::pair<int&, int&, true>(int&, int&) /usr/include/c++/13/bits/stl_pair.h:688\n    #1 0x57fa6588963c in main derived/cpp/qwen/gen_1/00002/0245_388_C._Fox_and_Card_Game.cpp:37\n    #2 0x7ae88402a1c9 in __libc_sta"
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==145456==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000008 at pc 0x582a7562488c bp 0x7ffedcce9620 sp 0x7ffedcce9610\nREAD of size 4 at 0x502000000008 thread T0\n    #0 0x582a7562488b in std::pair<int, int>::pair<int&, int&, true>(int&, int&) /usr/include/c++/13/bits/stl_pair.h:688\n    #1 0x582a7562488b in main derived/cpp/qwen/gen_1/00002/0245_388_C._Fox_and_Card_Game.cpp:46\n    #2 0x736d4b62a1c9 in __libc_sta"
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==145457==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000028 at pc 0x5ba93b99288c bp 0x7ffdc7fcb990 sp 0x7ffdc7fcb980\nREAD of size 4 at 0x502000000028 thread T0\n    #0 0x5ba93b99288b in std::pair<int, int>::pair<int&, int&, true>(int&, int&) /usr/include/c++/13/bits/stl_pair.h:688\n    #1 0x5ba93b99288b in main derived/cpp/qwen/gen_1/00002/0245_388_C._Fox_and_Card_Game.cpp:46\n    #2 0x738e61c2a1c9 in __libc_sta"
+    },
+    {
+      "test_idx": 3,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 4,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==145459==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000008 at pc 0x5c956da4688c bp 0x7ffc06da3040 sp 0x7ffc06da3030\nREAD of size 4 at 0x502000000008 thread T0\n    #0 0x5c956da4688b in std::pair<int, int>::pair<int&, int&, true>(int&, int&) /usr/include/c++/13/bits/stl_pair.h:688\n    #1 0x5c956da4688b in main derived/cpp/qwen/gen_1/00002/0245_388_C._Fox_and_Card_Game.cpp:46\n    #2 0x7cbb97c2a1c9 in __libc_sta"
+    },
+    {
+      "test_idx": 5,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==145460==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000048 at pc 0x55bf7dc966af bp 0x7ffd38098f00 sp 0x7ffd38098ef0\nREAD of size 4 at 0x502000000048 thread T0\n    #0 0x55bf7dc966ae in std::pair<int, int>::pair<int&, int&, true>(int&, int&) /usr/include/c++/13/bits/stl_pair.h:688\n    #1 0x55bf7dc9463c in main derived/cpp/qwen/gen_1/00002/0245_388_C._Fox_and_Card_Game.cpp:37\n    #2 0x7b7fda82a1c9 in __libc_sta"
+    },
+    {
+      "test_idx": 6,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==145461==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000008 at pc 0x5744ab8fa6af bp 0x7ffd96ddddf0 sp 0x7ffd96dddde0\nREAD of size 4 at 0x502000000008 thread T0\n    #0 0x5744ab8fa6ae in std::pair<int, int>::pair<int&, int&, true>(int&, int&) /usr/include/c++/13/bits/stl_pair.h:688\n    #1 0x5744ab8f863c in main derived/cpp/qwen/gen_1/00002/0245_388_C._Fox_and_Card_Game.cpp:37\n    #2 0x78d7c282a1c9 in __libc_sta"
+    },
+    {
+      "test_idx": 7,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==145469==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000008 at pc 0x5672595e488c bp 0x7ffc57b3b290 sp 0x7ffc57b3b280\nREAD of size 4 at 0x502000000008 thread T0\n    #0 0x5672595e488b in std::pair<int, int>::pair<int&, int&, true>(int&, int&) /usr/include/c++/13/bits/stl_pair.h:688\n    #1 0x5672595e488b in main derived/cpp/qwen/gen_1/00002/0245_388_C._Fox_and_Card_Game.cpp:46\n    #2 0x7a4ddba2a1c9 in __libc_sta"
+    }
+  ]
+}

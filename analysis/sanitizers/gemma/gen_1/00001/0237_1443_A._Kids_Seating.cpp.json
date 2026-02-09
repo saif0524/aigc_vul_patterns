@@ -1,0 +1,91 @@
+{
+  "problem_key": "1443_A_Kids_Seating",
+  "shard": 1,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 6,
+  "n_passed": 0,
+  "n_sanitizer_triggered": 3,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==33451==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000014 at pc 0x6096232348bc bp 0x7ffc90e0aaf0 sp 0x7ffc90e0aae0\nREAD of size 4 at 0x502000000014 thread T0\n    #0 0x6096232348bb in main derived/cpp/gemma/gen_1/00001/0237_1443_A._Kids_Seating.cpp:59\n    #1 0x788de322a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x788de322a28a in __libc_start_main_impl ../csu/libc-start.c:36"
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==33462==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000014 at pc 0x59e9751b98bc bp 0x7fff8cfaf550 sp 0x7fff8cfaf540\nREAD of size 4 at 0x502000000014 thread T0\n    #0 0x59e9751b98bb in main derived/cpp/gemma/gen_1/00001/0237_1443_A._Kids_Seating.cpp:59\n    #1 0x792b5a22a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x792b5a22a28a in __libc_start_main_impl ../csu/libc-start.c:36"
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 4,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==33475==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000014 at pc 0x5f7340eac8bc bp 0x7ffd5665e250 sp 0x7ffd5665e240\nREAD of size 4 at 0x502000000014 thread T0\n    #0 0x5f7340eac8bb in main derived/cpp/gemma/gen_1/00001/0237_1443_A._Kids_Seating.cpp:59\n    #1 0x7b8a12e2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7b8a12e2a28a in __libc_start_main_impl ../csu/libc-start.c:36"
+    },
+    {
+      "test_idx": 5,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    }
+  ]
+}

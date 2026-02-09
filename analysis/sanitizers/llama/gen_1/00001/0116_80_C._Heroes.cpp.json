@@ -1,0 +1,495 @@
+{
+  "problem_key": "80_C_Heroes",
+  "shard": 1,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 37,
+  "n_passed": 1,
+  "n_sanitizer_triggered": 26,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow",
+    "signed integer overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122",
+    "CWE-190"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "signed integer overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/llama/gen_1/00001/0116_80_C._Heroes.cpp:51:18: runtime error: signed integer overflow: -9223372036854775808 - 9223372036854775807 cannot be represented in type 'long long int'\n"
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==83045==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x508000000074 at pc 0x6201ada4adcf bp 0x7ffffa7c6a50 sp 0x7ffffa7c6a40\nWRITE of size 4 at 0x508000000074 thread T0\n    #0 0x6201ada4adce in build(int, std::vector<int, std::allocator<int> >&) derived/cpp/llama/gen_1/00001/0116_80_C._Heroes.cpp:58\n    #1 0x6201ada4ad71 in build(int, std::vector<int, std::allocator<int> >&) derived/cpp/llama/gen_1/00001/0116_80_C._He"
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==83047==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x508000000080 at pc 0x59b275046dcf bp 0x7ffef20dc2f0 sp 0x7ffef20dc2e0\nWRITE of size 4 at 0x508000000080 thread T0\n    #0 0x59b275046dce in build(int, std::vector<int, std::allocator<int> >&) derived/cpp/llama/gen_1/00001/0116_80_C._Heroes.cpp:58\n    #1 0x59b275046d71 in build(int, std::vector<int, std::allocator<int> >&) derived/cpp/llama/gen_1/00001/0116_80_C._He"
+    },
+    {
+      "test_idx": 4,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "signed integer overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/llama/gen_1/00001/0116_80_C._Heroes.cpp:51:18: runtime error: signed integer overflow: -9223372036854775808 - 9223372036854775807 cannot be represented in type 'long long int'\n"
+    },
+    {
+      "test_idx": 5,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==83050==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x508000000084 at pc 0x620fc6d25dcf bp 0x7ffc4621c800 sp 0x7ffc4621c7f0\nWRITE of size 4 at 0x508000000084 thread T0\n    #0 0x620fc6d25dce in build(int, std::vector<int, std::allocator<int> >&) derived/cpp/llama/gen_1/00001/0116_80_C._Heroes.cpp:58\n    #1 0x620fc6d25d71 in build(int, std::vector<int, std::allocator<int> >&) derived/cpp/llama/gen_1/00001/0116_80_C._He"
+    },
+    {
+      "test_idx": 6,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==83053==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x508000000084 at pc 0x556637c4adcf bp 0x7ffd9b9901c0 sp 0x7ffd9b9901b0\nWRITE of size 4 at 0x508000000084 thread T0\n    #0 0x556637c4adce in build(int, std::vector<int, std::allocator<int> >&) derived/cpp/llama/gen_1/00001/0116_80_C._Heroes.cpp:58\n    #1 0x556637c4ad71 in build(int, std::vector<int, std::allocator<int> >&) derived/cpp/llama/gen_1/00001/0116_80_C._He"
+    },
+    {
+      "test_idx": 7,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "signed integer overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/llama/gen_1/00001/0116_80_C._Heroes.cpp:51:18: runtime error: signed integer overflow: -9223372036854775808 - 9223372036854775807 cannot be represented in type 'long long int'\n"
+    },
+    {
+      "test_idx": 8,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 9,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==83066==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x508000000080 at pc 0x6493c3b44dcf bp 0x7ffc86e65e10 sp 0x7ffc86e65e00\nWRITE of size 4 at 0x508000000080 thread T0\n    #0 0x6493c3b44dce in build(int, std::vector<int, std::allocator<int> >&) derived/cpp/llama/gen_1/00001/0116_80_C._Heroes.cpp:58\n    #1 0x6493c3b44d71 in build(int, std::vector<int, std::allocator<int> >&) derived/cpp/llama/gen_1/00001/0116_80_C._He"
+    },
+    {
+      "test_idx": 10,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==83073==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x508000000080 at pc 0x65040bb5fdcf bp 0x7ffc0cd4a140 sp 0x7ffc0cd4a130\nWRITE of size 4 at 0x508000000080 thread T0\n    #0 0x65040bb5fdce in build(int, std::vector<int, std::allocator<int> >&) derived/cpp/llama/gen_1/00001/0116_80_C._Heroes.cpp:58\n    #1 0x65040bb5fd71 in build(int, std::vector<int, std::allocator<int> >&) derived/cpp/llama/gen_1/00001/0116_80_C._He"
+    },
+    {
+      "test_idx": 11,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "signed integer overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/llama/gen_1/00001/0116_80_C._Heroes.cpp:51:18: runtime error: signed integer overflow: -9223372036854775808 - 9223372036854775807 cannot be represented in type 'long long int'\n"
+    },
+    {
+      "test_idx": 12,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==83075==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x508000000084 at pc 0x607e39f9adcf bp 0x7ffeeaea4580 sp 0x7ffeeaea4570\nWRITE of size 4 at 0x508000000084 thread T0\n    #0 0x607e39f9adce in build(int, std::vector<int, std::allocator<int> >&) derived/cpp/llama/gen_1/00001/0116_80_C._Heroes.cpp:58\n    #1 0x607e39f9ad71 in build(int, std::vector<int, std::allocator<int> >&) derived/cpp/llama/gen_1/00001/0116_80_C._He"
+    },
+    {
+      "test_idx": 13,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==83082==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x508000000074 at pc 0x5d73bf8abdcf bp 0x7ffd6a8adaf0 sp 0x7ffd6a8adae0\nWRITE of size 4 at 0x508000000074 thread T0\n    #0 0x5d73bf8abdce in build(int, std::vector<int, std::allocator<int> >&) derived/cpp/llama/gen_1/00001/0116_80_C._Heroes.cpp:58\n    #1 0x5d73bf8abd71 in build(int, std::vector<int, std::allocator<int> >&) derived/cpp/llama/gen_1/00001/0116_80_C._He"
+    },
+    {
+      "test_idx": 14,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==83089==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50800000007c at pc 0x57ead07dddcf bp 0x7ffe75a6d100 sp 0x7ffe75a6d0f0\nWRITE of size 4 at 0x50800000007c thread T0\n    #0 0x57ead07dddce in build(int, std::vector<int, std::allocator<int> >&) derived/cpp/llama/gen_1/00001/0116_80_C._Heroes.cpp:58\n    #1 0x57ead07ddd71 in build(int, std::vector<int, std::allocator<int> >&) derived/cpp/llama/gen_1/00001/0116_80_C._He"
+    },
+    {
+      "test_idx": 15,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==83098==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x508000000074 at pc 0x6337ac73cdcf bp 0x7ffd070cede0 sp 0x7ffd070cedd0\nWRITE of size 4 at 0x508000000074 thread T0\n    #0 0x6337ac73cdce in build(int, std::vector<int, std::allocator<int> >&) derived/cpp/llama/gen_1/00001/0116_80_C._Heroes.cpp:58\n    #1 0x6337ac73cd71 in build(int, std::vector<int, std::allocator<int> >&) derived/cpp/llama/gen_1/00001/0116_80_C._He"
+    },
+    {
+      "test_idx": 16,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "signed integer overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/llama/gen_1/00001/0116_80_C._Heroes.cpp:51:18: runtime error: signed integer overflow: -9223372036854775808 - 9223372036854775807 cannot be represented in type 'long long int'\n"
+    },
+    {
+      "test_idx": 17,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 18,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==83107==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50800000008c at pc 0x597990c90dcf bp 0x7fff0e83c1f0 sp 0x7fff0e83c1e0\nWRITE of size 4 at 0x50800000008c thread T0\n    #0 0x597990c90dce in build(int, std::vector<int, std::allocator<int> >&) derived/cpp/llama/gen_1/00001/0116_80_C._Heroes.cpp:58\n    #1 0x597990c90d71 in build(int, std::vector<int, std::allocator<int> >&) derived/cpp/llama/gen_1/00001/0116_80_C._He"
+    },
+    {
+      "test_idx": 19,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 20,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==83110==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x508000000080 at pc 0x5721e5cb9dcf bp 0x7ffd512ccb70 sp 0x7ffd512ccb60\nWRITE of size 4 at 0x508000000080 thread T0\n    #0 0x5721e5cb9dce in build(int, std::vector<int, std::allocator<int> >&) derived/cpp/llama/gen_1/00001/0116_80_C._Heroes.cpp:58\n    #1 0x5721e5cb9d71 in build(int, std::vector<int, std::allocator<int> >&) derived/cpp/llama/gen_1/00001/0116_80_C._He"
+    },
+    {
+      "test_idx": 21,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 22,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==83116==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50800000007c at pc 0x6146dbe08dcf bp 0x7ffc24e14b60 sp 0x7ffc24e14b50\nWRITE of size 4 at 0x50800000007c thread T0\n    #0 0x6146dbe08dce in build(int, std::vector<int, std::allocator<int> >&) derived/cpp/llama/gen_1/00001/0116_80_C._Heroes.cpp:58\n    #1 0x6146dbe08d71 in build(int, std::vector<int, std::allocator<int> >&) derived/cpp/llama/gen_1/00001/0116_80_C._He"
+    },
+    {
+      "test_idx": 23,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "signed integer overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/llama/gen_1/00001/0116_80_C._Heroes.cpp:51:18: runtime error: signed integer overflow: -9223372036854775808 - 9223372036854775807 cannot be represented in type 'long long int'\n"
+    },
+    {
+      "test_idx": 24,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 25,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==83122==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x508000000084 at pc 0x5cde2d8c9dcf bp 0x7fff0f0ccc10 sp 0x7fff0f0ccc00\nWRITE of size 4 at 0x508000000084 thread T0\n    #0 0x5cde2d8c9dce in build(int, std::vector<int, std::allocator<int> >&) derived/cpp/llama/gen_1/00001/0116_80_C._Heroes.cpp:58\n    #1 0x5cde2d8c9d71 in build(int, std::vector<int, std::allocator<int> >&) derived/cpp/llama/gen_1/00001/0116_80_C._He"
+    },
+    {
+      "test_idx": 26,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "signed integer overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/llama/gen_1/00001/0116_80_C._Heroes.cpp:51:18: runtime error: signed integer overflow: -9223372036854775808 - 9223372036854775807 cannot be represented in type 'long long int'\n"
+    },
+    {
+      "test_idx": 27,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==83131==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x508000000078 at pc 0x61d9d1b87dcf bp 0x7ffedbf196f0 sp 0x7ffedbf196e0\nWRITE of size 4 at 0x508000000078 thread T0\n    #0 0x61d9d1b87dce in build(int, std::vector<int, std::allocator<int> >&) derived/cpp/llama/gen_1/00001/0116_80_C._Heroes.cpp:58\n    #1 0x61d9d1b87d71 in build(int, std::vector<int, std::allocator<int> >&) derived/cpp/llama/gen_1/00001/0116_80_C._He"
+    },
+    {
+      "test_idx": 28,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 29,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==83146==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x508000000088 at pc 0x5a5205e27dcf bp 0x7ffdacd25dc0 sp 0x7ffdacd25db0\nWRITE of size 4 at 0x508000000088 thread T0\n    #0 0x5a5205e27dce in build(int, std::vector<int, std::allocator<int> >&) derived/cpp/llama/gen_1/00001/0116_80_C._Heroes.cpp:58\n    #1 0x5a5205e27d71 in build(int, std::vector<int, std::allocator<int> >&) derived/cpp/llama/gen_1/00001/0116_80_C._He"
+    },
+    {
+      "test_idx": 30,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 31,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==83148==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50800000008c at pc 0x585a918addcf bp 0x7ffcc6b8ece0 sp 0x7ffcc6b8ecd0\nWRITE of size 4 at 0x50800000008c thread T0\n    #0 0x585a918addce in build(int, std::vector<int, std::allocator<int> >&) derived/cpp/llama/gen_1/00001/0116_80_C._Heroes.cpp:58\n    #1 0x585a918add71 in build(int, std::vector<int, std::allocator<int> >&) derived/cpp/llama/gen_1/00001/0116_80_C._He"
+    },
+    {
+      "test_idx": 32,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==83149==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x508000000088 at pc 0x5669ed414dcf bp 0x7ffc4bd124e0 sp 0x7ffc4bd124d0\nWRITE of size 4 at 0x508000000088 thread T0\n    #0 0x5669ed414dce in build(int, std::vector<int, std::allocator<int> >&) derived/cpp/llama/gen_1/00001/0116_80_C._Heroes.cpp:58\n    #1 0x5669ed414d71 in build(int, std::vector<int, std::allocator<int> >&) derived/cpp/llama/gen_1/00001/0116_80_C._He"
+    },
+    {
+      "test_idx": 33,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==83153==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x508000000080 at pc 0x58da7c31bdcf bp 0x7ffdd7fabbc0 sp 0x7ffdd7fabbb0\nWRITE of size 4 at 0x508000000080 thread T0\n    #0 0x58da7c31bdce in build(int, std::vector<int, std::allocator<int> >&) derived/cpp/llama/gen_1/00001/0116_80_C._Heroes.cpp:58\n    #1 0x58da7c31bd71 in build(int, std::vector<int, std::allocator<int> >&) derived/cpp/llama/gen_1/00001/0116_80_C._He"
+    },
+    {
+      "test_idx": 34,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 35,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 36,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    }
+  ]
+}

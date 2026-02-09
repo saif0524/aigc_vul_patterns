@@ -1,0 +1,73 @@
+{
+  "problem_key": "73_F_Plane_of_Tanks",
+  "shard": 2,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 5,
+  "n_passed": 0,
+  "n_sanitizer_triggered": 1,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 4,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==128650==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x504000000138 at pc 0x63eeb9d1bc4e bp 0x7ffd3c0c4700 sp 0x7ffd3c0c46f0\nREAD of size 8 at 0x504000000138 thread T0\n    #0 0x63eeb9d1bc4d in operator() derived/cpp/llama/gen_3/00002_3/0260_73_F._Plane_of_Tanks.cpp:42\n    #1 0x63eeb9d1c515 in main derived/cpp/llama/gen_3/00002_3/0260_73_F._Plane_of_Tanks.cpp:49\n    #2 0x74352002a1c9 in __libc_start_call_main ../sysde"
+    }
+  ]
+}

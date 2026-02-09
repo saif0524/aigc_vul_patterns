@@ -1,0 +1,71 @@
+{
+  "problem_key": "878_D_Magic_Breeding",
+  "shard": 2,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 4,
+  "n_passed": 0,
+  "n_sanitizer_triggered": 3,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==69799==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5020000000cc at pc 0x5db435a91c19 bp 0x7ffc22dbbc80 sp 0x7ffc22dbbc70\nREAD of size 4 at 0x5020000000cc thread T0\n    #0 0x5db435a91c18 in main derived/cpp/gemma/gen_3/00002_3/0155_878_D._Magic_Breeding.cpp:45\n    #1 0x708b9c02a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x708b9c02a28a in __libc_start_main_impl ../csu/libc-start.c"
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==69800==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50200000002c at pc 0x630e4872bc19 bp 0x7fffe7d5f100 sp 0x7fffe7d5f0f0\nREAD of size 4 at 0x50200000002c thread T0\n    #0 0x630e4872bc18 in main derived/cpp/gemma/gen_3/00002_3/0155_878_D._Magic_Breeding.cpp:45\n    #1 0x7e0df802a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7e0df802a28a in __libc_start_main_impl ../csu/libc-start.c"
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==69801==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50400000014c at pc 0x55c62fd53c19 bp 0x7ffca9c08030 sp 0x7ffca9c08020\nREAD of size 4 at 0x50400000014c thread T0\n    #0 0x55c62fd53c18 in main derived/cpp/gemma/gen_3/00002_3/0155_878_D._Magic_Breeding.cpp:45\n    #1 0x765d9ec2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x765d9ec2a28a in __libc_start_main_impl ../csu/libc-start.c"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "problem_key": "999_F_Cards_and_Joy",
+  "shard": 2,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 5,
+  "n_passed": 0,
+  "n_sanitizer_triggered": 4,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==105134==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000054 at pc 0x572c9869de28 bp 0x7ffe0b29f610 sp 0x7ffe0b29f600\nREAD of size 4 at 0x502000000054 thread T0\n    #0 0x572c9869de27 in main derived/cpp/llama/gen_2/00002_2/0271_999_F._Cards_and_Joy.cpp:45\n    #1 0x7b6a5442a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7b6a5442a28a in __libc_start_main_impl ../csu/libc-start.c"
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==105138==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000014 at pc 0x56892cc58e28 bp 0x7fff7ec7b670 sp 0x7fff7ec7b660\nREAD of size 4 at 0x502000000014 thread T0\n    #0 0x56892cc58e27 in main derived/cpp/llama/gen_2/00002_2/0271_999_F._Cards_and_Joy.cpp:45\n    #1 0x78cefa22a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x78cefa22a28a in __libc_start_main_impl ../csu/libc-start.c"
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==105139==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000054 at pc 0x60ff1582fe28 bp 0x7ffe479137f0 sp 0x7ffe479137e0\nREAD of size 4 at 0x502000000054 thread T0\n    #0 0x60ff1582fe27 in main derived/cpp/llama/gen_2/00002_2/0271_999_F._Cards_and_Joy.cpp:45\n    #1 0x7dae07a2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7dae07a2a28a in __libc_start_main_impl ../csu/libc-start.c"
+    },
+    {
+      "test_idx": 4,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==105140==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000014 at pc 0x64b16d724e28 bp 0x7ffcaff76500 sp 0x7ffcaff764f0\nREAD of size 4 at 0x502000000014 thread T0\n    #0 0x64b16d724e27 in main derived/cpp/llama/gen_2/00002_2/0271_999_F._Cards_and_Joy.cpp:45\n    #1 0x7224dc02a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7224dc02a28a in __libc_start_main_impl ../csu/libc-start.c"
+    }
+  ]
+}

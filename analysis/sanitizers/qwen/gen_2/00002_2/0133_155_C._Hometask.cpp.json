@@ -1,0 +1,231 @@
+{
+  "problem_key": "155_C_Hometask",
+  "shard": 2,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 15,
+  "n_passed": 0,
+  "n_sanitizer_triggered": 15,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "shift exponent",
+    "stack-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-121",
+    "CWE-190"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "shift exponent"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/qwen/gen_2/00002_2/0133_155_C._Hometask.cpp:23:28: runtime error: shift exponent 50 is too large for 32-bit type 'int'\n"
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "shift exponent"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/qwen/gen_2/00002_2/0133_155_C._Hometask.cpp:23:28: runtime error: shift exponent 100 is too large for 32-bit type 'int'\n"
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "stack-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-121"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==162618==ERROR: AddressSanitizer: stack-buffer-overflow on address 0x6ffe2d200140 at pc 0x5b2329c43f39 bp 0x7fff24d52050 sp 0x7fff24d52040\nREAD of size 1 at 0x6ffe2d200140 thread T0\n    #0 0x5b2329c43f38 in main derived/cpp/qwen/gen_2/00002_2/0133_155_C._Hometask.cpp:37\n    #1 0x6ffe2f02a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x6ffe2f02a28a in __libc_start_main_impl ../csu/libc-start.c:360\n"
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "stack-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-121"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==162622==ERROR: AddressSanitizer: stack-buffer-overflow on address 0x7f9644e00140 at pc 0x5ea26cde6f39 bp 0x7ffdaf2fd7e0 sp 0x7ffdaf2fd7d0\nREAD of size 1 at 0x7f9644e00140 thread T0\n    #0 0x5ea26cde6f38 in main derived/cpp/qwen/gen_2/00002_2/0133_155_C._Hometask.cpp:37\n    #1 0x7f9646c2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7f9646c2a28a in __libc_start_main_impl ../csu/libc-start.c:360\n"
+    },
+    {
+      "test_idx": 4,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "shift exponent"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/qwen/gen_2/00002_2/0133_155_C._Hometask.cpp:23:28: runtime error: shift exponent 206 is too large for 32-bit type 'int'\n"
+    },
+    {
+      "test_idx": 5,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "shift exponent"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/qwen/gen_2/00002_2/0133_155_C._Hometask.cpp:23:28: runtime error: shift exponent 333 is too large for 32-bit type 'int'\n"
+    },
+    {
+      "test_idx": 6,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "stack-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-121"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==162629==ERROR: AddressSanitizer: stack-buffer-overflow on address 0x7b904e800140 at pc 0x59d364ccaf39 bp 0x7ffdabe56530 sp 0x7ffdabe56520\nREAD of size 1 at 0x7b904e800140 thread T0\n    #0 0x59d364ccaf38 in main derived/cpp/qwen/gen_2/00002_2/0133_155_C._Hometask.cpp:37\n    #1 0x7b905062a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7b905062a28a in __libc_start_main_impl ../csu/libc-start.c:360\n"
+    },
+    {
+      "test_idx": 7,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "stack-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-121"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==162630==ERROR: AddressSanitizer: stack-buffer-overflow on address 0x7087a1a00140 at pc 0x59e0ac1bff39 bp 0x7ffce6fd5430 sp 0x7ffce6fd5420\nREAD of size 1 at 0x7087a1a00140 thread T0\n    #0 0x59e0ac1bff38 in main derived/cpp/qwen/gen_2/00002_2/0133_155_C._Hometask.cpp:37\n    #1 0x7087a382a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7087a382a28a in __libc_start_main_impl ../csu/libc-start.c:360\n"
+    },
+    {
+      "test_idx": 8,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "stack-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-121"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==162631==ERROR: AddressSanitizer: stack-buffer-overflow on address 0x74c203800140 at pc 0x5656c4aaff39 bp 0x7fff768ce860 sp 0x7fff768ce850\nREAD of size 1 at 0x74c203800140 thread T0\n    #0 0x5656c4aaff38 in main derived/cpp/qwen/gen_2/00002_2/0133_155_C._Hometask.cpp:37\n    #1 0x74c20562a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x74c20562a28a in __libc_start_main_impl ../csu/libc-start.c:360\n"
+    },
+    {
+      "test_idx": 9,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "shift exponent"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/qwen/gen_2/00002_2/0133_155_C._Hometask.cpp:23:28: runtime error: shift exponent 166 is too large for 32-bit type 'int'\n"
+    },
+    {
+      "test_idx": 10,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "stack-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-121"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==162641==ERROR: AddressSanitizer: stack-buffer-overflow on address 0x7b7ff9800140 at pc 0x5b3b65c82f39 bp 0x7ffc1d7debc0 sp 0x7ffc1d7debb0\nREAD of size 1 at 0x7b7ff9800140 thread T0\n    #0 0x5b3b65c82f38 in main derived/cpp/qwen/gen_2/00002_2/0133_155_C._Hometask.cpp:37\n    #1 0x7b7ffb62a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7b7ffb62a28a in __libc_start_main_impl ../csu/libc-start.c:360\n"
+    },
+    {
+      "test_idx": 11,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "shift exponent"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/qwen/gen_2/00002_2/0133_155_C._Hometask.cpp:23:28: runtime error: shift exponent 100 is too large for 32-bit type 'int'\n"
+    },
+    {
+      "test_idx": 12,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "stack-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-121"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==162643==ERROR: AddressSanitizer: stack-buffer-overflow on address 0x78675c800140 at pc 0x638065034f39 bp 0x7ffd0eeddd60 sp 0x7ffd0eeddd50\nREAD of size 1 at 0x78675c800140 thread T0\n    #0 0x638065034f38 in main derived/cpp/qwen/gen_2/00002_2/0133_155_C._Hometask.cpp:37\n    #1 0x78675e62a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x78675e62a28a in __libc_start_main_impl ../csu/libc-start.c:360\n"
+    },
+    {
+      "test_idx": 13,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "shift exponent"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/qwen/gen_2/00002_2/0133_155_C._Hometask.cpp:23:28: runtime error: shift exponent 500 is too large for 32-bit type 'int'\n"
+    },
+    {
+      "test_idx": 14,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "shift exponent"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/qwen/gen_2/00002_2/0133_155_C._Hometask.cpp:23:28: runtime error: shift exponent 50 is too large for 32-bit type 'int'\n"
+    }
+  ]
+}

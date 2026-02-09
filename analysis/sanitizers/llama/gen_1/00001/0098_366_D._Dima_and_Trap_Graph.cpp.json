@@ -1,0 +1,65 @@
+{
+  "problem_key": "366_D_Dima_and_Trap_Graph",
+  "shard": 1,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 5,
+  "n_passed": 2,
+  "n_sanitizer_triggered": 2,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [],
+  "all_sanitizer_cwes": [],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==83083==ERROR: AddressSanitizer: stack-overflow on address 0x7ffd8bf80fec (pc 0x631425da55a1 bp 0x7ffd8bf81120 sp 0x7ffd8bf80fc0 T0)\n    #0 0x631425da55a1 in dfs(int, int, int, int) derived/cpp/llama/gen_1/00001/0098_366_D._Dima_and_Trap_Graph.cpp:15\n    #1 0x631425da5c00 in dfs(int, int, int, int) derived/cpp/llama/gen_1/00001/0098_366_D._Dima_and_Trap_Graph.cpp:24\n    #2 0x631425da5c00 in dfs(int, "
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 2,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 3,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 4,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==83104==ERROR: AddressSanitizer: stack-overflow on address 0x7ffd40991ff8 (pc 0x5735944d96ce bp 0x7ffd40992160 sp 0x7ffd40992000 T0)\n    #0 0x5735944d96ce in dfs(int, int, int, int) derived/cpp/llama/gen_1/00001/0098_366_D._Dima_and_Trap_Graph.cpp:15\n    #1 0x5735944d9c00 in dfs(int, int, int, int) derived/cpp/llama/gen_1/00001/0098_366_D._Dima_and_Trap_Graph.cpp:24\n    #2 0x5735944d9c00 in dfs(int, "
+    }
+  ]
+}

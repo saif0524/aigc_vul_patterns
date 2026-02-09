@@ -1,0 +1,93 @@
+{
+  "problem_key": "187_B_AlgoRace",
+  "shard": 1,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 6,
+  "n_passed": 2,
+  "n_sanitizer_triggered": 3,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow",
+    "shift exponent"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122",
+    "CWE-190"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==63198==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x504000000040 at pc 0x620770011ef6 bp 0x7ffe55604c60 sp 0x7ffe55604c50\nREAD of size 8 at 0x504000000040 thread T0\n    #0 0x620770011ef5 in std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::operator[](unsigned long) /usr/include/c++/13/bits/stl_vector.h:1129\n    #1 0x620770011ef5 in main derived/cpp/gemma/"
+    },
+    {
+      "test_idx": 2,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 4,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==63201==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x503000000058 at pc 0x5e2300ffcef6 bp 0x7fff2f8297b0 sp 0x7fff2f8297a0\nREAD of size 8 at 0x503000000058 thread T0\n    #0 0x5e2300ffcef5 in std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > >::operator[](unsigned long) /usr/include/c++/13/bits/stl_vector.h:1129\n    #1 0x5e2300ffcef5 in main derived/cpp/gemma/"
+    },
+    {
+      "test_idx": 5,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "shift exponent"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/gemma/gen_3/00001_3/0161_187_B._AlgoRace.cpp:27:46: runtime error: shift exponent 1001 is too large for 32-bit type 'int'\n"
+    }
+  ]
+}

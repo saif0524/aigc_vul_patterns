@@ -1,0 +1,115 @@
+{
+  "problem_key": "719_E_Sasha_and_Array",
+  "shard": 2,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 8,
+  "n_passed": 4,
+  "n_sanitizer_triggered": 4,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 1,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 2,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==53838==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000040 at pc 0x560485256ae1 bp 0x7fff975189a0 sp 0x7fff97518990\nWRITE of size 8 at 0x502000000040 thread T0\n    #0 0x560485256ae0 in main derived/cpp/gemma/gen_2/00002_2/0148_719_E._Sasha_and_Array.cpp:19\n    #1 0x7f558642a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7f558642a28a in __libc_start_main_impl ../csu/libc-start"
+    },
+    {
+      "test_idx": 4,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 5,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==53864==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50e0000000d8 at pc 0x62d9ab627485 bp 0x7ffda86e2fd0 sp 0x7ffda86e2fc0\nREAD of size 8 at 0x50e0000000d8 thread T0\n    #0 0x62d9ab627484 in main derived/cpp/gemma/gen_2/00002_2/0148_719_E._Sasha_and_Array.cpp:39\n    #1 0x78ee6482a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x78ee6482a28a in __libc_start_main_impl ../csu/libc-start."
+    },
+    {
+      "test_idx": 6,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==53894==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000040 at pc 0x5a1df07a0ae1 bp 0x7ffcfa6758f0 sp 0x7ffcfa6758e0\nWRITE of size 8 at 0x502000000040 thread T0\n    #0 0x5a1df07a0ae0 in main derived/cpp/gemma/gen_2/00002_2/0148_719_E._Sasha_and_Array.cpp:19\n    #1 0x794ef5a2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x794ef5a2a28a in __libc_start_main_impl ../csu/libc-start"
+    },
+    {
+      "test_idx": 7,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==53897==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50d0000001a0 at pc 0x631782ca8485 bp 0x7ffd561a6150 sp 0x7ffd561a6140\nREAD of size 8 at 0x50d0000001a0 thread T0\n    #0 0x631782ca8484 in main derived/cpp/gemma/gen_2/00002_2/0148_719_E._Sasha_and_Array.cpp:39\n    #1 0x73f26dc2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x73f26dc2a28a in __libc_start_main_impl ../csu/libc-start."
+    }
+  ]
+}

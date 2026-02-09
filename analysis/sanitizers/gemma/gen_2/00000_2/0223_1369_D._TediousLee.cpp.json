@@ -1,0 +1,33 @@
+{
+  "problem_key": "1369_D_TediousLee",
+  "shard": 0,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 1,
+  "n_passed": 0,
+  "n_sanitizer_triggered": 1,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "shift exponent"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-190"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "shift exponent"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/gemma/gen_2/00000_2/0223_1369_D._TediousLee.cpp:31:36: runtime error: shift exponent 1234566 is too large for 64-bit type 'long long int'\n"
+    }
+  ]
+}

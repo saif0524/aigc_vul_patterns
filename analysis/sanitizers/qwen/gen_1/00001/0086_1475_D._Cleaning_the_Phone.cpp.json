@@ -1,0 +1,33 @@
+{
+  "problem_key": "1475_D_Cleaning_the_Phone",
+  "shard": 1,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 1,
+  "n_passed": 0,
+  "n_sanitizer_triggered": 1,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==139708==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x512000000150 at pc 0x628997098968 bp 0x7fff5749da80 sp 0x7fff5749da70\nREAD of size 8 at 0x512000000150 thread T0\n    #0 0x628997098967 in main derived/cpp/qwen/gen_1/00001/0086_1475_D._Cleaning_the_Phone.cpp:31\n    #1 0x77075ec2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x77075ec2a28a in __libc_start_main_impl ../csu/libc-star"
+    }
+  ]
+}

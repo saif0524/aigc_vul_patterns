@@ -1,0 +1,159 @@
+{
+  "problem_key": "480_D_Parcels",
+  "shard": 2,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 12,
+  "n_passed": 5,
+  "n_sanitizer_triggered": 5,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 3,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 4,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==183309==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50800000029c at pc 0x61085ccf592e bp 0x7ffce6454a80 sp 0x7ffce6454a70\nREAD of size 4 at 0x50800000029c thread T0\n    #0 0x61085ccf592d in int const& std::max<int>(int const&, int const&) /usr/include/c++/13/bits/stl_algobase.h:262\n    #1 0x61085ccf592d in main derived/cpp/qwen/gen_3/00002_3/0159_480_D._Parcels.cpp:42\n    #2 0x7c161022a1c9 in __libc_start_call_mai"
+    },
+    {
+      "test_idx": 5,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==183310==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x521000007040 at pc 0x5b6381fcb92e bp 0x7ffd5bf216f0 sp 0x7ffd5bf216e0\nREAD of size 4 at 0x521000007040 thread T0\n    #0 0x5b6381fcb92d in int const& std::max<int>(int const&, int const&) /usr/include/c++/13/bits/stl_algobase.h:262\n    #1 0x5b6381fcb92d in main derived/cpp/qwen/gen_3/00002_3/0159_480_D._Parcels.cpp:42\n    #2 0x7b83af82a1c9 in __libc_start_call_mai"
+    },
+    {
+      "test_idx": 6,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==183311==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5080000001c0 at pc 0x55c6d1e5992e bp 0x7ffece3235e0 sp 0x7ffece3235d0\nREAD of size 4 at 0x5080000001c0 thread T0\n    #0 0x55c6d1e5992d in int const& std::max<int>(int const&, int const&) /usr/include/c++/13/bits/stl_algobase.h:262\n    #1 0x55c6d1e5992d in main derived/cpp/qwen/gen_3/00002_3/0159_480_D._Parcels.cpp:42\n    #2 0x7c8086c2a1c9 in __libc_start_call_mai"
+    },
+    {
+      "test_idx": 7,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==183312==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5020000000a4 at pc 0x644cd849692e bp 0x7fffe8804be0 sp 0x7fffe8804bd0\nREAD of size 4 at 0x5020000000a4 thread T0\n    #0 0x644cd849692d in int const& std::max<int>(int const&, int const&) /usr/include/c++/13/bits/stl_algobase.h:262\n    #1 0x644cd849692d in main derived/cpp/qwen/gen_3/00002_3/0159_480_D._Parcels.cpp:42\n    #2 0x795e9e02a1c9 in __libc_start_call_mai"
+    },
+    {
+      "test_idx": 8,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 9,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 10,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==183315==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x51e000002340 at pc 0x58c7e307192e bp 0x7ffde3864bd0 sp 0x7ffde3864bc0\nREAD of size 4 at 0x51e000002340 thread T0\n    #0 0x58c7e307192d in int const& std::max<int>(int const&, int const&) /usr/include/c++/13/bits/stl_algobase.h:262\n    #1 0x58c7e307192d in main derived/cpp/qwen/gen_3/00002_3/0159_480_D._Parcels.cpp:42\n    #2 0x774a4802a1c9 in __libc_start_call_mai"
+    },
+    {
+      "test_idx": 11,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    }
+  ]
+}

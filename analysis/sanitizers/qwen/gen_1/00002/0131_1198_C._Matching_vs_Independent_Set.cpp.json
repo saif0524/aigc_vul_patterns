@@ -1,0 +1,47 @@
+{
+  "problem_key": "1198_C_Matching_vs_Independent_Set",
+  "shard": 2,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 2,
+  "n_passed": 0,
+  "n_sanitizer_triggered": 2,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==145271==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5030000002f8 at pc 0x61812587f168 bp 0x7ffdea794ce0 sp 0x7ffdea794cd0\nREAD of size 4 at 0x5030000002f8 thread T0\n    #0 0x61812587f167 in operator() derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp:30\n    #1 0x61812587f167 in __invoke_impl<bool, solve()::<lambda(int)>&, int> /usr/include/c++/13/bits/invoke.h:61\n    #2 0x61812587f167 in __"
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==145272==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5060000000ec at pc 0x57262f3aa168 bp 0x7ffeae277dd0 sp 0x7ffeae277dc0\nREAD of size 4 at 0x5060000000ec thread T0\n    #0 0x57262f3aa167 in operator() derived/cpp/qwen/gen_1/00002/0131_1198_C._Matching_vs_Independent_Set.cpp:30\n    #1 0x57262f3aa167 in __invoke_impl<bool, solve()::<lambda(int)>&, int> /usr/include/c++/13/bits/invoke.h:61\n    #2 0x57262f3aa167 in __"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "problem_key": "1384_F_Rearrange",
+  "shard": 2,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 5,
+  "n_passed": 1,
+  "n_sanitizer_triggered": 4,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==180449==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x503000000174 at pc 0x63c3d4398ac9 bp 0x7fffbf8faba0 sp 0x7fffbf8fab90\nREAD of size 4 at 0x503000000174 thread T0\n    #0 0x63c3d4398ac8 in operator() derived/cpp/qwen/gen_3/00002_3/0138_1384_F._Rearrange.cpp:112\n    #1 0x63c3d4398dc6 in operator()<__gnu_cxx::__normal_iterator<int*, std::vector<int> >, __gnu_cxx::__normal_iterator<int*, std::vector<int> > > /usr/in"
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==180450==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x504000000034 at pc 0x6232f438dac9 bp 0x7ffcd5fe8270 sp 0x7ffcd5fe8260\nREAD of size 4 at 0x504000000034 thread T0\n    #0 0x6232f438dac8 in operator() derived/cpp/qwen/gen_3/00002_3/0138_1384_F._Rearrange.cpp:112\n    #1 0x6232f438ddc6 in operator()<__gnu_cxx::__normal_iterator<int*, std::vector<int> >, __gnu_cxx::__normal_iterator<int*, std::vector<int> > > /usr/in"
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==180451==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5040000002f8 at pc 0x592a923c2ac9 bp 0x7ffe97a1d060 sp 0x7ffe97a1d050\nREAD of size 4 at 0x5040000002f8 thread T0\n    #0 0x592a923c2ac8 in operator() derived/cpp/qwen/gen_3/00002_3/0138_1384_F._Rearrange.cpp:112\n    #1 0x592a923c2dc6 in operator()<__gnu_cxx::__normal_iterator<int*, std::vector<int> >, __gnu_cxx::__normal_iterator<int*, std::vector<int> > > /usr/in"
+    },
+    {
+      "test_idx": 4,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==180453==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50400000033c at pc 0x648e0b18fac9 bp 0x7ffec3715dd0 sp 0x7ffec3715dc0\nREAD of size 4 at 0x50400000033c thread T0\n    #0 0x648e0b18fac8 in operator() derived/cpp/qwen/gen_3/00002_3/0138_1384_F._Rearrange.cpp:112\n    #1 0x648e0b18fdc6 in operator()<__gnu_cxx::__normal_iterator<int*, std::vector<int> >, __gnu_cxx::__normal_iterator<int*, std::vector<int> > > /usr/in"
+    }
+  ]
+}

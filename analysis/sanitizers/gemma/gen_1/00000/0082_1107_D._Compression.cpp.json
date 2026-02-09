@@ -1,0 +1,271 @@
+{
+  "problem_key": "1107_D_Compression",
+  "shard": 0,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 18,
+  "n_passed": 0,
+  "n_sanitizer_triggered": 18,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==27008==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x510000000028 at pc 0x64414deaa0a3 bp 0x7fff792d2bf0 sp 0x7fff792d2be0\nREAD of size 8 at 0x510000000028 thread T0\n    #0 0x64414deaa0a2 in std::vector<int, std::allocator<int> >::operator[](unsigned long) /usr/include/c++/13/bits/stl_vector.h:1129\n    #1 0x64414deaa0a2 in main derived/cpp/gemma/gen_1/00000/0082_1107_D._Compression.cpp:41\n    #2 0x76bad742a1c9 in __"
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==27016==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x508000000008 at pc 0x6037c16a40a3 bp 0x7ffd48ac5430 sp 0x7ffd48ac5420\nREAD of size 8 at 0x508000000008 thread T0\n    #0 0x6037c16a40a2 in std::vector<int, std::allocator<int> >::operator[](unsigned long) /usr/include/c++/13/bits/stl_vector.h:1129\n    #1 0x6037c16a40a2 in main derived/cpp/gemma/gen_1/00000/0082_1107_D._Compression.cpp:41\n    #2 0x70bda482a1c9 in __"
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==27039==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x510000000028 at pc 0x5847aadd90a3 bp 0x7fff79b3de20 sp 0x7fff79b3de10\nREAD of size 8 at 0x510000000028 thread T0\n    #0 0x5847aadd90a2 in std::vector<int, std::allocator<int> >::operator[](unsigned long) /usr/include/c++/13/bits/stl_vector.h:1129\n    #1 0x5847aadd90a2 in main derived/cpp/gemma/gen_1/00000/0082_1107_D._Compression.cpp:41\n    #2 0x7de2ce22a1c9 in __"
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==27058==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x513000000028 at pc 0x648ae238d0a3 bp 0x7ffd91615cf0 sp 0x7ffd91615ce0\nREAD of size 8 at 0x513000000028 thread T0\n    #0 0x648ae238d0a2 in std::vector<int, std::allocator<int> >::operator[](unsigned long) /usr/include/c++/13/bits/stl_vector.h:1129\n    #1 0x648ae238d0a2 in main derived/cpp/gemma/gen_1/00000/0082_1107_D._Compression.cpp:41\n    #2 0x7ec323c2a1c9 in __"
+    },
+    {
+      "test_idx": 4,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==27063==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x512000000028 at pc 0x5dc16bf300a3 bp 0x7ffd00297a40 sp 0x7ffd00297a30\nREAD of size 8 at 0x512000000028 thread T0\n    #0 0x5dc16bf300a2 in std::vector<int, std::allocator<int> >::operator[](unsigned long) /usr/include/c++/13/bits/stl_vector.h:1129\n    #1 0x5dc16bf300a2 in main derived/cpp/gemma/gen_1/00000/0082_1107_D._Compression.cpp:41\n    #2 0x7d814f82a1c9 in __"
+    },
+    {
+      "test_idx": 5,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==27069==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x508000000008 at pc 0x63c16c6a20a3 bp 0x7ffe5e101260 sp 0x7ffe5e101250\nREAD of size 8 at 0x508000000008 thread T0\n    #0 0x63c16c6a20a2 in std::vector<int, std::allocator<int> >::operator[](unsigned long) /usr/include/c++/13/bits/stl_vector.h:1129\n    #1 0x63c16c6a20a2 in main derived/cpp/gemma/gen_1/00000/0082_1107_D._Compression.cpp:41\n    #2 0x758011e2a1c9 in __"
+    },
+    {
+      "test_idx": 6,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==27078==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x512000000028 at pc 0x5975bcf560a3 bp 0x7fff3cd2d110 sp 0x7fff3cd2d100\nREAD of size 8 at 0x512000000028 thread T0\n    #0 0x5975bcf560a2 in std::vector<int, std::allocator<int> >::operator[](unsigned long) /usr/include/c++/13/bits/stl_vector.h:1129\n    #1 0x5975bcf560a2 in main derived/cpp/gemma/gen_1/00000/0082_1107_D._Compression.cpp:41\n    #2 0x70e1d5a2a1c9 in __"
+    },
+    {
+      "test_idx": 7,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==27112==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x512000000028 at pc 0x5e2dc02a80a3 bp 0x7ffe224e85c0 sp 0x7ffe224e85b0\nREAD of size 8 at 0x512000000028 thread T0\n    #0 0x5e2dc02a80a2 in std::vector<int, std::allocator<int> >::operator[](unsigned long) /usr/include/c++/13/bits/stl_vector.h:1129\n    #1 0x5e2dc02a80a2 in main derived/cpp/gemma/gen_1/00000/0082_1107_D._Compression.cpp:41\n    #2 0x7cdc4282a1c9 in __"
+    },
+    {
+      "test_idx": 8,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==27116==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x510000000028 at pc 0x5cd8d8aee0a3 bp 0x7fffc05638f0 sp 0x7fffc05638e0\nREAD of size 8 at 0x510000000028 thread T0\n    #0 0x5cd8d8aee0a2 in std::vector<int, std::allocator<int> >::operator[](unsigned long) /usr/include/c++/13/bits/stl_vector.h:1129\n    #1 0x5cd8d8aee0a2 in main derived/cpp/gemma/gen_1/00000/0082_1107_D._Compression.cpp:41\n    #2 0x701d11a2a1c9 in __"
+    },
+    {
+      "test_idx": 9,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==27119==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x508000000008 at pc 0x5eb4b6bf40a3 bp 0x7ffe594712c0 sp 0x7ffe594712b0\nREAD of size 8 at 0x508000000008 thread T0\n    #0 0x5eb4b6bf40a2 in std::vector<int, std::allocator<int> >::operator[](unsigned long) /usr/include/c++/13/bits/stl_vector.h:1129\n    #1 0x5eb4b6bf40a2 in main derived/cpp/gemma/gen_1/00000/0082_1107_D._Compression.cpp:41\n    #2 0x7330cb82a1c9 in __"
+    },
+    {
+      "test_idx": 10,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==27128==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x508000000008 at pc 0x63e09d1770a3 bp 0x7ffcc78c5eb0 sp 0x7ffcc78c5ea0\nREAD of size 8 at 0x508000000008 thread T0\n    #0 0x63e09d1770a2 in std::vector<int, std::allocator<int> >::operator[](unsigned long) /usr/include/c++/13/bits/stl_vector.h:1129\n    #1 0x63e09d1770a2 in main derived/cpp/gemma/gen_1/00000/0082_1107_D._Compression.cpp:41\n    #2 0x7e668062a1c9 in __"
+    },
+    {
+      "test_idx": 11,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==27164==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x512000000028 at pc 0x5ba791a100a3 bp 0x7ffca77e2e70 sp 0x7ffca77e2e60\nREAD of size 8 at 0x512000000028 thread T0\n    #0 0x5ba791a100a2 in std::vector<int, std::allocator<int> >::operator[](unsigned long) /usr/include/c++/13/bits/stl_vector.h:1129\n    #1 0x5ba791a100a2 in main derived/cpp/gemma/gen_1/00000/0082_1107_D._Compression.cpp:41\n    #2 0x78e95be2a1c9 in __"
+    },
+    {
+      "test_idx": 12,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==27219==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x508000000008 at pc 0x55d322cb50a3 bp 0x7ffeadf8ccd0 sp 0x7ffeadf8ccc0\nREAD of size 8 at 0x508000000008 thread T0\n    #0 0x55d322cb50a2 in std::vector<int, std::allocator<int> >::operator[](unsigned long) /usr/include/c++/13/bits/stl_vector.h:1129\n    #1 0x55d322cb50a2 in main derived/cpp/gemma/gen_1/00000/0082_1107_D._Compression.cpp:41\n    #2 0x713c5042a1c9 in __"
+    },
+    {
+      "test_idx": 13,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==27235==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x512000000028 at pc 0x6424324ee0a3 bp 0x7ffd042c39c0 sp 0x7ffd042c39b0\nREAD of size 8 at 0x512000000028 thread T0\n    #0 0x6424324ee0a2 in std::vector<int, std::allocator<int> >::operator[](unsigned long) /usr/include/c++/13/bits/stl_vector.h:1129\n    #1 0x6424324ee0a2 in main derived/cpp/gemma/gen_1/00000/0082_1107_D._Compression.cpp:41\n    #2 0x7c771422a1c9 in __"
+    },
+    {
+      "test_idx": 14,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==27252==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x510000000028 at pc 0x587cf77600a3 bp 0x7ffd0d794990 sp 0x7ffd0d794980\nREAD of size 8 at 0x510000000028 thread T0\n    #0 0x587cf77600a2 in std::vector<int, std::allocator<int> >::operator[](unsigned long) /usr/include/c++/13/bits/stl_vector.h:1129\n    #1 0x587cf77600a2 in main derived/cpp/gemma/gen_1/00000/0082_1107_D._Compression.cpp:41\n    #2 0x7c8edc82a1c9 in __"
+    },
+    {
+      "test_idx": 15,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==27281==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x508000000008 at pc 0x5616753f60a3 bp 0x7ffc69f58cc0 sp 0x7ffc69f58cb0\nREAD of size 8 at 0x508000000008 thread T0\n    #0 0x5616753f60a2 in std::vector<int, std::allocator<int> >::operator[](unsigned long) /usr/include/c++/13/bits/stl_vector.h:1129\n    #1 0x5616753f60a2 in main derived/cpp/gemma/gen_1/00000/0082_1107_D._Compression.cpp:41\n    #2 0x74528e62a1c9 in __"
+    },
+    {
+      "test_idx": 16,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==27288==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x512000000028 at pc 0x654efbf8a0a3 bp 0x7ffc46c6eb60 sp 0x7ffc46c6eb50\nREAD of size 8 at 0x512000000028 thread T0\n    #0 0x654efbf8a0a2 in std::vector<int, std::allocator<int> >::operator[](unsigned long) /usr/include/c++/13/bits/stl_vector.h:1129\n    #1 0x654efbf8a0a2 in main derived/cpp/gemma/gen_1/00000/0082_1107_D._Compression.cpp:41\n    #2 0x78cfdb22a1c9 in __"
+    },
+    {
+      "test_idx": 17,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==27298==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x508000000008 at pc 0x5663d4ada0a3 bp 0x7ffda772a910 sp 0x7ffda772a900\nREAD of size 8 at 0x508000000008 thread T0\n    #0 0x5663d4ada0a2 in std::vector<int, std::allocator<int> >::operator[](unsigned long) /usr/include/c++/13/bits/stl_vector.h:1129\n    #1 0x5663d4ada0a2 in main derived/cpp/gemma/gen_1/00000/0082_1107_D._Compression.cpp:41\n    #2 0x76d2d9e2a1c9 in __"
+    }
+  ]
+}

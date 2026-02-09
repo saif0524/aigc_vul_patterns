@@ -1,0 +1,225 @@
+{
+  "problem_key": "331_E2_Deja_Vu",
+  "shard": 0,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 15,
+  "n_passed": 0,
+  "n_sanitizer_triggered": 13,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "SEGV",
+    "heap-buffer-overflow",
+    "index .* out of bounds"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122",
+    "CWE-125",
+    "CWE-476"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==114253==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x503000000120 at pc 0x5c72f63ece61 bp 0x7ffea2f7f500 sp 0x7ffea2f7f4f0\nREAD of size 8 at 0x503000000120 thread T0\n    #0 0x5c72f63ece60 in std::vector<int, std::allocator<int> >::size() const /usr/include/c++/13/bits/stl_vector.h:993\n    #1 0x5c72f63ece60 in dfs(int, int, int, int) derived/cpp/llama/gen_3/00000_3/0029_331_E2._Deja_Vu.cpp:18\n    #2 0x5c72f63ed9de i"
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==114254==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000050 (pc 0x5d43b9c0bcac bp 0x7ffdc3bafac0 sp 0x7ffdc3baf9d0 T0)\n==114254==The signal is caused by a READ memory access.\n==114254==Hint: address points to the zero page.\n    #0 0x5d43b9c0bcac in std::vector<int, std::allocator<int> >::size() const /usr/include/c++/13/bits/stl_vector.h:993\n    #1 0x5d43b9c0bcac in dfs(int, int, int, in"
+    },
+    {
+      "test_idx": 4,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==114255==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x503000000150 at pc 0x5a3416169e61 bp 0x7ffe1e074af0 sp 0x7ffe1e074ae0\nREAD of size 8 at 0x503000000150 thread T0\n    #0 0x5a3416169e60 in std::vector<int, std::allocator<int> >::size() const /usr/include/c++/13/bits/stl_vector.h:993\n    #1 0x5a3416169e60 in dfs(int, int, int, int) derived/cpp/llama/gen_3/00000_3/0029_331_E2._Deja_Vu.cpp:18\n    #2 0x5a341616a9de i"
+    },
+    {
+      "test_idx": 5,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "index .* out of bounds"
+      ],
+      "sanitizer_cwes": [
+        "CWE-125"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/llama/gen_3/00000_3/0029_331_E2._Deja_Vu.cpp:27:41: runtime error: index 100 out of bounds for type 'bool [100]'\n"
+    },
+    {
+      "test_idx": 6,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==114257==ERROR: AddressSanitizer: SEGV on unknown address 0x0000000000d0 (pc 0x5e3ff7901cac bp 0x7fff640c4060 sp 0x7fff640c3f70 T0)\n==114257==The signal is caused by a READ memory access.\n==114257==Hint: address points to the zero page.\n    #0 0x5e3ff7901cac in std::vector<int, std::allocator<int> >::size() const /usr/include/c++/13/bits/stl_vector.h:993\n    #1 0x5e3ff7901cac in dfs(int, int, int, in"
+    },
+    {
+      "test_idx": 7,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "index .* out of bounds"
+      ],
+      "sanitizer_cwes": [
+        "CWE-125"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/llama/gen_3/00000_3/0029_331_E2._Deja_Vu.cpp:27:41: runtime error: index 100 out of bounds for type 'bool [100]'\n"
+    },
+    {
+      "test_idx": 8,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "index .* out of bounds"
+      ],
+      "sanitizer_cwes": [
+        "CWE-125"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/llama/gen_3/00000_3/0029_331_E2._Deja_Vu.cpp:27:41: runtime error: index 100 out of bounds for type 'bool [100]'\n"
+    },
+    {
+      "test_idx": 9,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==114260==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000070 (pc 0x586c4e137cac bp 0x7ffdab677c20 sp 0x7ffdab677b30 T0)\n==114260==The signal is caused by a READ memory access.\n==114260==Hint: address points to the zero page.\n    #0 0x586c4e137cac in std::vector<int, std::allocator<int> >::size() const /usr/include/c++/13/bits/stl_vector.h:993\n    #1 0x586c4e137cac in dfs(int, int, int, in"
+    },
+    {
+      "test_idx": 10,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==114261==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000030 (pc 0x6257a6e79cac bp 0x7fff0b916340 sp 0x7fff0b916250 T0)\n==114261==The signal is caused by a READ memory access.\n==114261==Hint: address points to the zero page.\n    #0 0x6257a6e79cac in std::vector<int, std::allocator<int> >::size() const /usr/include/c++/13/bits/stl_vector.h:993\n    #1 0x6257a6e79cac in dfs(int, int, int, in"
+    },
+    {
+      "test_idx": 11,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==114262==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x506000000130 at pc 0x5eb6e692de61 bp 0x7ffd7da2cdd0 sp 0x7ffd7da2cdc0\nREAD of size 8 at 0x506000000130 thread T0\n    #0 0x5eb6e692de60 in std::vector<int, std::allocator<int> >::size() const /usr/include/c++/13/bits/stl_vector.h:993\n    #1 0x5eb6e692de60 in dfs(int, int, int, int) derived/cpp/llama/gen_3/00000_3/0029_331_E2._Deja_Vu.cpp:18\n    #2 0x5eb6e692ebc5 i"
+    },
+    {
+      "test_idx": 12,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==114263==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5030000001c0 at pc 0x558e874d6e61 bp 0x7ffd40e254b0 sp 0x7ffd40e254a0\nREAD of size 8 at 0x5030000001c0 thread T0\n    #0 0x558e874d6e60 in std::vector<int, std::allocator<int> >::size() const /usr/include/c++/13/bits/stl_vector.h:993\n    #1 0x558e874d6e60 in dfs(int, int, int, int) derived/cpp/llama/gen_3/00000_3/0029_331_E2._Deja_Vu.cpp:18\n    #2 0x558e874d79de i"
+    },
+    {
+      "test_idx": 13,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==114264==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5030000001a0 at pc 0x5f4cee738e61 bp 0x7ffff3077750 sp 0x7ffff3077740\nREAD of size 8 at 0x5030000001a0 thread T0\n    #0 0x5f4cee738e60 in std::vector<int, std::allocator<int> >::size() const /usr/include/c++/13/bits/stl_vector.h:993\n    #1 0x5f4cee738e60 in dfs(int, int, int, int) derived/cpp/llama/gen_3/00000_3/0029_331_E2._Deja_Vu.cpp:18\n    #2 0x5f4cee739bc5 i"
+    },
+    {
+      "test_idx": 14,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==114265==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x503000000150 at pc 0x5bfd92203e61 bp 0x7fff5a1177d0 sp 0x7fff5a1177c0\nREAD of size 8 at 0x503000000150 thread T0\n    #0 0x5bfd92203e60 in std::vector<int, std::allocator<int> >::size() const /usr/include/c++/13/bits/stl_vector.h:993\n    #1 0x5bfd92203e60 in dfs(int, int, int, int) derived/cpp/llama/gen_3/00000_3/0029_331_E2._Deja_Vu.cpp:18\n    #2 0x5bfd922049de i"
+    }
+  ]
+}

@@ -1,0 +1,509 @@
+{
+  "problem_key": "44_B_Cola",
+  "shard": 0,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 38,
+  "n_passed": 11,
+  "n_sanitizer_triggered": 27,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow",
+    "signed integer overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122",
+    "CWE-190"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==60389==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000058 at pc 0x60bf196c1029 bp 0x7ffd8ac4a6e0 sp 0x7ffd8ac4a6d0\nREAD of size 4 at 0x502000000058 thread T0\n    #0 0x60bf196c1028 in main derived/cpp/gemma/gen_3/00000_3/0031_44_B._Cola.cpp:20\n    #1 0x734dc882a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x734dc882a28a in __libc_start_main_impl ../csu/libc-start.c:360\n    #3"
+    },
+    {
+      "test_idx": 2,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 3,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 4,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "signed integer overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/gemma/gen_3/00000_3/0031_44_B._Cola.cpp:17:40: runtime error: signed integer overflow: 2145874151 + 18003925 cannot be represented in type 'int'\n"
+    },
+    {
+      "test_idx": 5,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "signed integer overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/gemma/gen_3/00000_3/0031_44_B._Cola.cpp:17:40: runtime error: signed integer overflow: 2146453540 + 2748340 cannot be represented in type 'int'\n"
+    },
+    {
+      "test_idx": 6,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 7,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==60414==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000054 at pc 0x643101a1c029 bp 0x7ffd82b0ef40 sp 0x7ffd82b0ef30\nREAD of size 4 at 0x502000000054 thread T0\n    #0 0x643101a1c028 in main derived/cpp/gemma/gen_3/00000_3/0031_44_B._Cola.cpp:20\n    #1 0x7d1293e2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7d1293e2a28a in __libc_start_main_impl ../csu/libc-start.c:360\n    #3"
+    },
+    {
+      "test_idx": 8,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 9,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 10,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 11,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==60423==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5040000000bc at pc 0x60db8369b029 bp 0x7ffdc0dbccd0 sp 0x7ffdc0dbccc0\nREAD of size 4 at 0x5040000000bc thread T0\n    #0 0x60db8369b028 in main derived/cpp/gemma/gen_3/00000_3/0031_44_B._Cola.cpp:20\n    #1 0x7af72ae2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7af72ae2a28a in __libc_start_main_impl ../csu/libc-start.c:360\n    #3"
+    },
+    {
+      "test_idx": 12,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==60424==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5160000008bc at pc 0x5b8594316029 bp 0x7ffc17973b40 sp 0x7ffc17973b30\nREAD of size 4 at 0x5160000008bc thread T0\n    #0 0x5b8594316028 in main derived/cpp/gemma/gen_3/00000_3/0031_44_B._Cola.cpp:20\n    #1 0x76903e82a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x76903e82a28a in __libc_start_main_impl ../csu/libc-start.c:360\n    #3"
+    },
+    {
+      "test_idx": 13,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==60429==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5040000000fc at pc 0x5b589878a245 bp 0x7ffdaaae7060 sp 0x7ffdaaae7050\nREAD of size 4 at 0x5040000000fc thread T0\n    #0 0x5b589878a244 in main derived/cpp/gemma/gen_3/00000_3/0031_44_B._Cola.cpp:23\n    #1 0x707530a2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x707530a2a28a in __libc_start_main_impl ../csu/libc-start.c:360\n    #3"
+    },
+    {
+      "test_idx": 14,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==60439==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x507000000230 at pc 0x5f07b5009245 bp 0x7ffe7a8598e0 sp 0x7ffe7a8598d0\nREAD of size 4 at 0x507000000230 thread T0\n    #0 0x5f07b5009244 in main derived/cpp/gemma/gen_3/00000_3/0031_44_B._Cola.cpp:23\n    #1 0x76e61ba2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x76e61ba2a28a in __libc_start_main_impl ../csu/libc-start.c:360\n    #3"
+    },
+    {
+      "test_idx": 15,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "signed integer overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/gemma/gen_3/00000_3/0031_44_B._Cola.cpp:17:40: runtime error: signed integer overflow: 2146453540 + 2748340 cannot be represented in type 'int'\n"
+    },
+    {
+      "test_idx": 16,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==60458==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x51e000002298 at pc 0x5e88c24d2029 bp 0x7ffd0f744b20 sp 0x7ffd0f744b10\nREAD of size 4 at 0x51e000002298 thread T0\n    #0 0x5e88c24d2028 in main derived/cpp/gemma/gen_3/00000_3/0031_44_B._Cola.cpp:20\n    #1 0x77e43262a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x77e43262a28a in __libc_start_main_impl ../csu/libc-start.c:360\n    #3"
+    },
+    {
+      "test_idx": 17,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 18,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==60460==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000054 at pc 0x5c538c8e2029 bp 0x7ffcc9d9a6a0 sp 0x7ffcc9d9a690\nREAD of size 4 at 0x502000000054 thread T0\n    #0 0x5c538c8e2028 in main derived/cpp/gemma/gen_3/00000_3/0031_44_B._Cola.cpp:20\n    #1 0x71309f02a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x71309f02a28a in __libc_start_main_impl ../csu/libc-start.c:360\n    #3"
+    },
+    {
+      "test_idx": 19,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==60462==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000080 at pc 0x58bcb6b0a245 bp 0x7ffd8d9b8150 sp 0x7ffd8d9b8140\nREAD of size 4 at 0x502000000080 thread T0\n    #0 0x58bcb6b0a244 in main derived/cpp/gemma/gen_3/00000_3/0031_44_B._Cola.cpp:23\n    #1 0x730e8662a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x730e8662a28a in __libc_start_main_impl ../csu/libc-start.c:360\n    #3"
+    },
+    {
+      "test_idx": 20,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==60492==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5040000000fc at pc 0x5ba6c7f14245 bp 0x7ffec814dfa0 sp 0x7ffec814df90\nREAD of size 4 at 0x5040000000fc thread T0\n    #0 0x5ba6c7f14244 in main derived/cpp/gemma/gen_3/00000_3/0031_44_B._Cola.cpp:23\n    #1 0x7ce712c2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7ce712c2a28a in __libc_start_main_impl ../csu/libc-start.c:360\n    #3"
+    },
+    {
+      "test_idx": 21,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 22,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==60494==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000054 at pc 0x5c038ccb1029 bp 0x7ffc152e6800 sp 0x7ffc152e67f0\nREAD of size 4 at 0x502000000054 thread T0\n    #0 0x5c038ccb1028 in main derived/cpp/gemma/gen_3/00000_3/0031_44_B._Cola.cpp:20\n    #1 0x7a3f8be2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7a3f8be2a28a in __libc_start_main_impl ../csu/libc-start.c:360\n    #3"
+    },
+    {
+      "test_idx": 23,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 24,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 25,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==60505==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x525000007704 at pc 0x5ba6ba9a1029 bp 0x7ffd8e69ed30 sp 0x7ffd8e69ed20\nREAD of size 4 at 0x525000007704 thread T0\n    #0 0x5ba6ba9a1028 in main derived/cpp/gemma/gen_3/00000_3/0031_44_B._Cola.cpp:20\n    #1 0x766dec42a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x766dec42a28a in __libc_start_main_impl ../csu/libc-start.c:360\n    #3"
+    },
+    {
+      "test_idx": 26,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==60506==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x52800000ff84 at pc 0x5bccd746e245 bp 0x7ffecbe02700 sp 0x7ffecbe026f0\nREAD of size 4 at 0x52800000ff84 thread T0\n    #0 0x5bccd746e244 in main derived/cpp/gemma/gen_3/00000_3/0031_44_B._Cola.cpp:23\n    #1 0x7fa09742a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7fa09742a28a in __libc_start_main_impl ../csu/libc-start.c:360\n    #3"
+    },
+    {
+      "test_idx": 27,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "signed integer overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/gemma/gen_3/00000_3/0031_44_B._Cola.cpp:17:40: runtime error: signed integer overflow: 2146451197 + 2748339 cannot be represented in type 'int'\n"
+    },
+    {
+      "test_idx": 28,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "signed integer overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/gemma/gen_3/00000_3/0031_44_B._Cola.cpp:17:40: runtime error: signed integer overflow: 2146451197 + 2748339 cannot be represented in type 'int'\n"
+    },
+    {
+      "test_idx": 29,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==60527==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000054 at pc 0x5aa432ff7029 bp 0x7ffcd0871bd0 sp 0x7ffcd0871bc0\nREAD of size 4 at 0x502000000054 thread T0\n    #0 0x5aa432ff7028 in main derived/cpp/gemma/gen_3/00000_3/0031_44_B._Cola.cpp:20\n    #1 0x7ea26502a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7ea26502a28a in __libc_start_main_impl ../csu/libc-start.c:360\n    #3"
+    },
+    {
+      "test_idx": 30,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "signed integer overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/gemma/gen_3/00000_3/0031_44_B._Cola.cpp:17:40: runtime error: signed integer overflow: 2146451197 + 2748339 cannot be represented in type 'int'\n"
+    },
+    {
+      "test_idx": 31,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "signed integer overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/gemma/gen_3/00000_3/0031_44_B._Cola.cpp:17:40: runtime error: signed integer overflow: 2146451197 + 2748339 cannot be represented in type 'int'\n"
+    },
+    {
+      "test_idx": 32,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "signed integer overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/gemma/gen_3/00000_3/0031_44_B._Cola.cpp:17:40: runtime error: signed integer overflow: 2146451197 + 2748339 cannot be represented in type 'int'\n"
+    },
+    {
+      "test_idx": 33,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==60535==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x523000006cd4 at pc 0x600e4eeab245 bp 0x7ffd81bf2150 sp 0x7ffd81bf2140\nREAD of size 4 at 0x523000006cd4 thread T0\n    #0 0x600e4eeab244 in main derived/cpp/gemma/gen_3/00000_3/0031_44_B._Cola.cpp:23\n    #1 0x71825122a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x71825122a28a in __libc_start_main_impl ../csu/libc-start.c:360\n    #3"
+    },
+    {
+      "test_idx": 34,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "signed integer overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/gemma/gen_3/00000_3/0031_44_B._Cola.cpp:17:40: runtime error: signed integer overflow: 2146167815 + 2745875 cannot be represented in type 'int'\n"
+    },
+    {
+      "test_idx": 35,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "signed integer overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/gemma/gen_3/00000_3/0031_44_B._Cola.cpp:17:40: runtime error: signed integer overflow: 2146451197 + 2748339 cannot be represented in type 'int'\n"
+    },
+    {
+      "test_idx": 36,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "signed integer overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/gemma/gen_3/00000_3/0031_44_B._Cola.cpp:17:40: runtime error: signed integer overflow: 2146451197 + 2748339 cannot be represented in type 'int'\n"
+    },
+    {
+      "test_idx": 37,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "signed integer overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-190"
+      ],
+      "returncode": 1,
+      "stderr_head": "derived/cpp/gemma/gen_3/00000_3/0031_44_B._Cola.cpp:17:40: runtime error: signed integer overflow: 2146451197 + 2748339 cannot be represented in type 'int'\n"
+    }
+  ]
+}

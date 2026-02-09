@@ -1,0 +1,165 @@
+{
+  "problem_key": "1144_F_Graph_Without_Long_Directed_Paths",
+  "shard": 2,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 13,
+  "n_passed": 9,
+  "n_sanitizer_triggered": 4,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 1,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 2,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==182465==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50300000003c at pc 0x592ebaa9c3e1 bp 0x7ffe58370810 sp 0x7ffe58370800\nREAD of size 4 at 0x50300000003c thread T0\n    #0 0x592ebaa9c3e0 in main derived/cpp/qwen/gen_3/00002_3/0039_1144_F._Graph_Without_Long_Directed_Paths.cpp:35\n    #1 0x7f107422a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7f107422a28a in __libc_start_main_impl"
+    },
+    {
+      "test_idx": 4,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 5,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 6,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 7,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==182499==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50300000003c at pc 0x576e8bb473e1 bp 0x7fffb2edcf50 sp 0x7fffb2edcf40\nREAD of size 4 at 0x50300000003c thread T0\n    #0 0x576e8bb473e0 in main derived/cpp/qwen/gen_3/00002_3/0039_1144_F._Graph_Without_Long_Directed_Paths.cpp:35\n    #1 0x74db2b42a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x74db2b42a28a in __libc_start_main_impl"
+    },
+    {
+      "test_idx": 8,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 9,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==182504==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50400000000c at pc 0x6439461023e1 bp 0x7ffc5af63c10 sp 0x7ffc5af63c00\nREAD of size 4 at 0x50400000000c thread T0\n    #0 0x6439461023e0 in main derived/cpp/qwen/gen_3/00002_3/0039_1144_F._Graph_Without_Long_Directed_Paths.cpp:35\n    #1 0x7a8bb0a2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7a8bb0a2a28a in __libc_start_main_impl"
+    },
+    {
+      "test_idx": 10,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 11,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 12,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==182512==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50300000003c at pc 0x6278ab3b03e1 bp 0x7fffaafd4f90 sp 0x7fffaafd4f80\nREAD of size 4 at 0x50300000003c thread T0\n    #0 0x6278ab3b03e0 in main derived/cpp/qwen/gen_3/00002_3/0039_1144_F._Graph_Without_Long_Directed_Paths.cpp:35\n    #1 0x7a26fe82a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7a26fe82a28a in __libc_start_main_impl"
+    }
+  ]
+}

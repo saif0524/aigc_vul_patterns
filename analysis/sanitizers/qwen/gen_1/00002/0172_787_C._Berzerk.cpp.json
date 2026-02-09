@@ -1,0 +1,275 @@
+{
+  "problem_key": "787_C_Berzerk",
+  "shard": 2,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 26,
+  "n_passed": 5,
+  "n_sanitizer_triggered": 21,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [],
+  "all_sanitizer_cwes": [],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==148365==ERROR: AddressSanitizer: stack-overflow on address 0x7ffd31c74fc0 (pc 0x62fc614ec97f bp 0x7ffd31c75180 sp 0x7ffd31c74f90 T0)\n    #0 0x62fc614ec97f in _M_invoke /usr/include/c++/13/bits/std_function.h:288\n    #1 0x62fc614ed18e in std::function<int (int, int)>::operator()(int, int) const /usr/include/c++/13/bits/std_function.h:591\n    #2 0x62fc614ed18e in operator() derived/cpp/qwen/gen_1/0000"
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==148369==ERROR: AddressSanitizer: stack-overflow on address 0x7ffe04c97ff8 (pc 0x77ded7a4c1fc bp 0x7ffe04c98010 sp 0x7ffe04c98000 T0)\n    #0 0x77ded7a4c1fc in __asan_stack_malloc_3 ../../../../src/libsanitizer/asan/asan_fake_stack.cpp:276\n    #1 0x5cda19414b82 in _M_invoke /usr/include/c++/13/bits/std_function.h:288\n    #2 0x5cda1941518e in std::function<int (int, int)>::operator()(int, int) const /u"
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==148392==ERROR: AddressSanitizer: stack-overflow on address 0x7fffe6031ff8 (pc 0x75ec0584c1fc bp 0x7fffe6032010 sp 0x7fffe6032000 T0)\n    #0 0x75ec0584c1fc in __asan_stack_malloc_3 ../../../../src/libsanitizer/asan/asan_fake_stack.cpp:276\n    #1 0x5b98b42c0b82 in _M_invoke /usr/include/c++/13/bits/std_function.h:288\n    #2 0x5b98b42c118e in std::function<int (int, int)>::operator()(int, int) const /u"
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==148393==ERROR: AddressSanitizer: stack-overflow on address 0x7fffb75dbff8 (pc 0x742db76dddde bp 0x7fffb75dc010 sp 0x7fffb75dc000 T0)\n    #0 0x742db76dddde in __tls_get_addr ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:5422\n    #1 0x742db764c20c in __asan::GetTLSFakeStack() ../../../../src/libsanitizer/asan/asan_fake_stack.cpp:194\n    #2 0x742db764c20c in GetFakeSta"
+    },
+    {
+      "test_idx": 4,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 5,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==148400==ERROR: AddressSanitizer: stack-overflow on address 0x7ffd208f9ff8 (pc 0x76cb9724c1fc bp 0x7ffd208fa010 sp 0x7ffd208fa000 T0)\n    #0 0x76cb9724c1fc in __asan_stack_malloc_3 ../../../../src/libsanitizer/asan/asan_fake_stack.cpp:276\n    #1 0x649fe2b35b82 in _M_invoke /usr/include/c++/13/bits/std_function.h:288\n    #2 0x649fe2b3618e in std::function<int (int, int)>::operator()(int, int) const /u"
+    },
+    {
+      "test_idx": 6,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==148401==ERROR: AddressSanitizer: stack-overflow on address 0x7ffc26828f70 (pc 0x5ef0acc2a97f bp 0x7ffc26829130 sp 0x7ffc26828f40 T0)\n    #0 0x5ef0acc2a97f in _M_invoke /usr/include/c++/13/bits/std_function.h:288\n    #1 0x5ef0acc2b18e in std::function<int (int, int)>::operator()(int, int) const /usr/include/c++/13/bits/std_function.h:591\n    #2 0x5ef0acc2b18e in operator() derived/cpp/qwen/gen_1/0000"
+    },
+    {
+      "test_idx": 7,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==148408==ERROR: AddressSanitizer: stack-overflow on address 0x7ffd685c5fe8 (pc 0x731109336195 bp 0x7ffd685c6030 sp 0x7ffd685c5fe0 T0)\n    #0 0x731109336195 in __sanitizer::DTLS_on_tls_get_addr(void*, void*, unsigned long, unsigned long) ../../../../src/libsanitizer/sanitizer_common/sanitizer_tls_get_addr.cpp:114\n    #1 0x7311092dde32 in __tls_get_addr ../../../../src/libsanitizer/sanitizer_common/san"
+    },
+    {
+      "test_idx": 8,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==148410==ERROR: AddressSanitizer: stack-overflow on address 0x7ffd046bcfb0 (pc 0x560e60abc97f bp 0x7ffd046bd170 sp 0x7ffd046bcf80 T0)\n    #0 0x560e60abc97f in _M_invoke /usr/include/c++/13/bits/std_function.h:288\n    #1 0x560e60abd18e in std::function<int (int, int)>::operator()(int, int) const /usr/include/c++/13/bits/std_function.h:591\n    #2 0x560e60abd18e in operator() derived/cpp/qwen/gen_1/0000"
+    },
+    {
+      "test_idx": 9,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 10,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==148412==ERROR: AddressSanitizer: stack-overflow on address 0x7fffc389df00 (pc 0x63573266f97f bp 0x7fffc389e0c0 sp 0x7fffc389ded0 T0)\n    #0 0x63573266f97f in _M_invoke /usr/include/c++/13/bits/std_function.h:288\n    #1 0x63573267018e in std::function<int (int, int)>::operator()(int, int) const /usr/include/c++/13/bits/std_function.h:591\n    #2 0x63573267018e in operator() derived/cpp/qwen/gen_1/0000"
+    },
+    {
+      "test_idx": 11,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 12,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==148414==ERROR: AddressSanitizer: stack-overflow on address 0x7fffbf3fdf30 (pc 0x5b255f1b797f bp 0x7fffbf3fe0f0 sp 0x7fffbf3fdf00 T0)\n    #0 0x5b255f1b797f in _M_invoke /usr/include/c++/13/bits/std_function.h:288\n    #1 0x5b255f1b818e in std::function<int (int, int)>::operator()(int, int) const /usr/include/c++/13/bits/std_function.h:591\n    #2 0x5b255f1b818e in operator() derived/cpp/qwen/gen_1/0000"
+    },
+    {
+      "test_idx": 13,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==148415==ERROR: AddressSanitizer: stack-overflow on address 0x7fff9685fff8 (pc 0x5d5586663b7e bp 0x7fff968601f0 sp 0x7fff96860000 T0)\n    #0 0x5d5586663b7e in _M_invoke /usr/include/c++/13/bits/std_function.h:288\n    #1 0x5d558666418e in std::function<int (int, int)>::operator()(int, int) const /usr/include/c++/13/bits/std_function.h:591\n    #2 0x5d558666418e in operator() derived/cpp/qwen/gen_1/0000"
+    },
+    {
+      "test_idx": 14,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==148430==ERROR: AddressSanitizer: stack-overflow on address 0x7ffc59d7bef0 (pc 0x5881f1d2e97f bp 0x7ffc59d7c0b0 sp 0x7ffc59d7bec0 T0)\n    #0 0x5881f1d2e97f in _M_invoke /usr/include/c++/13/bits/std_function.h:288\n    #1 0x5881f1d2f18e in std::function<int (int, int)>::operator()(int, int) const /usr/include/c++/13/bits/std_function.h:591\n    #2 0x5881f1d2f18e in operator() derived/cpp/qwen/gen_1/0000"
+    },
+    {
+      "test_idx": 15,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==148437==ERROR: AddressSanitizer: stack-overflow on address 0x7ffec75a9f00 (pc 0x642c4c1ac97f bp 0x7ffec75aa0c0 sp 0x7ffec75a9ed0 T0)\n    #0 0x642c4c1ac97f in _M_invoke /usr/include/c++/13/bits/std_function.h:288\n    #1 0x642c4c1ad18e in std::function<int (int, int)>::operator()(int, int) const /usr/include/c++/13/bits/std_function.h:591\n    #2 0x642c4c1ad18e in operator() derived/cpp/qwen/gen_1/0000"
+    },
+    {
+      "test_idx": 16,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==148443==ERROR: AddressSanitizer: stack-overflow on address 0x7ffe37c6bff8 (pc 0x5622ef897986 bp 0x7ffe37c6c1c0 sp 0x7ffe37c6bfd0 T0)\n    #0 0x5622ef897986 in _M_invoke /usr/include/c++/13/bits/std_function.h:288\n    #1 0x5622ef89818e in std::function<int (int, int)>::operator()(int, int) const /usr/include/c++/13/bits/std_function.h:591\n    #2 0x5622ef89818e in operator() derived/cpp/qwen/gen_1/0000"
+    },
+    {
+      "test_idx": 17,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==148449==ERROR: AddressSanitizer: stack-overflow on address 0x7fffe7e1cf00 (pc 0x6028a34d397f bp 0x7fffe7e1d0c0 sp 0x7fffe7e1ced0 T0)\n    #0 0x6028a34d397f in _M_invoke /usr/include/c++/13/bits/std_function.h:288\n    #1 0x6028a34d418e in std::function<int (int, int)>::operator()(int, int) const /usr/include/c++/13/bits/std_function.h:591\n    #2 0x6028a34d418e in operator() derived/cpp/qwen/gen_1/0000"
+    },
+    {
+      "test_idx": 18,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==148452==ERROR: AddressSanitizer: stack-overflow on address 0x7fff2c5cafb0 (pc 0x64e7dc0d897f bp 0x7fff2c5cb170 sp 0x7fff2c5caf80 T0)\n    #0 0x64e7dc0d897f in _M_invoke /usr/include/c++/13/bits/std_function.h:288\n    #1 0x64e7dc0d918e in std::function<int (int, int)>::operator()(int, int) const /usr/include/c++/13/bits/std_function.h:591\n    #2 0x64e7dc0d918e in operator() derived/cpp/qwen/gen_1/0000"
+    },
+    {
+      "test_idx": 19,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==148453==ERROR: AddressSanitizer: stack-overflow on address 0x7ffeac615ff8 (pc 0x56d6de9bfb7e bp 0x7ffeac6161f0 sp 0x7ffeac616000 T0)\n    #0 0x56d6de9bfb7e in _M_invoke /usr/include/c++/13/bits/std_function.h:288\n    #1 0x56d6de9c018e in std::function<int (int, int)>::operator()(int, int) const /usr/include/c++/13/bits/std_function.h:591\n    #2 0x56d6de9c018e in operator() derived/cpp/qwen/gen_1/0000"
+    },
+    {
+      "test_idx": 20,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 21,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==148456==ERROR: AddressSanitizer: stack-overflow on address 0x7ffcd1559ff8 (pc 0x712f36cdddd8 bp 0x7ffcd155a000 sp 0x7ffcd155a000 T0)\n    #0 0x712f36cdddd8 in __tls_get_addr ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:5420\n    #1 0x712f36c4c20c in __asan::GetTLSFakeStack() ../../../../src/libsanitizer/asan/asan_fake_stack.cpp:194\n    #2 0x712f36c4c20c in GetFakeSta"
+    },
+    {
+      "test_idx": 22,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 23,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==148506==ERROR: AddressSanitizer: stack-overflow on address 0x7fffc1d08ff8 (pc 0x7e4cae4dddd8 bp 0x7fffc1d09000 sp 0x7fffc1d09000 T0)\n    #0 0x7e4cae4dddd8 in __tls_get_addr ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors.inc:5420\n    #1 0x7e4cae44c20c in __asan::GetTLSFakeStack() ../../../../src/libsanitizer/asan/asan_fake_stack.cpp:194\n    #2 0x7e4cae44c20c in GetFakeSta"
+    },
+    {
+      "test_idx": 24,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==148539==ERROR: AddressSanitizer: stack-overflow on address 0x7ffdd8995f80 (pc 0x5c130da4c97f bp 0x7ffdd8996140 sp 0x7ffdd8995f50 T0)\n    #0 0x5c130da4c97f in _M_invoke /usr/include/c++/13/bits/std_function.h:288\n    #1 0x5c130da4d18e in std::function<int (int, int)>::operator()(int, int) const /usr/include/c++/13/bits/std_function.h:591\n    #2 0x5c130da4d18e in operator() derived/cpp/qwen/gen_1/0000"
+    },
+    {
+      "test_idx": 25,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==148542==ERROR: AddressSanitizer: stack-overflow on address 0x7ffff5492fc0 (pc 0x5637a45a097f bp 0x7ffff5493180 sp 0x7ffff5492f90 T0)\n    #0 0x5637a45a097f in _M_invoke /usr/include/c++/13/bits/std_function.h:288\n    #1 0x5637a45a118e in std::function<int (int, int)>::operator()(int, int) const /usr/include/c++/13/bits/std_function.h:591\n    #2 0x5637a45a118e in operator() derived/cpp/qwen/gen_1/0000"
+    }
+  ]
+}

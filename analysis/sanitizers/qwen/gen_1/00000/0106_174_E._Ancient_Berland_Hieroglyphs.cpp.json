@@ -1,0 +1,129 @@
+{
+  "problem_key": "174_E_Ancient_Berland_Hieroglyphs",
+  "shard": 0,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 9,
+  "n_passed": 3,
+  "n_sanitizer_triggered": 5,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==130384==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000098 at pc 0x651b6d0d9bbb bp 0x7ffe7e1c7d70 sp 0x7ffe7e1c7d60\nWRITE of size 4 at 0x502000000098 thread T0\n    #0 0x651b6d0d9bba in main derived/cpp/qwen/gen_1/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp:24\n    #1 0x7129e282a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7129e282a28a in __libc_start_main_impl ../csu/"
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==130386==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000064 at pc 0x633e748c3bbb bp 0x7fffcace87c0 sp 0x7fffcace87b0\nWRITE of size 4 at 0x502000000064 thread T0\n    #0 0x633e748c3bba in main derived/cpp/qwen/gen_1/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp:24\n    #1 0x7849fd22a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7849fd22a28a in __libc_start_main_impl ../csu/"
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==130387==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x503000000118 at pc 0x6422dfbfabbb bp 0x7ffdb4006d90 sp 0x7ffdb4006d80\nWRITE of size 4 at 0x503000000118 thread T0\n    #0 0x6422dfbfabba in main derived/cpp/qwen/gen_1/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp:24\n    #1 0x70a41622a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x70a41622a28a in __libc_start_main_impl ../csu/"
+    },
+    {
+      "test_idx": 3,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 4,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 5,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 6,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==130391==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x504000000140 at pc 0x5def6e6dfbbb bp 0x7ffe39a6da60 sp 0x7ffe39a6da50\nWRITE of size 4 at 0x504000000140 thread T0\n    #0 0x5def6e6dfbba in main derived/cpp/qwen/gen_1/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp:24\n    #1 0x7dc29582a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7dc29582a28a in __libc_start_main_impl ../csu/"
+    },
+    {
+      "test_idx": 7,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 8,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==130393==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50300000011c at pc 0x5fe26c4dbbbb bp 0x7ffdd4e86230 sp 0x7ffdd4e86220\nWRITE of size 4 at 0x50300000011c thread T0\n    #0 0x5fe26c4dbbba in main derived/cpp/qwen/gen_1/00000/0106_174_E._Ancient_Berland_Hieroglyphs.cpp:24\n    #1 0x7a4c5722a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7a4c5722a28a in __libc_start_main_impl ../csu/"
+    }
+  ]
+}

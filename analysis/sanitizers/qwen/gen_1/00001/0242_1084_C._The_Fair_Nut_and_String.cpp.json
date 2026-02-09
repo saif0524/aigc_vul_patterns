@@ -1,0 +1,121 @@
+{
+  "problem_key": "1084_C_The_Fair_Nut_and_String",
+  "shard": 1,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 9,
+  "n_passed": 3,
+  "n_sanitizer_triggered": 3,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==139623==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50b00000003f at pc 0x60665faf7be2 bp 0x7ffd08dee200 sp 0x7ffd08dee1f0\nREAD of size 1 at 0x50b00000003f thread T0\n    #0 0x60665faf7be1 in main derived/cpp/qwen/gen_1/00001/0242_1084_C._The_Fair_Nut_and_String.cpp:24\n    #1 0x7b7de2c2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7b7de2c2a28a in __libc_start_main_impl ../csu/libc"
+    },
+    {
+      "test_idx": 3,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 4,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 5,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 6,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 7,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==139631==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50b00000003f at pc 0x5b10d57bdbe2 bp 0x7ffeead06b60 sp 0x7ffeead06b50\nREAD of size 1 at 0x50b00000003f thread T0\n    #0 0x5b10d57bdbe1 in main derived/cpp/qwen/gen_1/00001/0242_1084_C._The_Fair_Nut_and_String.cpp:24\n    #1 0x76f75662a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x76f75662a28a in __libc_start_main_impl ../csu/libc"
+    },
+    {
+      "test_idx": 8,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==139632==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50b00000003f at pc 0x619815c7ebe2 bp 0x7ffd8e56ff00 sp 0x7ffd8e56fef0\nREAD of size 1 at 0x50b00000003f thread T0\n    #0 0x619815c7ebe1 in main derived/cpp/qwen/gen_1/00001/0242_1084_C._The_Fair_Nut_and_String.cpp:24\n    #1 0x7bab18c2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7bab18c2a28a in __libc_start_main_impl ../csu/libc"
+    }
+  ]
+}

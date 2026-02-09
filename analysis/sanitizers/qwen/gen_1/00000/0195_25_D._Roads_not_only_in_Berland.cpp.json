@@ -1,0 +1,147 @@
+{
+  "problem_key": "25_D_Roads_not_only_in_Berland",
+  "shard": 0,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 9,
+  "n_passed": 0,
+  "n_sanitizer_triggered": 9,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow",
+    "null pointer"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122",
+    "CWE-476"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "null pointer"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "/usr/include/c++/13/bits/stl_vector.h:1129:34: runtime error: reference binding to null pointer of type 'value_type'\n"
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==130839==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50300000003c at pc 0x5a27b282bbc8 bp 0x7ffc2a8f91d0 sp 0x7ffc2a8f91c0\nREAD of size 4 at 0x50300000003c thread T0\n    #0 0x5a27b282bbc7 in main derived/cpp/qwen/gen_1/00000/0195_25_D._Roads_not_only_in_Berland.cpp:44\n    #1 0x786d15c2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x786d15c2a28a in __libc_start_main_impl ../csu/libc"
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "null pointer"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "/usr/include/c++/13/bits/stl_vector.h:1129:34: runtime error: reference binding to null pointer of type 'value_type'\n"
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==130841==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50200000000c at pc 0x5ee994b54bc8 bp 0x7fffde533560 sp 0x7fffde533550\nREAD of size 4 at 0x50200000000c thread T0\n    #0 0x5ee994b54bc7 in main derived/cpp/qwen/gen_1/00000/0195_25_D._Roads_not_only_in_Berland.cpp:44\n    #1 0x79e7e8a2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x79e7e8a2a28a in __libc_start_main_impl ../csu/libc"
+    },
+    {
+      "test_idx": 4,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==130842==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50300000003c at pc 0x5810d56a1bc8 bp 0x7ffe226f1e60 sp 0x7ffe226f1e50\nREAD of size 4 at 0x50300000003c thread T0\n    #0 0x5810d56a1bc7 in main derived/cpp/qwen/gen_1/00000/0195_25_D._Roads_not_only_in_Berland.cpp:44\n    #1 0x79f4cb42a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x79f4cb42a28a in __libc_start_main_impl ../csu/libc"
+    },
+    {
+      "test_idx": 5,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==130844==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x51100000003c at pc 0x5ae83eb08bc8 bp 0x7ffee98094f0 sp 0x7ffee98094e0\nREAD of size 4 at 0x51100000003c thread T0\n    #0 0x5ae83eb08bc7 in main derived/cpp/qwen/gen_1/00000/0195_25_D._Roads_not_only_in_Berland.cpp:44\n    #1 0x74b6c362a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x74b6c362a28a in __libc_start_main_impl ../csu/libc"
+    },
+    {
+      "test_idx": 6,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==130848==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50200000000c at pc 0x59efb7b8abc8 bp 0x7ffd8ba4b9f0 sp 0x7ffd8ba4b9e0\nREAD of size 4 at 0x50200000000c thread T0\n    #0 0x59efb7b8abc7 in main derived/cpp/qwen/gen_1/00000/0195_25_D._Roads_not_only_in_Berland.cpp:44\n    #1 0x7d5eec62a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7d5eec62a28a in __libc_start_main_impl ../csu/libc"
+    },
+    {
+      "test_idx": 7,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "null pointer"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "/usr/include/c++/13/bits/stl_vector.h:1129:34: runtime error: reference binding to null pointer of type 'value_type'\n"
+    },
+    {
+      "test_idx": 8,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "null pointer"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "/usr/include/c++/13/bits/stl_vector.h:1129:34: runtime error: reference binding to null pointer of type 'value_type'\n"
+    }
+  ]
+}

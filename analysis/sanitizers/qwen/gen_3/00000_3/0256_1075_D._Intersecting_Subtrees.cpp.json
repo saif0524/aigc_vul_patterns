@@ -1,0 +1,53 @@
+{
+  "problem_key": "1075_D_Intersecting_Subtrees",
+  "shard": 0,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 3,
+  "n_passed": 0,
+  "n_sanitizer_triggered": 1,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==167795==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50c0000000c0 at pc 0x57aa9486be9a bp 0x7ffc5617b690 sp 0x7ffc5617b680\nREAD of size 8 at 0x50c0000000c0 thread T0\n    #0 0x57aa9486be99 in std::vector<int, std::allocator<int> >::push_back(int const&) /usr/include/c++/13/bits/stl_vector.h:1283\n    #1 0x57aa9486be99 in main derived/cpp/qwen/gen_3/00000_3/0256_1075_D._Intersecting_Subtrees.cpp:15\n    #2 0x7655e342a1"
+    }
+  ]
+}

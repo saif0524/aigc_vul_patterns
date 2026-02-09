@@ -1,0 +1,61 @@
+{
+  "problem_key": "1416_D_Graph_and_Queries",
+  "shard": 2,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 3,
+  "n_passed": 1,
+  "n_sanitizer_triggered": 3,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==89659==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50400000000c at pc 0x577cac44dd3e bp 0x7fffea283530 sp 0x7fffea283520\nWRITE of size 4 at 0x50400000000c thread T0\n    #0 0x577cac44dd3d in run() derived/cpp/llama/gen_1/00002/0054_1416_D._Graph_and_Queries.cpp:102\n    #1 0x577cac44e969 in main derived/cpp/llama/gen_1/00002/0054_1416_D._Graph_and_Queries.cpp:110\n    #2 0x7bf47c62a1c9 in __libc_start_call_main ../sy"
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==89661==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50300000003c at pc 0x5fc0631f8d3e bp 0x7ffee2be7ce0 sp 0x7ffee2be7cd0\nWRITE of size 4 at 0x50300000003c thread T0\n    #0 0x5fc0631f8d3d in run() derived/cpp/llama/gen_1/00002/0054_1416_D._Graph_and_Queries.cpp:102\n    #1 0x5fc0631f9969 in main derived/cpp/llama/gen_1/00002/0054_1416_D._Graph_and_Queries.cpp:110\n    #2 0x71c83022a1c9 in __libc_start_call_main ../sy"
+    },
+    {
+      "test_idx": 2,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==89676==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50200000000c at pc 0x607b68a27d3e bp 0x7ffdcd9cf6a0 sp 0x7ffdcd9cf690\nWRITE of size 4 at 0x50200000000c thread T0\n    #0 0x607b68a27d3d in run() derived/cpp/llama/gen_1/00002/0054_1416_D._Graph_and_Queries.cpp:102\n    #1 0x607b68a28969 in main derived/cpp/llama/gen_1/00002/0054_1416_D._Graph_and_Queries.cpp:110\n    #2 0x7ee83d42a1c9 in __libc_start_call_main ../sy"
+    }
+  ]
+}

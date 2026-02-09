@@ -1,0 +1,61 @@
+{
+  "problem_key": "587_D_Duff_in_Mafia",
+  "shard": 2,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 3,
+  "n_passed": 0,
+  "n_sanitizer_triggered": 3,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "SEGV"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-476"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==144725==ERROR: AddressSanitizer: SEGV on unknown address 0x0000ecd29ab8 (pc 0x6372840b0c2c bp 0x7fffa25ece00 sp 0x7fffa25ec850 T0)\n==144725==The signal is caused by a READ memory access.\n    #0 0x6372840b0c2c in std::vector<int, std::allocator<int> >::push_back(int const&) /usr/include/c++/13/bits/stl_vector.h:1283\n    #1 0x6372840b0c2c in main derived/cpp/qwen/gen_1/00002/0077_587_D._Duff_in_Mafia."
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==144729==ERROR: AddressSanitizer: SEGV on unknown address 0x0000b8c21732 (pc 0x6509931fec2c bp 0x7ffe9b92eca0 sp 0x7ffe9b92e6f0 T0)\n==144729==The signal is caused by a READ memory access.\n    #0 0x6509931fec2c in std::vector<int, std::allocator<int> >::push_back(int const&) /usr/include/c++/13/bits/stl_vector.h:1283\n    #1 0x6509931fec2c in main derived/cpp/qwen/gen_1/00002/0077_587_D._Duff_in_Mafia."
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "SEGV"
+      ],
+      "sanitizer_cwes": [
+        "CWE-476"
+      ],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==144731==ERROR: AddressSanitizer: SEGV on unknown address 0x000121ac06e9 (pc 0x63ff8824ac2c bp 0x7fff09de17e0 sp 0x7fff09de1230 T0)\n==144731==The signal is caused by a READ memory access.\n    #0 0x63ff8824ac2c in std::vector<int, std::allocator<int> >::push_back(int const&) /usr/include/c++/13/bits/stl_vector.h:1283\n    #1 0x63ff8824ac2c in main derived/cpp/qwen/gen_1/00002/0077_587_D._Duff_in_Mafia."
+    }
+  ]
+}

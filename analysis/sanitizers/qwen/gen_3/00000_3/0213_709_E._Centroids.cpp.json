@@ -1,0 +1,255 @@
+{
+  "problem_key": "709_E_Centroids",
+  "shard": 0,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 24,
+  "n_passed": 1,
+  "n_sanitizer_triggered": 18,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [],
+  "all_sanitizer_cwes": [],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==172716==ERROR: AddressSanitizer: stack-overflow on address 0x7ffda7036fb4 (pc 0x5765cda137cf bp 0x7ffda70370b0 sp 0x7ffda7036f70 T0)\n    #0 0x5765cda137cf in calculate_sizes(int, int) derived/cpp/qwen/gen_3/00000_3/0213_709_E._Centroids.cpp:12\n    #1 0x5765cda13eb4 in calculate_sizes(int, int) derived/cpp/qwen/gen_3/00000_3/0213_709_E._Centroids.cpp:16\n    #2 0x5765cda13eb4 in calculate_sizes(int, i"
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==172723==ERROR: AddressSanitizer: stack-overflow on address 0x7fffa8f9fff8 (pc 0x7a7a7964bb08 bp 0x7fffa8fa0000 sp 0x7fffa8fa0000 T0)\n    #0 0x7a7a7964bb08 in __asan_stack_malloc_2 ../../../../src/libsanitizer/asan/asan_fake_stack.cpp:275\n    #1 0x6163043ab8da in calculate_sizes(int, int) derived/cpp/qwen/gen_3/00000_3/0213_709_E._Centroids.cpp:12\n    #2 0x6163043abeb4 in calculate_sizes(int, int) de"
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 4,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==172740==ERROR: AddressSanitizer: stack-overflow on address 0x7fff20539fe0 (pc 0x5ad301bd87dc bp 0x7fff2053a100 sp 0x7fff20539fc0 T0)\n    #0 0x5ad301bd87dc in calculate_sizes(int, int) derived/cpp/qwen/gen_3/00000_3/0213_709_E._Centroids.cpp:12\n    #1 0x5ad301bd8eb4 in calculate_sizes(int, int) derived/cpp/qwen/gen_3/00000_3/0213_709_E._Centroids.cpp:16\n    #2 0x5ad301bd8eb4 in calculate_sizes(int, i"
+    },
+    {
+      "test_idx": 5,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==172741==ERROR: AddressSanitizer: stack-overflow on address 0x7ffec94b2ff8 (pc 0x7938ec44bb08 bp 0x7ffec94b3000 sp 0x7ffec94b3000 T0)\n    #0 0x7938ec44bb08 in __asan_stack_malloc_2 ../../../../src/libsanitizer/asan/asan_fake_stack.cpp:275\n    #1 0x55c3bcb088da in calculate_sizes(int, int) derived/cpp/qwen/gen_3/00000_3/0213_709_E._Centroids.cpp:12\n    #2 0x55c3bcb08eb4 in calculate_sizes(int, int) de"
+    },
+    {
+      "test_idx": 6,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==172757==ERROR: AddressSanitizer: stack-overflow on address 0x7ffe347dbff8 (pc 0x5a5a7c4ae7e3 bp 0x7ffe347dc120 sp 0x7ffe347dbfe0 T0)\n    #0 0x5a5a7c4ae7e3 in calculate_sizes(int, int) derived/cpp/qwen/gen_3/00000_3/0213_709_E._Centroids.cpp:12\n    #1 0x5a5a7c4aeeb4 in calculate_sizes(int, int) derived/cpp/qwen/gen_3/00000_3/0213_709_E._Centroids.cpp:16\n    #2 0x5a5a7c4aeeb4 in calculate_sizes(int, i"
+    },
+    {
+      "test_idx": 7,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==172811==ERROR: AddressSanitizer: stack-overflow on address 0x7ffea9283fe4 (pc 0x603744c547cf bp 0x7ffea92840e0 sp 0x7ffea9283fa0 T0)\n    #0 0x603744c547cf in calculate_sizes(int, int) derived/cpp/qwen/gen_3/00000_3/0213_709_E._Centroids.cpp:12\n    #1 0x603744c54eb4 in calculate_sizes(int, int) derived/cpp/qwen/gen_3/00000_3/0213_709_E._Centroids.cpp:16\n    #2 0x603744c54eb4 in calculate_sizes(int, i"
+    },
+    {
+      "test_idx": 8,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==172822==ERROR: AddressSanitizer: stack-overflow on address 0x7ffe9db68ff8 (pc 0x63e631a8a7e3 bp 0x7ffe9db69120 sp 0x7ffe9db68fe0 T0)\n    #0 0x63e631a8a7e3 in calculate_sizes(int, int) derived/cpp/qwen/gen_3/00000_3/0213_709_E._Centroids.cpp:12\n    #1 0x63e631a8aeb4 in calculate_sizes(int, int) derived/cpp/qwen/gen_3/00000_3/0213_709_E._Centroids.cpp:16\n    #2 0x63e631a8aeb4 in calculate_sizes(int, i"
+    },
+    {
+      "test_idx": 9,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==172830==ERROR: AddressSanitizer: stack-overflow on address 0x7ffd4bda3ff0 (pc 0x58cec2e6a7dc bp 0x7ffd4bda4110 sp 0x7ffd4bda3fd0 T0)\n    #0 0x58cec2e6a7dc in calculate_sizes(int, int) derived/cpp/qwen/gen_3/00000_3/0213_709_E._Centroids.cpp:12\n    #1 0x58cec2e6aeb4 in calculate_sizes(int, int) derived/cpp/qwen/gen_3/00000_3/0213_709_E._Centroids.cpp:16\n    #2 0x58cec2e6aeb4 in calculate_sizes(int, i"
+    },
+    {
+      "test_idx": 10,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==172884==ERROR: AddressSanitizer: stack-overflow on address 0x7ffd73d02ff8 (pc 0x7a32a7736190 bp 0x7ffd73d03020 sp 0x7ffd73d03000 T0)\n    #0 0x7a32a7736190 in __sanitizer::DTLS_on_tls_get_addr(void*, void*, unsigned long, unsigned long) ../../../../src/libsanitizer/sanitizer_common/sanitizer_tls_get_addr.cpp:114\n    #1 0x7a32a76dde32 in __tls_get_addr ../../../../src/libsanitizer/sanitizer_common/san"
+    },
+    {
+      "test_idx": 11,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 12,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==172894==ERROR: AddressSanitizer: stack-overflow on address 0x7ffc92db4ff8 (pc 0x76b352f36190 bp 0x7ffc92db5020 sp 0x7ffc92db5000 T0)\n    #0 0x76b352f36190 in __sanitizer::DTLS_on_tls_get_addr(void*, void*, unsigned long, unsigned long) ../../../../src/libsanitizer/sanitizer_common/sanitizer_tls_get_addr.cpp:114\n    #1 0x76b352edde32 in __tls_get_addr ../../../../src/libsanitizer/sanitizer_common/san"
+    },
+    {
+      "test_idx": 13,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==172901==ERROR: AddressSanitizer: stack-overflow on address 0x7ffe547aaff8 (pc 0x746ed5336195 bp 0x7ffe547ab040 sp 0x7ffe547aaff0 T0)\n    #0 0x746ed5336195 in __sanitizer::DTLS_on_tls_get_addr(void*, void*, unsigned long, unsigned long) ../../../../src/libsanitizer/sanitizer_common/sanitizer_tls_get_addr.cpp:114\n    #1 0x746ed52dde32 in __tls_get_addr ../../../../src/libsanitizer/sanitizer_common/san"
+    },
+    {
+      "test_idx": 14,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==172908==ERROR: AddressSanitizer: stack-overflow on address 0x7ffe5b71ffb4 (pc 0x5eb38451b7cf bp 0x7ffe5b7200b0 sp 0x7ffe5b71ff70 T0)\n    #0 0x5eb38451b7cf in calculate_sizes(int, int) derived/cpp/qwen/gen_3/00000_3/0213_709_E._Centroids.cpp:12\n    #1 0x5eb38451beb4 in calculate_sizes(int, int) derived/cpp/qwen/gen_3/00000_3/0213_709_E._Centroids.cpp:16\n    #2 0x5eb38451beb4 in calculate_sizes(int, i"
+    },
+    {
+      "test_idx": 15,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==172909==ERROR: AddressSanitizer: stack-overflow on address 0x7ffcf1deafe0 (pc 0x5ff96b63f7dc bp 0x7ffcf1deb100 sp 0x7ffcf1deafc0 T0)\n    #0 0x5ff96b63f7dc in calculate_sizes(int, int) derived/cpp/qwen/gen_3/00000_3/0213_709_E._Centroids.cpp:12\n    #1 0x5ff96b63feb4 in calculate_sizes(int, int) derived/cpp/qwen/gen_3/00000_3/0213_709_E._Centroids.cpp:16\n    #2 0x5ff96b63feb4 in calculate_sizes(int, i"
+    },
+    {
+      "test_idx": 16,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==172930==ERROR: AddressSanitizer: stack-overflow on address 0x7ffc29cc1fe0 (pc 0x5e2ea02c17dc bp 0x7ffc29cc2100 sp 0x7ffc29cc1fc0 T0)\n    #0 0x5e2ea02c17dc in calculate_sizes(int, int) derived/cpp/qwen/gen_3/00000_3/0213_709_E._Centroids.cpp:12\n    #1 0x5e2ea02c1eb4 in calculate_sizes(int, int) derived/cpp/qwen/gen_3/00000_3/0213_709_E._Centroids.cpp:16\n    #2 0x5e2ea02c1eb4 in calculate_sizes(int, i"
+    },
+    {
+      "test_idx": 17,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==172956==ERROR: AddressSanitizer: stack-overflow on address 0x7ffcaac0bfe0 (pc 0x5e8b79de97dc bp 0x7ffcaac0c100 sp 0x7ffcaac0bfc0 T0)\n    #0 0x5e8b79de97dc in calculate_sizes(int, int) derived/cpp/qwen/gen_3/00000_3/0213_709_E._Centroids.cpp:12\n    #1 0x5e8b79de9eb4 in calculate_sizes(int, int) derived/cpp/qwen/gen_3/00000_3/0213_709_E._Centroids.cpp:16\n    #2 0x5e8b79de9eb4 in calculate_sizes(int, i"
+    },
+    {
+      "test_idx": 18,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==172967==ERROR: AddressSanitizer: stack-overflow on address 0x7ffd93a0cfc4 (pc 0x568749c7a7cf bp 0x7ffd93a0d0c0 sp 0x7ffd93a0cf80 T0)\n    #0 0x568749c7a7cf in calculate_sizes(int, int) derived/cpp/qwen/gen_3/00000_3/0213_709_E._Centroids.cpp:12\n    #1 0x568749c7aeb4 in calculate_sizes(int, int) derived/cpp/qwen/gen_3/00000_3/0213_709_E._Centroids.cpp:16\n    #2 0x568749c7aeb4 in calculate_sizes(int, i"
+    },
+    {
+      "test_idx": 19,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 20,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==172989==ERROR: AddressSanitizer: stack-overflow on address 0x7ffcc3423ff8 (pc 0x7d471873618c bp 0x7ffcc3424010 sp 0x7ffcc3424000 T0)\n    #0 0x7d471873618c in __sanitizer::DTLS_on_tls_get_addr(void*, void*, unsigned long, unsigned long) ../../../../src/libsanitizer/sanitizer_common/sanitizer_tls_get_addr.cpp:114\n    #1 0x7d47186dde32 in __tls_get_addr ../../../../src/libsanitizer/sanitizer_common/san"
+    },
+    {
+      "test_idx": 21,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 1,
+      "stderr_head": "AddressSanitizer:DEADLYSIGNAL\n=================================================================\n==172995==ERROR: AddressSanitizer: stack-overflow on address 0x7fffb7ca1ff8 (pc 0x7eb947136195 bp 0x7fffb7ca2040 sp 0x7fffb7ca1ff0 T0)\n    #0 0x7eb947136195 in __sanitizer::DTLS_on_tls_get_addr(void*, void*, unsigned long, unsigned long) ../../../../src/libsanitizer/sanitizer_common/sanitizer_tls_get_addr.cpp:114\n    #1 0x7eb9470dde32 in __tls_get_addr ../../../../src/libsanitizer/sanitizer_common/san"
+    },
+    {
+      "test_idx": 22,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 23,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    }
+  ]
+}

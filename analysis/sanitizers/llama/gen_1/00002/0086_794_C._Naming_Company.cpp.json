@@ -1,0 +1,91 @@
+{
+  "problem_key": "794_C_Naming_Company",
+  "shard": 2,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 6,
+  "n_passed": 1,
+  "n_sanitizer_triggered": 3,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==89914==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000055 at pc 0x6005ddb4f6f2 bp 0x7ffd0dacf960 sp 0x7ffd0dacf950\nWRITE of size 1 at 0x502000000055 thread T0\n    #0 0x6005ddb4f6f1 in main derived/cpp/llama/gen_1/00002/0086_794_C._Naming_Company.cpp:33\n    #1 0x7c786da2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x7c786da2a28a in __libc_start_main_impl ../csu/libc-start.c:"
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==89925==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000051 at pc 0x55aa949b4c27 bp 0x7ffc98f35ca0 sp 0x7ffc98f35c90\nWRITE of size 1 at 0x502000000051 thread T0\n    #0 0x55aa949b4c26 in main derived/cpp/llama/gen_1/00002/0086_794_C._Naming_Company.cpp:27\n    #1 0x70cd2e82a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x70cd2e82a28a in __libc_start_main_impl ../csu/libc-start.c:"
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==89929==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000053 at pc 0x62207fe26c27 bp 0x7ffd10b83820 sp 0x7ffd10b83810\nWRITE of size 1 at 0x502000000053 thread T0\n    #0 0x62207fe26c26 in main derived/cpp/llama/gen_1/00002/0086_794_C._Naming_Company.cpp:27\n    #1 0x78f925e2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    #2 0x78f925e2a28a in __libc_start_main_impl ../csu/libc-start.c:"
+    },
+    {
+      "test_idx": 4,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 5,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    }
+  ]
+}

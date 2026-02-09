@@ -1,0 +1,741 @@
+{
+  "problem_key": "9_E_Interesting_Graph_and_Apples",
+  "shard": 1,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 67,
+  "n_passed": 16,
+  "n_sanitizer_triggered": 13,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==139746==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5020000000ac at pc 0x6200cb5c88a3 bp 0x7fff57c28eb0 sp 0x7fff57c28ea0\nREAD of size 4 at 0x5020000000ac thread T0\n    #0 0x6200cb5c88a2 in int const& std::max<int>(int const&, int const&) /usr/include/c++/13/bits/stl_algobase.h:262\n    #1 0x6200cb5c88a2 in find_cycles(int, int) derived/cpp/qwen/gen_1/00001/0124_9_E._Interesting_Graph_and_Apples.cpp:19\n    #2 0x620"
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==139748==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5020000000ec at pc 0x5efb183ea8a3 bp 0x7ffd14a864b0 sp 0x7ffd14a864a0\nREAD of size 4 at 0x5020000000ec thread T0\n    #0 0x5efb183ea8a2 in int const& std::max<int>(int const&, int const&) /usr/include/c++/13/bits/stl_algobase.h:262\n    #1 0x5efb183ea8a2 in find_cycles(int, int) derived/cpp/qwen/gen_1/00001/0124_9_E._Interesting_Graph_and_Apples.cpp:19\n    #2 0x5ef"
+    },
+    {
+      "test_idx": 4,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==139749==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5020000000cc at pc 0x5f9c7ed508a3 bp 0x7ffc8aee8180 sp 0x7ffc8aee8170\nREAD of size 4 at 0x5020000000cc thread T0\n    #0 0x5f9c7ed508a2 in int const& std::max<int>(int const&, int const&) /usr/include/c++/13/bits/stl_algobase.h:262\n    #1 0x5f9c7ed508a2 in find_cycles(int, int) derived/cpp/qwen/gen_1/00001/0124_9_E._Interesting_Graph_and_Apples.cpp:19\n    #2 0x5f9"
+    },
+    {
+      "test_idx": 5,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 6,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==139751==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50c00000003c at pc 0x5f41cdbaf8a3 bp 0x7ffc97abfd40 sp 0x7ffc97abfd30\nREAD of size 4 at 0x50c00000003c thread T0\n    #0 0x5f41cdbaf8a2 in int const& std::max<int>(int const&, int const&) /usr/include/c++/13/bits/stl_algobase.h:262\n    #1 0x5f41cdbaf8a2 in find_cycles(int, int) derived/cpp/qwen/gen_1/00001/0124_9_E._Interesting_Graph_and_Apples.cpp:19\n    #2 0x5f4"
+    },
+    {
+      "test_idx": 7,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 8,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 9,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 10,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 11,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 12,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==139763==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x51000000003c at pc 0x56e3f2d288a3 bp 0x7fff7138b8b0 sp 0x7fff7138b8a0\nREAD of size 4 at 0x51000000003c thread T0\n    #0 0x56e3f2d288a2 in int const& std::max<int>(int const&, int const&) /usr/include/c++/13/bits/stl_algobase.h:262\n    #1 0x56e3f2d288a2 in find_cycles(int, int) derived/cpp/qwen/gen_1/00001/0124_9_E._Interesting_Graph_and_Apples.cpp:19\n    #2 0x56e"
+    },
+    {
+      "test_idx": 13,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 14,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 15,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 16,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 17,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 18,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 19,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 20,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 21,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==139772==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50d00000003c at pc 0x60a5aefc18a3 bp 0x7ffea65ec340 sp 0x7ffea65ec330\nREAD of size 4 at 0x50d00000003c thread T0\n    #0 0x60a5aefc18a2 in int const& std::max<int>(int const&, int const&) /usr/include/c++/13/bits/stl_algobase.h:262\n    #1 0x60a5aefc18a2 in find_cycles(int, int) derived/cpp/qwen/gen_1/00001/0124_9_E._Interesting_Graph_and_Apples.cpp:19\n    #2 0x60a"
+    },
+    {
+      "test_idx": 22,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==139774==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x51000000003c at pc 0x599d501188a3 bp 0x7fffb4890990 sp 0x7fffb4890980\nREAD of size 4 at 0x51000000003c thread T0\n    #0 0x599d501188a2 in int const& std::max<int>(int const&, int const&) /usr/include/c++/13/bits/stl_algobase.h:262\n    #1 0x599d501188a2 in find_cycles(int, int) derived/cpp/qwen/gen_1/00001/0124_9_E._Interesting_Graph_and_Apples.cpp:19\n    #2 0x599"
+    },
+    {
+      "test_idx": 23,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 24,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 25,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 26,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 27,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 28,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 29,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 30,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 31,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 32,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 33,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==139785==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50300000003c at pc 0x5a7bbd34d8a3 bp 0x7ffc1d330d20 sp 0x7ffc1d330d10\nREAD of size 4 at 0x50300000003c thread T0\n    #0 0x5a7bbd34d8a2 in int const& std::max<int>(int const&, int const&) /usr/include/c++/13/bits/stl_algobase.h:262\n    #1 0x5a7bbd34d8a2 in find_cycles(int, int) derived/cpp/qwen/gen_1/00001/0124_9_E._Interesting_Graph_and_Apples.cpp:19\n    #2 0x5a7"
+    },
+    {
+      "test_idx": 34,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 35,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==139787==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50300000003c at pc 0x5daa774058a3 bp 0x7ffc5118b960 sp 0x7ffc5118b950\nREAD of size 4 at 0x50300000003c thread T0\n    #0 0x5daa774058a2 in int const& std::max<int>(int const&, int const&) /usr/include/c++/13/bits/stl_algobase.h:262\n    #1 0x5daa774058a2 in find_cycles(int, int) derived/cpp/qwen/gen_1/00001/0124_9_E._Interesting_Graph_and_Apples.cpp:19\n    #2 0x5da"
+    },
+    {
+      "test_idx": 36,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 37,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 38,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 39,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 40,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 41,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 42,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 43,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==139795==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50e00000003c at pc 0x5b7b506928a3 bp 0x7ffd6634e640 sp 0x7ffd6634e630\nREAD of size 4 at 0x50e00000003c thread T0\n    #0 0x5b7b506928a2 in int const& std::max<int>(int const&, int const&) /usr/include/c++/13/bits/stl_algobase.h:262\n    #1 0x5b7b506928a2 in find_cycles(int, int) derived/cpp/qwen/gen_1/00001/0124_9_E._Interesting_Graph_and_Apples.cpp:19\n    #2 0x5b7"
+    },
+    {
+      "test_idx": 44,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 45,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 46,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 47,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 48,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 49,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==139801==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5020000000ac at pc 0x61a89914a8a3 bp 0x7fffb53df630 sp 0x7fffb53df620\nREAD of size 4 at 0x5020000000ac thread T0\n    #0 0x61a89914a8a2 in int const& std::max<int>(int const&, int const&) /usr/include/c++/13/bits/stl_algobase.h:262\n    #1 0x61a89914a8a2 in find_cycles(int, int) derived/cpp/qwen/gen_1/00001/0124_9_E._Interesting_Graph_and_Apples.cpp:19\n    #2 0x61a"
+    },
+    {
+      "test_idx": 50,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 51,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==139808==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50c00000003c at pc 0x633c2bf038a3 bp 0x7fffa3985470 sp 0x7fffa3985460\nREAD of size 4 at 0x50c00000003c thread T0\n    #0 0x633c2bf038a2 in int const& std::max<int>(int const&, int const&) /usr/include/c++/13/bits/stl_algobase.h:262\n    #1 0x633c2bf038a2 in find_cycles(int, int) derived/cpp/qwen/gen_1/00001/0124_9_E._Interesting_Graph_and_Apples.cpp:19\n    #2 0x633"
+    },
+    {
+      "test_idx": 52,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 53,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 54,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 55,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 56,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 57,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 58,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 59,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 60,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 61,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 62,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 63,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 64,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 65,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==139823==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50f00000003c at pc 0x5f11d8e378a3 bp 0x7ffeb039e7a0 sp 0x7ffeb039e790\nREAD of size 4 at 0x50f00000003c thread T0\n    #0 0x5f11d8e378a2 in int const& std::max<int>(int const&, int const&) /usr/include/c++/13/bits/stl_algobase.h:262\n    #1 0x5f11d8e378a2 in find_cycles(int, int) derived/cpp/qwen/gen_1/00001/0124_9_E._Interesting_Graph_and_Apples.cpp:19\n    #2 0x5f1"
+    },
+    {
+      "test_idx": 66,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    }
+  ]
+}

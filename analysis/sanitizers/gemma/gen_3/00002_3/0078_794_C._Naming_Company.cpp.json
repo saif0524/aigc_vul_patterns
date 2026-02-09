@@ -1,0 +1,91 @@
+{
+  "problem_key": "794_C_Naming_Company",
+  "shard": 2,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 6,
+  "n_passed": 2,
+  "n_sanitizer_triggered": 3,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==67880==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50200000000f at pc 0x5a6a9a82bd9d bp 0x7ffea63a6130 sp 0x7ffea63a6120\nWRITE of size 1 at 0x50200000000f thread T0\n    #0 0x5a6a9a82bd9c in void std::__copy_move<true, false, std::random_access_iterator_tag>::__assign_one<char, char>(char*, char*) /usr/include/c++/13/bits/stl_algobase.h:423\n    #1 0x5a6a9a82bd9c in char* std::__copy_move<true, true, std::random_acc"
+    },
+    {
+      "test_idx": 2,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==67882==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50200000002f at pc 0x752672cfac7f bp 0x7ffd9aeaf290 sp 0x7ffd9aeaea38\nWRITE of size 3 at 0x50200000002f thread T0\n    #0 0x752672cfac7e in memmove ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors_memintrinsics.inc:98\n    #1 0x608154d2fcba in char* std::__copy_move<true, true, std::random_access_iterator_tag>::__copy_m<char, char>(char*, "
+    },
+    {
+      "test_idx": 4,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 5,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==67884==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50200000002f at pc 0x7fb6838fac7f bp 0x7ffe87dd4520 sp 0x7ffe87dd3cc8\nWRITE of size 4 at 0x50200000002f thread T0\n    #0 0x7fb6838fac7e in memmove ../../../../src/libsanitizer/sanitizer_common/sanitizer_common_interceptors_memintrinsics.inc:98\n    #1 0x5c4d30900cba in char* std::__copy_move<true, true, std::random_access_iterator_tag>::__copy_m<char, char>(char*, "
+    }
+  ]
+}

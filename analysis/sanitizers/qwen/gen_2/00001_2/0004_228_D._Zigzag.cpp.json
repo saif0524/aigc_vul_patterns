@@ -1,0 +1,75 @@
+{
+  "problem_key": "228_D_Zigzag",
+  "shard": 1,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 4,
+  "n_passed": 0,
+  "n_sanitizer_triggered": 4,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==160761==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50300000003c at pc 0x60a04bd72628 bp 0x7ffe86ea6550 sp 0x7ffe86ea6540\nREAD of size 4 at 0x50300000003c thread T0\n    #0 0x60a04bd72627 in build(std::vector<int, std::allocator<int> > const&, std::vector<Node, std::allocator<Node> >&, int, int, int) derived/cpp/qwen/gen_2/00001_2/0004_228_D._Zigzag.cpp:22\n    #1 0x60a04bd7296d in build(std::vector<int, std::alloca"
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==160764==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50300000003c at pc 0x5c75f5381628 bp 0x7ffc7fa39db0 sp 0x7ffc7fa39da0\nREAD of size 4 at 0x50300000003c thread T0\n    #0 0x5c75f5381627 in build(std::vector<int, std::allocator<int> > const&, std::vector<Node, std::allocator<Node> >&, int, int, int) derived/cpp/qwen/gen_2/00001_2/0004_228_D._Zigzag.cpp:22\n    #1 0x5c75f538196d in build(std::vector<int, std::alloca"
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==160765==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50300000003c at pc 0x62a34ad4b628 bp 0x7fffe9e86c00 sp 0x7fffe9e86bf0\nREAD of size 4 at 0x50300000003c thread T0\n    #0 0x62a34ad4b627 in build(std::vector<int, std::allocator<int> > const&, std::vector<Node, std::allocator<Node> >&, int, int, int) derived/cpp/qwen/gen_2/00001_2/0004_228_D._Zigzag.cpp:22\n    #1 0x62a34ad4b96d in build(std::vector<int, std::alloca"
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==160766==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50300000003c at pc 0x56a36b2b2628 bp 0x7fff67958bf0 sp 0x7fff67958be0\nREAD of size 4 at 0x50300000003c thread T0\n    #0 0x56a36b2b2627 in build(std::vector<int, std::allocator<int> > const&, std::vector<Node, std::allocator<Node> >&, int, int, int) derived/cpp/qwen/gen_2/00001_2/0004_228_D._Zigzag.cpp:22\n    #1 0x56a36b2b296d in build(std::vector<int, std::alloca"
+    }
+  ]
+}
