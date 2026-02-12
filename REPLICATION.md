@@ -250,14 +250,23 @@ This notebook also generates `results/tables/san_trigger_by_pass_status.csv`.
 
 ## Quick Verification (Demo Mode)
 
-To verify the pipeline on a small subset without running the full analysis:
+To verify the pipeline on a small subset (17 programs) without running the full analysis:
 
 ```bash
-python3.11 scripts/run_tests_all_cmd_arg.py --mode demo
-./scripts/run_clang_tidy.sh --mode demo
+# Step 2: Compile and run functional tests (demo)
+python3.11 scripts/run_tests_parallel.py --mode demo
+
+# Step 3: Cppcheck static analysis (demo)
+python3.11 scripts/run_cppcheck_parallel.py --mode demo
+
+# Step 4: Clang-tidy static analysis (demo)
+bash scripts/run_clang_tidy.sh --mode demo
+
+# Step 5: ASan/UBSan dynamic analysis (demo)
+python3.11 scripts/run_sanitizers.py --mode demo
 ```
 
-Demo mode uses a reduced subset of problems and completes in minutes rather than hours.
+Demo mode uses a reduced subset of problems stored in `demo/` and completes in minutes rather than hours. Expected demo output: 17 programs, ~13 compile, ~46% pass rate.
 
 ---
 
