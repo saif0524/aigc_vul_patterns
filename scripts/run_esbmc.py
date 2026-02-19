@@ -13,10 +13,19 @@ Three possible outcomes per program:
   - ERROR:                    parse error, timeout, or internal error
 
 Usage:
+    # Baseline (matches original run)
     python scripts/run_esbmc.py --mode full --jobs 8 --only all
-    python scripts/run_esbmc.py --mode full --jobs 8 --only llm
 
-Output:  analysis/esbmc/{model}/{gen}/{batch}/{file}.json
+    # With arithmetic overflow checking enabled
+    python scripts/run_esbmc.py --mode full --jobs 8 --only all \
+        --overflow-check --tag esbmc_overflow
+
+    # Deeper unwind + longer timeout
+    python scripts/run_esbmc.py --mode full --jobs 8 --only all \
+        --unwind 20 --timeout 120 --tag esbmc_deep
+
+Output:  analysis/{tag}/{model}/{gen}/{batch}/{file}.json
+         Default tag: esbmc  (preserves original output layout)
 """
 
 import os
@@ -31,8 +40,10 @@ ESBMC_BIN = os.path.join(
     "esbmc", "bin", "esbmc"
 )
 
-TIMEOUT = 60  # seconds per file
-UNWIND = 10   # loop unwind bound
+# Defaults — overridden by CLI args
+DEFAULT_TIMEOUT = 60   # seconds per file
+DEFAULT_UNWIND  = 10   # loop unwind bound
+DEFAULT_TAG     = "esbmc"
 
 HUMAN_SOLNS = ["soln1", "soln2"]
 MODELS = ["gemma", "llama", "qwen"]
@@ -66,15 +77,15 @@ def normalize(name: str) -> str:
     return name.replace(" ", "_").replace(".", "")
 
 
-def get_paths(mode):
+def get_paths(mode, tag=DEFAULT_TAG):
     if mode == "demo":
         return {
             "CPP_ROOT":      "demo/demo_derived/demo_cpp",
-            "ANALYSIS_ROOT": "demo/demo_analysis/demo_esbmc",
+            "ANALYSIS_ROOT": f"demo/demo_analysis/{tag}",
         }
     return {
         "CPP_ROOT":      "derived/cpp",
-        "ANALYSIS_ROOT": "analysis/esbmc",
+        "ANALYSIS_ROOT": f"analysis/{tag}",
     }
 
 
@@ -137,22 +148,26 @@ def run_esbmc_one(task):
         "stderr_head": "",
     }
 
+    timeout = task["timeout"]
     cmd = [
         ESBMC_BIN,
         "--compact-trace",
-        "--timeout", str(TIMEOUT),
-        "--unwind", str(UNWIND),
+        "--timeout", str(timeout),
+        "--unwind", str(task["unwind"]),
         "--no-unwinding-assertions",
         "--no-div-by-zero-check",  # reduces noise on contest code
+        "--overflow-check",        # enabled by default; disable with --no-overflow-check
         cpp_path,
     ]
+    if not task["overflow_check"]:
+        cmd.remove("--overflow-check")
 
     try:
         proc = subprocess.run(
             cmd,
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
-            timeout=TIMEOUT + 30,  # extra buffer beyond ESBMC's own timeout
+            timeout=timeout + 30,  # extra buffer beyond ESBMC's own timeout
         )
         stdout = proc.stdout.decode("utf-8", errors="replace")
         stderr = proc.stderr.decode("utf-8", errors="replace")
@@ -179,7 +194,7 @@ def run_esbmc_one(task):
     return task["label"], result["verdict"], result["cwes"]
 
 
-def build_llm_tasks(paths):
+def build_llm_tasks(paths, cfg):
     tasks = []
     for model in MODELS:
         for gen in GENS:
@@ -204,11 +219,12 @@ def build_llm_tasks(paths):
                         "out_json_path": os.path.join(out_dir, f"{cpp_file}.json"),
                         "prob_key": prob,
                         "label": f"{model}/{gen}/{batch}/{cpp_file}",
+                        **cfg,
                     })
     return tasks
 
 
-def build_human_tasks(paths):
+def build_human_tasks(paths, cfg):
     tasks = []
     for soln in HUMAN_SOLNS:
         base = f"{paths['CPP_ROOT']}/human/{soln}"
@@ -234,6 +250,7 @@ def build_human_tasks(paths):
                     "out_json_path": os.path.join(out_dir, f"{cpp_file}.json"),
                     "prob_key": prob,
                     "label": f"human/{soln}/{batch}/{cpp_file}",
+                    **cfg,
                 })
     return tasks
 
@@ -249,18 +266,43 @@ def main():
     parser.add_argument(
         "--only", choices=["llm", "human", "all"], default="all",
     )
+    parser.add_argument(
+        "--unwind", type=int, default=DEFAULT_UNWIND,
+        help=f"ESBMC loop unwind bound (default: {DEFAULT_UNWIND})",
+    )
+    parser.add_argument(
+        "--timeout", type=int, default=DEFAULT_TIMEOUT,
+        help=f"ESBMC timeout in seconds (default: {DEFAULT_TIMEOUT})",
+    )
+    parser.add_argument(
+        "--tag", default=DEFAULT_TAG,
+        help=f"Output subdirectory under analysis/ (default: {DEFAULT_TAG})",
+    )
+    parser.add_argument(
+        "--no-overflow-check", dest="overflow_check", action="store_false",
+        help="Disable --overflow-check (reproduces original baseline run)",
+    )
+    parser.set_defaults(overflow_check=True)
     args = parser.parse_args()
 
-    paths = get_paths(args.mode)
+    cfg = {
+        "timeout":        args.timeout,
+        "unwind":         args.unwind,
+        "overflow_check": args.overflow_check,
+    }
+
+    paths = get_paths(args.mode, args.tag)
     tasks = []
     if args.only in ("llm", "all"):
-        tasks.extend(build_llm_tasks(paths))
+        tasks.extend(build_llm_tasks(paths, cfg))
     if args.only in ("human", "all"):
-        tasks.extend(build_human_tasks(paths))
+        tasks.extend(build_human_tasks(paths, cfg))
 
+    overflow_str = "ON" if args.overflow_check else "OFF"
     print(f"[esbmc] {len(tasks)} tasks, {args.jobs} workers")
-    print(f"[esbmc] binary: {ESBMC_BIN}")
-    print(f"[esbmc] unwind={UNWIND}, timeout={TIMEOUT}s")
+    print(f"[esbmc] binary:          {ESBMC_BIN}")
+    print(f"[esbmc] tag:             {args.tag}  →  analysis/{args.tag}/")
+    print(f"[esbmc] unwind={args.unwind}, timeout={args.timeout}s, overflow-check={overflow_str}")
 
     counts = {"SUCCESS": 0, "FAILED": 0, "PARSE_ERROR": 0, "TIMEOUT": 0, "ERROR": 0}
     total = 0

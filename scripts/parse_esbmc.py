@@ -19,8 +19,14 @@ Outputs:
         per file (three-layer ground-truth pyramid)
 
 Usage:
+    # Baseline run (analysis/esbmc/ → esbmc_summary.csv)
     python scripts/parse_esbmc.py --mode full
-    python scripts/parse_esbmc.py --mode demo
+
+    # Overflow-check run
+    python scripts/parse_esbmc.py --mode full --tag esbmc_overflow
+
+    # Deep-unwind run
+    python scripts/parse_esbmc.py --mode full --tag esbmc_deep
 """
 
 import os
@@ -57,10 +63,13 @@ ESBMC_CWE_MAP = {
 }
 
 
-def get_analysis_root(mode):
+DEFAULT_TAG = "esbmc"
+
+
+def get_analysis_root(mode, tag=DEFAULT_TAG):
     if mode == "demo":
-        return "demo/demo_analysis/demo_esbmc"
-    return "analysis/esbmc"
+        return f"demo/demo_analysis/{tag}"
+    return f"analysis/{tag}"
 
 
 def infer_model_gen(rel_path):
@@ -348,12 +357,19 @@ def build_verification_cross_reference(
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--mode", required=True, choices=["demo", "full"])
+    parser.add_argument(
+        "--tag", default=DEFAULT_TAG,
+        help=f"ESBMC run tag — must match the --tag used in run_esbmc.py "
+             f"(default: {DEFAULT_TAG}). Controls both input directory "
+             f"(analysis/<tag>/) and output CSV prefix (<tag>_summary.csv).",
+    )
     args = parser.parse_args()
 
-    analysis_root = get_analysis_root(args.mode)
+    analysis_root = get_analysis_root(args.mode, args.tag)
     out_dir = "results/raw_csv"
 
     print(f"Parsing ESBMC results from {analysis_root} ...")
+    print(f"Output prefix: {args.tag}_*.csv")
     summary_rows, violation_rows = parse_all(analysis_root)
 
     if not summary_rows:
@@ -365,24 +381,24 @@ def main():
         "sample_id", "model", "generation", "batch", "problem_key",
         "verdict", "n_violations", "cwes", "parse_error", "timeout",
     ]
-    write_csv(summary_rows, f"{out_dir}/esbmc_summary.csv", summary_fields)
+    write_csv(summary_rows, f"{out_dir}/{args.tag}_summary.csv", summary_fields)
 
     # Violations CSV
     violation_fields = [
         "sample_id", "model", "generation", "problem_key",
         "violation_idx", "violation_text", "cwes",
     ]
-    write_csv(violation_rows, f"{out_dir}/esbmc_violations.csv", violation_fields)
+    write_csv(violation_rows, f"{out_dir}/{args.tag}_violations.csv", violation_fields)
 
     # Merge with master if available
     master_path = f"{out_dir}/master_analysis.csv"
-    merge_path = f"{out_dir}/esbmc_vs_static.csv"
+    merge_path = f"{out_dir}/{args.tag}_vs_static.csv"
     merge_with_master(summary_rows, master_path, merge_path)
 
     # Three-way cross-reference: cppcheck vs sanitizer vs ESBMC
     sanitizer_path = f"{out_dir}/sanitizer_summary.csv"
     cppcheck_path = f"{out_dir}/cppcheck_detailed.csv"
-    xref_path = f"{out_dir}/verification_cross_reference.csv"
+    xref_path = f"{out_dir}/{args.tag}_cross_reference.csv"
     xref_rows = build_verification_cross_reference(
         summary_rows, sanitizer_path, cppcheck_path, xref_path
     )
