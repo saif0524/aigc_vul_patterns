@@ -1,8 +1,10 @@
 # VulBench-CPP: Appendix Content for Replication Package
 
-This document outlines the appendix sections removed from the ICSME 2026 paper submission to meet the 10+2 page limit. All content should be included in the replication package at https://anonymous.4open.science/r/bsa-aigcvul-257B
+This document outlines the appendix sections removed from the ICSME 2026 paper submission to meet the 10+2 page limit. All content supports the three research questions (RQ1: AI vs. human comparison; RQ2: generation stability; RQ3: unique vulnerability classes per tier) and should be included in the replication package at https://anonymous.4open.science/r/bsa-aigcvul-257B
 
 ## Appendix A: Per-Model Cppcheck CWE Type Distributions
+
+*Supports RQ1 (AI vs. human comparison) and RQ3 (unique vulnerability classes per tier)*
 
 **Figure A1: Top-10 cppcheck CWE type distributions per model**
 
@@ -17,6 +19,8 @@ Shows four subplots comparing cppcheck CWE findings:
 ---
 
 ## Appendix B: MITRE Top-25 CWE Prevalence by Model
+
+*Supports RQ1 (AI vs. human comparison)*
 
 **Table B1: MITRE Top-25 CWE prevalence by model and generation**
 
@@ -42,6 +46,8 @@ Fraction of analyzable programs (SUCCESS or FAILED) with at least one MITRE Top-
 
 ## Appendix C: Static Cross-Tool Agreement (Cppcheck vs. Clang-tidy)
 
+*Supports RQ3 (unique vulnerability classes per tier)*
+
 **Table C1: Static cross-tool agreement between cppcheck and clang-tidy**
 
 Agreement = (Both flagged + Neither flagged) / Total
@@ -58,6 +64,8 @@ Agreement = (Both flagged + Neither flagged) / Total
 ---
 
 ## Appendix D: Problem Category Distribution
+
+*General benchmark characterization; supports reproducibility and generalization across all RQs*
 
 **Table D1: Benchmark composition by problem category (851 tasks)**
 
@@ -100,9 +108,14 @@ All of the above appendix material should be included in the replication package
 3. **Annotated results** (cross-reference tables between tools)
 4. **This appendix.md** (for context and additional findings)
 
-The main paper (main.tex) maintains the core empirical narrative (AI vs. human comparison as RQ1, unique vulnerability classes per tier as RQ2), while these appendix materials support practitioners who want to:
-- Understand the diversity of the benchmark
-- Conduct deeper multi-tool analyses
-- Compare against MITRE Top-25 standards
-- Investigate per-model CWE patterns
+The main paper (main.tex) addresses three core research questions:
+- **RQ1**: AI vs. human comparison — vulnerability rates under multi-tier verification
+- **RQ2**: Generation Stability — reproducibility of vulnerability patterns across independent generations
+- **RQ3**: Unique Vulnerability Classes per Tier — what each verification tier detects and how distributions differ between AI and human code
+
+These appendix materials support practitioners who want to:
+- Understand the diversity of the benchmark (Appendix D)
+- Conduct deeper multi-tool analyses (Appendix C)
+- Compare against MITRE Top-25 standards (Appendix B)
+- Investigate per-model CWE patterns (Appendix A)
 
