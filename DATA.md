@@ -31,7 +31,7 @@ The following datasets are **immutable** and extracted from google-deepmind/code
   - `descriptions-train-00000.json`
   - `descriptions-train-00001.json`
   - `descriptions-train-00002.json`
-- **Total Records**: [Number of problems]
+- **Total Records**: 851 problems
 
 ### `data/problem_tags/`
 - **Source**: Problem metadata (difficulty, categories) from google-deepmind/code_contests
@@ -61,7 +61,7 @@ The following datasets are **immutable** and extracted from google-deepmind/code
   - `human_cpp_solutions_00000.json`
   - `human_cpp_solutions_00001.json`
   - `human_cpp_solutions_00002.json`
-- **Total Solutions**: [Number of human solutions across both sets]
+- **Total Solutions**: 1,695 (up to two per problem)
 
 ### `data/generations/`
 - **Source**: Generated code via OpenRouter API
@@ -125,15 +125,6 @@ Generated code outputs are **frozen artifacts** from experiments executed with s
 - **Status**: Frozen; these are the exact outputs used in all analysis and results
 
 **Note**: Generated code outputs are fixed snapshots from the experiment run. Exact reproducibility of generation may depend on OpenRouter API state at the time of generation, but the outputs themselves are immutable for this study.
-
-## Checksums (SHA-256)
-
-Generate with:
-```bash
-find data/ -name "*.json" -type f | sort | xargs sha256sum
-```
-
-[Add checksums when ready for publication/archival]
 
 ## Citation
 
