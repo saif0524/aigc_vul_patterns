@@ -1,6 +1,6 @@
 # VulBench-CPP: Appendix Content for Replication Package
 
-This document outlines the appendix sections removed from the ICSME 2026 paper submission to meet the 10+2 page limit. All content supports the three research questions (RQ1: AI vs. human comparison; RQ2: generation stability; RQ3: unique vulnerability classes per tier) and should be included in the replication package at https://anonymous.4open.science/r/bsa-aigcvul-257B
+This document outlines the appendix sections removed from the paper submission to meet the 10+2 page limit. All content supports the three research questions (RQ1: AI vs. human comparison; RQ2: generation stability; RQ3: unique vulnerability classes per tier) and should be included in the replication package at https://anonymous.4open.science/r/bsa-aigcvul-257B
 
 ## Appendix A: Per-Model Cppcheck CWE Type Distributions
 
