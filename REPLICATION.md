@@ -1,6 +1,6 @@
 # Replication Guide
 
-This document provides step-by-step instructions to reproduce all results reported in the paper *"Evaluating the Security of AI-Generated C++ Code: An Empirical Comparison with Human Baselines"*.
+This document provides step-by-step instructions to reproduce all results reported.
 
 ## Prerequisites
 
