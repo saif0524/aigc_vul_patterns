@@ -1,10 +1,5 @@
-# VulBench-CPP: Evaluating the Security of AI-Generated C++ Code
+# VulBench-CPP
 
-Replication package for the paper:
-
-> **Evaluating the Security of AI-Generated C++ Code: An Empirical Comparison with Human Baselines**
-> Saif Mahmud, Fadul Sikder, Yuede Ji, Zhang Haotian, Jeff (Yu) Lei
-> University of Texas at Arlington & New Jersey Institute of Technology
 
 ## Overview
 
