@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="oppositeInnerCondition" severity="warning" msg="Opposite inner &apos;if&apos; condition leads to a dead code block." verbose="Opposite inner &apos;if&apos; condition leads to a dead code block (outer condition is &apos;last*j&lt;=sum&apos; and inner condition is &apos;last*j&gt;sum&apos;)." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/llama/gen_1/0032_p00914_Equal_Sum_Sets.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/llama/gen_1/0032_p00914_Equal_Sum_Sets.cpp" line="20" column="24" info="opposite inner condition: last*j&gt;sum"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/llama/gen_1/0032_p00914_Equal_Sum_Sets.cpp" line="19" column="50" info="outer condition: last*j&lt;=sum"/>
+        </error>
+    </errors>
+</results>

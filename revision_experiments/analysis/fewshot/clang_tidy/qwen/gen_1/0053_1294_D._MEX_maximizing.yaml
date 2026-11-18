@@ -1,0 +1,40 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0053_1294_D._MEX_maximizing.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0053_1294_D._MEX_maximizing.cpp'
+      FileOffset:      75
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0053_1294_D._MEX_maximizing.cpp'
+      FileOffset:      155
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0053_1294_D._MEX_maximizing.cpp'
+          Offset:          151
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0053_1294_D._MEX_maximizing.cpp'
+          Offset:          161
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0053_1294_D._MEX_maximizing.cpp'
+      FileOffset:      208
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0053_1294_D._MEX_maximizing.cpp'
+          Offset:          208
+          Length:          1
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

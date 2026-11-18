@@ -1,0 +1,87 @@
+// [esbmc] replaced #include <bits/stdc++.h> with ESBMC-compatible headers
+#include <cassert>
+#include <cctype>
+#include <cfloat>
+#include <climits>
+#include <cmath>
+#include <cstdint>
+#include <cinttypes>
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
+#include <ctime>
+#include <iostream>
+#include <istream>
+#include <ostream>
+#include <ios>
+#include <iomanip>
+#include <sstream>
+#include <fstream>
+#include <streambuf>
+#include <string>
+#include <string_view>
+#include <vector>
+#include <array>
+#include <list>
+#include <deque>
+#include <queue>
+#include <stack>
+#include <map>
+#include <set>
+#include <unordered_map>
+#include <unordered_set>
+#include <bitset>
+#include <algorithm>
+#include <numeric>
+#include <functional>
+#include <utility>
+#include <iterator>
+#include <memory>
+#include <tuple>
+#include <limits>
+#include <random>
+#include <complex>
+#include <valarray>
+#include <stdexcept>
+#include <exception>
+#include <typeinfo>
+#include <type_traits>
+#include <initializer_list>
+#include <numbers>
+#include <any>
+using namespace std;
+
+typedef long long ll;
+
+int main(){
+    ((void)0);
+    ((void)0);
+    int N, M;
+    cin >> N >> M;
+    vector<ll> a(N);
+    for(int i=0;i<N;i++) cin >> a[i];
+    vector<ll> b(M);
+    for(int i=0;i<M;i++) cin >> b[i];
+    int Q;
+    cin >> Q;
+    vector<ll> d(Q);
+    for(int i=0;i<Q;i++) cin >> d[i];
+    string ans(Q, 'x');
+    for(int i=0;i<N;i++){
+        for(int j=0;j<M;j++){
+            ll val = a[i] * b[j];
+            string s = to_string(val);
+            ll len = s.size();
+            for(int k=0;k<len;k++){
+                ll pos = i * M + j + 1;
+                pos = pos * len - (len - k);
+                if(pos > 1e15) break;
+                for(int l=0;l<Q;l++){
+                    if(pos == d[l]) ans[l] = s[k];
+                }
+            }
+        }
+    }
+    cout << ans << "\n";
+    return 0;
+}

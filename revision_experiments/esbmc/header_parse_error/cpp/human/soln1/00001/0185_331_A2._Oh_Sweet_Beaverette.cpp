@@ -1,0 +1,96 @@
+// [esbmc] replaced #include <bits/stdc++.h> with ESBMC-compatible headers
+#include <cassert>
+#include <cctype>
+#include <cfloat>
+#include <climits>
+#include <cmath>
+#include <cstdint>
+#include <cinttypes>
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
+#include <ctime>
+#include <iostream>
+#include <istream>
+#include <ostream>
+#include <ios>
+#include <iomanip>
+#include <sstream>
+#include <fstream>
+#include <streambuf>
+#include <string>
+#include <string_view>
+#include <vector>
+#include <array>
+#include <list>
+#include <deque>
+#include <queue>
+#include <stack>
+#include <map>
+#include <set>
+#include <unordered_map>
+#include <unordered_set>
+#include <bitset>
+#include <algorithm>
+#include <numeric>
+#include <functional>
+#include <utility>
+#include <iterator>
+#include <memory>
+#include <tuple>
+#include <limits>
+#include <random>
+#include <complex>
+#include <valarray>
+#include <stdexcept>
+#include <exception>
+#include <typeinfo>
+#include <type_traits>
+#include <initializer_list>
+#include <numbers>
+#include <any>
+using namespace std;
+map<int, int> mp;
+vector<int> vc;
+long long psum[300001];
+long long a[300001];
+int main() {
+  long long ans = -2000000001;
+  int n, ansi;
+  cin >> n;
+  for (int i = 1; i <= n; i++) {
+    cin >> a[i];
+    if (a[i] > 0)
+      psum[i] = psum[i - 1] + a[i];
+    else
+      psum[i] = psum[i - 1];
+    ;
+    if (mp.find(a[i]) == mp.end()) {
+      mp.insert(make_pair(a[i], i));
+    } else {
+      long long hoge = psum[i] - psum[mp[a[i]] - 1];
+      if (a[i] < 0) hoge += (2 * a[i]);
+      if (ans < hoge) {
+        ans = hoge;
+        ansi = i;
+      }
+    }
+  }
+  cout << ans;
+  int j = 1, cnt = 0;
+  for (; j <= n; j++) {
+    if (a[j] == a[ansi]) break;
+    vc.push_back(j);
+  }
+  for (j++; j <= ansi - 1; j++) {
+    if (a[j] < 0) vc.push_back(j);
+  }
+  for (j = ansi + 1; j <= n; j++) {
+    vc.push_back(j);
+  }
+  cout << " " << vc.size() << endl;
+  for (int i = 0; i < vc.size(); i++) {
+    cout << vc[i] << " ";
+  }
+  return 0;
+}

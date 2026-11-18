@@ -9,9 +9,9 @@ We introduce **VulBench-CPP**, a benchmark of **8,918 C++ programs** — 7,223 A
 
 | RQ | Question | Key Finding |
 |----|----------|------------|
-| **RQ1** | How do vulnerability rates of AI-generated code compare to human-written code under multi-tier verification? | AI-generated code triggers runtime violations at **3.6× the rate** of human code (*z* = 9.28, *p* < 0.001) — a gap entirely concealed by static analysis, which reports comparable warning rates for both. |
-| **RQ2** | Are vulnerability patterns reproducible across independent generations of the same model? | Within-model variance ≤ 1.8 pp across generations, confirming patterns reflect systematic model properties, not sampling artifacts. |
-| **RQ3** | What vulnerability classes does each tier detect, and how do distributions differ between AI and human code? | Cross-tier agreement is near-zero (Jaccard ≈ 0.05): of 661 formally proven violations 598 are not triggered by sanitizers; of 639 sanitizer-triggered programs 576 are not flagged by ESBMC. Each tier detects distinct, largely non-overlapping vulnerability classes. |
+| **RQ1** | How do vulnerability rates of AI-generated code compare to human-written code under multi-tier verification? | AI-generated code triggers sanitizer violations at **3.6× the rate** of human code (9.3% vs. 2.6% of compiled programs; clustered OR 2.15, 95% CI 1.52–3.03). Static analysis does not show this gap. Among programs with a conclusive ESBMC verdict, human code is flagged more often (OR 0.75, 95% CI 0.61–0.92). |
+| **RQ2** | Are vulnerability patterns reproducible across independent generations of the same model? | Within-model sanitizer rates differ by at most 1.8 pp across generations, much less than the AI–human gap. |
+| **RQ3** | What vulnerability classes does each tier detect, and how do distributions differ between AI and human code? | Agreement between tiers is low (Jaccard 0.07 on the 4,962 programs that ran a test): ESBMC flags 1,160 programs that the sanitizers do not, and the sanitizers flag 537 programs that ESBMC does not. |
 
 ## Models
 
@@ -22,7 +22,7 @@ We introduce **VulBench-CPP**, a benchmark of **8,918 C++ programs** — 7,223 A
 | Qwen 2.5 Coder 32B Instruct | 2,489 |
 | **Human baseline** (CodeContests) | 1,695 |
 
-All models were accessed via the OpenRouter API under zero-shot prompting with three independent generations per problem.
+All models were accessed via the OpenRouter API under zero-shot prompting with three independent generations per problem. A few-shot comparison on 100 sampled tasks is described [below](#few-shot-prompting-experiment).
 
 ## Analysis Pipeline
 
@@ -59,11 +59,40 @@ python3.11 scripts/run_full_analysis.py --skip-extract --skip-tests \
 # Or run individual steps — see REPLICATION.md for details
 ```
 
+## Few-Shot Prompting Experiment
+
+Tests whether two worked examples in the prompt change the zero-shot results. It uses 100 of the 851 tasks (seed `20261102`), the same two human demonstrations in every prompt ([Appendix E](Appendix.md)), the same three models and decoding, and one generation per model per task (279 programs). Task sample, demonstrations and prompt builder are in `revision_experiments/fewshot_100_sample/`; generation uses `revision_experiments/notebooks/generate_code_v2.ipynb`.
+
+```bash
+S=revision_experiments/fewshot_scripts
+python3.11 $S/extract_fewshot_cpp.py
+python3.11 $S/run_sanitizers_fewshot.py --jobs 8
+python3.11 $S/run_cppcheck_fewshot.py --jobs 8
+python3.11 $S/run_clang_tidy_fewshot.py --jobs 4
+python3.11 $S/summarize_static_fewshot.py
+python3.11 $S/analyze_clang_tidy_fewshot.py
+# ESBMC, one stage at a time (timeouts depend on machine load):
+python3.11 $S/run_esbmc_fewshot.py --jobs 8
+python3.11 $S/run_esbmc_header_fix_fewshot.py --jobs 8
+python3.11 $S/run_esbmc_fastio_fix_fewshot.py --jobs 8
+```
+
+Tool settings match the main study. Outputs are in `revision_experiments/` under `derived_cpp/fewshot/`, `sanitizers_fewshot/`, `analysis/fewshot/` and `esbmc_fewshot/`.
+
+| Metric (zero-shot vs. few-shot) | Zero-shot | Few-shot | OR (95% CI) |
+|---|---|---|---|
+| Sanitizer violation | 16.8% | 12.9% | 0.75 (0.49–1.17) |
+| Pass all tests | 19.4% | 18.1% | 0.99 (0.73–1.34) |
+| Cppcheck CWE flag | 38.3% | 36.2% | 0.93 (0.74–1.16) |
+| Clang-tidy flag | 34.1% | 31.9% | 0.94 (0.73–1.20) |
+
+Odds ratios come from a GEE logistic regression clustered by task. Sanitizer and pass-rate figures cover programs that ran at least one test, on the 61 tasks that ran under both prompts. No rate changes detectably, and the 20 few-shot sanitizer events limit the test to reductions of about one half. For ESBMC, 108 few-shot verdicts are conclusive (46.3% FAILED vs. 52.3% zero-shot, OR 0.91, 0.63–1.33). The few-shot runs have the header and fast-I/O stages but not the range-for stage, so this comparison is descriptive.
+
 ## Documentation
 
 - **[REPLICATION.md](REPLICATION.md)** — Step-by-step replication guide (Steps 1–8)
 - **[DATA.md](DATA.md)** — Data provenance, sources, and integrity documentation
-- **[Appendix.md](Appendix.md)** — Extended tables and figures from the paper appendix
+- **[Appendix.md](Appendix.md)** — Extended tables and figures from the paper appendix, and the few-shot prompt (Appendix E)
 
 ## Dataset
 

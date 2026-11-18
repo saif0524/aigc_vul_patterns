@@ -1,0 +1,114 @@
+// [esbmc] replaced #include <bits/stdc++.h> with ESBMC-compatible headers
+#include <cassert>
+#include <cctype>
+#include <cfloat>
+#include <climits>
+#include <cmath>
+#include <cstdint>
+#include <cinttypes>
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
+#include <ctime>
+#include <iostream>
+#include <istream>
+#include <ostream>
+#include <ios>
+#include <iomanip>
+#include <sstream>
+#include <fstream>
+#include <streambuf>
+#include <string>
+#include <string_view>
+#include <vector>
+#include <array>
+#include <list>
+#include <deque>
+#include <queue>
+#include <stack>
+#include <map>
+#include <set>
+#include <unordered_map>
+#include <unordered_set>
+#include <bitset>
+#include <algorithm>
+#include <numeric>
+#include <functional>
+#include <utility>
+#include <iterator>
+#include <memory>
+#include <tuple>
+#include <limits>
+#include <random>
+#include <complex>
+#include <valarray>
+#include <stdexcept>
+#include <exception>
+#include <typeinfo>
+#include <type_traits>
+#include <initializer_list>
+#include <numbers>
+#include <any>
+using namespace std;
+
+typedef long long ll;
+
+struct Material {
+    ll supply;
+    ll required;
+    ll parent;
+    ll ratio;
+};
+
+void dfs(vector<Material>& materials, int node) {
+    if (materials[node].parent != -1) {
+        dfs(materials, materials[node].parent);
+        ll need = materials[node].required;
+        ll parent_node = materials[node].parent;
+        ll parent_ratio = materials[node].ratio;
+
+        ll convert_from_parent = (need + parent_ratio - 1) / parent_ratio;
+        materials[parent_node].required += convert_from_parent;
+
+        ll can_convert_to_node = materials[parent_node].supply / parent_ratio;
+        materials[parent_node].supply -= can_convert_to_node * parent_ratio;
+        materials[node].required -= can_convert_to_node;
+
+        materials[node].required = max(0LL, materials[node].required);
+        materials[parent_node].required = max(0LL, materials[parent_node].required);
+    }
+}
+
+int main(){
+    ((void)0);
+    ((void)0);
+    
+    int n;
+    cin >> n;
+    
+    vector<Material> materials(n + 1);
+    for(int i=1; i<=n; ++i){
+        cin >> materials[i].supply;
+    }
+    for(int i=1; i<=n; ++i){
+        cin >> materials[i].required;
+    }
+    
+    for(int i=2; i<=n; ++i){
+        int x, k;
+        cin >> x >> k;
+        materials[i].parent = x;
+        materials[i].ratio = k;
+    }
+    
+    for(int i=n; i>1; --i){
+        dfs(materials, i);
+    }
+    
+    if(materials[1].supply >= materials[1].required){
+        cout << "YES";
+    }
+    else{
+        cout << "NO";
+    }
+}

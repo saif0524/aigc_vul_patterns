@@ -1,0 +1,170 @@
+// [esbmc] replaced #include <bits/stdc++.h> with ESBMC-compatible headers
+#include <cassert>
+#include <cctype>
+#include <cfloat>
+#include <climits>
+#include <cmath>
+#include <cstdint>
+#include <cinttypes>
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
+#include <ctime>
+#include <iostream>
+#include <istream>
+#include <ostream>
+#include <ios>
+#include <iomanip>
+#include <sstream>
+#include <fstream>
+#include <streambuf>
+#include <string>
+#include <string_view>
+#include <vector>
+#include <array>
+#include <list>
+#include <deque>
+#include <queue>
+#include <stack>
+#include <map>
+#include <set>
+#include <unordered_map>
+#include <unordered_set>
+#include <bitset>
+#include <algorithm>
+#include <numeric>
+#include <functional>
+#include <utility>
+#include <iterator>
+#include <memory>
+#include <tuple>
+#include <limits>
+#include <random>
+#include <complex>
+#include <valarray>
+#include <stdexcept>
+#include <exception>
+#include <typeinfo>
+#include <type_traits>
+#include <initializer_list>
+#include <numbers>
+#include <any>
+using namespace std;
+template <typename T, size_t N>
+int SIZE(const T (&t)[N]) {
+  return N;
+}
+template <typename T>
+int SIZE(const T &t) {
+  return t.size();
+}
+string to_string(const string s, int x1 = 0, int x2 = 1e9) {
+  return '"' + ((x1 < s.size()) ? s.substr(x1, x2 - x1 + 1) : "") + '"';
+}
+string to_string(const char *s) { return to_string((string)s); }
+string to_string(const bool b) { return (b ? "true" : "false"); }
+string to_string(const char c) { return string({c}); }
+template <size_t N>
+string to_string(const bitset<N> &b, int x1 = 0, int x2 = 1e9) {
+  string t = "";
+  for (int __iii__ = min(x1, SIZE(b)), __jjj__ = min(x2, SIZE(b) - 1);
+       __iii__ <= __jjj__; ++__iii__) {
+    t += b[__iii__] + '0';
+  }
+  return '"' + t + '"';
+}
+template <typename A, typename... C>
+string to_string(const A(&v), int x1 = 0, int x2 = 1e9, C... coords);
+int l_v_l_v_l = 0, t_a_b_s = 0;
+template <typename A, typename B>
+string to_string(const pair<A, B> &p) {
+  l_v_l_v_l++;
+  string res = "(" + to_string(p.first) + ", " + to_string(p.second) + ")";
+  l_v_l_v_l--;
+  return res;
+}
+template <typename A, typename... C>
+string to_string(const A(&v), int x1, int x2, C... coords) {
+  int rnk = rank<A>::value;
+  string tab(t_a_b_s, ' ');
+  string res = "";
+  bool first = true;
+  if (l_v_l_v_l == 0) res += '\n';
+  res += tab + "[";
+  x1 = min(x1, SIZE(v)), x2 = min(x2, SIZE(v));
+  auto l = begin(v);
+  advance(l, x1);
+  auto r = l;
+  advance(r, (x2 - x1) + (x2 < SIZE(v)));
+  for (auto e = l; e != r; e = next(e)) {
+    if (!first) {
+      res += ", ";
+    }
+    first = false;
+    l_v_l_v_l++;
+    if (e != l) {
+      if (rnk > 1) {
+        res += '\n';
+        t_a_b_s = l_v_l_v_l;
+      };
+    } else {
+      t_a_b_s = 0;
+    }
+    res += to_string(*e, coords...);
+    l_v_l_v_l--;
+  }
+  res += "]";
+  if (l_v_l_v_l == 0) res += '\n';
+  return res;
+}
+void dbgm() { ; }
+template <typename Heads, typename... Tails>
+void dbgm(Heads H, Tails... T) {
+  cerr << to_string(H) << " | ";
+  dbgm(T...);
+}
+bool flag = true;
+int n, k, d;
+bool can() {
+  if (n <= k) return 1;
+  if (k == 1) {
+    if (n == 1)
+      return 1;
+    else
+      return 0;
+  }
+  int t = 1;
+  for (int i = 0; i <= d; i++) {
+    if (n <= t) return 1;
+    t = t * k;
+  }
+  return 0;
+}
+int main() {
+  ((void)0);
+  ((void)0);
+  ((void)0);
+  cin >> n >> k >> d;
+  if (!can()) {
+    flag = false;
+  }
+  if (flag) {
+    vector<vector<int>> ans(d, vector<int>(n));
+    for (int i = 0; i < n; i++) {
+      int nw = i + 1;
+      for (int j = 0; j < d; j++) {
+        ans[j][i] = nw % k;
+        nw /= k;
+      }
+    }
+    for (int i = 0; i < d; i++) {
+      for (int j = 0; j < n; j++) {
+        cout << ans[i][j] + 1 << " ";
+      }
+      cout << endl;
+    }
+  } else {
+    cout << -1 << endl;
+  }
+  return 0;
+}

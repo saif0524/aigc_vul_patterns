@@ -1,0 +1,116 @@
+// [esbmc] replaced #include <bits/stdc++.h> with ESBMC-compatible headers
+#include <cassert>
+#include <cctype>
+#include <cfloat>
+#include <climits>
+#include <cmath>
+#include <cstdint>
+#include <cinttypes>
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
+#include <ctime>
+#include <iostream>
+#include <istream>
+#include <ostream>
+#include <ios>
+#include <iomanip>
+#include <sstream>
+#include <fstream>
+#include <streambuf>
+#include <string>
+#include <string_view>
+#include <vector>
+#include <array>
+#include <list>
+#include <deque>
+#include <queue>
+#include <stack>
+#include <map>
+#include <set>
+#include <unordered_map>
+#include <unordered_set>
+#include <bitset>
+#include <algorithm>
+#include <numeric>
+#include <functional>
+#include <utility>
+#include <iterator>
+#include <memory>
+#include <tuple>
+#include <limits>
+#include <random>
+#include <complex>
+#include <valarray>
+#include <stdexcept>
+#include <exception>
+#include <typeinfo>
+#include <type_traits>
+#include <initializer_list>
+#include <numbers>
+#include <any>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    vector<int> a(n), b(n);
+    for (int i = 0; i < n; ++i) cin >> a[i];
+    for (int i = 0; i < n; ++i) cin >> b[i];
+
+    sort(a.begin(), a.end());
+    sort(b.begin(), b.end());
+
+    vector<int> path_a, path_b;
+    int sum =0, i = 0, j = 0;
+    while (i < n && j < n) {
+        if (a[i] <= b[j]) {
+            path_a.push_back(a[i]);
+            i++;
+        } else {
+            path_b.push_back(b[j]);
+            j++;
+        }
+    }
+
+    while (i < n) path_a.push_back(a[i++]);
+    while (j < n) path_b.push_back(b[j++]);
+
+    reverse(path_b.begin(), path_b.end());
+
+    for (int i = 0; i < n; ++i) {
+        if (path_a.empty()) {
+            cout << path_b.back() << " ";
+            path_b.pop_back();
+        } else if (path_b.empty()) {
+            cout << path_a.back() << " ";
+            path_a.pop_back();
+        } else if (path_a.back() <= path_b.back()) {
+            cout << path_a.back() << " ";
+            path_a.pop_back();
+        } else {
+            cout << path_b.back() << " ";
+            path_b.pop_back();
+        }
+    }
+    cout << "\n";
+
+    for (int i = 0; i < n; ++i) {
+        if (path_b.empty()) {
+            cout << path_a.back() << " ";
+            path_a.pop_back();
+        } else if (path_a.empty()) {
+            cout << path_b.back() << " ";
+            path_b.pop_back();
+        } else if (path_a.back() <= path_b.back()) {
+            cout << path_a.back() << " ";
+            path_a.pop_back();
+        } else {
+            cout << path_b.back() << " ";
+            path_b.pop_back();
+        }
+    }
+    cout << "\n";
+
+    return 0;
+}

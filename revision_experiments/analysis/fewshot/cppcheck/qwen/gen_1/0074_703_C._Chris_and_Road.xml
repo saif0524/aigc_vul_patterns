@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;Point&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;Point&apos; has a constructor with 1 argument that is not explicit. Such, so called &quot;Converting constructors&quot;, should in general be explicit for type safety reasons as that prevents unintended implicit conversions." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0074_703_C._Chris_and_Road.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0074_703_C._Chris_and_Road.cpp" line="11" column="5"/>
+            <symbol>Point</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;n&apos; shadows outer variable" verbose="Local variable &apos;n&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0074_703_C._Chris_and_Road.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0074_703_C._Chris_and_Road.cpp" line="21" column="9" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0074_703_C._Chris_and_Road.cpp" line="18" column="5" info="Shadowed declaration"/>
+            <symbol>n</symbol>
+        </error>
+        <error id="constVariableReference" severity="style" msg="Variable &apos;p&apos; can be declared as reference to const" verbose="Variable &apos;p&apos; can be declared as reference to const" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0074_703_C._Chris_and_Road.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0074_703_C._Chris_and_Road.cpp" line="37" column="16" info="Variable &apos;p&apos; can be declared as reference to const"/>
+            <symbol>p</symbol>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::transform algorithm instead of a raw loop." verbose="Consider using std::transform algorithm instead of a raw loop." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0074_703_C._Chris_and_Road.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0074_703_C._Chris_and_Road.cpp" line="38" column="19"/>
+        </error>
+    </errors>
+</results>

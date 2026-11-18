@@ -1,0 +1,16 @@
+{
+  "problem_key": "p00812_Equals_are_Equals",
+  "shard": 1,
+  "compiled": false,
+  "compile_error": "/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0050_p00812_Equals_are_Equals.cpp: In function \u2018Poly parseFactor(const std::string&, int&)\u2019:\n/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0050_p00812_Equals_are_Equals.cpp:48:15: error: \u2018parseExpr\u2019 was not declared in this scope\n   48 |         res = parseExpr(s, pos);\n      |               ^~~~~~~~~\n/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0050_p00812_Equals_are_Equals.cpp: In function \u2018bool isEquivalent(const Poly&, const Poly&)\u2019:\n/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0050_p00812_Equals_are_Equals.cpp:104:55: error: passing \u2018const Poly\u2019 {aka \u2018const std::map<std::__cxx11::basic_string<char>, long long int>\u2019} as \u2018this\u2019 argument discards qualifiers [-fpermissive]\n  104 |         if (p2.find(p.first) == p2.end() || p2[p.first] != p.second) return false",
+  "n_tests": 0,
+  "n_passed": 0,
+  "n_sanitizer_triggered": 0,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": false,
+  "all_sanitizer_errors": [],
+  "all_sanitizer_cwes": [],
+  "per_test": [],
+  "runtime_seconds": 2.4,
+  "task_name": "p00812 Equals are Equals"
+}

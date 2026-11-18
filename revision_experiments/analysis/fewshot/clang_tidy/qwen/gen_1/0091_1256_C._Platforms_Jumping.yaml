@@ -1,0 +1,72 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0091_1256_C._Platforms_Jumping.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0091_1256_C._Platforms_Jumping.cpp'
+      FileOffset:      51
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0091_1256_C._Platforms_Jumping.cpp'
+          Offset:          47
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0091_1256_C._Platforms_Jumping.cpp'
+          Offset:          57
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0091_1256_C._Platforms_Jumping.cpp'
+      FileOffset:      104
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0091_1256_C._Platforms_Jumping.cpp'
+          Offset:          104
+          Length:          1
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  clang-diagnostic-error
+    DiagnosticMessage:
+      Message:         'no viable overloaded ''='''
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0091_1256_C._Platforms_Jumping.cpp'
+      FileOffset:      513
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0091_1256_C._Platforms_Jumping.cpp'
+          FileOffset:      503
+          Length:          9
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0091_1256_C._Platforms_Jumping.cpp'
+          FileOffset:      515
+          Length:          4
+    Notes:
+      - Message:         'candidate function not viable: no known conversion from ''bool'' to ''const vector<bool>'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_bvector.h'
+        FileOffset:      22855
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_bvector.h'
+            FileOffset:      22865
+            Length:          17
+      - Message:         'candidate function not viable: no known conversion from ''bool'' to ''vector<bool>'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_bvector.h'
+        FileOffset:      23634
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_bvector.h'
+            FileOffset:      23644
+            Length:          12
+      - Message:         'candidate function not viable: no known conversion from ''bool'' to ''initializer_list<bool>'' for 1st argument'
+        FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_bvector.h'
+        FileOffset:      24302
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_bvector.h'
+            FileOffset:      24312
+            Length:          26
+    Level:           Error
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

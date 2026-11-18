@@ -1,0 +1,98 @@
+---
+MainSourceFile:  '/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0055_1515_I._Phoenix_and_Diamonds.cpp'
+Diagnostics:
+  - DiagnosticName:  modernize-avoid-c-arrays
+    DiagnosticMessage:
+      Message:         'do not declare C-style arrays, use ''std::array'' instead'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0055_1515_I._Phoenix_and_Diamonds.cpp'
+      FileOffset:      128
+      Replacements:    []
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''add_diamonds'' of similar type (''int'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0055_1515_I._Phoenix_and_Diamonds.cpp'
+      FileOffset:      208
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0055_1515_I._Phoenix_and_Diamonds.cpp'
+          FileOffset:      208
+          Length:          19
+    Notes:
+      - Message:         'the first parameter in the range is ''type'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0055_1515_I._Phoenix_and_Diamonds.cpp'
+        FileOffset:      212
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0055_1515_I._Phoenix_and_Diamonds.cpp'
+            FileOffset:      212
+            Length:          4
+      - Message:         'the last parameter in the range is ''count'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0055_1515_I._Phoenix_and_Diamonds.cpp'
+        FileOffset:      222
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0055_1515_I._Phoenix_and_Diamonds.cpp'
+            FileOffset:      222
+            Length:          5
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  bugprone-easily-swappable-parameters
+    DiagnosticMessage:
+      Message:         '2 adjacent parameters of ''remove_diamonds'' of similar type (''int'') are easily swapped by mistake'
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0055_1515_I._Phoenix_and_Diamonds.cpp'
+      FileOffset:      371
+      Replacements:    []
+      Ranges:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0055_1515_I._Phoenix_and_Diamonds.cpp'
+          FileOffset:      371
+          Length:          19
+    Notes:
+      - Message:         'the first parameter in the range is ''type'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0055_1515_I._Phoenix_and_Diamonds.cpp'
+        FileOffset:      375
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0055_1515_I._Phoenix_and_Diamonds.cpp'
+            FileOffset:      375
+            Length:          4
+      - Message:         'the last parameter in the range is ''count'''
+        FilePath:        '/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0055_1515_I._Phoenix_and_Diamonds.cpp'
+        FileOffset:      385
+        Replacements:    []
+        Ranges:
+          - FilePath:        '/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0055_1515_I._Phoenix_and_Diamonds.cpp'
+            FileOffset:      385
+            Length:          5
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-trailing-return-type
+    DiagnosticMessage:
+      Message:         use a trailing return type for this function
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0055_1515_I._Phoenix_and_Diamonds.cpp'
+      FileOffset:      591
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0055_1515_I._Phoenix_and_Diamonds.cpp'
+          Offset:          587
+          Length:          3
+          ReplacementText: auto
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0055_1515_I._Phoenix_and_Diamonds.cpp'
+          Offset:          597
+          Length:          0
+          ReplacementText: ' -> int'
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+  - DiagnosticName:  modernize-use-nullptr
+    DiagnosticMessage:
+      Message:         use nullptr
+      FilePath:        '/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0055_1515_I._Phoenix_and_Diamonds.cpp'
+      FileOffset:      644
+      Replacements:
+        - FilePath:        '/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0055_1515_I._Phoenix_and_Diamonds.cpp'
+          Offset:          644
+          Length:          1
+          ReplacementText: nullptr
+    Level:           Warning
+    BuildDirectory:  '/home/saif/Documents/aigc_vul_patterns'
+...

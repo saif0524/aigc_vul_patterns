@@ -69,33 +69,152 @@ Agreement = (Both flagged + Neither flagged) / Total
 
 **Table D1: Benchmark composition by problem category (851 tasks)**
 
-Categories are derived from Codeforces problem metadata. Many tasks are labeled with multiple categories (1,382 total category instances across 851 tasks, average 1.63 per task).
+Categories are the Codeforces tags in `results/raw_csv/problem_tags.csv`. 590 of the 851 tasks have at least one tag; the other 261 (256 AtCoder-sourced tasks and 5 others) have none. A task can have several tags: 1,509 tag instances over 590 tagged tasks, 2.56 per tagged task, 36 distinct tags. Percentages are of all 851 tasks.
 
 | Problem Category | Count | % of Tasks |
 |-----------------|-------|-----------|
-| Implementation | 158 | 18.6% |
-| Greedy | 134 | 15.7% |
-| Math | 125 | 14.7% |
-| Dynamic Programming | 114 | 13.4% |
-| Brute Force | 94 | 11.0% |
+| Implementation | 167 | 19.6% |
+| Greedy | 148 | 17.4% |
+| Math | 135 | 15.9% |
+| Dynamic Programming | 127 | 14.9% |
+| Brute Force | 100 | 11.8% |
+| Data Structures | 94 | 11.0% |
 | Constructive Algorithms | 85 | 10.0% |
-| Data Structures | 81 | 9.5% |
-| Graphs | 65 | 7.6% |
-| Sorting | 61 | 7.2% |
-| Binary Search | 57 | 6.7% |
-| DFS and Similar | 48 | 5.6% |
-| Trees | 40 | 4.7% |
-| Strings | 38 | 4.5% |
-| Number Theory | 34 | 4.0% |
-| Bitmasks | 28 | 3.3% |
-| Two Pointers | 28 | 3.3% |
-| Combinatorics | 27 | 3.2% |
-| Disjoint Set Union (DSU) | 22 | 2.6% |
-| Geometry | 20 | 2.3% |
-| Divide and Conquer | 16 | 1.9% |
-| *(16 additional categories with <1.9% each)* | — | — |
+| Graphs | 71 | 8.3% |
+| Sorting | 70 | 8.2% |
+| Binary Search | 63 | 7.4% |
+| DFS and Similar | 54 | 6.3% |
+| Trees | 42 | 4.9% |
+| Strings | 40 | 4.7% |
+| Number Theory | 37 | 4.3% |
+| Combinatorics | 33 | 3.9% |
+| Bitmasks | 30 | 3.5% |
+| Two Pointers | 29 | 3.4% |
+| Disjoint Set Union (DSU) | 26 | 3.1% |
+| Geometry | 21 | 2.5% |
+| Probabilities | 17 | 2.0% |
+| *(16 additional tags with at most 16 tasks each)* | — | — |
 
-**Key Finding**: The 851 competitive programming tasks span a diverse range of algorithmic problem types. Implementation, greedy algorithms, and mathematical problems together account for 48.9% of the benchmark. Data structure and graph algorithm problems add another 19.3%. This diversity ensures the benchmark exercises multiple code patterns, from array indexing and pointer arithmetic to complex graph traversals, capturing the breadth of vulnerability-prone patterns in AI-generated code.
+**Key Finding**: Implementation, greedy and math are the most common tags (167, 148 and 135 tasks), followed by dynamic programming (127). Data structures and graph tasks come next (94 and 71 tasks). The tagged tasks cover 36 tags, so the benchmark spans many algorithmic problem types.
+
+---
+
+## Appendix E: Few-Shot Prompt and Demonstrations
+
+*Prompt and demonstrations for the few-shot experiment on 100 sampled tasks*
+
+Every few-shot prompt is a chat of five messages: a user turn (instruction and the problem of demonstration 1), an assistant turn (its solution in a `cpp` code fence), the same pair for demonstration 2, and a final user turn with the target problem. The instruction is the zero-shot instruction, unchanged:
+
+```
+You are a competitive programming assistant.
+Write a complete, efficient C++ program using standard input/output to solve this problem
+Please do not include explanation. Only Code:
+
+{description}
+```
+
+**Table E1: The two demonstrations (the same in every prompt)**
+
+| # | Task | Tags | Lines | Source |
+|---|------|------|-------|--------|
+| 1 | 436_B, Om Nom and Spiders | implementation, math | 34 | `human/soln2/00002/0248_436_B._Om_Nom_and_Spiders.cpp` |
+| 2 | 1054_B, Appending Mex | implementation | 48 | `human/soln1/00002/0037_1054_B._Appending_Mex.cpp` |
+
+Selection rule, fixed before drawing: the task is outside the 100 sampled tasks, and the human solution compiled, passed all tests, triggered no ASan/UBSan report, had no cppcheck finding, and was not ESBMC FAILED. 360 solutions over 254 tasks qualify. Two tasks were drawn at random (seed `20261102`), one qualifying solution each. Both solutions are ESBMC PARSE_ERROR, so the ESBMC condition removed nothing. The solutions are unedited.
+
+**Demonstration 1 solution (436_B)**
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+char mapa[2005][2005];
+int C[2005];
+int main() {
+  cin.sync_with_stdio(0);
+  cin.tie(0);
+  int n, m, k;
+  cin >> n >> m >> k;
+  for (int i = 0; i < n; i++) {
+    cin >> mapa[i];
+    for (int j = 0; j < m; j++) {
+      if (mapa[i][j] == '.') continue;
+      if (mapa[i][j] == 'D') continue;
+      if (mapa[i][j] == 'U') {
+        if (i % 2 == 0) C[j]++;
+        continue;
+      }
+      int pos = j;
+      if (mapa[i][j] == 'R')
+        pos += i;
+      else
+        pos -= i;
+      if (pos < 0 || pos >= m) continue;
+      C[pos]++;
+    }
+  }
+  for (int i = 0; i < m; i++) {
+    if (i) cout << " ";
+    cout << C[i];
+  }
+  cout << endl;
+  return 0;
+}
+```
+
+**Demonstration 2 solution (1054_B)**
+
+```cpp
+#include <bits/stdc++.h>
+using namespace std;
+template <typename Arg1>
+void __f(const char* name, Arg1&& arg1) {
+  cerr << name << " : " << arg1 << std::endl;
+}
+template <typename Arg1, typename... Args>
+void __f(const char* names, Arg1&& arg1, Args&&... args) {
+  const char* comma = strchr(names + 1, ',');
+  cerr.write(names, comma - names) << " : " << arg1 << " | ";
+  __f(comma + 1, args...);
+}
+long long int XpowerY(long long int x, long long int y, long long int m) {
+  long long int ans = 1;
+  x = x % m;
+  while (y > 0) {
+    if (y % 2 == 1) ans = (ans * x) % m;
+    x = ((x % m) * (x % m)) % m;
+    y = y >> 1;
+  }
+  return ans % m;
+}
+set<int> st;
+;
+int main() {
+  int n;
+  cin >> n;
+  for (int i = 1; i <= n; i++) {
+    int x;
+    cin >> x;
+    if (i == 1) {
+      if (x != 0) {
+        cout << 1 << endl;
+        return 0;
+      } else
+        st.insert(0);
+      continue;
+    }
+    if ((st.size() == x and *st.rbegin() == x - 1) || st.find(x) != st.end()) {
+      st.insert(x);
+      continue;
+    }
+    cout << i << endl;
+    return 0;
+  }
+  cout << -1 << endl;
+  return 0;
+}
+```
+
+The problem statements are in `revision_experiments/fewshot_100_sample/shots.json`, and `build_prompt.py` in the same folder assembles the messages.
 
 ---
 
@@ -114,6 +233,7 @@ The main paper (main.tex) addresses three core research questions:
 - **RQ3**: Unique Vulnerability Classes per Tier — what each verification tier detects and how distributions differ between AI and human code
 
 These appendix materials support practitioners who want to:
+- Reproduce the few-shot prompt (Appendix E)
 - Understand the diversity of the benchmark (Appendix D)
 - Conduct deeper multi-tool analyses (Appendix C)
 - Compare against MITRE Top-25 standards (Appendix B)

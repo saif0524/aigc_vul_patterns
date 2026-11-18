@@ -1,0 +1,49 @@
+{
+  "problem_key": "1344_A_Hilbert's_Hotel",
+  "shard": 1,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 2,
+  "n_passed": 0,
+  "n_sanitizer_triggered": 2,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==143019==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x503000000034 at pc 0x618605ac1094 bp 0x7ffd0ec86a80 sp 0x7ffd0ec86a70\nREAD of size 4 at 0x503000000034 thread T0\n    #0 0x618605ac1093 in main /home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/gemma/gen_1/0035_1344_A._Hilbert_s_Hotel.cpp:26\n    #1 0x76682c82a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    "
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==143055==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5020000001e4 at pc 0x58031d4e5094 bp 0x7ffc55a5a8b0 sp 0x7ffc55a5a8a0\nREAD of size 4 at 0x5020000001e4 thread T0\n    #0 0x58031d4e5093 in main /home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/gemma/gen_1/0035_1344_A._Hilbert_s_Hotel.cpp:26\n    #1 0x71906b42a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n    "
+    }
+  ],
+  "runtime_seconds": 1.54,
+  "task_name": "1344_A. Hilbert's Hotel"
+}

@@ -1,0 +1,101 @@
+// [esbmc] replaced #include <bits/stdc++.h> with ESBMC-compatible headers
+#include <cassert>
+#include <cctype>
+#include <cfloat>
+#include <climits>
+#include <cmath>
+#include <cstdint>
+#include <cinttypes>
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
+#include <ctime>
+#include <iostream>
+#include <istream>
+#include <ostream>
+#include <ios>
+#include <iomanip>
+#include <sstream>
+#include <fstream>
+#include <streambuf>
+#include <string>
+#include <string_view>
+#include <vector>
+#include <array>
+#include <list>
+#include <deque>
+#include <queue>
+#include <stack>
+#include <map>
+#include <set>
+#include <unordered_map>
+#include <unordered_set>
+#include <bitset>
+#include <algorithm>
+#include <numeric>
+#include <functional>
+#include <utility>
+#include <iterator>
+#include <memory>
+#include <tuple>
+#include <limits>
+#include <random>
+#include <complex>
+#include <valarray>
+#include <stdexcept>
+#include <exception>
+#include <typeinfo>
+#include <type_traits>
+#include <initializer_list>
+#include <numbers>
+#include <any>
+
+using namespace std;
+
+const int maxn = 400010;
+int n, m, q, l1[maxn], l2[maxn], l3[maxn], l4[maxn];
+
+int main() {
+    ((void)0);
+    ((void)0);
+
+    cin >> n >> m >> q;
+    n *= 2; m *= 2;
+
+    for (int i = 1; i <= n; i++) {
+        l1[i] = (i + 1) / 2;
+        l3[i] = (i + 1) / 2;
+        l2[i] = (i + 2) / 2;
+        l4[i] = (i + 2) / 2;
+    }
+
+    int g1, g2;
+    for (int i = 1; i <= q; i++) {
+        int x, y;
+        cin >> x >> y;
+        if (x & 1) {
+            g1 = l1[x];
+            g2 = l4[y];
+            l1[x] = max(l1[x], g2);
+            l4[y] = max(l4[y], g1);
+        }
+        else {
+            g1 = l2[x];
+            g2 = l3[y];
+            l2[x] = max(l2[x], g2);
+            l3[y] = max(l3[y], g1);
+        }
+        bool res = true;
+        for (int j = 1; j <= n; j += 2) {
+            if (l2[j] > m / 2) res = false;
+            if (l1[j] > m / 2) res = false;
+        }
+        for (int j = 2; j <= n; j += 2) {
+            if (l3[j] > m / 2) res = false;
+            if (l4[j] > m / 2) res = false;
+        }
+        cout << (res ? "YES" : "NO") << '\n';
+    }
+
+    return 0;
+}

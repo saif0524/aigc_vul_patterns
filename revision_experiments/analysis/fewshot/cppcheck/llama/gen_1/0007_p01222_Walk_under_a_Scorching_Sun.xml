@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;t&apos; shadows outer variable" verbose="Local variable &apos;t&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/llama/gen_1/0007_p01222_Walk_under_a_Scorching_Sun.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/llama/gen_1/0007_p01222_Walk_under_a_Scorching_Sun.cpp" line="30" column="8" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/llama/gen_1/0007_p01222_Walk_under_a_Scorching_Sun.cpp" line="39" column="8" info="Shadowed declaration"/>
+            <symbol>t</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;t&apos; shadows outer variable" verbose="Local variable &apos;t&apos; shadows outer variable" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/llama/gen_1/0007_p01222_Walk_under_a_Scorching_Sun.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/llama/gen_1/0007_p01222_Walk_under_a_Scorching_Sun.cpp" line="77" column="7" info="Shadow variable"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/llama/gen_1/0007_p01222_Walk_under_a_Scorching_Sun.cpp" line="39" column="8" info="Shadowed declaration"/>
+            <symbol>t</symbol>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;l&apos; should be passed by const reference." verbose="Parameter &apos;l&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/llama/gen_1/0007_p01222_Walk_under_a_Scorching_Sun.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/llama/gen_1/0007_p01222_Walk_under_a_Scorching_Sun.cpp" line="27" column="23" info="Function parameter &apos;l&apos; should be passed by const reference."/>
+            <symbol>l</symbol>
+        </error>
+    </errors>
+</results>

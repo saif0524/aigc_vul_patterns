@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="knownConditionTrueFalse" severity="style" msg="The comparison &apos;min_cost == -1&apos; is always true." verbose="Finding the same expression on both sides of an operator is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/gemma/gen_1/0036_19_B._Checkout_Assistant.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/gemma/gen_1/0036_19_B._Checkout_Assistant.cpp" line="89" column="15"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/gemma/gen_1/0036_19_B._Checkout_Assistant.cpp" line="53" column="25" info="&apos;min_cost&apos; is assigned value &apos;-1&apos; here."/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;stolen&apos; is assigned a value that is never used." verbose="Variable &apos;stolen&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/gemma/gen_1/0036_19_B._Checkout_Assistant.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/gemma/gen_1/0036_19_B._Checkout_Assistant.cpp" line="16" column="22"/>
+            <symbol>stolen</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;total_cost&apos; is assigned a value that is never used." verbose="Variable &apos;total_cost&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/gemma/gen_1/0036_19_B._Checkout_Assistant.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/gemma/gen_1/0036_19_B._Checkout_Assistant.cpp" line="17" column="24"/>
+            <symbol>total_cost</symbol>
+        </error>
+    </errors>
+</results>

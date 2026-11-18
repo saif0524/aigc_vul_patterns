@@ -1,0 +1,38 @@
+{
+  "invocations": [
+    {
+      "selection": "few-shot PARSE_ERROR files with a fast-I/O call (A: after header fix, B: no <bits/stdc++.h>)",
+      "n_files": 109,
+      "n_A": 108,
+      "n_B": 1,
+      "replacement": "each fast-I/O call -> ((void)0)",
+      "esbmc": "ESBMC version 8.0.0 64-bit x86_64 linux",
+      "flags": {
+        "unwind": 10,
+        "timeout": 60,
+        "overflow_check": true,
+        "always_on": [
+          "--compact-trace",
+          "--no-unwinding-assertions",
+          "--no-div-by-zero-check"
+        ]
+      },
+      "jobs": 8,
+      "cpu_count": 20,
+      "loadavg_start": [
+        7.14404296875,
+        5.513671875,
+        3.56787109375
+      ],
+      "tasks_this_invocation": 109,
+      "started": "2026-11-09 14:55:52",
+      "loadavg_end": [
+        7.77880859375,
+        7.0361328125,
+        4.58984375
+      ],
+      "finished": "2026-11-09 14:59:23",
+      "source_run": "e2_overflow_u10_t60"
+    }
+  ]
+}

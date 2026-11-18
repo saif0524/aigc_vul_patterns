@@ -1,0 +1,16 @@
+{
+  "problem_key": "551_B_ZgukistringZ",
+  "shard": 0,
+  "compiled": false,
+  "compile_error": "/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0012_551_B._ZgukistringZ.cpp: In function \u2018int main()\u2019:\n/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0012_551_B._ZgukistringZ.cpp:48:34: error: cannot bind non-const lvalue reference of type \u2018std::string&\u2019 {aka \u2018std::__cxx11::basic_string<char>&\u2019} to an rvalue of type \u2018std::__cxx11::basic_string<char>\u2019\n   48 |             if (can_form(a.substr(ptr, min(nb, nc)), nb) && need_b[ch] > 0) {\n      |                          ~~~~~~~~^~~~~~~~~~~~~~~~~~\n/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0012_551_B._ZgukistringZ.cpp:8:23: note:   initializing argument 1 of \u2018bool can_form(std::string&, int)\u2019\n    8 | bool can_form(string &s, int len) {\n      |               ~~~~~~~~^\n/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/qwen/gen_1/0012_551_B._ZgukistringZ.cpp:56:34: error: cannot ",
+  "n_tests": 0,
+  "n_passed": 0,
+  "n_sanitizer_triggered": 0,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": false,
+  "all_sanitizer_errors": [],
+  "all_sanitizer_cwes": [],
+  "per_test": [],
+  "runtime_seconds": 1.76,
+  "task_name": "551_B. ZgukistringZ"
+}

@@ -1,0 +1,108 @@
+// [esbmc] replaced #include <bits/stdc++.h> with ESBMC-compatible headers
+#include <cassert>
+#include <cctype>
+#include <cfloat>
+#include <climits>
+#include <cmath>
+#include <cstdint>
+#include <cinttypes>
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
+#include <ctime>
+#include <iostream>
+#include <istream>
+#include <ostream>
+#include <ios>
+#include <iomanip>
+#include <sstream>
+#include <fstream>
+#include <streambuf>
+#include <string>
+#include <string_view>
+#include <vector>
+#include <array>
+#include <list>
+#include <deque>
+#include <queue>
+#include <stack>
+#include <map>
+#include <set>
+#include <unordered_map>
+#include <unordered_set>
+#include <bitset>
+#include <algorithm>
+#include <numeric>
+#include <functional>
+#include <utility>
+#include <iterator>
+#include <memory>
+#include <tuple>
+#include <limits>
+#include <random>
+#include <complex>
+#include <valarray>
+#include <stdexcept>
+#include <exception>
+#include <typeinfo>
+#include <type_traits>
+#include <initializer_list>
+#include <numbers>
+#include <any>
+using namespace std;
+
+int main(){
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    int n, m;
+    cin >> n >> m;
+    vector<vector<int>> boxes(n);
+    vector<int> sizes(n);
+    for(int i=0;i<n;i++){
+        int si;
+        cin >> si;
+        sizes[i] = si;
+        boxes[i].resize(si);
+        for(int &x: boxes[i]){
+            cin >> x;
+        }
+    }
+    int total = accumulate(sizes.begin(), sizes.end(), 0);
+    int target = total / n;
+    int rem = total % n;
+    vector<int> extra, lack;
+    for(int i=0;i<n;i++){
+        if(sizes[i] > target + (i < rem)){
+            extra.push_back(i);
+        }
+        if(sizes[i] < target + (i < rem)){
+            lack.push_back(i);
+        }
+    }
+    vector<tuple<int, int, int>> moves;
+    int e=0, l=0;
+    while(e < extra.size() && l < lack.size()){
+        int from = extra[e];
+        int to = lack[l];
+        int need = target + (l < rem) - sizes[to];
+        int give = min(sizes[from] - (target + (e < rem)), -need);
+        for(int i=0;i<give;i++){
+            int kind = boxes[from].back();
+            boxes[from].pop_back();
+            boxes[to].push_back(kind);
+            sizes[from]--;
+            sizes[to]++;
+            moves.emplace_back(from+1, to+1, kind);
+        }
+        if(sizes[from] == target + (e < rem)){
+            e++;
+        }
+        if(sizes[to] == target + (l < rem)){
+            l++;
+        }
+    }
+    cout << moves.size() << "\n";
+    for(auto [from, to, kind]: moves){
+        cout << from << " " << to << " " << kind << "\n";
+    }
+}

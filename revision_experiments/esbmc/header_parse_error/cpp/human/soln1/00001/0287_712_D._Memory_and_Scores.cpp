@@ -1,0 +1,91 @@
+// [esbmc] replaced #include <bits/stdc++.h> with ESBMC-compatible headers
+#include <cassert>
+#include <cctype>
+#include <cfloat>
+#include <climits>
+#include <cmath>
+#include <cstdint>
+#include <cinttypes>
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
+#include <ctime>
+#include <iostream>
+#include <istream>
+#include <ostream>
+#include <ios>
+#include <iomanip>
+#include <sstream>
+#include <fstream>
+#include <streambuf>
+#include <string>
+#include <string_view>
+#include <vector>
+#include <array>
+#include <list>
+#include <deque>
+#include <queue>
+#include <stack>
+#include <map>
+#include <set>
+#include <unordered_map>
+#include <unordered_set>
+#include <bitset>
+#include <algorithm>
+#include <numeric>
+#include <functional>
+#include <utility>
+#include <iterator>
+#include <memory>
+#include <tuple>
+#include <limits>
+#include <random>
+#include <complex>
+#include <valarray>
+#include <stdexcept>
+#include <exception>
+#include <typeinfo>
+#include <type_traits>
+#include <initializer_list>
+#include <numbers>
+#include <any>
+using namespace std;
+int m[2][303300];
+int *p1, *p2;
+int offset = 151500;
+int off = 120000;
+int resa[303300];
+int mod = 1e9 + 7;
+void solve(int a, int k, int t) {
+  p1 = m[0] + offset;
+  p2 = m[1] + offset;
+  memset(m, 0, sizeof(m));
+  p1[a] = 1;
+  for (int i = 0; i < t; i++) {
+    if (i == 2) {
+      bool f = 0;
+    }
+    int tmp = 0;
+    memset(p2 - offset, 0, sizeof(m[0]));
+    for (int j = -off; j < off; j++) {
+      p2[j] = tmp;
+      tmp = (((tmp - p1[j - k]) % mod + mod) % mod + p1[j + k + 1]) % mod;
+    }
+    swap(p1, p2);
+  }
+}
+int main() {
+  int a, b, k, t;
+  cin >> a >> b >> k >> t;
+  solve(a, k, t);
+  memcpy(resa, p1 - offset, sizeof(m[0]));
+  solve(b, k, t);
+  int res = 0;
+  int tmp = 0;
+  for (int i = -off; i < off; i++) {
+    tmp = (tmp + p1[i]) % mod;
+    res = (res + ((long long)resa[i + offset + 1] * tmp) % mod) % mod;
+  }
+  printf("%d\n", res);
+  return 0;
+}

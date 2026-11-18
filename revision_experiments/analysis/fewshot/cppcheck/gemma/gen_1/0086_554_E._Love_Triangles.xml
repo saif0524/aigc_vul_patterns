@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="duplicateCondition" severity="style" msg="The if condition is the same as the previous if condition" verbose="The if condition is the same as the previous if condition" cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/gemma/gen_1/0086_554_E._Love_Triangles.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/gemma/gen_1/0086_554_E._Love_Triangles.cpp" line="42" column="190" info="Second condition"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/gemma/gen_1/0086_554_E._Love_Triangles.cpp" line="37" column="190" info="First condition"/>
+        </error>
+        <error id="useStlAlgorithm" severity="style" msg="Consider using std::any_of algorithm instead of a raw loop." verbose="Consider using std::any_of algorithm instead of a raw loop." cwe="398" file0="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/gemma/gen_1/0086_554_E._Love_Triangles.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/gemma/gen_1/0086_554_E._Love_Triangles.cpp" line="53" column="66"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;count&apos; is assigned a value that is never used." verbose="Variable &apos;count&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/gemma/gen_1/0086_554_E._Love_Triangles.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/gemma/gen_1/0086_554_E._Love_Triangles.cpp" line="30" column="21"/>
+            <symbol>count</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;count&apos; is assigned a value that is never used." verbose="Variable &apos;count&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/gemma/gen_1/0086_554_E._Love_Triangles.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/gemma/gen_1/0086_554_E._Love_Triangles.cpp" line="30" column="15"/>
+            <symbol>count</symbol>
+        </error>
+    </errors>
+</results>

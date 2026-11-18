@@ -1,0 +1,51 @@
+{
+  "invocations": [
+    {
+      "note": "first invocation, run before logging existed; console output not kept",
+      "models": [
+        "qwen"
+      ],
+      "files_this_run": 72,
+      "verdicts_this_run": {
+        "PARSE_ERROR": 71,
+        "FAILED": 1
+      },
+      "unwind": 10,
+      "timeout": 60,
+      "overflow_check": true,
+      "jobs": 8
+    },
+    {
+      "started": "2026-11-09 14:43:36",
+      "finished": "2026-11-09 14:49:00",
+      "esbmc": "/home/saif/Documents/aigc_vul_patterns/esbmc/bin/esbmc",
+      "unwind": 10,
+      "timeout": 60,
+      "overflow_check": true,
+      "jobs": 8,
+      "models": [
+        "gemma",
+        "llama",
+        "qwen"
+      ],
+      "files_this_run": 207,
+      "verdicts_this_run": {
+        "PARSE_ERROR": 142,
+        "SUCCESS": 19,
+        "FAILED": 13,
+        "TIMEOUT": 33
+      },
+      "loadavg_start": [
+        0.2890625,
+        0.71533203125,
+        0.7958984375
+      ],
+      "loadavg_end": [
+        5.3046875,
+        5.05029296875,
+        2.79443359375
+      ],
+      "cpu_count": 20
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+// [esbmc] replaced #include <bits/stdc++.h> with ESBMC-compatible headers
+#include <cassert>
+#include <cctype>
+#include <cfloat>
+#include <climits>
+#include <cmath>
+#include <cstdint>
+#include <cinttypes>
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
+#include <ctime>
+#include <iostream>
+#include <istream>
+#include <ostream>
+#include <ios>
+#include <iomanip>
+#include <sstream>
+#include <fstream>
+#include <streambuf>
+#include <string>
+#include <string_view>
+#include <vector>
+#include <array>
+#include <list>
+#include <deque>
+#include <queue>
+#include <stack>
+#include <map>
+#include <set>
+#include <unordered_map>
+#include <unordered_set>
+#include <bitset>
+#include <algorithm>
+#include <numeric>
+#include <functional>
+#include <utility>
+#include <iterator>
+#include <memory>
+#include <tuple>
+#include <limits>
+#include <random>
+#include <complex>
+#include <valarray>
+#include <stdexcept>
+#include <exception>
+#include <typeinfo>
+#include <type_traits>
+#include <initializer_list>
+#include <numbers>
+#include <any>
+using namespace std;
+
+const int MAXN = 400010;
+
+vector<int> adj[MAXN];
+int subTreeSize[MAXN];
+bool centroid[MAXN];
+int n, parent[MAXN];
+
+void dfs(int u, int p) {
+    parent[u] = p;
+    subTreeSize[u] = 1;
+    for (int v : adj[u]) {
+        if (v != p) {
+            dfs(v, u);
+            subTreeSize[u] += subTreeSize[v];
+        }
+    }
+}
+
+int findCentroid(int u, int size, int p) {
+    for (int v : adj[u]) {
+        if (v != p && !centroid[v] && subTreeSize[v] > size / 2) {
+            return findCentroid(v, size, u);
+        }
+    }
+    return u;
+}
+
+void decompose(int u, int p) {
+    dfs(u, -1);
+    int c = findCentroid(u, subTreeSize[u], -1);
+    centroid[c] = true;
+    for (int v : adj[c]) {
+        if (!centroid[v]) {
+            decompose(v, c);
+        }
+    }
+}
+
+int main(){
+    ((void)0);
+    ((void)0);
+    cin >> n;
+    for(int i=0;i<n-1;i++){
+        int u,v;
+        cin >> u >> v;
+        u--, v--;
+        adj[u].push_back(v);
+        adj[v].push_back(u);
+    }
+    decompose(0, -1);
+    vector<int> result(n, 0);
+    for(int i=0;i<n;i++){
+        int maxSize = 0;
+        for(int v : adj[i]){
+            if(!centroid[v]){
+                maxSize = max(maxSize, subTreeSize[v]);
+            }
+        }
+        maxSize = max(maxSize, n - subTreeSize[i]);
+        if(maxSize <= (n+1)/2){
+            result[i] = 1;
+        }
+    }
+    for(int i=0;i<n;i++){
+        cout << result[i] << " ";
+    }
+    cout << "\n";
+    return 0;
+}

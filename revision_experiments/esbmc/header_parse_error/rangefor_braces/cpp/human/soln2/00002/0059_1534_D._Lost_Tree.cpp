@@ -1,0 +1,148 @@
+#include <cmath>
+// [esbmc] replaced #include <bits/stdc++.h> with ESBMC-compatible headers
+#include <cassert>
+#include <cctype>
+#include <cfloat>
+#include <climits>
+#include <cmath>
+#include <cstdint>
+#include <cinttypes>
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
+#include <ctime>
+#include <iostream>
+#include <istream>
+#include <ostream>
+#include <ios>
+#include <iomanip>
+#include <sstream>
+#include <fstream>
+#include <streambuf>
+#include <string>
+#include <string_view>
+#include <vector>
+#include <array>
+#include <list>
+#include <deque>
+#include <queue>
+#include <stack>
+#include <map>
+#include <set>
+#include <unordered_map>
+#include <unordered_set>
+#include <bitset>
+#include <algorithm>
+#include <numeric>
+#include <functional>
+#include <utility>
+#include <iterator>
+#include <memory>
+#include <tuple>
+#include <limits>
+#include <random>
+#include <complex>
+#include <valarray>
+#include <stdexcept>
+#include <exception>
+#include <typeinfo>
+#include <type_traits>
+#include <initializer_list>
+#include <numbers>
+#include <any>
+#include <algorithm>
+#include <iostream>
+#include <vector>
+#include <fstream>
+#include <cassert>
+
+using namespace std;
+
+
+FILE* inp = stdin;
+
+vector<int32_t> readI(int size) {
+        vector<int32_t> result;
+        for (int i = 0; i < size; ++i) {
+                int32_t x;
+                assert(1 == fscanf(inp, "%i", &x));
+                result.push_back(x);
+        }
+        return result;
+}
+
+int readI() {
+        int x;
+        assert(1 == fscanf(inp, "%i", &x));
+        return x;
+}
+
+
+template<typename T>
+T divup(T a, T b) {
+        if (b < 0) { a = -a; b = -b; } 
+        if (a < 0) return -((-a) / b);
+        if ((a % b) == 0) return a / b; return 1 + a / b;
+}
+
+
+
+int32_t main() { 
+	int32_t ntests;
+      //  inp.tie(NULL);
+
+	// nodes are numbered 0..n-1 in the program
+	const int n = readI();
+
+
+	set<int> layer;
+	printf("? 1\n");
+	fflush(stdout); 
+
+	vector<pair<int, int>> edges;
+	auto addEdge = [&edges](int u, int v) { edges.push_back(make_pair(u+1, v+1)); }; 
+
+	auto distR = readI(n); 
+	auto& d1 = distR; 
+	int nodd = 0;
+	int neven = 0;
+	for (int x : d1) { if ((x % 2) == 1) ++nodd; else if (x != 0) ++neven; }
+	bool evenLayers = neven <= divup(n, 2) - 1; 
+
+	if (evenLayers) {
+		for (int node = 0; node < n; ++node) 
+		if (d1.at(node) == 1) {
+			addEdge(0, node);
+	//		distR.at(node) = 1; 
+		} else
+		if (d1.at(node) == 2) { 
+			layer.insert(node);
+	//		distR.at(node) = 2; 
+		}
+	} else 
+		for (int node = 0; node < n; ++node) if (d1.at(node) == 1) layer.insert(node);
+
+	while (layer.size() > 0) { 
+		set<int> nextlayer;
+		for (int u : layer) {
+			printf("? %i\n", u + 1);
+			fflush(stdout); 
+			auto d = readI(n); 
+			for (int v = 0; v < n; ++v) 
+				if (d.at(v) == 1) addEdge(u, v); else
+				if (d.at(v) == 2 && distR.at(v) != distR.at(u) && distR.at(v) != distR.at(u) - 2) {
+					nextlayer.insert(v);
+	//				distR.at(v) = distR.at(u) + 2;
+				}			
+		}
+		layer = nextlayer; 
+	}
+
+	assert(edges.size() == n - 1); 	
+
+	printf("!\n");
+	for (auto& e : edges) { printf("%i %i\n", e.first, e.second); } 
+	fflush(stdout); 
+
+	return 0;
+}

@@ -109,7 +109,7 @@ aigc_vul_patterns/
 │   └── figures/                 #   Generated figures (PDF)
 ├── notebooks/                   # Jupyter notebooks
 │   ├── results.ipynb            #   Primary results analysis and figures
-│   └── reviewer_response_executed.ipynb  # Statistical tests and cross-tabs
+│   └── revision_experiments.ipynb  # Statistical tests and cross-tabs
 ├── README.MD                    # Project overview
 ├── DATA.md                      # Data provenance documentation
 ├── REPLICATION.md               # This file
@@ -350,7 +350,7 @@ This notebook generates all tables in `results/tables/` and figures in `results/
 The two-proportion z-test (z = 9.28, p < 0.001), the sanitizer cross-tabulation by pass/fail status, and the ESBMC-sanitizer Jaccard similarity computations are in:
 
 ```bash
-jupyter notebook notebooks/reviewer_response_executed.ipynb
+jupyter notebook notebooks/revision_experiments.ipynb
 ```
 
 ---
@@ -409,10 +409,11 @@ When the pipeline completes, you should observe:
 - **Sanitizer trigger rates**: ~9.3% AI vs ~2.6% human (3.6× gap)
 - **Cppcheck CWE prevalence**: 33–46% of AI programs, ~45% of human programs
 - **Clang-tidy diagnostics**: 27.7–33.6% of AI programs, 59.2% of human programs
-- **ESBMC (Config A baseline)**: ~29.9% proven violations among analyzable programs
-- **ESBMC–sanitizer Jaccard**: ~0.05 (Config A); higher with overflow-check (Config B/C)
-- **ESBMC-exclusive violations**: ~598 (Config A); increases with Config B due to CWE-190 coverage
-- **Sanitizer-exclusive violations**: ~576 (not reached by any ESBMC config)
+- **ESBMC (reported run)**: Config B followed by three source edits (header replacement, fast-I/O removal, range-for braces). Final verdicts per program are in `revision_experiments/esbmc/header_parse_error/stage_verdicts.csv` (last column). 3,559 programs (39.9%) are conclusive and 2,058 are FAILED; 56.9% of conclusive AI programs and 60.1% of conclusive human programs are FAILED
+- **ESBMC coverage**: 26.0% PARSE_ERROR after the edits (56.5% on the plain code), 3,036 TIMEOUT
+- **ESBMC–sanitizer Jaccard**: 0.066 on the 4,962 programs that ran at least one test (1,280 ESBMC FAILED, 657 sanitizer-flagged, 120 both)
+- **ESBMC-only**: 1,160 programs flagged by ESBMC and not by the sanitizers
+- **Sanitizer-only**: 537 programs flagged by the sanitizers and not by ESBMC (290 ESBMC TIMEOUT, 145 PARSE_ERROR, 3 ERROR, 99 SUCCESS)
 
 ---
 
@@ -426,9 +427,9 @@ When the pipeline completes, you should observe:
 
 **Test timeout differences**: Minor variations in pass rates may occur on different hardware due to the 10-second timeout boundary. This does not affect sanitizer or static analysis results.
 
-**ESBMC parse errors**: ESBMC cannot parse approximately 56.5% of contest programs (C++ features outside its frontend support). These are recorded as `PARSE_ERROR` and excluded from verification statistics.
+**ESBMC parse errors**: ESBMC cannot parse 56.5% of the programs as written (mostly `<bits/stdc++.h>`), and 26.0% after the three source edits. These are recorded as `PARSE_ERROR` and excluded from verification statistics.
 
-**ESBMC timeouts**: ~18.2% of analyzable programs time out under Config A (60s). Config C (120s) reduces this. Timeouts are recorded but not counted as violations.
+**ESBMC timeouts**: 3,036 of 8,918 programs (34.0%) hit the 60 s limit in the reported run. A deeper bound with a 120 s limit (Config C) gave fewer FAILED verdicts (832 vs. 1,103 on the plain code) and lower coverage. Timeouts are recorded but not counted as violations, and they depend on machine load.
 
 **ESBMC binary not found**: Ensure the binary is at `esbmc/bin/esbmc` relative to the repository root and is executable (`chmod +x esbmc/bin/esbmc`).
 

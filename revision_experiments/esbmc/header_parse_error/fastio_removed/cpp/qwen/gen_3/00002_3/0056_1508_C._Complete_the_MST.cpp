@@ -1,0 +1,91 @@
+// [esbmc] replaced #include <bits/stdc++.h> with ESBMC-compatible headers
+#include <cassert>
+#include <cctype>
+#include <cfloat>
+#include <climits>
+#include <cmath>
+#include <cstdint>
+#include <cinttypes>
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
+#include <ctime>
+#include <iostream>
+#include <istream>
+#include <ostream>
+#include <ios>
+#include <iomanip>
+#include <sstream>
+#include <fstream>
+#include <streambuf>
+#include <string>
+#include <string_view>
+#include <vector>
+#include <array>
+#include <list>
+#include <deque>
+#include <queue>
+#include <stack>
+#include <map>
+#include <set>
+#include <unordered_map>
+#include <unordered_set>
+#include <bitset>
+#include <algorithm>
+#include <numeric>
+#include <functional>
+#include <utility>
+#include <iterator>
+#include <memory>
+#include <tuple>
+#include <limits>
+#include <random>
+#include <complex>
+#include <valarray>
+#include <stdexcept>
+#include <exception>
+#include <typeinfo>
+#include <type_traits>
+#include <initializer_list>
+#include <numbers>
+#include <any>
+using namespace std;
+
+struct DSU {
+    vector<int> p;
+    DSU(int n) : p(n) { iota(p.begin(), p.end(), 0); }
+    int find(int x) { return p[x] == x ? x : p[x] = find(p[x]); }
+    void unite(int x, int y) { p[find(y)] = find(x); }
+};
+
+int main(){
+    ((void)0);
+    ((void)0);
+    int n, m;
+    cin >> n >> m;
+    vector<tuple<int, int, int>> edges(m);
+    int total_xor = 0;
+    for(auto &[u, v, w] : edges){
+        cin >> u >> v >> w;
+        --u, --v;
+        total_xor ^= w;
+    }
+    sort(begin(edges), end(edges), [&](auto &a, auto &b){
+        return get<2>(a) < get<2>(b);
+    });
+    DSU dsu(n);
+    int mst_weight = 0;
+    for(auto [u, v, w] : edges){
+        if(dsu.find(u) != dsu.find(v)){
+            dsu.unite(u, v);
+            mst_weight += w;
+            total_xor ^= w;
+        }
+    }
+    for(int w = 0; w < (1 << 30) && total_xor; ++w){
+        if(total_xor ^ w == 0){
+            mst_weight = min(mst_weight, w);
+        }
+    }
+    cout << mst_weight;
+}

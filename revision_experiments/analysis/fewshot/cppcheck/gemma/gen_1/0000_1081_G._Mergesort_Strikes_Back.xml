@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.19.0"/>
+    <errors>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;k==1&apos; is always false" verbose="Condition &apos;k==1&apos; is always false" cwe="570" file0="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/gemma/gen_1/0000_1081_G._Mergesort_Strikes_Back.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/gemma/gen_1/0000_1081_G._Mergesort_Strikes_Back.cpp" line="52" column="21" info="Condition &apos;k==1&apos; is always false"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/gemma/gen_1/0000_1081_G._Mergesort_Strikes_Back.cpp" line="47" column="11" info="Assuming that condition &apos;k&gt;=n-1&apos; is not redundant"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/gemma/gen_1/0000_1081_G._Mergesort_Strikes_Back.cpp" line="52" column="11" info="Assuming that condition &apos;n==2&apos; is not redundant"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;k==2&apos; is always false" verbose="Condition &apos;k==2&apos; is always false" cwe="570" file0="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/gemma/gen_1/0000_1081_G._Mergesort_Strikes_Back.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/gemma/gen_1/0000_1081_G._Mergesort_Strikes_Back.cpp" line="63" column="28" info="Condition &apos;k==2&apos; is always false"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/gemma/gen_1/0000_1081_G._Mergesort_Strikes_Back.cpp" line="52" column="26" info="Assuming condition is false"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/gemma/gen_1/0000_1081_G._Mergesort_Strikes_Back.cpp" line="47" column="11" info="Assuming that condition &apos;k&gt;=n-1&apos; is not redundant"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/gemma/gen_1/0000_1081_G._Mergesort_Strikes_Back.cpp" line="63" column="18" info="Assuming that condition &apos;n==3&apos; is not redundant"/>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;expected_inversions&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;expected_inversions&apos; is reassigned a value before the old one has been used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/gemma/gen_1/0000_1081_G._Mergesort_Strikes_Back.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/gemma/gen_1/0000_1081_G._Mergesort_Strikes_Back.cpp" line="62" column="29" info="expected_inversions is overwritten"/>
+            <location file="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/gemma/gen_1/0000_1081_G._Mergesort_Strikes_Back.cpp" line="61" column="29" info="expected_inversions is assigned"/>
+            <symbol>expected_inversions</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;num&apos; is assigned a value that is never used." verbose="Variable &apos;num&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/gemma/gen_1/0000_1081_G._Mergesort_Strikes_Back.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/gemma/gen_1/0000_1081_G._Mergesort_Strikes_Back.cpp" line="72" column="23"/>
+            <symbol>num</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;den&apos; is assigned a value that is never used." verbose="Variable &apos;den&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/gemma/gen_1/0000_1081_G._Mergesort_Strikes_Back.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/gemma/gen_1/0000_1081_G._Mergesort_Strikes_Back.cpp" line="73" column="23"/>
+            <symbol>den</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;num&apos; is assigned a value that is never used." verbose="Variable &apos;num&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/gemma/gen_1/0000_1081_G._Mergesort_Strikes_Back.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/gemma/gen_1/0000_1081_G._Mergesort_Strikes_Back.cpp" line="72" column="19"/>
+            <symbol>num</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;den&apos; is assigned a value that is never used." verbose="Variable &apos;den&apos; is assigned a value that is never used." cwe="563" file0="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/gemma/gen_1/0000_1081_G._Mergesort_Strikes_Back.cpp">
+            <location file="/home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/gemma/gen_1/0000_1081_G._Mergesort_Strikes_Back.cpp" line="73" column="19"/>
+            <symbol>den</symbol>
+        </error>
+    </errors>
+</results>

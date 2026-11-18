@@ -1,0 +1,113 @@
+// [esbmc] replaced #include <bits/stdc++.h> with ESBMC-compatible headers
+#include <cassert>
+#include <cctype>
+#include <cfloat>
+#include <climits>
+#include <cmath>
+#include <cstdint>
+#include <cinttypes>
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
+#include <ctime>
+#include <iostream>
+#include <istream>
+#include <ostream>
+#include <ios>
+#include <iomanip>
+#include <sstream>
+#include <fstream>
+#include <streambuf>
+#include <string>
+#include <string_view>
+#include <vector>
+#include <array>
+#include <list>
+#include <deque>
+#include <queue>
+#include <stack>
+#include <map>
+#include <set>
+#include <unordered_map>
+#include <unordered_set>
+#include <bitset>
+#include <algorithm>
+#include <numeric>
+#include <functional>
+#include <utility>
+#include <iterator>
+#include <memory>
+#include <tuple>
+#include <limits>
+#include <random>
+#include <complex>
+#include <valarray>
+#include <stdexcept>
+#include <exception>
+#include <typeinfo>
+#include <type_traits>
+#include <initializer_list>
+#include <numbers>
+#include <any>
+using namespace std;
+long long lrinv[21];
+long long rlinv[21];
+int n;
+int a[1 << 20];
+int b[1 << 20];
+void mergesort() {
+  for (int k = 1; k <= n; k++) {
+    int len = 1 << (k - 1);
+    for (int j = 0; j < (1 << n); j += 2 * len) {
+      int l = 0, r = 0;
+      int sl = j, sr = j + len;
+      for (int i = 0; i < 2 * len; i++) {
+        if (r == len || (l != len && a[sl + l] <= a[sr + r])) {
+          b[i] = a[sl + (l++)];
+          lrinv[k] += r;
+        } else {
+          b[i] = a[sr + (r++)];
+        }
+      }
+      l = r = 0;
+      for (int i = 0; i < 2 * len; i++) {
+        if (l == len || (r != len && a[sr + r] <= a[sl + l])) {
+          r++;
+          rlinv[k] += l;
+        } else {
+          l++;
+        }
+      }
+      memcpy(a + j, b, sizeof(int) * (2 * len));
+    }
+  }
+}
+bool status[21];
+long long cans = 0;
+int main() {
+  ((void)0);
+  ((void)0);
+  ((void)0);
+  scanf("%d", &n);
+  for (int i = 0; i < (int)(1 << n); i++) scanf("%d", a + i);
+  mergesort();
+  for (int i = 0; i < (int)(n + 1); i++) cans += lrinv[i];
+  int m;
+  scanf("%d", &m);
+  for (int _ = 0; _ < (int)(m); _++) {
+    int q;
+    scanf("%d", &q);
+    for (int i = 0; i <= q; i++) {
+      if (!status[i]) {
+        cans -= lrinv[i];
+        cans += rlinv[i];
+      } else {
+        cans -= rlinv[i];
+        cans += lrinv[i];
+      }
+      status[i] = !status[i];
+    }
+    printf("%lld\n", cans);
+  }
+  return 0;
+}

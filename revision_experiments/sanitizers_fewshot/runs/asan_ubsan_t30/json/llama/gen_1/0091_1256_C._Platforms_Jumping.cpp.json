@@ -1,0 +1,571 @@
+{
+  "problem_key": "1256_C_Platforms_Jumping",
+  "shard": 2,
+  "compiled": true,
+  "compile_error": null,
+  "n_tests": 43,
+  "n_passed": 2,
+  "n_sanitizer_triggered": 30,
+  "n_timeout": 0,
+  "any_sanitizer_triggered": true,
+  "all_sanitizer_errors": [
+    "heap-buffer-overflow"
+  ],
+  "all_sanitizer_cwes": [
+    "CWE-122"
+  ],
+  "per_test": [
+    {
+      "test_idx": 0,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 1,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==145834==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5210000024a0 at pc 0x5f3c9ef48d81 bp 0x7ffe0d1ccf70 sp 0x7ffe0d1ccf60\nWRITE of size 4 at 0x5210000024a0 thread T0\n    #0 0x5f3c9ef48d80 in main /home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/llama/gen_1/0091_1256_C._Platforms_Jumping.cpp:15\n    #1 0x7276ac82a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n "
+    },
+    {
+      "test_idx": 2,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==145845==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x503000000058 at pc 0x64fd21ed5d81 bp 0x7fff7b013b90 sp 0x7fff7b013b80\nWRITE of size 4 at 0x503000000058 thread T0\n    #0 0x64fd21ed5d80 in main /home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/llama/gen_1/0091_1256_C._Platforms_Jumping.cpp:15\n    #1 0x7bb8f402a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n "
+    },
+    {
+      "test_idx": 3,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 4,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==145866==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50300000005c at pc 0x589be19a6d81 bp 0x7ffd32a109b0 sp 0x7ffd32a109a0\nWRITE of size 4 at 0x50300000005c thread T0\n    #0 0x589be19a6d80 in main /home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/llama/gen_1/0091_1256_C._Platforms_Jumping.cpp:15\n    #1 0x73256ce2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n "
+    },
+    {
+      "test_idx": 5,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==145892==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x503000000054 at pc 0x64aa8e0b6d81 bp 0x7fff90fb2fd0 sp 0x7fff90fb2fc0\nWRITE of size 4 at 0x503000000054 thread T0\n    #0 0x64aa8e0b6d80 in main /home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/llama/gen_1/0091_1256_C._Platforms_Jumping.cpp:15\n    #1 0x7087f4e2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n "
+    },
+    {
+      "test_idx": 6,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==145936==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x504000000038 at pc 0x5e1006414d81 bp 0x7ffc512d1ee0 sp 0x7ffc512d1ed0\nWRITE of size 4 at 0x504000000038 thread T0\n    #0 0x5e1006414d80 in main /home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/llama/gen_1/0091_1256_C._Platforms_Jumping.cpp:15\n    #1 0x7f4ace02a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n "
+    },
+    {
+      "test_idx": 7,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==145969==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x504000000078 at pc 0x5752e83d9d81 bp 0x7ffe34877ea0 sp 0x7ffe34877e90\nWRITE of size 4 at 0x504000000078 thread T0\n    #0 0x5752e83d9d80 in main /home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/llama/gen_1/0091_1256_C._Platforms_Jumping.cpp:15\n    #1 0x71a45042a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n "
+    },
+    {
+      "test_idx": 8,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==145993==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x503000000060 at pc 0x627ba565bd81 bp 0x7ffe4e8d0d70 sp 0x7ffe4e8d0d60\nWRITE of size 4 at 0x503000000060 thread T0\n    #0 0x627ba565bd80 in main /home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/llama/gen_1/0091_1256_C._Platforms_Jumping.cpp:15\n    #1 0x74b84482a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n "
+    },
+    {
+      "test_idx": 9,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==146008==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50200000003c at pc 0x5f431ae6bd81 bp 0x7fff9d508b90 sp 0x7fff9d508b80\nWRITE of size 4 at 0x50200000003c thread T0\n    #0 0x5f431ae6bd80 in main /home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/llama/gen_1/0091_1256_C._Platforms_Jumping.cpp:15\n    #1 0x7fc5d862a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n "
+    },
+    {
+      "test_idx": 10,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 11,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 12,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==146055==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x511000000108 at pc 0x5bcfa3bc6d81 bp 0x7fff8a015ff0 sp 0x7fff8a015fe0\nWRITE of size 4 at 0x511000000108 thread T0\n    #0 0x5bcfa3bc6d80 in main /home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/llama/gen_1/0091_1256_C._Platforms_Jumping.cpp:15\n    #1 0x73d595e2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n "
+    },
+    {
+      "test_idx": 13,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==146072==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x504000000078 at pc 0x6341b1688d81 bp 0x7fffcf7b9f30 sp 0x7fffcf7b9f20\nWRITE of size 4 at 0x504000000078 thread T0\n    #0 0x6341b1688d80 in main /home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/llama/gen_1/0091_1256_C._Platforms_Jumping.cpp:15\n    #1 0x79ef30a2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n "
+    },
+    {
+      "test_idx": 14,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==146079==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5140000001d0 at pc 0x5cf7eda6bd81 bp 0x7ffe47b448e0 sp 0x7ffe47b448d0\nWRITE of size 4 at 0x5140000001d0 thread T0\n    #0 0x5cf7eda6bd80 in main /home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/llama/gen_1/0091_1256_C._Platforms_Jumping.cpp:15\n    #1 0x73786a42a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n "
+    },
+    {
+      "test_idx": 15,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==146086==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5210000024a0 at pc 0x5d43949fed81 bp 0x7ffce88e00f0 sp 0x7ffce88e00e0\nWRITE of size 4 at 0x5210000024a0 thread T0\n    #0 0x5d43949fed80 in main /home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/llama/gen_1/0091_1256_C._Platforms_Jumping.cpp:15\n    #1 0x7bd132a2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n "
+    },
+    {
+      "test_idx": 16,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==146119==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x503000000060 at pc 0x5e75d874bd81 bp 0x7ffcff012b40 sp 0x7ffcff012b30\nWRITE of size 4 at 0x503000000060 thread T0\n    #0 0x5e75d874bd80 in main /home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/llama/gen_1/0091_1256_C._Platforms_Jumping.cpp:15\n    #1 0x742e5ca2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n "
+    },
+    {
+      "test_idx": 17,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 18,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 19,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==146143==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000038 at pc 0x58b862babd81 bp 0x7fff1f9c7f80 sp 0x7fff1f9c7f70\nWRITE of size 4 at 0x502000000038 thread T0\n    #0 0x58b862babd80 in main /home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/llama/gen_1/0091_1256_C._Platforms_Jumping.cpp:15\n    #1 0x78380422a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n "
+    },
+    {
+      "test_idx": 20,
+      "correct": true,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 21,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 22,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==146164==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x504000000040 at pc 0x6404f14c3d81 bp 0x7ffda3be1b80 sp 0x7ffda3be1b70\nWRITE of size 4 at 0x504000000040 thread T0\n    #0 0x6404f14c3d80 in main /home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/llama/gen_1/0091_1256_C._Platforms_Jumping.cpp:15\n    #1 0x71ccf6c2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n "
+    },
+    {
+      "test_idx": 23,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==146181==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000040 at pc 0x5df40d4cbd81 bp 0x7ffd827bfc00 sp 0x7ffd827bfbf0\nWRITE of size 4 at 0x502000000040 thread T0\n    #0 0x5df40d4cbd80 in main /home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/llama/gen_1/0091_1256_C._Platforms_Jumping.cpp:15\n    #1 0x73bc8102a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n "
+    },
+    {
+      "test_idx": 24,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==146182==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x504000000040 at pc 0x5bc5308e0d81 bp 0x7fff3e3a6c30 sp 0x7fff3e3a6c20\nWRITE of size 4 at 0x504000000040 thread T0\n    #0 0x5bc5308e0d80 in main /home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/llama/gen_1/0091_1256_C._Platforms_Jumping.cpp:15\n    #1 0x71b72b62a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n "
+    },
+    {
+      "test_idx": 25,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==146201==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x503000000060 at pc 0x6438d39ffd81 bp 0x7ffe27e12d50 sp 0x7ffe27e12d40\nWRITE of size 4 at 0x503000000060 thread T0\n    #0 0x6438d39ffd80 in main /home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/llama/gen_1/0091_1256_C._Platforms_Jumping.cpp:15\n    #1 0x7d523442a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n "
+    },
+    {
+      "test_idx": 26,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==146228==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x502000000040 at pc 0x5a0c7aecad81 bp 0x7ffd12e3e9f0 sp 0x7ffd12e3e9e0\nWRITE of size 4 at 0x502000000040 thread T0\n    #0 0x5a0c7aecad80 in main /home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/llama/gen_1/0091_1256_C._Platforms_Jumping.cpp:15\n    #1 0x7f84d702a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n "
+    },
+    {
+      "test_idx": 27,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 28,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==146251==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x503000000054 at pc 0x5fff3152bd81 bp 0x7ffc8e047a10 sp 0x7ffc8e047a00\nWRITE of size 4 at 0x503000000054 thread T0\n    #0 0x5fff3152bd80 in main /home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/llama/gen_1/0091_1256_C._Platforms_Jumping.cpp:15\n    #1 0x7aa11042a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n "
+    },
+    {
+      "test_idx": 29,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==146252==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5210000024a0 at pc 0x569abb5d2d81 bp 0x7ffdba37e970 sp 0x7ffdba37e960\nWRITE of size 4 at 0x5210000024a0 thread T0\n    #0 0x569abb5d2d80 in main /home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/llama/gen_1/0091_1256_C._Platforms_Jumping.cpp:15\n    #1 0x730d8ac2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n "
+    },
+    {
+      "test_idx": 30,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==146260==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5210000024a0 at pc 0x563cafcbbd81 bp 0x7fffa98f8f30 sp 0x7fffa98f8f20\nWRITE of size 4 at 0x5210000024a0 thread T0\n    #0 0x563cafcbbd80 in main /home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/llama/gen_1/0091_1256_C._Platforms_Jumping.cpp:15\n    #1 0x7c1a7122a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n "
+    },
+    {
+      "test_idx": 31,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==146263==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50300000005c at pc 0x56c422aded81 bp 0x7fffe693ba00 sp 0x7fffe693b9f0\nWRITE of size 4 at 0x50300000005c thread T0\n    #0 0x56c422aded80 in main /home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/llama/gen_1/0091_1256_C._Platforms_Jumping.cpp:15\n    #1 0x746d2e62a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n "
+    },
+    {
+      "test_idx": 32,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==146269==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5210000024a0 at pc 0x5d25634a9d81 bp 0x7ffc08d19010 sp 0x7ffc08d19000\nWRITE of size 4 at 0x5210000024a0 thread T0\n    #0 0x5d25634a9d80 in main /home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/llama/gen_1/0091_1256_C._Platforms_Jumping.cpp:15\n    #1 0x7b92f342a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n "
+    },
+    {
+      "test_idx": 33,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 34,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 35,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 36,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==146280==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x50300000005c at pc 0x5e9d577a6d81 bp 0x7ffd46cb9170 sp 0x7ffd46cb9160\nWRITE of size 4 at 0x50300000005c thread T0\n    #0 0x5e9d577a6d80 in main /home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/llama/gen_1/0091_1256_C._Platforms_Jumping.cpp:15\n    #1 0x76216f62a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n "
+    },
+    {
+      "test_idx": 37,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": false,
+      "sanitizer_errors": [],
+      "sanitizer_cwes": [],
+      "returncode": 0,
+      "stderr_head": ""
+    },
+    {
+      "test_idx": 38,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==146322==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5210000024a0 at pc 0x63d5e0504d81 bp 0x7ffe20fb16d0 sp 0x7ffe20fb16c0\nWRITE of size 4 at 0x5210000024a0 thread T0\n    #0 0x63d5e0504d80 in main /home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/llama/gen_1/0091_1256_C._Platforms_Jumping.cpp:15\n    #1 0x77fa5802a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n "
+    },
+    {
+      "test_idx": 39,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==146359==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x504000000034 at pc 0x5daf1496bd81 bp 0x7ffe91171420 sp 0x7ffe91171410\nWRITE of size 4 at 0x504000000034 thread T0\n    #0 0x5daf1496bd80 in main /home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/llama/gen_1/0091_1256_C._Platforms_Jumping.cpp:15\n    #1 0x7d856262a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n "
+    },
+    {
+      "test_idx": 40,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==146375==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x506000000054 at pc 0x614a330a3d81 bp 0x7ffe596424c0 sp 0x7ffe596424b0\nWRITE of size 4 at 0x506000000054 thread T0\n    #0 0x614a330a3d80 in main /home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/llama/gen_1/0091_1256_C._Platforms_Jumping.cpp:15\n    #1 0x7359f1a2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n "
+    },
+    {
+      "test_idx": 41,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==146387==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x503000000054 at pc 0x5ab1819f1d81 bp 0x7ffe6726d2e0 sp 0x7ffe6726d2d0\nWRITE of size 4 at 0x503000000054 thread T0\n    #0 0x5ab1819f1d80 in main /home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/llama/gen_1/0091_1256_C._Platforms_Jumping.cpp:15\n    #1 0x76b27ee2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n "
+    },
+    {
+      "test_idx": 42,
+      "correct": false,
+      "timeout": false,
+      "sanitizer_triggered": true,
+      "sanitizer_errors": [
+        "heap-buffer-overflow"
+      ],
+      "sanitizer_cwes": [
+        "CWE-122"
+      ],
+      "returncode": 1,
+      "stderr_head": "=================================================================\n==146454==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5130000001b4 at pc 0x5baccc6d0d81 bp 0x7fff909e3aa0 sp 0x7fff909e3a90\nWRITE of size 4 at 0x5130000001b4 thread T0\n    #0 0x5baccc6d0d80 in main /home/saif/Documents/aigc_vul_patterns/revision_experiments/derived_cpp/fewshot/llama/gen_1/0091_1256_C._Platforms_Jumping.cpp:15\n    #1 0x79c1f9a2a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58\n "
+    }
+  ],
+  "runtime_seconds": 10.52,
+  "task_name": "1256_C. Platforms Jumping"
+}

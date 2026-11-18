@@ -1,0 +1,88 @@
+// [esbmc] replaced #include <bits/stdc++.h> with ESBMC-compatible headers
+#include <cassert>
+#include <cctype>
+#include <cfloat>
+#include <climits>
+#include <cmath>
+#include <cstdint>
+#include <cinttypes>
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
+#include <ctime>
+#include <iostream>
+#include <istream>
+#include <ostream>
+#include <ios>
+#include <iomanip>
+#include <sstream>
+#include <fstream>
+#include <streambuf>
+#include <string>
+#include <string_view>
+#include <vector>
+#include <array>
+#include <list>
+#include <deque>
+#include <queue>
+#include <stack>
+#include <map>
+#include <set>
+#include <unordered_map>
+#include <unordered_set>
+#include <bitset>
+#include <algorithm>
+#include <numeric>
+#include <functional>
+#include <utility>
+#include <iterator>
+#include <memory>
+#include <tuple>
+#include <limits>
+#include <random>
+#include <complex>
+#include <valarray>
+#include <stdexcept>
+#include <exception>
+#include <typeinfo>
+#include <type_traits>
+#include <initializer_list>
+#include <numbers>
+#include <any>
+using namespace std;
+
+int main(){
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    int n, m;
+    cin >> n >> m;
+    vector<vector<int>> adj(n+1);
+    vector<int> inDegree(n+1, 0);
+    for(int i=0; i<m; ++i){
+        int u, v;
+        cin >> u >> v;
+        adj[u].push_back(v);
+        inDegree[v]++;
+    }
+    priority_queue<int, vector<int>, greater<int>> pq;
+    for(int i=1; i<=n; ++i){
+        if(inDegree[i] == 0){
+            pq.push(i);
+        }
+    }
+    vector<int> result(n);
+    for(int i=0; i<n; ++i){
+        int node = pq.top();
+        pq.pop();
+        result[i] = node;
+        for(auto &neighbor : adj[node]){
+            if(--inDegree[neighbor] == 0){
+                pq.push(neighbor);
+            }
+        }
+    }
+    for(auto &x : result){
+        cout << x << " ";
+    }
+    cout << "\n";
+}
